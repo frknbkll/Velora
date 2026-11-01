@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#f6f2ec" />
+    <title>Admin studio — Velora</title>
+    <link rel="stylesheet" href="fonts.css?v=1" />
+    <link rel="stylesheet" href="styles.css?v=61" />
+    <link rel="stylesheet" href="admin.css?v=4" />
+    <link rel="stylesheet" href="admin-business.css?v=1" />
+    <script src="privacy.js?v=1" defer></script>
+    <script src="auth.js?v=6" defer></script>
+    <script src="admin.js?v=4" defer></script>
+    <script src="admin-security.js?v=1" defer></script>
+    <script src="admin-business.js?v=1" defer></script>
+    <link rel="stylesheet" href="privacy.css?v=1" />
+  </head>
+  <body class="admin-page">
+    <svg class="admin-icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="studio-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></symbol>
+      <symbol id="studio-bag" viewBox="0 0 24 24"><path d="M5 7h14l1 14H4L5 7Z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></symbol>
+      <symbol id="studio-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 21v-2a6 6 0 0 1 12 0v2M16 5a3 3 0 0 1 0 6m2 4a5 5 0 0 1 3 4v2"/></symbol>
+      <symbol id="studio-arrow" viewBox="0 0 24 24"><path d="M5 19 19 5M5 5h14v14"/></symbol>
+      <symbol id="studio-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+      <symbol id="studio-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="studio-edit" viewBox="0 0 24 24"><path d="m15 4 5 5M4 20l5-1L21 7a2.1 2.1 0 0 0-4-4L5 15l-1 5Z"/></symbol>
+      <symbol id="studio-exit" viewBox="0 0 24 24"><path d="M10 4H4v16h6m4-12 4 4-4 4M9 12h12"/></symbol>
+      <symbol id="studio-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+      <symbol id="studio-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V4H4v12h4"/></symbol>
+      <symbol id="studio-trash" viewBox="0 0 24 24"><path d="M3 6h18M9 6V3h6v3M5 6l1 15h12l1-15M10 10v7m4-7v7"/></symbol>
+      <symbol id="studio-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="studio-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></symbol>
+    </svg>
+    <a class="admin-skip" href="#admin-main">Skip to content</a>
+    <div class="admin-access" id="admin-access" role="status" aria-live="polite">
+      <a class="wordmark" href="index.html" aria-label="Velora home">velora<span>®</span></a>
+      <span class="admin-loader" aria-hidden="true"></span>
+      <h1>Opening your studio.</h1>
+      <p id="admin-access-message">Checking your account…</p>
+      <a class="admin-button" id="admin-access-retry" href="admin.html" hidden>Try again</a>
+      <a class="admin-access-home" href="index.html">Back to the collection ↗</a>
+    </div>
+    <div class="admin-shell" id="admin-shell" hidden>
+      <aside class="admin-sidebar">
+        <div class="admin-brand">
+          <a class="wordmark" href="index.html" aria-label="Velora home">velora<span>®</span></a>
+          <span class="admin-studio-label">THE ADMIN STUDIO</span>
+        </div>
+        <p class="admin-nav-label">Your workspace</p>
+        <nav class="admin-nav" aria-label="Admin sections">
+          <a href="#overview" data-admin-section="overview" aria-current="page"><svg class="admin-icon"><use href="#studio-grid"/></svg><span>Overview</span></a>
+          <a href="#products" data-admin-section="products"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Products</span><span class="admin-nav-count" id="admin-product-nav-count"></span></a>
+          <a href="#customers" data-admin-section="customers"><svg class="admin-icon"><use href="#studio-people"/></svg><span>Customers</span></a>
+          <a href="#activity" data-admin-section="activity"><svg class="admin-icon"><use href="#studio-clock"/></svg><span>Activity</span></a>
+          <a href="#security" data-admin-section="security"><svg class="admin-icon"><use href="#studio-shield"/></svg><span>Security</span></a>
+          <a href="#business" data-admin-section="business"><svg class="admin-icon"><use href="#studio-edit"/></svg><span>Business details</span></a>
+        </nav>
+        <div class="admin-sidebar-bottom">
+          <a href="index.html" class="admin-store-link"><span>Visit the store</span><svg class="admin-icon"><use href="#studio-arrow"/></svg></a>
+          <a href="account.html" class="admin-sidebar-account"><span class="admin-avatar" id="admin-sidebar-avatar" aria-hidden="true">V</span><span><strong id="admin-sidebar-name">Your account</strong><small>Administrator</small></span></a>
+          <button class="admin-signout" type="button" id="admin-signout"><svg class="admin-icon"><use href="#studio-exit"/></svg> Sign out</button>
+        </div>
+      </aside>
+      <main class="admin-main" id="admin-main" tabindex="-1">
+        <header class="admin-topbar"><span>Velora / <span id="admin-breadcrumb">Overview</span></span><span class="admin-access-badge"><span></span> Admin access</span></header>
+        <div class="admin-fetch-error" id="admin-fetch-error" role="alert" hidden><span id="admin-fetch-error-message"></span><button type="button" id="admin-data-retry">Try again</button></div>
+        <section class="admin-view" id="admin-overview" aria-labelledby="admin-overview-title">
+          <div class="admin-heading"><div><p class="admin-eyebrow">A LITTLE CLARITY, EVERY DAY</p><h1 id="admin-overview-title">Welcome to your <em>studio.</em></h1><p>A thoughtful overview of your collection and community.</p></div><span class="admin-today" id="admin-today"></span></div>
+          <div class="admin-metrics" aria-label="Store overview">
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Total products</span><svg class="admin-icon"><use href="#studio-bag"/></svg></div><strong id="admin-total-products">—</strong><p>Pieces in your collection</p></article>
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Published</span><svg class="admin-icon"><use href="#studio-check"/></svg></div><strong id="admin-published-products">—</strong><p>Visible in the storefront</p></article>
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Drafts</span><svg class="admin-icon"><use href="#studio-edit"/></svg></div><strong id="admin-draft-products">—</strong><p>Kept behind the scenes</p></article>
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Customers</span><svg class="admin-icon"><use href="#studio-people"/></svg></div><strong id="admin-total-customers">—</strong><p>Registered customer accounts</p></article>
+          </div>
+          <div class="admin-inventory-summary" aria-label="Inventory attention">
+            <button type="button" data-stock-shortcut="low"><span class="admin-inventory-dot is-low"></span><span><strong id="admin-low-stock">&mdash;</strong> low stock</span><span aria-hidden="true">&nearr;</span></button>
+            <button type="button" data-stock-shortcut="out"><span class="admin-inventory-dot is-out"></span><span><strong id="admin-out-of-stock">&mdash;</strong> out of stock</span><span aria-hidden="true">&nearr;</span></button>
+            <button type="button" id="admin-trash-shortcut"><svg class="admin-icon"><use href="#studio-trash"/></svg><span><strong id="admin-trash-count">&mdash;</strong> in trash</span><span aria-hidden="true">&nearr;</span></button>
+          </div>
+          <div class="admin-overview-grid">
+            <article class="admin-collection-card"><span class="admin-eyebrow">THE WORLD OF VELORA</span><span class="admin-collection-monogram" aria-hidden="true">v.</span><h2>Considered pieces.<br /><em>A collection of your own.</em></h2><p>Refine the details, set your prices, and choose what your customers see.</p><a href="#products">Manage the collection <svg class="admin-icon"><use href="#studio-arrow"/></svg></a></article>
+            <section class="admin-panel admin-recent-panel" aria-labelledby="admin-recent-title"><div class="admin-panel-heading"><h2 id="admin-recent-title">New to the community</h2><a href="#customers">View all <span aria-hidden="true">↗</span></a></div><div class="admin-recent-list" id="admin-recent-customers"><p class="admin-empty">Loading your community…</p></div></section>
+          </div>
+          <section class="admin-panel admin-preview-panel" aria-labelledby="admin-preview-title"><div class="admin-panel-heading"><div><span class="admin-eyebrow">FROM THE COLLECTION</span><h2 id="admin-preview-title">The pieces behind the numbers.</h2></div><a href="#products">View products <span aria-hidden="true">↗</span></a></div><div class="admin-product-preview" id="admin-product-preview"></div></section>
+          <section class="admin-panel admin-preview-panel" aria-labelledby="admin-latest-title"><div class="admin-panel-heading"><h2 id="admin-latest-title">Latest in the studio</h2><a href="#activity">View activity <span aria-hidden="true">&nearr;</span></a></div><div class="admin-activity-list" id="admin-latest-activity"></div></section>
+          <a class="admin-security-shortcut" href="#security"><svg class="admin-icon" aria-hidden="true"><use href="#studio-shield"/></svg><span><strong>A little peace of mind.</strong><span>Review sign-ins, account protection, and active admin sessions.</span></span><span aria-hidden="true">&nearr;</span></a>
+        </section>
+        <section class="admin-view" id="admin-products" aria-labelledby="admin-products-title" hidden>
+          <div class="admin-heading"><div><p class="admin-eyebrow">CURATED WITH INTENTION</p><h1 id="admin-products-title">Your <em>collection.</em></h1><p>Every piece, with its details in one place.</p></div><div class="admin-heading-actions"><button class="admin-button admin-button-secondary" type="button" id="admin-export-products">Export CSV</button><button class="admin-button" type="button" id="admin-add-product"><svg class="admin-icon"><use href="#studio-plus"/></svg>Add product</button></div></div>
+          <div class="admin-panel">
+            <div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon"><use href="#studio-search"/></svg><span class="sr-only">Search products</span><input id="admin-product-search" type="search" placeholder="Search name, SKU or founder&#8230;" autocomplete="off" /></label><label class="admin-filter"><span class="sr-only">Filter products by visibility</span><select id="admin-product-filter"><option value="all">All products</option><option value="published">Published</option><option value="draft">Drafts</option><option value="trash">Trash</option></select></label><label class="admin-filter"><span class="sr-only">Filter by stock</span><select id="admin-stock-filter"><option value="all">All stock levels</option><option value="low">Low stock (1&ndash;5)</option><option value="out">Out of stock</option><option value="untracked">Not tracked</option></select></label><label class="admin-filter"><span class="sr-only">Sort products</span><select id="admin-product-sort"><option value="newest">Recently updated</option><option value="name">Name: A&ndash;Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="stock">Stock: low to high</option></select></label><span class="admin-result-count" id="admin-product-count" aria-live="polite"></span></div>
+            <div class="admin-table-scroll" tabindex="0" role="region" aria-label="Products table"><table class="admin-table"><thead><tr><th scope="col">Product</th><th scope="col">Founder</th><th scope="col">Price</th><th scope="col">Stock</th><th scope="col">Visibility</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead><tbody id="admin-products-body"></tbody></table></div>
+            <p class="admin-table-empty" id="admin-products-empty" hidden>No pieces match your search. Try another name or visibility.</p>
+            <div class="admin-table-footer">Prices are in EUR. Drafts and trashed products stay out of the storefront. Stock is shared across all sizes.</div>
+          </div>
+        </section>
+        <section class="admin-view" id="admin-customers" aria-labelledby="admin-customers-title" hidden>
+          <div class="admin-heading"><div><p class="admin-eyebrow">A GROWING CONNECTION</p><h1 id="admin-customers-title">Your <em>community.</em></h1><p>The people who have made an account with Velora.</p></div><span class="admin-community-count" id="admin-community-count"></span></div>
+          <div class="admin-panel"><div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon"><use href="#studio-search"/></svg><span class="sr-only">Search customers</span><input id="admin-customer-search" type="search" placeholder="Search by name or email…" autocomplete="off" /></label><span class="admin-result-count" id="admin-customer-count" aria-live="polite"></span></div><div class="admin-table-scroll" tabindex="0" role="region" aria-label="Customers table"><table class="admin-table admin-customers-table"><thead><tr><th scope="col">Customer</th><th scope="col">Email address</th><th scope="col">Joined</th></tr></thead><tbody id="admin-customers-body"></tbody></table></div><p class="admin-table-empty" id="admin-customers-empty" hidden>No customers yet. New registrations will appear here.</p><div class="admin-table-footer">Customer accounts are created through the registration page.</div></div>
+        </section>
+        <section class="admin-view" id="admin-activity" aria-labelledby="admin-activity-title" hidden>
+          <div class="admin-heading"><div><p class="admin-eyebrow">EVERY DETAIL, REMEMBERED</p><h1 id="admin-activity-title">Studio <em>activity.</em></h1><p>A record of changes to your collection, including who made them.</p></div><button class="admin-button admin-button-secondary" type="button" id="admin-activity-refresh">Refresh activity</button></div>
+          <div class="admin-panel"><div class="admin-panel-heading"><h2>Recent changes</h2><span class="admin-result-count" id="admin-activity-count"></span></div><div class="admin-activity-list" id="admin-activity-list"></div></div>
+        </section>
+        <section class="admin-view" id="admin-security" aria-labelledby="admin-security-title" hidden>
+          <div class="admin-heading"><div><p class="admin-eyebrow">LOOKING AFTER YOUR WORLD</p><h1 id="admin-security-title">A more protected <em>studio.</em></h1><p>Understand recent sign-in activity and keep your account protected.</p></div><button class="admin-button admin-button-secondary" type="button" id="admin-security-refresh">Refresh security</button></div>
+          <div class="admin-security-error" id="admin-security-error" role="alert" hidden><p id="admin-security-error-message"></p><button class="admin-button admin-button-secondary" type="button" id="admin-security-retry">Try again</button></div>
+          <p class="admin-security-updated" id="admin-security-updated" role="status" aria-live="polite">Security details will load when you open this section.</p>
+          <div class="admin-metrics" aria-label="Security overview">
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Failed sign-ins</span><svg class="admin-icon" aria-hidden="true"><use href="#studio-exit"/></svg></div><strong id="admin-security-failed">&mdash;</strong><p>During the last 24 hours</p></article>
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Blocked attempts</span><svg class="admin-icon" aria-hidden="true"><use href="#studio-shield"/></svg></div><strong id="admin-security-blocked">&mdash;</strong><p>During the last 24 hours</p></article>
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Admin sessions</span><svg class="admin-icon" aria-hidden="true"><use href="#studio-people"/></svg></div><strong id="admin-security-sessions">&mdash;</strong><p>Currently active across admins</p></article>
+            <article class="admin-metric"><div class="admin-metric-heading"><span>Two-factor enabled</span><svg class="admin-icon" aria-hidden="true"><use href="#studio-check"/></svg></div><strong id="admin-security-mfa">&mdash;</strong><p>Administrators with extra protection</p></article>
+          </div>
+          <div class="admin-security-guidance">
+            <section class="admin-security-protect" aria-labelledby="admin-security-protect-title"><span class="admin-security-mark" aria-hidden="true"><svg class="admin-icon"><use href="#studio-shield"/></svg></span><div><span class="admin-security-recommendation" id="admin-security-recommendation" hidden>RECOMMENDED NEXT STEP</span><h2 id="admin-security-protect-title">Keep your account close.</h2><p id="admin-security-mfa-guidance">Add an authenticator app to your account and keep recovery codes somewhere safe.</p><a class="admin-button" href="account.html#security" id="admin-security-protect-account">Protect my account <span aria-hidden="true">&nearr;</span></a></div></section>
+            <section class="admin-panel admin-security-protections" aria-labelledby="admin-security-protections-title"><div class="admin-panel-heading"><h2 id="admin-security-protections-title">Built-in protections</h2></div><ul><li><strong>Sign-in attempt limits</strong><span>Repeated failures are temporarily blocked and recorded.</span></li><li><strong>Administrator permissions</strong><span>Protected actions are checked by the server.</span></li><li><strong>Sessions with expiry</strong><span>Admin sessions expire after 30 minutes of inactivity, with an 8-hour maximum.</span></li></ul><a href="account.html#security">Review my devices and sessions <span aria-hidden="true">&nearr;</span></a></section>
+          </div>
+          <section class="admin-panel admin-security-events-panel" aria-labelledby="admin-security-events-title">
+            <div class="admin-panel-heading"><div><span class="admin-eyebrow">THE RECENT PICTURE</span><h2 id="admin-security-events-title">Security events</h2></div><span class="admin-result-count" id="admin-security-event-count" aria-live="polite"></span></div>
+            <div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon" aria-hidden="true"><use href="#studio-search"/></svg><span class="sr-only">Search security events</span><input id="admin-security-search" type="search" placeholder="Search event, person, or IP address&#8230;" autocomplete="off" /></label><label class="admin-filter"><span class="sr-only">Filter security events by severity</span><select id="admin-security-severity"><option value="all">All severities</option><option value="info">Information</option><option value="warning">Warnings</option><option value="critical">Critical</option></select></label></div>
+            <div class="admin-table-scroll admin-security-table-scroll" tabindex="0" role="region" aria-label="Security events table"><table class="admin-table admin-security-table"><thead><tr><th scope="col">Event</th><th scope="col">Account</th><th scope="col">IP address</th><th scope="col">Level</th><th scope="col">When</th></tr></thead><tbody id="admin-security-events-body"></tbody></table></div>
+            <p class="admin-table-empty" id="admin-security-empty" hidden>No security events have been recorded yet.</p>
+            <div class="admin-table-footer">The latest 100 events are available here. Passwords, sign-in codes, and session tokens are excluded.</div>
+          </section>
+        </section>
+        <section class="admin-view" id="admin-business" aria-labelledby="admin-business-title" hidden>
+          <div class="admin-heading"><div><p class="admin-eyebrow">INFORMATION YOUR VISITORS CAN TRUST</p><h1 id="admin-business-title">Your business <em>details.</em></h1><p>Keep your public identity and customer-service details up to date.</p></div><a class="admin-button admin-button-secondary" href="business-details.html" target="_blank" rel="noopener">View public details <span aria-hidden="true">↗</span><span class="sr-only">(opens in a new tab)</span></a></div>
+          <p class="admin-business-notice">Everything entered here appears publicly on the Business Details page. Use accurate business information and an address suitable for public display. Leave unknown details empty; visitors will see “Not yet provided.”</p>
+          <p class="admin-business-message" id="admin-business-message" role="status" aria-live="polite" aria-atomic="true"></p>
+          <div class="admin-business-error" id="admin-business-error" role="alert" hidden><p id="admin-business-error-message"></p><button class="admin-button admin-button-secondary" type="button" id="admin-business-retry">Try again</button></div>
+          <p class="admin-business-loading" id="admin-business-loading" role="status">Business details load when you open this section.</p>
+          <form class="admin-panel admin-business-form" id="admin-business-form" hidden>
+            <div class="admin-business-form-heading"><h2>Public business information</h2><p>No details are invented or filled in automatically. Missing fields can be left blank. Every saved value appears publicly.</p></div>
+            <div class="admin-business-fields">
+              <label class="admin-field admin-business-full" for="admin-business-legal-name">Legal business name<input id="admin-business-legal-name" name="legalName" type="text" maxlength="200" autocomplete="organization" placeholder="Not yet provided" /><span class="admin-field-hint">The registered legal name of the business operating Velora.</span></label>
+              <label class="admin-field" for="admin-business-country">Country of establishment<input id="admin-business-country" name="country" type="text" maxlength="100" autocomplete="country-name" placeholder="Not yet provided" /></label>
+              <label class="admin-field" for="admin-business-registration">Business registration number / KvK<input id="admin-business-registration" name="registrationNumber" type="text" maxlength="200" autocomplete="off" placeholder="Not yet provided" /></label>
+              <label class="admin-field" for="admin-business-vat">VAT number (if applicable)<input id="admin-business-vat" name="vatNumber" type="text" maxlength="200" autocomplete="off" placeholder="Not yet provided" /></label>
+              <label class="admin-field" for="admin-business-email">Customer-service email<input id="admin-business-email" name="customerServiceEmail" type="email" maxlength="200" autocomplete="off" inputmode="email" placeholder="Not yet provided" /></label>
+              <label class="admin-field" for="admin-business-address">Business address<textarea id="admin-business-address" name="businessAddress" rows="4" maxlength="1000" autocomplete="off" placeholder="Not yet provided"></textarea><span class="admin-field-hint">Include the street, postal code, city and country.</span></label>
+              <label class="admin-field" for="admin-business-return-address">Return address<textarea id="admin-business-return-address" name="returnAddress" rows="4" maxlength="1000" autocomplete="off" placeholder="Not yet provided"></textarea><span class="admin-field-hint">Enter the approved return location when available. This does not enable checkout or returns processing.</span></label>
+            </div>
+            <div class="admin-business-actions"><p id="admin-business-save-state" role="status" aria-live="polite">Your saved information will appear here.</p><div><button class="admin-button admin-button-secondary" type="button" id="admin-business-discard" disabled>Discard unsaved changes</button><button class="admin-button" type="submit" id="admin-business-save">Save public details</button></div></div>
+          </form>
+        </section>
+        <footer class="admin-footer"><span>Velora, with intention.</span><a href="index.html">Back to the store ↗</a>
+      <nav class="legal-links" aria-label="Policies and privacy">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <button type="button" data-privacy-settings>Cookie settings</button>
+        <a href="business-details.html">Business Details</a>
+        <a href="unsubscribe.html">Unsubscribe</a>
+      </nav>
+    </footer>
+      </main>
+    </div>
+    <dialog class="admin-edit-dialog admin-catalog-editor" id="admin-edit-dialog" aria-labelledby="admin-edit-title">
+      <div class="admin-edit-heading"><div><p class="admin-eyebrow">THE FINER DETAILS</p><h2 id="admin-edit-title">Edit product</h2></div><button class="admin-dialog-close" type="button" id="admin-edit-close" aria-label="Close product editor">&times;</button></div>
+      <div class="admin-edit-product" id="admin-edit-summary"><img id="admin-edit-image" src="" alt="" width="64" height="80" /><div><strong id="admin-edit-name"></strong><span id="admin-edit-founder"></span></div></div>
+      <form id="admin-edit-form">
+        <div class="admin-editor-layout">
+          <div class="admin-editor-details">
+            <fieldset class="admin-editor-section"><legend><span>01</span> Product details</legend>
+              <label class="admin-field" for="admin-edit-product-name">Product name<input id="admin-edit-product-name" name="name" type="text" maxlength="160" required /></label>
+              <div class="admin-field-row">
+                <label class="admin-field" for="admin-edit-sku">SKU<input id="admin-edit-sku" name="sku" type="text" maxlength="64" placeholder="Generated when left blank" /><span class="admin-field-hint">A unique reference for this piece.</span></label>
+                <label class="admin-field" for="admin-edit-price">Price (EUR)<input id="admin-edit-price" name="price" type="number" min="1" max="100000" step="0.01" required inputmode="decimal" /></label>
+              </div>
+              <div class="admin-field-row">
+                <label class="admin-field" for="admin-edit-designer">Founder / designer<input id="admin-edit-designer" name="founder" type="text" list="admin-founders" maxlength="80" required /><datalist id="admin-founders"><option value="Beyza Keskinci"></option><option value="Derya Kasal"></option><option value="Luna Moretti"></option><option value="Victoria Mendez"></option></datalist></label>
+                <label class="admin-field" for="admin-edit-collection">Category<select id="admin-edit-collection" name="collection" required><option value="THE EVERYDAY EDIT">Everyday</option><option value="THE SOFT EDIT">Soft essentials</option><option value="THE MODEST EDIT">Modest dressing</option><option value="THE POLISHED EDIT">Polished</option><option value="THE TAILORED EDIT">Tailoring</option><option value="THE EVENING EDIT">Evening</option><option value="THE OCCASION EDIT">Occasion</option><option value="THE AFTER-HOURS EDIT">After hours</option></select></label>
+              </div>
+              <label class="admin-field" for="admin-edit-description">Description<textarea id="admin-edit-description" name="description" rows="5" maxlength="2000" required></textarea></label>
+            </fieldset>
+            <fieldset class="admin-editor-section"><legend><span>02</span> Inventory &amp; options</legend>
+              <label class="admin-field" for="admin-edit-stock">Available stock<input id="admin-edit-stock" name="stock" type="number" min="0" max="999999" step="1" inputmode="numeric" placeholder="Not tracked" /><span class="admin-field-hint">Leave blank for untracked stock. Zero marks this product as sold out.</span></label>
+              <fieldset class="admin-size-options"><legend>Available sizes</legend><div id="admin-size-options"><label><input type="checkbox" name="sizes" value="XS" />XS</label><label><input type="checkbox" name="sizes" value="S" />S</label><label><input type="checkbox" name="sizes" value="M" />M</label><label><input type="checkbox" name="sizes" value="L" />L</label><label><input type="checkbox" name="sizes" value="XL" />XL</label><label><input type="checkbox" name="sizes" value="XXL" />XXL</label><label><input type="checkbox" name="sizes" value="3XL" />3XL</label><label><input type="checkbox" name="sizes" value="One size" />One size</label></div></fieldset>
+              <div class="admin-field-row admin-color-row"><label class="admin-field" for="admin-edit-base-color">Primary color<input id="admin-edit-base-color" name="base_color" type="text" maxlength="40" value="Original" required /></label><label class="admin-field" for="admin-edit-color-hex">Color swatch<input id="admin-edit-color-hex" name="color_hex" type="color" value="#d1c8bd" /></label></div>
+              <p class="admin-field-hint" id="admin-existing-colors" hidden>Existing alternate-color photos are kept when you edit this piece.</p>
+            </fieldset>
+          </div>
+          <div class="admin-editor-media">
+            <fieldset class="admin-editor-section"><legend><span>03</span> Product photos</legend>
+              <p class="admin-media-intro">Give every piece its best angles. The first photo is the cover; shoppers can browse the rest.</p>
+              <label class="admin-upload-area" for="admin-image-files"><svg class="admin-icon"><use href="#studio-plus"/></svg><strong>Add product photos</strong><span>JPG, PNG or WebP &middot; up to 8 MB each</span><input id="admin-image-files" type="file" accept="image/jpeg,image/png,image/webp" multiple /></label>
+              <p class="admin-image-count" id="admin-image-count">0 of 12 photos</p>
+              <p class="admin-upload-status" id="admin-upload-status" role="status" aria-live="polite"></p>
+              <div class="admin-image-gallery" id="admin-image-gallery" aria-label="Product photos"></div>
+              <p class="admin-field-hint">Choose a cover, change the order, or remove a photo. Gallery photos show with the primary color.</p>
+            </fieldset>
+            <label class="admin-publish-control"><input id="admin-edit-published" name="published" type="checkbox" /><span><strong>Publish this product</strong><span>Make this piece visible in the collection. Leave off to save a draft.</span></span></label>
+          </div>
+        </div>
+        <p class="admin-edit-error" id="admin-edit-error" role="alert" hidden></p>
+        <div class="admin-edit-actions"><button class="admin-button admin-button-danger admin-editor-trash" type="button" id="admin-editor-trash" hidden>Move to trash</button><button class="admin-button admin-button-secondary" type="button" id="admin-edit-cancel">Cancel</button><button class="admin-button" type="submit" id="admin-edit-save">Save changes <span aria-hidden="true">&nearr;</span></button></div>
+      </form>
+    </dialog>
+    <dialog class="admin-edit-dialog admin-delete-dialog" id="admin-delete-dialog" aria-labelledby="admin-delete-title">
+      <div class="admin-edit-heading"><div><p class="admin-eyebrow">A LITTLE HOUSEKEEPING</p><h2 id="admin-delete-title">Move this piece to trash?</h2></div><button class="admin-dialog-close" type="button" id="admin-delete-close" aria-label="Cancel deletion">&times;</button></div>
+      <p class="admin-delete-name" id="admin-delete-name"></p><p class="admin-delete-explanation">It will be removed from the storefront. You can restore it as a draft from the Trash filter.</p>
+      <p class="admin-edit-error" id="admin-delete-error" role="alert" hidden></p>
+      <div class="admin-edit-actions"><button class="admin-button admin-button-secondary" type="button" id="admin-delete-cancel">Keep product</button><button class="admin-button admin-button-danger" type="button" id="admin-delete-confirm">Move to trash</button></div>
+    </dialog>
+    <div class="admin-toast" id="admin-toast" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+    <noscript><p class="admin-noscript">Please enable JavaScript to use the admin portal. <a href="index.html">Return to Velora</a>.</p></noscript>
+  </body>
+</html>

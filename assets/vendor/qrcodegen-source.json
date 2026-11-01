@@ -1,0 +1,8 @@
+{
+  "name": "Nayuki QR Code Generator",
+  "version": "1.8.0",
+  "source": "https://github.com/nayuki/QR-Code-generator/releases/download/v1.8.0/qrcodegen-v1.8.0-es6.js",
+  "license": "MIT",
+  "sha256": "6a1116192ed1dd67fa1bf31e77f5817103d71c23bbac24c382e698b7668bdd01",
+  "bytes": 45336
+}

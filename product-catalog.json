@@ -1,0 +1,474 @@
+{
+  "products": [
+    {
+      "id": "da1ec676efabfe8d",
+      "name": "The Ivory Linen Set",
+      "image": "assets/gallery/derya-ivory-linen-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 115,
+      "description": "An ivory two-piece concept with a linen-look texture and clean, relaxed lines.",
+      "published": true
+    },
+    {
+      "id": "6bf4acf66562795c",
+      "name": "The Sage Linen Set",
+      "image": "assets/gallery/derya-sage-linen-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 120,
+      "description": "A sage two-piece concept with a linen-look texture and a coordinated silhouette.",
+      "published": true
+    },
+    {
+      "id": "751e40965ad3a20d",
+      "name": "The Ivory Tailored Look",
+      "image": "assets/gallery/derya-ivory-tailored-look.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 190,
+      "description": "A crisp ivory silhouette with considered tailoring for a fresh, quietly confident finish.",
+      "published": true
+    },
+    {
+      "id": "1f89c653c09528d1",
+      "name": "The Emerald Tailored Suit",
+      "image": "assets/gallery/derya-emerald-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 245,
+      "description": "Rich emerald color and confident structure give this modern suit a memorable, elegant presence.",
+      "published": true
+    },
+    {
+      "id": "8ec4205f9115385e",
+      "name": "The Ivory Power Suit",
+      "image": "assets/gallery/derya-ivory-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 230,
+      "description": "A light, refined take on power dressing, shaped with a clean line and softly defined structure.",
+      "published": true
+    },
+    {
+      "id": "6834dbb23ca63224",
+      "name": "The Chocolate Longline Blazer",
+      "image": "assets/gallery/derya-chocolate-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 165,
+      "description": "A longline chocolate blazer brings depth and graceful structure to a versatile wardrobe layer.",
+      "published": true
+    },
+    {
+      "id": "e7adba5f950e57c3",
+      "name": "The Olive Trench Ensemble",
+      "image": "assets/gallery/derya-olive-trench.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 260,
+      "description": "A modern olive trench look with a fluid finish, designed to move easily between seasons.",
+      "published": true
+    },
+    {
+      "id": "18610d00ae8436f0",
+      "name": "The Taupe Tailored Set",
+      "image": "assets/gallery/derya-taupe-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 185,
+      "description": "Soft taupe tailoring balances a composed silhouette with the ease of a set made to wear together.",
+      "published": true
+    },
+    {
+      "id": "070e122b3b2a0a1d",
+      "name": "The Chocolate Blazer Co-ord",
+      "image": "assets/gallery/derya-chocolate-coord.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 175,
+      "description": "A tonal chocolate co-ord with an easy, pulled-together shape and understated polish.",
+      "published": true
+    },
+    {
+      "id": "9b7becdf69faba45",
+      "name": "The Rosewater Occasion Abaya",
+      "image": "assets/gallery/rosewater-occasion-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 190,
+      "description": "A graceful rosewater abaya with fluid draping and an occasion-ready sense of softness.",
+      "published": true
+    },
+    {
+      "id": "a01299210acf7627",
+      "name": "The Sandstone Drape Abaya",
+      "image": "assets/gallery/modest-drape-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 210,
+      "description": "Sculptural sandstone draping creates an elegant, modest silhouette with movement in every step.",
+      "published": true
+    },
+    {
+      "id": "27e73ff910a71df3",
+      "name": "The Espresso Evening Abaya",
+      "image": "assets/gallery/espresso-evening-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 230,
+      "description": "Deep espresso tones and a sweeping line bring quiet drama to this refined evening abaya.",
+      "published": true
+    },
+    {
+      "id": "8e861c306b731e29",
+      "name": "The Mocha Belted Abaya",
+      "image": "assets/gallery/mocha-belted-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 215,
+      "description": "A softly defined waist and rich mocha palette lend this modest look a beautifully balanced shape.",
+      "published": true
+    },
+    {
+      "id": "1ae845d453aa1fce",
+      "name": "The Champagne Occasion Abaya",
+      "image": "assets/gallery/champagne-occasion-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 225,
+      "description": "Luminous champagne color and graceful coverage make this a considered choice for special moments.",
+      "published": true
+    },
+    {
+      "id": "e1051eeab7dcec5f",
+      "name": "The Espresso Trench Look",
+      "image": "assets/gallery/espresso-trench-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 255,
+      "description": "A refined espresso layer with a long, clean line for a confident city-ready finish.",
+      "published": true
+    },
+    {
+      "id": "4b961836a5114101",
+      "name": "The Stone Tailored Look",
+      "image": "assets/gallery/stone-tailored-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 185,
+      "description": "Soft stone tailoring brings a modern, understated ease to an elegant, covered silhouette.",
+      "published": true
+    },
+    {
+      "id": "a576c37940c1e9e5",
+      "name": "The Sculpted Wrap Blouse",
+      "image": "assets/gallery/look-09.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 65,
+      "description": "A sculpted wrap shape gives this versatile blouse a flattering line and a little everyday distinction.",
+      "published": true
+    },
+    {
+      "id": "9f7d06414a165d1a",
+      "name": "The Heritage Blazer",
+      "image": "assets/gallery/look-11.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 165,
+      "description": "A timeless blazer with considered proportions, made to anchor both tailored and relaxed looks.",
+      "published": true
+    },
+    {
+      "id": "c4ddabd11da2e603",
+      "name": "The After-Hours Power Suit",
+      "image": "assets/gallery/look-12.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 245,
+      "description": "Evening-ready tailoring pairs a sharp silhouette with a confident, modern finish.",
+      "published": true
+    },
+    {
+      "id": "edc6983c2ab5268c",
+      "name": "The City-Cream Trouser Set",
+      "image": "assets/gallery/derya-city-cream-look.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 175,
+      "description": "A sunlit cream blazer and flowing trousers create a polished city look with an easy, contemporary feel.",
+      "published": true
+    },
+    {
+      "id": "e57f33ce2e1562d2",
+      "name": "The Cloud-Knit Lounge Set",
+      "image": "assets/gallery/derya-soft-knit-lounge-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE SOFT EDIT",
+      "price": 110,
+      "description": "A tactile knit and relaxed matching layers bring a soft, considered finish to slow days at home.",
+      "published": true
+    },
+    {
+      "id": "0c9f048ac48a707e",
+      "name": "The Rose-Stripe Pajama Set",
+      "image": "assets/gallery/derya-rose-stripe-pajama-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE SOFT EDIT",
+      "price": 85,
+      "description": "A delicate rose stripe and relaxed pajama silhouette make unwinding feel quietly special.",
+      "published": true
+    },
+    {
+      "id": "8896b52b23cd0824",
+      "name": "The Ivory Tie-Neck Set",
+      "image": "assets/gallery/luna-ivory-tie-neck-set.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 135,
+      "description": "An airy ivory blouse and softly tailored trousers, finished with a graceful tie neckline for understated polish.",
+      "published": true
+    },
+    {
+      "id": "40b272d4673736dc",
+      "name": "The Cloud-Knit Layer Set",
+      "image": "assets/gallery/luna-cloud-knit-layer-set.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 115,
+      "description": "A relaxed knit layer and matching soft separates create an easy, tactile look for slower days.",
+      "published": true
+    },
+    {
+      "id": "72cb66b82bef90ad",
+      "name": "The Taupe Satin Lounge Set",
+      "image": "assets/gallery/luna-taupe-satin-lounge-set-hd.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 95,
+      "description": "A fluid taupe satin set with delicate lace details, made for a quietly elevated evening in.",
+      "published": true
+    },
+    {
+      "id": "0cece17490138dac",
+      "name": "The Weekend Denim Look",
+      "image": "assets/gallery/luna-weekend-denim-look-hd.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 150,
+      "description": "Relaxed blue denim and warm chocolate layers give this off-duty look a confident city feel.",
+      "published": true
+    },
+    {
+      "id": "7f2d1f88d06fb45c",
+      "name": "The Midnight Satin Gown",
+      "image": "assets/gallery/luna-midnight-satin-gown-hd.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVENING EDIT",
+      "price": 180,
+      "description": "A striking black satin gown with a fluid silhouette, made for an elegant evening out.",
+      "published": true
+    },
+    {
+      "id": "e9a2c2dfa9f8f42d",
+      "name": "The Champagne Satin Evening Dress",
+      "image": "assets/gallery/luna-champagne-satin-evening-dress.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVENING EDIT",
+      "price": 195,
+      "description": "A luminous champagne satin gown with graceful draping, designed for memorable evenings.",
+      "published": true
+    },
+    {
+      "id": "cbc653452f6001b8",
+      "name": "The Ivory Tailored Suit",
+      "image": "assets/gallery/luna-ivory-tailored-suit.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 240,
+      "description": "A beautifully composed ivory blazer and trouser suit for polished, modern dressing.",
+      "published": true
+    },
+    {
+      "id": "66160c188c347697",
+      "name": "The High-Neck Ivory Trouser Set",
+      "image": "assets/gallery/luna-high-neck-ivory-trouser-set.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 150,
+      "description": "A soft high-neck blouse and flowing ivory trousers create an effortlessly refined silhouette.",
+      "published": true
+    },
+    {
+      "id": "a2e2bfb6aed5c608",
+      "name": "The Beige Trench Tailored Look",
+      "image": "assets/gallery/luna-beige-trench-tailored-look.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 275,
+      "description": "A fluid beige trench layered over tonal tailoring brings timeless polish to the city.",
+      "published": true
+    },
+    {
+      "id": "2f1f477ab7e06ceb",
+      "name": "The Ivory Executive Suit",
+      "image": "assets/gallery/victoria-ivory-executive-suit.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 240,
+      "description": "A softly structured ivory blazer and wide-leg trousers bring quiet confidence to modern tailoring.",
+      "published": true
+    },
+    {
+      "id": "4d51a0de1ad5592f",
+      "name": "The Cloud Ribbed Lounge Set",
+      "image": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE SOFT EDIT",
+      "price": 110,
+      "description": "A ribbed knit top and relaxed trousers make this creamy lounge set an easy choice for slower days.",
+      "published": true
+    },
+    {
+      "id": "2f92545d9cbed177",
+      "name": "The Off-Shoulder Denim Look",
+      "image": "assets/gallery/victoria-off-shoulder-denim-look.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 145,
+      "description": "An easy off-shoulder knit and relaxed blue denim create a polished take on casual dressing.",
+      "published": true
+    },
+    {
+      "id": "4ba84e164ca92c24",
+      "name": "The Soft-Neutral Knit Set",
+      "image": "assets/gallery/victoria-soft-neutral-knit-set.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 130,
+      "description": "A fine neutral knit paired with fluid ivory trousers makes a graceful, everyday combination.",
+      "published": true
+    },
+    {
+      "id": "4e2b0a33f31318ac",
+      "name": "The Ivory Knit-Tailored Set",
+      "image": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 145,
+      "description": "A fitted high-neck knit and tailored ivory trousers balance softness with a clean, considered line.",
+      "published": true
+    },
+    {
+      "id": "52e502c50f2fff58",
+      "name": "The Champagne Halter Gown",
+      "image": "assets/gallery/victoria-champagne-halter-gown.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 195,
+      "description": "A luminous champagne halter gown drapes elegantly for celebrations and evenings out.",
+      "published": true
+    },
+    {
+      "id": "874d7c0173a9d2a8",
+      "name": "The Midnight Satin Slip Gown",
+      "image": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 180,
+      "description": "A sleek black satin gown with a fluid silhouette brings understated drama after dark.",
+      "published": true
+    },
+    {
+      "id": "ee63e133d40760be",
+      "name": "The Ivory Trench Ensemble",
+      "image": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 285,
+      "description": "A long ivory trench layered over tonal separates makes a striking, timeless city look.",
+      "published": true
+    },
+    {
+      "id": "6664bf77ae517850",
+      "name": "The Champagne Blouse & Black Trousers",
+      "image": "assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 150,
+      "description": "A lustrous champagne blouse and fluid black trousers create an effortless evening-ready pairing.",
+      "published": true
+    },
+    {
+      "id": "7b8ef54e6321f222",
+      "name": "The Taupe Knit & Trouser Set",
+      "image": "assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 155,
+      "description": "A soft ivory knit and flowing taupe trousers make a graceful, polished look for everyday wear.",
+      "published": true
+    },
+    {
+      "id": "c9f06c204bdee72a",
+      "name": "The Ivory Cardigan Trouser Set",
+      "image": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE SOFT EDIT",
+      "price": 185,
+      "description": "A longline cardigan layers over an ivory knit-look top and tailored trousers in a tonal outfit concept.",
+      "published": true
+    },
+    {
+      "id": "e51eb39916bcceab",
+      "name": "The Ivory Longline Coat",
+      "image": "assets/gallery/beyza-ivory-longline-coat-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 295,
+      "description": "A softly structured longline coat brings timeless polish to a light, tonal outfit.",
+      "published": true
+    },
+    {
+      "id": "fe93ba37bb9ba2f6",
+      "name": "The Taupe Longline Coat Set",
+      "image": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 295,
+      "description": "A warm taupe coat and fluid trousers create an elegant layered silhouette with a modern finish.",
+      "published": true
+    },
+    {
+      "id": "f62ee6e41ab495d3",
+      "name": "The Champagne Satin Occasion Gown",
+      "image": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE OCCASION EDIT",
+      "price": 225,
+      "description": "A luminous champagne satin gown falls in fluid folds for an occasion-ready statement.",
+      "published": true
+    },
+    {
+      "id": "db747bb55dc91722",
+      "name": "The Weekend Denim Jacket Look",
+      "image": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 175,
+      "description": "A relaxed brown jacket and pale wide-leg denim make an effortless, city-ready pairing.",
+      "published": true
+    },
+    {
+      "id": "f348c4635fca0606",
+      "name": "The Espresso Tailored Suit",
+      "image": "assets/gallery/beyza-espresso-tailored-suit.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 245,
+      "description": "Rich espresso tailoring pairs a softly structured blazer with fluid trousers for confident dressing.",
+      "published": true
+    }
+  ]
+}

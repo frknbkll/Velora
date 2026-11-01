@@ -1,0 +1,65 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Product color verification</title>
+<pre id="results">Running…</pre>
+<iframe id="site" src="../index.html" width="1440" height="1000"></iframe>
+<script>
+site.onload = async () => {
+  const checks = [];
+  const check = (condition, message) => {
+    if (!condition) throw new Error(message);
+    checks.push(message);
+  };
+  try {
+    const w = site.contentWindow;
+    const d = w.document;
+    if (!d.querySelector('#looks-grid')) return;
+    const products = w.eval('individualLooks');
+    check(products.length === 47, 'All 47 products initialized');
+    while (!d.querySelector('#show-more-looks').hidden) d.querySelector('#show-more-looks').click();
+    check(d.querySelectorAll('.look-tile').length === 47, 'All 47 product cards rendered');
+    for (const tile of d.querySelectorAll('.look-tile')) {
+      const options = tile.querySelector('.product-options');
+      const product = products.find(p => p.key === options.dataset.productKey);
+      const swatches = options.querySelectorAll('.product-color-option');
+      const image = tile.querySelector('img');
+      check(swatches.length === 3, `${product.name}: three photographed colors`);
+      for (let index = 1; index < swatches.length; index += 1) {
+        const color = product.colors[index];
+        swatches[index].click();
+        check(image.getAttribute('src') === color.image, `${product.name}: ${color.name} image selected`);
+        check(swatches[index].getAttribute('aria-pressed') === 'true', `${product.name}: accessible selection updated`);
+        tile.querySelector('.look-quick-view').click();
+        check(d.querySelector('.product-dialog-image').getAttribute('src') === color.image, `${product.name}: quick view matches`);
+        d.querySelector('.product-dialog .product-color-option').click();
+        check(image.getAttribute('src') === product.image, `${product.name}: original restored from quick view`);
+        d.querySelector('#product-dialog').close();
+      }
+    }
+    const first = d.querySelector('.look-tile');
+    const product = products.find(p => p.key === first.querySelector('.product-options').dataset.productKey);
+    first.querySelectorAll('.product-color-option')[1].click();
+    for (const img of d.querySelectorAll('img[data-variant-product-key]')) {
+      if (img.dataset.variantProductKey === product.key && !img.closest('.shop-line-item')) {
+        check(img.getAttribute('src') === product.colors[1].image, 'Matching product images stay synchronized');
+      }
+    }
+    d.querySelector('.look-filter[data-founder="all"]').click();
+    const rerendered = [...d.querySelectorAll('.look-tile')].find(tile => tile.querySelector('.product-options').dataset.productKey === product.key);
+    check(rerendered.querySelector('img').getAttribute('src') === product.colors[1].image, 'Color selection survives filtering and rerendering');
+    rerendered.querySelector('.add-to-bag').click();
+    d.querySelector('[data-shop-view="cart"]').click();
+    check([...d.querySelectorAll('.shop-line-item img')].some(img => img.getAttribute('src') === product.colors[1].image), 'Bag uses the purchased color image');
+    const imageChecks = products.flatMap(p => p.colors.map(async c => {
+      const img = new Image();
+      img.src = '../' + c.image;
+      await img.decode();
+    }));
+    await Promise.all(imageChecks);
+    check(true, `All ${products.reduce((sum, p) => sum + p.colors.length, 0)} product images decode successfully`);
+    results.textContent = 'PASS: ' + checks.length + ' checks\n' + checks.join('\n');
+  } catch (error) {
+    results.textContent = 'FAIL: ' + (error.stack || String(error)) + '\nCompleted ' + checks.length + ' checks';
+  }
+};
+</script>

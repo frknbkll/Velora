@@ -1,0 +1,378 @@
+[
+  {
+    "index": 0,
+    "product": "The Ivory Linen Set",
+    "reference": "assets/gallery/derya-ivory-linen-set.jpg",
+    "color": "Terracotta",
+    "image": "assets/gallery/colors/derya-ivory-linen-set-terracotta-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Terracotta (#b66d50). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 1,
+    "product": "The Sage Linen Set",
+    "reference": "assets/gallery/derya-sage-linen-set.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/derya-sage-linen-set-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: original fashion photograph. Create a professional ecommerce photo of the same adult woman wearing the same button-front long-sleeved blouse and tailored trousers in navy blue (#26344c). Style the blouse fully buttoned up to the collar, with full chest coverage. Change to a relaxed three-quarter standing pose, one hand in trouser pocket and the other by her side. Preserve her face, hair, identity, skin tone, blouse fabric, sleeves and construction, trousers, jewelry, shoes, studio background and full-length framing. Modest everyday tailoring photograph. No text."
+  },
+  {
+    "index": 2,
+    "product": "The Ivory Tailored Look",
+    "reference": "assets/gallery/derya-ivory-tailored-look.jpg",
+    "color": "Black",
+    "image": "assets/gallery/colors/derya-ivory-tailored-look-black-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Black (#252321). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 3,
+    "product": "The Emerald Tailored Suit",
+    "reference": "assets/gallery/derya-emerald-tailoring.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/derya-emerald-tailoring-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 4,
+    "product": "The Ivory Power Suit",
+    "reference": "assets/gallery/derya-ivory-tailoring.jpg",
+    "color": "Blue",
+    "image": "assets/gallery/colors/derya-ivory-tailoring-blue-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Blue (#7b93b5). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 5,
+    "product": "The Chocolate Longline Blazer",
+    "reference": "assets/gallery/derya-chocolate-tailoring.jpg",
+    "color": "Sage",
+    "image": "assets/gallery/colors/derya-chocolate-tailoring-sage-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Sage (#9b9d83). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 6,
+    "product": "The Olive Trench Ensemble",
+    "reference": "assets/gallery/derya-olive-trench.jpg",
+    "color": "Camel",
+    "image": "assets/gallery/colors/derya-olive-trench-camel-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Camel (#b68b61). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 7,
+    "product": "The Taupe Tailored Set",
+    "reference": "assets/gallery/derya-taupe-tailoring.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/derya-taupe-tailoring-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 8,
+    "product": "The Chocolate Blazer Co-ord",
+    "reference": "assets/gallery/derya-chocolate-coord.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/derya-chocolate-coord-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 9,
+    "product": "The Rosewater Occasion Abaya",
+    "reference": "assets/gallery/rosewater-occasion-abaya.jpg",
+    "color": "Lavender",
+    "image": "assets/gallery/colors/rosewater-occasion-abaya-lavender-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Lavender (#aaa0bd). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 10,
+    "product": "The Sandstone Drape Abaya",
+    "reference": "assets/gallery/modest-drape-abaya.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/modest-drape-abaya-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 11,
+    "product": "The Espresso Evening Abaya",
+    "reference": "assets/gallery/espresso-evening-abaya.jpg",
+    "color": "Emerald",
+    "image": "assets/gallery/colors/espresso-evening-abaya-emerald-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Emerald (#27624d). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 12,
+    "product": "The Mocha Belted Abaya",
+    "reference": "assets/gallery/mocha-belted-abaya.jpg",
+    "color": "Black",
+    "image": "assets/gallery/colors/mocha-belted-abaya-black-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Black (#252321). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 13,
+    "product": "The Champagne Occasion Abaya",
+    "reference": "assets/gallery/champagne-occasion-abaya.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/champagne-occasion-abaya-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 14,
+    "product": "The Espresso Trench Look",
+    "reference": "assets/gallery/espresso-trench-look.jpg",
+    "color": "Stone",
+    "image": "assets/gallery/colors/espresso-trench-look-stone-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Stone (#c4b8a5). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 15,
+    "product": "The Stone Tailored Look",
+    "reference": "assets/gallery/stone-tailored-look.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/stone-tailored-look-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Also recolor the coordinated hijab to match the main garment. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 16,
+    "product": "The Sculpted Wrap Blouse",
+    "reference": "assets/gallery/look-09.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/look-09-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Make a different natural mirror-selfie pose: angle shoulders slightly to the opposite side and shift weight naturally, still holding the same phone. Preserve the mirror and room. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 17,
+    "product": "The Heritage Blazer",
+    "reference": "assets/gallery/look-11.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/look-11-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Make a different natural mirror-selfie pose: angle shoulders slightly to the opposite side and shift weight naturally, still holding the same phone. Preserve the mirror and room. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 18,
+    "product": "The After-Hours Power Suit",
+    "reference": "assets/gallery/look-12.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/look-12-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Make a different natural mirror-selfie pose: angle shoulders slightly to the opposite side and shift weight naturally, still holding the same phone. Preserve the mirror and room. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 19,
+    "product": "The City-Cream Trouser Set",
+    "reference": "assets/gallery/derya-city-cream-look.jpg",
+    "color": "Blue",
+    "image": "assets/gallery/colors/derya-city-cream-look-blue-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Blue (#7b93b5). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 20,
+    "product": "The Cloud-Knit Lounge Set",
+    "reference": "assets/gallery/derya-soft-knit-lounge-set.jpg",
+    "color": "Rose",
+    "image": "assets/gallery/colors/derya-soft-knit-lounge-set-rose-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Rose (#b87978). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a different elegant seated pose, torso angled slightly the other way and hands resting naturally. Maintain modest coverage and the same setting and furniture. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 21,
+    "product": "The Rose-Stripe Pajama Set",
+    "reference": "assets/gallery/derya-rose-stripe-pajama-set.jpg",
+    "color": "Lavender",
+    "image": "assets/gallery/colors/derya-rose-stripe-pajama-set-lavender-pose.jpg",
+    "prompt": "Use case: product-mockup. Use the supplied photo only as a reference for the clothing design. Create a garment-only ecommerce studio photograph with NO PERSON, no skin, no human body, no mannequin. Show the same garments laid flat on a warm white studio surface, arranged diagonally with naturally folded sleeves or hem, a different arrangement from a straight-on flat lay. Preserve the garment cut, seams, materials and details. Recolor the garments to Lavender (#aaa0bd). Show a button-front striped pajama shirt and matching shorts; replace pink stripes with lavender and keep white stripes white. Portrait composition, soft diffused studio light, no text or props."
+  },
+  {
+    "index": 22,
+    "product": "The Ivory Tie-Neck Set",
+    "reference": "assets/gallery/luna-ivory-tie-neck-set.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/luna-ivory-tie-neck-set-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 23,
+    "product": "The Cloud-Knit Layer Set",
+    "reference": "assets/gallery/luna-cloud-knit-layer-set.jpg",
+    "color": "Mocha",
+    "image": "assets/gallery/colors/luna-cloud-knit-layer-set-mocha-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Mocha (#896b58). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 24,
+    "product": "The Taupe Satin Lounge Set",
+    "reference": "assets/gallery/luna-taupe-satin-lounge-set-hd.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/luna-taupe-satin-lounge-set-hd-burgundy-pose.jpg",
+    "prompt": "Use case: product-mockup. Use the supplied photo only as a reference for the clothing design. Create a garment-only ecommerce studio photograph with NO PERSON, no skin, no human body, no mannequin. Show the same garments laid flat on a warm white studio surface, arranged diagonally with naturally folded sleeves or hem, a different arrangement from a straight-on flat lay. Preserve the garment cut, seams, materials and details. Recolor the garments to Burgundy (#783947). Show a satin long-sleeve shirt and matching trousers. Portrait composition, soft diffused studio light, no text or props."
+  },
+  {
+    "index": 25,
+    "product": "The Weekend Denim Look",
+    "reference": "assets/gallery/luna-weekend-denim-look-hd.jpg",
+    "color": "Indigo",
+    "image": "assets/gallery/colors/luna-weekend-denim-look-hd-indigo-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Indigo (#334b73). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Recolor ONLY the denim jeans; preserve all tops and jackets. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 26,
+    "product": "The Midnight Satin Gown",
+    "reference": "assets/gallery/luna-midnight-satin-gown-hd.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/luna-midnight-satin-gown-hd-burgundy-pose.jpg",
+    "prompt": "Use case: product-mockup. Use the supplied photo only as a reference for the clothing design. Create a garment-only ecommerce studio photograph with NO PERSON, no skin, no human body, no mannequin. Show the same garments laid flat on a warm white studio surface, arranged diagonally with naturally folded sleeves or hem, a different arrangement from a straight-on flat lay. Preserve the garment cut, seams, materials and details. Recolor the garments to Burgundy (#783947). Show the same satin evening dress. Portrait composition, soft diffused studio light, no text or props."
+  },
+  {
+    "index": 27,
+    "product": "The Champagne Satin Evening Dress",
+    "reference": "assets/gallery/luna-champagne-satin-evening-dress.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/luna-champagne-satin-evening-dress-navy-pose.jpg",
+    "prompt": "Use case: product-mockup. Use the supplied photo only as a reference for the clothing design. Create a garment-only ecommerce studio photograph with NO PERSON, no skin, no human body, no mannequin. Show the same garments laid flat on a warm white studio surface, arranged diagonally with naturally folded sleeves or hem, a different arrangement from a straight-on flat lay. Preserve the garment cut, seams, materials and details. Recolor the garments to Navy (#26344c). Show the same satin evening dress. Portrait composition, soft diffused studio light, no text or props."
+  },
+  {
+    "index": 28,
+    "product": "The Ivory Tailored Suit",
+    "reference": "assets/gallery/luna-ivory-tailored-suit.jpg",
+    "color": "Blue",
+    "image": "assets/gallery/colors/luna-ivory-tailored-suit-blue-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Blue (#7b93b5). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 29,
+    "product": "The High-Neck Ivory Trouser Set",
+    "reference": "assets/gallery/luna-high-neck-ivory-trouser-set.jpg",
+    "color": "Rose",
+    "image": "assets/gallery/colors/luna-high-neck-ivory-trouser-set-rose-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Rose (#b87978). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 30,
+    "product": "The Beige Trench Tailored Look",
+    "reference": "assets/gallery/luna-beige-trench-tailored-look.jpg",
+    "color": "Chocolate",
+    "image": "assets/gallery/colors/luna-beige-trench-tailored-look-chocolate-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Chocolate (#584035). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 31,
+    "product": "The Ivory Executive Suit",
+    "reference": "assets/gallery/victoria-ivory-executive-suit.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/victoria-ivory-executive-suit-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 32,
+    "product": "The Cloud Ribbed Lounge Set",
+    "reference": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+    "color": "Rose",
+    "image": "assets/gallery/colors/victoria-cloud-ribbed-lounge-set-rose-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Rose (#b87978). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 33,
+    "product": "The Off-Shoulder Denim Look",
+    "reference": "assets/gallery/victoria-off-shoulder-denim-look.jpg",
+    "color": "Indigo",
+    "image": "assets/gallery/colors/victoria-off-shoulder-denim-look-indigo-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Indigo (#334b73). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Recolor ONLY the denim jeans; preserve all tops and jackets. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 34,
+    "product": "The Soft-Neutral Knit Set",
+    "reference": "assets/gallery/victoria-soft-neutral-knit-set.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/victoria-soft-neutral-knit-set-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 35,
+    "product": "The Ivory Knit-Tailored Set",
+    "reference": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/victoria-ivory-knit-tailored-set-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 36,
+    "product": "The Champagne Halter Gown",
+    "reference": "assets/gallery/victoria-champagne-halter-gown.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/victoria-champagne-halter-gown-burgundy-pose.jpg",
+    "prompt": "Use case: product-mockup. Use the supplied photo only as a reference for the clothing design. Create a garment-only ecommerce studio photograph with NO PERSON, no skin, no human body, no mannequin. Show the same garments laid flat on a warm white studio surface, arranged diagonally with naturally folded sleeves or hem, a different arrangement from a straight-on flat lay. Preserve the garment cut, seams, materials and details. Recolor the garments to Burgundy (#783947). Show the same satin evening dress. Portrait composition, soft diffused studio light, no text or props."
+  },
+  {
+    "index": 37,
+    "product": "The Midnight Satin Slip Gown",
+    "reference": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+    "color": "Camel",
+    "image": "assets/gallery/colors/victoria-midnight-satin-slip-gown-camel-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Camel (#b68b61). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 38,
+    "product": "The Ivory Trench Ensemble",
+    "reference": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/victoria-ivory-trench-ensemble-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 39,
+    "product": "The Champagne Blouse & Black Trousers",
+    "reference": "assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+    "color": "Blue",
+    "image": "assets/gallery/colors/victoria-champagne-blouse-black-trousers-blue-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Blue (#7b93b5). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep contrasting inner tops unchanged. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 40,
+    "product": "The Taupe Knit & Trouser Set",
+    "reference": "assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/beyza-taupe-knit-trouser-look-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Recolor ONLY the tailored trousers; keep the ivory top unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 41,
+    "product": "The Ivory Cardigan Trouser Set",
+    "reference": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+    "color": "Rose",
+    "image": "assets/gallery/colors/beyza-ivory-cardigan-trouser-set-rose-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Rose (#b87978). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Use a new gentle walking pose, taking a small step forward and turning the shoulders slightly. Keep the face clearly visible. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 42,
+    "product": "The Ivory Longline Coat",
+    "reference": "assets/gallery/beyza-ivory-longline-coat-look.jpg",
+    "color": "Camel",
+    "image": "assets/gallery/colors/beyza-ivory-longline-coat-look-camel-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Camel (#b68b61). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 43,
+    "product": "The Taupe Longline Coat Set",
+    "reference": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+    "color": "Burgundy",
+    "image": "assets/gallery/colors/beyza-taupe-longline-coat-set-burgundy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Burgundy (#783947). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 44,
+    "product": "The Champagne Satin Occasion Gown",
+    "reference": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+    "color": "Navy",
+    "image": "assets/gallery/colors/beyza-champagne-satin-occasion-gown-navy-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Navy (#26344c). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Use a different elegant seated pose, torso angled slightly the other way and hands resting naturally. Maintain modest coverage and the same setting and furniture. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 45,
+    "product": "The Weekend Denim Jacket Look",
+    "reference": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+    "color": "Indigo",
+    "image": "assets/gallery/colors/beyza-weekend-denim-jacket-look-indigo-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Indigo (#334b73). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Recolor ONLY the denim jeans; preserve all tops and jackets. Use a new three-quarter standing pose, shoulders turned slightly left, one hand relaxed by the side and the other lightly resting at the waist. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  },
+  {
+    "index": 46,
+    "product": "The Espresso Tailored Suit",
+    "reference": "assets/gallery/beyza-espresso-tailored-suit.jpg",
+    "color": "Blue",
+    "image": "assets/gallery/colors/beyza-espresso-tailored-suit-blue-pose.jpg",
+    "prompt": "Use case: identity-preserve. Edit target: supplied original fashion product photograph. Create an additional ecommerce color variant of the SAME clothing in Blue (#7b93b5). Change only the main garment and matching same-color trousers, keeping exactly the clothing cut, fabric, neckline, sleeve length, details and coverage. Keep the black hijab and contrasting inner tops unchanged. Use a new natural standing pose with weight shifted to the opposite leg, one hand at the hip and the other relaxed. Preserve precisely the same adult woman's identity, face, skin tone, hair or hijab styling, body proportions, accessories and shoes. Keep the same background and lighting. Keep the original full-length or portrait crop, clear professional fashion photography. No text or collage."
+  }
+]

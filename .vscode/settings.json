@@ -1,0 +1,8 @@
+{
+  "liveServer.settings.root": "/preview",
+  "liveServer.settings.host": "127.0.0.1",
+  "liveServer.settings.useLocalIp": false,
+  "liveServer.settings.mount": [],
+  "liveServer.settings.proxy": { "enable": false },
+  "liveServer.settings.NoBrowser": true
+}

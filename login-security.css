@@ -1,0 +1,5 @@
+.login-verification h2 { margin: 0 0 12px; font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.5rem); font-weight: 400; }
+.login-verification > p { margin-bottom: 24px; color: #756d63; font-size: 14px; line-height: 1.7; }
+.login-verification-back { min-height: 44px; padding: 8px; border: 0; background: transparent; color: #756d63; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.login-verification-back:hover { color: var(--accent); }
+#login-mfa-code { font-variant-numeric: tabular-nums; letter-spacing: .12em; }

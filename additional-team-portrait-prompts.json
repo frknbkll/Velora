@@ -1,0 +1,82 @@
+[
+  {
+    "section": "leadership",
+    "name": "Elena Marquez",
+    "age": 29,
+    "role": "Business Operations Coordinator",
+    "appearance": "Spanish woman age 29, warm olive skin, dark brown sleek shoulder-length hair tucked behind one ear, elegant ivory tailored waistcoat over a modest silk blouse and matching wide-leg trousers, delicate gold earrings, polished natural makeup with soft brown eyeliner and muted rose lipstick",
+    "bio": "Elena brings a calm, organized approach to team coordination, helping plans, schedules, and everyday priorities move forward together.",
+    "image": "assets/team/elena-marquez.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Spanish woman age 29, warm olive skin, dark brown sleek shoulder-length hair tucked behind one ear, elegant ivory tailored waistcoat over a modest silk blouse and matching wide-leg trousers, delicate gold earrings, polished natural makeup with soft brown eyeliner and muted rose lipstick. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "creative-direction",
+    "name": "Chloé Dubois",
+    "age": 27,
+    "role": "Visual Content Designer",
+    "appearance": "French woman age 27, fair skin, softly waved copper hair just past the shoulders, refined black turtleneck with a beautifully tailored camel blazer, minimal gold jewelry, tasteful peach blush, subtle winged eyeliner and natural pink lips",
+    "bio": "Chloé develops thoughtful visual concepts and layouts, bringing a fresh eye to the details that shape Velora’s creative world.",
+    "image": "assets/team/chloe-dubois.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult French woman age 27, fair skin, softly waved copper hair just past the shoulders, refined black turtleneck with a beautifully tailored camel blazer, minimal gold jewelry, tasteful peach blush, subtle winged eyeliner and natural pink lips. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "fashion-design",
+    "name": "Samira El Idrissi",
+    "age": 28,
+    "role": "Textile & Print Designer",
+    "appearance": "Moroccan woman age 28, medium olive skin, beautifully styled muted sage hijab, elegant cream high-neck blouse with a warm taupe tailored blazer, restrained gold jewelry, carefully blended warm eye makeup and soft nude lipstick",
+    "bio": "Samira explores color, fabric, and pattern, bringing tactile references and considered surface details into the design process.",
+    "image": "assets/team/samira-el-idrissi.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Moroccan woman age 28, medium olive skin, beautifully styled muted sage hijab, elegant cream high-neck blouse with a warm taupe tailored blazer, restrained gold jewelry, carefully blended warm eye makeup and soft nude lipstick. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "brand-marketing",
+    "name": "Valentina Costa",
+    "age": 26,
+    "role": "Campaign Coordinator",
+    "appearance": "Brazilian woman age 26, medium tan skin, glossy dark brown long hair styled in a low ponytail, fashionable navy double-breasted blazer over an ivory crew-neck silk blouse, small gold hoops, professionally applied subtle bronze makeup and dusty rose lips",
+    "bio": "Valentina helps bring campaign ideas together, coordinating creative details and timelines with an eye for a consistent brand story.",
+    "image": "assets/team/valentina-costa.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Brazilian woman age 26, medium tan skin, glossy dark brown long hair styled in a low ponytail, fashionable navy double-breasted blazer over an ivory crew-neck silk blouse, small gold hoops, professionally applied subtle bronze makeup and dusty rose lips. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "social-media",
+    "name": "Nia Brooks",
+    "age": 25,
+    "role": "Social Content Creator",
+    "appearance": "Black woman age 25, rich brown skin, stylish natural curls in a soft shoulder-length shape, elegant soft rose tailored blazer over a modest cream knit top, sculptural small gold earrings, glowing natural makeup with subtle eyeliner and warm berry-nude lipstick",
+    "bio": "Nia creates approachable style-led content, translating the collection’s textures, colors, and everyday details into fresh stories.",
+    "image": "assets/team/nia-brooks.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Black woman age 25, rich brown skin, stylish natural curls in a soft shoulder-length shape, elegant soft rose tailored blazer over a modest cream knit top, sculptural small gold earrings, glowing natural makeup with subtle eyeliner and warm berry-nude lipstick. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "ecommerce",
+    "name": "Yuna Park",
+    "age": 27,
+    "role": "E-commerce Content Coordinator",
+    "appearance": "Korean woman age 27, light natural complexion, glossy straight black hair with a soft side part, sophisticated chocolate brown fitted blazer over an ivory high-neck blouse, delicate pearl earrings, refined Korean-style soft pink makeup and subtle defined eyes",
+    "bio": "Yuna brings care and clarity to product content, helping each piece feel easy to discover and understand online.",
+    "image": "assets/team/yuna-park.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Korean woman age 27, light natural complexion, glossy straight black hair with a soft side part, sophisticated chocolate brown fitted blazer over an ivory high-neck blouse, delicate pearl earrings, refined Korean-style soft pink makeup and subtle defined eyes. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "hr-management",
+    "name": "Inês Ferreira",
+    "age": 30,
+    "role": "Learning & Development Coordinator",
+    "appearance": "Portuguese woman age 30, light olive skin, chestnut shoulder-length softly curled hair, stylish stone beige blazer over an elegant pale blue silk button-up shirt fully buttoned, fine gold necklace and earrings, understated warm makeup and soft mauve lipstick",
+    "bio": "Inês supports learning and development initiatives, helping turn shared knowledge into thoughtful opportunities for the team to grow.",
+    "image": "assets/team/ines-ferreira.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Portuguese woman age 30, light olive skin, chestnut shoulder-length softly curled hair, stylish stone beige blazer over an elegant pale blue silk button-up shirt fully buttoned, fine gold necklace and earrings, understated warm makeup and soft mauve lipstick. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  },
+  {
+    "section": "human-resources",
+    "name": "Aylin Kaya",
+    "age": 26,
+    "role": "People Experience Coordinator",
+    "appearance": "Turkish woman age 26, warm olive skin, chic light taupe hijab, contemporary charcoal tailored blazer over an ivory high-neck knit, tasteful small gold jewelry, beautiful softly defined eyes, natural peach blush and rose-nude lipstick",
+    "bio": "Aylin brings a welcoming approach to people experience, helping everyday communication and team moments feel clear and considered.",
+    "image": "assets/team/aylin-kaya.jpg",
+    "prompt": "Use case: photorealistic-natural. Create a professional editorial portrait for a fictional fashion-house team page. Subject: one adult Turkish woman age 26, warm olive skin, chic light taupe hijab, contemporary charcoal tailored blazer over an ivory high-neck knit, tasteful small gold jewelry, beautiful softly defined eyes, natural peach blush and rose-nude lipstick. She should look her stated adult age, stylish, beautiful, confident and approachable. Realistic facial features and natural skin texture, tasteful contemporary clothing and professionally finished makeup, no heavy retouching. Waist-up portrait with complete head and shoulders visible, relaxed elegant pose, body at a slight three-quarter angle, face looking at the camera with a gentle smile. Warm light beige seamless studio backdrop, soft diffused daylight, subtle shadows. Premium fashion-house staff photography with coordinated warm neutral styling. Vertical 4:5 composition, generous headroom. No text, logos or watermark. This is a fictional adult character, not a real person."
+  }
+]

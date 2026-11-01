@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf8f4" />
+    <meta name="description" content="Create your Velora account and find your own place in our world of considered style." />
+    <title>Create an account — Velora</title>
+    <link rel="stylesheet" href="fonts.css?v=1" />
+    <link rel="stylesheet" href="styles.css?v=61" />
+    <link rel="stylesheet" href="account.css?v=5" />
+    <script src="privacy.js?v=1" defer></script>
+    <script src="auth.js?v=6" defer></script>
+    <link rel="stylesheet" href="privacy.css?v=1" />
+  </head>
+  <body class="account-page" data-auth-page="register">
+    <a class="account-skip" href="#account-main">Skip to registration</a>
+    <header class="account-header">
+      <a class="wordmark" href="index.html" aria-label="Velora home">velora<span>®</span></a>
+      <a class="account-back" href="index.html#collection"><span aria-hidden="true">←</span> Back to the collection</a>
+    </header>
+    <main class="auth-layout auth-layout--register" id="account-main" tabindex="-1">
+      <section class="auth-editorial" aria-label="The world of Velora">
+        <img src="assets/hero-founders-1920.jpg" alt="The four Velora founders together in their boutique" width="1920" height="1080" decoding="async" />
+        <div class="auth-editorial-top"><span>FOUR FRIENDS. ONE SHARED FEELING.</span><span aria-hidden="true">✳</span></div>
+        <div class="auth-editorial-copy">
+          <span class="auth-edition">A LITTLE CLOSER TO VELORA</span>
+          <h2>Your style.<br />Your <em>space.</em></h2>
+          <p>A place for your personal details,<br />and your next favorite piece.</p>
+        </div>
+        <span class="auth-editorial-bottom">MADE OF MOMENTS. MADE BY US.</span>
+      </section>
+      <section class="auth-panel" aria-labelledby="auth-title">
+        <div class="auth-panel-inner">
+          <p class="account-eyebrow"><span></span> THERE’S A PLACE FOR YOU HERE</p>
+          <h1 id="auth-title">Make it yours.</h1>
+          <p class="auth-intro">A few details, and you’re part of our world.</p>
+          <div class="auth-tabs" aria-label="Account pages">
+            <a href="login.html">Sign in</a>
+            <a href="register.html" aria-current="page">Create an account</a>
+          </div>
+          <p class="auth-message" id="auth-message" role="status" aria-live="polite" aria-atomic="true"></p>
+          <noscript><p class="auth-message is-error">Please enable JavaScript to create an account.</p></noscript>
+          <form class="account-form" id="register-form">
+            <div class="account-field">
+              <label for="register-name">Display name (optional)</label>
+              <input id="register-name" name="name" type="text" placeholder="How should we greet you?" autocomplete="nickname" maxlength="80" />
+            </div>
+            <div class="account-field">
+              <label for="register-email">Email address</label>
+              <input id="register-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required />
+            </div>
+            <div class="account-field">
+              <label for="register-password">Password</label>
+              <div class="password-field">
+                <input id="register-password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" minlength="15" maxlength="128" aria-describedby="register-password-hint" required />
+                <button class="password-toggle" type="button" data-toggle-password="register-password" aria-label="Show password" aria-pressed="false">Show</button>
+              </div>
+              <p class="account-hint" id="register-password-hint">Use 12–128 characters. A few memorable words work well.</p>
+            </div>
+            <div class="account-field">
+              <label for="register-confirm-password">Confirm password</label>
+              <div class="password-field">
+                <input id="register-confirm-password" name="confirmPassword" type="password" placeholder="Enter your password again" autocomplete="new-password" minlength="15" maxlength="128" required />
+                <button class="password-toggle" type="button" data-toggle-password="register-confirm-password" aria-label="Show confirmed password" aria-pressed="false">Show</button>
+              </div>
+            </div>
+            <label class="account-check account-check--terms" for="register-terms">
+              <input id="register-terms" name="terms" type="checkbox" required />
+              <span>I agree to the <a href="terms.html">Terms of service</a>.</span>
+            </label>
+            <label class="account-check account-check--terms" for="register-age">
+              <input id="register-age" name="ageConfirmed" type="checkbox" aria-describedby="register-age-hint" required />
+              <span>I confirm that I am at least 16 years old.</span>
+            </label>
+            <p class="account-hint" id="register-age-hint">Accounts are available to people aged 16 and over. We do not ask for your date of birth. Browsing the collection does not require an account.</p>
+            <p class="account-hint account-privacy-notice">Read the <a href="privacy.html">Privacy Policy</a> to learn how account information is used. Creating an account does not subscribe you to marketing.</p>
+            <button class="account-primary" type="submit" data-submit-label="Create account">Create account <span aria-hidden="true">↗</span></button>
+          </form>
+          <p class="auth-switch">Already feel at home? <a href="login.html">Sign in</a></p>
+        </div>
+      </section>
+    </main>
+    <footer class="account-footer">
+      <p>© Velora, with love.</p>
+      <nav aria-label="Account information"><a href="contact.html">Contact</a></nav>
+    
+      <nav class="legal-links" aria-label="Policies and privacy">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <button type="button" data-privacy-settings>Cookie settings</button>
+        <a href="business-details.html">Business Details</a>
+        <a href="unsubscribe.html">Unsubscribe</a>
+      </nav>
+    </footer>
+  </body>
+</html>
