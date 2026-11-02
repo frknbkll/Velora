@@ -48,8 +48,10 @@ class PrivacyServerTests(unittest.TestCase):
         self.directory.cleanup()
 
     def register(self, client=None, **changes):
-        data = {"name": "Maya Bennett", "email": "maya@example.com", "password": PASSWORD,
-                "terms": True, "ageConfirmed": True}
+        data = {
+            "firstName": "Maya", "lastName": "Bennett", "city": "London", "country": "United Kingdom",
+            "email": "maya@example.com", "password": PASSWORD, "terms": True, "ageConfirmed": True,
+        }
         data.update(changes)
         return (client or self.client).request("POST", "/api/auth/register", data)
 
@@ -80,13 +82,14 @@ class PrivacyServerTests(unittest.TestCase):
         self.assertIsNone(owner_consent, "Do not fabricate consent for existing accounts")
         self.assertEqual(set(consent), {"user_id", "terms_version", "terms_accepted_at", "age_minimum", "age_confirmed_at"})
 
-    def test_registration_accepts_only_email_password_and_required_confirmations(self):
+    def test_registration_requires_profile_details_and_confirmations(self):
         payload = {"email": "minimal@example.com", "password": PASSWORD, "terms": True, "ageConfirmed": True}
+        self.assertEqual(self.client.request("POST", "/api/auth/register", payload)[0], 400)
+        payload.update({"firstName": "Maya", "lastName": "Bennett", "city": "London", "country": "United Kingdom"})
         status, result, _ = self.client.request("POST", "/api/auth/register", payload)
         self.assertEqual(status, 201)
-        self.assertEqual(result["user"]["name"], "Member")
-        self.assertEqual(self.register(Client(self.app), email="blank@example.com", name="  ")[1]["user"]["name"], "Member")
-        self.assertEqual(self.register(Client(self.app), email="invalid@example.com", name=23)[0], 400)
+        self.assertEqual(result["user"]["name"], "Maya Bennett")
+        self.assertEqual((result["user"]["city"], result["user"]["country"]), ("London", "United Kingdom"))
 
     def test_missing_age_confirmation_is_rejected(self):
         payload = {"email": "minimal@example.com", "password": PASSWORD, "terms": True}

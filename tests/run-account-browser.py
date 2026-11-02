@@ -162,20 +162,73 @@ class Checks:
                             overlaps.push([visible[i].className, visible[j].className]);
                     }
                 }
-                return {width: innerWidth, document: document.documentElement.scrollWidth, overlaps};
+                const bounds = Object.fromEntries(visible.map(node => {
+                    const box = node.getBoundingClientRect();
+                    return [node.className || node.tagName.toLowerCase(), {left: Math.round(box.left), right: Math.round(box.right), width: Math.round(box.width)}];
+                }));
+                const navigationFontSize = parseFloat(getComputedStyle(document.querySelector('.primary-nav a')).fontSize);
+                return {width: innerWidth, document: document.documentElement.scrollWidth, overlaps, bounds, navigationFontSize};
             })()""")
             self.check(layout["document"] <= layout["width"] + 1, f"Storefront: no horizontal overflow at {width}px")
-            self.check(not layout["overlaps"], f"Storefront: header account/actions, wordmark, menu and navigation do not overlap at {width}px ({layout['overlaps']})")
+            self.check(not layout["overlaps"], f"Storefront: header account/actions, wordmark, menu and navigation do not overlap at {width}px ({layout['overlaps']}, {layout['bounds']})")
+            self.check(10 <= layout["navigationFontSize"] <= 11, f"Storefront: navigation text remains readable at {width}px ({layout['navigationFontSize']}px)")
         for width in (768, 1024):
             self.viewport(width)
             self.click(".menu-toggle")
             self.check(self.evaluate("document.querySelector('.menu-toggle').getAttribute('aria-expanded') === 'true' && document.querySelector('.primary-nav').classList.contains('is-open')"), f"Tablet menu opens at {width}px")
+            self.check(self.evaluate("parseFloat(getComputedStyle(document.querySelector('.primary-nav a')).fontSize) >= 11"), f"Tablet navigation uses readable text at {width}px")
             self.click(".menu-toggle")
             self.check(self.evaluate("document.querySelector('.menu-toggle').getAttribute('aria-expanded') === 'false'"), f"Tablet menu closes when toggled at {width}px")
             self.click(".menu-toggle")
             self.connection.call("Input.dispatchKeyEvent", {"type": "keyDown", "key": "Escape", "code": "Escape", "windowsVirtualKeyCode": 27, "nativeVirtualKeyCode": 27})
             self.connection.call("Input.dispatchKeyEvent", {"type": "keyUp", "key": "Escape", "code": "Escape", "windowsVirtualKeyCode": 27, "nativeVirtualKeyCode": 27})
             self.check(self.evaluate("document.querySelector('.menu-toggle').getAttribute('aria-expanded') === 'false' && document.activeElement === document.querySelector('.menu-toggle')"), f"Escape closes the tablet menu and restores focus at {width}px")
+
+    def check_sticky_header(self):
+        self.viewport(1366)
+        self.evaluate("window.scrollTo(0, 0)")
+        self.wait("!document.querySelector('.site-header').classList.contains('is-scrolled')")
+        self.check(self.evaluate("getComputedStyle(document.querySelector('.site-header')).position === 'fixed'"), "Storefront header is fixed so it remains visible while scrolling")
+        self.evaluate("window.scrollTo(0, 500)")
+        self.wait("document.querySelector('.site-header').classList.contains('is-scrolled')")
+        state = self.evaluate("""(() => {
+            const header = document.querySelector('.site-header');
+            const nav = document.querySelector('.primary-nav');
+            const actions = document.querySelector('.header-shop-actions');
+            return {
+                top: Math.round(header.getBoundingClientRect().top),
+                visible: header.getBoundingClientRect().bottom > 0,
+                overHero: header.classList.contains('is-over-hero'),
+                textColor: getComputedStyle(document.querySelector('.wordmark')).color,
+                headerBackground: getComputedStyle(header).backgroundColor,
+                navBackground: getComputedStyle(nav).backgroundColor,
+                actionsBackground: getComputedStyle(actions).backgroundColor,
+            };
+        })()""")
+        self.check(state == {
+            "top": 0, "visible": True, "overHero": True, "textColor": "rgb(255, 253, 248)",
+            "headerBackground": "rgba(0, 0, 0, 0)", "navBackground": "rgba(0, 0, 0, 0)",
+            "actionsBackground": "rgba(0, 0, 0, 0)",
+        }, "Header stays visible with white text over the hero and transparent backgrounds")
+        self.evaluate("window.scrollTo(0, document.querySelector('.hero').offsetHeight + 200)")
+        self.wait("!document.querySelector('.site-header').classList.contains('is-over-hero')")
+        after_hero = self.evaluate("""(() => {
+            const header = document.querySelector('.site-header');
+            const textColor = getComputedStyle(document.querySelector('.wordmark')).color;
+            return {
+                top: Math.round(header.getBoundingClientRect().top),
+                visible: header.getBoundingClientRect().bottom > 0,
+                darkText: textColor.match(/[0-9]+/g).slice(0, 3).every(value => Number(value) < 150),
+                background: getComputedStyle(header).backgroundColor,
+            };
+        })()""")
+        self.check(after_hero == {"top": 0, "visible": True, "darkText": True, "background": "rgba(0, 0, 0, 0)"}, "Header remains visible with dark text after the hero image")
+        self.viewport(390)
+        self.evaluate("window.scrollTo(0, 500)")
+        self.wait("document.querySelector('.site-header').classList.contains('is-over-hero')")
+        self.check(self.evaluate("document.querySelector('.site-header').getBoundingClientRect().top === 0 && getComputedStyle(document.querySelector('.wordmark')).color === 'rgb(255, 253, 248)'"), "Mobile header stays above the image with white text while scrolling")
+        self.evaluate("window.scrollTo(0, 0)")
+        self.wait("!document.querySelector('.site-header').classList.contains('is-scrolled')")
 
 
 def start_chrome(profile):
@@ -220,7 +273,11 @@ def run_scenarios(checks, admin_email, admin_password, customer_email, customer_
 
     checks.navigate("register.html", ready="window.VeloraAuth && document.querySelector('#register-form')")
     checks.check_widths("Registration")
-    checks.fill("#register-form", {"name": "Browser Test Member", "email": customer_email, "password": customer_password, "confirmPassword": "A different password 123", "terms": True, "ageConfirmed": True})
+    checks.fill("#register-form", {
+        "firstName": "Browser", "lastName": "Test Member", "city": "London", "country": "United Kingdom",
+        "email": customer_email, "password": customer_password,
+        "confirmPassword": "A different password 123", "terms": True, "ageConfirmed": True,
+    })
     checks.submit("#register-form")
     checks.check(checks.evaluate("document.querySelector('#register-confirm-password').validity.customError"), "Registration catches a mismatched password confirmation")
     checks.check(checks.evaluate("location.pathname") == "/register.html", "Invalid registration stays on the form")
@@ -228,12 +285,13 @@ def run_scenarios(checks, admin_email, admin_password, customer_email, customer_
     checks.submit("#register-form")
     checks.wait("location.pathname === '/account.html' && document.querySelector('#account-content') && !document.querySelector('#account-content').hidden")
     checks.check(checks.evaluate("document.querySelector('#account-name').textContent") == "Browser Test Member", "Registration creates an account and opens the personalized account page")
+    checks.check(checks.evaluate("document.querySelector('#profile-city').value") == "London", "Registration saves and displays the customer profile details")
     checks.check(checks.evaluate("window.VeloraAuth.user.role") == "customer", "Public registration creates a customer role")
     checks.check(checks.evaluate("document.querySelector('[data-admin-link]').hidden"), "Customer account hides the admin link")
     checks.check_widths("Account")
 
-    updated_name = "Browser Test Member Updated"
-    checks.fill("#profile-form", {"name": updated_name})
+    updated_name = "Browser Updated Member"
+    checks.fill("#profile-form", {"firstName": "Browser", "lastName": "Updated Member", "city": "Paris", "country": "France"})
     checks.submit("#profile-form")
     checks.wait("document.querySelector('#auth-message').classList.contains('is-success')")
     checks.check(checks.evaluate("document.querySelector('#account-name').textContent") == updated_name, "Profile changes save to the server and update the displayed name")
@@ -262,6 +320,13 @@ def run_scenarios(checks, admin_email, admin_password, customer_email, customer_
     checks.submit("#login-form")
     checks.wait("location.pathname === '/account.html' && document.querySelector('#account-content') && !document.querySelector('#account-content').hidden")
     checks.check(checks.evaluate("document.querySelector('#account-name').textContent") == updated_name, "Customer can sign in with the new password and retained profile")
+    checks.navigate("index.html", ready="window.VeloraAuth && window.VeloraAuth.ready.then(user => user && user.firstName === 'Browser')")
+    checks.check(checks.evaluate("document.querySelector('[data-auth-label]').textContent") == updated_name, "The signed-in customer's full name appears in the storefront header")
+    checks.viewport(390)
+    checks.check(checks.evaluate("getComputedStyle(document.querySelector('[data-auth-compact-label]')).display !== 'none' && document.querySelector('[data-auth-compact-label]').textContent === 'Browser'"), "The signed-in customer's name remains visible in the compact header")
+    checks.check_store_header()
+    checks.check_sticky_header()
+    checks.navigate("account.html", ready="document.querySelector('#account-content') && !document.querySelector('#account-content').hidden")
     checks.click("[data-auth-logout]")
     checks.wait("location.pathname === '/login.html' && document.querySelector('#login-form')")
 

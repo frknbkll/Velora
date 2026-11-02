@@ -67,10 +67,14 @@ def main():
                 checks.check(checks.evaluate(f"typeof window.__auditXss==='undefined' && !document.querySelector({json.dumps(selector)}).querySelector('[onerror],[onload],script')"), label)
 
             checks.navigate("register.html", ready="window.VeloraAuth && document.querySelector('#register-form')")
-            checks.fill("#register-form", {"name": account_payload, "email": "audit-member@example.test", "password": password, "confirmPassword": password, "terms": True, "ageConfirmed": True})
+            checks.fill("#register-form", {
+                "firstName": account_payload, "lastName": "Member", "city": "Amsterdam", "country": "Netherlands",
+                "email": "audit-member@example.test", "password": password,
+                "confirmPassword": password, "terms": True, "ageConfirmed": True,
+            })
             checks.submit("#register-form")
             checks.wait("location.pathname==='/account.html' && !document.querySelector('#account-content').hidden")
-            checks.check(checks.evaluate("document.querySelector('#account-name').textContent") == account_payload, "Account display names remain literal text")
+            checks.check(checks.evaluate("document.querySelector('#account-name').textContent") == f"{account_payload} Member", "Account profile names remain literal text")
             no_injection("#account-content", "Stored account text does not create executable DOM")
 
             checks.navigate("index.html", ready="window.veloraCatalogReady && document.documentElement.dataset.catalogState==='managed' && window.VeloraAuth.user")

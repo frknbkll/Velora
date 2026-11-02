@@ -42,7 +42,8 @@ Products keep their identity when you change their names or cover photos, so sav
 
 See [Account security](SECURITY.md) for authenticator setup, recovery codes, session controls, security events, and backup requirements.
 
-- New registrations are customer accounts. Customers can edit their name and change their password from the account page.
+- New registrations are customer accounts and collect first name, last name, city and country. The storefront header shows the signed-in customer's name. Customers can update their profile details and change their password from the account page.
+- Existing accounts keep their credentials; the first and last name are populated from the existing account name when the server starts. City and country remain blank until the customer provides them.
 - Password changes require the current password and invalidate the account's other sessions.
 - Customer sessions expire after 12 hours, or up to 30 days when “Remember me” is selected. Administrator sessions expire after 30 minutes without authenticated activity or eight hours overall. Sign out invalidates the current session immediately.
 - Passwords use salted PBKDF2-SHA256 hashes with 600,000 iterations. Session cookies are HttpOnly and SameSite=Lax. Session tokens are hashed in the database.

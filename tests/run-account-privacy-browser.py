@@ -30,13 +30,16 @@ with tempfile.TemporaryDirectory(prefix='account-privacy-', dir=ROOT / 'tmp', ig
         checks = Checks(connection, f'http://127.0.0.1:{app.server_port}')
         def register(email):
             checks.navigate('register.html', ready="window.VeloraAuth && document.querySelector('#register-form')")
-            checks.fill('#register-form', {'name':'', 'email':email, 'password':password, 'confirmPassword':password, 'terms':True, 'ageConfirmed':False})
+            checks.fill('#register-form', {
+                'firstName':'QA', 'lastName':'Member', 'city':'Amsterdam', 'country':'Netherlands',
+                'email':email, 'password':password, 'confirmPassword':password, 'terms':True, 'ageConfirmed':False,
+            })
             checks.check(not checks.evaluate("document.querySelector('#register-form').checkValidity()"), 'Age confirmation is required')
             checks.fill('#register-form', {'ageConfirmed':True})
-            checks.check(checks.evaluate("document.querySelector('#register-form').checkValidity()"), 'Display name can be omitted')
+            checks.check(checks.evaluate("document.querySelector('#register-form').checkValidity()"), 'Registration is ready with the required customer profile details')
             checks.submit('#register-form')
             checks.wait("location.pathname === '/account.html' && !document.querySelector('#account-content').hidden")
-            checks.check(checks.evaluate("document.querySelector('#account-name').textContent")=='Member', 'Optional display name defaults to Member')
+            checks.check(checks.evaluate("document.querySelector('#account-name').textContent")=='QA Member', 'Customer profile name is saved at registration')
         def open_delete():
             checks.click('#privacy-delete-open')
             checks.wait("document.querySelector('#account-delete-dialog').open")

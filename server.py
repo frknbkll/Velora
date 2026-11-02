@@ -49,7 +49,7 @@ PRODUCT_COLLECTIONS = (
 )
 PRODUCT_SIZES = ("XS", "S", "M", "L", "XL", "XXL", "3XL", "One size")
 PRODUCT_FIELDS = {"name", "images", "founder", "collection", "price", "description", "published", "sku", "stock", "sizes", "base_color", "color_hex"}
-USER_FIELDS = ("id", "name", "email", "role", "created_at")
+USER_FIELDS = ("id", "name", "firstName", "lastName", "city", "country", "email", "role", "created_at")
 TERMS_VERSION = "2026-11-01"
 MINIMUM_ACCOUNT_AGE = 16
 BUSINESS_FIELDS = {
@@ -133,6 +133,15 @@ def validate_name(value):
     return value
 
 
+def validate_profile_field(value, label, maximum=100):
+    if not isinstance(value, str) or not 1 <= len(value.strip()) <= maximum:
+        raise APIError(400, f"Enter {label} between 1 and {maximum} characters.")
+    value = value.strip()
+    if any(ord(character) < 32 for character in value):
+        raise APIError(400, f"Enter a valid {label}.")
+    return value
+
+
 def validate_email(value):
     if not isinstance(value, str):
         raise APIError(400, "Enter a valid email address.")
@@ -149,7 +158,14 @@ def validate_password(value):
 
 
 def public_user(row):
-    return {field: row[field] for field in USER_FIELDS}
+    user = {field: row[field] for field in USER_FIELDS if field not in {"firstName", "lastName", "city", "country"}}
+    user.update({
+        "firstName": row["first_name"],
+        "lastName": row["last_name"],
+        "city": row["city"],
+        "country": row["country"],
+    })
+    return user
 
 
 def public_product(row):
@@ -339,6 +355,10 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                 CREATE TABLE IF NOT EXISTS users (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     name TEXT NOT NULL,
+                    first_name TEXT NOT NULL DEFAULT '',
+                    last_name TEXT NOT NULL DEFAULT '',
+                    city TEXT NOT NULL DEFAULT '',
+                    country TEXT NOT NULL DEFAULT '',
                     email TEXT NOT NULL UNIQUE COLLATE NOCASE,
                     password_hash TEXT NOT NULL,
                     role TEXT NOT NULL CHECK (role IN ('customer', 'admin')),
@@ -383,6 +403,23 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                     created_at TEXT NOT NULL
                 );
             """)
+            user_columns = {row["name"] for row in connection.execute("PRAGMA table_info(users)")}
+            profile_additions = {
+                "first_name": "TEXT NOT NULL DEFAULT ''",
+                "last_name": "TEXT NOT NULL DEFAULT ''",
+                "city": "TEXT NOT NULL DEFAULT ''",
+                "country": "TEXT NOT NULL DEFAULT ''",
+            }
+            for name, declaration in profile_additions.items():
+                if name not in user_columns:
+                    connection.execute(f"ALTER TABLE users ADD COLUMN {name} {declaration}")
+            for row in connection.execute("SELECT id,name FROM users WHERE first_name='' AND last_name=''").fetchall():
+                parts = row["name"].strip().split(maxsplit=1)
+                connection.execute("UPDATE users SET first_name=?,last_name=? WHERE id=?", (
+                    parts[0] if parts else "",
+                    parts[1] if len(parts) > 1 else "",
+                    row["id"],
+                ))
             connection.execute("INSERT OR IGNORE INTO business_settings VALUES (1,?)", (json.dumps(dict.fromkeys(BUSINESS_FIELDS, "")),))
             # Add fields in place so existing accounts, sessions and catalog edits survive.
             columns = {row["name"] for row in connection.execute("PRAGMA table_info(products)")}
@@ -738,10 +775,13 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
 
     def register(self, payload):
         self.server.rate_limit(("register", self.client_address[0]), 10, 3600)
-        if set(payload) - {"name", "email", "password", "terms", "ageConfirmed"}:
+        if set(payload) - {"firstName", "lastName", "city", "country", "email", "password", "terms", "ageConfirmed"}:
             raise APIError(400, "Some account fields are not supported.")
-        supplied_name = payload.get("name", "")
-        name = "Member" if isinstance(supplied_name, str) and not supplied_name.strip() else validate_name(supplied_name)
+        first_name = validate_name(payload.get("firstName"))
+        last_name = validate_name(payload.get("lastName"))
+        city = validate_profile_field(payload.get("city"), "a city")
+        country = validate_profile_field(payload.get("country"), "a country")
+        name = f"{first_name} {last_name}"
         email = validate_email(payload.get("email"))
         password = validate_password(payload.get("password"))
         if payload.get("terms") is not True:
@@ -753,8 +793,10 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
             with self.server.connect() as connection:
                 stamp = now_iso()
                 cursor = connection.execute(
-                    "INSERT INTO users (name, email, password_hash, role, created_at) VALUES (?, ?, ?, 'customer', ?)",
-                    (name, email, encoded, stamp),
+                    """INSERT INTO users
+                    (name,first_name,last_name,city,country,email,password_hash,role,created_at)
+                    VALUES (?,?,?,?,?,?,?,'customer',?)""",
+                    (name, first_name, last_name, city, country, email, encoded, stamp),
                 )
                 connection.execute("INSERT INTO user_consents VALUES (?,?,?,?,?)", (
                     cursor.lastrowid, TERMS_VERSION, stamp, MINIMUM_ACCOUNT_AGE, stamp,
@@ -791,9 +833,28 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
         self.send_json(200, {"user": public_user(user), "csrfToken": csrf_token}, cookie=cookie)
 
     def update_account(self, user, payload):
-        if not payload or set(payload) - {"name", "currentPassword", "newPassword"}:
+        profile_fields = {"name", "firstName", "lastName", "city", "country"}
+        if not payload or set(payload) - profile_fields - {"currentPassword", "newPassword"}:
             raise APIError(400, "Some account fields are not supported.")
-        name = validate_name(payload["name"]) if "name" in payload else user["name"]
+        if "name" in payload and {"firstName", "lastName"} & set(payload):
+            raise APIError(400, "Choose either a display name or first and last name.")
+        if "name" in payload:
+            name = validate_name(payload["name"])
+            name_parts = name.split(maxsplit=1)
+            first_name = name_parts[0]
+            last_name = name_parts[1] if len(name_parts) > 1 else ""
+        else:
+            first_name = validate_name(payload["firstName"]) if "firstName" in payload else user["first_name"]
+            if "lastName" in payload:
+                supplied_last_name = payload["lastName"]
+                last_name = "" if isinstance(supplied_last_name, str) and not supplied_last_name.strip() else validate_name(supplied_last_name)
+            else:
+                last_name = user["last_name"]
+            name = f"{first_name} {last_name}".strip()
+            if not name:
+                raise APIError(400, "Enter your first and last name.")
+        city = validate_profile_field(payload["city"], "a city") if "city" in payload else user["city"]
+        country = validate_profile_field(payload["country"], "a country") if "country" in payload else user["country"]
         new_password_hash = None
         if "newPassword" in payload:
             password = validate_password(payload["newPassword"])
@@ -806,7 +867,10 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
         with self.server.connect() as connection:
             connection.execute("BEGIN IMMEDIATE")
             current = self.fresh_security_user(connection, user)
-            connection.execute("UPDATE users SET name = ? WHERE id = ?", (name, user["id"]))
+            connection.execute(
+                "UPDATE users SET name=?,first_name=?,last_name=?,city=?,country=? WHERE id=?",
+                (name, first_name, last_name, city, country, user["id"]),
+            )
             if new_password_hash:
                 version = current["auth_version"] + 1
                 connection.execute("UPDATE users SET password_hash = ?,auth_version=? WHERE id = ?", (new_password_hash, version, user["id"]))

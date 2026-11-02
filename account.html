@@ -15,7 +15,7 @@
     <script src="assets/vendor/qrcodegen.js?v=1" defer></script>
     <script src="account-security.js?v=1" defer></script>
     <script src="account-privacy.js?v=1" defer></script>
-    <link rel="stylesheet" href="privacy.css?v=1" />
+    <link rel="stylesheet" href="privacy.css?v=2" />
   </head>
   <body class="account-page account-page--profile" data-auth-page="account">
     <a class="account-skip" href="#account-main">Skip to account</a>
@@ -58,8 +58,20 @@
             <div class="profile-section-heading"><span class="profile-section-number">01</span><div><h2 id="profile-details-title">Your details</h2><p>The essentials that make this space yours.</p></div></div>
             <form class="account-form" id="profile-form">
               <div class="account-field">
-                <label for="profile-name">Display name</label>
-                <input id="profile-name" name="name" type="text" autocomplete="name" minlength="1" maxlength="80" required />
+                <label for="profile-first-name">First name</label>
+                <input id="profile-first-name" name="firstName" type="text" autocomplete="given-name" maxlength="80" required />
+              </div>
+              <div class="account-field">
+                <label for="profile-last-name">Last name</label>
+                <input id="profile-last-name" name="lastName" type="text" autocomplete="family-name" maxlength="80" />
+              </div>
+              <div class="account-field">
+                <label for="profile-city">City</label>
+                <input id="profile-city" name="city" type="text" autocomplete="address-level2" maxlength="100" />
+              </div>
+              <div class="account-field">
+                <label for="profile-country">Country</label>
+                <input id="profile-country" name="country" type="text" autocomplete="country-name" maxlength="100" />
               </div>
               <p class="profile-email-note">Your email address is used to sign in to this account.</p>
               <fieldset class="profile-password">

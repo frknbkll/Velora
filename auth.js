@@ -100,10 +100,15 @@
     document.querySelectorAll("[data-auth-link]").forEach((link) => {
       link.href = auth.user ? "account.html" : "login.html";
       const label = link.querySelector("[data-auth-label]");
-      const text = auth.user ? "My account" : "Sign in";
+      const fullName = auth.user?.name || "My account";
+      const compactName = auth.user?.firstName || fullName.split(/\s+/)[0];
+      const text = auth.user ? fullName : "Sign in";
       if (label) label.textContent = text;
       else link.textContent = text;
-      link.setAttribute("aria-label", text);
+      const compactLabel = link.querySelector("[data-auth-compact-label]");
+      if (compactLabel) compactLabel.textContent = auth.user ? compactName : "Sign in";
+      link.classList.toggle("is-signed-in", Boolean(auth.user));
+      link.setAttribute("aria-label", auth.user ? `My account: ${fullName}` : text);
     });
     document.querySelectorAll("[data-admin-link]").forEach((link) => {
       link.hidden = auth.user?.role !== "admin";
@@ -269,7 +274,16 @@
     try {
       const { user } = await request("/api/auth/register", {
         method: "POST",
-        body: { name: fields.get("name").trim(), email: fields.get("email").trim(), password: fields.get("password"), terms: fields.get("terms") !== null, ageConfirmed: fields.get("ageConfirmed") !== null },
+        body: {
+          firstName: fields.get("firstName").trim(),
+          lastName: fields.get("lastName").trim(),
+          city: fields.get("city").trim(),
+          country: fields.get("country").trim(),
+          email: fields.get("email").trim(),
+          password: fields.get("password"),
+          terms: fields.get("terms") !== null,
+          ageConfirmed: fields.get("ageConfirmed") !== null,
+        },
       });
       location.assign(destination(user));
     } catch (error) {
@@ -288,8 +302,10 @@
     if (email) email.textContent = user.email;
     if (since) since.textContent = new Intl.DateTimeFormat("en-GB", { month: "long", year: "numeric" }).format(new Date(user.created_at));
     if (avatar) avatar.textContent = user.name.trim().split(/\s+/).slice(0, 2).map((part) => Array.from(part)[0]).join("").toUpperCase();
-    const field = document.querySelector('#profile-form [name="name"]');
-    if (field) field.value = user.name;
+    for (const field of ["firstName", "lastName", "city", "country"]) {
+      const input = document.querySelector(`#profile-form [name="${field}"]`);
+      if (input) input.value = user[field] || "";
+    }
     updateAccountLinks();
   }
 
@@ -298,7 +314,12 @@
     event.preventDefault();
     if (!profileForm.reportValidity()) return;
     const fields = new FormData(profileForm);
-    const body = { name: fields.get("name").trim() };
+    const body = {
+      firstName: fields.get("firstName").trim(),
+      lastName: fields.get("lastName").trim(),
+      city: fields.get("city").trim(),
+      country: fields.get("country").trim(),
+    };
     if (fields.get("newPassword")) {
       if (!fields.get("currentPassword")) {
         message("Enter your current password to choose a new one.");

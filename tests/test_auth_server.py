@@ -52,7 +52,10 @@ class Client:
         return status, payload, response_headers
 
     def register(self, **changes):
-        data = {"name": "Maya Bennett", "email": "maya@example.com", "password": PASSWORD, "terms": True, "ageConfirmed": True}
+        data = {
+            "firstName": "Maya", "lastName": "Bennett", "city": "London", "country": "United Kingdom",
+            "email": "maya@example.com", "password": PASSWORD, "terms": True, "ageConfirmed": True,
+        }
         data.update(changes)
         return self.request("POST", "/api/auth/register", data)
 
@@ -107,6 +110,8 @@ class AccountServerTests(unittest.TestCase):
         self.assertEqual(data["user"]["email"], "maya@example.com")
         self.assertEqual(data["user"]["role"], "customer")
         self.assertEqual(set(data["user"]), set(server.USER_FIELDS))
+        self.assertEqual((data["user"]["firstName"], data["user"]["lastName"]), ("Maya", "Bennett"))
+        self.assertEqual((data["user"]["city"], data["user"]["country"]), ("London", "United Kingdom"))
         self.assertIn("HttpOnly", headers["Set-Cookie"])
         self.assertIn("SameSite=Lax", headers["Set-Cookie"])
         self.assertNotIn("Max-Age", headers["Set-Cookie"])
@@ -118,7 +123,11 @@ class AccountServerTests(unittest.TestCase):
         self.assertEqual(self.client.login()[0], 200)
 
     def test_registration_validation_and_no_browser_admin_promotion(self):
-        for changes in ({"password": "short"}, {"terms": False}, {"ageConfirmed": False}, {"name": "x" * 81}, {"email": "invalid"}, {"role": "admin"}):
+        for changes in (
+            {"password": "short"}, {"terms": False}, {"ageConfirmed": False},
+            {"firstName": "x" * 81}, {"lastName": ""}, {"city": ""}, {"country": "x" * 101},
+            {"role": "admin"},
+        ):
             with self.subTest(changes=changes):
                 self.assertEqual(self.client.register(**changes)[0], 400)
         self.assertEqual(self.client.register()[0], 201)
@@ -171,6 +180,12 @@ class AccountServerTests(unittest.TestCase):
         other = Client(self.app)
         other.login()
         self.assertEqual(self.client.request("PATCH", "/api/account", {"name": "Maya Updated"})[1]["user"]["name"], "Maya Updated")
+        status, profile, _ = self.client.request("PATCH", "/api/account", {
+            "firstName": "Maya", "lastName": "Updated", "city": "Paris", "country": "France",
+        })
+        self.assertEqual(status, 200)
+        self.assertEqual(profile["user"]["name"], "Maya Updated")
+        self.assertEqual((profile["user"]["city"], profile["user"]["country"]), ("Paris", "France"))
         changes = {"currentPassword": "wrong", "newPassword": "a new long password"}
         self.assertEqual(self.client.request("PATCH", "/api/account", changes)[0], 400)
         changes["currentPassword"] = PASSWORD
@@ -179,6 +194,19 @@ class AccountServerTests(unittest.TestCase):
         self.assertIsNotNone(self.client.request("GET", "/api/auth/me")[1]["user"])
         self.assertEqual(Client(self.app).login()[0], 401)
         self.assertEqual(Client(self.app).login(password=changes["newPassword"])[0], 200)
+
+    def test_existing_account_names_are_backfilled_into_profile_fields(self):
+        with self.app.connect() as connection:
+            connection.execute(
+                "UPDATE users SET first_name='',last_name='' WHERE email='owner@example.com'"
+            )
+        self.app.initialize_database(self.catalog)
+        with self.app.connect() as connection:
+            user = connection.execute(
+                "SELECT first_name,last_name,city,country FROM users WHERE email='owner@example.com'"
+            ).fetchone()
+        self.assertEqual((user["first_name"], user["last_name"]), ("Store", "Owner"))
+        self.assertEqual((user["city"], user["country"]), ("", ""))
 
     def test_password_and_session_tokens_are_not_stored_as_plain_text(self):
         self.client.register()

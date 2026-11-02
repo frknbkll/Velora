@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="account.css?v=5" />
     <script src="privacy.js?v=1" defer></script>
     <script src="auth.js?v=6" defer></script>
-    <link rel="stylesheet" href="privacy.css?v=1" />
+    <link rel="stylesheet" href="privacy.css?v=2" />
   </head>
   <body class="account-page" data-auth-page="register">
     <a class="account-skip" href="#account-main">Skip to registration</a>
@@ -34,7 +34,7 @@
         <div class="auth-panel-inner">
           <p class="account-eyebrow"><span></span> THERE’S A PLACE FOR YOU HERE</p>
           <h1 id="auth-title">Make it yours.</h1>
-          <p class="auth-intro">A few details, and you’re part of our world.</p>
+          <p class="auth-intro">Tell us a little about yourself, and you’re part of our world.</p>
           <div class="auth-tabs" aria-label="Account pages">
             <a href="login.html">Sign in</a>
             <a href="register.html" aria-current="page">Create an account</a>
@@ -43,8 +43,20 @@
           <noscript><p class="auth-message is-error">Please enable JavaScript to create an account.</p></noscript>
           <form class="account-form" id="register-form">
             <div class="account-field">
-              <label for="register-name">Display name (optional)</label>
-              <input id="register-name" name="name" type="text" placeholder="How should we greet you?" autocomplete="nickname" maxlength="80" />
+              <label for="register-first-name">First name</label>
+              <input id="register-first-name" name="firstName" type="text" autocomplete="given-name" maxlength="80" required />
+            </div>
+            <div class="account-field">
+              <label for="register-last-name">Last name</label>
+              <input id="register-last-name" name="lastName" type="text" autocomplete="family-name" maxlength="80" required />
+            </div>
+            <div class="account-field">
+              <label for="register-city">City</label>
+              <input id="register-city" name="city" type="text" autocomplete="address-level2" maxlength="100" required />
+            </div>
+            <div class="account-field">
+              <label for="register-country">Country</label>
+              <input id="register-country" name="country" type="text" autocomplete="country-name" maxlength="100" required />
             </div>
             <div class="account-field">
               <label for="register-email">Email address</label>

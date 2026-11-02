@@ -10,42 +10,43 @@
     <meta name="theme-color" content="#faf8f4" />
     <title>Velora — The opening collection</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
-    <link rel="stylesheet" href="styles.css?v=60" />
+    <link rel="stylesheet" href="styles.css?v=62" />
     <script src="privacy.js?v=1" defer></script>
     <script src="founder-portraits.js?v=1" defer></script>
     <script src="auth.js?v=6" defer></script>
     <script src="product-color-images.js?v=2" defer></script>
-    <script src="script.js?v=41" defer></script>
-    <link rel="stylesheet" href="privacy.css?v=1" />
+    <script src="script.js?v=42" defer></script>
+    <link rel="stylesheet" href="privacy.css?v=2" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <main id="main-content" tabindex="-1">
-      <section class="hero" id="home">
-        <header class="site-header">
-          <a class="wordmark" href="#home" aria-label="Velora home">velora<span>®</span></a>
-          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
-            <span></span><span></span><span class="sr-only menu-toggle-label">Open menu</span>
+      <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Velora home">velora<span>®</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span class="sr-only menu-toggle-label">Open menu</span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+          <a href="#collection">The collection</a>
+          <a href="#looks">Shop by category</a>
+          <a href="#story">Our story</a>
+          <a href="#founders">The four of us</a>
+        </nav>
+        <div class="header-shop-actions" aria-label="Your saved looks and shopping bag">
+          <a class="header-account-link" href="login.html" data-auth-link aria-label="Sign in">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2"/></svg>
+            <span data-auth-label>Sign in</span>
+            <span data-auth-compact-label aria-hidden="true">Sign in</span>
+          </a>
+          <button type="button" data-shop-view="wishlist" aria-haspopup="dialog">
+            <span aria-hidden="true">♡</span> Wishlist <span class="header-shop-count header-wishlist-count">0</span>
           </button>
-          <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
-            <a href="#collection">The collection</a>
-            <a href="#looks">Shop by category</a>
-            <a href="#story">Our story</a>
-            <a href="#founders">The four of us</a>
-          </nav>
-          <div class="header-shop-actions" aria-label="Your saved looks and shopping bag">
-            <a class="header-account-link" href="login.html" data-auth-link aria-label="Sign in">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21v-2a7.5 7.5 0 0 1 15 0v2"/></svg>
-              <span data-auth-label>Sign in</span>
-            </a>
-            <button type="button" data-shop-view="wishlist" aria-haspopup="dialog">
-              <span aria-hidden="true">♡</span> Wishlist <span class="header-shop-count header-wishlist-count">0</span>
-            </button>
-            <button type="button" data-shop-view="cart" aria-haspopup="dialog">
-              <span aria-hidden="true">↗</span> Bag <span class="header-shop-count header-cart-count">0</span>
-            </button>
-          </div>
-        </header>
+          <button type="button" data-shop-view="cart" aria-haspopup="dialog">
+            <span aria-hidden="true">↗</span> Bag <span class="header-shop-count header-cart-count">0</span>
+          </button>
+        </div>
+      </header>
+      <section class="hero" id="home">
         <picture class="hero-visual">
           <source
             media="(max-width: 650px)"

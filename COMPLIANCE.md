@@ -1,6 +1,6 @@
 # Privacy and consumer-information implementation
 
-Reviewed 1 November 2026. This records the implementation and outstanding operator decisions. It is not a certification of legal compliance.
+Reviewed 2 November 2026. This records the implementation and outstanding operator decisions. It is not a certification of legal compliance.
 
 ## Current service and region
 
@@ -15,7 +15,7 @@ The site is a local fashion showcase with real account features. There is no che
 | Refund policy | `refund-policy.html`: no existing orders or payments; general EU reference without inventing a returns operation |
 | Cookie policy and choice | `cookie-policy.html` and shared privacy controls; optional saved-shopping storage starts off |
 | Form consent | Account terms and 16+ confirmation are required; no inferred marketing permission |
-| Minimal collection | Optional display name (defaults to Member), email, password hash and acceptance records; no birth date, identity document, address or payment field |
+| Minimal collection | First name, last name, city, country, email, password hash and acceptance records; no birth date, street address, identity document or payment field |
 | Third-party audit | `THIRD_PARTY_AUDIT.md`: local assets/library; no enabled tracking SDK |
 | Fair presentation | No manufactured customer scores or signup success; showcase pricing and AI previews identified |
 | Pricing | Bag subtotal is explicitly a preview; no checkout or subscription charges |
