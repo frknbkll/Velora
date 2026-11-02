@@ -1,0 +1,43 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "assets/gallery/new-ivory-ribbed-knit-set.png",
+  "product": "The Ivory Ribbed Knit Set",
+  "variants": [
+    {
+      "color": "Pure White",
+      "slug": "pure-white",
+      "hex": "#ffffff",
+      "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a19b46-a4f8-7ac1-b6aa-469ede6a4949\\exec-ef79562d-3d21-42da-b4ef-9e379486b021.png",
+      "prompt": "Use case: precise-object-edit. Input image 1 is the edit target, a full-length studio fashion product photograph of The Ivory Ribbed Knit Set. Change ONLY the color of BOTH the ribbed mock-neck sweater and the matching wide-leg trousers to PURE WHITE, clean neutral white (#ffffff) rather than ivory or cream, preserving believable neutral-gray fabric shadows so all knit ribbing, folds and construction remain clearly visible. Preserve exactly the same woman, identity, face, skin tone, hair, makeup, body proportions, standing pose, hand positions, clothing silhouette, fine ribbing, puff sleeves, drape and fit. Keep the beige handbag, beige belt, beige shoes, gold jewelry and hardware UNCHANGED. Keep the exact full-length portrait framing, lighting, white studio background, floor shadows and image proportions. Photorealistic precise garment recolor, no text, logos, watermarks or layout additions.",
+      "png": "assets/gallery/colors/ivory-ribbed-knit-set-pure-white.png",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-pure-white.jpg"
+    },
+    {
+      "color": "Navy Blue",
+      "slug": "navy-blue",
+      "hex": "#172b49",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a19c20-ea1e-79a3-853f-095ac14c1a69/exec-8eb1f204-8f1c-4f94-b351-c80b952cf0f7.png",
+      "prompt": "Use case: identity-preserve. Asset type: fashion e-commerce color variant. Edit target: the attached original Ivory Ribbed Knit Set catalog photograph. Change ONLY the clothing color of BOTH the ribbed high-neck sweater AND the matching wide-leg trousers to deep navy blue (#172b49), clearly navy blue rather than black. Preserve the exact fine ribbing, sleeve volume, garment cut, fit, folds, realistic textile texture, lighting and shadows. Keep the identical model identity, face, hair, skin, exact standing pose, body proportions, hands, full-length framing and original white studio background. Keep the handbag beige, the belt beige, the shoes beige, and all jewelry and hardware gold. Do not recolor the accessories or skin. No text, labels, logos, new elements, crops, or other edits. Produce one complete standalone photo, not a collage.",
+      "png": "assets/gallery/colors/ivory-ribbed-knit-set-navy-blue.png",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-navy-blue.jpg"
+    },
+    {
+      "color": "Black",
+      "slug": "black",
+      "hex": "#111111",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a19c21-0ddf-7f11-abf2-85fda9cf1bf3/exec-c7a0511e-cead-4af1-b9c0-ab1281f5b158.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion product color variant. Input image 1 is the edit target. Change ONLY the color of BOTH the ribbed knit sweater and matching wide-leg trousers to rich true black (#111111). Preserve the garment design, fine visible ribbing and soft highlights, sleeve volume, cuffs, neckline, trouser pleats, fit, seams, folds, fabric texture, light and shadows. Keep the model's identity, face, expression, hair, skin, exact standing pose, hand placement, full-body framing, beige handbag, beige belt, beige shoes, gold jewelry and hardware, white studio background, lighting and floor shadow unchanged. The sweater and trousers must both read as black while retaining realistic fabric detail. No other changes, text, logos or watermark.",
+      "png": "assets/gallery/colors/ivory-ribbed-knit-set-black.png",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-black.jpg"
+    },
+    {
+      "color": "Charcoal Gray",
+      "slug": "charcoal-gray",
+      "hex": "#4b4d50",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a19c21-3442-77a1-b85c-e13c779cc252/exec-8b913ce5-6e07-40f7-801f-d4dee73f3678.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce product color variant. Input image 1 is the edit target. Change ONLY the sweater and matching wide-leg trousers from ivory to neutral charcoal gray (#4b4d50), visibly lighter than black and without blue, brown or green tint. Preserve the exact garment construction, fine vertical ribbed sweater texture, neckline, voluminous sleeves, fitted cuffs, waistline, pleats, folds and flowing wide-leg trouser silhouette. Preserve realistic fabric shading, highlights and texture. Keep the identical woman, her identity, face, hair, skin tone, expression, exact standing pose with one hand in trouser pocket and one holding handbag, body proportions, framing and full-length composition unchanged. Keep handbag, belt and shoes their original beige colors, all gold jewelry and hardware unchanged. Preserve the original white studio background, lighting and ground shadow. Do not add text, logos, watermarks, objects, patterns or any other edits.",
+      "png": "assets/gallery/colors/ivory-ribbed-knit-set-charcoal-gray.png",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-charcoal-gray.jpg"
+    }
+  ]
+}

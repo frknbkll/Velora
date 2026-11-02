@@ -3086,6 +3086,102 @@
       "license": null,
       "source_url": null,
       "required_action": "Confirm applicable source permissions and releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-ivory-ribbed-knit-set.png",
+      "bytes": 957628,
+      "sha256": "0566fe2b486a9dcd6ff84da9364db85c7da219edaa7b23d751fe4775119d3f8a",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-midnight-double-breasted-suit.png",
+      "bytes": 960932,
+      "sha256": "c04eaefddf7473b1ca8c3bf1c91ce69f6ab9d8e5cdd9fc0997f8e7f1de109948",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-merlot-satin-trouser-set.png",
+      "bytes": 895332,
+      "sha256": "e840f78bd986c6fe5d5401a7c0b0dee95e6dc488f54a7fe4dbf1f0f2b475b06f",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-merlot-tailored-set.png",
+      "bytes": 878157,
+      "sha256": "1a56eff29f8ff1b7969c109e653ae09420a72fea8800c680466dbd60685cc247",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-sandstone-half-zip-lounge-set.png",
+      "bytes": 911897,
+      "sha256": "9282016b7648d45c796045344a9891747fab6c3ea7838d403e1cccb014771790",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-midnight-high-neck-suit.png",
+      "bytes": 945537,
+      "sha256": "4d5c38859dbdb625bdca70598a73f30212fb7076a8ddf48bf91464f67b729b5a",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-ivory-executive-suit.png",
+      "bytes": 945466,
+      "sha256": "4e1eb9bda610dd4c97785e4d22e49efe8647b1ab033d5272ffb8b450f32a52d5",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
+    },
+    {
+      "path": "assets/gallery/new-ivory-taupe-tailored-set.png",
+      "bytes": 852755,
+      "sha256": "c6b93840e3d245b139bd18c3917e0d773ee6e484af7e6af7e671e25b44a60fa9",
+      "group": "product-image",
+      "provenance": "user-supplied-chat-attachment",
+      "evidence": "User request, 2026-11-02",
+      "commercial_rights_verified": false,
+      "license": null,
+      "source_url": null,
+      "required_action": "Confirm applicable source permissions and model releases before commercial publication."
     }
   ]
 }

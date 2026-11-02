@@ -1,0 +1,62 @@
+{
+  "tool": "built-in image_gen",
+  "use_case": "photorealistic-natural",
+  "style": "Portrait 4:5 candid editorial workplace photography, warm European fashion office, oak and cream interiors, soft daylight, natural skin and anatomy, smart casual adults absorbed in work, no camera-facing poses, no text, logos or watermarks. Medium wide composition with quiet lower area for HTML title.",
+  "images": [
+    {
+      "path": "assets/careers/sales-client-experience-associate.jpg",
+      "role": "Sales & Client Experience Associate",
+      "prompt": "A sales and client experience associate seated at a desk providing client support, working on a laptop with a notebook and clothing samples nearby."
+    },
+    {
+      "path": "assets/careers/marketing-social-media-coordinator.jpg",
+      "role": "Marketing & Social Media Coordinator",
+      "prompt": "A marketing and social media coordinator in a team meeting, three colleagues around an oak office table discussing campaign ideas with a laptop and moodboard."
+    },
+    {
+      "path": "assets/careers/fashion-design-assistant.jpg",
+      "role": "Fashion & Design Assistant",
+      "prompt": "A fashion design assistant actively designing clothing at a studio worktable, drawing a garment sketch with pencil beside fabric swatches and a dress form."
+    },
+    {
+      "path": "assets/careers/ecommerce-merchandising-coordinator.jpg",
+      "role": "E-commerce & Merchandising Coordinator",
+      "prompt": "An ecommerce and merchandising coordinator standing in the office talking naturally to a colleague beside a clothing rail and desk."
+    },
+    {
+      "path": "assets/careers/customer-care-specialist.jpg",
+      "role": "Customer Care Specialist",
+      "prompt": "A customer care specialist seated at a desk speaking to a customer through a phone held to her ear, laptop open beside her."
+    },
+    {
+      "path": "assets/careers/production-sourcing-assistant.jpg",
+      "role": "Production & Sourcing Assistant",
+      "prompt": "A production and sourcing assistant talking on a phone held to her ear and taking handwritten notes in a notebook at an office desk."
+    },
+    {
+      "path": "assets/careers/visual-content-producer.jpg",
+      "role": "Visual Content Producer",
+      "prompt": "A visual content producer busy creating visual layouts on a desktop PC, seated at a workstation, side three-quarter view showing her face and the monitor with abstract photo-editing panels."
+    },
+    {
+      "path": "assets/careers/retail-operations-coordinator.jpg",
+      "role": "Retail Operations Coordinator",
+      "prompt": "A female retail operations coordinator showing something on an open laptop to her colleague, both looking at the screen together at a boutique office desk."
+    },
+    {
+      "path": "assets/careers/product-copywriter.jpg",
+      "role": "Product Copywriter",
+      "prompt": "A product copywriter working at a laptop at an oak office desk, with a cream blouse and handwritten product notes beside the laptop."
+    },
+    {
+      "path": "assets/careers/people-culture-assistant.jpg",
+      "role": "People & Culture Assistant",
+      "prompt": "A people and culture assistant welcoming a new teammate as they walk through a sunlit fashion office corridor, chatting naturally while carrying a notebook."
+    },
+    {
+      "path": "assets/careers/sustainability-materials-coordinator.jpg",
+      "role": "Sustainability & Materials Coordinator",
+      "prompt": "A sustainability and materials coordinator examining woven natural textile swatches at a studio table with an open materials sample book."
+    }
+  ]
+}

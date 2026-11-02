@@ -808,5 +808,67 @@ window.veloraColorImages = {
       "hex": "#7b93b5",
       "image": "assets/gallery/colors/beyza-espresso-tailored-suit-blue-pose.jpg"
     }
+  ],
+  "assets/gallery/new-ivory-ribbed-knit-set.png": [
+    {
+      "name": "Beige",
+      "hex": "#cdbda7",
+      "image": "assets/gallery/new-ivory-ribbed-knit-set.png"
+    },
+    {
+      "name": "Pure White",
+      "hex": "#ffffff",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-pure-white.jpg"
+    },
+    {
+      "name": "Navy Blue",
+      "hex": "#172b49",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-navy-blue.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#111111",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-black.jpg"
+    },
+    {
+      "name": "Charcoal Gray",
+      "hex": "#4b4d50",
+      "image": "assets/gallery/colors/ivory-ribbed-knit-set-charcoal-gray.jpg"
+    }
+  ],
+  "assets/gallery/new-midnight-double-breasted-suit.png": [
+    {
+      "name": "Black",
+      "hex": "#252321",
+      "image": "assets/gallery/new-midnight-double-breasted-suit.png"
+    }
+  ],
+  "assets/gallery/new-merlot-satin-trouser-set.png": [
+    {
+      "name": "Red",
+      "hex": "#9f3c3c",
+      "image": "assets/gallery/new-merlot-satin-trouser-set.png"
+    }
+  ],
+  "assets/gallery/new-merlot-tailored-set.png": [
+    {
+      "name": "Red",
+      "hex": "#9f3c3c",
+      "image": "assets/gallery/new-merlot-tailored-set.png"
+    }
+  ],
+  "assets/gallery/new-sandstone-half-zip-lounge-set.png": [
+    {
+      "name": "Beige",
+      "hex": "#cdbda7",
+      "image": "assets/gallery/new-sandstone-half-zip-lounge-set.png"
+    }
+  ],
+  "assets/gallery/new-midnight-high-neck-suit.png": [
+    {
+      "name": "Black",
+      "hex": "#252321",
+      "image": "assets/gallery/new-midnight-high-neck-suit.png"
+    }
   ]
 };

@@ -41,10 +41,10 @@ class CatalogChecks(Checks):
             }});
         }})()""")
 
-    def upload(self, files):
+    def upload(self, files, selector="#admin-image-files"):
         root = self.connection.call("DOM.getDocument")
         node = self.connection.call("DOM.querySelector", {
-            "nodeId": root["root"]["nodeId"], "selector": "#admin-image-files",
+            "nodeId": root["root"]["nodeId"], "selector": selector,
         })
         self.connection.call("DOM.setFileInputFiles", {
             "nodeId": node["nodeId"], "files": [str(path) for path in files],
@@ -77,6 +77,16 @@ class CatalogChecks(Checks):
             self.viewport(width)
             dimensions = self.evaluate("""(() => {
                 const dialog=document.querySelector('#admin-edit-dialog'), rect=dialog.getBoundingClientRect();
+                return {left:rect.left,right:rect.right,scroll:dialog.scrollWidth,client:dialog.clientWidth};
+            })()""")
+            self.check(dimensions["left"] >= -1 and dimensions["right"] <= width + 1, f"{label}: dialog fits the viewport at {width}px")
+            self.check(dimensions["scroll"] <= dimensions["client"] + 1, f"{label}: dialog content does not overflow at {width}px")
+
+    def color_dialog_widths(self, label):
+        for width in (320, 390, 768, 1366):
+            self.viewport(width)
+            dimensions = self.evaluate("""(() => {
+                const dialog=document.querySelector('#admin-color-dialog'), rect=dialog.getBoundingClientRect();
                 return {left:rect.left,right:rect.right,scroll:dialog.scrollWidth,client:dialog.clientWidth};
             })()""")
             self.check(dimensions["left"] >= -1 and dimensions["right"] <= width + 1, f"{label}: dialog fits the viewport at {width}px")
@@ -148,6 +158,26 @@ def run_scenarios(checks, email, password, files):
     checks.click('[data-image-action="cover"][data-image-index="1"]')
     cover = checks.evaluate("document.querySelector('#admin-image-gallery > [data-image-index] img').getAttribute('src')")
     checks.check(cover == original_images[1], "Choosing a cover photo moves it to the first position")
+    ai_description = "A polished, modern jacket with a clean silhouette and considered detailing."
+    checks.evaluate("""(() => {
+        const original = window.VeloraAuth.request;
+        window.__catalogOriginalRequest = original;
+        window.__catalogDescriptionRequest = null;
+        window.VeloraAuth.request = async (path, options) => {
+            if (path === "/api/admin/product-description") {
+                window.__catalogDescriptionRequest = options.body;
+                return {description: "A polished, modern jacket with a clean silhouette and considered detailing."};
+            }
+            return original.call(window.VeloraAuth, path, options);
+        };
+    })()""")
+    checks.click("#admin-generate-description")
+    checks.wait("document.querySelector('#admin-edit-description').value === 'A polished, modern jacket with a clean silhouette and considered detailing.'")
+    generated_request = checks.evaluate("window.__catalogDescriptionRequest")
+    checks.check(generated_request["name"] == name and generated_request["collection"] == "THE EVERYDAY EDIT" and generated_request["base_color"] == "Sand" and generated_request["image"] == cover, "AI draft uses the current product details and selected cover photo")
+    checks.check(checks.evaluate("document.querySelector('#admin-description-status').textContent.includes('Review and edit')"), "AI-generated copy is identified as a reviewable, unsaved draft")
+    checks.evaluate("window.VeloraAuth.request = window.__catalogOriginalRequest; delete window.__catalogOriginalRequest;")
+    description = ai_description
     checks.editor_widths("Product editor with uploaded gallery")
     checks.screenshot("catalog-editor-desktop.png", 1366, 900)
     checks.screenshot("catalog-editor-mobile.png", 390, 844)
@@ -160,6 +190,19 @@ def run_scenarios(checks, email, password, files):
     checks.check(created["name"] == name and created["price"] == 87.49 and created["stock"] == 4, "Identity, cents and stock persist after creation")
     checks.check(created["sizes"] == ["XS", "M", "XL"], "The selected product sizes persist")
     checks.check(len(created["images"]) == 2 and created["image"] == cover, "The ordered gallery and chosen cover persist")
+    checks.click("#admin-add-color")
+    checks.wait("document.querySelector('#admin-color-dialog').open")
+    checks.color_dialog_widths("Add color dialog")
+    checks.choose("#admin-color-product", product_id)
+    checks.fill("#admin-color-form", {"admin-color-name": "Midnight"})
+    checks.evaluate("document.querySelector('#admin-color-hex').value='#252321'; document.querySelector('#admin-color-hex').dispatchEvent(new Event('input',{bubbles:true}))")
+    checks.upload([files[1]], "#admin-color-image-file")
+    checks.wait("!document.querySelector('#admin-color-save').disabled && !document.querySelector('#admin-color-image-preview').hidden", timeout=25)
+    checks.submit("#admin-color-form")
+    checks.wait("!document.querySelector('#admin-color-dialog').open", timeout=25)
+    created = checks.product_api(product_id)
+    color_variant = created["color_variants"][0] if created["color_variants"] else {}
+    checks.check(len(created["color_variants"]) == 1 and color_variant.get("name") == "Midnight" and color_variant.get("hex") == "#252321" and color_variant.get("image") not in created["images"], "Adding a color links its swatch and separate photo to the explicitly selected product")
     checks.choose("#admin-stock-filter", "low")
     checks.check(sku in checks.evaluate("document.querySelector('#admin-products-body').textContent"), "The low-stock filter includes the product with four units")
     checks.choose("#admin-stock-filter", "all")
@@ -168,6 +211,7 @@ def run_scenarios(checks, email, password, files):
 
     checks.store()
     checks.check(checks.evaluate(f"Boolean({checks.card_expression(name)})"), "A newly created published product appears in the actual storefront")
+    checks.check(checks.evaluate(f"Array.from({checks.card_expression(name)}.querySelectorAll('.product-color-option'),button=>button.title).some(title=>title==='Midnight')"), "The added product color appears as a storefront swatch")
     rendered = checks.evaluate(f"{checks.card_expression(name)}.textContent")
     checks.check("87.49" in rendered and description in rendered, "The storefront shows the saved price and description")
     card = checks.card_expression(name)
@@ -198,6 +242,7 @@ def run_scenarios(checks, email, password, files):
     checks.products_view(sku)
     checks.click(f'[data-edit-product="{product_id}"]')
     checks.wait("document.querySelector('#admin-edit-dialog').open")
+    checks.check(checks.evaluate("document.querySelectorAll('#admin-color-variants [data-remove-color]').length") == 1, "The editor lists saved alternate colors for management")
     checks.fill("#admin-edit-form", {"name": renamed, "stock": "0"})
     checks.click('[data-image-action="cover"][data-image-index="1"]')
     checks.submit("#admin-edit-form")

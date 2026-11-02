@@ -1,17 +1,6 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const primaryNav = document.querySelector(".primary-nav");
 const menuToggleLabel = document.querySelector(".menu-toggle-label");
-const siteHeader = document.querySelector(".site-header");
-const hero = document.querySelector(".hero");
-
-function updateHeaderOnScroll() {
-  siteHeader?.classList.toggle("is-scrolled", window.scrollY > 80);
-  siteHeader?.classList.toggle("is-over-hero", Boolean(hero && hero.getBoundingClientRect().bottom > (siteHeader?.offsetHeight ?? 0)));
-}
-
-window.addEventListener("scroll", updateHeaderOnScroll, { passive: true });
-updateHeaderOnScroll();
-
 menuToggle?.addEventListener("click", () => {
   const isExpanded = menuToggle.getAttribute("aria-expanded") === "true";
   menuToggle.setAttribute("aria-expanded", String(!isExpanded));
@@ -510,16 +499,29 @@ const colorSwatches = {
 };
 
 function getProductColors(look) {
-  const images = window.veloraColorImages?.[look.color_key ?? look.image];
-  if (images) {
-    return images.map((color, index) => index === 0 ? {
-      ...color,
-      image: look.image,
-      name: look.base_color && look.base_color !== "Original" ? look.base_color : color.name,
-      hex: look.base_color && look.base_color !== "Original" ? look.color_hex : color.hex,
-    } : { ...color });
+  const images = window.veloraColorImages?.[look.color_key || look.image];
+  const primary = {
+    name: look.base_color && look.base_color !== "Original" ? look.base_color : images?.[0]?.name || "Original",
+    hex: look.base_color && look.base_color !== "Original" ? look.color_hex : images?.[0]?.hex || look.color_hex || "#d1c8bd",
+    image: look.image,
+  };
+  if (look.managed || images || look.color_variants?.length) {
+    const managedNames = new Set((look.color_variants || []).map((color) => color.name.toLocaleLowerCase()));
+    const alternates = [
+      ...(images || []).slice(1).filter((color) => !managedNames.has(color.name.toLocaleLowerCase())),
+      ...(look.color_variants || []),
+    ];
+    const seen = new Set([primary.name.toLocaleLowerCase()]);
+    return [
+      primary,
+      ...alternates.filter((color) => {
+        const key = color.name.toLocaleLowerCase();
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      }),
+    ];
   }
-  if (look.managed) return [{ name: look.base_color || "Original", hex: look.color_hex || "#d1c8bd", image: look.image }];
   const override = productColorOverrides[look.name];
   if (override) {
     return override.map((name) => ({

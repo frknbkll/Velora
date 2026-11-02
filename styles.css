@@ -2269,19 +2269,22 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 }
 
 .vacancy-tile {
+  position: relative;
   min-width: 0;
   display: block;
   color: var(--ink);
   overflow: hidden;
-  background: #e9ded1;
+  border-radius: 20px;
+  background: #302b26;
 }
 
 .vacancy-artwork {
   display: block;
   width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: contain;
+  height: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center 25%;
   transition: transform .8s cubic-bezier(.2,.7,.2,1);
 }
 
@@ -2293,6 +2296,30 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 .vacancy-tile:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 5px;
+}
+
+.vacancy-caption {
+  display: block;
+  padding: 16px 20px 20px;
+  color: #fffaf4;
+  pointer-events: none;
+}
+
+.vacancy-caption-team {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 10px;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.vacancy-caption-title {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: clamp(20px, 1.8vw, 28px);
+  line-height: 1.15;
+  overflow-wrap: anywhere;
 }
 
 .vacancy-detail {
@@ -2393,6 +2420,14 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 }
 
 @media (max-width: 650px) {
+  .vacancy-caption {
+    padding: 16px 12px;
+  }
+
+  .vacancy-caption-title {
+    font-size: 18px;
+  }
+
   .vacancy-list {
     gap: 18px;
   }
@@ -2744,7 +2779,7 @@ h1 em, h2 em { color: var(--accent); font-weight: 400; }
 }
 
 html {
-  scroll-padding-top: 30px;
+  scroll-padding-top: var(--anchor-offset, 30px);
 }
 
 body {
@@ -5122,16 +5157,25 @@ body { font-size: var(--type-body); line-height: 1.6; }
 }
 
 
-/* Let product photos define the image area's natural height. */
-.look-tile-image img {
+.look-tile-image {
   position: relative;
-  inset: auto;
+  aspect-ratio: 768 / 1365;
+}
+
+.look-tile-image img {
+  position: absolute;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  max-width: none;
   max-height: none;
   margin: 0;
+  object-fit: cover;
+  object-position: center;
 }
+
+.look-tile-image img[data-full-frame="true"] { object-fit: contain; }
 
 /* Team: an editorial introduction to each role and its people. */
 .team-main { width: min(1440px, calc(100% - clamp(32px, 6vw, 112px))); }
@@ -6229,5 +6273,45 @@ body { font-size: var(--type-body); line-height: 1.6; }
 
   .header-account-link.is-signed-in {
     font-size: 9px;
+  }
+}
+
+/* Lightweight scroll motion; content stays visible without JavaScript. */
+.site-header {
+  transition: color .25s ease, border-color .25s ease, background-color .25s ease;
+}
+
+.hero-visual.has-scroll-depth {
+  transform: translate3d(0, var(--hero-drift, 0px), 0) scale(1.025);
+}
+
+[data-scroll-reveal] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity .65s ease, transform .65s cubic-bezier(.22, 1, .36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+[data-scroll-reveal].is-revealed,
+[data-scroll-reveal]:focus-within {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-visual.has-scroll-depth,
+  [data-scroll-reveal] {
+    transform: none;
+    opacity: 1;
+    transition: none;
+  }
+}
+
+@media print {
+  .hero-visual.has-scroll-depth,
+  [data-scroll-reveal] {
+    transform: none;
+    opacity: 1;
+    transition: none;
   }
 }

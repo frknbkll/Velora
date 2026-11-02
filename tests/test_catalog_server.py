@@ -10,6 +10,7 @@ import tempfile
 import threading
 import unittest
 import zlib
+from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 import server
@@ -36,6 +37,7 @@ class CatalogServerTests(unittest.TestCase):
         (self.root / "assets").mkdir()
         (self.root / "assets" / "first.png").write_bytes(png())
         (self.root / "assets" / "second.png").write_bytes(png(3, 2))
+        (self.root / "assets" / "third.png").write_bytes(png(4, 2))
         self.catalog = self.root / "product-catalog.json"
         self.catalog.write_text(json.dumps({"products": [{
             "id": "123456789abcdef0", "name": "The Existing Suit", "image": "assets/first.png",
@@ -102,6 +104,29 @@ class CatalogServerTests(unittest.TestCase):
         self.assertEqual(edited["stock"], 0)
         listed = self.public.request("GET", "/api/catalog")[1]["products"]
         self.assertEqual(next(item for item in listed if item["id"] == product["id"]), edited)
+
+    def test_color_variants_can_be_added_and_edited(self):
+        product = self.create()
+        path = self.path(product) + "/colors"
+        status, payload, _ = self.admin.request("POST", path, {
+            "name": "Midnight", "hex": "#252321", "image": "assets/third.png",
+        })
+        self.assertEqual(status, 201, payload)
+        updated = payload["product"]
+        self.assertEqual(updated["id"], product["id"])
+        self.assertEqual(updated["color_variants"], [{
+            "name": "Midnight", "hex": "#252321", "image": "assets/third.png",
+        }])
+        self.assertEqual(self.admin.request("POST", path, {
+            "name": "midnight", "hex": "#000000", "image": "assets/second.png",
+        })[0], 409)
+        self.assertEqual(self.admin.request("POST", path, {
+            "name": "Sand", "hex": "#c9b8a1", "image": "assets/first.png",
+        })[0], 409)
+        public = next(item for item in self.public.request("GET", "/api/catalog")[1]["products"] if item["id"] == product["id"])
+        self.assertEqual(public["color_variants"], updated["color_variants"])
+        removed = self.admin.request("PATCH", self.path(product), {"color_variants": []})[1]["product"]
+        self.assertEqual(removed["color_variants"], [])
 
     def test_seed_defaults_remain_untracked_and_colors_stay_stable(self):
         existing = self.admin.request("GET", "/api/admin/products")[1]["products"][0]
@@ -218,6 +243,71 @@ class CatalogServerTests(unittest.TestCase):
         })[0], 413)
         self.assertFalse((self.root / "assets" / "uploads").exists())
 
+    def test_ai_description_generation_sends_only_selected_product_details_and_cover(self):
+        response_body = json.dumps({"choices": [{"message": {"content": "A polished, modern jacket with a clean silhouette and considered detailing."}}]}).encode()
+
+        class AIResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self, _limit):
+                return response_body
+
+        requests = []
+
+        def fake_urlopen(request, timeout):
+            requests.append((request, timeout))
+            return AIResponse()
+
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": "test-key", "VELORA_OPENAI_MODEL": "gpt-4o-mini"}), \
+                patch.object(server, "urlopen", side_effect=fake_urlopen):
+            status, payload, _ = self.admin.request("POST", "/api/admin/product-description", {
+                "name": "The Test Jacket", "collection": "THE EVERYDAY EDIT",
+                "base_color": "Terracotta", "image": "assets/first.png",
+            })
+        self.assertEqual(status, 200, payload)
+        self.assertEqual(payload["description"], "A polished, modern jacket with a clean silhouette and considered detailing.")
+        self.assertEqual(payload["model"], "gpt-4o-mini")
+        self.assertEqual(len(requests), 1)
+        request, timeout = requests[0]
+        self.assertEqual(timeout, 12)
+        self.assertEqual(request.get_header("Authorization"), "Bearer test-key")
+        self.assertEqual(request.full_url, "https://api.openai.com/v1/chat/completions")
+        sent = json.loads(request.data)
+        self.assertEqual(sent["model"], "gpt-4o-mini")
+        text = sent["messages"][1]["content"][0]["text"]
+        self.assertEqual(json.loads(text), {
+            "product_name": "The Test Jacket", "category": "Everyday", "primary_color": "Terracotta",
+        })
+        image = sent["messages"][1]["content"][1]["image_url"]["url"]
+        self.assertEqual(image, "data:image/png;base64," + base64.b64encode(png()).decode("ascii"))
+
+    def test_ai_description_requires_configuration_and_valid_product_details(self):
+        payload = {
+            "name": "The Test Jacket", "collection": "THE EVERYDAY EDIT",
+            "base_color": "Terracotta", "image": "assets/first.png",
+        }
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": ""}), patch.object(server, "urlopen") as call:
+            status, response, _ = self.admin.request("POST", "/api/admin/product-description", payload)
+        self.assertEqual(status, 503)
+        self.assertIn("VELORA_OPENAI_API_KEY", response["error"])
+        call.assert_not_called()
+
+        invalid_payloads = [
+            {**payload, "collection": "UNKNOWN"},
+            {**payload, "image": "assets/../server.py"},
+            {**payload, "name": " "},
+            {**payload, "extra": "not allowed"},
+        ]
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": "test-key"}), patch.object(server, "urlopen") as call:
+            for invalid in invalid_payloads:
+                with self.subTest(payload=invalid):
+                    self.assertEqual(self.admin.request("POST", "/api/admin/product-description", invalid)[0], 400)
+        call.assert_not_called()
+
     def test_validation_rejects_bad_identity_inventory_images_and_immutable_fields(self):
         invalid = [
             {"name": " "}, {"name": "x" * 161}, {"founder": " "}, {"founder": "x" * 81},
@@ -246,6 +336,8 @@ class CatalogServerTests(unittest.TestCase):
                      ("DELETE", self.path(product), {}),
                      ("POST", self.path(product) + "/restore", {}),
                      ("POST", self.path(product) + "/duplicate", {}),
+                     ("POST", self.path(product) + "/colors", {"name": "Green", "hex": "#009900", "image": "assets/third.png"}),
+                     ("POST", "/api/admin/product-description", {"name": "Test", "collection": "THE EVERYDAY EDIT", "base_color": "Sand", "image": "assets/first.png"}),
                      ("POST", "/api/admin/uploads", {"name": "test.png", "data": "invalid"})]
         for method, path, body in mutations:
             with self.subTest(method=method, path=path):
@@ -278,6 +370,7 @@ class CatalogServerTests(unittest.TestCase):
                 self.assertEqual(row["published"], 0)
                 self.assertEqual(json.loads(row["images"]), ["assets/first.png"])
                 self.assertEqual(row["color_key"], "assets/first.png")
+                self.assertEqual(json.loads(row["color_variants"]), [])
                 self.assertEqual(row["legacy_key"], "The Existing Suit:assets/first.png")
                 self.assertIsNone(row["stock"])
                 self.assertEqual(row["created_at"], "2026-01-02T00:00:00Z")

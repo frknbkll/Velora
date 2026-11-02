@@ -469,6 +469,98 @@
       "price": 245,
       "description": "Rich espresso tailoring pairs a softly structured blazer with fluid trousers for confident dressing.",
       "published": true
+    },
+    {
+      "id": "dd10700aabef4abc",
+      "name": "The Ivory Ribbed Knit Set",
+      "image": "assets/gallery/new-ivory-ribbed-knit-set.png",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 39.95,
+      "base_color": "Beige",
+      "color_hex": "#cdbda7",
+      "description": "A fine ivory ribbed knit and flowing wide-leg trousers create a softly polished monochrome look.",
+      "published": true
+    },
+    {
+      "id": "356e3b3db3284328",
+      "name": "The Midnight Double-Breasted Suit",
+      "image": "assets/gallery/new-midnight-double-breasted-suit.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 89.99,
+      "base_color": "Black",
+      "color_hex": "#252321",
+      "description": "A black double-breasted blazer, high-neck layer and wide-leg trousers make a confident, considered statement.",
+      "published": true
+    },
+    {
+      "id": "0641bb0833534697",
+      "name": "The Merlot Satin Trouser Set",
+      "image": "assets/gallery/new-merlot-satin-trouser-set.png",
+      "founder": "Derya Kasal",
+      "collection": "THE EVENING EDIT",
+      "price": 57.99,
+      "base_color": "Red",
+      "color_hex": "#9f3c3c",
+      "description": "A lustrous merlot blouse and fluid matching trousers bring a graceful finish to evening dressing.",
+      "published": true
+    },
+    {
+      "id": "caafcb7f7ea0475a",
+      "name": "The Merlot Tailored Set",
+      "image": "assets/gallery/new-merlot-tailored-set.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 78.95,
+      "base_color": "Red",
+      "color_hex": "#9f3c3c",
+      "description": "A rich burgundy blazer and coordinated wide-leg trousers balance clean tailoring with a soft, modern line.",
+      "published": true
+    },
+    {
+      "id": "a26d4ac081364941",
+      "name": "The Sandstone Half-Zip Lounge Set",
+      "image": "assets/gallery/new-sandstone-half-zip-lounge-set.png",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 46.99,
+      "base_color": "Beige",
+      "color_hex": "#cdbda7",
+      "description": "A relaxed half-zip knit and matching drawstring trousers make a tonal set for slower days.",
+      "published": true
+    },
+    {
+      "id": "d638ee48cacb4abe",
+      "name": "The Midnight High-Neck Suit",
+      "image": "assets/gallery/new-midnight-high-neck-suit.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 79.99,
+      "base_color": "Black",
+      "color_hex": "#252321",
+      "description": "A sleek black blazer and trousers layered over a high-neck knit create an understated, versatile suit look.",
+      "published": true
+    },
+    {
+      "id": "617d6a4389d34fe2",
+      "name": "The Ivory Soft-Structure Suit",
+      "image": "assets/gallery/new-ivory-executive-suit.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 255,
+      "description": "An ivory blazer and matching wide-leg trousers offer a light, softly structured take on modern tailoring.",
+      "published": true
+    },
+    {
+      "id": "4d4304a128904e2f",
+      "name": "The Ivory & Taupe Tailored Set",
+      "image": "assets/gallery/new-ivory-taupe-tailored-set.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 245,
+      "description": "An ivory blazer and knit paired with fluid taupe trousers give this tailored look a warm, tonal contrast.",
+      "published": true
     }
   ]
 }
