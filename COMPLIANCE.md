@@ -1,10 +1,10 @@
 # Privacy and consumer-information implementation
 
-Reviewed 2 November 2026. This records the implementation and outstanding operator decisions. It is not a certification of legal compliance.
+Reviewed 3 November 2026. This records the implementation and outstanding operator decisions. It is not a certification of legal compliance.
 
 ## Current service and region
 
-The site is a local fashion showcase with real account features. There is no checkout, payment processing, order fulfillment or mailing service. The Netherlands/EU references below are a working starting point based on the project context; the operator's actual establishment and target markets still need confirmation.
+The site is a local fashion showcase with real account features and public account-holder reviews. There is no checkout, payment processing, order fulfillment or mailing service. Reviews are not verified purchases. The Netherlands/EU references below are a working starting point based on the project context; the operator's actual establishment and target markets still need confirmation.
 
 ## Implemented website controls
 
@@ -18,13 +18,14 @@ The site is a local fashion showcase with real account features. There is no che
 | Minimal collection | First name, last name, city, country, email, password hash and acceptance records; no birth date, street address, identity document or payment field |
 | Third-party audit | `THIRD_PARTY_AUDIT.md`: local assets/library; no enabled tracking SDK |
 | Fair presentation | No manufactured customer scores or signup success; showcase pricing and AI previews identified |
+| Account-holder reviews | `reviews.html`: one editable/deletable review per signed-in account, star rating, optional photo, account name by default or anonymous public display; no verified-purchase label |
 | Pricing | Bag subtotal is explicitly a preview; no checkout or subscription charges |
 | Accessibility | Shared focus/contrast/keyboard and image-text improvements; verify actual pages and content after edits |
 | Operator details | `business-details.html`: available details only; missing values remain clearly marked |
 | Children | Accounts restricted to age 16+ as site policy, using a confirmation instead of collecting birth dates |
 | Unsubscribe | `unsubscribe.html` explains that no mailing list is active. Do not collect subscribers until a working consent/unsubscribe service exists |
 | Image rights | `IMAGE_RIGHTS.md` and `image-rights-register.json`: provenance evidence and unresolved rights separated |
-| Data deletion | Authenticated account deletion with password and MFA where enabled; final-admin safeguard; browser data can be cleared separately |
+| Data deletion | Authenticated account deletion with password and MFA where enabled; reviews and review-photo records cascade from the account; final-admin safeguard; browser data can be cleared separately |
 
 ## Operator information still required
 
@@ -55,6 +56,8 @@ Restart the account server through `Start-Velora.cmd` after backend updates. Add
 ## Privacy decisions and evidence
 
 Account service data is used to provide the requested account; security activity supports protection of that service. Optional browser persistence is a separate choice. Keep this division clear rather than asking visitors to agree to all processing at once.
+
+Reviews are optional public submissions associated with their author's account. Public responses show the current account name unless the author chooses anonymous display; they omit account identifiers and email addresses. Anonymous display is not anonymous storage, and text or visible photo content can still identify someone. Review photos use random identifiers, have supported embedded location/descriptive metadata removed, and are stored as protected database records rather than publicly accessible unbound uploads. Each account may have one unattached upload; it expires after 24 hours and is cleaned on startup or subsequent review/upload activity. Deleting a review deletes its associated photo; deleting an account cascades review and photo records. The existing manual-backup limitation continues to apply.
 
 The 16+ registration rule is a product choice, not a universal legal-age assertion. The Dutch regulator's [child-consent guidance](https://autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/grondslag-toestemming) describes the additional requirements when consent is used for children's information. There is no verified parental-consent workflow in this implementation.
 

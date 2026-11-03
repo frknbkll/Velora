@@ -594,11 +594,26 @@ function getProductImage(look, color = getVariantSelection(look).color) {
 
 function setProductImage(image, look, color = getVariantSelection(look).color) {
   image.dataset.variantProductKey = look.key;
-  image.src = getProductImage(look, color);
+  setProductPhotoSource(image, getProductImage(look, color));
   const garmentOnly = look.colors.find((variant) => variant.name === color)?.garmentOnly;
   image.alt = garmentOnly
     ? `${look.name} — ${color}, garment-only preview`
     : `${look.name} — ${color}, modeled by ${look.founder}`;
+}
+
+function setProductPhotoSource(image, source) {
+  image.dataset.originalSrc = source;
+  const responsive = !image.classList.contains("product-dialog-image") && window.VeloraResponsiveImages?.[source];
+  if (responsive) {
+    image.srcset = responsive.srcset;
+    image.sizes ||= "(max-width: 650px) 100vw, (max-width: 1100px) 33vw, 25vw";
+    image.src = responsive.src;
+    image.width = responsive.width;
+    image.height = responsive.height;
+  } else {
+    image.removeAttribute("srcset");
+    image.src = source;
+  }
 }
 
 function updateProductColor(look) {
@@ -678,24 +693,34 @@ function selectGalleryPhoto(container, look, index) {
   const image = container.querySelector("[data-gallery-main]");
   if (!image) return;
   container.dataset.currentGalleryIndex = String(current);
-  image.src = photos[current];
+  setProductPhotoSource(image, photos[current]);
   image.alt = `${look.name} — ${getVariantSelection(look).color}, photo ${current + 1} of ${photos.length}`;
   const count = container.querySelector(".product-gallery-count");
   if (count) count.textContent = `${current + 1} / ${photos.length}`;
   container.querySelectorAll("button[data-gallery-index]").forEach((button) => button.setAttribute("aria-pressed", String(Number(button.dataset.galleryIndex) === current)));
 }
 
+function variantAvailableStock(look, selection = getVariantSelection(look)) {
+  if (look.variant_stock && Object.keys(look.variant_stock).length) return look.variant_stock[selection.color.toLowerCase() + "|" + selection.size.toLowerCase()] || 0;
+  return look.stock;
+}
+
 function configurePurchaseButton(button, look) {
-  const soldOut = look.stock === 0;
+  const soldOut = variantAvailableStock(look) === 0;
   button.disabled = soldOut;
   button.textContent = soldOut ? "Sold out" : "Add to bag";
 }
 
 function canAddToBag(look) {
-  if (look.stock === null || look.stock === undefined) return true;
-  const quantity = [...shoppingCart].reduce((total, [key, count]) => total + (getCartItem(key)?.look.key === look.key ? count : 0), 0);
-  if (quantity < look.stock) return true;
-  showShoppingNotice(look.stock === 0 ? "This piece is currently sold out." : `Only ${look.stock} of this piece can be added to your bag.`, "neutral");
+  const stock = variantAvailableStock(look), selection = getVariantSelection(look);
+  if (stock === null || stock === undefined) return true;
+  const byVariant = look.variant_stock && Object.keys(look.variant_stock).length;
+  const quantity = [...shoppingCart].reduce((total, [key, count]) => {
+    const item = getCartItem(key);
+    return total + (item?.look.key === look.key && (!byVariant || item.color === selection.color && item.size === selection.size) ? count : 0);
+  }, 0);
+  if (quantity < stock) return true;
+  showShoppingNotice(stock === 0 ? "This size and color is currently sold out." : `Only ${stock} of this selection can be added to your bag.`, "neutral");
   return false;
 }
 
@@ -749,6 +774,14 @@ function createProductOptions(look) {
     sizes.append(button);
   });
   sizeGroup.append(sizeLabel, sizes);
+  const sizeHelp = document.createElement("button");
+  sizeHelp.type = "button";
+  sizeHelp.className = "product-size-help";
+  sizeHelp.dataset.productKey = look.key;
+  sizeHelp.dataset.fitFocus = "true";
+  sizeHelp.textContent = "Size & fit guide";
+  sizeHelp.setAttribute("aria-haspopup", "dialog");
+  sizeGroup.append(sizeHelp);
 
   const note = document.createElement("p");
   note.className = "product-options-note";
@@ -757,6 +790,74 @@ function createProductOptions(look) {
     : "AI-created color previews · availability unconfirmed";
   options.append(colorGroup, sizeGroup, note);
   return options;
+}
+
+function renderProductInformation(look, showFit = false) {
+  const information = document.querySelector(".product-information");
+  if (!information) return;
+  information.replaceChildren();
+  function accordion(title, paragraphs, open = false) {
+    const details = document.createElement("details");
+    details.className = "product-accordion";
+    details.open = open;
+    const summary = document.createElement("summary");
+    summary.textContent = title;
+    const content = document.createElement("div");
+    content.className = "product-accordion-content";
+    for (const text of paragraphs) {
+      const paragraph = document.createElement("p");
+      paragraph.textContent = text;
+      content.append(paragraph);
+    }
+    details.append(summary, content);
+    information.append(details);
+    return { details, summary, content };
+  }
+  const fit = accordion("Size & fit", [
+    look.fit || "Product-specific fit and garment measurements have not been supplied yet.",
+    ...(look.size_guide ? [look.size_guide] : ["Size labels are illustrative in this concept collection. A size label alone cannot confirm your fit."]),
+  ], showFit);
+  fit.details.dataset.sizeFit = "";
+  const measurements = document.createElement("ul");
+  for (const text of [
+    "Bust: measure around the fullest part, keeping the tape level.",
+    "Waist: measure around your natural waist without pulling the tape tight.",
+    "Hips: measure around the fullest part of your hips.",
+    "For trousers, also measure the inside leg from crotch to your preferred hem.",
+  ]) {
+    const item = document.createElement("li");
+    item.textContent = text;
+    measurements.append(item);
+  }
+  fit.content.append(measurements);
+  const compare = document.createElement("p");
+  compare.textContent = "Use a flexible tape and compare your measurements with the product's own chart when available. Body measurements and garment measurements are different; check which a guide uses.";
+  fit.content.append(compare);
+  const specifications = accordion("Fabric & product details", []);
+  const list = document.createElement("dl");
+  for (const [label, value] of [["Material / composition", look.material], ["Fabric weight", look.fabric_weight], ["Country of manufacture", look.origin]]) {
+    const term = document.createElement("dt");
+    term.textContent = label;
+    const definition = document.createElement("dd");
+    definition.textContent = value || "Not supplied yet";
+    list.append(term, definition);
+  }
+  specifications.content.append(list);
+  const conceptNote = document.createElement("p");
+  conceptNote.textContent = "This is a concept collection with AI-created imagery. Fabric names in product titles describe the visual style; consult supplied specifications for composition.";
+  specifications.content.append(conceptNote);
+  const shopping = accordion("Delivery & returns", ["The collection is currently a showcase. Adding a piece to your preview bag does not place an order. Payment, delivery and returns are not yet available."]);
+  const links = document.createElement("nav");
+  links.className = "shopping-help-links";
+  links.setAttribute("aria-label", "Product shopping information");
+  for (const [href, text] of [["shopping-info.html", "Shopping information"], ["refund-policy.html", "Return information"]]) {
+    const link = document.createElement("a");
+    link.href = href;
+    link.textContent = text;
+    links.append(link);
+  }
+  shopping.content.append(links);
+  if (showFit) requestAnimationFrame(() => { fit.summary.focus(); fit.details.scrollIntoView({ block: "nearest" }); });
 }
 
 function createCartKey(look, selection = getVariantSelection(look)) {
@@ -932,29 +1033,94 @@ const looksPerPage = 15;
 let activeFounder = "all";
 let activeCategory = "all";
 let visibleLookCount = looksPerPage;
+const collectionFields = Object.fromEntries(["search", "size", "color", "price", "occasion", "sort"].map((key) => [key, document.querySelector(`#collection-${key}`)]));
+const collectionFilterStatus = document.querySelector("#collection-filter-status");
+const refinementCount = document.querySelector("#refinement-count");
+const occasionCollections = {
+  everyday: ["THE EVERYDAY EDIT", "THE SOFT EDIT", "THE MODEST EDIT"],
+  work: ["THE POLISHED EDIT", "THE TAILORED EDIT"],
+  evening: ["THE AFTER-HOURS EDIT", "THE EVENING EDIT", "THE OCCASION EDIT"],
+};
+
+function collectionValue(key) {
+  return collectionFields[key]?.value || (key === "search" ? "" : key === "sort" ? "featured" : "all");
+}
+
+function renderFacetOptions() {
+  for (const [key, values] of [
+    ["size", individualLooks.flatMap((look) => look.sizes || [])],
+    ["color", individualLooks.flatMap((look) => (look.colors || []).map((color) => color.name))],
+  ]) {
+    const field = collectionFields[key];
+    if (!field) continue;
+    const selected = field.value;
+    const unique = [...new Map(values.map((value) => [value.toLocaleLowerCase(), value])).values()];
+    const sizeOrder = ["XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL"];
+    unique.sort((a, b) => key === "size" && sizeOrder.includes(a) && sizeOrder.includes(b)
+      ? sizeOrder.indexOf(a) - sizeOrder.indexOf(b) : a.localeCompare(b, "en", { numeric: true }));
+    field.replaceChildren(new Option(key === "size" ? "All sizes" : "All colors", "all"), ...unique.map((value) => new Option(value, value)));
+    field.value = unique.includes(selected) ? selected : "all";
+  }
+}
+
+function resetCollectionFilters() {
+  for (const [key, field] of Object.entries(collectionFields)) {
+    if (field) field.value = key === "search" ? "" : key === "sort" ? "featured" : "all";
+  }
+  activeCategory = "all";
+  activeFounder = "all";
+  visibleLookCount = looksPerPage;
+  renderCatalogFilters();
+  renderLooks();
+}
+
+for (const [key, field] of Object.entries(collectionFields)) {
+  field?.addEventListener(key === "search" ? "input" : "change", () => {
+    visibleLookCount = looksPerPage;
+    renderLooks();
+  });
+}
+document.querySelector("#clear-collection-filters")?.addEventListener("click", resetCollectionFilters);
+renderFacetOptions();
 
 function renderLooks() {
   if (!(looksGrid instanceof HTMLElement) || !(showMoreLooks instanceof HTMLButtonElement)) return;
 
+  const search = collectionValue("search").trim().toLocaleLowerCase();
+  const size = collectionValue("size");
+  const color = collectionValue("color");
+  const price = collectionValue("price");
+  const occasion = collectionValue("occasion");
   const filteredLooks = individualLooks.filter(
     (look) =>
       look.published !== false &&
       (activeFounder === "all" || look.founder === activeFounder) &&
-      (activeCategory === "all" || look.collection === activeCategory),
+      (activeCategory === "all" || look.collection === activeCategory) &&
+      (!search || [look.name, look.description, look.founder, ...look.colors.map((variant) => variant.name)].join(" ").toLocaleLowerCase().includes(search)) &&
+      (size === "all" || look.sizes.includes(size)) &&
+      (color === "all" || look.colors.some((variant) => variant.name.toLocaleLowerCase() === color.toLocaleLowerCase())) &&
+      (price === "all" || (price === "under-100" && look.price < 100) || (price === "100-200" && look.price >= 100 && look.price <= 200) || (price === "over-200" && look.price > 200)) &&
+      (occasion === "all" || occasionCollections[occasion]?.includes(look.collection)),
   );
+  const sort = collectionValue("sort");
+  if (sort === "price-asc") filteredLooks.sort((a, b) => a.price - b.price);
+  if (sort === "price-desc") filteredLooks.sort((a, b) => b.price - a.price);
+  if (sort === "name") filteredLooks.sort((a, b) => a.name.localeCompare(b.name));
   const visibleLooks = filteredLooks.slice(0, visibleLookCount);
+  const resultText = `Showing ${visibleLooks.length} of ${filteredLooks.length} ${filteredLooks.length === 1 ? "piece" : "pieces"}`;
+  if (collectionFilterStatus) collectionFilterStatus.textContent = resultText;
+  const filterCount = [search, size !== "all", color !== "all", price !== "all", occasion !== "all", activeFounder !== "all", activeCategory !== "all"].filter(Boolean).length;
+  if (refinementCount) refinementCount.textContent = filterCount ? `${filterCount} active` : "";
   if (looksCount instanceof HTMLElement) {
-    const categoryName =
-      activeCategory === "all" ? "the full collection" : activeCategory.replace(/^THE | EDIT$/g, "");
-    const founderName = activeFounder === "all" ? "" : ` by ${activeFounder}`;
-    looksCount.textContent =
-      activeCategory === "all" && activeFounder === "all"
-        ? `Showing ${visibleLooks.length} of ${filteredLooks.length} high-resolution looks · ${new Set(filteredLooks.map((look) => look.collection)).size} curated edits`
-        : `${filteredLooks.length} ${filteredLooks.length === 1 ? "style" : "styles"} in ${categoryName}${founderName}`;
+    looksCount.textContent = resultText;
   }
 
   looksGrid.replaceChildren(
     ...visibleLooks.map((look) => {
+      const selection = { ...getVariantSelection(look) };
+      if (size !== "all") selection.size = size;
+      if (color !== "all") selection.color = look.colors.find((variant) => variant.name.toLocaleLowerCase() === color.toLocaleLowerCase()).name;
+      selectedVariants.set(look.key, selection);
       const tile = document.createElement("article");
       tile.className = "look-tile";
       if (look.id) tile.dataset.productId = look.id;
@@ -965,7 +1131,7 @@ function renderLooks() {
       setProductImage(image, look);
       image.loading = "lazy";
       image.decoding = "async";
-      image.sizes = "(max-width: 650px) 46vw, (max-width: 900px) 27vw, 18vw";
+      image.sizes = "(max-width: 360px) calc(100vw - 48px), (max-width: 799px) calc((100vw - 60px) / 2), (max-width: 1099px) 30vw, (max-width: 1499px) 23vw, (max-width: 1799px) 18vw, 15vw";
       if (look.number === "02" || look.number.startsWith("17 ·")) image.dataset.fullFrame = "true";
 
       const number = document.createElement("span");
@@ -1039,6 +1205,22 @@ function renderLooks() {
     }),
   );
 
+  if (!filteredLooks.length) {
+    const empty = document.createElement("div");
+    empty.className = "collection-empty";
+    const title = document.createElement("h3");
+    title.textContent = "A different direction?";
+    const note = document.createElement("p");
+    note.textContent = "No pieces match this combination. Clear your filters to explore the collection again.";
+    const reset = document.createElement("button");
+    reset.type = "button";
+    reset.className = "shop-secondary";
+    reset.textContent = "Clear all filters";
+    reset.addEventListener("click", () => { resetCollectionFilters(); document.querySelector("#collection-search")?.focus(); });
+    empty.append(title, note, reset);
+    looksGrid.append(empty);
+  }
+
   showMoreLooks.hidden = visibleLookCount >= filteredLooks.length;
 }
 
@@ -1091,6 +1273,43 @@ const productDialogClose = document.querySelector(".product-dialog-close");
 const productDialogLink = document.querySelector(".product-dialog-link");
 const productDialogAdd = document.querySelector(".product-dialog-add");
 const productDialogSave = document.querySelector(".product-dialog-save");
+const imageZoomDialog = document.querySelector("#image-zoom-dialog");
+const imageZoomViewport = document.querySelector(".image-zoom-viewport");
+const imageZoomImage = document.querySelector(".image-zoom-image");
+const imageZoomToggle = document.querySelector(".image-zoom-toggle");
+
+document.querySelector(".product-zoom-open")?.addEventListener("click", () => {
+  if (!(imageZoomDialog instanceof HTMLDialogElement) || !productDialogImage?.getAttribute("src")) return;
+  imageZoomImage.src = productDialogImage.dataset.originalSrc || productDialogImage.src;
+  imageZoomImage.alt = productDialogImage.alt;
+  document.querySelector("#image-zoom-title").textContent = productDialogTitle.textContent;
+  imageZoomViewport.classList.remove("is-zoomed");
+  imageZoomToggle.setAttribute("aria-pressed", "false");
+  imageZoomToggle.textContent = "Zoom in";
+  imageZoomDialog.showModal();
+  document.querySelector(".image-zoom-close")?.focus();
+  imageZoomViewport.scrollTo(0, 0);
+});
+imageZoomToggle?.addEventListener("click", () => {
+  const zoomed = imageZoomViewport.classList.toggle("is-zoomed");
+  imageZoomToggle.setAttribute("aria-pressed", String(zoomed));
+  imageZoomToggle.textContent = zoomed ? "Fit photo" : "Zoom in";
+  imageZoomViewport.scrollTo(0, 0);
+});
+document.querySelector(".image-zoom-close")?.addEventListener("click", () => imageZoomDialog.close());
+imageZoomDialog?.addEventListener("click", (event) => {
+  if (event.target === imageZoomDialog) imageZoomDialog.close();
+});
+imageZoomDialog?.addEventListener("close", () => {
+  imageZoomImage.removeAttribute("src");
+  if (productDialog?.open) document.querySelector(".product-zoom-open")?.focus();
+});
+imageZoomDialog?.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") return;
+  event.preventDefault();
+  event.stopPropagation();
+  imageZoomDialog.close();
+});
 const shopDialog = document.querySelector("#shop-dialog");
 const shopDialogTitle = document.querySelector("#shop-dialog-title");
 const shopDialogContent = document.querySelector("#shop-dialog-content");
@@ -1239,6 +1458,13 @@ function renderShopDialog() {
     const note = document.createElement("p");
     note.textContent = "No payment is taken. Prices are illustrative; tax and shipping are not configured. Checkout is unavailable and no fees are charged.";
     shopDialogFooter.append(total, note);
+    const links = document.createElement("nav");
+    links.className = "shopping-help-links";
+    links.setAttribute("aria-label", "Shopping bag help");
+    for (const [href, text] of [["shopping-info.html", "Shopping information"], ["refund-policy.html", "Returns"], ["contact.html", "Contact"]]) {
+      const link = document.createElement("a"); link.href = href; link.textContent = text; links.append(link);
+    }
+    shopDialogFooter.append(links);
   } else {
     const note = document.createElement("p");
     note.textContent = window.VeloraPrivacy?.canSaveLooks()
@@ -1292,7 +1518,7 @@ document.addEventListener("click", (event) => {
     return;
   }
 
-  const quickView = target.closest(".look-quick-view, .look-photo-trigger");
+  const quickView = target.closest(".look-quick-view, .look-photo-trigger, .product-size-help");
   if (quickView instanceof HTMLButtonElement) {
     if (
       !(productDialog instanceof HTMLDialogElement) ||
@@ -1326,7 +1552,8 @@ document.addEventListener("click", (event) => {
       productDialogSave.setAttribute("aria-pressed", String(savedLooks.has(look.key)));
       productDialogSave.textContent = savedLooks.has(look.key) ? "♥ Saved" : "♡ Add to wishlist";
     }
-    productDialog.showModal();
+    if (!productDialog.open) productDialog.showModal();
+    renderProductInformation(look, quickView.dataset.fitFocus === "true");
     return;
   }
 
@@ -1427,6 +1654,7 @@ productDialogClose?.addEventListener("click", () => {
 
 productDialog?.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && productDialog instanceof HTMLDialogElement) {
+    event.preventDefault();
     productDialog.close();
   }
 });
@@ -1551,6 +1779,7 @@ function reconcileManagedProducts(products) {
 }
 
 function renderCatalogFilters() {
+  renderFacetOptions();
   const categories = [...new Set(individualLooks.map((look) => look.collection))];
   const founders = [...new Set(individualLooks.map((look) => look.founder))];
   if (!categories.includes(activeCategory)) activeCategory = "all";

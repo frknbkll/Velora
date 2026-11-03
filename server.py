@@ -31,6 +31,9 @@ from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 from urllib.parse import unquote, urlsplit
 
+import commerce
+import reviews
+
 from security_core import HandlerSecurity, ServerSecurity, SecurityError, masked_email
 
 
@@ -50,7 +53,13 @@ PRODUCT_COLLECTIONS = (
     "THE OCCASION EDIT", "THE EVENING EDIT",
 )
 PRODUCT_SIZES = ("XS", "S", "M", "L", "XL", "XXL", "3XL", "One size")
-PRODUCT_FIELDS = {"name", "images", "founder", "collection", "price", "description", "published", "sku", "stock", "sizes", "base_color", "color_hex", "color_variants"}
+PRODUCT_DETAIL_FIELDS = {
+    "material": ("material and composition", 500),
+    "fabric_weight": ("fabric weight", 120),
+    "origin": ("manufacturing origin", 160),
+    "fit": ("fit notes", 500),
+}
+PRODUCT_FIELDS = {"name", "images", "founder", "collection", "price", "description", "published", "sku", "stock", "sizes", "base_color", "color_hex", "color_variants"} | PRODUCT_DETAIL_FIELDS.keys()
 USER_FIELDS = ("id", "name", "firstName", "lastName", "city", "country", "email", "role", "created_at")
 TERMS_VERSION = "2026-11-01"
 MINIMUM_ACCOUNT_AGE = 16
@@ -406,6 +415,8 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                     created_at TEXT NOT NULL
                 );
             """)
+            commerce.initialize(connection)
+            reviews.initialize(connection)
             user_columns = {row["name"] for row in connection.execute("PRAGMA table_info(users)")}
             profile_additions = {
                 "first_name": "TEXT NOT NULL DEFAULT ''",
@@ -438,6 +449,7 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                 "sizes": "TEXT NOT NULL DEFAULT '[\"XS\",\"S\",\"M\",\"L\"]'",
                 "deleted_at": "TEXT",
                 "created_at": "TEXT NOT NULL DEFAULT ''",
+                **dict.fromkeys(PRODUCT_DETAIL_FIELDS, "TEXT NOT NULL DEFAULT ''"),
             }
             for name, declaration in additions.items():
                 if name not in columns:
@@ -460,8 +472,9 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                 connection.execute("""
                     INSERT INTO products
                     (id, name, image, founder, collection, price, description, published, updated_at,
-                     images, color_key, legacy_key, base_color, color_hex, sku, stock, sizes, deleted_at, created_at)
-                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                     images, color_key, legacy_key, base_color, color_hex, sku, stock, sizes, deleted_at, created_at,
+                     material, fabric_weight, origin, fit)
+                    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
                 """, (
                     product["id"], product["name"], images[0], product["founder"],
                     product["collection"], product["price"], product["description"],
@@ -470,6 +483,7 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                     product.get("color_hex", "#d1c8bd"), product.get("sku") or product_sku(connection, product["id"]),
                     product.get("stock"), json.dumps(product.get("sizes", ["XS", "S", "M", "L"])),
                     product.get("deleted_at"), product.get("created_at") or stamp,
+                    *(product.get(field, "") for field in PRODUCT_DETAIL_FIELDS),
                 ))
             for update in copy_updates:
                 # Update untouched seed copy only; preserve the owner's descriptions.
@@ -573,7 +587,7 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                 self.serve_static()
             else:
                 raise APIError(405, "This method is not supported.")
-        except (APIError, SecurityError) as error:
+        except (APIError, SecurityError, reviews.ReviewError) as error:
             self.send_json(error.status, {"error": error.message}, retry_after=getattr(error, "retry_after", None))
         except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, TimeoutError):
             pass
@@ -671,6 +685,11 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
         if csrf and (len(self.headers.get_all("X-CSRF-Token", [])) != 1 or not hmac.compare_digest(self.headers.get("X-CSRF-Token", "").encode("utf-8"), user["csrf_token"].encode("utf-8"))):
             self.audit("csrf_rejected", user=user, detail="A request with a missing or invalid CSRF token was rejected.", severity="warning")
             raise APIError(403, "Your session could not be verified. Refresh the page and try again.")
+        if admin and not self.path_only.startswith("/api/admin/commerce"):
+            with self.server.connect() as connection:
+                staff_role = commerce.role(connection, user)
+            if staff_role == "warehouse" or (staff_role == "manager" and any(part in self.path_only for part in ("security", "business-details"))):
+                raise APIError(403, "Your staff role does not permit this action.")
         return user
 
     def issue_session(self, user, remember=False, mfa_verified=False):
@@ -679,8 +698,12 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
     def handle_api(self):
         path, method = self.path_only, self.command
         reading = method in {"GET", "HEAD"}
+        if path == "/api/reviews" or path.startswith("/api/reviews/"):
+            return reviews.handle(self, method, image_extension)
         if reading and path == "/api/health":
             return self.send_json(200, {"service": "velora", "securityRevision": SECURITY_REVISION})
+        if path == "/api/admin/commerce":
+            return commerce.handle(self, method)
         if self.handle_security_api(path, method):
             return
         if reading and path == "/api/auth/me":
@@ -692,7 +715,23 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
         if reading and path == "/api/catalog":
             with self.server.connect() as connection:
                 products = connection.execute("SELECT * FROM products WHERE published = 1 AND deleted_at IS NULL ORDER BY rowid").fetchall()
-            return self.send_json(200, {"products": [public_product(product) for product in products]})
+                operations = json.loads(connection.execute("SELECT data FROM commerce_state WHERE id=1").fetchone()[0])
+            visible = []
+            for row in products:
+                product = public_product(row)
+                if operations["guides"].get(product["id"]):
+                    product["size_guide"] = operations["guides"][product["id"]]
+                if operations["tags"].get(product["id"]):
+                    product["discount_tag"] = operations["tags"][product["id"]]
+                stock = {}
+                for variant in operations["variants"]:
+                    if variant["product"] == product["id"]:
+                        key = variant["color"].casefold() + "|" + variant["size"].casefold()
+                        stock[key] = stock.get(key, 0) + variant["stock"]
+                if stock:
+                    product["variant_stock"] = stock
+                visible.append(product)
+            return self.send_json(200, {"products": visible})
         if reading and path in {"/api/business-details", "/api/admin/business-details"}:
             if path.startswith("/api/admin/"):
                 self.require_user(admin=True)
@@ -985,6 +1024,12 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                                       ("description", "a description", 2000), ("base_color", "a color name", 40)):
             if field in payload:
                 values[field] = validate_text(payload[field], label, maximum)
+        for field, (label, maximum) in PRODUCT_DETAIL_FIELDS.items():
+            if field in payload:
+                value = payload[field]
+                if not isinstance(value, str):
+                    raise APIError(400, f"Enter {label} as text, or leave it blank.")
+                values[field] = validate_text(value, label, maximum) if value.strip() else ""
         if "collection" in payload:
             if not isinstance(payload["collection"], str) or payload["collection"] not in PRODUCT_COLLECTIONS:
                 raise APIError(400, "Choose one of the collection categories.")
@@ -1121,6 +1166,11 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                     raise APIError(404, "This product was not found.")
                 if current["deleted_at"] is not None:
                     raise APIError(409, "Restore this product from the trash before editing it.")
+                if "stock" in values:
+                    operations = json.loads(connection.execute("SELECT data FROM commerce_state WHERE id=1").fetchone()[0])
+                    variants = [v for v in operations["variants"] if v["product"] == product_id]
+                    if variants and values["stock"] != sum(v["stock"] for v in variants):
+                        raise APIError(409, "This product uses size/color stock. Update its stock in Shop operations.")
                 if "color_variants" in values:
                     primary = values.get("base_color", current["base_color"]).casefold()
                     variants = json.loads(values["color_variants"])

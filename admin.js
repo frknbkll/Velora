@@ -3,7 +3,7 @@
   const $ = (selector) => document.querySelector(selector);
   const currency = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
   const shortDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
-  const sections = ["overview", "products", "customers", "activity", "security", "business"];
+  const sections = ["overview", "products", "customers", "activity", "security", "business", "operations"];
   const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
   let toastTimer;
   let loading;
@@ -103,7 +103,7 @@
     $("#admin-activity-count").textContent = `${state.events.length} recent ${state.events.length === 1 ? "change" : "changes"}`;
   }
   function selectSection() {
-    const selected = location.hash.slice(1), section = sections.includes(selected) ? selected : "overview";
+    const selected = window.veloraCommerceRole === "warehouse" ? "operations" : location.hash.slice(1), section = sections.includes(selected) ? selected : "overview";
     sections.forEach((name) => { $(`#admin-${name}`).hidden = name !== section; });
     document.querySelectorAll("[data-admin-section]").forEach((link) => { if (link.dataset.adminSection === section) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current"); });
     const sectionTitle = section === "business" ? "Business details" : section[0].toUpperCase() + section.slice(1);
@@ -295,6 +295,9 @@
     $("#admin-edit-product-name").value = product?.name || ""; $("#admin-edit-sku").value = product?.sku || ""; $("#admin-edit-designer").value = product?.founder || "";
     $("#admin-edit-collection").value = product?.collection || "THE EVERYDAY EDIT"; $("#admin-edit-price").value = product?.price ?? "";
     $("#admin-edit-description").value = product?.description || ""; $("#admin-edit-stock").value = product?.stock ?? "";
+    for (const field of ["material", "fabric_weight", "origin", "fit"]) {
+      $(`#admin-edit-${field.replaceAll("_", "-")}`).value = product?.[field] || "";
+    }
     $("#admin-edit-base-color").value = product?.base_color || "Original"; $("#admin-edit-color-hex").value = product?.color_hex || "#d1c8bd"; $("#admin-edit-published").checked = Boolean(product?.published);
     const sizes = product?.sizes || ["XS", "S", "M", "L"];
     document.querySelectorAll('#admin-size-options input').forEach((input) => { input.checked = sizes.includes(input.value); });
@@ -434,6 +437,9 @@
       price: Number($("#admin-edit-price").value), description: $("#admin-edit-description").value.trim(), stock: $("#admin-edit-stock").value === "" ? null : Number($("#admin-edit-stock").value),
       sizes, images: [...state.photos], base_color: $("#admin-edit-base-color").value.trim(), color_hex: $("#admin-edit-color-hex").value, color_variants: [...state.colorVariants], published: $("#admin-edit-published").checked,
     };
+    for (const field of ["material", "fabric_weight", "origin", "fit"]) {
+      values[field] = $(`#admin-edit-${field.replaceAll("_", "-")}`).value.trim();
+    }
     if ($("#admin-edit-sku").value.trim()) values.sku = $("#admin-edit-sku").value.trim();
     const product = state.editing; editorError(""); setEditorBusy(true);
     try {
@@ -522,7 +528,16 @@
       if (!user) { location.replace("login.html?next=admin.html"); return; } if (user.role !== "admin") { location.replace("account.html"); return; }
       $("#admin-sidebar-name").textContent = user.name; $("#admin-sidebar-avatar").textContent = initials(user.name);
       $("#admin-today").textContent = new Intl.DateTimeFormat("en-GB", { weekday: "short", day: "numeric", month: "long", year: "numeric" }).format(new Date());
-      selectSection(); $("#admin-access").hidden = true; $("#admin-shell").hidden = false; await refreshData();
+      const operations = await window.VeloraAuth.request("/api/admin/commerce");
+      window.veloraCommerceRole = operations.role;
+      if (operations.role === "manager") {
+        document.querySelectorAll('[data-admin-section="business"],[data-admin-section="security"]').forEach(link => { link.hidden = true; });
+      }
+      if (operations.role === "warehouse") {
+        document.querySelectorAll("[data-admin-section]").forEach(link => { link.hidden = link.dataset.adminSection !== "operations"; });
+        location.hash = "operations";
+      }
+      selectSection(); $("#admin-access").hidden = true; $("#admin-shell").hidden = false; if (window.veloraCommerceRole !== "warehouse") await refreshData();
     } catch (error) { $("#admin-access").classList.add("has-error"); $("#admin-access h1").textContent = "A moment behind the scenes."; $("#admin-access-message").textContent = error.message || "We couldn\u2019t open the studio. Please try again."; $("#admin-access-retry").hidden = false; }
   }
   window.addEventListener("hashchange", selectSection);

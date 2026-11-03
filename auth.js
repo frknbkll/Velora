@@ -19,7 +19,8 @@
     const target = new URL("http://127.0.0.1:8000/login.html");
     if (page === "register") target.pathname = "/register.html";
     else if (document.body.classList.contains("admin-page") || next === "admin.html") target.searchParams.set("next", "admin.html");
-    else if (page === "account" || next === "account.html") target.searchParams.set("next", "account.html");
+    else if (["account.html", "reviews.html"].includes(next)) target.searchParams.set("next", next);
+    else if (page === "account") target.searchParams.set("next", "account.html");
 
     document.querySelectorAll("[data-auth-link]").forEach((link) => { link.href = "http://127.0.0.1:8000/login.html"; });
     // Keep account navigation on the server that implements it when the collection
@@ -29,7 +30,7 @@
       if (!["admin.html", "account.html", "register.html", "login.html"].includes(filename)) return;
       const destination = new URL(filename, "http://127.0.0.1:8000/");
       const nextPage = new URLSearchParams(query).get("next");
-      if (["admin.html", "account.html"].includes(nextPage)) destination.searchParams.set("next", nextPage);
+      if (["admin.html", "account.html", "reviews.html"].includes(nextPage)) destination.searchParams.set("next", nextPage);
       link.href = destination.href;
     });
     const status = document.querySelector("#auth-message, #account-loading, #admin-access-message");
@@ -127,7 +128,7 @@
   function destination(user) {
     const next = new URLSearchParams(location.search).get("next");
     if (next === "admin.html" && user.role === "admin") return "admin.html";
-    if (next === "account.html") return "account.html";
+    if (["account.html", "reviews.html"].includes(next)) return next;
     return user.role === "admin" ? "admin.html" : "account.html";
   }
 
@@ -138,6 +139,13 @@
     button.disabled = working;
     button.textContent = working ? "Please wait…" : button.dataset.originalLabel;
     form.setAttribute("aria-busy", String(working));
+  }
+
+  // Keep the return to reviews when a visitor switches between sign-in and registration.
+  if (new URLSearchParams(location.search).get("next") === "reviews.html") {
+    document.querySelectorAll('.auth-switch a[href="register.html"], .auth-switch a[href="login.html"]').forEach((link) => {
+      link.href = link.getAttribute("href") + "?next=reviews.html";
+    });
   }
 
   async function logout() {

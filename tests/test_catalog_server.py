@@ -128,6 +128,44 @@ class CatalogServerTests(unittest.TestCase):
         removed = self.admin.request("PATCH", self.path(product), {"color_variants": []})[1]["product"]
         self.assertEqual(removed["color_variants"], [])
 
+    def test_optional_product_details_round_trip_and_can_be_cleared(self):
+        details = {
+            "material": "97% cotton, 3% elastane", "fabric_weight": "180 g/m²",
+            "origin": "Portugal", "fit": "Relaxed fit.\nCompare with the product measurements.",
+        }
+        product = self.create(**{field: f"  {value}  " for field, value in details.items()})
+        for field, value in details.items():
+            self.assertEqual(product[field], value)
+        # A partial edit and database initialization must preserve entered facts.
+        self.assertEqual(self.admin.request("PATCH", self.path(product), {"price": 135})[0], 200)
+        self.app.initialize_database(self.catalog)
+        public = next(item for item in self.public.request("GET", "/api/catalog")[1]["products"] if item["id"] == product["id"])
+        copied = self.admin.request("POST", self.path(product) + "/duplicate", {})[1]["product"]
+        for field, value in details.items():
+            self.assertEqual(public[field], value)
+            self.assertEqual(copied[field], value)
+        status, payload, _ = self.admin.request("PATCH", self.path(product), dict.fromkeys(details, "  "))
+        self.assertEqual(status, 200, payload)
+        for field in details:
+            self.assertEqual(payload["product"][field], "")
+        unspecified = self.create()
+        for field in details:
+            self.assertEqual(unspecified[field], "")
+
+    def test_optional_product_details_reject_invalid_values_without_mutating(self):
+        product = self.create(material="Saved composition")
+        for field, limit in (("material", 500), ("fabric_weight", 120), ("origin", 160), ("fit", 500)):
+            for value in (None, 42, [], {}, "x" * (limit + 1), "bad\x00text"):
+                with self.subTest(field=field, value=value):
+                    self.assertEqual(self.admin.request("PATCH", self.path(product), {field: value})[0], 400)
+            unchanged = next(item for item in self.admin.request("GET", "/api/admin/products")[1]["products"] if item["id"] == product["id"])
+            self.assertEqual(unchanged[field], product[field])
+            status, payload, _ = self.admin.request("PATCH", self.path(product), {field: "x" * limit})
+            self.assertEqual(status, 200, payload)
+            self.assertEqual(payload["product"][field], "x" * limit)
+        public = next(item for item in self.public.request("GET", "/api/catalog")[1]["products"] if item["id"] == product["id"])
+        self.assertEqual(public["material"], "x" * 500)
+
     def test_seed_defaults_remain_untracked_and_colors_stay_stable(self):
         existing = self.admin.request("GET", "/api/admin/products")[1]["products"][0]
         self.assertEqual(existing["images"], ["assets/first.png"])
@@ -135,6 +173,8 @@ class CatalogServerTests(unittest.TestCase):
         self.assertEqual(existing["legacy_key"], "The Existing Suit:assets/first.png")
         self.assertIsNone(existing["stock"])
         self.assertEqual(existing["sizes"], ["XS", "S", "M", "L"])
+        for field in ("material", "fabric_weight", "origin", "fit"):
+            self.assertEqual(existing[field], "")
         updated = self.admin.request("PATCH", self.path(existing), {"images": ["assets/second.png"]})[1]["product"]
         self.assertEqual(updated["color_key"], "assets/first.png")
         self.assertEqual(updated["image"], "assets/second.png")
@@ -443,6 +483,8 @@ class CatalogServerTests(unittest.TestCase):
                 self.assertEqual(row["legacy_key"], "The Existing Suit:assets/first.png")
                 self.assertIsNone(row["stock"])
                 self.assertEqual(row["created_at"], "2026-01-02T00:00:00Z")
+                for field in ("material", "fabric_weight", "origin", "fit"):
+                    self.assertEqual(row[field], "")
                 self.assertEqual(connection.execute("SELECT password_hash FROM users WHERE id=99").fetchone()[0], "unchanged hash")
                 self.assertEqual(connection.execute("SELECT csrf_token FROM sessions WHERE user_id=99").fetchone()[0], "unchanged CSRF")
                 self.assertEqual(connection.execute("SELECT COUNT(*) FROM products").fetchone()[0], 1)

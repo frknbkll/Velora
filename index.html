@@ -11,11 +11,13 @@
     <title>Velora — The opening collection</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=66" />
+    <link rel="stylesheet" href="shopping-enhancements.css?v=1" />
     <script src="privacy.js?v=1" defer></script>
     <script src="founder-portraits.js?v=1" defer></script>
-    <script src="auth.js?v=6" defer></script>
+    <script src="auth.js?v=7" defer></script>
     <script src="product-color-images.js?v=6" defer></script>
-    <script src="script.js?v=44" defer></script>
+    <script src="product-responsive-images.js?v=1" defer></script>
+    <script src="script.js?v=46" defer></script>
     <script src="scroll-effects.js?v=1" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
   </head>
@@ -124,6 +126,27 @@
           <button class="look-filter" type="button" data-founder="Luna Moretti" aria-pressed="false">Luna</button>
           <button class="look-filter" type="button" data-founder="Victoria Mendez" aria-pressed="false">Victoria</button>
         </div>
+        <details class="collection-refinements" id="collection-refinements" open>
+          <summary>Filter &amp; sort <span class="refinement-count" id="refinement-count"></span></summary>
+          <div class="refinement-fields">
+            <label>Find a piece<input id="collection-search" type="search" placeholder="Search the collection" maxlength="120" /></label>
+            <label>Size<select id="collection-size"><option value="all">All sizes</option></select></label>
+            <label>Color<select id="collection-color"><option value="all">All colors</option></select></label>
+            <label>Price<select id="collection-price"><option value="all">All prices</option><option value="under-100">Under €100</option><option value="100-200">€100 – €200</option><option value="over-200">Over €200</option></select></label>
+            <label>Occasion<select id="collection-occasion"><option value="all">All occasions</option><option value="everyday">Everyday</option><option value="work">Work &amp; tailoring</option><option value="evening">Evening &amp; occasions</option></select></label>
+            <label>Sort by<select id="collection-sort"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="name">Name: A–Z</option></select></label>
+          </div>
+          <div class="refinement-actions">
+            <button id="clear-collection-filters" type="button">Clear all filters</button>
+            <p id="collection-filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          </div>
+        </details>
+        <nav class="shopping-help-links" aria-label="Help choosing your piece">
+          <a href="shopping-info.html#size-fit">Size &amp; fit advice</a>
+          <a href="refund-policy.html">Delivery &amp; returns</a>
+          <a href="our-story.html">The story behind Velora</a>
+          <a href="reviews.html">Customer reviews</a>
+        </nav>
         <div class="shop-tools" aria-label="Your shopping">
           <button class="shop-tool" type="button" data-shop-view="wishlist" aria-haspopup="dialog">
             Wishlist <span class="shop-tool-count" id="wishlist-count">0</span>
@@ -139,7 +162,7 @@
 
       <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title">
         <button class="product-dialog-close" type="button" aria-label="Close look details">×</button>
-        <div class="product-dialog-gallery"><img class="product-dialog-image" src="" alt="" /></div>
+        <div class="product-dialog-gallery"><img class="product-dialog-image" src="" alt="" /><button class="product-zoom-open" type="button" aria-haspopup="dialog">Zoom photo <span aria-hidden="true">↗</span></button></div>
         <div class="product-dialog-copy">
           <p class="eyebrow"><span class="eyebrow-line"></span> A closer look</p>
           <h2 id="product-dialog-title"></h2>
@@ -151,8 +174,15 @@
             <button class="shop-primary product-dialog-add" type="button">Add to bag</button>
             <button class="shop-secondary product-dialog-save" type="button" aria-pressed="false">♡ Add to wishlist</button>
           </div>
+          <div class="product-information"></div>
           <a class="text-link product-dialog-link" href="#founders">Meet the four of us <span>↗</span></a>
         </div>
+      </dialog>
+
+      <dialog class="image-zoom-dialog" id="image-zoom-dialog" aria-labelledby="image-zoom-title">
+        <div class="image-zoom-header"><h2 id="image-zoom-title">A closer look</h2><button class="image-zoom-close" type="button" aria-label="Close photo zoom">×</button></div>
+        <div class="image-zoom-toolbar"><button class="image-zoom-toggle" type="button" aria-pressed="false">Zoom in</button><p class="image-zoom-hint" id="image-zoom-hint">Zoom in, then scroll to explore the details.</p></div>
+        <div class="image-zoom-viewport" tabindex="0" role="region" aria-label="Enlarged product photograph" aria-describedby="image-zoom-hint"><img class="image-zoom-image" alt="" /></div>
       </dialog>
 
       <dialog class="shop-dialog" id="shop-dialog" aria-labelledby="shop-dialog-title">
@@ -274,6 +304,7 @@
       <span>Made of moments. Made by us.</span>
       <nav class="footer-pages" aria-label="More about Velora">
         <a href="our-story.html">Our story</a>
+        <a href="reviews.html">Customer reviews</a>
         <a href="founders.html">The four of us</a>
         <a href="team.html">Meet the team</a>
         <a href="contact.html">Contact</a>

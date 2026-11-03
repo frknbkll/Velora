@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="admin-business.css?v=1" />
     <script src="privacy.js?v=1" defer></script>
     <script src="auth.js?v=6" defer></script>
-    <script src="admin.js?v=7" defer></script>
+    <script src="admin.js?v=9" defer></script>
+    <script src="admin-commerce.js?v=1" defer></script>
+    <link rel="stylesheet" href="admin-commerce.css?v=1" />
     <script src="admin-security.js?v=1" defer></script>
     <script src="admin-business.js?v=1" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
@@ -52,6 +54,7 @@
         <nav class="admin-nav" aria-label="Admin sections">
           <a href="#overview" data-admin-section="overview" aria-current="page"><svg class="admin-icon"><use href="#studio-grid"/></svg><span>Overview</span></a>
           <a href="#products" data-admin-section="products"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Products</span><span class="admin-nav-count" id="admin-product-nav-count"></span></a>
+          <a href="#operations" data-admin-section="operations"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Shop operations</span></a>
           <a href="#customers" data-admin-section="customers"><svg class="admin-icon"><use href="#studio-people"/></svg><span>Customers</span></a>
           <a href="#activity" data-admin-section="activity"><svg class="admin-icon"><use href="#studio-clock"/></svg><span>Activity</span></a>
           <a href="#security" data-admin-section="security"><svg class="admin-icon"><use href="#studio-shield"/></svg><span>Security</span></a>
@@ -93,9 +96,10 @@
             <div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon"><use href="#studio-search"/></svg><span class="sr-only">Search products</span><input id="admin-product-search" type="search" placeholder="Search name, SKU or founder&#8230;" autocomplete="off" /></label><label class="admin-filter"><span class="sr-only">Filter products by visibility</span><select id="admin-product-filter"><option value="all">All products</option><option value="published">Published</option><option value="draft">Drafts</option><option value="trash">Trash</option></select></label><label class="admin-filter"><span class="sr-only">Filter by stock</span><select id="admin-stock-filter"><option value="all">All stock levels</option><option value="low">Low stock (1&ndash;5)</option><option value="out">Out of stock</option><option value="untracked">Not tracked</option></select></label><label class="admin-filter"><span class="sr-only">Sort products</span><select id="admin-product-sort"><option value="newest">Recently updated</option><option value="name">Name: A&ndash;Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="stock">Stock: low to high</option></select></label><span class="admin-result-count" id="admin-product-count" aria-live="polite"></span></div>
             <div class="admin-table-scroll" tabindex="0" role="region" aria-label="Products table"><table class="admin-table"><thead><tr><th scope="col">Product</th><th scope="col">Founder</th><th scope="col">Price</th><th scope="col">Stock</th><th scope="col">Visibility</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead><tbody id="admin-products-body"></tbody></table></div>
             <p class="admin-table-empty" id="admin-products-empty" hidden>No pieces match your search. Try another name or visibility.</p>
-            <div class="admin-table-footer">Prices are in EUR. Drafts and trashed products stay out of the storefront. Stock is shared across all sizes.</div>
+            <div class="admin-table-footer">Prices are in EUR. Drafts and trashed products stay out of the storefront. Products without a variant matrix retain shared stock. Manage size and color stock in Shop operations.</div>
           </div>
         </section>
+        <section class="admin-view" id="admin-operations" hidden><div class="admin-heading"><div><p class="admin-eyebrow">FROM STOCKROOM TO CUSTOMER</p><h1>Shop <em>operations.</em></h1><p>Variant inventory, dispatch, returns and performance.</p></div><button class="admin-button admin-button-secondary" id="commerce-refresh" type="button">Refresh records</button></div><p id="commerce-message" role="status" aria-live="polite"></p><nav id="commerce-tabs" aria-label="Shop operations"></nav><div id="commerce-content"></div></section>
         <section class="admin-view" id="admin-customers" aria-labelledby="admin-customers-title" hidden>
           <div class="admin-heading"><div><p class="admin-eyebrow">A GROWING CONNECTION</p><h1 id="admin-customers-title">Your <em>community.</em></h1><p>The people who have made an account with Velora.</p></div><span class="admin-community-count" id="admin-community-count"></span></div>
           <div class="admin-panel"><div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon"><use href="#studio-search"/></svg><span class="sr-only">Search customers</span><input id="admin-customer-search" type="search" placeholder="Search by name or email…" autocomplete="off" /></label><span class="admin-result-count" id="admin-customer-count" aria-live="polite"></span></div><div class="admin-table-scroll" tabindex="0" role="region" aria-label="Customers table"><table class="admin-table admin-customers-table"><thead><tr><th scope="col">Customer</th><th scope="col">Email address</th><th scope="col">Joined</th></tr></thead><tbody id="admin-customers-body"></tbody></table></div><p class="admin-table-empty" id="admin-customers-empty" hidden>No customers yet. New registrations will appear here.</p><div class="admin-table-footer">Customer accounts are created through the registration page.</div></div>
@@ -178,6 +182,13 @@
               <label class="admin-field" for="admin-edit-description">Description<textarea id="admin-edit-description" name="description" rows="5" maxlength="2000" required></textarea></label>
               <div class="admin-description-tools"><button class="admin-button admin-button-secondary" id="admin-generate-description" type="button">Generate draft with AI</button><span>Uses the product name, category, color and cover photo. Review before saving.</span></div>
               <p class="admin-description-status" id="admin-description-status" role="status" aria-live="polite">When you generate, these details and the cover photo are sent to OpenAI.</p>
+              <p class="admin-field-hint" id="admin-product-specifications-hint">Add confirmed product information only. Leave unknown details blank; these fields appear in the product details.</p>
+              <label class="admin-field" for="admin-edit-material">Material &amp; composition<textarea id="admin-edit-material" name="material" rows="2" maxlength="500" aria-describedby="admin-product-specifications-hint"></textarea></label>
+              <div class="admin-field-row">
+                <label class="admin-field" for="admin-edit-fabric-weight">Fabric weight<input id="admin-edit-fabric-weight" name="fabric_weight" type="text" maxlength="120" aria-describedby="admin-product-specifications-hint" /><span class="admin-field-hint">Include the unit when known, such as g/m².</span></label>
+                <label class="admin-field" for="admin-edit-origin">Manufacturing origin<input id="admin-edit-origin" name="origin" type="text" maxlength="160" aria-describedby="admin-product-specifications-hint" /></label>
+              </div>
+              <label class="admin-field" for="admin-edit-fit">Fit notes<textarea id="admin-edit-fit" name="fit" rows="2" maxlength="500" aria-describedby="admin-product-specifications-hint"></textarea></label>
             </fieldset>
             <fieldset class="admin-editor-section"><legend><span>02</span> Inventory &amp; options</legend>
               <label class="admin-field" for="admin-edit-stock">Available stock<input id="admin-edit-stock" name="stock" type="number" min="0" max="999999" step="1" inputmode="numeric" placeholder="Not tracked" /><span class="admin-field-hint">Leave blank for untracked stock. Zero marks this product as sold out.</span></label>
