@@ -1,0 +1,34 @@
+{
+  "tool": "built-in image_gen",
+  "product": "The Merlot Satin Trouser Set",
+  "reference": "assets/gallery/new-merlot-satin-trouser-set.png",
+  "variants": [
+    {
+      "color": "Midnight Blue",
+      "slug": "midnight-blue",
+      "hex": "#13223c",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a1a0e6-9772-7eb3-9b32-ec8835f6ae9b/exec-0530a4d3-abd0-484d-8ba0-4feb0af8cb37.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce color variant. Input image 1 is the edit target: The Merlot Satin Trouser Set full-length studio product photograph. Recolor ONLY the draped cowl-neck satin blouse AND matching wide-leg trousers to MIDNIGHT BLUE (#13223c), a deep inky blue visibly blue rather than black. Preserve the glossy satin blouse highlights and tailored trouser texture distinctly, exact cowl drape, voluminous sleeves, cuffs, seams, fit, pleats, folds and realistic fabric shadows. Keep the identical model identity, face, expression, long dark hair, skin tone, body proportions, exact standing pose with one hand in pocket and the other carrying the handbag, hand placement, full-length portrait framing, white studio background, lighting and floor shadows unchanged. Keep the handbag, belt and pointed shoes their original burgundy color. Keep all gold jewelry, watch, buckle and bag hardware unchanged. No other edits, text, logos, watermarks, new objects or cropping. Produce one complete standalone photo, not a collage. No code edits.",
+      "png": "assets/gallery/colors/merlot-satin-trouser-set-midnight-blue.png",
+      "image": "assets/gallery/colors/merlot-satin-trouser-set-midnight-blue.jpg"
+    },
+    {
+      "color": "Charcoal Gray",
+      "slug": "charcoal-gray",
+      "hex": "#45484b",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a19c21-3442-77a1-b85c-e13c779cc252/exec-21bfce48-858c-4764-9f0f-098a002f0976.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce product color variant. Input image 1 is the edit target, The Merlot Satin Trouser Set. Change ONLY the draped cowl-neck satin blouse and matching wide-leg trousers from merlot burgundy to neutral charcoal gray (#45484b), visibly lighter than black, with no blue, brown or green tint. Preserve the blouse's glossy satin highlights and luminous realistic sheen separately from the trousers' tailored texture. Preserve the exact cowl-neck drape, voluminous sleeves and cuffs, seams, fit, folds, trousers' wide-leg silhouette and pleats. Keep the identical woman's identity, face, long dark hair, skin tone, expression, body proportions and exact pose, one hand in her trouser pocket and the other carrying her handbag. Preserve the exact full-length framing, white studio background, lighting and floor shadow. Keep the handbag, belt and pointed shoes their original burgundy colors; preserve all gold jewelry, watch, buckle and hardware unchanged. Do not add text, logos, watermarks, patterns, objects, or make any other edits.",
+      "png": "assets/gallery/colors/merlot-satin-trouser-set-charcoal-gray.png",
+      "image": "assets/gallery/colors/merlot-satin-trouser-set-charcoal-gray.jpg"
+    },
+    {
+      "color": "Dark Green",
+      "slug": "dark-green",
+      "hex": "#164737",
+      "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a19b46-a4f8-7ac1-b6aa-469ede6a4949\\exec-532bdb47-b69e-40cd-b9c0-936686c25167.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce product color variant. Input image 1 is the edit target, The Merlot Satin Trouser Set. Change ONLY the draped cowl-neck satin blouse AND matching wide-leg trousers from burgundy to rich DARK GREEN (#164737), a deep forest green rather than teal or olive. Preserve the blouse's glossy satin sheen, reflected highlights, cowl drape, puff sleeves and fitted cuffs; preserve the trousers' tailored texture, pleats, flowing wide-leg silhouette, seams, folds and realistic shadows. Keep the identical woman, identity, face, expression, long dark hair, skin tone, body proportions, exact standing pose with one hand in the trouser pocket and the other holding the handbag, full-length framing and composition unchanged. Keep the original BURGUNDY handbag, belt and pointed shoes unchanged. Keep all gold jewelry, watch, belt buckle and bag hardware unchanged. Preserve white studio background, original lighting and floor shadows. Precise garment recolor only. No text, logos, watermarks, new elements, crops or other edits.",
+      "png": "assets/gallery/colors/merlot-satin-trouser-set-dark-green.png",
+      "image": "assets/gallery/colors/merlot-satin-trouser-set-dark-green.jpg"
+    }
+  ]
+}

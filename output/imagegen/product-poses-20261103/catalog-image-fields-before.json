@@ -1,0 +1,58 @@
+[
+  {
+    "id": "dd10700aabef4abc",
+    "image": "assets/gallery/new-ivory-ribbed-knit-set.png",
+    "images": "[\"assets/gallery/new-ivory-ribbed-knit-set.png\", \"assets/uploads/bc52d037b4b360c10270415dc38607be.png\", \"assets/uploads/57b47dc4151392d632949d149dc6b8f2.png\", \"assets/uploads/b97e748dfaf3af9d821094206146817e.png\", \"assets/uploads/bf9e72439c4778e029f96f7d028b217a.png\"]",
+    "color_key": "assets/gallery/new-ivory-ribbed-knit-set.png",
+    "color_variants": "[{\"name\": \"Navy Blue\", \"hex\": \"#1c238d\", \"image\": \"assets/uploads/0a5e3456d0eddac9b70eca464d7a71ed.png\"}, {\"name\": \"Black\", \"hex\": \"#000000\", \"image\": \"assets/uploads/6255f62cbd85eed56184eb3994e462e8.png\"}, {\"name\": \"Charcoal Gray\", \"hex\": \"#a3a3a3\", \"image\": \"assets/uploads/997bd0b7fcf99c4b54f39d013b0d6418.png\"}, {\"name\": \"Pure White\", \"hex\": \"#ffffff\", \"image\": \"assets/uploads/4d0db5592d60ec50d98ac90fa2fbae5f.png\"}]"
+  },
+  {
+    "id": "caafcb7f7ea0475a",
+    "image": "assets/gallery/new-merlot-tailored-set.png",
+    "images": "[\"assets/gallery/new-merlot-tailored-set.png\"]",
+    "color_key": "assets/gallery/new-merlot-tailored-set.png",
+    "color_variants": "[]"
+  },
+  {
+    "id": "a26d4ac081364941",
+    "image": "assets/gallery/new-sandstone-half-zip-lounge-set.png",
+    "images": "[\"assets/gallery/new-sandstone-half-zip-lounge-set.png\"]",
+    "color_key": "assets/gallery/new-sandstone-half-zip-lounge-set.png",
+    "color_variants": "[]"
+  },
+  {
+    "id": "d638ee48cacb4abe",
+    "image": "assets/gallery/new-midnight-high-neck-suit.png",
+    "images": "[\"assets/gallery/new-midnight-high-neck-suit.png\"]",
+    "color_key": "assets/gallery/new-midnight-high-neck-suit.png",
+    "color_variants": "[]"
+  },
+  {
+    "id": "617d6a4389d34fe2",
+    "image": "assets/gallery/new-ivory-executive-suit.png",
+    "images": "[\"assets/gallery/new-ivory-executive-suit.png\"]",
+    "color_key": "assets/gallery/new-ivory-executive-suit.png",
+    "color_variants": "[]"
+  },
+  {
+    "id": "4d4304a128904e2f",
+    "image": "assets/gallery/new-ivory-taupe-tailored-set.png",
+    "images": "[\"assets/gallery/new-ivory-taupe-tailored-set.png\"]",
+    "color_key": "assets/gallery/new-ivory-taupe-tailored-set.png",
+    "color_variants": "[]"
+  },
+  {
+    "id": "53a68a01bbdedf19",
+    "image": "assets/uploads/3758f269b89cb2b6645cb2c42be12760.png",
+    "images": "[\"assets/uploads/3758f269b89cb2b6645cb2c42be12760.png\", \"assets/uploads/bfcda267609badb6861693cbd9785a95.png\", \"assets/uploads/714450d4edcac2337ac7514b07601052.png\", \"assets/uploads/7a5b5fa84fe32478737f505d9c322c59.png\", \"assets/uploads/74830d0d34d516dd5bb4bc13d161b964.png\"]",
+    "color_key": "",
+    "color_variants": "[{\"name\": \"Green\", \"hex\": \"#9b9d83\", \"image\": \"assets/uploads/38d6bd7538e724e7384f8f07d3c3538b.png\"}, {\"name\": \"Red\", \"hex\": \"#b62525\", \"image\": \"assets/uploads/75d9a32471ae1a37bb90fc99f9b06b0e.png\"}, {\"name\": \"Brown\", \"hex\": \"#ad5401\", \"image\": \"assets/uploads/72df13a43a0557be0bd12faf3929fd32.png\"}, {\"name\": \"Blue\", \"hex\": \"#1100ff\", \"image\": \"assets/uploads/a2d50c9aa5a4e4564c471d32ee6aa0a4.png\"}]"
+  },
+  {
+    "id": "0d3ef24445790a06",
+    "image": "assets/uploads/21102994fa83b26267c383a7d211db0e.png",
+    "images": "[\"assets/uploads/21102994fa83b26267c383a7d211db0e.png\", \"assets/uploads/d6bb83327adc7640f7b75df58b693afa.png\", \"assets/uploads/1a0ada0b479c58de32c60d754db4f8aa.png\", \"assets/uploads/f251f602eb9680edc9150687cb33e36a.png\"]",
+    "color_key": "",
+    "color_variants": "[{\"name\": \"Rose\", \"hex\": \"#ffe5e5\", \"image\": \"assets/uploads/e2da35185f699791cbac543435c24676.png\"}, {\"name\": \"Navy Blue\", \"hex\": \"#2f3293\", \"image\": \"assets/uploads/91bf8f18825ed41920ee0b7f31b30d51.png\"}, {\"name\": \"Black\", \"hex\": \"#000000\", \"image\": \"assets/uploads/7df52f8168d0f9cdcc1d5109144530e4.png\"}]"
+  }
+]

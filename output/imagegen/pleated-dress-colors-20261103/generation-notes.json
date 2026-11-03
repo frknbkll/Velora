@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-03",
+  "tool": "Built-in image_gen",
+  "input": "tmp/imagegen/pleated-dress-reference-20261103.png",
+  "useCase": "identity-preserve",
+  "variants": [
+    {
+      "slug": "black",
+      "name": "Black",
+      "color": "rich neutral BLACK fabric, approximately #151515, with physically plausible soft gray highlights in the black pleats so the pleats and stitching remain clearly visible",
+      "prompt": "Use case: identity-preserve. Asset type: fashion catalog color variant, a precise edit of the provided reference photograph.\nImage 1 is the edit target. Change ONLY the color of the woman's long-sleeved pleated maxi dress, its matching waist tie sash, and her wrapped hijab to rich neutral BLACK fabric, approximately #151515, with physically plausible soft gray highlights in the black pleats so the pleats and stitching remain clearly visible. Keep the dress entirely opaque.\nPreserve the exact same adult woman's face, expression, natural skin tone, makeup, body proportions, hand placement, pose, and gaze. Preserve every garment design detail: high neckline, fine vertical pleats, gathered long sleeves, fitted cuffs, tied waist sash, full-length flowing skirt and its original hem.\nKeep the handbag and shoes their ORIGINAL IVORY color and keep the small gold handbag clasp, jewelry, and ring unchanged. Keep the clean white studio backdrop, floor shadow, lighting, sharp photo quality, framing, subject size and placement unchanged. Full body, entire head and shoes visible, same portrait composition as the original.\nGenerate ONE photorealistic edited photograph. Do not add text, logos, swatches, borders, a collage, or any new props. This is a clothing and hijab color edit, not a new model or a new pose.",
+      "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a18d5a-a25e-76d0-bf9e-4411eb5c8704\\exec-3deabdf4-2e19-4757-88d0-ae366df45913.png",
+      "filename": "pleated-dress-black.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "ef3f41f66a9feaa44475bc321d933ce1577b8d8fb726f2ac64819e6fa61c2693",
+      "savedFile": "output/imagegen/pleated-dress-colors-20261103/pleated-dress-black.png"
+    },
+    {
+      "slug": "navy-blue",
+      "name": "Navy Blue",
+      "color": "deep NAVY BLUE fabric, approximately #172A46, visibly blue rather than black, with natural tonal highlights and shadows in the pleats",
+      "prompt": "Use case: identity-preserve. Asset type: fashion catalog color variant, a precise edit of the provided reference photograph.\nImage 1 is the edit target. Change ONLY the color of the woman's long-sleeved pleated maxi dress, its matching waist tie sash, and her wrapped hijab to deep NAVY BLUE fabric, approximately #172A46, visibly blue rather than black, with natural tonal highlights and shadows in the pleats. Keep the dress entirely opaque.\nPreserve the exact same adult woman's face, expression, natural skin tone, makeup, body proportions, hand placement, pose, and gaze. Preserve every garment design detail: high neckline, fine vertical pleats, gathered long sleeves, fitted cuffs, tied waist sash, full-length flowing skirt and its original hem.\nKeep the handbag and shoes their ORIGINAL IVORY color and keep the small gold handbag clasp, jewelry, and ring unchanged. Keep the clean white studio backdrop, floor shadow, lighting, sharp photo quality, framing, subject size and placement unchanged. Full body, entire head and shoes visible, same portrait composition as the original.\nGenerate ONE photorealistic edited photograph. Do not add text, logos, swatches, borders, a collage, or any new props. This is a clothing and hijab color edit, not a new model or a new pose.",
+      "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a18d5a-a25e-76d0-bf9e-4411eb5c8704\\exec-2c392133-2cf7-4e0f-88f6-66c2c189b962.png",
+      "filename": "pleated-dress-navy-blue.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "05666f7dba75eb03852599077763f00404492f957860aa4067a9466dadbbb445",
+      "savedFile": "output/imagegen/pleated-dress-colors-20261103/pleated-dress-navy-blue.png"
+    },
+    {
+      "slug": "rose",
+      "name": "Rose",
+      "color": "soft muted ROSE PINK fabric, approximately #C98F9D, a refined dusty rose hue, with natural tonal highlights and shadows in the pleats",
+      "prompt": "Use case: identity-preserve. Asset type: fashion catalog color variant, a precise edit of the provided reference photograph.\nImage 1 is the edit target. Change ONLY the color of the woman's long-sleeved pleated maxi dress, its matching waist tie sash, and her wrapped hijab to soft muted ROSE PINK fabric, approximately #C98F9D, a refined dusty rose hue, with natural tonal highlights and shadows in the pleats. Keep the dress entirely opaque.\nPreserve the exact same adult woman's face, expression, natural skin tone, makeup, body proportions, hand placement, pose, and gaze. Preserve every garment design detail: high neckline, fine vertical pleats, gathered long sleeves, fitted cuffs, tied waist sash, full-length flowing skirt and its original hem.\nKeep the handbag and shoes their ORIGINAL IVORY color and keep the small gold handbag clasp, jewelry, and ring unchanged. Keep the clean white studio backdrop, floor shadow, lighting, sharp photo quality, framing, subject size and placement unchanged. Full body, entire head and shoes visible, same portrait composition as the original.\nGenerate ONE photorealistic edited photograph. Do not add text, logos, swatches, borders, a collage, or any new props. This is a clothing and hijab color edit, not a new model or a new pose.",
+      "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a18d5a-a25e-76d0-bf9e-4411eb5c8704\\exec-bb15dcc5-0634-401b-bc77-8dd73cef8b71.png",
+      "filename": "pleated-dress-rose.png",
+      "dimensions": [
+        1122,
+        1402
+      ],
+      "sha256": "2a7f44b963651adb7d7d91f1b58404bc3776a09253eb29a54d9dca83fcf23134",
+      "savedFile": "output/imagegen/pleated-dress-colors-20261103/pleated-dress-rose.png"
+    }
+  ]
+}

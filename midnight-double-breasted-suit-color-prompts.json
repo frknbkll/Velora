@@ -1,0 +1,35 @@
+{
+  "tool": "built-in image_gen",
+  "reference": "assets/gallery/new-midnight-double-breasted-suit.png",
+  "product": "The Midnight Double-Breasted Suit",
+  "original_color": "Black",
+  "variants": [
+    {
+      "color": "Pure White",
+      "slug": "pure-white",
+      "hex": "#ffffff",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a1a0e6-7913-76f1-aa6e-569e1a032660/exec-36a91dd4-f73b-44a4-a96a-ebeb2006515a.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce product color variant. Input image 1 is the edit target, The Midnight Double-Breasted Suit. Change ONLY the blazer, matching wide-leg trousers, AND turtleneck to clean neutral PURE WHITE (#ffffff), not ivory or cream. Preserve realistic pale-gray fabric shadows so the weave, folds, seams, lapels, double-breasted tailoring, sleeve shape and trouser silhouette remain visible. Keep the exact same woman, model identity, face, expression, long dark hair, skin tone, body proportions, pose with both hands in pockets, full-length portrait framing, white studio background and floor shadows unchanged. Keep the original BLACK belt and BLACK pointed shoes unchanged. Keep all gold buttons, belt buckle, watch and jewelry unchanged. Do not add any text, labels, logos, objects, crops, or other edits. Produce one complete standalone photorealistic color variant.",
+      "png": "assets/gallery/colors/midnight-double-breasted-suit-pure-white.png",
+      "image": "assets/gallery/colors/midnight-double-breasted-suit-pure-white.jpg"
+    },
+    {
+      "color": "Navy Blue",
+      "slug": "navy-blue",
+      "hex": "#172b49",
+      "source": "C:/Users/Furkan/.codex/generated_images/01a1a0e6-9772-7eb3-9b32-ec8835f6ae9b/exec-c6628bd4-fc86-4074-af51-425d0979f7df.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce color variant. Input image 1 is the edit target: The Midnight Double-Breasted Suit full-length studio photograph. Recolor ONLY the blazer, matching wide-leg trousers, AND turtleneck from black to deep NAVY BLUE (#172b49), visibly blue rather than black. Preserve the exact double-breasted construction, lapels, gold buttons, fabric weave, seams, folds, fit, shadows and highlights. Keep the identical woman, her identity, face, expression, long dark hair, skin tone, body shape, exact standing pose with both hands in pockets, hand placement, full-length portrait framing, white studio background, lighting and floor shadows unchanged. Keep the original black belt and black pointed shoes, and all gold buttons, buckle, watch and jewelry unchanged. No other edits, added elements, text, logos or watermark. Produce one standalone full-length photo, not a collage. No JS/catalog changes.",
+      "png": "assets/gallery/colors/midnight-double-breasted-suit-navy-blue.png",
+      "image": "assets/gallery/colors/midnight-double-breasted-suit-navy-blue.jpg"
+    },
+    {
+      "color": "Yellow",
+      "slug": "yellow",
+      "hex": "#f2cf45",
+      "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a19b46-a4f8-7ac1-b6aa-469ede6a4949\\exec-b379cf45-b336-4cfc-85c9-49d391bc4ef1.png",
+      "prompt": "Use case: precise-object-edit. Asset type: fashion ecommerce product color variant. Input image 1 is the edit target. Change ONLY the color of the double-breasted blazer, matching wide-leg trousers AND fitted turtleneck to a clear warm YELLOW (#f2cf45), rich sunny yellow rather than mustard, neon, or orange. Preserve realistic fabric shading and highlights, tailoring, lapels, fine textile texture, seams, double-breasted structure, folds and drape. Keep the identical woman, identity, face, expression, long dark hair, skin tone, body proportions, exact standing pose with both hands in trouser pockets, full-length framing and white studio backdrop unchanged. Keep the black belt and pointed black shoes their original colors. Keep all blazer buttons, belt buckle, watch and jewelry GOLD as in the original. Preserve the original studio lighting and floor shadows. Precise clothing recolor only. No text, logos, watermarks, new objects or layout additions.",
+      "png": "assets/gallery/colors/midnight-double-breasted-suit-yellow.png",
+      "image": "assets/gallery/colors/midnight-double-breasted-suit-yellow.jpg"
+    }
+  ]
+}

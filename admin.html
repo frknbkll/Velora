@@ -8,11 +8,11 @@
     <title>Admin studio — Velora</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=61" />
-    <link rel="stylesheet" href="admin.css?v=6" />
+    <link rel="stylesheet" href="admin.css?v=7" />
     <link rel="stylesheet" href="admin-business.css?v=1" />
     <script src="privacy.js?v=1" defer></script>
     <script src="auth.js?v=6" defer></script>
-    <script src="admin.js?v=6" defer></script>
+    <script src="admin.js?v=7" defer></script>
     <script src="admin-security.js?v=1" defer></script>
     <script src="admin-business.js?v=1" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
@@ -185,6 +185,7 @@
               <div class="admin-field-row admin-color-row"><label class="admin-field" for="admin-edit-base-color">Primary color<input id="admin-edit-base-color" name="base_color" type="text" maxlength="40" value="Original" required /></label><label class="admin-field" for="admin-edit-color-hex">Color swatch<input id="admin-edit-color-hex" name="color_hex" type="color" value="#d1c8bd" /></label></div>
               <div class="admin-color-variants-heading"><div><strong>Additional colors</strong><span>Each color uses its own product photo and swatch.</span></div><button class="admin-button admin-button-secondary" id="admin-add-color-editor" type="button">Add color</button></div>
               <div class="admin-color-variants" id="admin-color-variants"></div>
+              <p class="admin-ai-color-suggestion" id="admin-ai-color-suggestion" role="status" aria-live="polite" hidden></p>
               <p class="admin-field-hint" id="admin-color-variants-note">Existing preset color previews remain available. New colors you add are saved with this product.</p>
             </fieldset>
           </div>
@@ -192,6 +193,8 @@
             <fieldset class="admin-editor-section"><legend><span>03</span> Product photos</legend>
               <p class="admin-media-intro">Give every piece its best angles. The first photo is the cover; shoppers can browse the rest.</p>
               <label class="admin-upload-area" for="admin-image-files"><svg class="admin-icon"><use href="#studio-plus"/></svg><strong>Add product photos</strong><span>JPG, PNG or WebP &middot; up to 8 MB each</span><input id="admin-image-files" type="file" accept="image/jpeg,image/png,image/webp" multiple /></label>
+              <button class="admin-button admin-button-secondary admin-generate-product" id="admin-generate-product" type="button" disabled>Generate product from photo</button>
+              <p class="admin-description-status" id="admin-product-draft-status" role="status" aria-live="polite">Upload a photo to generate a product name, description, category, colors, sizes and suggested price. The AI suggests 10 units of stock; confirm your real count. The SKU is assigned when saved. This image is sent to OpenAI only when you generate. New products stay unpublished.</p>
               <p class="admin-image-count" id="admin-image-count">0 of 12 photos</p>
               <p class="admin-upload-status" id="admin-upload-status" role="status" aria-live="polite"></p>
               <div class="admin-image-gallery" id="admin-image-gallery" aria-label="Product photos"></div>

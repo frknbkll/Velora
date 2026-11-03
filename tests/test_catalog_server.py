@@ -296,6 +296,74 @@ class CatalogServerTests(unittest.TestCase):
         self.assertIn("VELORA_OPENAI_API_KEY", response["error"])
         call.assert_not_called()
 
+    def test_ai_product_draft_uses_only_uploaded_image_and_validates_generated_fields(self):
+        ai_draft = {
+            "name": "The Midnight Tailored Set",
+            "description": "A polished, coordinated set with a clean silhouette and refined lines.",
+            "collection": "THE TAILORED EDIT",
+            "base_color": "Midnight",
+            "color_hex": "#252321",
+            "price": 84.95,
+            "sizes": ["S", "M", "L"],
+            "extra_color": "Burgundy",
+            "extra_color_hex": "#702d3b",
+        }
+
+        class AIResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self, _limit):
+                return json.dumps({"choices": [{"message": {"content": json.dumps(ai_draft)}}]}).encode()
+
+        requests = []
+
+        def fake_urlopen(request, timeout):
+            requests.append((request, timeout))
+            return AIResponse()
+
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": "test-key", "VELORA_OPENAI_MODEL": "gpt-4o-mini"}), \
+                patch.object(server, "urlopen", side_effect=fake_urlopen):
+            status, payload, _ = self.admin.request("POST", "/api/admin/product-draft", {"image": "assets/first.png"})
+        self.assertEqual(status, 200, payload)
+        self.assertEqual(len(requests), 1)
+        request, timeout = requests[0]
+        self.assertEqual(timeout, 12)
+        self.assertEqual(request.full_url, "https://api.openai.com/v1/chat/completions")
+        sent = json.loads(request.data)
+        self.assertEqual(sent["response_format"], {"type": "json_object"})
+        self.assertEqual(sent["messages"][1]["content"][0]["image_url"]["url"],
+                         "data:image/png;base64," + base64.b64encode(png()).decode("ascii"))
+        self.assertIn("Do not output stock, designer, SKU", sent["messages"][0]["content"])
+        self.assertEqual(payload["draft"], {
+            **ai_draft, "founder": "Velora Studio", "stock": 10, "sku": "", "published": False,
+        })
+
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": ""}), patch.object(server, "urlopen") as call:
+            status, response, _ = self.admin.request("POST", "/api/admin/product-draft", {"image": "assets/first.png"})
+        self.assertEqual(status, 503)
+        self.assertIn("VELORA_OPENAI_API_KEY", response["error"])
+        call.assert_not_called()
+
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": "test-key"}), \
+                patch.object(server, "urlopen", side_effect=fake_urlopen):
+            status, _, _ = self.admin.request("POST", "/api/admin/product-draft", {"image": "assets/../server.py"})
+        self.assertEqual(status, 400)
+
+        invalid_draft = {**ai_draft, "sizes": [["not-a-size"]]}
+
+        class InvalidResponse(AIResponse):
+            def read(self, _limit):
+                return json.dumps({"choices": [{"message": {"content": json.dumps(invalid_draft)}}]}).encode()
+
+        with patch.dict(server.os.environ, {"VELORA_OPENAI_API_KEY": "test-key"}), \
+                patch.object(server, "urlopen", return_value=InvalidResponse()):
+            status, _, _ = self.admin.request("POST", "/api/admin/product-draft", {"image": "assets/first.png"})
+        self.assertEqual(status, 502)
+
         invalid_payloads = [
             {**payload, "collection": "UNKNOWN"},
             {**payload, "image": "assets/../server.py"},
@@ -338,6 +406,7 @@ class CatalogServerTests(unittest.TestCase):
                      ("POST", self.path(product) + "/duplicate", {}),
                      ("POST", self.path(product) + "/colors", {"name": "Green", "hex": "#009900", "image": "assets/third.png"}),
                      ("POST", "/api/admin/product-description", {"name": "Test", "collection": "THE EVERYDAY EDIT", "base_color": "Sand", "image": "assets/first.png"}),
+                     ("POST", "/api/admin/product-draft", {"image": "assets/first.png"}),
                      ("POST", "/api/admin/uploads", {"name": "test.png", "data": "invalid"})]
         for method, path, body in mutations:
             with self.subTest(method=method, path=path):

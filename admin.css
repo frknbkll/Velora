@@ -150,6 +150,9 @@
 .admin-description-tools > span, .admin-description-status { color: #887b6c; font-size: .625rem; line-height: 1.7; }
 .admin-description-status { margin: 8px 0 0; }
 .admin-description-tools .admin-button:disabled { cursor: wait; }
+.admin-generate-product { width: 100%; margin-top: 15px; }
+.admin-generate-product:disabled { cursor: not-allowed; }
+.admin-ai-color-suggestion { margin: 12px 0 0; padding: 11px 12px; border: 1px solid #dcd1c2; border-radius: 5px; background: #f8f4ec; color: #6e6254; font-size: .6875rem; line-height: 1.7; }
 .admin-publish-control { display: flex; align-items: flex-start; gap: 11px; margin-top: 21px; padding: 15px; border: 1px solid #ded9ca; border-radius: 5px; background: #f6f7ef; cursor: pointer; }
 .admin-publish-control input { width: 18px; height: 18px; margin: 2px 0; accent-color: #4a6148; }
 .admin-publish-control strong { display: block; color: #46543f; font-size: .75rem; font-weight: 500; }

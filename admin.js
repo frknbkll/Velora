@@ -4,7 +4,7 @@
   const currency = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
   const shortDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
   const sections = ["overview", "products", "customers", "activity", "security", "business"];
-  const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
+  const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
   let toastTimer;
   let loading;
   function element(tag, className, text) {
@@ -146,6 +146,7 @@
     });
     $("#admin-image-gallery").replaceChildren(...(cards.length ? cards : [element("p", "admin-photos-empty", "Add at least one photo to bring this piece to life.")]));
     $("#admin-image-count").textContent = `${state.photos.length} of 12 photos`;
+    $("#admin-generate-product").disabled = !state.photos.length || state.uploading || state.saving || state.generatingDraft || Boolean(state.editing);
     const image = $("#admin-edit-image"); image.hidden = !state.photos.length;
     if (state.photos.length) image.src = state.photos[0]; else image.removeAttribute("src");
   }
@@ -171,6 +172,8 @@
     } else {
       note.textContent = "Preset color previews stay available. Added colors are saved with this product.";
     }
+    $("#admin-ai-color-suggestion").hidden = true;
+    $("#admin-ai-color-suggestion").textContent = "";
     $("#admin-add-color-editor").disabled = !state.editing || state.saving;
     $("#admin-color-variants").replaceChildren(...(list.length ? list : [
       element("p", "admin-color-variants-empty", state.editing ? "No extra colors added yet." : "Create the product first, then add its colors here."),
@@ -297,8 +300,11 @@
     document.querySelectorAll('#admin-size-options input').forEach((input) => { input.checked = sizes.includes(input.value); });
     $("#admin-editor-trash").hidden = !product; $("#admin-upload-status").textContent = "";
     $("#admin-description-status").textContent = "When you generate, these details and the cover photo are sent to OpenAI.";
-    $("#admin-generate-description").disabled = state.generatingDescription;
-    $("#admin-edit-save").textContent = product ? "Save changes \u2197" : "Create product \u2197"; $("#admin-edit-save").disabled = state.generatingDescription; $("#admin-image-files").disabled = false;
+    $("#admin-product-draft-status").textContent = product
+      ? "Image-first generation is available when adding a new product."
+      : "Upload a photo to generate a product name, description, category, colors, sizes and suggested price. The AI suggests 10 units of stock; confirm your real count. The SKU is assigned when saved. This image is sent to OpenAI only when you generate. New products stay unpublished.";
+    $("#admin-generate-description").disabled = state.generatingDescription || state.generatingDraft;
+    $("#admin-edit-save").textContent = product ? "Save changes \u2197" : "Create product \u2197"; $("#admin-edit-save").disabled = state.generatingDescription || state.generatingDraft; $("#admin-image-files").disabled = false;
     editorError(""); renderGallery(); renderColorVariants();
     if (!$("#admin-edit-dialog").open) $("#admin-edit-dialog").showModal();
     $("#admin-edit-dialog").scrollTop = 0; $("#admin-edit-product-name").focus({ preventScroll: true });
@@ -353,6 +359,65 @@
       }
     }
   }
+  async function generateProductDraft() {
+    if (state.generatingDraft || state.generatingDescription || state.saving || state.uploading) return;
+    if (state.editing) {
+      $("#admin-product-draft-status").textContent = "Image-first generation is available when adding a new product.";
+      return;
+    }
+    if (!state.photos.length) {
+      $("#admin-product-draft-status").textContent = "Upload a product photo first.";
+      $("#admin-image-files").focus();
+      return;
+    }
+    const version = state.editorVersion;
+    state.generatingDraft = true;
+    $("#admin-generate-product").disabled = true;
+    $("#admin-generate-description").disabled = true;
+    $("#admin-edit-save").disabled = true;
+    $("#admin-image-files").disabled = true;
+    $("#admin-product-draft-status").textContent = "Analyzing the cover photo and preparing a product draft… The image is being sent to OpenAI.";
+    try {
+      const response = await window.VeloraAuth.request("/api/admin/product-draft", {
+        method: "POST",
+        body: { image: state.photos[0] },
+      });
+      if (version !== state.editorVersion || !$("#admin-edit-dialog").open) return;
+      const draft = response.draft;
+      $("#admin-edit-product-name").value = draft.name;
+      $("#admin-edit-name").textContent = draft.name;
+      $("#admin-edit-sku").value = "";
+      $("#admin-edit-price").value = draft.price.toFixed(2);
+      $("#admin-edit-designer").value = draft.founder;
+      $("#admin-edit-founder").textContent = draft.founder;
+      $("#admin-edit-collection").value = draft.collection;
+      $("#admin-edit-description").value = draft.description;
+      $("#admin-edit-stock").value = String(draft.stock);
+      $("#admin-edit-base-color").value = draft.base_color;
+      $("#admin-edit-color-hex").value = draft.color_hex;
+      $("#admin-edit-published").checked = false;
+      document.querySelectorAll("#admin-size-options input").forEach((input) => {
+        input.checked = draft.sizes.includes(input.value);
+      });
+      const colorSuggestion = $("#admin-ai-color-suggestion");
+      colorSuggestion.textContent = `AI suggests ${draft.extra_color} (${draft.extra_color_hex}) as an additional color. Upload a matching photo in “Add color” to add it as a product variant.`;
+      colorSuggestion.hidden = false;
+      $("#admin-product-draft-status").textContent = `Draft generated. The €${draft.price.toFixed(2)} price and ${draft.sizes.join(", ")} sizes are suggestions; stock is an estimated 10 units. Confirm details before publishing. The SKU will be assigned when you save.`;
+      $("#admin-edit-description").dispatchEvent(new Event("input", { bubbles: true }));
+    } catch (error) {
+      if (version !== state.editorVersion || !$("#admin-edit-dialog").open) return;
+      $("#admin-product-draft-status").textContent = error.message || "We couldn't generate a product draft. Please try again.";
+      if (error.status === 401 || error.status === 403) showError(error);
+    } finally {
+      state.generatingDraft = false;
+      if ($("#admin-edit-dialog").open) {
+        $("#admin-image-files").disabled = false;
+        $("#admin-edit-save").disabled = state.uploading;
+        $("#admin-generate-description").disabled = false;
+        renderGallery();
+      }
+    }
+  }
   function closeEditor() { if (state.saving) return; state.editorVersion += 1; state.uploading = false; $("#admin-edit-dialog").close(); }
   function setEditorBusy(busy) {
     state.saving = busy; $("#admin-edit-dialog").setAttribute("aria-busy", String(busy));
@@ -360,7 +425,7 @@
     $("#admin-edit-close").disabled = busy; $("#admin-edit-save").textContent = busy ? "Saving\u2026" : state.editing ? "Save changes \u2197" : "Create product \u2197";
   }
   async function saveProduct(event) {
-    event.preventDefault(); if (state.saving || state.uploading || state.generatingDescription || !$("#admin-edit-form").reportValidity()) return;
+    event.preventDefault(); if (state.saving || state.uploading || state.generatingDescription || state.generatingDraft || !$("#admin-edit-form").reportValidity()) return;
     const sizes = [...document.querySelectorAll('#admin-size-options input:checked')].map((input) => input.value);
     if (!state.photos.length) { editorError("Add at least one product photo before saving."); $("#admin-image-files").focus(); return; }
     if (!sizes.length) { editorError("Select at least one available size."); $("#admin-size-options input").focus(); return; }
@@ -491,6 +556,7 @@
   $("#admin-edit-dialog").addEventListener("click", (event) => { if (event.target !== event.currentTarget) return; const rect = event.currentTarget.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeEditor(); });
   $("#admin-edit-form").addEventListener("submit", saveProduct);
   $("#admin-generate-description").addEventListener("click", generateDescription);
+  $("#admin-generate-product").addEventListener("click", generateProductDraft);
   $("#admin-edit-product-name").addEventListener("input", () => { $("#admin-edit-name").textContent = $("#admin-edit-product-name").value.trim() || "Your next favorite piece"; });
   $("#admin-edit-designer").addEventListener("input", () => { $("#admin-edit-founder").textContent = $("#admin-edit-designer").value.trim() || "A considered addition to your collection"; });
   $("#admin-image-files").addEventListener("change", uploadPhotos);

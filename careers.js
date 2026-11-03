@@ -9,6 +9,8 @@
       team: "Client experience",
       introduction: "Make every conversation feel considered, warm, and distinctly Velora.",
       overview: "The Sales & Client Experience Associate helps make discovering Velora feel personal. This role brings thoughtful styling guidance together with attentive service, creating a welcoming experience from the first question to the final details.",
+      experience: "This is an illustrative early-career profile. Customer-facing work, retail, hospitality, styling, or volunteering can all provide useful experience; transferable skills and a thoughtful approach matter more than a specific number of years.",
+      certifications: "No certificate is required for this illustrative role. Optional study in customer service, personal styling, retail sales, or visual merchandising can help build confidence; relevant learning already in progress is welcome.",
       responsibilities: [
         "Welcome customers and offer thoughtful, individual styling guidance.",
         "Help customers explore pieces, fit, and outfit pairings.",
@@ -28,6 +30,8 @@
       team: "Brand & community",
       introduction: "Bring the Velora point of view to life across stories, campaigns, and community.",
       overview: "This role helps translate the Velora brand into thoughtful, consistent communication. You will connect creative ideas with a clear content plan and help make every interaction feel recognizably human.",
+      experience: "This illustrative role suits an early-career marketer with a small portfolio, relevant coursework, personal projects, or internship experience. Practical examples of planning content and learning from audience response are valuable.",
+      certifications: "No certificate is required. Optional learning could include Meta Blueprint, Google Analytics, or a short course in social content strategy; candidates planning to pursue one of these may mention it.",
       responsibilities: [
         "Plan and create engaging social content that reflects the brand voice.",
         "Coordinate campaign calendars, launches, and creative collaborations.",
@@ -47,6 +51,8 @@
       team: "Creative studio",
       introduction: "Help shape the pieces, details, and visual language of each collection.",
       overview: "The Fashion & Design Assistant supports the early ideas and practical details behind a collection. It is a hands-on creative role for someone curious about how research, fabric, fit, and styling come together.",
+      experience: "This illustrative assistant role is suitable for a recent graduate, student, career changer, or emerging designer. Coursework, a personal portfolio, sewing projects, studio assistance, or other hands-on creative work can demonstrate relevant experience.",
+      certifications: "A formal certificate is not required. Optional study in fashion design, garment construction, pattern cutting, textiles, or CAD tools such as CLO 3D is useful; planned training is welcome.",
       responsibilities: [
         "Support research, mood boards, and early collection concepts.",
         "Assist with styling, fittings, and preparation for campaign shoots.",
@@ -66,6 +72,8 @@
       team: "Digital storefront",
       introduction: "Make the online collection easy to explore, understand, and love.",
       overview: "This coordinator keeps the digital collection considered and clear. The role connects product information, visual presentation, and customer journeys so each piece is represented consistently online.",
+      experience: "This illustrative early-career role welcomes experience from retail, product administration, digital content, or personal e-commerce projects. Accuracy, organization, and examples of improving how information is presented are especially useful.",
+      certifications: "No certificate is required. Optional learning in e-commerce operations, Shopify, product merchandising, or Google Analytics can support the role; candidates may also describe courses they plan to take.",
       responsibilities: [
         "Organize product details, imagery, and collection updates for the online store.",
         "Check product pages for clear descriptions, accurate options, and consistent presentation.",
@@ -85,6 +93,8 @@
       team: "Client experience",
       introduction: "Turn customer questions into moments of clarity and care.",
       overview: "The Customer Care Specialist supports customers with thoughtful, useful answers. This role helps people feel heard while sharing common themes with the team so the experience can keep improving.",
+      experience: "This illustrative role suits someone with experience in customer support, hospitality, retail, or community service, including transferable or volunteer experience. Clear writing, patience, and calm problem-solving are key.",
+      certifications: "No formal certificate is required. Optional training in customer experience, conflict resolution, accessibility, or common CRM tools can be helpful; in-progress learning is welcome.",
       responsibilities: [
         "Respond to product, sizing, and general service questions with care.",
         "Explain available shopping information in a clear, consistent way.",
@@ -104,6 +114,8 @@
       team: "Product & production",
       introduction: "Help bring thoughtful materials and well-made ideas together.",
       overview: "This assistant supports the research and coordination behind product development. The focus is on keeping information organized and helping the team ask considered questions about materials, samples, and production.",
+      experience: "This illustrative assistant role welcomes relevant study, internships, practical administration, or transferable coordination experience. Familiarity with textiles, supplier communication, product samples, or careful record-keeping is useful but not essential.",
+      certifications: "No certificate is required. Optional courses in textiles, garment production, responsible sourcing, or supply-chain basics may help; candidates planning relevant study are encouraged to say so.",
       responsibilities: [
         "Organize material references, supplier information, and sample notes.",
         "Help track product development milestones and follow-up questions.",
@@ -123,6 +135,8 @@
       team: "Creative studio",
       introduction: "Create imagery that makes the feeling behind each piece visible.",
       overview: "The Visual Content Producer helps plan and deliver the imagery that introduces Velora collections. This role brings a strong visual point of view together with careful shoot preparation and asset organization.",
+      experience: "This illustrative role is suited to an emerging photographer, videographer, stylist, or content creator. A portfolio, personal projects, assisting on shoots, or experience organizing digital assets can demonstrate relevant skills.",
+      certifications: "A certificate is not required when practical work can be shown. Optional training in photography, lighting, video editing, accessibility, or Adobe tools may help; planned learning is welcome.",
       responsibilities: [
         "Help plan photo and video concepts for products, stories, and campaigns.",
         "Coordinate shoot references, shot lists, styling needs, and schedules.",
@@ -142,6 +156,8 @@
       team: "Retail & operations",
       introduction: "Make the thoughtful details of the Velora experience work smoothly.",
       overview: "This role helps coordinate the practical work that supports a considered retail experience. It connects people, product information, and day-to-day processes so the team can focus on customers.",
+      experience: "This illustrative coordinator role welcomes experience in retail, hospitality, scheduling, stock support, or team administration. Examples of dependable follow-through and improving a routine are more important than a particular career path.",
+      certifications: "No certificate is required. Optional learning in retail operations, inventory management, workplace health and safety, or first aid can be useful; candidates may include certifications they are working toward.",
       responsibilities: [
         "Help organize store routines, schedules, and operational checklists.",
         "Keep product and display information accurate and easy for the team to use.",
@@ -161,6 +177,8 @@
       team: "Brand & storytelling",
       introduction: "Give every piece a description that is useful, warm, and true to its details.",
       overview: "The Product Copywriter turns product knowledge into clear, inviting language. This role balances the personality of the Velora voice with practical details customers need to make informed choices.",
+      experience: "This illustrative role welcomes writing samples from work, study, a personal blog, volunteer projects, or other portfolios. Experience editing product information, web copy, newsletters, or accessible content is useful.",
+      certifications: "No writing certificate is required. Optional short courses in copywriting, editing, SEO, or accessible content can support development; planned study is welcome alongside strong writing samples.",
       responsibilities: [
         "Write and refine product descriptions, collection notes, and helpful guidance.",
         "Work with the product team to confirm names, details, and material information.",
@@ -180,6 +198,8 @@
       team: "People & culture",
       introduction: "Help create a welcoming, thoughtful experience for the people behind Velora.",
       overview: "This assistant supports the everyday details that help a small team work well together. The role is grounded in discretion, organization, and care for clear, welcoming communication.",
+      experience: "This illustrative assistant role welcomes transferable experience in administration, education, customer support, volunteering, or people coordination. Careful organization, discretion, and respectful communication are essential.",
+      certifications: "No HR certificate is required. Optional study could include an introductory people-practice or employment-law course; candidates considering a recognized HR qualification may mention their plans.",
       responsibilities: [
         "Help organize onboarding information and team resources.",
         "Coordinate schedules and practical details for team activities.",
@@ -199,6 +219,8 @@
       team: "Product & impact",
       introduction: "Bring care and curiosity to the materials and choices behind each collection.",
       overview: "The Sustainability & Materials Coordinator helps the team understand product materials and document what is known. The role favors careful research and transparent communication over unsupported claims.",
+      experience: "This illustrative coordinator role welcomes research, study, sourcing, product, or data-organization experience. Examples of careful evidence review and clear communication are useful, including academic or personal projects.",
+      certifications: "No sustainability certificate is required. Optional learning in textile materials, life-cycle assessment, responsible sourcing, or sustainability reporting can be relevant; candidates may describe a course they plan to pursue.",
       responsibilities: [
         "Gather and organize available information about materials and product care.",
         "Research lower-impact material options and relevant industry practices.",
@@ -248,6 +270,13 @@
   const detail = document.querySelector("[data-vacancy-detail]");
   if (!detail) return;
 
+  const hrContact = {
+    name: "Leila Demir",
+    role: "HR Specialist",
+    email: "leila.demir@lenora.com",
+    phone: "+31 6 45 98 46 70",
+    photo: "assets/team/leila-demir.jpg",
+  };
   const vacancy = vacancies.find((item) => item.slug === new URLSearchParams(location.search).get("role"));
   const element = (tag, className, text) => {
     const node = document.createElement(tag);
@@ -255,12 +284,17 @@
     if (text) node.textContent = text;
     return node;
   };
-  const listSection = (heading, items) => {
-    const section = element("section", "vacancy-detail-section");
+  const listSection = (heading, items, className) => {
+    const section = element("section", `vacancy-detail-section ${className}`);
     section.append(element("h2", "", heading));
     const list = element("ul", "vacancy-detail-list");
     items.forEach((item) => list.append(element("li", "", item)));
     section.append(list);
+    return section;
+  };
+  const textSection = (heading, text, className) => {
+    const section = element("section", `vacancy-detail-section ${className}`);
+    section.append(element("h2", "", heading), element("p", "", text));
     return section;
   };
 
@@ -281,21 +315,81 @@
 
   const backLink = element("a", "vacancy-back-link", "← All vacancies");
   backLink.href = "careers.html";
-  detail.append(
-    backLink,
+  const hero = element("section", "vacancy-detail-hero");
+  const heroCopy = element("div", "vacancy-detail-hero-copy");
+  heroCopy.append(
     element("p", "eyebrow", vacancy.team),
     element("h1", "", vacancy.title),
     element("p", "vacancy-detail-lead", vacancy.introduction)
   );
+  const heroImage = element("img", "vacancy-detail-image");
+  heroImage.src = `assets/careers/${vacancy.slug}.jpg`;
+  heroImage.alt = vacancy.photoAlt;
+  heroImage.width = 600;
+  heroImage.height = 750;
+  heroImage.decoding = "async";
+  hero.append(heroCopy, heroImage);
 
   const overview = element("section", "vacancy-detail-section");
   overview.append(element("h2", "", "About the role"), element("p", "", vacancy.overview));
-  detail.append(overview, listSection("What you’ll do", vacancy.responsibilities), listSection("What you’ll bring", vacancy.qualities));
+  overview.classList.add("vacancy-detail-section--overview");
+  const content = element("div", "vacancy-detail-grid");
+  content.append(
+    overview,
+    listSection("What you’ll do", vacancy.responsibilities, "vacancy-detail-section--responsibilities"),
+    listSection("What you’ll bring", vacancy.qualities, "vacancy-detail-section--qualities"),
+    textSection("Relevant experience", vacancy.experience, "vacancy-detail-section--experience"),
+    textSection("Certificates & continued learning", vacancy.certifications, "vacancy-detail-section--certifications")
+  );
+
+  const contact = element("section", "vacancy-contact vacancy-hr-contact");
+  contact.setAttribute("aria-labelledby", "vacancy-hr-heading");
+  const contactImage = element("img", "vacancy-hr-contact-photo");
+  contactImage.src = hrContact.photo;
+  contactImage.alt = `Illustrative portrait of ${hrContact.name}`;
+  contactImage.width = 768;
+  contactImage.height = 960;
+  contactImage.loading = "lazy";
+  contactImage.decoding = "async";
+  const contactCopy = element("div", "vacancy-hr-contact-copy");
+  contactCopy.append(
+    element("p", "vacancy-contact-role", "YOUR PEOPLE & CULTURE CONTACT"),
+    element("h2", "", "Questions about the role?")
+  );
+  contactCopy.lastElementChild.id = "vacancy-hr-heading";
+  const contactDescription = element("p", "", "Leila can help with questions about the role and the experience or learning that may be relevant.");
+  const contactDetails = element("dl", "vacancy-hr-contact-details");
+  [
+    ["Name", hrContact.name],
+    ["Role", hrContact.role],
+    ["Email", hrContact.email],
+    ["Phone", hrContact.phone],
+  ].forEach(([label, value]) => {
+    const row = element("div", "");
+    row.append(element("dt", "", label));
+    const detailValue = element("dd", "");
+    if (label === "Email") {
+      const link = element("a", "", value);
+      link.href = `mailto:${value}`;
+      detailValue.append(link);
+    } else if (label === "Phone") {
+      const link = element("a", "", value);
+      link.href = `tel:${value.replace(/[^\d+]/g, "")}`;
+      detailValue.append(link);
+    } else {
+      detailValue.textContent = value;
+    }
+    row.append(detailValue);
+    contactDetails.append(row);
+  });
+  contactCopy.append(contactDescription, contactDetails);
+  contact.append(contactImage, contactCopy);
 
   const note = element("aside", "vacancy-detail-note");
   note.append(
     element("h2", "", "A note about recruitment"),
     element("p", "", "This is an illustrative role profile. Recruitment is not currently open, and this website does not accept applications, CVs, or identity documents.")
   );
-  detail.append(note);
+  content.append(contact, note);
+  detail.append(backLink, hero, content);
 })();

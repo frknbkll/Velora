@@ -1,5 +1,20 @@
 # Product color images
 
+## Pose revisions — 3 November 2026
+
+Product color variants now use revised poses: walking, three-quarter views,
+crossed ankles, hands at the waist, sleeve adjustments and relaxed standing
+positions. Seated looks retain seated compositions. Garment-only previews use
+rearranged flat lays. Five newer single-photo products also have revised poses.
+
+The active replacements and generation source paths are recorded in
+`product-pose-revisions.json`. Revised assets use `-pose-v2` filenames; original
+files are retained. The live admin catalog's uploaded galleries and color
+variants are included. A product-image-field backup is saved under
+`output/imagegen/product-poses-20261103/` when updating the live catalog.
+
+The sage Ivory Tie-Neck Set uses a fully buttoned blouse for full chest coverage.
+
 Generated with the built-in imagegen tool. Original product photographs are preserved.
 Each product has its original color and two generated alternate colors.
 The second alternate adds a new pose, or a different arrangement for garment-only
