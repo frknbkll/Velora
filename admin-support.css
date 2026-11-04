@@ -1,0 +1,61 @@
+/* Private customer conversations in the Velora admin studio. */
+.support-heading { align-items: flex-start; }
+.support-availability { min-width: 230px; max-width: 320px; padding: 14px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--admin-surface); }
+.support-availability label { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 12px; cursor: pointer; }
+.support-availability input { flex: 0 0 20px; width: 20px; height: 20px; margin: 0; accent-color: var(--accent); }
+.support-availability p { margin: 4px 0 0; color: #72695e; font-size: 11px; line-height: 1.7; }
+.support-availability.is-online { border-color: #99ad92; }
+.support-availability.is-online p { color: #48644e; }
+.support-inbox { display: grid; grid-template-columns: minmax(230px, .8fr) minmax(0, 1.8fr); min-height: 650px; margin-bottom: 40px; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; background: var(--admin-surface); }
+.support-inbox-list { min-width: 0; padding: 20px 14px; border-right: 1px solid var(--line); background: #f1ece4; }
+.support-inbox-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding: 0 6px 15px; }
+.support-inbox-tools h2 { margin: 0; font: 400 24px/1.3 var(--serif); letter-spacing: -.035em; }
+.support-inbox-tools label { max-width: 100%; }
+.support-inbox-tools select { width: 100%; min-width: 0; min-height: 44px; max-width: 190px; padding: 9px 12px; border: 1px solid #cfc6b8; border-radius: 5px; background: var(--admin-surface); color: var(--ink); font: 400 14px/1.5 var(--sans); }
+.support-state { margin: 0; color: #746b5f; font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.support-inbox-list > .support-state { margin: 0 6px 14px; }
+.support-conversations { display: grid; align-content: start; gap: 8px; max-height: 640px; overflow-y: auto; overscroll-behavior: contain; }
+.support-conversation { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 6px 10px; width: 100%; min-height: 98px; padding: 14px; border: 1px solid transparent; border-radius: 7px; background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+.support-conversation:hover { border-color: #d2c5b4; background: #fffdf980; }
+.support-conversation[aria-current="true"] { border-color: #cbb49b; background: #fffdf9; box-shadow: 0 2px 7px #30281c08; }
+.support-conversation-name { min-width: 0; font-size: 13px; font-weight: 500; overflow-wrap: anywhere; }
+.support-conversation-date { color: #80756a; font-size: 10px; line-height: 1.7; }
+.support-conversation-preview { grid-column: 1 / -1; display: -webkit-box; overflow: hidden; -webkit-box-orient: vertical; -webkit-line-clamp: 2; color: #756b5f; font-size: 12px; line-height: 1.7; white-space: pre-line; overflow-wrap: anywhere; }
+.support-conversation-bottom { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.support-conversation-badge { display: inline-flex; align-items: center; min-width: 23px; min-height: 23px; justify-content: center; padding: 2px 6px; border-radius: 50%; background: var(--accent); color: #fffdf9; font-size: 10px; }
+.support-conversation-status { color: #756b5f; font-size: 10px; }
+#support-inbox-load-more { width: 100%; min-height: 44px; margin-top: 16px; white-space: normal; }
+.support-inbox-detail { min-width: 0; }
+.support-conversation-empty { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 610px; padding: 40px 24px; text-align: center; }
+.support-conversation-empty > span { color: #c4ad93; font: 400 90px/1 var(--serif); letter-spacing: -.1em; }
+.support-conversation-empty h2 { margin: 28px 0 18px; font: 400 clamp(26px, 3vw, 38px)/1.2 var(--serif); letter-spacing: -.045em; }
+.support-conversation-empty h2 em { color: var(--accent); font-weight: 400; }
+.support-conversation-empty p { max-width: 36ch; margin: 0; color: #7a7063; font-size: 13px; line-height: 1.8; }
+.support-thread { display: flex; flex-direction: column; min-width: 0; min-height: 650px; }
+.support-thread-header { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 22px 24px; border-bottom: 1px solid var(--line); }
+.support-thread-header > div { min-width: 0; }
+.support-thread-header h2 { margin: 0; font: 400 28px/1.3 var(--serif); letter-spacing: -.035em; overflow-wrap: anywhere; }
+.support-thread-header p { margin: 5px 0 0; color: #7a7063; font-size: 11px; line-height: 1.7; }
+.support-thread-header .admin-button { flex: 0 0 auto; min-height: 44px; max-width: 45%; padding: 9px 12px; font-size: 11px; white-space: normal; }
+.support-thread-notice { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px 16px; padding: 10px 24px 0; }
+.support-text-button { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 0; border: 0; background: transparent; color: var(--accent); font: 500 11px/1.6 var(--sans); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+#support-load-earlier { align-self: center; margin: 3px 24px 0; }
+.support-messages { flex: 1 1 auto; min-width: 0; height: 370px; max-height: min(52svh, 620px); min-height: 240px; padding: 22px 24px; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; scroll-behavior: auto; }
+.support-message { width: fit-content; max-width: min(88%, 620px); margin: 0 0 14px; padding: 12px 15px; border: 1px solid #e1d7c9; border-radius: 9px 9px 9px 2px; background: #f1ece4; }
+.support-message[data-sender="staff"] { margin-left: auto; border-color: #ddd1be; border-radius: 9px 9px 2px 9px; background: #e9e2d5; }
+.support-message-heading { display: flex; align-items: baseline; flex-wrap: wrap; gap: 5px 12px; color: #776b5c; font-size: 10px; line-height: 1.6; }
+.support-message-heading strong { color: #665541; font-weight: 500; }
+.support-message > p { margin: 5px 0 0; color: #3f3a32; font-size: 14px; line-height: 1.75; white-space: pre-wrap; overflow-wrap: anywhere; }
+.support-new-messages { align-self: center; min-height: 44px; margin: 0 24px 10px; padding: 9px 16px; border: 1px solid #c9af94; border-radius: 20px; background: #fff8ed; color: #895033; font: 500 11px/1.5 var(--sans); cursor: pointer; }
+.support-reply-form { margin-top: auto; padding: 18px 24px 22px; border-top: 1px solid var(--line); }
+.support-reply-form > label { display: block; margin-bottom: 8px; color: #51493d; font-size: 12px; font-weight: 500; }
+.support-reply-form textarea { width: 100%; min-width: 0; min-height: 90px; max-height: 280px; resize: vertical; padding: 12px 14px; border: 1px solid #cfc2b0; border-radius: 6px; background: #fffdf9; color: var(--ink); font: 400 16px/1.6 var(--sans); }
+.support-reply-footer { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-top: 10px; }
+.support-reply-footer p { margin: 0; color: #847768; font-size: 10px; line-height: 1.7; }
+.support-reply-footer button { min-height: 44px; flex: 0 0 auto; }
+.support-reply-message { margin: 10px 0 0; color: #994b3a; font-size: 12px; line-height: 1.75; }
+.support-reply-message:empty, .support-state:empty { display: none; }
+.support-reply-message.is-success { color: #48644e; }
+@media (max-width: 1100px) { .support-heading { flex-direction: column; align-items: stretch; } .support-availability { min-width: 0; max-width: none; } .support-inbox { grid-template-columns: minmax(200px, .8fr) minmax(0, 1.4fr); } .support-thread-header { padding: 18px; } .support-thread-header h2 { font-size: 24px; } .support-thread-notice { padding-inline: 18px; } .support-messages { padding: 18px; } .support-reply-form { padding: 16px 18px 20px; } }
+@media (max-width: 760px) { .support-inbox { grid-template-columns: minmax(0, 1fr); min-height: 0; } .support-inbox-list { padding: 18px 14px; border-right: 0; border-bottom: 1px solid var(--line); } .support-conversations { max-height: 240px; } .support-conversation-empty { min-height: 330px; } .support-thread { min-height: 570px; scroll-margin-top: 20px; } .support-thread-header { align-items: flex-start; padding: 18px 16px; } .support-thread-header h2 { font-size: 24px; } .support-thread-header .admin-button { font-size: 10px; } .support-thread-notice { padding-inline: 16px; } .support-messages { min-height: 230px; max-height: 48svh; padding: 18px 16px; } .support-message { max-width: 94%; } .support-reply-form { padding: 16px; } .support-reply-footer { flex-wrap: wrap; } .support-reply-footer button { margin-left: auto; } }
+@media (prefers-reduced-motion: reduce) { .support-thread, .support-messages { scroll-behavior: auto; } }

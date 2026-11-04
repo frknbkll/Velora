@@ -1,0 +1,64 @@
+/* Customer care sits alongside the existing Velora collection and account UI. */
+.support-launcher { position: fixed; right: 22px; bottom: calc(22px + var(--privacy-banner-height, 0px)); z-index: 45; display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 13px 20px; border: 1px solid #ffffff50; border-radius: 28px; background: #303227; color: #fffdf9; box-shadow: 0 6px 24px #29262130; cursor: pointer; font: 500 13px/1.5 var(--sans, Arial, sans-serif); }
+.support-launcher::before { content: ""; width: 17px; height: 14px; border: 1.5px solid currentColor; border-radius: 5px 5px 5px 0; }
+.support-unread { display: grid; place-items: center; min-width: 22px; height: 22px; padding: 0 5px; border-radius: 50%; background: #e8bca0; color: #292621; font-size: 11px; }
+.support-chat { position: fixed; z-index: 50; inset: auto 22px 84px auto; width: min(400px, calc(100vw - 32px)); max-width: none; height: min(690px, calc(100dvh - 110px)); max-height: calc(100dvh - 24px); margin: 0; padding: 0; border: 1px solid #cfc5b8; border-radius: 15px; background: #fcfaf6; color: #292621; box-shadow: 0 20px 80px #1714113d; font-family: var(--sans, Arial, sans-serif); overflow: hidden; }
+.support-chat[open] { display: flex; flex-direction: column; }
+.support-chat [hidden], .support-launcher [hidden] { display: none !important; }
+.support-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; padding: 22px 20px 14px; background: #eee8df; flex: 0 0 auto; }
+.support-eyebrow { margin: 0 0 8px; color: #736655; font-size: 9px; letter-spacing: .13em; line-height: 1.5; }
+.support-header h2 { margin: 0; max-width: 15ch; color: #303227; font: 400 26px/1.17 var(--serif, Georgia, serif); letter-spacing: -.045em; }
+.support-close { display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; border: 1px solid #cfc5b8; border-radius: 50%; background: #fcfaf6; color: #292621; font: 25px/1 Arial, sans-serif; cursor: pointer; }
+.support-status { margin: 0; padding: 11px 20px 0; color: #746657; font-size: 12px; line-height: 1.55; }
+.support-status::before { content: ""; display: inline-block; width: 7px; height: 7px; margin-right: 7px; border-radius: 50%; background: #a59784; }
+.support-status.is-online::before { background: #507550; }
+.support-context { margin: 5px 0 0; padding: 0 20px 12px; color: #746b60; font-size: 11px; line-height: 1.55; overflow-wrap: anywhere; }
+.support-error { flex: 0 0 auto; margin: 0 20px; color: #923d30; font-size: 12px; line-height: 1.6; overflow-wrap: anywhere; }
+.support-error:empty { display: none; }
+.support-chat > .support-text-button { flex: 0 0 auto; align-self: flex-start; margin-left: 20px; }
+.support-older { flex: 0 0 auto; align-self: center; min-height: 36px; padding: 5px 10px; border: 0; background: transparent; color: #8c4632; text-decoration: underline; text-underline-offset: 3px; font-size: 11px; cursor: pointer; }
+.support-messages { min-height: 80px; flex: 1 1 auto; overflow: auto; overscroll-behavior: contain; padding: 18px 16px; border-block: 1px solid #e2dacf; background: #f5f1eb; scrollbar-width: thin; }
+.support-empty { max-width: 29ch; margin: 16px auto; text-align: center; color: #746b60; font-size: 13px; line-height: 1.8; }
+.support-message { width: fit-content; max-width: 92%; margin: 0 0 13px; padding: 12px 13px; border: 1px solid #dfd6cb; border-radius: 10px 10px 10px 2px; background: #fffdf9; overflow-wrap: anywhere; }
+.support-message.is-customer { margin-left: auto; border-color: #ddd0bd; border-radius: 10px 10px 2px 10px; background: #e9dfd1; }
+.support-message-meta { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 3px 12px; margin-bottom: 6px; color: #766b5e; font-size: 9px; line-height: 1.6; }
+.support-message-meta strong { max-width: 100%; color: #5a5146; font-size: 10px; font-weight: 500; }
+.support-message-body { margin: 0; white-space: pre-wrap; color: #3b372f; font-size: 13px; line-height: 1.7; }
+.support-form { flex: 0 0 auto; display: grid; gap: 10px; margin: 0; padding: 14px 16px 6px; }
+.support-guest-fields { display: grid; gap: 5px; }
+.support-guest-fields label { font-size: 11px; color: #6b6053; }
+.support-form input, .support-form textarea { width: 100%; min-width: 0; min-height: 44px; margin: 0; padding: 10px 12px; border: 1px solid #cfc5b8; border-radius: 5px; background: #fffdf9; color: #292621; font: 16px/1.5 var(--sans, Arial, sans-serif); }
+.support-form textarea { min-height: 72px; max-height: 120px; resize: vertical; }
+.support-send, .support-cancel { display: inline-flex; justify-content: center; align-items: center; min-height: 44px; padding: 10px 14px; border: 1px solid #303227; border-radius: 5px; background: #303227; color: #fffdf9; font: 500 12px/1.6 var(--sans, Arial, sans-serif); cursor: pointer; }
+.support-cancel { border-color: #cfc5b8; background: transparent; color: #292621; }
+.support-help { margin: 0; color: #746b60; font-size: 10px; line-height: 1.6; }
+.support-footer { flex: 0 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 18px; padding: 0 16px 7px; }
+.support-text-button, .support-footer a { min-height: 44px; display: inline-flex; align-items: center; padding: 6px 0; border: 0; background: transparent; color: #8c4632; font: 11px/1.5 var(--sans, Arial, sans-serif); text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.support-chat button:disabled, .support-chat input:disabled, .support-chat textarea:disabled, .support-delete-dialog button:disabled { opacity: .55; cursor: wait; }
+.support-launcher:focus-visible, .support-chat :is(button, input, textarea, a, [tabindex]):focus-visible, .support-delete-dialog button:focus-visible { outline: 3px solid #a64e37; outline-offset: 3px; }
+.support-delete-dialog { width: min(440px, calc(100vw - 32px)); max-height: calc(100dvh - 32px); padding: 28px; border: 1px solid #cfc5b8; border-radius: 12px; background: #fcfaf6; color: #292621; font-family: var(--sans, Arial, sans-serif); }
+.support-delete-dialog::backdrop { background: #171411a8; }
+.support-delete-dialog h2 { margin: 0 0 16px; font: 400 29px/1.25 var(--serif, Georgia, serif); }
+.support-delete-dialog p { color: #6b6053; font-size: 14px; line-height: 1.7; }
+.support-delete-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.support-delete-actions button { flex: 1 1 150px; }
+@media (max-width: 600px) {
+  .support-launcher { right: 14px; bottom: calc(14px + var(--privacy-banner-height, 0px)); min-height: 48px; padding: 12px 16px; }
+  .support-chat { inset: calc(8px + var(--support-viewport-top, 0px)) 8px auto; width: auto; height: calc(var(--support-viewport-height, 100dvh) - 16px); max-height: calc(var(--support-viewport-height, 100dvh) - 16px); border-radius: 12px; }
+  .support-header { padding: 17px 16px 12px; }
+  .support-header h2 { font-size: 25px; }
+  .support-status { padding-inline: 16px; }
+  .support-context { padding-inline: 16px; }
+  .support-message { max-width: 95%; }
+}
+@media (max-height: 600px) {
+  .support-header { padding-block: 10px; }
+  .support-header h2 { font-size: 22px; }
+  .support-eyebrow, .support-help { display: none; }
+  .support-context { padding-bottom: 6px; }
+  .support-messages { min-height: 45px; }
+  .support-form { gap: 6px; padding-top: 8px; }
+  .support-form textarea { min-height: 50px; max-height: 70px; }
+  .support-footer { padding-bottom: 2px; }
+}
+@media (prefers-reduced-motion: reduce) { .support-chat, .support-messages { scroll-behavior: auto; } }

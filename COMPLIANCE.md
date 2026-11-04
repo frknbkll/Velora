@@ -1,10 +1,10 @@
 # Privacy and consumer-information implementation
 
-Reviewed 3 November 2026. This records the implementation and outstanding operator decisions. It is not a certification of legal compliance.
+Reviewed 4 November 2026. This records the implementation and outstanding operator decisions. It is not a certification of legal compliance.
 
 ## Current service and region
 
-The site is a local fashion showcase with real account features and public account-holder reviews. There is no checkout, payment processing, order fulfillment or mailing service. Reviews are not verified purchases. The Netherlands/EU references below are a working starting point based on the project context; the operator's actual establishment and target markets still need confirmation.
+The site is a local fashion showcase with real account features, public account-holder reviews and private customer-support chat. There is no checkout, payment processing, order fulfillment or mailing service. Reviews are not verified purchases. The Netherlands/EU references below are a working starting point based on the project context; the operator's actual establishment and target markets still need confirmation.
 
 ## Implemented website controls
 
@@ -19,13 +19,14 @@ The site is a local fashion showcase with real account features and public accou
 | Third-party audit | `THIRD_PARTY_AUDIT.md`: local assets/library; no enabled tracking SDK |
 | Fair presentation | No manufactured customer scores or signup success; showcase pricing and AI previews identified |
 | Account-holder reviews | `reviews.html`: one editable/deletable review per signed-in account, star rating, optional photo, account name by default or anonymous public display; no verified-purchase label |
+| Customer support | Private guest/account conversations and staff inbox; persistent messages and read positions; availability derived from staff presence; no fabricated replies or promised response times |
 | Pricing | Bag subtotal is explicitly a preview; no checkout or subscription charges |
 | Accessibility | Shared focus/contrast/keyboard and image-text improvements; verify actual pages and content after edits |
 | Operator details | `business-details.html`: available details only; missing values remain clearly marked |
 | Children | Accounts restricted to age 16+ as site policy, using a confirmation instead of collecting birth dates |
 | Unsubscribe | `unsubscribe.html` explains that no mailing list is active. Do not collect subscribers until a working consent/unsubscribe service exists |
 | Image rights | `IMAGE_RIGHTS.md` and `image-rights-register.json`: provenance evidence and unresolved rights separated |
-| Data deletion | Authenticated account deletion with password and MFA where enabled; reviews and review-photo records cascade from the account; final-admin safeguard; browser data can be cleared separately |
+| Data deletion | Authenticated account deletion with password and MFA where enabled; reviews, review-photo records and account-linked support conversations cascade from the account; support conversations can also be deleted from chat; final-admin safeguard; browser data can be cleared separately |
 
 ## Operator information still required
 
@@ -58,6 +59,10 @@ Restart the account server through `Start-Velora.cmd` after backend updates. Add
 Account service data is used to provide the requested account; security activity supports protection of that service. Optional browser persistence is a separate choice. Keep this division clear rather than asking visitors to agree to all processing at once.
 
 Reviews are optional public submissions associated with their author's account. Public responses show the current account name unless the author chooses anonymous display; they omit account identifiers and email addresses. Anonymous display is not anonymous storage, and text or visible photo content can still identify someone. Review photos use random identifiers, have supported embedded location/descriptive metadata removed, and are stored as protected database records rather than publicly accessible unbound uploads. Each account may have one unattached upload; it expires after 24 hours and is cleaned on startup or subsequent review/upload activity. Deleting a review deletes its associated photo; deleting an account cascades review and photo records. The existing manual-backup limitation continues to apply.
+
+Support chat stores private message text, sender labels, timestamps and read positions. Account names come from the signed-in account; guest names are optional, with no email required. Guest chat starts only when requested and uses the HttpOnly, SameSite=Strict `velora_support` cookie scoped to `/api/support`, with a seven-day lifetime. Guest records expire after 30 days without activity and are cleaned on startup and later support session/message activity. Signed-in conversations remain until the customer deletes the conversation or account. Guest histories are not merged into accounts. Only authorized owner/manager staff can use the support inbox. The online indicator uses a 45-second staff-presence lease; it does not promise immediate replies. Messages remain in this service rather than being emailed or sent to a third-party chat/AI provider.
+
+Once chat is first requested, session storage key `velora-support-panel` remembers an open/closed UI flag per tab so chat can reconnect across navigation. It contains no customer text, name or credentials. Browsing before first opening chat does not create this support session.
 
 The 16+ registration rule is a product choice, not a universal legal-age assertion. The Dutch regulator's [child-consent guidance](https://autoriteitpersoonsgegevens.nl/themas/basis-avg/avg-algemeen/grondslag-toestemming) describes the additional requirements when consent is used for children's information. There is no verified parental-consent workflow in this implementation.
 

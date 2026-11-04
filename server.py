@@ -33,6 +33,7 @@ from urllib.parse import unquote, urlsplit
 
 import commerce
 import reviews
+import support
 
 from security_core import HandlerSecurity, ServerSecurity, SecurityError, masked_email
 
@@ -417,6 +418,7 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
             """)
             commerce.initialize(connection)
             reviews.initialize(connection)
+            support.initialize(connection)
             user_columns = {row["name"] for row in connection.execute("PRAGMA table_info(users)")}
             profile_additions = {
                 "first_name": "TEXT NOT NULL DEFAULT ''",
@@ -587,7 +589,7 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                 self.serve_static()
             else:
                 raise APIError(405, "This method is not supported.")
-        except (APIError, SecurityError, reviews.ReviewError) as error:
+        except (APIError, SecurityError, reviews.ReviewError, support.SupportError) as error:
             self.send_json(error.status, {"error": error.message}, retry_after=getattr(error, "retry_after", None))
         except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, TimeoutError):
             pass
@@ -698,6 +700,8 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
     def handle_api(self):
         path, method = self.path_only, self.command
         reading = method in {"GET", "HEAD"}
+        if path.startswith("/api/support/") or path == "/api/admin/support" or path.startswith("/api/admin/support/"):
+            return support.handle(self, method)
         if path == "/api/reviews" or path.startswith("/api/reviews/"):
             return reviews.handle(self, method, image_extension)
         if reading and path == "/api/health":

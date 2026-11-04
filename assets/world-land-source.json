@@ -1,0 +1,9 @@
+{
+  "name": "Natural Earth 1:110m land",
+  "source": "https://github.com/nvkelso/natural-earth-vector/blob/master/geojson/ne_110m_land.geojson",
+  "license": "Public domain",
+  "license_url": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "purpose": "Local geographic texture for the Lenora globe; no third-party runtime requests.",
+  "derived_asset": "world-land-mask.png",
+  "derivation": "Natural Earth polygons rasterized to a 1600x800 grayscale mask with antialiasing and a 16-color palette."
+}

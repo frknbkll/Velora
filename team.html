@@ -8,8 +8,8 @@
     <title>Meet the Team — Velora</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=61" />
-    <link rel="stylesheet" href="team-map.css?v=1" />
-    <script src="team-map.js?v=1" defer></script>
+    <link rel="stylesheet" href="team-map.css?v=3" />
+    <script src="team-map.js?v=3" defer></script>
     <script src="privacy.js?v=1" defer></script>
     <script src="auth.js?v=6" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
@@ -43,25 +43,31 @@
       </div>
       <section class="team-world" aria-labelledby="team-world-title">
         <div class="team-world-heading">
-          <div><p class="eyebrow"><span class="eyebrow-line"></span> The world of Lenora</p><h2 id="team-world-title">Different places.<br /><em>One perspective.</em></h2></div>
-          <p>A world of ideas, brought together by the people behind Lenora.</p>
+          <div><p class="eyebrow"><span class="eyebrow-line"></span> Our global presence</p><h2 id="team-world-title">Rooted in Rotterdam.<br /><em>Connected to the world.</em></h2></div>
+          <p>From our home in the Netherlands<br />to our presence across Europe and the Middle East.</p>
         </div>
         <div class="world-stage" data-world-map>
-          <div class="world-glow" aria-hidden="true"></div>
-          <div class="world-topline"><span>LENORA / WORLD ATLAS</span><span aria-hidden="true">01 &mdash; 360&deg;</span></div>
-          <div class="world-perspective" aria-hidden="true"><div class="world-plane"><img class="world-depth" src="assets/lenora-world.svg" alt="" /><img class="world-land" src="assets/lenora-world.svg" alt="" /><div class="world-sheen"></div></div></div>
-          <div class="world-caption"><span class="world-caption-line"></span><span>Across borders.<br /><strong>Connected by a shared vision.</strong></span></div>
-          <div class="world-bottomline"><span>OUR SHARED WORLD</span><button type="button" class="world-motion" aria-pressed="false">Pause effects <span aria-hidden="true">&#8545;</span></button></div>
+          <div class="world-visual">
+            <div class="world-topline"><span>LENORA <span class="world-meta-divider">/</span> GLOBAL NETWORK</span><span>06 ESTABLISHMENTS</span></div>
+            <canvas class="world-canvas" width="760" height="760" tabindex="0" role="img" aria-label="Interactive globe showing Lenora establishments. Drag or use arrow keys to rotate. Select a location from the adjacent list."></canvas>
+            <div class="world-loading" role="status">Preparing the atlas&hellip;</div>
+            <div class="world-bottomline"><span class="world-drag-hint"><span aria-hidden="true">&#8596;</span> Drag to explore</span><div class="world-tools"><button type="button" class="world-reset" aria-label="Reset globe to Rotterdam">Reset view <span aria-hidden="true">&#8634;</span></button><button type="button" class="world-motion" aria-pressed="false">Pause motion</button></div></div>
+          </div>
+          <div class="world-panel">
+            <p class="world-panel-eyebrow" data-place-role>01 / MAIN ESTABLISHMENT</p>
+            <div class="world-place-detail" aria-live="polite" aria-atomic="true"><h3 data-place-name>Rotterdam</h3><p class="world-country" data-place-country>Netherlands</p><p class="world-place-description" data-place-description>Our home base in the Netherlands, connecting all six Lenora establishments.</p><p class="world-coordinates" data-place-coordinates>51.9244&deg; N &nbsp; / &nbsp; 4.4777&deg; E</p></div>
+            <p class="world-list-title">Explore our locations <span>06</span></p>
+            <div class="world-locations" aria-label="Explore Lenora establishments">
+              <button type="button" data-location="rotterdam" aria-pressed="true"><span class="world-location-number">01</span><span>Rotterdam<small>Netherlands</small></span><span class="world-location-tag">MAIN</span><span class="world-location-arrow" aria-hidden="true">&#8599;</span></button>
+              <button type="button" data-location="paris" aria-pressed="false"><span class="world-location-number">02</span><span>Paris<small>France</small></span><span class="world-location-arrow" aria-hidden="true">&#8599;</span></button>
+              <button type="button" data-location="london" aria-pressed="false"><span class="world-location-number">03</span><span>London<small>United Kingdom</small></span><span class="world-location-arrow" aria-hidden="true">&#8599;</span></button>
+              <button type="button" data-location="dubai" aria-pressed="false"><span class="world-location-number">04</span><span>Dubai<small>United Arab Emirates</small></span><span class="world-location-arrow" aria-hidden="true">&#8599;</span></button>
+              <button type="button" data-location="frankfurt" aria-pressed="false"><span class="world-location-number">05</span><span>Frankfurt<small>Germany</small></span><span class="world-location-arrow" aria-hidden="true">&#8599;</span></button>
+              <button type="button" data-location="turkiye" aria-pressed="false"><span class="world-location-number">06</span><span>T&uuml;rkiye<small>Country presence</small></span><span class="world-location-arrow" aria-hidden="true">&#8599;</span></button>
+            </div>
+          </div>
         </div>
-        <div class="world-locations" aria-label="Lenora establishments">
-          <button type="button" data-location="rotterdam" aria-pressed="true">Rotterdam <span>Main establishment</span></button>
-          <button type="button" data-location="paris" aria-pressed="false">Paris <span>France</span></button>
-          <button type="button" data-location="london" aria-pressed="false">London <span>United Kingdom</span></button>
-          <button type="button" data-location="dubai" aria-pressed="false">Dubai <span>United Arab Emirates</span></button>
-          <button type="button" data-location="frankfurt" aria-pressed="false">Frankfurt <span>Germany</span></button>
-          <button type="button" data-location="turkiye" aria-pressed="false">T?rkiye <span>Country location</span></button>
-        </div>
-        <p class="world-selection" aria-live="polite">Rotterdam, Netherlands ? Lenora?s main establishment.</p>
+        <div class="world-legend"><span><i></i> Main establishment <i></i> Lenora presence</span><span>Europe &amp; the Middle East</span></div>
       </section>
       <nav class="team-role-nav" aria-label="Explore the team by role">
           <a href="#leadership">Leadership</a>

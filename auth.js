@@ -94,6 +94,7 @@
       updateAccountLinks();
     }
     if (Object.hasOwn(result, "csrfToken")) auth.csrfToken = result.csrfToken;
+    if (Object.hasOwn(result, "user")) window.dispatchEvent(new CustomEvent("velora:auth-changed", { detail: { user: auth.user } }));
     return result;
   }
 
@@ -393,5 +394,14 @@
       if (page === "account") document.querySelector("#account-loading").textContent = error.message;
       else message(error.message);
     });
+  }
+  if (!document.body.classList.contains("admin-page")) {
+    const supportStyle = document.createElement("link");
+    supportStyle.rel = "stylesheet";
+    supportStyle.href = "support-chat.css?v=1";
+    const supportScript = document.createElement("script");
+    supportScript.src = "support-chat.js?v=1";
+    supportScript.defer = true;
+    document.head.append(supportStyle, supportScript);
   }
 })();

@@ -3,7 +3,7 @@
   const $ = (selector) => document.querySelector(selector);
   const currency = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
   const shortDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
-  const sections = ["overview", "products", "customers", "activity", "security", "business", "operations"];
+  const sections = ["overview", "products", "customers", "activity", "security", "business", "operations", "support"];
   const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
   let toastTimer;
   let loading;
