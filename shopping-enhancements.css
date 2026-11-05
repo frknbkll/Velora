@@ -202,6 +202,24 @@
 .image-zoom-dialog :is(button, .image-zoom-viewport):focus-visible,
 .shopping-help-links a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
+.checkout-preview-button { min-height: 44px; padding: 10px 16px; border: 1px solid var(--ink); border-radius: 5px; background: var(--ink); color: var(--paper); font: 500 var(--type-control)/1.5 var(--sans); cursor: pointer; }
+.checkout-preview-button:hover:not(:disabled) { border-color: #85573e; background: #85573e; }
+.checkout-preview-button:disabled { cursor: not-allowed; opacity: .5; }
+.checkout-preview-review { padding-block: 22px; }
+.checkout-preview-review h3, .checkout-preview-complete h3 { margin: 0 0 8px; color: var(--ink); font: 400 clamp(23px, 3vw, 32px)/1.25 var(--serif); }
+.checkout-preview-review > p, .checkout-preview-complete > p { max-width: 56ch; margin: 0 0 18px; color: var(--muted); font-size: var(--type-body); line-height: 1.65; }
+.checkout-preview-error { padding: 12px 14px; border: 1px solid #d9a592; border-radius: 5px; background: #f9ece7; color: #8b3928 !important; }
+.checkout-preview-items { border-top: 1px solid var(--line); }
+.checkout-preview-item { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.checkout-preview-item > span:first-child { display: grid; gap: 5px; min-width: 0; }
+.checkout-preview-item strong { color: var(--ink); font: 400 17px/1.35 var(--serif); }
+.checkout-preview-item small { color: var(--muted); font-size: var(--type-small); }
+.checkout-preview-item-price { flex: 0 0 auto; color: var(--muted); font-size: var(--type-control); text-align: right; }
+.checkout-preview-complete { display: grid; justify-items: center; padding: clamp(32px, 7vw, 72px) 20px; text-align: center; }
+.checkout-preview-complete-mark { width: 52px; height: 52px; display: grid; place-items: center; margin-bottom: 18px; border-radius: 50%; background: #e8eee5; color: #53694c; font-size: 24px; }
+.checkout-preview-complete > p { margin-bottom: 20px; }
+.checkout-preview-complete .shop-subtotal { margin-top: 4px; }
+
 @media (max-width: 900px) {
   .refinement-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
@@ -222,6 +240,9 @@
   .image-zoom-toolbar { gap: 8px 12px; padding: 8px 12px 12px; }
   .image-zoom-hint { flex: 1 1 130px; }
   .image-zoom-viewport { height: 65svh; }
+  .checkout-preview-item { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .checkout-preview-item-price { text-align: left; }
+  .checkout-preview-review { padding-block: 16px; }
 }
 
 @media (max-width: 360px) {

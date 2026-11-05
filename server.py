@@ -736,6 +736,31 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                     product["variant_stock"] = stock
                 visible.append(product)
             return self.send_json(200, {"products": visible})
+        if reading and path.startswith("/api/catalog/"):
+            product_id = path[len("/api/catalog/"):]
+            if not product_id or "/" in product_id or len(product_id) > 100:
+                return self.send_json(404, {"error": "Product not found."})
+            with self.server.connect() as connection:
+                row = connection.execute(
+                    "SELECT * FROM products WHERE id = ? AND published = 1 AND deleted_at IS NULL",
+                    (product_id,),
+                ).fetchone()
+                if row is None:
+                    return self.send_json(404, {"error": "Product not found."})
+                product = public_product(row)
+                operations = json.loads(connection.execute("SELECT data FROM commerce_state WHERE id=1").fetchone()[0])
+            if operations["guides"].get(product["id"]):
+                product["size_guide"] = operations["guides"][product["id"]]
+            if operations["tags"].get(product["id"]):
+                product["discount_tag"] = operations["tags"][product["id"]]
+            stock = {}
+            for variant in operations["variants"]:
+                if variant["product"] == product["id"]:
+                    key = variant["color"].casefold() + "|" + variant["size"].casefold()
+                    stock[key] = stock.get(key, 0) + variant["stock"]
+            if stock:
+                product["variant_stock"] = stock
+            return self.send_json(200, {"product": product})
         if reading and path in {"/api/business-details", "/api/admin/business-details"}:
             if path.startswith("/api/admin/"):
                 self.require_user(admin=True)
@@ -1508,23 +1533,23 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
     def serve_static(self):
         decoded = unquote(self.path_only)
         if "\\" in decoded or "\x00" in decoded:
-            raise APIError(404, "This page was not found.")
+            return self.send_not_found_page()
         relative = decoded.lstrip("/") or "index.html"
         target = (self.server.root / relative).resolve()
         try:
             target.relative_to(self.server.root)
         except ValueError:
-            raise APIError(404, "This page was not found.")
+            return self.send_not_found_page()
         if target in self.server.private_files:
-            raise APIError(404, "This page was not found.")
+            return self.send_not_found_page()
         public_page = target.parent == self.server.root and target.suffix.lower() in {".html", ".css", ".js"}
         public_asset = target.is_relative_to(self.server.root / "assets") and target.suffix.lower() in {
             ".jpg", ".jpeg", ".png", ".webp", ".avif", ".svg", ".gif", ".ico", ".woff", ".woff2", ".ttf",
         }
         public_asset = public_asset or target == self.server.root / "assets" / "vendor" / "qrcodegen.js"
         if not (public_page or public_asset) or not target.is_file():
-            raise APIError(404, "This page was not found.")
-        if target.parent == self.server.root and target.name.lower() in {"account.html", "admin.html"}:
+            return self.send_not_found_page()
+        if target.parent == self.server.root and target.name.lower() in {"account.html", "admin.html", "intranet.html"}:
             page = target.name.lower()
             user = self.security_session()
             if user is None:
@@ -1535,8 +1560,8 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                 self.common_headers()
                 self.end_headers()
                 return
-            if page == "admin.html" and user["role"] != "admin":
-                self.audit("permission_denied", user=user, detail="A non-administrator request for the administrator page was rejected.", severity="warning")
+            if page in {"admin.html", "intranet.html"} and user["role"] != "admin":
+                self.audit("permission_denied", user=user, detail="A non-administrator request for a staff page was rejected.", severity="warning")
                 raise APIError(403, "Administrator access is required.")
         content_type = mimetypes.guess_type(target.name)[0] or "application/octet-stream"
         if content_type.startswith("text/") or target.suffix == ".js":
@@ -1544,13 +1569,27 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
         self.send_response(200)
         self.send_header("Content-Type", content_type)
         self.send_header("Content-Length", str(target.stat().st_size))
-        self.send_header("Cache-Control", "no-store" if target.name in {"login.html", "register.html", "account.html", "admin.html"} else "no-cache")
+        self.send_header("Cache-Control", "no-store" if target.name.lower() in {"login.html", "register.html", "account.html", "admin.html", "intranet.html"} else "no-cache")
         self.common_headers()
         self.end_headers()
         if self.command != "HEAD":
             with target.open("rb") as stream:
                 while chunk := stream.read(65536):
                     self.wfile.write(chunk)
+
+    def send_not_found_page(self):
+        page = self.server.root / "404.html"
+        if not page.is_file():
+            raise APIError(404, "This page was not found.")
+        data = page.read_bytes()
+        self.send_response(404)
+        self.send_header("Content-Type", "text/html; charset=utf-8")
+        self.send_header("Content-Length", str(len(data)))
+        self.send_header("Cache-Control", "no-store")
+        self.common_headers()
+        self.end_headers()
+        if self.command != "HEAD":
+            self.wfile.write(data)
 
 
 def make_server(host="127.0.0.1", port=8000, database=None, catalog=None, root=ROOT, secure_cookies=False):

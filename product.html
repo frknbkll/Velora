@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf8f4" />
+    <meta name="description" content="Explore the details of a Velora collection piece." />
+    <title>Product — Velora</title>
+    <link rel="stylesheet" href="fonts.css?v=1" />
+    <link rel="stylesheet" href="styles.css?v=67" />
+    <link rel="stylesheet" href="shopping-enhancements.css?v=1" />
+    <link rel="stylesheet" href="product-page.css?v=3" />
+    <link rel="stylesheet" href="privacy.css?v=2" />
+    <script src="privacy.js?v=1" defer></script>
+    <script src="product-color-images.js?v=6" defer></script>
+    <script src="auth.js?v=7" defer></script>
+    <script src="product-page.js?v=1" defer></script>
+  </head>
+  <body class="product-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="product-site-header">
+      <a class="wordmark" href="index.html" aria-label="Velora home">velora<span>®</span></a>
+      <a class="product-back-link" href="index.html#collection">← Back to the collection</a>
+    </header>
+    <main id="main-content" class="product-page-main" tabindex="-1">
+      <section class="product-page-status" id="product-page-status" role="status" aria-live="polite">Loading product…</section>
+      <div class="product-page-layout" id="product-page-content" hidden>
+        <section class="product-page-gallery" aria-label="Product photographs">
+          <div class="product-page-main-photo">
+            <img id="product-page-image" alt="" />
+            <span class="product-page-photo-count" id="product-photo-count" aria-live="polite"></span>
+          </div>
+          <div class="product-page-thumbnails" id="product-thumbnails" role="group" aria-label="Choose a product photograph"></div>
+        </section>
+        <section class="product-page-details" aria-labelledby="product-page-title">
+          <p class="eyebrow"><span class="eyebrow-line"></span><span id="product-page-collection"></span></p>
+          <h1 id="product-page-title"></h1>
+          <p class="product-page-byline" id="product-page-byline"></p>
+          <p class="product-page-price" id="product-page-price"></p>
+          <p class="product-page-description" id="product-page-description"></p>
+          <div class="product-page-controls">
+            <fieldset id="product-color-field" hidden>
+              <legend id="product-color-label">Color</legend>
+              <div class="product-page-swatches" id="product-page-colors"></div>
+            </fieldset>
+            <fieldset>
+              <legend>Size <a class="product-page-fit-link" href="#product-fit">Size &amp; fit guide</a></legend>
+              <div class="product-page-sizes" id="product-page-sizes"></div>
+            </fieldset>
+          </div>
+          <p class="product-page-stock" id="product-page-stock" aria-live="polite"></p>
+          <div class="product-page-actions">
+            <button type="button" class="shop-primary" id="product-page-add">Add to bag</button>
+            <button type="button" class="product-page-wishlist" id="product-page-wishlist" aria-pressed="false">♡ Wishlist</button>
+          </div>
+          <p class="product-page-feedback" id="product-page-feedback" role="status" aria-live="polite"></p>
+          <p class="product-page-disclosure">Velora is a fashion showcase. Prices and availability are illustrative; orders and payments are not processed.</p>
+          <div class="product-information" id="product-page-information"></div>
+        </section>
+      </div>
+      <p class="product-page-return" id="product-page-return" hidden>
+        <a class="text-link" href="index.html#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+      </p>
+    </main>
+  </body>
+</html>

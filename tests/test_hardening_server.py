@@ -31,7 +31,7 @@ class HardeningServerTests(unittest.TestCase):
         self.root = Path(self.directory.name)
         (self.root / "assets").mkdir()
         (self.root / "assets/portrait.jpg").write_bytes(b"portrait fixture")
-        for name in ("index.html", "login.html", "register.html", "account.html", "admin.html"):
+        for name in ("index.html", "login.html", "register.html", "account.html", "admin.html", "intranet.html", "404.html"):
             (self.root / name).write_text("<!doctype html><title>Page fixture</title>", encoding="utf-8")
         self.catalog = self.root / "product-catalog.json"
         self.catalog.write_text(json.dumps({"products": [{
@@ -85,7 +85,7 @@ class HardeningServerTests(unittest.TestCase):
         self.assertNotIn("Python", headers.get("Server", ""))
 
     def test_private_pages_are_authorized_before_html_is_served(self):
-        for page in ("account.html", "admin.html"):
+        for page in ("account.html", "admin.html", "intranet.html"):
             for method in ("GET", "HEAD"):
                 status, content, headers = self.client.request(method, "/" + page)
                 self.assertEqual(status, 302)
@@ -95,13 +95,33 @@ class HardeningServerTests(unittest.TestCase):
         customer = self.customer()
         self.assertEqual(customer.request("GET", "/account.html")[0], 200)
         self.assertEqual(customer.request("GET", "/admin.html")[0], 403)
+        self.assertEqual(customer.request("GET", "/intranet.html")[0], 403)
         self.assertEqual(customer.request("GET", "/%61dmin.html")[0], 403)
         if os.name == "nt":
             self.assertEqual(customer.request("GET", "/ADMIN.HTML")[0], 403)
         admin = self.admin()
         self.assertEqual(admin.request("GET", "/admin.html")[0], 200)
+        status, _, headers = admin.request("GET", "/intranet.html")
+        self.assertEqual(status, 200)
+        self.assertEqual(headers["Cache-Control"], "no-store")
         self.assertEqual(admin.request("POST", "/api/auth/logout")[0], 200)
         self.assertEqual(admin.request("GET", "/admin.html")[0], 302)
+
+    def test_missing_static_pages_use_the_html_404_but_api_errors_remain_json(self):
+        status, page, headers = self.client.request("GET", "/missing-page.html")
+        self.assertEqual(status, 404)
+        self.assertIn(b"Page fixture", page)
+        self.assertEqual(headers["Content-Type"], "text/html; charset=utf-8")
+        self.assertEqual(headers["Cache-Control"], "no-store")
+
+        status, page, _ = self.client.request("HEAD", "/missing-page.html")
+        self.assertEqual(status, 404)
+        self.assertEqual(page, b"")
+
+        status, payload, headers = self.client.request("GET", "/api/missing")
+        self.assertEqual(status, 404)
+        self.assertEqual(payload, {"error": "This page was not found."})
+        self.assertEqual(headers["Content-Type"], "application/json; charset=utf-8")
 
     def test_all_admin_read_endpoints_deny_anonymous_and_customer_requests(self):
         customer = self.customer()

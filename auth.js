@@ -19,6 +19,7 @@
     const target = new URL("http://127.0.0.1:8000/login.html");
     if (page === "register") target.pathname = "/register.html";
     else if (document.body.classList.contains("admin-page") || next === "admin.html") target.searchParams.set("next", "admin.html");
+    else if (next === "intranet.html") target.searchParams.set("next", "intranet.html");
     else if (["account.html", "reviews.html"].includes(next)) target.searchParams.set("next", next);
     else if (page === "account") target.searchParams.set("next", "account.html");
 
@@ -30,7 +31,7 @@
       if (!["admin.html", "account.html", "register.html", "login.html"].includes(filename)) return;
       const destination = new URL(filename, "http://127.0.0.1:8000/");
       const nextPage = new URLSearchParams(query).get("next");
-      if (["admin.html", "account.html", "reviews.html"].includes(nextPage)) destination.searchParams.set("next", nextPage);
+      if (["admin.html", "account.html", "reviews.html", "intranet.html"].includes(nextPage)) destination.searchParams.set("next", nextPage);
       link.href = destination.href;
     });
     const status = document.querySelector("#auth-message, #account-loading, #admin-access-message");
@@ -129,6 +130,7 @@
   function destination(user) {
     const next = new URLSearchParams(location.search).get("next");
     if (next === "admin.html" && user.role === "admin") return "admin.html";
+    if (next === "intranet.html" && user.role === "admin") return "intranet.html";
     if (["account.html", "reviews.html"].includes(next)) return next;
     return user.role === "admin" ? "admin.html" : "account.html";
   }

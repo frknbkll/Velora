@@ -105,6 +105,16 @@ class CatalogServerTests(unittest.TestCase):
         listed = self.public.request("GET", "/api/catalog")[1]["products"]
         self.assertEqual(next(item for item in listed if item["id"] == product["id"]), edited)
 
+    def test_public_product_detail_only_returns_published_products(self):
+        status, response, _ = self.public.request("GET", "/api/catalog/123456789abcdef0")
+        self.assertEqual(status, 200, response)
+        self.assertEqual(response["product"]["name"], "The Existing Suit")
+
+        draft = self.create(published=False)
+        self.assertEqual(self.public.request("GET", f"/api/catalog/{draft['id']}")[0], 404)
+        self.assertEqual(self.public.request("GET", "/api/catalog/does-not-exist")[0], 404)
+        self.assertEqual(self.public.request("GET", "/api/catalog/123456789abcdef0/extra")[0], 404)
+
     def test_color_variants_can_be_added_and_edited(self):
         product = self.create()
         path = self.path(product) + "/colors"

@@ -786,7 +786,7 @@ function createProductOptions(look) {
   const note = document.createElement("p");
   note.className = "product-options-note";
   note.textContent = look.managed && !window.veloraColorImages?.[look.color_key]
-    ? (look.stock === 0 ? "Currently sold out" : look.stock === null ? "Explore the details in quick view" : "Available in the sizes shown")
+    ? (look.stock === 0 ? "Currently sold out" : look.stock === null ? "Open the product page for details" : "Available in the sizes shown")
     : "AI-created color previews · availability unconfirmed";
   options.append(colorGroup, sizeGroup, note);
   return options;
@@ -901,24 +901,28 @@ function readShoppingState() {
     return { wishlist, cart };
   } catch (error) {
     console.error("Could not load the saved Velora shopping state.", error);
+    shoppingStateReadError = true;
     return { wishlist: new Set(), cart: new Map() };
   }
 }
 
+let shoppingStateReadError = false;
 const { wishlist: savedLooks, cart: shoppingCart } = readShoppingState();
 
 function persistShoppingState() {
   try {
     if (!window.VeloraPrivacy?.canSaveLooks()) {
       window.localStorage.removeItem(shoppingStorageKey);
-      return;
+      return true;
     }
     window.localStorage.setItem(
       shoppingStorageKey,
       JSON.stringify({ wishlist: [...savedLooks], cart: Object.fromEntries(shoppingCart) }),
     );
+    return true;
   } catch (error) {
     console.error("Could not save the Velora shopping state.", error);
+    return false;
   }
 }
 
@@ -935,6 +939,44 @@ founderRecommendations.forEach((recommendation) => {
 });
 
 const recommendationsGrid = document.querySelector("#founder-recommendations");
+function productPageUrl(look) {
+  const selection = getVariantSelection(look);
+  const params = new URLSearchParams();
+  if (look.id) {
+    params.set("id", look.id);
+  } else {
+    params.set("preview", JSON.stringify({
+      key: look.key,
+      name: look.name,
+      image: look.image,
+      images: look.images,
+      founder: look.founder,
+      collection: look.collection,
+      price: look.price,
+      description: look.description,
+      sizes: look.sizes,
+      colors: look.colors,
+      stock: look.stock,
+      variant_stock: look.variant_stock,
+      sku: look.sku,
+      base_color: look.base_color,
+      color_hex: look.color_hex,
+      color_key: look.color_key,
+      color_variants: look.color_variants,
+      fit: look.fit,
+      material: look.material,
+      fabric_weight: look.fabric_weight,
+      origin: look.origin,
+      size_guide: look.size_guide,
+      discount_tag: look.discount_tag,
+      managed: look.managed,
+    }));
+  }
+  params.set("color", selection.color);
+  params.set("size", selection.size);
+  return `product.html?${params}`;
+}
+
 function renderRecommendations() {
   if (!recommendationsGrid) return;
   const recommendationCards = founderRecommendations.map((recommendation) => {
@@ -949,15 +991,10 @@ function renderRecommendations() {
     const media = document.createElement("div");
     media.className = "recommendation-media";
 
-    const imageLink = document.createElement("button");
+    const imageLink = document.createElement("a");
     imageLink.className = "recommendation-image look-photo-trigger";
-    imageLink.type = "button";
-    imageLink.dataset.image = look.image;
-    imageLink.dataset.name = look.name;
-    imageLink.dataset.founder = look.founder;
-    imageLink.dataset.collection = look.collection;
-    imageLink.dataset.productKey = look.key;
-    imageLink.setAttribute("aria-label", `Quick view: ${look.name}, chosen by ${look.founder}`);
+    imageLink.href = productPageUrl(look);
+    imageLink.setAttribute("aria-label", `View product: ${look.name}, chosen by ${look.founder}`);
 
     const image = document.createElement("img");
     setProductImage(image, look);
@@ -974,7 +1011,10 @@ function renderRecommendations() {
     const note = document.createElement("p");
     note.textContent = recommendation.note;
     const title = document.createElement("h3");
-    title.textContent = look.name;
+    const titleLink = document.createElement("a");
+    titleLink.href = productPageUrl(look);
+    titleLink.textContent = look.name;
+    title.append(titleLink);
     const description = document.createElement("p");
     description.className = "recommendation-description";
     description.textContent = look.description;
@@ -986,14 +1026,9 @@ function renderRecommendations() {
     const actions = document.createElement("div");
     actions.className = "product-card-actions";
 
-    const quickView = document.createElement("button");
+    const quickView = document.createElement("a");
     quickView.className = "look-quick-view";
-    quickView.type = "button";
-    quickView.dataset.image = look.image;
-    quickView.dataset.name = look.name;
-    quickView.dataset.founder = look.founder;
-    quickView.dataset.collection = look.collection;
-    quickView.dataset.productKey = look.key;
+    quickView.href = productPageUrl(look);
     quickView.textContent = "Discover the look";
 
     const saveButton = document.createElement("button");
@@ -1138,20 +1173,19 @@ function renderLooks() {
       number.className = "look-tile-number";
       number.textContent = look.collection.replace(/^THE | EDIT$/g, "");
 
-      const imageQuickView = document.createElement("button");
+      const imageQuickView = document.createElement("a");
       imageQuickView.className = "look-photo-trigger";
-      imageQuickView.type = "button";
-      imageQuickView.dataset.image = look.image;
-      imageQuickView.dataset.name = look.name;
-      imageQuickView.dataset.founder = look.founder;
-      imageQuickView.dataset.collection = look.collection;
-      imageQuickView.dataset.productKey = look.key;
-      imageQuickView.setAttribute("aria-label", `Quick view: ${look.name}, modeled by ${look.founder}`);
+      imageQuickView.href = productPageUrl(look);
+      imageQuickView.setAttribute("aria-label", `View product: ${look.name}, modeled by ${look.founder}`);
+      imageQuickView.append(image);
 
       const caption = document.createElement("div");
       caption.className = "look-tile-caption";
       const founder = document.createElement("strong");
-      founder.textContent = look.name;
+      const titleLink = document.createElement("a");
+      titleLink.href = productPageUrl(look);
+      titleLink.textContent = look.name;
+      founder.append(titleLink);
       const note = document.createElement("span");
       note.textContent = look.founder;
       const capsule = document.createElement("span");
@@ -1168,15 +1202,10 @@ function renderLooks() {
       const actions = document.createElement("div");
       actions.className = "product-card-actions";
 
-      const quickView = document.createElement("button");
+      const quickView = document.createElement("a");
       quickView.className = "look-quick-view";
-      quickView.type = "button";
-      quickView.dataset.image = look.image;
-      quickView.dataset.name = look.name;
-      quickView.dataset.founder = look.founder;
-      quickView.dataset.collection = look.collection;
-      quickView.dataset.productKey = look.key;
-      quickView.textContent = "Quick view";
+      quickView.href = productPageUrl(look);
+      quickView.textContent = "View product";
 
       const saveButton = document.createElement("button");
       saveButton.className = "save-look";
@@ -1196,7 +1225,7 @@ function renderLooks() {
       addButton.dataset.productKey = look.key;
       configurePurchaseButton(addButton, look);
 
-      imageContainer.append(image, number, imageQuickView);
+      imageContainer.append(number, imageQuickView);
       attachProductGallery(imageContainer, look);
       actions.append(quickView, saveButton, addButton);
       caption.append(founder, note);
@@ -1318,17 +1347,32 @@ const shoppingNotice = document.querySelector("#shopping-notice");
 const cartCount = document.querySelector("#cart-count");
 const wishlistCount = document.querySelector("#wishlist-count");
 let activeShopView = "cart";
+let checkoutStage = "bag";
+let checkoutError = "";
 let shoppingNoticeTimer;
 
 function showShoppingNotice(message, type = "success") {
   if (!(shoppingNotice instanceof HTMLDialogElement)) return;
   window.clearTimeout(shoppingNoticeTimer);
-  shoppingNotice.textContent = message;
   shoppingNotice.className = `shopping-notice shopping-notice--${type}`;
+  shoppingNotice.setAttribute("role", type === "error" ? "alert" : "status");
+  shoppingNotice.setAttribute("aria-live", type === "error" ? "assertive" : "polite");
+  shoppingNotice.textContent = message;
   if (!shoppingNotice.open) shoppingNotice.show();
   shoppingNoticeTimer = window.setTimeout(() => {
     if (shoppingNotice.open) shoppingNotice.close();
   }, 2800);
+}
+
+function shoppingSaveNotice(saved, successMessage, successType = "success") {
+  showShoppingNotice(
+    saved ? successMessage : "Your change is active for this visit, but couldn't be saved on this device.",
+    saved ? successType : "error",
+  );
+}
+
+if (shoppingStateReadError) {
+  showShoppingNotice("Saved shopping details couldn't be loaded. Your current bag and wishlist are empty.", "error");
 }
 
 function updateShopCounts() {
@@ -1378,7 +1422,19 @@ function renderShopDialog() {
   ) return;
 
   const isCart = activeShopView === "cart";
-  shopDialogTitle.textContent = isCart ? "Your shopping bag" : "Your wishlist";
+  shopDialogTitle.textContent = isCart
+    ? checkoutStage === "bag" ? "Your shopping bag" : checkoutStage === "review" ? "Review your preview" : "Preview complete"
+    : "Your wishlist";
+  const eyebrow = shopDialog.querySelector(".shop-dialog-header .eyebrow");
+  if (eyebrow) {
+    const line = document.createElement("span");
+    line.className = "eyebrow-line";
+    eyebrow.replaceChildren(line, document.createTextNode(
+      isCart && checkoutStage !== "bag" ? " No-charge preview" : " Kept close",
+    ));
+  }
+  const tabs = shopDialog.querySelector(".shop-dialog-tabs");
+  if (tabs) tabs.hidden = isCart && checkoutStage !== "bag";
   document.querySelectorAll(".shop-dialog-tab").forEach((tab) => {
     const isActive = tab.dataset.shopView === activeShopView;
     tab.classList.toggle("is-active", isActive);
@@ -1438,6 +1494,10 @@ function renderShopDialog() {
   }).filter(Boolean);
 
   shopDialogContent.replaceChildren(...rows);
+  if (isCart && checkoutStage !== "bag") {
+    renderCheckoutStage();
+    return;
+  }
   if (!rows.length) {
     const empty = document.createElement("p");
     empty.className = "shop-empty";
@@ -1456,8 +1516,16 @@ function renderShopDialog() {
     total.className = "shop-subtotal";
     total.textContent = `Preview total ${currency.format(subtotal)}`;
     const note = document.createElement("p");
-    note.textContent = "No payment is taken. Prices are illustrative; tax and shipping are not configured. Checkout is unavailable and no fees are charged.";
+    note.textContent = "Prototype checkout only. Prices are illustrative; tax, shipping, and payment are not configured. No order is placed.";
     shopDialogFooter.append(total, note);
+    if (subtotal > 0) {
+      const checkout = document.createElement("button");
+      checkout.type = "button";
+      checkout.className = "shop-primary checkout-preview-button";
+      checkout.dataset.checkoutAction = "review";
+      checkout.textContent = "Review checkout preview";
+      shopDialogFooter.append(checkout);
+    }
     const links = document.createElement("nav");
     links.className = "shopping-help-links";
     links.setAttribute("aria-label", "Shopping bag help");
@@ -1474,8 +1542,107 @@ function renderShopDialog() {
   }
 }
 
+function renderCheckoutStage() {
+  const subtotal = [...shoppingCart.entries()].reduce((sum, [key, quantity]) => {
+    return sum + (getCartItem(key)?.look.price ?? 0) * quantity;
+  }, 0);
+
+  if (checkoutStage === "review") {
+    const review = document.createElement("section");
+    review.className = "checkout-preview-review";
+    review.setAttribute("aria-labelledby", "checkout-preview-title");
+    const heading = document.createElement("h3");
+    heading.id = "checkout-preview-title";
+    heading.textContent = "A final look, with nothing to submit.";
+    const description = document.createElement("p");
+    description.textContent = "This sample checkout does not collect contact or payment details and cannot place an order.";
+    review.append(heading, description);
+    if (checkoutError) {
+      const error = document.createElement("p");
+      error.className = "checkout-preview-error";
+      error.setAttribute("role", "alert");
+      error.textContent = checkoutError;
+      review.append(error);
+    }
+    const list = document.createElement("div");
+    list.className = "checkout-preview-items";
+    for (const [key, quantity] of shoppingCart) {
+      const item = getCartItem(key);
+      if (!item) continue;
+      const line = document.createElement("article");
+      line.className = "checkout-preview-item";
+      const identity = document.createElement("span");
+      const name = document.createElement("strong");
+      name.textContent = item.look.name;
+      identity.append(name);
+      const variant = [item.color, item.size ? `Size ${item.size}` : ""].filter(Boolean).join(" · ");
+      if (variant) {
+        const detail = document.createElement("small");
+        detail.textContent = variant;
+        identity.append(detail);
+      }
+      const price = document.createElement("span");
+      price.className = "checkout-preview-item-price";
+      price.textContent = `${quantity} × ${currency.format(item.look.price)} = ${currency.format(item.look.price * quantity)}`;
+      line.append(identity, price);
+      list.append(line);
+    }
+    review.append(list);
+    shopDialogContent.replaceChildren(review);
+
+    const total = document.createElement("strong");
+    total.className = "shop-subtotal";
+    total.textContent = `Illustrative total ${currency.format(subtotal)}`;
+    const note = document.createElement("p");
+    note.textContent = "Shipping and tax are not calculated. Selecting the button below only displays a sample confirmation.";
+    const back = document.createElement("button");
+    back.type = "button";
+    back.className = "shop-secondary";
+    back.dataset.checkoutAction = "back";
+    back.textContent = "Back to bag";
+    const confirm = document.createElement("button");
+    confirm.type = "button";
+    confirm.className = "shop-primary checkout-preview-button";
+    confirm.dataset.checkoutAction = "complete";
+    confirm.disabled = Boolean(checkoutError);
+    confirm.textContent = "Show sample confirmation";
+    shopDialogFooter.replaceChildren(total, note, back, confirm);
+    return;
+  }
+
+  const confirmation = document.createElement("section");
+  confirmation.className = "checkout-preview-complete";
+  confirmation.setAttribute("aria-labelledby", "checkout-preview-complete-title");
+  const mark = document.createElement("span");
+  mark.className = "checkout-preview-complete-mark";
+  mark.setAttribute("aria-hidden", "true");
+  mark.textContent = "✓";
+  const heading = document.createElement("h3");
+  heading.id = "checkout-preview-complete-title";
+  heading.tabIndex = -1;
+  heading.textContent = "Preview complete.";
+  const message = document.createElement("p");
+  message.textContent = "This was a checkout demonstration only. No order was placed, no payment was taken, and your shopping bag is unchanged.";
+  const total = document.createElement("strong");
+  total.className = "shop-subtotal";
+  total.textContent = `Illustrative total ${currency.format(subtotal)}`;
+  confirmation.append(mark, heading, message, total);
+  shopDialogContent.replaceChildren(confirmation);
+
+  const note = document.createElement("p");
+  note.textContent = "This confirmation is not an order receipt.";
+  const done = document.createElement("button");
+  done.type = "button";
+  done.className = "shop-primary checkout-preview-button";
+  done.dataset.checkoutAction = "done";
+  done.textContent = "Return to the collection";
+  shopDialogFooter.replaceChildren(note, done);
+}
+
 function showShopDialog(view) {
   activeShopView = view;
+  checkoutStage = "bag";
+  checkoutError = "";
   renderShopDialog();
   if (shopDialog instanceof HTMLDialogElement && !shopDialog.open) shopDialog.showModal();
 }
@@ -1569,6 +1736,64 @@ document.addEventListener("click", (event) => {
     return;
   }
 
+  const checkoutButton = target.closest("[data-checkout-action]");
+  if (checkoutButton instanceof HTMLButtonElement) {
+    const action = checkoutButton.dataset.checkoutAction;
+    if (action === "review") {
+      const entries = [...shoppingCart.entries()];
+      const unavailable = entries.filter(([key]) => !getCartItem(key));
+      if (unavailable.length) {
+        unavailable.forEach(([key]) => shoppingCart.delete(key));
+        persistShoppingState();
+        checkoutError = "Some saved items are no longer in the collection. Review the updated bag before continuing.";
+        checkoutStage = "review";
+        renderShopDialog();
+        return;
+      }
+      if (!entries.length) {
+        checkoutError = "Add a piece to your preview bag before reviewing checkout.";
+        checkoutStage = "bag";
+        renderShopDialog();
+        return;
+      }
+      const unavailableStock = entries.find(([key, quantity]) => {
+        const item = getCartItem(key);
+        const stock = variantAvailableStock(item.look, {
+          color: item.color ?? getVariantSelection(item.look).color,
+          size: item.size ?? getVariantSelection(item.look).size,
+        });
+        return stock !== null && stock !== undefined && quantity > stock;
+      });
+      if (unavailableStock) {
+        const item = getCartItem(unavailableStock[0]);
+        checkoutError = `${item.look.name} exceeds the currently listed stock. Adjust the quantity in your bag before continuing.`;
+      } else {
+        checkoutError = "";
+      }
+      checkoutStage = "review";
+      renderShopDialog();
+      return;
+    }
+    if (action === "back") {
+      checkoutStage = "bag";
+      checkoutError = "";
+      renderShopDialog();
+      return;
+    }
+    if (action === "complete" && !checkoutError) {
+      checkoutStage = "complete";
+      renderShopDialog();
+      shopDialogContent.querySelector("#checkout-preview-complete-title")?.focus();
+      return;
+    }
+    if (action === "done") {
+      checkoutStage = "bag";
+      checkoutError = "";
+      if (shopDialog instanceof HTMLDialogElement && shopDialog.open) shopDialog.close();
+      return;
+    }
+  }
+
   const saveButton = target.closest(".save-look, .product-dialog-save");
   if (saveButton instanceof HTMLButtonElement) {
     const key = saveButton.dataset.productKey;
@@ -1577,11 +1802,12 @@ document.addEventListener("click", (event) => {
     const wasSaved = savedLooks.has(key);
     if (wasSaved) savedLooks.delete(key);
     else savedLooks.add(key);
-    persistShoppingState();
+    const saved = persistShoppingState();
     updateWishlistButtons(key);
     updateShopCounts();
     if (activeShopView === "wishlist" && shopDialog instanceof HTMLDialogElement && shopDialog.open) renderShopDialog();
-    showShoppingNotice(
+    shoppingSaveNotice(
+      saved,
       wasSaved ? `Removed ${look.name} from your wishlist.` : `Added ${look.name} to your wishlist.`,
       wasSaved ? "neutral" : "success",
     );
@@ -1596,10 +1822,13 @@ document.addEventListener("click", (event) => {
     if (!canAddToBag(look)) return;
     const cartKey = createCartKey(look);
     shoppingCart.set(cartKey, (shoppingCart.get(cartKey) ?? 0) + 1);
-    persistShoppingState();
+    const saved = persistShoppingState();
     updateShopCounts();
     if (shopDialog instanceof HTMLDialogElement && shopDialog.open && activeShopView === "cart") renderShopDialog();
-    showShoppingNotice(`Added ${look.name} to your shopping bag.`);
+    showShoppingNotice(
+      saved ? `Added ${look.name} to your shopping bag.` : "Your change is active for this visit, but couldn't be saved on this device.",
+      saved ? "success" : "error",
+    );
     addButton.textContent = "Added to bag ✓";
     window.setTimeout(() => {
       if (addButton.isConnected) addButton.textContent = "Add to bag";
@@ -1639,10 +1868,15 @@ document.addEventListener("click", (event) => {
       shoppingCart.set(cartKey, (shoppingCart.get(cartKey) ?? 0) + 1);
       notice = `Added ${item.look.name} to your shopping bag.`;
     }
-    persistShoppingState();
+    const saved = persistShoppingState();
     updateShopCounts();
     renderShopDialog();
-    if (notice) showShoppingNotice(notice, action === "remove-cart" || action === "remove-wishlist" ? "neutral" : "success");
+    if (notice) {
+      showShoppingNotice(
+        saved ? notice : "Your change is active for this visit, but couldn't be saved on this device.",
+        saved ? (action === "remove-cart" || action === "remove-wishlist" ? "neutral" : "success") : "error",
+      );
+    }
   }
 });
 
@@ -1711,6 +1945,18 @@ window.addEventListener("velora:privacy-changed", persistShoppingState);
 window.addEventListener("velora:device-data-cleared", () => {
   savedLooks.clear();
   shoppingCart.clear();
+  updateShopCounts();
+  renderLooks();
+  renderRecommendations();
+  if (shopDialog?.open) renderShopDialog();
+});
+window.addEventListener("pageshow", (event) => {
+  if (!event.persisted) return;
+  const { wishlist, cart } = readShoppingState();
+  savedLooks.clear();
+  wishlist.forEach((key) => savedLooks.add(key));
+  shoppingCart.clear();
+  cart.forEach((quantity, key) => shoppingCart.set(key, quantity));
   updateShopCounts();
   renderLooks();
   renderRecommendations();
