@@ -3,7 +3,7 @@
   const $ = (selector) => document.querySelector(selector);
   const currency = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
   const shortDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
-  const sections = ["overview", "products", "customers", "activity", "security", "business", "operations", "support"];
+  const sections = ["overview", "products", "customers", "activity", "security", "business", "operations", "support", "folder-access", "discounts"];
   const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
   let toastTimer;
   let loading;
@@ -106,7 +106,7 @@
     const selected = window.veloraCommerceRole === "warehouse" ? "operations" : location.hash.slice(1), section = sections.includes(selected) ? selected : "overview";
     sections.forEach((name) => { $(`#admin-${name}`).hidden = name !== section; });
     document.querySelectorAll("[data-admin-section]").forEach((link) => { if (link.dataset.adminSection === section) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current"); });
-    const sectionTitle = section === "business" ? "Business details" : section[0].toUpperCase() + section.slice(1);
+    const sectionTitle = section === "business" ? "Business details" : section === "folder-access" ? "Velora accounts" : section === "discounts" ? "Discount codes" : section[0].toUpperCase() + section.slice(1);
     $("#admin-breadcrumb").textContent = sectionTitle; document.title = `${sectionTitle} \u2014 Velora admin`;
     requestAnimationFrame(() => {
       const nav = $(".admin-nav"), current = nav?.querySelector('[aria-current="page"]');
@@ -531,7 +531,7 @@
       const operations = await window.VeloraAuth.request("/api/admin/commerce");
       window.veloraCommerceRole = operations.role;
       if (operations.role === "manager") {
-        document.querySelectorAll('[data-admin-section="business"],[data-admin-section="security"]').forEach(link => { link.hidden = true; });
+        document.querySelectorAll('[data-admin-section="business"],[data-admin-section="security"],[data-admin-section="folder-access"]').forEach(link => { link.hidden = true; });
       }
       if (operations.role === "warehouse") {
         document.querySelectorAll("[data-admin-section]").forEach(link => { link.hidden = link.dataset.adminSection !== "operations"; });

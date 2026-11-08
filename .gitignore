@@ -1,4 +1,5 @@
 .velora/
+shared-folders/
 __pycache__/
 *.pyc
 security.key

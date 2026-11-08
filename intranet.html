@@ -9,9 +9,11 @@
     <title>Team workspace — Velora</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=70" />
-    <link rel="stylesheet" href="intranet.css?v=1" />
+    <link rel="stylesheet" href="intranet.css?v=2" />
     <script src="auth.js?v=8" defer></script>
-    <script src="intranet.js?v=1" defer></script>
+    <link rel="stylesheet" href="intranet-folders.css?v=1" />
+    <script src="intranet-folders.js?v=1" defer></script>
+    <script src="intranet.js?v=2" defer></script>
   </head>
   <body class="intranet-page">
     <a class="intranet-skip" href="#intranet-main">Skip to workspace</a>
@@ -25,7 +27,7 @@
         <a href="#updates"><span class="intranet-nav-icon" aria-hidden="true">◷</span>Studio notes</a>
       </nav>
       <div class="intranet-sidebar-bottom">
-        <a href="admin.html">Open admin studio <span aria-hidden="true">↗</span></a>
+        <a href="admin.html" data-intranet-admin>Open admin studio <span aria-hidden="true">↗</span></a>
         <a href="index.html">Visit the storefront <span aria-hidden="true">↗</span></a>
       </div>
     </aside>
@@ -59,47 +61,36 @@
 
         <aside class="intranet-prototype-note">
           <span class="intranet-note-icon" aria-hidden="true">i</span>
-          <p><strong>Workspace preview.</strong> Team profiles and resource links are illustrative. Replace this sample content with approved internal information before wider use.</p>
+          <p><strong>Your account, your access.</strong> Shared folders follow the permissions assigned to your Velora account. Finance and HR require matching department access or explicit Full control. The people directory below remains illustrative.</p>
         </aside>
 
         <section class="intranet-metrics" aria-label="Team at a glance">
           <article><span class="intranet-metric-icon" aria-hidden="true">♧</span><div><strong>24</strong><span>team profiles</span></div></article>
-          <article><span class="intranet-metric-icon" aria-hidden="true">▦</span><div><strong>8</strong><span>departments</span></div></article>
+          <article><span class="intranet-metric-icon" aria-hidden="true">▦</span><div><strong id="intranet-department-count">9</strong><span>department folders</span></div></article>
           <article><span class="intranet-metric-icon" aria-hidden="true">◎</span><div><strong>6</strong><span>global locations</span></div></article>
           <a href="team.html#team-world-title"><span class="intranet-metric-icon" aria-hidden="true">↗</span><div><strong>Explore</strong><span>our team directory</span></div></a>
         </section>
 
         <section class="intranet-section" id="folders" aria-labelledby="folders-title">
           <div class="intranet-section-heading">
-            <div><p class="intranet-eyebrow"><span></span> FIND YOUR WAY</p><h2 id="folders-title">Shared <em>spaces.</em></h2></div>
-            <p>Quick links to the places your team visits most.</p>
+            <div><p class="intranet-eyebrow"><span></span> WORK TOGETHER, WITH THE RIGHT ACCESS</p><h2 id="folders-title">Shared <em>folders.</em></h2></div>
+            <p>Department documents, images and notes. Access is checked each time you open a file.</p>
           </div>
-          <div class="intranet-folder-grid">
-            <a class="intranet-folder-card folder-clay" href="team.html#creative-direction">
-              <span class="intranet-folder-symbol" aria-hidden="true">✳</span><span class="intranet-folder-kicker">01 / CREATIVE</span>
-              <strong>Brand &amp; creative</strong><span>Meet the studio and explore the brand story.</span><span class="intranet-folder-link">Explore space <b aria-hidden="true">↗</b></span>
-            </a>
-            <a class="intranet-folder-card folder-olive" href="admin.html#products">
-              <span class="intranet-folder-symbol" aria-hidden="true">◇</span><span class="intranet-folder-kicker">02 / COMMERCE</span>
-              <strong>Product studio</strong><span>Open the collection workspace and product tools.</span><span class="intranet-folder-link">Open workspace <b aria-hidden="true">↗</b></span>
-            </a>
-            <a class="intranet-folder-card folder-ink" href="admin.html#support">
-              <span class="intranet-folder-symbol" aria-hidden="true">↗</span><span class="intranet-folder-kicker">03 / CUSTOMER CARE</span>
-              <strong>Support desk</strong><span>Find customer conversations in the admin studio.</span><span class="intranet-folder-link">Go to support <b aria-hidden="true">↗</b></span>
-            </a>
-            <a class="intranet-folder-card folder-sand" href="team.html#human-resources">
-              <span class="intranet-folder-symbol" aria-hidden="true">♡</span><span class="intranet-folder-kicker">04 / PEOPLE</span>
-              <strong>People &amp; culture</strong><span>Meet the people team and browse all departments.</span><span class="intranet-folder-link">Meet the team <b aria-hidden="true">↗</b></span>
-            </a>
-            <a class="intranet-folder-card folder-paper" href="privacy.html">
-              <span class="intranet-folder-symbol" aria-hidden="true">▤</span><span class="intranet-folder-kicker">05 / REFERENCE</span>
-              <strong>Published policies</strong><span>Review the current public privacy information.</span><span class="intranet-folder-link">Read policy <b aria-hidden="true">↗</b></span>
-            </a>
-            <a class="intranet-folder-card folder-paper" href="our-story.html">
-              <span class="intranet-folder-symbol" aria-hidden="true">✧</span><span class="intranet-folder-kicker">06 / ABOUT VELORA</span>
-              <strong>Our story</strong><span>Reconnect with the people and purpose behind the brand.</span><span class="intranet-folder-link">Read our story <b aria-hidden="true">↗</b></span>
-            </a>
-          </div>
+          <p class="intranet-folder-feedback" id="intranet-folder-feedback" role="status" aria-live="polite">Checking your shared-folder access…</p>
+          <div class="intranet-folder-grid" id="intranet-folder-grid" aria-label="Department shared folders"></div>
+          <section class="intranet-file-browser" id="intranet-file-browser" aria-labelledby="intranet-open-folder-name" hidden>
+            <div class="intranet-folder-breadcrumb"><button type="button" id="intranet-folders-back">All shared folders</button><span aria-hidden="true">/</span><strong id="intranet-open-folder-name"></strong></div>
+            <div class="intranet-file-heading"><div><p id="intranet-open-folder-description"></p><span class="intranet-folder-access" id="intranet-open-folder-access"></span></div><button class="intranet-folder-button" id="intranet-folder-refresh" type="button">Refresh files</button></div>
+            <p class="intranet-library-note" id="intranet-library-note" hidden>Website library items are the existing public storefront originals. New uploads are private shared copies; uploading here does not publish a file to the website.</p>
+            <div class="intranet-file-tools">
+              <label class="intranet-file-search"><span class="sr-only">Search files in this folder</span><input type="search" id="intranet-file-search" placeholder="Find an image, document or note" autocomplete="off" /></label>
+              <div class="intranet-file-write-actions" id="intranet-file-write-actions" hidden><button class="intranet-folder-button" type="button" id="intranet-upload-button">Upload files</button><button class="intranet-folder-button" type="button" id="intranet-new-note">New note</button></div>
+              <input type="file" id="intranet-upload-input" multiple accept=".jpg,.jpeg,.png,.webp,.gif,.pdf,.txt,.csv,.docx,.xlsx,.pptx" hidden />
+            </div>
+            <p class="intranet-file-help" id="intranet-file-help">Private files are available only through your current folder permissions.</p>
+            <div class="intranet-file-list" id="intranet-file-list" aria-busy="false"></div>
+            <button class="intranet-folder-button intranet-show-files" id="intranet-show-files" type="button" hidden>Show more files</button>
+          </section>
         </section>
 
         <section class="intranet-section intranet-people-section" id="departments" aria-labelledby="departments-title">
@@ -204,12 +195,19 @@
           </div>
           <article class="intranet-update-card">
             <span class="intranet-update-mark" aria-hidden="true">v.</span>
-            <div><span class="intranet-update-label">START HERE · WORKSPACE PREVIEW</span><h3>One place for the work we share.</h3><p>This starter workspace brings the current sample team directory and site shortcuts together. Add approved team updates, working documents, and owners as your internal hub takes shape.</p></div>
+            <div><span class="intranet-update-label">START HERE · WORKSPACE PREVIEW</span><h3>One place for the work we share.</h3><p>Use shared folders to keep working documents, images and notes with the right department. Ask an administrator to review your access if a space is locked. Team profiles remain sample directory information.</p></div>
             <a href="team.html">Explore the team <span aria-hidden="true">↗</span></a>
           </article>
         </section>
         <footer class="intranet-footer"><span>VELORA TEAM WORKSPACE</span><span>Thoughtful work, made together.</span><a href="privacy.html">Privacy information</a></footer>
       </main>
     </div>
+    <dialog class="intranet-folder-dialog" id="intranet-note-dialog" aria-labelledby="intranet-note-dialog-title">
+      <button class="intranet-dialog-close" type="button" data-intranet-dialog-close aria-label="Close note editor">&times;</button>
+      <p class="intranet-eyebrow">A NOTE FOR YOUR DEPARTMENT</p><h2 id="intranet-note-dialog-title">Keep it <em>together.</em></h2>
+      <form id="intranet-note-form"><label>Note name<input id="intranet-note-name" maxlength="140" required /></label><label>Information<textarea id="intranet-note-text" rows="9" maxlength="20000" required></textarea></label><p class="intranet-file-help">Up to 20,000 characters. This note will inherit the current folder's access rules.</p><p class="intranet-folder-feedback" id="intranet-note-feedback" role="status"></p><button class="intranet-folder-button" type="submit" id="intranet-save-note">Save note</button></form>
+    </dialog>
+    <dialog class="intranet-folder-dialog" id="intranet-read-note-dialog" aria-labelledby="intranet-read-note-title"><button class="intranet-dialog-close" type="button" data-intranet-dialog-close aria-label="Close note">&times;</button><p class="intranet-eyebrow">SHARED DEPARTMENT NOTE</p><h2 id="intranet-read-note-title"></h2><pre id="intranet-read-note-content"></pre></dialog>
+    <dialog class="intranet-folder-dialog" id="intranet-delete-dialog" aria-labelledby="intranet-delete-title"><button class="intranet-dialog-close" type="button" data-intranet-dialog-close aria-label="Cancel deletion">&times;</button><h2 id="intranet-delete-title">Delete this file?</h2><p id="intranet-delete-description"></p><div class="intranet-dialog-actions"><button class="intranet-folder-button" id="intranet-cancel-delete" type="button">Keep file</button><button class="intranet-folder-button is-danger" id="intranet-confirm-delete" type="button">Delete private file</button></div></dialog>
   </body>
 </html>

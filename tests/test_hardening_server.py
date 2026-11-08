@@ -123,6 +123,45 @@ class HardeningServerTests(unittest.TestCase):
         self.assertEqual(payload, {"error": "This page was not found."})
         self.assertEqual(headers["Content-Type"], "application/json; charset=utf-8")
 
+    def test_vendor_module_allowlist_serves_required_scripts_without_exposing_other_files(self):
+        allowed = (
+            "assets/vendor/qrcodegen.js",
+            "assets/vendor/three/three.module.js",
+            "assets/vendor/three/three.core.js",
+            "assets/vendor/three/addons/controls/OrbitControls.js",
+            "assets/vendor/three/addons/exporters/GLTFExporter.js",
+        )
+        blocked = (
+            "assets/vendor/unlisted.js",
+            "assets/vendor/three/addons/controls/Unlisted.js",
+            "assets/vendor/three/source.json",
+        )
+        script = b"export const fixture = true;\n"
+        for relative in (*allowed, *blocked):
+            target = self.root / relative
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(script)
+        for relative in allowed:
+            with self.subTest(path=relative):
+                status, content, headers = self.client.request("GET", "/" + relative + "?v=fixture")
+                self.assertEqual(status, 200)
+                self.assertEqual(content, script)
+                self.assertIn(headers["Content-Type"].split(";", 1)[0], {"text/javascript", "application/javascript"})
+                self.assertEqual(headers["X-Content-Type-Options"], "nosniff")
+                self.assertIn("script-src 'self'", headers["Content-Security-Policy"])
+                status, content, headers = self.client.request("HEAD", "/" + relative)
+                self.assertEqual(status, 200)
+                self.assertEqual(content, b"")
+                self.assertEqual(int(headers["Content-Length"]), len(script))
+        for relative in blocked:
+            with self.subTest(path=relative):
+                status, content, headers = self.client.request("GET", "/" + relative)
+                self.assertEqual(status, 404)
+                self.assertIn(b"Page fixture", content)
+                self.assertNotIn(script, content)
+                self.assertEqual(headers["Content-Type"], "text/html; charset=utf-8")
+                self.assert_security_headers(headers)
+
     def test_all_admin_read_endpoints_deny_anonymous_and_customer_requests(self):
         customer = self.customer()
         for path in ("overview", "products", "customers", "activity", "security", "business-details"):

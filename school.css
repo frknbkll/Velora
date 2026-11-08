@@ -1,0 +1,220 @@
+/* Velora School: the same warm paper and considered typography as the collection. */
+.school-page { --school-surface: #fcfaf6; --school-line: #dcd3c7; background: var(--paper, #f6f2ec); color: var(--ink, #292621); }
+.school-page [hidden] { display: none !important; }
+.school-page :is(input, select, textarea, button) { font: inherit; }
+.school-page :is(a, button, input, select, summary):focus-visible { outline: 2px solid var(--accent, #a64e37); outline-offset: 4px; }
+.school-page button { cursor: pointer; }
+.school-page button:disabled { cursor: not-allowed; opacity: .48; }
+.school-header { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 100px; padding: 22px var(--page-gutter, 6vw); border-bottom: 1px solid var(--school-line); }
+.school-header .wordmark { flex: 0 0 auto; font-size: 37px; }
+.school-nav { display: flex; align-items: center; flex-wrap: wrap; justify-content: flex-end; gap: 8px 28px; }
+.school-nav a { display: inline-flex; align-items: center; min-height: 44px; color: #62594e; font-size: 12px; }
+.school-nav a:hover, .school-nav a[aria-current="page"] { color: var(--accent, #a64e37); }
+.school-main { width: min(1340px, calc(100% - 2 * var(--page-gutter, 6vw))); margin: 0 auto; padding: 54px 0 96px; }
+.school-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .92fr); align-items: center; gap: clamp(32px, 6vw, 86px); }
+.school-hero-copy { padding: 22px 0; }
+.school-hero-copy h1 { max-width: 10ch; margin-bottom: 28px; font-size: clamp(50px, 6.2vw, 88px); line-height: 1.04; letter-spacing: -.06em; }
+.school-lead { max-width: 45ch; margin-bottom: 28px; color: #6d6256; font-size: clamp(15px, 1.3vw, 18px); line-height: 1.85; }
+.school-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.school-button, .school-button-secondary { display: inline-flex; justify-content: center; align-items: center; gap: 16px; min-height: 48px; padding: 13px 22px; border: 1px solid var(--ink, #292621); border-radius: 1px; background: var(--ink, #292621); color: #fffaf4; font-size: 12px; font-weight: 500; line-height: 1.5; text-align: center; text-decoration: none; transition: background .2s ease, color .2s ease, border-color .2s ease; }
+.school-button:hover { background: #4b4137; border-color: #4b4137; }
+.school-button-secondary { background: transparent; color: var(--ink, #292621); }
+.school-button-secondary:hover { background: #e9e1d6; }
+.school-kicker { margin: 0 0 12px; color: var(--accent, #a64e37); font-size: 10px; font-weight: 600; letter-spacing: .16em; line-height: 1.6; text-transform: uppercase; }
+.school-pill { display: inline-flex; align-items: center; gap: 7px; min-height: 28px; padding: 5px 10px; border: 1px solid #cbbba8; border-radius: 30px; color: #79614b; font-size: 10px; line-height: 1.5; letter-spacing: .035em; }
+.school-hero-photo { position: relative; min-width: 0; margin: 0; aspect-ratio: 4 / 5; background: #e8dfd1; overflow: hidden; }
+.school-hero-photo > img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.school-image-caption { position: absolute; right: 16px; bottom: 16px; left: 16px; width: fit-content; max-width: calc(100% - 32px); margin: 0; padding: 10px 13px; background: #fbf7efe8; color: #67594a; font-size: 10px; line-height: 1.6; letter-spacing: .04em; }
+.school-facts { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin: 44px 0 0; padding: 25px 0; border-top: 1px solid var(--school-line); border-bottom: 1px solid var(--school-line); }
+.school-facts > * { min-width: 0; margin: 0; color: #706457; font-size: 12px; line-height: 1.7; }
+.school-facts strong { display: block; margin-bottom: 4px; color: var(--ink, #292621); font-weight: 500; }
+.school-section { margin-top: 94px; scroll-margin-top: 32px; }
+.school-section-heading { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); align-items: end; gap: 10px 54px; margin-bottom: 30px; }
+.school-section-heading > .eyebrow, .school-section-heading > .school-kicker { grid-column: 1 / -1; margin-bottom: 4px; }
+.school-section-heading h2 { margin: 0; font-size: clamp(34px, 3.6vw, 49px); line-height: 1.14; }
+.school-section-heading > p:not(.eyebrow):not(.school-kicker) { max-width: 48ch; margin: 0; color: #75695c; font-size: 14px; line-height: 1.8; }
+.school-course-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+.school-course { display: flex; flex-direction: column; min-width: 0; padding: 28px; border: 1px solid var(--school-line); background: var(--school-surface); transition: border-color .2s ease; }
+.school-course:hover { border-color: #ac8d72; }
+.school-course-number { margin-bottom: 24px; color: #a98364; font-family: var(--serif, Georgia, serif); font-size: 34px; line-height: 1; }
+.school-course-type { margin: 0 0 12px; color: #90765f; font-size: 9px; font-weight: 500; letter-spacing: .15em; line-height: 1.6; text-transform: uppercase; }
+.school-course h3 { margin-bottom: 15px; font-family: var(--serif, Georgia, serif); font-size: 29px; font-weight: 400; letter-spacing: -.025em; line-height: 1.2; }
+.school-course > p:not(.school-course-type):not(.school-course-number):not(.school-course-price) { color: #77695a; font-size: 13px; line-height: 1.8; }
+.school-course ul { flex: 1 0 auto; margin: 5px 0 26px; padding-left: 17px; color: #6f6357; font-size: 12px; line-height: 2; }
+.school-course-price { margin: auto 0 20px; padding-top: 22px; border-top: 1px solid var(--school-line); color: var(--ink, #292621); font-size: 34px; font-weight: 400; letter-spacing: -.04em; line-height: 1.2; }
+.school-course-price :is(small, span) { color: #82715f; font-size: 10px; letter-spacing: 0; line-height: 1.6; }
+.school-course-link { display: inline-flex; align-items: center; justify-content: space-between; gap: 14px; min-height: 44px; width: 100%; padding: 10px 0; border: 0; border-bottom: 1px solid #b19d86; background: transparent; color: #5c4c3e; font-size: 12px; line-height: 1.5; text-align: left; text-decoration: none; }
+.school-course-link:hover { color: var(--accent, #a64e37); border-color: var(--accent, #a64e37); }
+.school-note { margin: 20px 0 0; padding: 1px 0 1px 14px; border-left: 2px solid #b99c80; color: #7d6e5f; font-size: 12px; line-height: 1.8; }
+.school-studio { display: grid; grid-template-columns: minmax(240px, .68fr) minmax(0, 1.32fr); gap: 34px; padding: 32px; border: 1px solid var(--school-line); background: #eee7dc; align-items: start; }
+.school-studio-controls { display: grid; gap: 20px; min-width: 0; }
+.school-studio-controls > h3 { margin: 0; font-family: var(--serif, Georgia, serif); font-size: 25px; font-weight: 400; }
+.school-studio-controls form { display: grid; gap: 18px; }
+.school-studio-controls label { display: grid; gap: 9px; color: #645748; font-size: 12px; line-height: 1.6; }
+.school-studio-controls :is(select, input:not([type="radio"]):not([type="checkbox"])) { width: 100%; min-width: 0; min-height: 46px; padding: 10px 12px; border: 1px solid #cbbba7; border-radius: 1px; background: #fffdf8; color: var(--ink, #292621); font-size: 13px; }
+.school-studio-controls input[type="color"] { height: 46px; padding: 5px; }
+.school-studio-controls fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+.school-studio-controls legend { margin-bottom: 9px; color: #645748; font-size: 12px; line-height: 1.6; }
+.school-palette { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; padding: 3px; }
+.school-palette button { width: 44px; height: 44px; min-width: 44px; padding: 0; border: 5px solid #eee7dc; border-radius: 50%; outline: 1px solid #c5b6a2; outline-offset: 0; background: var(--color, #a64e37); color: transparent; font-size: 0; }
+.school-palette button[aria-pressed="true"] { outline: 2px solid var(--ink, #292621); outline-offset: 2px; }
+.school-palette button:focus-visible { outline: 2px solid var(--accent, #a64e37); outline-offset: 4px; }
+.school-design-sheet { min-width: 0; margin: 0; padding: 22px; border: 1px solid #e2d8c9; background: #fffcf6; box-shadow: 0 10px 35px #6d53380a; }
+.school-design-sheet svg { display: block; width: 100%; height: auto; max-height: 580px; }
+.school-design-meta { display: flex; align-items: center; flex-wrap: wrap; justify-content: space-between; gap: 8px 16px; padding-top: 18px; margin-top: 15px; border-top: 1px solid #e3d9ca; color: #8c7b66; font-size: 10px; line-height: 1.7; }
+.school-design-meta strong { color: #625342; font-weight: 500; }
+.school-learning { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.school-lesson-list { border-top: 1px solid var(--school-line); }
+.school-lesson-list details { padding: 20px 0; border-bottom: 1px solid var(--school-line); }
+.school-lesson-list summary { padding: 5px 22px 5px 0; color: #4e4236; font-size: 15px; font-weight: 500; line-height: 1.5; cursor: pointer; }
+.school-lesson-list details p { margin: 15px 0 18px; color: #7a6b5c; font-size: 13px; line-height: 1.9; }
+.school-lesson-list details button { min-height: 44px; padding: 10px 14px; border: 1px solid #bca58c; border-radius: 1px; background: transparent; color: #70573e; font-size: 11px; }
+.school-lesson-list details button[aria-pressed="true"] { border-color: #78816b; color: #566345; background: #e6e9de; }
+.school-check { padding: 26px; border: 1px solid var(--school-line); background: var(--school-surface); }
+.school-check h3 { margin-bottom: 10px; font-family: var(--serif, Georgia, serif); font-size: 26px; font-weight: 400; }
+.school-check > p { color: #7d6b5b; font-size: 12px; line-height: 1.8; }
+.school-check fieldset { min-width: 0; margin: 22px 0; padding: 0; border: 0; }
+.school-check legend { margin-bottom: 12px; color: #584b3d; font-size: 13px; font-weight: 500; line-height: 1.7; }
+.school-check label { display: flex; align-items: start; gap: 9px; min-height: 44px; padding: 10px 0; color: #786859; font-size: 12px; line-height: 1.7; cursor: pointer; }
+.school-check input[type="radio"] { flex: 0 0 auto; width: 17px; height: 17px; margin: 2px 0 0; accent-color: var(--accent, #a64e37); }
+.school-feedback { min-height: 1.7em; margin: 14px 0 0; color: #6a5b4b; font-size: 12px; line-height: 1.8; }
+.school-feedback[data-state="success"] { color: #4e6542; }
+.school-feedback[data-state="error"] { color: #9a4938; }
+.school-certificate-section { display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr); align-items: center; gap: 48px; }
+.school-certificate-copy h2 { margin-bottom: 22px; font-size: clamp(34px, 3.5vw, 48px); line-height: 1.16; }
+.school-certificate-copy > p { color: #776858; font-size: 14px; line-height: 1.85; }
+.school-checklist { margin: 22px 0; padding: 0; list-style: none; }
+.school-checklist li { position: relative; padding: 7px 0 7px 23px; color: #7b6b5a; font-size: 12px; line-height: 1.7; }
+.school-checklist li::before { position: absolute; left: 0; top: 7px; content: '\25CB'; color: #a28d75; }
+.school-checklist li[data-complete="true"] { color: #4f6343; }
+.school-checklist li[data-complete="true"]::before { content: '\2713'; color: #62754d; }
+.school-certificate-form { display: grid; gap: 12px; margin-top: 22px; }
+.school-certificate-form label { display: grid; gap: 8px; color: #6b5a47; font-size: 12px; }
+.school-certificate-form input { min-height: 47px; width: 100%; min-width: 0; padding: 11px 13px; border: 1px solid #cbbba7; border-radius: 1px; background: #fffdf8; color: var(--ink, #292621); }
+.school-certificate-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.school-certificate-paper { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 405px; padding: 50px 32px; border: 1px solid #cbb28b; outline: 1px solid #dac9ad; outline-offset: -12px; background: #fffdf7; color: #514333; box-shadow: 0 12px 35px #7655300a; text-align: center; }
+.school-certificate-paper::before, .school-certificate-paper::after { position: absolute; left: 50%; width: 46px; height: 1px; background: #ba9569; content: ''; transform: translateX(-50%); }
+.school-certificate-paper::before { top: 31px; }
+.school-certificate-paper::after { bottom: 31px; }
+.school-certificate-paper .wordmark { margin: 0 auto 19px; color: #4f4030; font-size: 36px; }
+.school-certificate-paper p { max-width: 42ch; margin-bottom: 12px; color: #89735b; font-size: 11px; line-height: 1.8; }
+.school-certificate-paper .school-certificate-title { margin: 0 0 17px; color: #6d5135; font-family: var(--serif, Georgia, serif); font-size: clamp(23px, 2.4vw, 34px); font-weight: 400; line-height: 1.3; letter-spacing: -.025em; }
+.school-certificate-paper .school-certificate-name { width: 90%; margin: 14px 0 18px; padding-bottom: 12px; border-bottom: 1px solid #e3d5c0; color: #413426; font-family: var(--serif, Georgia, serif); font-size: clamp(26px, 3vw, 40px); font-weight: 400; line-height: 1.3; overflow-wrap: anywhere; }
+.school-certificate-date { margin-top: 12px; color: #957d61; font-size: 10px; letter-spacing: .06em; line-height: 1.7; }
+.school-faq { max-width: 900px; margin-right: auto; margin-left: auto; }
+.school-faq details { padding: 20px 0; border-bottom: 1px solid var(--school-line); }
+.school-faq details:first-of-type { border-top: 1px solid var(--school-line); }
+.school-faq summary { padding: 4px 24px 4px 0; color: #514537; font-size: 14px; font-weight: 500; line-height: 1.7; cursor: pointer; }
+.school-faq details p { max-width: 78ch; margin: 14px 0 0; color: #7b6c5b; font-size: 13px; line-height: 1.9; }
+.school-footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 22px 32px; padding: 34px var(--page-gutter, 6vw); border-top: 1px solid var(--school-line); color: #81715f; font-size: 11px; line-height: 1.8; }
+.school-footer > p { margin: 0; }
+.school-footer nav { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 21px; }
+.school-footer nav :is(a, button) { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: transparent; color: #786653; font-size: 11px; text-decoration: none; }
+.school-footer nav :is(a, button):hover { color: var(--accent, #a64e37); }
+.school-course-dialog { position: fixed; inset: 0; width: min(600px, calc(100% - 32px)); max-height: calc(100svh - 40px); margin: auto; padding: 38px; overflow: auto; border: 1px solid #cbb99f; border-radius: 2px; background: #fbf7ef; color: var(--ink, #292621); box-shadow: 0 25px 100px #30231640; }
+.school-course-dialog::backdrop { background: #2c241f88; backdrop-filter: blur(3px); }
+.school-course-dialog h2 { max-width: 90%; margin: 14px 0 20px; font-size: 34px; line-height: 1.2; }
+.school-course-dialog :is(p, li) { color: #77644f; font-size: 13px; line-height: 1.85; }
+.school-course-dialog ul { padding-left: 18px; margin: 18px 0 24px; }
+.school-dialog-close { position: absolute; top: 10px; right: 10px; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: #6c5743; font-size: 26px; line-height: 1; }
+.hero-copy .hero-school-link { display: flex; align-items: center; justify-content: space-between; gap: 20px; width: max-content; max-width: 100%; min-height: 44px; margin-top: 14px; padding: 10px 18px; border: 1px solid #f4e4d4aa; border-radius: 1px; background: #83675230; color: #fffaf4; font-size: 12px; line-height: 1.5; transition: background .2s ease, border-color .2s ease; }
+.hero-copy .hero-school-link:hover { border-color: #fff3e5; background: #a7805c50; }
+.hero-copy .hero-school-link span { color: #efb796; }
+.hero-copy .hero-school-link:focus-visible { outline: 2px solid #efb796; outline-offset: 4px; }
+
+@media (max-width: 1000px) {
+  .school-course { padding: 22px; }
+  .school-course h3 { font-size: 25px; }
+  .school-studio { grid-template-columns: minmax(220px, .8fr) minmax(0, 1fr); gap: 24px; padding: 24px; }
+  .school-certificate-section { gap: 28px; }
+  .school-certificate-paper { padding: 45px 24px; }
+}
+
+@media (max-width: 760px) {
+  .school-header { align-items: flex-start; min-height: 84px; gap: 18px; padding-top: 17px; padding-bottom: 17px; }
+  .school-header .wordmark { margin-top: 4px; font-size: 32px; }
+  .school-nav { max-width: 70%; gap: 0 17px; }
+  .school-nav a { min-height: 36px; font-size: 11px; }
+  .school-main { padding-top: 30px; padding-bottom: 65px; }
+  .school-hero { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .school-hero-copy { padding: 0; }
+  .school-hero-copy h1 { max-width: 12ch; margin-bottom: 22px; font-size: clamp(48px, 9vw, 72px); }
+  .school-lead { max-width: 55ch; font-size: 15px; }
+  .school-hero-photo { max-height: 560px; aspect-ratio: 5 / 4; }
+  .school-hero-photo > img { object-position: center 47%; }
+  .school-facts { margin-top: 28px; gap: 18px; padding: 19px 0; }
+  .school-facts > * { font-size: 11px; }
+  .school-section { margin-top: 62px; }
+  .school-section-heading { grid-template-columns: minmax(0, 1fr); gap: 14px; margin-bottom: 25px; }
+  .school-section-heading h2 { max-width: 21ch; font-size: 36px; }
+  .school-section-heading > p:not(.eyebrow):not(.school-kicker) { max-width: 60ch; font-size: 13px; }
+  .school-course-grid { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+  .school-course { padding: 27px; }
+  .school-course-number { margin-bottom: 20px; }
+  .school-course h3 { font-size: 29px; }
+  .school-course ul { margin-bottom: 22px; }
+  .school-studio { grid-template-columns: minmax(0, 1fr); padding: 25px; gap: 26px; }
+  .school-studio-controls form { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; }
+  .school-studio-controls form > :is(fieldset, .school-palette, button, .school-actions, p) { grid-column: 1 / -1; }
+  .school-design-sheet { padding: 20px; }
+  .school-design-sheet svg { max-height: 530px; }
+  .school-learning { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .school-check { padding: 25px; }
+  .school-certificate-section { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .school-certificate-copy h2 { max-width: 17ch; }
+  .school-certificate-paper { min-height: 390px; padding: 45px 26px; }
+  .school-certificate-name { font-size: 36px; }
+  .school-footer { padding-top: 28px; padding-bottom: 28px; }
+}
+
+@media (max-width: 480px) {
+  .school-header { flex-direction: column; gap: 9px; padding-top: 18px; padding-bottom: 10px; }
+  .school-nav { justify-content: flex-start; max-width: 100%; gap: 0 18px; }
+  .school-nav a { min-height: 40px; }
+  .school-main { width: calc(100% - 36px); padding-top: 28px; }
+  .school-hero-copy h1 { font-size: clamp(43px, 11.3vw, 56px); }
+  .school-actions { align-items: stretch; gap: 10px; }
+  .school-actions > :is(.school-button, .school-button-secondary) { flex: 1 1 150px; padding-right: 14px; padding-left: 14px; font-size: 11px; }
+  .school-hero-photo { aspect-ratio: 4 / 5; }
+  .school-image-caption { inset: auto 12px 12px; max-width: calc(100% - 24px); padding: 8px 10px; font-size: 9px; }
+  .school-facts { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 20px 0; }
+  .school-facts > * { font-size: 12px; }
+  .school-facts strong { display: inline; margin-right: 7px; }
+  .school-section { margin-top: 50px; }
+  .school-section-heading h2 { font-size: 33px; }
+  .school-course { padding: 23px; }
+  .school-course h3 { font-size: 27px; }
+  .school-studio { gap: 22px; padding: 20px 16px; }
+  .school-studio-controls form { grid-template-columns: minmax(0, 1fr); }
+  .school-design-sheet { padding: 13px; }
+  .school-design-meta { padding-top: 12px; margin-top: 10px; font-size: 9px; }
+  .school-check { padding: 21px; }
+  .school-certificate-copy h2 { font-size: 34px; }
+  .school-certificate-paper { min-height: 365px; padding: 43px 22px; }
+  .school-certificate-title { font-size: 25px; }
+  .school-certificate-name { font-size: 29px; }
+  .school-certificate-paper p { font-size: 10px; }
+  .school-certificate-actions > :is(.school-button, .school-button-secondary) { flex: 1 1 150px; }
+  .school-course-dialog { width: calc(100% - 24px); max-height: calc(100svh - 28px); padding: 29px 23px; }
+  .school-course-dialog h2 { font-size: 30px; }
+  .school-footer { gap: 15px; padding-right: 18px; padding-left: 18px; }
+  .school-footer nav { gap: 0 17px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .school-page *, .hero-copy .hero-school-link { scroll-behavior: auto; transition: none; }
+}
+
+@media print {
+  .school-page { margin: 0; padding: 0; background: #fff; }
+  .school-page .school-header, .school-page .school-footer { display: none; }
+  .school-page .school-main { width: 100%; margin: 0; padding: 0; }
+  .school-page .school-main > :not(.school-certificate-section):not(:has(.school-certificate-paper)) { display: none; }
+  .school-page .school-certificate-section { display: block; margin: 0; padding: 0; }
+  .school-page .school-certificate-copy { display: none; }
+  .school-page * { visibility: hidden; }
+  .school-page .school-certificate-paper, .school-page .school-certificate-paper * { visibility: visible; }
+  .school-page .school-certificate-paper { position: absolute; top: 15mm; left: 5%; width: 90%; min-height: 150mm; margin: 0; padding: 24mm 15mm; background: #fff; box-shadow: none; break-inside: avoid; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .school-page .school-certificate-paper::before, .school-page .school-certificate-paper::after { visibility: visible; }
+  .school-page .school-certificate-name { color: #292621; }
+}

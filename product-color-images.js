@@ -89,7 +89,10 @@ window.veloraColorImages = {
     {
       "name": "Espresso",
       "hex": "#49332b",
-      "image": "assets/gallery/derya-chocolate-tailoring.jpg"
+      "image": "assets/gallery/derya-chocolate-tailoring.jpg",
+      "poses": [
+        "assets/gallery/colors/velora-chocolate-longline-blazer-pose.jpg"
+      ]
     },
     {
       "name": "Ivory",
@@ -123,7 +126,10 @@ window.veloraColorImages = {
     {
       "name": "Taupe",
       "hex": "#9c897d",
-      "image": "assets/gallery/derya-taupe-tailoring.jpg"
+      "image": "assets/gallery/derya-taupe-tailoring.jpg",
+      "poses": [
+        "assets/gallery/colors/velora-taupe-tailored-set-pose.jpg"
+      ]
     },
     {
       "name": "Sage",
@@ -482,6 +488,11 @@ window.veloraColorImages = {
       "hex": "#26344c",
       "image": "assets/gallery/colors/luna-champagne-satin-evening-dress-navy-pose-pose-v2.jpg",
       "garmentOnly": true
+    },
+    {
+      "name": "Floral",
+      "hex": "#9b6b5b",
+      "image": "assets/gallery/colors/velora-wildflower-evening-dress.jpg"
     }
   ],
   "assets/gallery/luna-ivory-tailored-suit.jpg": [
@@ -533,6 +544,11 @@ window.veloraColorImages = {
       "name": "Chocolate",
       "hex": "#584035",
       "image": "assets/gallery/colors/luna-beige-trench-tailored-look-chocolate-pose-pose-v2.jpg"
+    },
+    {
+      "name": "Camel",
+      "hex": "#b68b61",
+      "image": "assets/gallery/colors/velora-beige-trench-hijab-pose.jpg"
     }
   ],
   "assets/gallery/victoria-ivory-executive-suit.jpg": [
@@ -556,7 +572,10 @@ window.veloraColorImages = {
     {
       "name": "Ivory",
       "hex": "#e8e2d6",
-      "image": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg"
+      "image": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+      "poses": [
+        "assets/gallery/colors/velora-cloud-ribbed-lounge-pose.jpg"
+      ]
     },
     {
       "name": "Sage",
@@ -607,7 +626,10 @@ window.veloraColorImages = {
     {
       "name": "Champagne",
       "hex": "#d8c6a5",
-      "image": "assets/gallery/victoria-ivory-knit-tailored-set.jpg"
+      "image": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+      "poses": [
+        "assets/gallery/colors/velora-ivory-knit-tailored-set-pose.jpg"
+      ]
     },
     {
       "name": "Sage",
@@ -641,9 +663,12 @@ window.veloraColorImages = {
   ],
   "assets/gallery/victoria-midnight-satin-slip-gown.jpg": [
     {
-      "name": "Ivory",
-      "hex": "#e8e2d6",
-      "image": "assets/gallery/victoria-midnight-satin-slip-gown.jpg"
+      "name": "Black",
+      "hex": "#252321",
+      "image": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+      "poses": [
+        "assets/gallery/colors/velora-midnight-satin-slip-gown-pose.jpg"
+      ]
     },
     {
       "name": "Sage",
@@ -654,6 +679,11 @@ window.veloraColorImages = {
       "name": "Camel",
       "hex": "#b68b61",
       "image": "assets/gallery/colors/victoria-midnight-satin-slip-gown-camel-pose-pose-v2.jpg"
+    },
+    {
+      "name": "Chocolate",
+      "hex": "#584035",
+      "image": "assets/gallery/colors/velora-midnight-gown-chocolate.jpg"
     }
   ],
   "assets/gallery/victoria-ivory-trench-ensemble.jpg": [
@@ -705,6 +735,11 @@ window.veloraColorImages = {
       "name": "Navy",
       "hex": "#26344c",
       "image": "assets/gallery/colors/beyza-taupe-knit-trouser-look-navy-pose-pose-v2.jpg"
+    },
+    {
+      "name": "Chocolate",
+      "hex": "#584035",
+      "image": "assets/gallery/colors/velora-taupe-trouser-set-hijab.jpg"
     }
   ],
   "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg": [
@@ -807,6 +842,11 @@ window.veloraColorImages = {
       "name": "Blue",
       "hex": "#7b93b5",
       "image": "assets/gallery/colors/beyza-espresso-tailored-suit-blue-pose-pose-v2.jpg"
+    },
+    {
+      "name": "Burgundy",
+      "hex": "#783947",
+      "image": "assets/gallery/colors/velora-espresso-suit-burgundy.jpg"
     }
   ],
   "assets/gallery/new-ivory-ribbed-knit-set.png": [
@@ -850,7 +890,10 @@ window.veloraColorImages = {
     {
       "name": "Navy Blue",
       "hex": "#172b49",
-      "image": "assets/gallery/colors/midnight-double-breasted-suit-navy-blue-pose-v2.jpg"
+      "image": "assets/gallery/colors/midnight-double-breasted-suit-navy-blue-pose-v2.jpg",
+      "poses": [
+        "assets/gallery/colors/velora-midnight-suit-navy-pose.jpg"
+      ]
     },
     {
       "name": "Yellow",
@@ -899,6 +942,240 @@ window.veloraColorImages = {
       "name": "Black",
       "hex": "#252321",
       "image": "assets/gallery/new-midnight-high-neck-suit-pose-v2.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/espresso-tailored-suit.jpg": [
+    {
+      "name": "Espresso",
+      "hex": "#493027",
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "poses": []
+    },
+    {
+      "name": "Navy",
+      "hex": "#24334e",
+      "image": "assets/gallery/new-arrivals/variants/espresso-tailored-suit-navy-pose.jpg"
+    },
+    {
+      "name": "Sage",
+      "hex": "#9aab93",
+      "image": "assets/gallery/new-arrivals/variants/espresso-tailored-suit-sage-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/black-stripe-track-set.jpg": [
+    {
+      "name": "Black",
+      "hex": "#202020",
+      "image": "assets/gallery/new-arrivals/black-stripe-track-set.jpg",
+      "poses": []
+    },
+    {
+      "name": "Navy",
+      "hex": "#24334e",
+      "image": "assets/gallery/new-arrivals/variants/black-stripe-track-set-navy-pose.jpg"
+    },
+    {
+      "name": "Burgundy",
+      "hex": "#722f42",
+      "image": "assets/gallery/new-arrivals/variants/black-stripe-track-set-burgundy-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg": [
+    {
+      "name": "Ivory",
+      "hex": "#eee3d2",
+      "image": "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg",
+      "poses": []
+    },
+    {
+      "name": "Mocha",
+      "hex": "#a38875",
+      "image": "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-mocha-pose.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#242424",
+      "image": "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-black-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg": [
+    {
+      "name": "Chocolate",
+      "hex": "#49312b",
+      "image": "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg",
+      "poses": []
+    },
+    {
+      "name": "Navy",
+      "hex": "#24334e",
+      "image": "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-navy-pose.jpg"
+    },
+    {
+      "name": "Camel",
+      "hex": "#b68f61",
+      "image": "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-camel-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/black-draped-satin-gown.jpg": [
+    {
+      "name": "Black",
+      "hex": "#171719",
+      "image": "assets/gallery/new-arrivals/black-draped-satin-gown.jpg",
+      "poses": []
+    },
+    {
+      "name": "Burgundy",
+      "hex": "#722f42",
+      "image": "assets/gallery/new-arrivals/variants/black-draped-satin-gown-burgundy-pose.jpg"
+    },
+    {
+      "name": "Emerald",
+      "hex": "#215e4b",
+      "image": "assets/gallery/new-arrivals/variants/black-draped-satin-gown-emerald-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg": [
+    {
+      "name": "Navy",
+      "hex": "#202a45",
+      "image": "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg",
+      "poses": []
+    },
+    {
+      "name": "Charcoal",
+      "hex": "#4d5057",
+      "image": "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-charcoal-pose.jpg"
+    },
+    {
+      "name": "Sage",
+      "hex": "#9aab93",
+      "image": "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-sage-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg": [
+    {
+      "name": "Sand",
+      "hex": "#b4a08a",
+      "image": "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg",
+      "poses": []
+    },
+    {
+      "name": "Chocolate",
+      "hex": "#604032",
+      "image": "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-chocolate-pose.jpg"
+    },
+    {
+      "name": "Charcoal",
+      "hex": "#4d5057",
+      "image": "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-charcoal-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg": [
+    {
+      "name": "Cream and Mocha",
+      "hex": "#d8c1a8",
+      "image": "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg",
+      "poses": []
+    },
+    {
+      "name": "Sage Floral",
+      "hex": "#9aab93",
+      "image": "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-sage-floral-pose.jpg"
+    },
+    {
+      "name": "Dusty Rose Floral",
+      "hex": "#b9808c",
+      "image": "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-dusty-rose-floral-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg": [
+    {
+      "name": "Sand",
+      "hex": "#c6ad8b",
+      "image": "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg",
+      "poses": []
+    },
+    {
+      "name": "Olive",
+      "hex": "#767b50",
+      "image": "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-olive-pose.jpg"
+    },
+    {
+      "name": "Black",
+      "hex": "#242424",
+      "image": "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-black-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg": [
+    {
+      "name": "Chocolate",
+      "hex": "#604032",
+      "image": "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg",
+      "poses": []
+    },
+    {
+      "name": "Navy",
+      "hex": "#24334e",
+      "image": "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-navy-pose.jpg"
+    },
+    {
+      "name": "Camel",
+      "hex": "#b68f61",
+      "image": "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-camel-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg": [
+    {
+      "name": "Cocoa",
+      "hex": "#54362c",
+      "image": "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg",
+      "poses": []
+    },
+    {
+      "name": "Burgundy",
+      "hex": "#722f42",
+      "image": "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-burgundy-pose.jpg"
+    },
+    {
+      "name": "Navy",
+      "hex": "#24334e",
+      "image": "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-navy-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg": [
+    {
+      "name": "Espresso",
+      "hex": "#49352d",
+      "image": "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg",
+      "poses": []
+    },
+    {
+      "name": "Charcoal",
+      "hex": "#4d5057",
+      "image": "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-charcoal-pose.jpg"
+    },
+    {
+      "name": "Navy",
+      "hex": "#24334e",
+      "image": "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-navy-pose.jpg"
+    }
+  ],
+  "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg": [
+    {
+      "name": "Oat",
+      "hex": "#e1d3bd",
+      "image": "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg",
+      "poses": []
+    },
+    {
+      "name": "Mocha",
+      "hex": "#a38875",
+      "image": "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-mocha-pose.jpg"
+    },
+    {
+      "name": "Charcoal",
+      "hex": "#4d5057",
+      "image": "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-charcoal-pose.jpg"
     }
   ]
 };

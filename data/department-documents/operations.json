@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "departments": [
+    {
+      "id": "production",
+      "name": "Production",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Receiving and stock handover",
+          "purpose": "Prepare a draft receiving checklist for a future Netherlands workstream. Use the Rotterdam location label only as a planning reference. Product quantities, receiving arrangements and responsible colleagues remain unconfirmed until the department reviews this brief.",
+          "workItems": [
+            "Create an intake record with empty fields for product reference, purchase reference, arrival date and condition; do not populate it with assumed deliveries.",
+            "Define where a reviewer will record packaging condition, visible damage and any difference between the expected and counted items.",
+            "Separate items awaiting inspection from items accepted for the next handover, and record who will approve that change of status.",
+            "Prepare a handover note that links the inspection record to the relevant stock record without creating live stock movements."
+          ],
+          "deliverables": [
+            "Blank receiving checklist with inspection and exception fields.",
+            "Draft stock handover note with owner and approval fields left unassigned.",
+            "Open questions covering the receiving location and the evidence needed for acceptance."
+          ],
+          "nextAction": "Ask the production lead to nominate a receiving reviewer and confirm which stock records this template should reference."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Sample review and revision control",
+          "purpose": "Set up a draft sample review pack for a possible France workstream. The pack should connect feedback to a specific sample version so that comments cannot be mistaken for approval of a different garment or material.",
+          "workItems": [
+            "List the sample reference, revision label, intended review purpose and the measurements or finish details that the reviewer needs to check.",
+            "Provide a consistent place for annotated photographs, with separate notes for construction, finish, fit and any unresolved questions.",
+            "Record each requested change against the sample version, leaving the proposed owner and completion date blank until they are assigned.",
+            "Prepare a comparison checklist for the next sample so that accepted changes and remaining issues can be reviewed together."
+          ],
+          "deliverables": [
+            "Sample review cover sheet with version and review-status fields.",
+            "Draft revision log linking comments to sample references.",
+            "Comparison checklist for a later sample review; no sample is marked approved."
+          ],
+          "nextAction": "Request the relevant sample references from the production lead before adding photographs or review comments."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Packaging readiness checklist",
+          "purpose": "Build a draft packaging review checklist for a potential United Kingdom workstream. This is an internal preparation document, not a statement that packaging, shipping arrangements or country requirements have already been approved.",
+          "workItems": [
+            "Create a packaging record with space for the garment reference, packaging version, protective materials and the intended review stage.",
+            "Check that a reviewer can compare the packed item with the approved product reference and record missing or mismatched components.",
+            "Leave label wording and any country-specific requirements as pending review rather than copying unverified wording into the template.",
+            "Prepare a small evidence list for photographs, handling observations and the final internal sign-off before any release decision."
+          ],
+          "deliverables": [
+            "Packaging readiness checklist with a clear draft status.",
+            "Evidence register for photographs and handling-review notes.",
+            "Outstanding-review list for label content, materials and release authority."
+          ],
+          "nextAction": "Ask the production lead which packaging version should be reviewed and who can approve the final pack."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Quality inspection and exceptions",
+          "purpose": "Prepare a draft quality inspection record for a possible Germany workstream. The focus is traceable observations and a clear route for unresolved issues; this brief does not set technical tolerances or claim that any product has passed inspection.",
+          "workItems": [
+            "Create blank fields for product reference, inspection stage, applicable specification version and the person performing the review.",
+            "Provide separate checks for seams, fastening function, fabric appearance and consistency with the specification supplied by Design.",
+            "Record exceptions using an observation, supporting image reference and proposed follow-up rather than an unexplained pass or fail label.",
+            "Require the designated reviewer to identify which exceptions need another inspection before the relevant item can move to its next stage."
+          ],
+          "deliverables": [
+            "Draft inspection sheet linked to a specification version.",
+            "Exception log with evidence and follow-up fields.",
+            "Unassigned review checklist for reinspection and release decisions."
+          ],
+          "nextAction": "Request the relevant specification version and approved inspection criteria before the department uses this record."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Dispatch handover preparation",
+          "purpose": "Prepare an internal dispatch handover outline for a possible United Arab Emirates workstream, using Dubai as the location label shown in the workspace. Shipment details, service providers and release decisions are intentionally left unconfirmed.",
+          "workItems": [
+            "Create empty fields for the product references, internal dispatch reference, recipient role and the person responsible for checking the handover.",
+            "List the supporting records that the production reviewer needs, such as a packing record, inspection status and any unresolved product exceptions.",
+            "Keep transport arrangements and country-specific documentation as questions for the appropriate internal reviewer; do not treat this checklist as shipping guidance.",
+            "Define how the receiving colleague will acknowledge the handover and record missing information without implying that dispatch has already occurred."
+          ],
+          "deliverables": [
+            "Draft dispatch handover cover sheet.",
+            "Supporting-record checklist with all references pending.",
+            "Open-question log for the planned receiving and dispatch roles."
+          ],
+          "nextAction": "Ask the production lead whether a dispatch review is needed and which internal roles should complete it."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Supplier information and material traceability",
+          "purpose": "Create a draft supplier-information checklist for a potential Türkiye workstream. Türkiye is a country-level workspace reference; no city, supplier relationship, production order or manufacturing location is assumed by this document.",
+          "workItems": [
+            "Prepare blank fields for the supplier reference, material reference, information owner and the reason the information is being requested.",
+            "List the material details that Design and Production need to compare, including the supplied description, sample version and any supporting references.",
+            "Keep supplier claims separate from details that the designated reviewer has checked, and record missing evidence as an open item.",
+            "Prepare a handover summary that links reviewed material information to the relevant internal specification without implying supplier approval."
+          ],
+          "deliverables": [
+            "Blank supplier-information intake form.",
+            "Material traceability register with evidence and review-status fields.",
+            "Draft handover summary for the Design and Production reviewers."
+          ],
+          "nextAction": "Ask the production lead to confirm the information request and assign a reviewer before contacting any supplier."
+        }
+      ]
+    },
+    {
+      "id": "brand",
+      "name": "Brand & marketing",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Campaign message foundation",
+          "purpose": "Prepare a draft message foundation for a possible Netherlands campaign. Use it to connect the collection story, intended audience and supporting product facts before anyone prepares channel copy or treats a concept as an approved campaign.",
+          "workItems": [
+            "Write an internal one-sentence campaign objective and identify which product references or collection details will support that objective.",
+            "Separate the proposed message from factual product claims, marking any claim that still needs evidence or product-owner confirmation.",
+            "Prepare a short tone guide with a clear call to action, avoiding unconfirmed promotions, availability statements or launch dates.",
+            "List the copy and visual reviewers needed for approval and leave their names and review dates unassigned until the team agrees them."
+          ],
+          "deliverables": [
+            "Draft campaign message sheet with an unapproved status.",
+            "Product-claim evidence checklist.",
+            "Proposed review route for copy, product details and creative assets."
+          ],
+          "nextAction": "Ask the brand lead to confirm the campaign objective and nominate the product-fact reviewer."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Local copy review pack",
+          "purpose": "Build a draft copy review pack for a potential France workstream. The aim is to preserve the intended brand message while allowing an assigned local reviewer to check wording, clarity and context before any copy is released.",
+          "workItems": [
+            "Record the source-copy version and intended placement so that a reviewer can distinguish a headline, caption, product description and supporting note.",
+            "Provide side-by-side fields for source wording, proposed local wording, reviewer comments and an explicit approval status.",
+            "Flag product names, claims, promotional terms and calls to action that require confirmation rather than assuming a direct translation is suitable.",
+            "Link each copy item to its planned visual reference and record any spacing or text-length issue that Creative should review."
+          ],
+          "deliverables": [
+            "Draft source-and-local-copy comparison sheet.",
+            "Terminology and product-claim questions for the assigned reviewer.",
+            "Copy-to-visual handover checklist with no items marked released."
+          ],
+          "nextAction": "Ask the brand lead to assign a local copy reviewer and confirm which source-copy version should be used."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Channel content planning",
+          "purpose": "Create a draft channel plan for a possible United Kingdom campaign. This working document organizes content ideas and dependencies; it does not confirm a publication schedule, paid placement, promotional offer or stock availability.",
+          "workItems": [
+            "List each proposed content item with its intended channel, audience purpose, product reference and the source assets required to prepare it.",
+            "Provide empty fields for draft owner, intended publication date, copy status and visual status rather than inventing a campaign calendar.",
+            "Check that proposed captions and calls to action connect to a suitable destination whose product information still needs review before release.",
+            "Define a final review step for copy, visual usage rights and current product details, and record blockers separately from completed work."
+          ],
+          "deliverables": [
+            "Blank channel content planner with draft examples only.",
+            "Content dependency list for copy, assets and destination pages.",
+            "Pre-release review checklist for the brand lead."
+          ],
+          "nextAction": "Ask the brand lead which channels and content objectives should be included before adding proposed dates."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Campaign asset quality review",
+          "purpose": "Prepare a draft asset quality review for a possible Germany workstream. The focus is consistency between the message, visual version and destination page, with every item staying in draft until the designated reviewers sign it off.",
+          "workItems": [
+            "Create an asset register containing a reference, version, intended placement, copy reference and the person who will own the review.",
+            "Check that product appearance, color naming and any visible product details match the product information supplied for review.",
+            "Provide fields for crop issues, readable text placement, alternative-text suggestions and missing usage-rights references.",
+            "Record approval separately for the visual, associated copy and destination page so that one approved component does not imply a complete campaign approval."
+          ],
+          "deliverables": [
+            "Draft campaign asset register with version references.",
+            "Visual and accessibility review checklist.",
+            "Combined release checklist showing the status of each dependency."
+          ],
+          "nextAction": "Ask the brand lead to identify the current asset and copy versions before the quality review begins."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Partner content handover",
+          "purpose": "Outline a draft partner-content handover for a potential United Arab Emirates workstream. Dubai is only the workspace location reference. No partnership, content booking, usage permission or release date is confirmed by this template.",
+          "workItems": [
+            "Prepare fields for the proposed content purpose, intended audience, partner reference and the internal role responsible for coordinating the review.",
+            "List the visual and copy assets proposed for sharing, including their version references and the usage-permission questions that remain open.",
+            "Provide space for local wording and context review without making assumptions about audience preferences or treating draft wording as approved.",
+            "Create an explicit acknowledgement and sign-off step for both the internal content pack and any returned partner material before publication is considered."
+          ],
+          "deliverables": [
+            "Draft partner-content handover cover sheet.",
+            "Asset and permission reference list.",
+            "Unassigned review checklist for proposed and returned content."
+          ],
+          "nextAction": "Ask the brand lead whether a partner-content brief is needed and which internal reviewer should own it."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Market asset register and localization questions",
+          "purpose": "Prepare a draft asset register for a possible Türkiye workstream. Use the country-level workspace reference without adding an assumed city or office. The register should make local content questions visible before any market-specific material is approved.",
+          "workItems": [
+            "List proposed asset references and identify the content purpose, source-copy version and intended placement for each item.",
+            "Provide fields for the local reviewer to record wording, image-context and destination-page questions rather than assuming that existing assets are ready to reuse.",
+            "Track requested changes with the relevant asset version so that replaced or outdated files cannot be confused with the latest draft.",
+            "Keep the release status pending until the brand lead has confirmed the visual, copy, product claims and usage references together."
+          ],
+          "deliverables": [
+            "Draft market asset register with clear version labels.",
+            "Localization question log for an assigned reviewer.",
+            "Pending-release checklist linking copy, visuals and destination pages."
+          ],
+          "nextAction": "Ask the brand lead to select the initial assets and assign a local content reviewer before adding market copy."
+        }
+      ]
+    },
+    {
+      "id": "community",
+      "name": "Community",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Community feedback review",
+          "purpose": "Prepare a draft feedback review for a possible Netherlands community workstream. Use anonymized themes rather than personal customer records, and distinguish an observation from a confirmed issue or an approved change to the customer experience.",
+          "workItems": [
+            "Create a theme log with space for the source channel, a short anonymized summary, the review owner and the question that needs a response.",
+            "Separate product questions, website experience comments and community ideas so that each theme can reach the appropriate internal team.",
+            "Provide fields for supporting references and the next review step without copying names, private messages or contact details into this starter document.",
+            "Prepare an internal handover summary that records the theme, proposed follow-up and status while leaving any response commitment unconfirmed."
+          ],
+          "deliverables": [
+            "Blank anonymized feedback theme log.",
+            "Draft routing guide for product, website and community themes.",
+            "Unassigned handover summary for a later feedback review."
+          ],
+          "nextAction": "Ask the community lead to confirm which feedback sources may be reviewed and nominate the first theme reviewer."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Community partnership intake",
+          "purpose": "Create a draft intake brief for a possible France community partnership. This is a way to organize questions before outreach or approval; it does not confirm a partner, event, collaboration, audience commitment or agreed deliverable.",
+          "workItems": [
+            "Prepare empty fields for the proposed collaboration purpose, community benefit, partner reference and internal coordination role.",
+            "List the questions that a reviewer should resolve about audience relevance, participation format, content responsibilities and practical support needs.",
+            "Record image and story usage questions separately, leaving all permissions pending until the appropriate people have reviewed them.",
+            "Prepare a decision note that separates open questions, proposed follow-up and an eventual approval decision instead of presenting an idea as an agreed partnership."
+          ],
+          "deliverables": [
+            "Blank community partnership intake form.",
+            "Draft review questions covering format, responsibilities and permissions.",
+            "Decision-note template with the approval status left pending."
+          ],
+          "nextAction": "Ask the community lead to confirm the purpose of the proposed intake before any external outreach is prepared."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Support response working pack",
+          "purpose": "Prepare a draft response working pack for a possible United Kingdom community-support workstream. The examples should organize tone and escalation questions without promising response times, refunds, delivery outcomes or changes to published customer policies.",
+          "workItems": [
+            "List the types of questions that need a reviewed response, using anonymous categories rather than real customer conversations or account details.",
+            "Provide a response structure that acknowledges the question, refers to a verified information source and identifies the appropriate internal next step.",
+            "Mark policy-dependent wording and unresolved product facts as pending review instead of filling gaps with assumed commitments.",
+            "Create an escalation note with a short issue summary, relevant reference and review status while keeping sensitive customer information in the approved support system."
+          ],
+          "deliverables": [
+            "Draft response structure for anonymous question categories.",
+            "Policy and product-fact review checklist.",
+            "Internal escalation-note template without personal customer data."
+          ],
+          "nextAction": "Ask the community lead which published information sources and escalation roles should support this working pack."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Community content and moderation review",
+          "purpose": "Prepare a draft moderation review for a possible Germany community workstream. The aim is to record consistent internal decisions and accessibility questions while leaving platform rules, local wording and any escalation process subject to the appropriate review.",
+          "workItems": [
+            "Create anonymous example categories for questions, constructive feedback and content that needs an internal moderation decision.",
+            "Provide fields for the source channel, issue category, reviewer reasoning and the next internal action without reproducing personal account details.",
+            "Include a review step for clear wording, readable visual text and alternative-text needs when community content is proposed for reuse.",
+            "Keep proposed responses and moderation actions as draft examples until the community lead confirms the applicable platform and internal process references."
+          ],
+          "deliverables": [
+            "Draft moderation decision log using anonymous categories.",
+            "Community-content accessibility review checklist.",
+            "Open-question list for response wording and escalation ownership."
+          ],
+          "nextAction": "Ask the community lead to identify the relevant channels and review the proposed decision categories."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Community event concept checklist",
+          "purpose": "Outline a draft checklist for a possible United Arab Emirates community event concept. Dubai is a workspace location reference only; no venue, booking, participant list, event date or partner arrangement is confirmed by this brief.",
+          "workItems": [
+            "Record a proposed purpose and participation format, with blank fields for the internal owner and any later venue or partner references.",
+            "List practical questions about access needs, attendee communication, content capture and support responsibilities before a concept moves to review.",
+            "Provide a separate permission-review step for photographs or community stories, without assuming that participation grants permission to publish material.",
+            "Prepare an internal review note that separates the concept, unresolved dependencies and any later approval decision, leaving budget and timing unconfirmed."
+          ],
+          "deliverables": [
+            "Draft event concept cover sheet.",
+            "Practical access, communication and permission question checklist.",
+            "Pending-decision note for the community lead."
+          ],
+          "nextAction": "Ask the community lead whether an event concept should be explored and which internal teams need to review it."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Community welcome and knowledge handover",
+          "purpose": "Create a draft welcome-resource and knowledge-handover brief for a possible Türkiye community workstream. Keep the country-level workspace reference without inventing a city, local office, staff contact or confirmed community programme.",
+          "workItems": [
+            "List the proposed welcome-resource topics and identify which existing product, website or community information source should support each topic.",
+            "Provide space for a local reviewer to check wording and context before any welcome message is approved or shared.",
+            "Record unresolved questions and the internal team best placed to answer them, leaving named owners and response dates unassigned.",
+            "Prepare a handover index that links approved source material to the latest draft and keeps outdated or unreviewed wording clearly separate."
+          ],
+          "deliverables": [
+            "Draft welcome-resource topic index.",
+            "Local wording and source-verification question log.",
+            "Knowledge-handover template with review status and version fields."
+          ],
+          "nextAction": "Ask the community lead to select the initial resource topics and assign a reviewer before drafting welcome copy."
+        }
+      ]
+    }
+  ]
+}

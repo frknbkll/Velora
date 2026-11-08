@@ -11,6 +11,11 @@
     mfa_disabled: "Two-factor disabled", mfa_failed: "Two-factor check failed", mfa_recovery_used: "Recovery code used",
     recovery_used: "Recovery code used", mfa_recovery_regenerated: "Recovery codes replaced", session_revoked: "Session signed out",
     csrf_rejected: "Request verification rejected", permission_denied: "Access denied", account_register: "Account created",
+    folder_access_changed: "Colleague folder access changed", folder_access_denied: "Shared-folder access denied",
+    folder_file_uploaded: "Shared file added", folder_file_deleted: "Shared file deleted",
+    folder_file_cleanup_pending: "Shared-file storage cleanup needed",
+    colleague_created: "Velora colleague created", colleague_access_changed: "Colleague access changed",
+    discount_created: "Discount code created", discount_updated: "Discount code updated", discount_deleted: "Discount code deleted",
   };
   const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" });
 

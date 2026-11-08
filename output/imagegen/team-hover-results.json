@@ -1,0 +1,272 @@
+{
+  "tool": "built-in image_gen",
+  "assetDirectory": "assets/team/hover",
+  "totalImages": 24,
+  "totalBytes": 3325391,
+  "portraits": [
+    {
+      "index": 0,
+      "name": "Charlotte de Vries",
+      "source": "assets/team/charlotte-de-vries-portrait.jpg",
+      "target": "assets/team/hover/charlotte-de-vries-portrait.jpg",
+      "action": "standing with one hand at her waist and giving a small friendly open-palm wave with the other, laughing naturally",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Charlotte de Vries. Create ONE alternate photograph of exactly this same adult woman standing with one hand at her waist and giving a small friendly open-palm wave with the other, laughing naturally. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-e751e476-23f3-43a5-b4b0-377ca4c9ccc1.png",
+      "bytes": 139457,
+      "sha256": "c1f3e948adbef0bdee71f113916470a8daab1389d6442b3f052b1dd743e0bc95"
+    },
+    {
+      "index": 1,
+      "name": "Maya Bennett",
+      "source": "assets/team/maya-bennett.jpg",
+      "target": "assets/team/hover/maya-bennett.jpg",
+      "action": "standing holding a small plain cream ceramic coffee mug with both hands at waist height, smiling warmly toward someone just beside the camera",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Maya Bennett. Create ONE alternate photograph of exactly this same adult woman standing holding a small plain cream ceramic coffee mug with both hands at waist height, smiling warmly toward someone just beside the camera. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-8d309569-4a32-4f47-bb5e-c70619772efe.png",
+      "bytes": 130839,
+      "sha256": "c9f4c8cada9c3a160cd5ac159844eb8bb005c77bcbc5d526005895921285028e"
+    },
+    {
+      "index": 2,
+      "name": "Elena Marquez",
+      "source": "assets/team/elena-marquez.jpg",
+      "target": "assets/team/hover/elena-marquez.jpg",
+      "action": "standing with a closed neutral beige planner tucked under one arm, her free hand relaxed, with a bright candid smile",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Elena Marquez. Create ONE alternate photograph of exactly this same adult woman standing with a closed neutral beige planner tucked under one arm, her free hand relaxed, with a bright candid smile. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-efcbb5c0-7dc5-4b63-aa3b-99cae58efced.png",
+      "bytes": 116538,
+      "sha256": "4bdb86cb246508e24fe00ad107be12705a98424f0c6043fab85eeaf9dd558724"
+    },
+    {
+      "index": 3,
+      "name": "Saoirse O’Connor",
+      "source": "assets/team/saoirse-oconnor-portrait.jpg",
+      "target": "assets/team/hover/saoirse-oconnor-portrait.jpg",
+      "action": "standing with one hand resting at her hip and a small fan of neutral fabric swatches in the other, smiling with creative energy",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Saoirse O’Connor. Create ONE alternate photograph of exactly this same adult woman standing with one hand resting at her hip and a small fan of neutral fabric swatches in the other, smiling with creative energy. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-9ca44eba-7b01-4bac-8042-db2ba24a7c41.png",
+      "bytes": 160050,
+      "sha256": "024deeb38a5fd275963a06bcacf456d590926a0b440017c66ac728d8e1c49132"
+    },
+    {
+      "index": 4,
+      "name": "Camille Laurent",
+      "source": "assets/team/camille-laurent.jpg",
+      "target": "assets/team/hover/camille-laurent.jpg",
+      "action": "standing holding a closed unmarked sketchbook at her waist with both hands, shoulders relaxed and smiling naturally",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Camille Laurent. Create ONE alternate photograph of exactly this same adult woman standing holding a closed unmarked sketchbook at her waist with both hands, shoulders relaxed and smiling naturally. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-f52a61f1-7144-46b5-8c2d-79040bd4e641.png",
+      "bytes": 141699,
+      "sha256": "b8c2cb63297f541e2ca6a036ef24c9c55680647ba22030aef91a3736a3eb06fc"
+    },
+    {
+      "index": 5,
+      "name": "Chloé Dubois",
+      "source": "assets/team/chloe-dubois.jpg",
+      "target": "assets/team/hover/chloe-dubois.jpg",
+      "action": "standing making a small playful peace sign beside her shoulder with one hand, the other arm relaxed, smiling at the camera",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Chloé Dubois. Create ONE alternate photograph of exactly this same adult woman standing making a small playful peace sign beside her shoulder with one hand, the other arm relaxed, smiling at the camera. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-36b65fe3-d9f9-48a6-ac3c-89fdbf1d9bcd.png",
+      "bytes": 135734,
+      "sha256": "d752d072d1a95154045e91ce3f4393161be25938b90d10f3258c970028efe3c1"
+    },
+    {
+      "index": 6,
+      "name": "Amara Okafor",
+      "source": "assets/team/amara-okafor-portrait.jpg",
+      "target": "assets/team/hover/amara-okafor-portrait.jpg",
+      "action": "standing with a folded length of cream fabric draped over one forearm, her other hand resting naturally at her hip, caught in a happy laugh",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Amara Okafor. Create ONE alternate photograph of exactly this same adult woman standing with a folded length of cream fabric draped over one forearm, her other hand resting naturally at her hip, caught in a happy laugh. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-4568dcd7-dccf-4c52-818a-3ed892b0b197.png",
+      "bytes": 179513,
+      "sha256": "bfb307b86eca8c55b734f1a19933d6ebac48a0e4e5b6fb35969d57718542b03e"
+    },
+    {
+      "index": 7,
+      "name": "Nour Haddad",
+      "source": "assets/team/nour-haddad.jpg",
+      "target": "assets/team/hover/nour-haddad.jpg",
+      "action": "standing in a relaxed three-quarter fashion pose with one hand in her trouser pocket, looking back toward the camera with a wide natural smile",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Nour Haddad. Create ONE alternate photograph of exactly this same adult woman standing in a relaxed three-quarter fashion pose with one hand in her trouser pocket, looking back toward the camera with a wide natural smile. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-385b-72b1-bb88-d6ef89b38fe0\\exec-b3c25cb6-956f-403f-a4cb-080339935eab.png",
+      "bytes": 127696,
+      "sha256": "0334a71d35d7e464e60e1f2b5c1463de464d3683a285ad7757827e58da33c828"
+    },
+    {
+      "index": 8,
+      "name": "Samira El Idrissi",
+      "source": "assets/team/samira-el-idrissi.jpg",
+      "target": "assets/team/hover/samira-el-idrissi.jpg",
+      "action": "standing holding a small fan of textile color swatches at her waist, giving a modest thumbs-up with the other hand and smiling",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Samira El Idrissi. Create ONE alternate photograph of exactly this same adult woman standing holding a small fan of textile color swatches at her waist, giving a modest thumbs-up with the other hand and smiling. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-29d03cf6-7f6c-4d24-96ef-560973ba37a7.png",
+      "bytes": 136580,
+      "sha256": "576d532c368605248e168c74a401dd39af5d3b10e2eb60fda5f89de058ebdcc4"
+    },
+    {
+      "index": 9,
+      "name": "Elif Demir",
+      "source": "assets/team/elif-demir-portrait.jpg",
+      "target": "assets/team/hover/elif-demir-portrait.jpg",
+      "action": "standing holding a slim unmarked smartphone at waist level, giving a small friendly wave with her other hand and a warm smile",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Elif Demir. Create ONE alternate photograph of exactly this same adult woman standing holding a slim unmarked smartphone at waist level, giving a small friendly wave with her other hand and a warm smile. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-cc3b2d39-410b-444f-b10b-2ef9b8f90186.png",
+      "bytes": 125773,
+      "sha256": "73e917c73558dc330d1ed221682657c2be78acd20c1282db40304df8d9177cbd"
+    },
+    {
+      "index": 10,
+      "name": "Isabella Rossi",
+      "source": "assets/team/isabella-rossi.jpg",
+      "target": "assets/team/hover/isabella-rossi.jpg",
+      "action": "standing with her arms loosely crossed, shoulders relaxed, body slightly turned and smiling toward someone just off camera",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Isabella Rossi. Create ONE alternate photograph of exactly this same adult woman standing with her arms loosely crossed, shoulders relaxed, body slightly turned and smiling toward someone just off camera. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-d4212e6c-cdae-49d6-b6fa-570105e80bda.png",
+      "bytes": 124654,
+      "sha256": "8cb0f6c725327c1c04d086d732d6eae57cea5c594d382ceabbcbfc9b9445863e"
+    },
+    {
+      "index": 11,
+      "name": "Valentina Costa",
+      "source": "assets/team/valentina-costa.jpg",
+      "target": "assets/team/hover/valentina-costa.jpg",
+      "action": "standing holding a small plain coffee mug in one hand, her free hand resting at her waist, caught laughing naturally",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Valentina Costa. Create ONE alternate photograph of exactly this same adult woman standing holding a small plain coffee mug in one hand, her free hand resting at her waist, caught laughing naturally. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-728df019-3061-46ae-9736-0c21de8c4994.png",
+      "bytes": 130027,
+      "sha256": "f5f46f59174591c55e68622d7ac46f096d84098114b5000131b0e887e4c7d43c"
+    },
+    {
+      "index": 12,
+      "name": "Lucía Fernández",
+      "source": "assets/team/lucia-fernandez-portrait.jpg",
+      "target": "assets/team/hover/lucia-fernandez-portrait.jpg",
+      "action": "standing holding a smartphone down at waist level in one hand and making a playful peace sign near her shoulder with the other, smiling brightly",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Lucía Fernández. Create ONE alternate photograph of exactly this same adult woman standing holding a smartphone down at waist level in one hand and making a playful peace sign near her shoulder with the other, smiling brightly. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-fe8a746f-0ba3-4fa8-bb2a-188e902cc3b5.png",
+      "bytes": 151556,
+      "sha256": "819276f995ad05716063dbca28363712414b2e47a100bb39171db22d868457cb"
+    },
+    {
+      "index": 13,
+      "name": "Zara Williams",
+      "source": "assets/team/zara-williams.jpg",
+      "target": "assets/team/hover/zara-williams.jpg",
+      "action": "standing holding a slim smartphone in one hand at waist height, her other arm relaxed, head tilted slightly back in a candid happy laugh",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Zara Williams. Create ONE alternate photograph of exactly this same adult woman standing holding a slim smartphone in one hand at waist height, her other arm relaxed, head tilted slightly back in a candid happy laugh. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-2074a733-50a8-468b-bd15-df672b1d24cd.png",
+      "bytes": 153624,
+      "sha256": "b419c993941f508e458a344406d5d0d24d4a606a58640d447ea84bb633daf0ca"
+    },
+    {
+      "index": 14,
+      "name": "Nia Brooks",
+      "source": "assets/team/nia-brooks.jpg",
+      "target": "assets/team/hover/nia-brooks.jpg",
+      "action": "standing making a small heart shape with both hands at upper waist level, smiling warmly at the camera",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Nia Brooks. Create ONE alternate photograph of exactly this same adult woman standing making a small heart shape with both hands at upper waist level, smiling warmly at the camera. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-07ad1705-4887-4a48-8545-2feda688ee53.png",
+      "bytes": 150940,
+      "sha256": "9725ddf998450f7a7a578e591b137a9951ede27a472e3a75e524882a56ed4c0c"
+    },
+    {
+      "index": 15,
+      "name": "Hana Kim",
+      "source": "assets/team/hana-kim-portrait.jpg",
+      "target": "assets/team/hover/hana-kim-portrait.jpg",
+      "action": "standing with a closed slim unbranded laptop tucked comfortably under one arm, her other hand resting on it, smiling naturally",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Hana Kim. Create ONE alternate photograph of exactly this same adult woman standing with a closed slim unbranded laptop tucked comfortably under one arm, her other hand resting on it, smiling naturally. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-66b7-7ad2-beca-d001a39a63e1\\exec-9a71ad3a-e2e2-4626-af45-a48f46668a2e.png",
+      "bytes": 129707,
+      "sha256": "9cd9843ddd4a6f2e16d8ae12d21bedd125e6a082bb7758f8325e0b1301bcf934"
+    },
+    {
+      "index": 16,
+      "name": "Mei Chen",
+      "source": "assets/team/mei-chen.jpg",
+      "target": "assets/team/hover/mei-chen.jpg",
+      "action": "standing with an unmarked tablet held at waist level in one hand, her other hand resting at her hip, looking cheerfully toward the camera",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Mei Chen. Create ONE alternate photograph of exactly this same adult woman standing with an unmarked tablet held at waist level in one hand, her other hand resting at her hip, looking cheerfully toward the camera. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-39ee6e0b-3fa6-487a-82be-00228bf227f3.png",
+      "bytes": 155217,
+      "sha256": "ce51fc830520dcb66dd8f6927e8ae59064cd6a24ba7e531cf5cd77c670870674"
+    },
+    {
+      "index": 17,
+      "name": "Yuna Park",
+      "source": "assets/team/yuna-park.jpg",
+      "target": "assets/team/hover/yuna-park.jpg",
+      "action": "standing with one hand giving a small peace sign beside her shoulder, her other hand casually at her waist, smiling with a playful head tilt",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Yuna Park. Create ONE alternate photograph of exactly this same adult woman standing with one hand giving a small peace sign beside her shoulder, her other hand casually at her waist, smiling with a playful head tilt. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-7225c825-01c1-4284-960b-4f3797165639.png",
+      "bytes": 127211,
+      "sha256": "357a83aafd18a499fe939b2009927694bedd92b996f8290e1d95a3f4be2df5fc"
+    },
+    {
+      "index": 18,
+      "name": "Yasmine El Amrani",
+      "source": "assets/team/yasmine-el-amrani-portrait.jpg",
+      "target": "assets/team/hover/yasmine-el-amrani-portrait.jpg",
+      "action": "standing with a closed beige document folder in one arm and a small welcoming open-palm wave with the other hand, smiling warmly",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Yasmine El Amrani. Create ONE alternate photograph of exactly this same adult woman standing with a closed beige document folder in one arm and a small welcoming open-palm wave with the other hand, smiling warmly. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-ef741afa-b184-49b3-ac70-40126606ee3f.png",
+      "bytes": 141640,
+      "sha256": "f7b1640ffbeb2ea861fc37435b2caf41baf276279cd25b25b0fee53cf9ab382b"
+    },
+    {
+      "index": 19,
+      "name": "Sofia Almeida",
+      "source": "assets/team/sofia-almeida.jpg",
+      "target": "assets/team/hover/sofia-almeida.jpg",
+      "action": "standing with hands loosely clasped in front at waist height, a relaxed three-quarter pose, head tilted slightly and a genuine broad smile",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Sofia Almeida. Create ONE alternate photograph of exactly this same adult woman standing with hands loosely clasped in front at waist height, a relaxed three-quarter pose, head tilted slightly and a genuine broad smile. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-5efec6dd-b218-49bb-9108-0bcedb3e4b8a.png",
+      "bytes": 125432,
+      "sha256": "b5edd50efdb6a7e41d5a9ab7968638a723fb698f019b9d178ce4ec2eaba6526e"
+    },
+    {
+      "index": 20,
+      "name": "Inês Ferreira",
+      "source": "assets/team/ines-ferreira.jpg",
+      "target": "assets/team/hover/ines-ferreira.jpg",
+      "action": "standing holding two small plain books at waist height, looking just off camera with a happy laugh",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Inês Ferreira. Create ONE alternate photograph of exactly this same adult woman standing holding two small plain books at waist height, looking just off camera with a happy laugh. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-40ef5669-280f-44ca-bd40-0fd9f6a430f4.png",
+      "bytes": 140419,
+      "sha256": "6225236e70ab95801270416e43ec0795a122871390fe87616b7f2ef87f239457"
+    },
+    {
+      "index": 21,
+      "name": "Heba Mansour",
+      "source": "assets/team/heba-mansour-portrait.jpg",
+      "target": "assets/team/hover/heba-mansour-portrait.jpg",
+      "action": "standing holding a small plain ceramic coffee mug with both hands at waist height, relaxed shoulders and a joyful natural smile",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Heba Mansour. Create ONE alternate photograph of exactly this same adult woman standing holding a small plain ceramic coffee mug with both hands at waist height, relaxed shoulders and a joyful natural smile. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-66d17f13-8718-43a1-a3ac-caddf137bac7.png",
+      "bytes": 121429,
+      "sha256": "dbfa336b33a4d7f46ff26c2cc7032a479ef5be16ac9d65d5e58aac130532d800"
+    },
+    {
+      "index": 22,
+      "name": "Leila Demir",
+      "source": "assets/team/leila-demir.jpg",
+      "target": "assets/team/hover/leila-demir.jpg",
+      "action": "standing with an unmarked notebook tucked under one arm and a small thumbs-up with the other hand, smiling warmly at the camera",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Leila Demir. Create ONE alternate photograph of exactly this same adult woman standing with an unmarked notebook tucked under one arm and a small thumbs-up with the other hand, smiling warmly at the camera. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-ac9d8dc2-36f9-48c2-afcb-45d58663971d.png",
+      "bytes": 140708,
+      "sha256": "b68672084a9e95c6e6c5cd3c113986f14d0598c3870472847d346ba71384407e"
+    },
+    {
+      "index": 23,
+      "name": "Aylin Kaya",
+      "source": "assets/team/aylin-kaya.jpg",
+      "target": "assets/team/hover/aylin-kaya.jpg",
+      "action": "standing in a relaxed three-quarter pose with one hand giving a friendly wave near shoulder height, her other arm relaxed and smiling brightly",
+      "prompt": "Use case: identity-preserve. Asset type: alternate editorial portrait for a fashion-house team card. Image 1 is the edit target: the existing portrait of the fictional adult character Aylin Kaya. Create ONE alternate photograph of exactly this same adult woman standing in a relaxed three-quarter pose with one hand giving a friendly wave near shoulder height, her other arm relaxed and smiling brightly. Preserve her exact facial identity, apparent adult age, skin tone, eyes, hair color and hairstyle, jewelry and existing clothing colors and design. If she wears a hijab, preserve its color and style, fully covered hair and neck, and modest long sleeves. Change only her pose, expression, the requested prop, and framing. Keep the same warm light beige seamless studio backdrop and soft diffused natural studio daylight. Single person, photorealistic premium fashion-house staff photography with real skin pores, realistic fabric and gentle natural shadows. Vertical 4:5 composition, approximately knees-up or mid-thigh-up standing portrait; keep her complete head, arms, hands and any prop inside the frame, centered, comfortably filling the photograph. Natural cheerful expression, a candid moment from the same portrait session. Avoid CGI, illustration, artificial beauty-filter skin, facial identity drift, a different face or outfit, extra people, duplicated limbs, malformed hands, extra or fused fingers, warped objects, floating props, unnatural anatomy, excessive retouching, exaggerated poses, text, logos and watermarks. Do not create a collage, grid or multiple views. Deliver one finished photograph.",
+      "generatedSource": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1b5cf-94ae-74d3-8fd8-9bb91709e55a\\exec-9b7993f2-ecb8-4fbb-9502-0f0ffa59e942.png",
+      "bytes": 138948,
+      "sha256": "f048109dfa93c54743f7886eec36eb92f03025420549c3b18ef58cbde97d51bc"
+    }
+  ]
+}

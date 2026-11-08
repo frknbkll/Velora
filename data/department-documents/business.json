@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "departments": [
+    {
+      "id": "commerce",
+      "name": "Digital commerce",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Catalog release handover",
+          "purpose": "Draft example for preparing a Netherlands catalog handover from the shared product source. Use this brief to organize proposed changes and review evidence before anyone schedules a storefront release. Ownership and release timing remain unassigned.",
+          "workItems": [
+            "List the proposed product records and compare names, descriptions, variant labels and image references against the latest saved catalog version.",
+            "Record missing copy, unavailable images or inconsistent size choices in a review log, keeping proposed corrections separate from approved product data.",
+            "Check the collection listing and product detail views in a test session, including sold-out presentation and the selected variant image.",
+            "Prepare a handover for a designated commerce reviewer with version references, unresolved questions and a proposed check sequence; leave dates pending."
+          ],
+          "deliverables": [
+            "Draft catalog change list with source and proposed values clearly distinguished.",
+            "Test-session issue log with reproducible steps and review status.",
+            "Release handover checklist with owner and target date marked unassigned."
+          ],
+          "nextAction": "Assign a commerce reviewer to select a small test collection and confirm which proposed changes need a further product-owner decision."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Product copy review pack",
+          "purpose": "Draft example for organizing country-facing product copy for France. The pack separates source wording, proposed wording and reviewer comments, without assuming a final publishing language or an approved localization decision. No content is ready for publication by default.",
+          "workItems": [
+            "Create a copy inventory covering product titles, descriptions, size labels, availability messages and the short text around photo and color selectors.",
+            "Place source and proposed wording in adjacent review fields, and mark any untranslated or ambiguous terms for an assigned local reviewer.",
+            "Check proposed text in narrow product cards and mobile detail views so longer names and selection instructions remain readable without clipping.",
+            "Record all proposed terminology decisions in a shared glossary, then request commerce and brand review before moving a draft into the catalog."
+          ],
+          "deliverables": [
+            "Source-to-proposal copy inventory with review fields left open.",
+            "Draft terminology glossary containing unresolved wording questions.",
+            "Layout screenshots or test references for mobile copy checks."
+          ],
+          "nextAction": "Nominate a local copy reviewer and agree which product group should be used for the first wording and layout review."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Shopping journey test plan",
+          "purpose": "Draft example for checking a United Kingdom shopping journey in a test environment. The plan covers visible information and navigation only; it does not authorize live orders, payments, delivery promises or tax settings. Test owners and completion dates are pending.",
+          "workItems": [
+            "Outline test journeys from a collection card through product selection and bag review, using clearly identified sample items rather than live purchases.",
+            "Check that selected color, size and quantity remain consistent when moving between views, refreshing the page and returning to an earlier step.",
+            "Record where delivery information, returns information and any displayed charges need an approved source or a separate responsible-owner review.",
+            "Capture reproducible steps for confusing controls, unavailable variants and error states, then classify each finding as a content, interface or configuration question."
+          ],
+          "deliverables": [
+            "Draft test-scenario list with sample inputs and expected interface behavior.",
+            "Issue log separating defects from policy and configuration questions.",
+            "Review checklist showing unassigned owners and pending decisions."
+          ],
+          "nextAction": "Assign a test owner to confirm the available preview environment and select the journeys that can be checked without live transactions."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Product gallery usability review",
+          "purpose": "Draft example for reviewing the clarity of product imagery and selection controls in a Germany-facing preview. Use it to collect usability observations and proposed improvements; it is not a completed accessibility assessment or an approved product release.",
+          "workItems": [
+            "Review a small sample of product galleries and note whether the first image, alternate poses and color-specific photos are easy to distinguish.",
+            "Check image descriptions and selector labels against the visible product, flagging unclear wording or a mismatch between a selected color and its photo.",
+            "Try the gallery using keyboard controls and a narrow mobile viewport, recording focus visibility, control reachability and any lost selection state.",
+            "Group findings by affected product and interface control, attach a test reference, and leave acceptance decisions for an assigned commerce and design reviewer."
+          ],
+          "deliverables": [
+            "Draft gallery review sheet with product and image references.",
+            "Keyboard and mobile observation log with reproducible examples.",
+            "Proposed improvement list with review status and owners unassigned."
+          ],
+          "nextAction": "Choose a representative product sample and ask commerce and design reviewers to agree the first gallery issues to investigate."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Mobile storefront review",
+          "purpose": "Draft example for reviewing a United Arab Emirates mobile storefront preview. The document organizes interface and content questions without making assumptions about final languages, service availability, payment options or delivery coverage. All country-facing settings require an owner decision.",
+          "workItems": [
+            "Walk through navigation, collection filters, product details and bag controls on a small screen, noting obstructed buttons and unclear labels.",
+            "Check how longer product names, country labels and help text wrap, and record proposed changes without replacing approved source copy.",
+            "List any availability, delivery or payment messages that need confirmation from the responsible team, keeping unknown settings explicitly marked pending.",
+            "Prepare a focused review session using sample products and screenshots, with an unassigned local reviewer field and no scheduled release date."
+          ],
+          "deliverables": [
+            "Draft mobile journey checklist covering key storefront views.",
+            "Content and configuration question register with no assumed answers.",
+            "Screenshot review pack with proposed owners and dates left pending."
+          ],
+          "nextAction": "Assign a commerce contact to confirm the review scope and arrange local review of any proposed country-facing wording."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Size and variant information audit",
+          "purpose": "Draft example for checking consistency of size and variant information for a Türkiye-facing product preview. The team page identifies country presence without a specific city. This document does not establish a local office, supplier relationship or approved merchandising plan.",
+          "workItems": [
+            "Build a sample-product list showing the available size labels, color names and photo references exactly as stored in the source catalog.",
+            "Identify inconsistent or missing variant information, and record a product-owner question instead of inventing measurements, stock quantities or material claims.",
+            "Test changing a color and size in the preview, noting whether photos and visible selection labels continue to match the chosen item.",
+            "Collect proposed corrections in a separate review column and request product, design and commerce sign-off before any saved catalog changes are made."
+          ],
+          "deliverables": [
+            "Draft size and variant comparison sheet for a selected sample.",
+            "Product-owner question log for missing or inconsistent source information.",
+            "Selection-control test notes with approval fields left pending."
+          ],
+          "nextAction": "Ask a product owner to choose the sample range and assign reviewers for unresolved size, color and photo-reference questions."
+        }
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Invoice intake worksheet",
+          "purpose": "Draft example for structuring a Netherlands finance document intake worksheet. It contains no invoices, balances, bank details or approved payment instructions. Use blank fields and review references to prepare a process discussion with the authorized Finance team.",
+          "workItems": [
+            "Define empty intake fields for an internal reference, document date, stated supplier reference, supporting-file location and the team responsible for review.",
+            "Add a review-status field that distinguishes a newly received example from missing evidence, a reviewer question and a completed internal check.",
+            "Describe how an authorized reviewer would link supporting documents and record unresolved questions, without copying confidential source documents into a shared example.",
+            "Leave amounts, tax treatment, payment details and approval authority unfilled, and route those fields to Finance for a separate responsible-owner decision."
+          ],
+          "deliverables": [
+            "Blank invoice intake worksheet with clearly labeled example fields.",
+            "Supporting-document checklist containing references rather than real records.",
+            "Open question register with all review ownership unassigned."
+          ],
+          "nextAction": "Assign an authorized Finance reviewer to approve the worksheet structure before any real documents or financial information are entered."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Expenditure approval routing draft",
+          "purpose": "Draft example for mapping questions about a France-related expenditure review process. This is a blank routing template rather than an approved authority matrix. It specifies no spending limits, budgets, financial commitments or country-specific accounting and tax requirements.",
+          "workItems": [
+            "List proposed request stages such as preparation, supporting-evidence collection, reviewer questions and final decision recording, keeping each stage marked draft.",
+            "Create empty fields for the requesting function, purpose, evidence reference and assigned reviewer; use role placeholders instead of names or contact details.",
+            "Provide a separate space for Finance to define authority and escalation arrangements, leaving all amounts, thresholds and decision rules pending review.",
+            "Walk through an amount-free fictional request to check whether handoffs are clear, then record process gaps without treating the exercise as authorization."
+          ],
+          "deliverables": [
+            "Draft request-routing map using role placeholders and review states.",
+            "Blank evidence and decision-reference worksheet for discussion.",
+            "Unresolved authority and escalation question list for Finance review."
+          ],
+          "nextAction": "Ask the Finance lead to nominate a process reviewer and confirm which authority questions must be resolved before this template can be adopted."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Reconciliation evidence checklist",
+          "purpose": "Draft example for organizing a United Kingdom reconciliation evidence checklist. The document describes an empty working structure only. It includes no transactions, account numbers, balances, accounting conclusions or confirmation that a reconciliation has actually been performed.",
+          "workItems": [
+            "Prepare blank reference fields for the review period, source-document identifiers, worksheet version and authorized review owner, with dates and ownership pending.",
+            "Create separate sections for evidence received, evidence still requested and questions requiring a Finance decision, avoiding any invented amounts or transaction examples.",
+            "Define a way to record reviewer comments and references to approved source locations, rather than duplicating sensitive account information in this starter file.",
+            "Review the proposed checklist with Finance and document any changes needed to its fields, access handling and handover sequence before operational use."
+          ],
+          "deliverables": [
+            "Blank evidence checklist with clear received and pending sections.",
+            "Draft reviewer-comment sheet containing no financial records.",
+            "Template review log with sign-off and target date unassigned."
+          ],
+          "nextAction": "Nominate an authorized Finance reviewer to confirm the appropriate evidence fields and approved source locations for a future working version."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Budget worksheet structure",
+          "purpose": "Draft example for designing a Germany budget-planning worksheet without entering figures. The structure is intended for a Finance-led discussion of information needs. It is not a budget, forecast, recommendation, commitment or statement of approved financial authority.",
+          "workItems": [
+            "Create blank sections for a planning category, business purpose, supporting assumption, proposed review owner and the source reference that would justify an entry.",
+            "Keep proposed inputs, reviewer comments and approved values in separate fields, with all figures, time periods and approval arrangements left unassigned.",
+            "Add a change-reference column so future reviewers can identify which input was revised and where the supporting explanation is stored.",
+            "Ask Finance to review the worksheet layout and clarify which information can be recorded, who can review it and which questions need escalation."
+          ],
+          "deliverables": [
+            "Blank budget worksheet with proposed and approved fields separated.",
+            "Assumption and source-reference register containing no financial values.",
+            "Draft review and change-log structure with ownership pending."
+          ],
+          "nextAction": "Assign a Finance template owner to confirm the worksheet fields and review process before any real planning figures are introduced."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Supplier evidence register",
+          "purpose": "Draft example for an empty United Arab Emirates supplier evidence register. The file is a process template and identifies no real supplier or commercial relationship. It contains no contact details, payment information, financial assessment or claim of completed verification.",
+          "workItems": [
+            "Define blank fields for an internal supplier reference, requesting team, evidence category, approved storage reference and the Finance reviewer responsible for questions.",
+            "Use a pending-status list for requested material and record when an assigned reviewer needs to clarify a document's purpose or source.",
+            "Keep any future sensitive identification and payment information out of the starter example, with the approved handling method left for Finance to define.",
+            "Review how an intake question would move between the requesting team and Finance, using only role placeholders and an amount-free fictional scenario."
+          ],
+          "deliverables": [
+            "Blank supplier evidence register using internal reference placeholders.",
+            "Draft material-request and review-status checklist with no supplier records.",
+            "Open handover questions for an assigned Finance process reviewer."
+          ],
+          "nextAction": "Ask Finance to designate a register owner and confirm the evidence categories and private storage references appropriate for later operational use."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Finance review handover pack",
+          "purpose": "Draft example for organizing a Türkiye finance review handover pack. The team page indicates country presence rather than a named city. This starter pack contains no actual review results, financial records, local entity details or approved reporting instructions.",
+          "workItems": [
+            "Prepare a blank index for workpapers, supporting references, unresolved questions and reviewer comments, with the review period and responsible roles left pending.",
+            "Separate completed document-preparation steps from matters still awaiting a Finance decision, without implying that any underlying financial review has been completed.",
+            "Define a handover note field describing the next reviewer action and approved file reference, avoiding real account information or confidential document excerpts.",
+            "Ask the Finance lead to review the proposed pack structure and decide what local review, source material and authorization would be needed before use."
+          ],
+          "deliverables": [
+            "Blank review-pack index with source-reference fields and draft status.",
+            "Unresolved-question and next-action worksheet containing no real records.",
+            "Draft handover checklist with all owners and dates unassigned."
+          ],
+          "nextAction": "Nominate a Finance reviewer to refine the pack index and identify the questions that need an owner before a real review is planned."
+        }
+      ]
+    },
+    {
+      "id": "people",
+      "name": "Human Resources",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Colleague onboarding preparation",
+          "purpose": "Draft example for preparing a Netherlands colleague onboarding checklist. The checklist contains no employee records or personal information and does not establish employment terms or approved policy. Use role placeholders and obtain HR review before adapting it for a real colleague.",
+          "workItems": [
+            "List proposed preparation tasks for a welcome schedule, role introduction, workspace orientation and training discussion, leaving all owners and dates unassigned.",
+            "Add a role-based access request step so an administrator can consider the relevant department and folder permissions rather than assuming broad access.",
+            "Prepare a blank handover field for questions about equipment, work arrangements and local process review, without entering personal details or contractual information.",
+            "Ask an authorized HR reviewer to assess the draft sequence and identify which local decisions must be completed before any onboarding plan is approved."
+          ],
+          "deliverables": [
+            "Draft onboarding preparation checklist using role placeholders only.",
+            "Blank workspace-access request outline for administrator review.",
+            "Unresolved process question list with no employee information."
+          ],
+          "nextAction": "Assign an HR template owner to review the preparation sequence and nominate the roles responsible for any future local process decisions."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Learning plan discussion template",
+          "purpose": "Draft example for a France learning-plan discussion worksheet. This is an empty planning aid, not an employee assessment, a confirmed training entitlement or a binding policy. Training topics, reviewers and scheduling are placeholders for an authorized HR-led discussion.",
+          "workItems": [
+            "Create proposed topic categories for role orientation, product knowledge, internal tools and team collaboration, with space for a reviewer to adapt the list.",
+            "Add blank fields for a learning objective, suggested resource, delivery format, review owner and timing, without inventing people or confirmed sessions.",
+            "Include a discussion prompt about readable materials and available participation formats, leaving specific arrangements to a responsible reviewer rather than assuming individual needs.",
+            "Prepare a short review agenda so HR and a relevant team lead can decide which topics are useful and which local questions remain unresolved."
+          ],
+          "deliverables": [
+            "Blank learning-plan worksheet with draft topic categories and open fields.",
+            "Resource and participation-format discussion checklist for reviewer use.",
+            "Draft review agenda with decisions, owners and dates pending."
+          ],
+          "nextAction": "Nominate an HR reviewer and a role representative to agree a useful topic list before discussing any real colleague's training plan."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Role handover planning brief",
+          "purpose": "Draft example for planning a United Kingdom role handover using responsibilities rather than individual employee records. It is not a staffing decision, an approved change to a role or an employment document. All responsible roles and handover dates remain pending.",
+          "workItems": [
+            "Prepare a blank responsibility inventory covering recurring tasks, shared resources, decision points and team interfaces, with no names or personal contact details.",
+            "Add fields for a current source reference, proposed receiving role and an unresolved-question note, keeping existing arrangements separate from suggested changes.",
+            "Include a permission-review step for shared folders so a future administrator can assess access needs without sharing account credentials or copying restricted records.",
+            "Ask HR and an appropriate team lead to review the proposed handover checklist, confirm the review scope and identify any local process questions."
+          ],
+          "deliverables": [
+            "Blank responsibility and shared-resource inventory using role labels.",
+            "Draft handover checklist with source references and unanswered questions.",
+            "Workspace access review outline with no real account information."
+          ],
+          "nextAction": "Assign an HR reviewer to agree the handover scope with the relevant team lead before any real responsibility changes are recorded."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Department access review worksheet",
+          "purpose": "Draft example for a Germany department-access review worksheet. The file contains no employee identities, emails or existing access records. It provides an empty review structure for HR and authorized administrators, without assigning permissions or claiming that a review has been completed.",
+          "workItems": [
+            "Define blank fields for an internal review reference, role, primary department, folder requested, proposed access level and the person authorized to review the request.",
+            "Use fictional role categories to discuss access needs, leaving every actual account identifier and access decision out of this starter worksheet.",
+            "Include a reminder that Finance and HR folders require matching department membership and an explicit grant in Velora, including for administrator accounts.",
+            "Prepare a decision log for an authorized administrator to use after HR review, with all real grants, approvals and review dates still pending."
+          ],
+          "deliverables": [
+            "Blank role-and-folder review worksheet without any personal account data.",
+            "Draft permission decision log with open reviewer and status fields.",
+            "Question register for access scope and department-membership review."
+          ],
+          "nextAction": "Ask HR and an owner administrator to review the worksheet structure before it is used to consider any real colleague's permissions."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Welcome communications draft",
+          "purpose": "Draft example for preparing United Arab Emirates welcome communications. The file is an outline for local HR review and contains no recipient information, confirmed meeting invitations or employment terms. Proposed wording and formats remain open until the responsible team approves them.",
+          "workItems": [
+            "Outline a short welcome message covering where to find team information, how to request workspace access and where to raise an onboarding question.",
+            "Provide blank fields for the sending role, approved contact channel, intended audience and review status, rather than inventing employee names or addresses.",
+            "List wording and presentation questions for a local reviewer, including language choice, readable formatting and appropriate meeting arrangements without assuming final answers.",
+            "Prepare a message-review checklist that separates suggested copy from confirmed instructions and leaves all invitations, schedules and approval decisions pending."
+          ],
+          "deliverables": [
+            "Draft welcome message outline with recipient and sender fields blank.",
+            "Local wording and presentation question list for HR review.",
+            "Message approval checklist with no scheduled communications or meetings."
+          ],
+          "nextAction": "Nominate an authorized HR reviewer to confirm the audience, approved contact route and language-review process before any message is prepared for sending."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Team feedback and knowledge handover",
+          "purpose": "Draft example for a Türkiye team-feedback and knowledge-handover discussion. Country presence is shown without a named city. This template contains no employee feedback records, ratings or personal details, and does not establish a performance process or an approved HR policy.",
+          "workItems": [
+            "Prepare optional discussion headings for useful shared resources, unclear handovers, tool questions and suggestions about team coordination, keeping the agenda marked draft.",
+            "Add blank fields for a topic reference, proposed follow-up action, responsible role and review status, without attributing comments to actual colleagues.",
+            "Separate operational improvement ideas from any matter that would require a private HR conversation, leaving handling arrangements for an authorized local reviewer.",
+            "Draft a knowledge-handover checklist linking to approved team resources and request HR review before scheduling a real discussion or collecting any responses."
+          ],
+          "deliverables": [
+            "Draft discussion agenda with no personal feedback or ratings.",
+            "Blank follow-up action register using responsible-role placeholders.",
+            "Proposed knowledge-resource handover checklist for HR review."
+          ],
+          "nextAction": "Assign an HR reviewer to confirm the discussion purpose and private handling approach before the template is adapted for any real team activity."
+        }
+      ]
+    }
+  ]
+}

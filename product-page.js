@@ -74,6 +74,7 @@
       name: item.base_color && item.base_color !== "Original" ? item.base_color : mapped[0]?.name || "Original",
       hex: item.color_hex || mapped[0]?.hex || "#d1c8bd",
       image: item.image,
+      poses: mapped[0]?.poses || [],
     };
     const alternatives = [
       ...mapped.slice(1),
@@ -133,7 +134,7 @@
     const selected = colors.find((color) => color.name === selection.color);
     const primary = selected?.image || product.image;
     const isBaseColor = selection.color === colors[0]?.name;
-    const candidates = [primary, ...(isBaseColor ? product.images || [product.image] : [])];
+    const candidates = [primary, ...(selected?.poses || []), ...(isBaseColor ? product.images || [product.image] : [])];
     return [...new Set(candidates.filter((photo) => typeof photo === "string" && photo))];
   }
 

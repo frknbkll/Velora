@@ -264,7 +264,7 @@ class HandlerSecurity:
                 s.auth_version AS session_auth_version FROM users u JOIN sessions s ON u.id=s.user_id WHERE s.token_hash=?""", (digest,)).fetchone()
             if user is None:
                 return None
-            expired = user["expires_at"] <= stamp or user["auth_version"] != user["session_auth_version"]
+            expired = not user["account_enabled"] or user["expires_at"] <= stamp or user["auth_version"] != user["session_auth_version"]
             expired = expired or (user["role"] == "admin" and (user["last_seen"] <= stamp - ADMIN_IDLE_SECONDS or user["session_created_at"] <= stamp - ADMIN_ABSOLUTE_SECONDS))
             if expired:
                 connection.execute("DELETE FROM sessions WHERE token_hash=?", (digest,))
@@ -288,7 +288,7 @@ class HandlerSecurity:
         with self.server.connect() as connection:
             connection.execute("BEGIN IMMEDIATE")
             current = connection.execute("SELECT * FROM users WHERE id=?", (user["id"],)).fetchone()
-            if current is None or current["auth_version"] != user["auth_version"] or not hmac.compare_digest(current["password_hash"], user["password_hash"]) or (current["mfa_enabled"] and not mfa_verified):
+            if current is None or not current["account_enabled"] or current["auth_version"] != user["auth_version"] or not hmac.compare_digest(current["password_hash"], user["password_hash"]) or (current["mfa_enabled"] and not mfa_verified):
                 raise SecurityError(401, "Your sign-in details changed. Please sign in again.")
             if previous:
                 connection.execute("DELETE FROM sessions WHERE token_hash=?", (previous["token_hash"],))
@@ -305,7 +305,7 @@ class HandlerSecurity:
         current = connection.execute("""SELECT u.*,s.token_hash,s.csrf_token,s.session_id,s.created_at AS session_created_at,
             s.last_seen,s.expires_at,s.ip AS session_ip,s.device AS session_device FROM users u JOIN sessions s ON s.user_id=u.id
             WHERE u.id=? AND s.token_hash=? AND s.auth_version=u.auth_version AND s.expires_at>?""", (user["id"], user["token_hash"], int(time.time()))).fetchone()
-        if current is None or current["auth_version"] != user["auth_version"] or not hmac.compare_digest(current["password_hash"], user["password_hash"]):
+        if current is None or not current["account_enabled"] or current["auth_version"] != user["auth_version"] or not hmac.compare_digest(current["password_hash"], user["password_hash"]):
             raise SecurityError(401, "Your account changed. Please sign in again.")
         if current["role"] == "admin" and (current["last_seen"] <= stamp - ADMIN_IDLE_SECONDS or current["session_created_at"] <= stamp - ADMIN_ABSOLUTE_SECONDS):
             raise SecurityError(401, "Your session expired. Please sign in again.")

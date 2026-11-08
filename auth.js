@@ -5,6 +5,7 @@
   const unavailable = "We couldn't connect to account services. Please try again shortly.";
   const auth = { user: null, csrfToken: null, ready: null, request, logout };
   window.VeloraAuth = auth;
+  let intranetAccessGeneration = 0;
 
   function connectionError() {
     const local = location.protocol === "file:" || ["localhost", "127.0.0.1", "[::1]"].includes(location.hostname);
@@ -19,16 +20,16 @@
     const target = new URL("http://127.0.0.1:8000/login.html");
     if (page === "register") target.pathname = "/register.html";
     else if (document.body.classList.contains("admin-page") || next === "admin.html") target.searchParams.set("next", "admin.html");
-    else if (next === "intranet.html") target.searchParams.set("next", "intranet.html");
+    else if (document.body.classList.contains("intranet-page") || next === "intranet.html") target.searchParams.set("next", "intranet.html");
     else if (["account.html", "reviews.html"].includes(next)) target.searchParams.set("next", next);
     else if (page === "account") target.searchParams.set("next", "account.html");
 
     document.querySelectorAll("[data-auth-link]").forEach((link) => { link.href = "http://127.0.0.1:8000/login.html"; });
     // Keep account navigation on the server that implements it when the collection
     // is being previewed by a static IDE server. Form values are never transferred.
-    document.querySelectorAll('a[href="admin.html"], a[href="account.html"], a[href="register.html"], a[href^="login.html"]').forEach((link) => {
+    document.querySelectorAll('a[href="admin.html"], a[href="intranet.html"], a[href="account.html"], a[href="register.html"], a[href^="login.html"]').forEach((link) => {
       const [filename, query = ""] = link.getAttribute("href").split("?");
-      if (!["admin.html", "account.html", "register.html", "login.html"].includes(filename)) return;
+      if (!["admin.html", "intranet.html", "account.html", "register.html", "login.html"].includes(filename)) return;
       const destination = new URL(filename, "http://127.0.0.1:8000/");
       const nextPage = new URLSearchParams(query).get("next");
       if (["admin.html", "account.html", "reviews.html", "intranet.html"].includes(nextPage)) destination.searchParams.set("next", nextPage);
@@ -116,6 +117,18 @@
     document.querySelectorAll("[data-admin-link]").forEach((link) => {
       link.hidden = auth.user?.role !== "admin";
     });
+    const intranetLinks = [...document.querySelectorAll("[data-intranet-link]")];
+    const generation = ++intranetAccessGeneration;
+    intranetLinks.forEach((link) => { link.hidden = auth.user?.role !== "admin"; });
+    if (intranetLinks.length && auth.user && auth.user.role !== "admin") {
+      const userId = auth.user.id;
+      request("/api/intranet/access").then((access) => {
+        if (generation !== intranetAccessGeneration || auth.user?.id !== userId) return;
+        intranetLinks.forEach((link) => { link.hidden = !access.allowed; });
+      }).catch(() => {
+        if (generation === intranetAccessGeneration) intranetLinks.forEach((link) => { link.hidden = true; });
+      });
+    }
   }
 
   function message(text, success = false) {
@@ -130,7 +143,8 @@
   function destination(user) {
     const next = new URLSearchParams(location.search).get("next");
     if (next === "admin.html" && user.role === "admin") return "admin.html";
-    if (next === "intranet.html" && user.role === "admin") return "intranet.html";
+    // The intranet server checks current staff membership and folder permissions.
+    if (next === "intranet.html") return "intranet.html";
     if (["account.html", "reviews.html"].includes(next)) return next;
     return user.role === "admin" ? "admin.html" : "account.html";
   }
@@ -369,6 +383,10 @@
       const shell = document.querySelector("#admin-shell");
       if (shell) shell.hidden = true;
     }
+    if (document.body.classList.contains("intranet-page")) {
+      const workspace = document.querySelector(".intranet-layout");
+      if (workspace) workspace.hidden = true;
+    }
     pendingChallenge = null;
     clearTimeout(challengeExpiry);
     mfaForm?.reset();
@@ -376,7 +394,7 @@
   // A page restored with Back must check its session instead of revealing cached
   // account information after another tab or device has signed it out.
   window.addEventListener("pageshow", (event) => {
-    if (event.persisted && (document.body.dataset.authPage === "account" || document.body.classList.contains("admin-page"))) location.reload();
+    if (event.persisted && (document.body.dataset.authPage === "account" || document.body.classList.contains("admin-page") || document.body.classList.contains("intranet-page"))) location.reload();
   });
   const page = document.body.dataset.authPage;
   if (page === "login" && new URLSearchParams(location.search).get("deleted") === "1") {
@@ -397,7 +415,7 @@
       else message(error.message);
     });
   }
-  if (!document.body.classList.contains("admin-page")) {
+  if (!document.body.classList.contains("admin-page") && !document.body.classList.contains("intranet-page")) {
     const supportStyle = document.createElement("link");
     supportStyle.rel = "stylesheet";
     supportStyle.href = "support-chat.css?v=1";

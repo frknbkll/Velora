@@ -1,0 +1,16 @@
+.team-portraits-note { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 15px; margin: -10px 0 34px; color: #827363; font-size: .75rem; line-height: 1.8; }
+.team-portraits-note > span { color: #957451; font-family: var(--serif); font-size: 1.25rem; font-style: italic; }
+.team-profile .team-profile-portrait.team-portrait-swap { position: relative; display: block; min-width: 0; padding: 0; border: 0; border-radius: 0; color: inherit; font: inherit; text-align: left; cursor: pointer; isolation: isolate; }
+.team-profile .team-profile-portrait.team-portrait-swap img { display: block; transform: none; transition: none; }
+.team-profile .team-portrait-swap .team-portrait-original { width: 100%; height: 100%; }
+.team-profile .team-profile-portrait.team-portrait-swap .team-portrait-alternate { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; opacity: 0; transition: opacity .28s ease; }
+.team-profile .team-portrait-swap[data-portrait="alternate"] .team-portrait-alternate { opacity: 1; }
+.team-profile .team-portrait-swap:focus-visible { outline: 3px solid #ac815c; outline-offset: -5px; }
+.team-portrait-hint { position: absolute; right: 13px; bottom: 13px; z-index: 2; display: inline-flex; align-items: center; gap: 7px; padding: 7px 11px 7px 8px; border: 1px solid #ffffff80; border-radius: 999px; background: #fffdf3e8; box-shadow: 0 2px 12px #3f30280a; color: #6e5a42; font-family: var(--sans); font-size: .5625rem; font-weight: 500; line-height: 1.2; letter-spacing: .025em; pointer-events: none; }
+.team-portrait-hint-mark { display: grid; place-items: center; width: 17px; height: 17px; border: 1px solid #c6b395; border-radius: 50%; font-size: .8125rem; line-height: 1; }
+.team-portrait-swap[data-portrait="alternate"] .team-portrait-hint-mark { font-size: 0; }
+.team-portrait-swap[data-portrait="alternate"] .team-portrait-hint-mark::after { content: "−"; font-size: .8125rem; }
+.team-portrait-swap[data-portrait-unavailable] { cursor: default !important; opacity: 1; }
+.team-portrait-swap[data-portrait-unavailable] .team-portrait-hint { display: none; }
+@media (max-width: 600px) { .team-portraits-note { margin-bottom: 27px; font-size: .6875rem; } .team-portrait-hint { right: 12px; bottom: 12px; padding-block: 8px; font-size: .625rem; } }
+@media (prefers-reduced-motion: reduce) { .team-profile .team-profile-portrait.team-portrait-swap .team-portrait-alternate { transition: none; } }

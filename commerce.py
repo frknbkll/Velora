@@ -105,7 +105,7 @@ def handle(handler, method):
                 if p.get("role") not in {"owner", "manager", "warehouse"}: fail("Select a staff role.")
                 s["staff"][str(target["id"])] = p["role"]
             elif action == "order":
-                customer = c.execute("SELECT id,name,email FROM users WHERE id=? AND role='customer'", (p.get("customer"),)).fetchone()
+                customer = c.execute("SELECT id,name,email FROM users WHERE id=? AND role='customer' AND account_type='customer'", (p.get("customer"),)).fetchone()
                 if not customer: fail("Select a registered customer.")
                 lines = p.get("lines")
                 if not isinstance(lines, list) or not 1 <= len(lines) <= 100: fail("Add 1 to 100 order lines.")
@@ -172,6 +172,6 @@ def handle(handler, method):
             for order in result["orders"]:
                 order["lines"] = [{k: v for k, v in l.items() if k != "priceCents"} for l in order["lines"]]
         else:
-            result["customers"] = [dict(r) for r in c.execute("SELECT id,name,email FROM users WHERE role='customer'")]
+            result["customers"] = [dict(r) for r in c.execute("SELECT id,name,email FROM users WHERE role='customer' AND account_type='customer'")]
             if access == "owner": result["admins"] = [dict(r) for r in c.execute("SELECT id,name,email FROM users WHERE role='admin'")]
     handler.send_json(200, result)

@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="styles.css?v=61" />
     <link rel="stylesheet" href="admin.css?v=7" />
     <link rel="stylesheet" href="admin-business.css?v=1" />
+    <link rel="stylesheet" href="admin-folder-access.css?v=2" />
+    <link rel="stylesheet" href="admin-discounts.css?v=1" />
     <script src="privacy.js?v=1" defer></script>
-    <script src="auth.js?v=6" defer></script>
-    <script src="admin.js?v=10" defer></script>
+    <script src="auth.js?v=7" defer></script>
+    <script src="admin.js?v=13" defer></script>
+    <script src="admin-folder-access.js?v=2" defer></script>
+    <script src="admin-discounts.js?v=1" defer></script>
     <script src="admin-support.js?v=1" defer></script>
     <link rel="stylesheet" href="admin-support.css?v=1" />
     <script src="admin-commerce.js?v=1" defer></script>
@@ -57,10 +61,12 @@
           <a href="#overview" data-admin-section="overview" aria-current="page"><svg class="admin-icon"><use href="#studio-grid"/></svg><span>Overview</span></a>
           <a href="#products" data-admin-section="products"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Products</span><span class="admin-nav-count" id="admin-product-nav-count"></span></a>
           <a href="#operations" data-admin-section="operations"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Shop operations</span></a>
+          <a href="#discounts" data-admin-section="discounts"><svg class="admin-icon"><use href="#studio-edit"/></svg><span>Discount codes</span></a>
           <a href="#customers" data-admin-section="customers"><svg class="admin-icon"><use href="#studio-people"/></svg><span>Customers</span></a>
           <a href="#support" data-admin-section="support"><svg class="admin-icon"><use href="#studio-people"/></svg><span>Live support</span><span class="admin-nav-count" id="support-unread-count" hidden>0</span></a>
           <a href="#activity" data-admin-section="activity"><svg class="admin-icon"><use href="#studio-clock"/></svg><span>Activity</span></a>
           <a href="#security" data-admin-section="security"><svg class="admin-icon"><use href="#studio-shield"/></svg><span>Security</span></a>
+          <a href="#folder-access" data-admin-section="folder-access"><svg class="admin-icon"><use href="#studio-shield"/></svg><span>Velora accounts</span></a>
           <a href="#business" data-admin-section="business"><svg class="admin-icon"><use href="#studio-edit"/></svg><span>Business details</span></a>
         </nav>
         <div class="admin-sidebar-bottom">
@@ -161,6 +167,25 @@
             <div class="admin-business-actions"><p id="admin-business-save-state" role="status" aria-live="polite">Your saved information will appear here.</p><div><button class="admin-button admin-button-secondary" type="button" id="admin-business-discard" disabled>Discard unsaved changes</button><button class="admin-button" type="submit" id="admin-business-save">Save public details</button></div></div>
           </form>
         </section>
+        <section class="admin-view" id="admin-folder-access" aria-labelledby="admin-folder-access-title" hidden>
+  <div class="admin-heading"><div><p class="admin-eyebrow">A PLACE FOR EVERY COLLEAGUE</p><h1 id="admin-folder-access-title">Your Velora <em>people.</em></h1><p>Create work accounts and give each colleague the access their role needs.</p></div><div class="folder-access-heading-actions"><button class="admin-button admin-button-secondary" id="admin-folder-access-refresh" type="button">Refresh colleagues</button><button class="admin-button" id="admin-colleague-create" type="button" disabled>Create Velora account</button></div></div>
+  <div class="folder-access-policy"><svg class="admin-icon" aria-hidden="true"><use href="#studio-shield"/></svg><div><strong>Velora accounts, with considered access.</strong><p>Only colleague accounts created for @velora.com appear here. Full control includes every admin area and all shared folders, including Finance and Human Resources. Other colleagues need explicit folder permissions; Finance and HR also require the matching department.</p></div></div>
+  <p class="folder-access-feedback" id="admin-folder-access-message" role="status" aria-live="polite"></p>
+  <div class="admin-panel folder-access-panel">
+    <div class="admin-panel-heading"><div><h2>Velora colleague accounts</h2><p id="admin-folder-access-count">Accounts will load when you open this section.</p></div><label class="folder-access-search" for="admin-folder-access-search"><svg class="admin-icon" aria-hidden="true"><use href="#studio-search"/></svg><span class="sr-only">Search Velora colleague accounts</span><input id="admin-folder-access-search" type="search" placeholder="Search name, work email or department" autocomplete="off" /></label></div>
+    <div class="folder-access-table-scroll" tabindex="0" role="region" aria-label="Velora colleague accounts and permissions"><table class="admin-table folder-access-table"><thead><tr><th scope="col">Velora account</th><th scope="col">Department</th><th scope="col">Account access</th><th scope="col">Folder permissions</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead><tbody id="admin-folder-access-rows"><tr><td colspan="5">Open this section to load Velora accounts.</td></tr></tbody></table></div>
+    <p class="folder-access-table-note">Customer sign-ups stay in Customers, including sign-ups with a work email. This panel lists explicitly created Velora colleague accounts. Creating an account provides sign-in access to the Velora website for that work email.</p>
+  </div>
+</section>
+        <section class="admin-view" id="admin-discounts" aria-labelledby="admin-discounts-title" hidden>
+  <div class="admin-heading"><div><p class="admin-eyebrow">A MOMENT WORTH MARKING</p><h1 id="admin-discounts-title">Offers for every <em>occasion.</em></h1><p>Create thoughtful seasonal codes and choose when they belong in the collection.</p></div><div class="discounts-heading-actions"><button class="admin-button admin-button-secondary" id="discounts-refresh" type="button">Refresh codes</button><button class="admin-button" id="discounts-new" type="button">Create a code</button></div></div>
+  <div class="discounts-metrics" aria-label="Discount code summary"><article><span>Created codes</span><strong id="discounts-total">0</strong></article><article><span>Active now</span><strong id="discounts-active">0</strong></article><article><span>Scheduled</span><strong id="discounts-scheduled">0</strong></article></div>
+  <h2 class="discounts-section-title">Choose your occasion.</h2><p class="discounts-section-caption">Start with a theme, then make the details your own. Templates open as inactive drafts.</p>
+  <div class="discounts-templates" id="discounts-templates" role="group" aria-label="Start a themed discount"></div>
+  <p class="discount-feedback" id="discounts-message" role="status" aria-live="polite"></p>
+  <section class="admin-panel"><div class="admin-panel-heading discounts-panel-heading"><div><h2>Your campaign codes</h2><p class="discounts-section-caption" id="discounts-count">Open this section to load saved codes.</p></div><label class="admin-search"><span class="sr-only">Search discount codes</span><input id="discounts-search" type="search" placeholder="Search a code, theme or campaign" autocomplete="off" /></label></div><div class="admin-table-scroll" tabindex="0" role="region" aria-label="Discount codes"><table class="admin-table discounts-table"><thead><tr><th scope="col">Code / campaign</th><th scope="col">Theme</th><th scope="col">Offer</th><th scope="col">Conditions</th><th scope="col">Status</th><th scope="col">Actions</th></tr></thead><tbody id="discounts-rows"><tr><td colspan="6" class="discounts-empty">Open this section to load saved codes.</td></tr></tbody></table></div><p class="discounts-table-note">Codes apply to the shopping-bag preview using current product prices. This preview does not place an order or redeem a code.</p></section>
+</section>
+
         <footer class="admin-footer"><span>Velora, with intention.</span><a href="index.html">Back to the store ↗</a>
       <nav class="legal-links" aria-label="Policies and privacy">
         <a href="privacy.html">Privacy Policy</a>
@@ -174,6 +199,28 @@
     </footer>
       </main>
     </div>
+    <dialog class="admin-edit-dialog folder-access-dialog" id="admin-folder-access-dialog" aria-labelledby="admin-folder-access-dialog-title">
+  <div class="admin-edit-heading"><div><p class="admin-eyebrow">A PLACE IN THE TEAM</p><h2 id="admin-folder-access-dialog-title">Edit colleague access</h2></div><button class="admin-dialog-close" id="admin-folder-access-close" type="button" aria-label="Close colleague account editor">&times;</button></div>
+  <form id="admin-folder-access-form" autocomplete="off">
+    <div class="folder-access-identity" id="admin-folder-access-identity"><strong id="admin-folder-access-name"></strong><span id="admin-folder-access-email"></span></div>
+    <div class="colleague-create-fields" id="admin-colleague-create-fields" hidden>
+      <label class="admin-field" for="admin-colleague-first-name">First name<input id="admin-colleague-first-name" type="text" maxlength="80" required autocomplete="off" disabled /></label>
+      <label class="admin-field" for="admin-colleague-last-name">Last name<input id="admin-colleague-last-name" type="text" maxlength="80" required autocomplete="off" disabled /></label>
+      <label class="admin-field colleague-create-wide" for="admin-colleague-email">Velora work email<input id="admin-colleague-email" type="email" maxlength="254" placeholder="name@velora.com" required autocomplete="off" inputmode="email" spellcheck="false" disabled /><span class="admin-field-hint">Use an address ending with @velora.com.</span></label>
+      <label class="admin-field colleague-create-wide" for="admin-colleague-password">Starting password<input id="admin-colleague-password" type="password" minlength="15" maxlength="128" required autocomplete="new-password" disabled /><span class="admin-field-hint">15–128 characters. The colleague can change their password after signing in.</span></label>
+    </div>
+    <label class="folder-access-enabled"><input id="admin-folder-access-active" type="checkbox" /><span><strong>Enable this Velora account</strong><small>Disabling an account removes sign-in and colleague access immediately.</small></span></label>
+    <label class="admin-field" for="admin-folder-access-role">Account access<select id="admin-folder-access-role"><option value="colleague">Colleague — intranet and assigned folders</option><option value="manager">Store manager — collection and commerce tools</option><option value="warehouse">Warehouse — fulfillment tools</option><option value="owner">Full control — all admin tools and folders</option></select></label>
+    <p class="folder-access-editor-note" id="admin-folder-access-role-description"></p>
+    <div class="folder-access-full-control" id="admin-folder-access-full-control" hidden><strong>Full control includes Finance and HR.</strong><p>This colleague can manage every admin area and every shared folder. Department folder permissions are included.</p></div>
+    <label class="admin-field folder-access-department-field" for="admin-folder-access-department">Primary department<select id="admin-folder-access-department"><option value="">Choose a department</option></select></label>
+    <p class="folder-access-editor-note">An enabled colleague needs a primary department. Read opens and downloads files. Manage also allows uploads, notes and deletion.</p>
+    <fieldset class="folder-access-permissions"><legend>Folder permissions</legend><div id="admin-folder-access-permissions"></div></fieldset>
+    <p class="folder-access-editor-note" id="admin-folder-access-restriction">Finance and Human Resources require matching department membership and an explicit permission, except for colleagues with Full control.</p>
+    <p class="folder-access-feedback" id="admin-folder-access-edit-message" role="status" aria-live="polite"></p>
+    <div class="folder-access-editor-actions"><button class="admin-button admin-button-secondary" id="admin-folder-access-cancel" type="button">Cancel</button><button class="admin-button" id="admin-folder-access-save" type="submit">Save access</button></div>
+  </form>
+</dialog>
     <dialog class="admin-edit-dialog admin-catalog-editor" id="admin-edit-dialog" aria-labelledby="admin-edit-title">
       <div class="admin-edit-heading"><div><p class="admin-eyebrow">THE FINER DETAILS</p><h2 id="admin-edit-title">Edit product</h2></div><button class="admin-dialog-close" type="button" id="admin-edit-close" aria-label="Close product editor">&times;</button></div>
       <div class="admin-edit-product" id="admin-edit-summary"><img id="admin-edit-image" src="" alt="" width="64" height="80" /><div><strong id="admin-edit-name"></strong><span id="admin-edit-founder"></span></div></div>

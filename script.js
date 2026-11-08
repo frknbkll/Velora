@@ -504,6 +504,7 @@ function getProductColors(look) {
     name: look.base_color && look.base_color !== "Original" ? look.base_color : images?.[0]?.name || "Original",
     hex: look.base_color && look.base_color !== "Original" ? look.color_hex : images?.[0]?.hex || look.color_hex || "#d1c8bd",
     image: look.image,
+    poses: images?.[0]?.poses || [],
   };
   if (look.managed || images || look.color_variants?.length) {
     const managedNames = new Set((look.color_variants || []).map((color) => color.name.toLocaleLowerCase()));
@@ -626,6 +627,9 @@ function updateProductColor(look) {
   document.querySelectorAll(".product-options").forEach((group) => {
     if (group.dataset.productKey !== look.key) return;
     group.querySelector(".product-color-label").textContent = `Color: ${color}`;
+    group.closest(".look-tile")?.querySelectorAll(".look-photo-trigger, .look-quick-view, .look-tile-caption a").forEach((link) => {
+      link.href = productPageUrl(look);
+    });
   });
   document.querySelectorAll("[data-gallery-product-key]").forEach((gallery) => {
     if (gallery.dataset.galleryProductKey === look.key) attachProductGallery(gallery, look);
@@ -633,9 +637,15 @@ function updateProductColor(look) {
 }
 
 function galleryImages(look) {
-  const first = getProductImage(look);
-  const primaryColor = getVariantSelection(look).color === look.colors[0].name;
-  return [...new Set([first, ...(primaryColor ? look.images || [look.image] : [])])];
+  const selection = getVariantSelection(look);
+  const color = look.colors.find((variant) => variant.name === selection.color);
+  const first = color?.image || getProductImage(look);
+  const primaryColor = selection.color === look.colors[0].name;
+  return [...new Set([
+    first,
+    ...(color?.poses || []),
+    ...(primaryColor ? look.images || [look.image] : []),
+  ])];
 }
 
 function attachProductGallery(container, look) {
@@ -724,7 +734,7 @@ function canAddToBag(look) {
   return false;
 }
 
-function createProductOptions(look) {
+function createProductOptions(look, { photoPreviews = false } = {}) {
   const selection = getVariantSelection(look);
   const options = document.createElement("div");
   options.className = "product-options";
@@ -739,6 +749,7 @@ function createProductOptions(look) {
   swatches.className = "product-color-options";
   swatches.setAttribute("role", "group");
   swatches.setAttribute("aria-label", `Color options for ${look.name}`);
+  if (photoPreviews) swatches.classList.add("has-photo-previews");
   look.colors.forEach((color) => {
     const button = document.createElement("button");
     button.className = "product-option product-color-option";
@@ -750,6 +761,18 @@ function createProductOptions(look) {
     button.title = colorName;
     button.setAttribute("aria-label", colorName);
     button.setAttribute("aria-pressed", String(selection.color === color.name));
+    if (photoPreviews) {
+      button.classList.add("product-color-preview");
+      const preview = document.createElement("img");
+      setProductPhotoSource(preview, color.image || look.image);
+      preview.alt = "";
+      preview.loading = "lazy";
+      preview.decoding = "async";
+      preview.sizes = "72px";
+      const label = document.createElement("span");
+      label.textContent = color.name;
+      button.append(preview, label);
+    }
     swatches.append(button);
   });
   colorGroup.append(colorLabel, swatches);
@@ -1225,11 +1248,13 @@ function renderLooks() {
       addButton.dataset.productKey = look.key;
       configurePurchaseButton(addButton, look);
 
-      imageContainer.append(number, imageQuickView);
+      imageContainer.append(imageQuickView, saveButton);
       attachProductGallery(imageContainer, look);
-      actions.append(quickView, saveButton, addButton);
-      caption.append(founder, note);
-      tile.append(imageContainer, caption, capsule, description, price, createProductOptions(look), actions);
+      actions.append(quickView, addButton);
+      caption.append(founder, price, note);
+      tile.append(imageContainer, caption, createProductOptions(look, {
+        photoPreviews: true,
+      }), actions);
       return tile;
     }),
   );
@@ -1350,6 +1375,120 @@ let activeShopView = "cart";
 let checkoutStage = "bag";
 let checkoutError = "";
 let shoppingNoticeTimer;
+const bagDiscount = { code: "", draft: "", quote: null, fingerprint: "", requestedFingerprint: "", pending: false, generation: 0, checkedAt: 0, message: "", error: false };
+
+function discountCartSnapshot() {
+  const products = new Map();
+  const signature = [];
+  let subtotalCents = 0, unsupported = false;
+  for (const [key, quantity] of shoppingCart) {
+    const item = getCartItem(key);
+    signature.push([key, quantity, item?.look.id || "", item?.look.price ?? null]);
+    if (!item) continue;
+    subtotalCents += Math.round(item.look.price * 100) * quantity;
+    if (!item.look.id) { unsupported = true; continue; }
+    products.set(item.look.id, (products.get(item.look.id) || 0) + quantity);
+  }
+  const items = [...products].sort(([left], [right]) => left.localeCompare(right)).map(([productId, quantity]) => ({ productId, quantity }));
+  return { items, fingerprint: JSON.stringify(signature), subtotalCents, unsupported };
+}
+
+function removeBagDiscount(message = "Discount code removed.") {
+  bagDiscount.generation++;
+  Object.assign(bagDiscount, { code: "", draft: "", quote: null, fingerprint: "", requestedFingerprint: "", pending: false, checkedAt: 0, message, error: false });
+  renderShopDialog();
+}
+
+async function validateBagDiscount(code, force = false) {
+  const snapshot = discountCartSnapshot(), normalized = code.trim().toUpperCase();
+  if (!normalized || !snapshot.items.length || snapshot.unsupported) {
+    Object.assign(bagDiscount, { code: "", quote: null, pending: false, message: snapshot.unsupported ? "Discounts need the current collection. Refresh the page and try again." : "Add a piece to your bag before applying a code.", error: true });
+    renderShopDialog(); return false;
+  }
+  if (!force && bagDiscount.quote && bagDiscount.code === normalized && bagDiscount.fingerprint === snapshot.fingerprint && Date.now() - bagDiscount.checkedAt < 30000) return true;
+  const generation = ++bagDiscount.generation;
+  Object.assign(bagDiscount, { code: normalized, draft: normalized, quote: null, pending: true, requestedFingerprint: snapshot.fingerprint, message: "Checking your code…", error: false });
+  renderShopDialog();
+  let applied = false;
+  try {
+    const response = await fetch("/api/discounts/validate", {
+      method: "POST", credentials: "same-origin", cache: "no-store", redirect: "error",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ code: normalized, items: snapshot.items }), signal: AbortSignal.timeout(12000),
+    });
+    const result = await response.json();
+    if (generation !== bagDiscount.generation) return false;
+    if (snapshot.fingerprint !== discountCartSnapshot().fingerprint) return false;
+    if (!response.ok) throw new Error(result.error || "This code is not available for your bag.");
+    if (result.currency !== "EUR" || ![result.subtotalCents, result.discountCents, result.totalCents].every((value) => Number.isSafeInteger(value) && value >= 0)
+        || result.subtotalCents - result.discountCents !== result.totalCents) throw new Error("We couldn't verify this discount total. Please try again.");
+    Object.assign(bagDiscount, { quote: result, code: result.code, draft: result.code, fingerprint: snapshot.fingerprint, checkedAt: Date.now(),
+      message: result.subtotalCents === snapshot.subtotalCents ? `${result.code} applied to your preview bag.` : `${result.code} applied. Your total reflects the latest prices.`, error: false });
+    applied = true;
+  } catch (error) {
+    if (generation === bagDiscount.generation && snapshot.fingerprint === discountCartSnapshot().fingerprint) {
+      Object.assign(bagDiscount, { code: "", quote: null, fingerprint: "", message: error.message || "We couldn't check this code. Please try again.", error: true });
+    }
+  } finally {
+    if (generation === bagDiscount.generation) { bagDiscount.pending = false; renderShopDialog(); }
+  }
+  return applied;
+}
+
+function syncBagDiscount() {
+  if (!bagDiscount.code) return;
+  const snapshot = discountCartSnapshot();
+  if (!snapshot.items.length || snapshot.unsupported) {
+    bagDiscount.generation++;
+    Object.assign(bagDiscount, { code: "", quote: null, pending: false, fingerprint: "", message: snapshot.unsupported ? "Refresh the collection before using a discount code." : "Your code was removed because the bag is empty.", error: false });
+    return;
+  }
+  if (bagDiscount.pending && bagDiscount.requestedFingerprint === snapshot.fingerprint) return;
+  if (bagDiscount.fingerprint !== snapshot.fingerprint || Date.now() - bagDiscount.checkedAt >= 30000) {
+    bagDiscount.quote = null;
+    void validateBagDiscount(bagDiscount.code, true);
+  }
+}
+
+function currentBagDiscount() {
+  return !bagDiscount.pending && bagDiscount.fingerprint === discountCartSnapshot().fingerprint ? bagDiscount.quote : null;
+}
+
+function appendDiscountSummary(parent, subtotal, label) {
+  const quote = currentBagDiscount();
+  if (quote) {
+    const summary = document.createElement("div"); summary.className = "shop-discount-summary";
+    const line = (name, amount, className = "") => {
+      const row = document.createElement("div"); row.className = className;
+      const title = document.createElement("span"); title.textContent = name;
+      const value = document.createElement("strong"); value.textContent = amount; row.append(title, value); return row;
+    };
+    summary.append(line("Subtotal", currency.format(quote.subtotalCents / 100)), line(quote.code, `−${currency.format(quote.discountCents / 100)}`, "shop-discount-saving"));
+    parent.append(summary);
+  }
+  const total = document.createElement("strong"); total.className = "shop-subtotal";
+  total.textContent = `${label} ${currency.format(quote ? quote.totalCents / 100 : subtotal)}`;
+  parent.append(total);
+}
+
+function appendDiscountForm(parent) {
+  const block = document.createElement("section"); block.className = "shop-discount-block"; block.setAttribute("aria-label", "Discount code");
+  const form = document.createElement("form"); form.className = "shop-discount-form";
+  const label = document.createElement("label"); label.htmlFor = "bag-discount-code"; label.textContent = "A code for your occasion?";
+  const controls = document.createElement("div"); controls.className = "shop-discount-controls";
+  const input = document.createElement("input"); input.id = "bag-discount-code"; input.name = "discountCode"; input.type = "text"; input.autocomplete = "off"; input.maxLength = 40; input.pattern = "[A-Za-z0-9-]{3,40}";
+  input.placeholder = "Enter discount code"; input.value = bagDiscount.draft; input.required = true; input.disabled = bagDiscount.pending;
+  input.addEventListener("input", () => { bagDiscount.draft = input.value; });
+  const apply = document.createElement("button"); apply.type = "submit"; apply.className = "shop-secondary"; apply.textContent = bagDiscount.pending ? "Checking…" : "Apply code"; apply.disabled = bagDiscount.pending;
+  controls.append(input, apply);
+  if (bagDiscount.code || bagDiscount.quote) {
+    const remove = document.createElement("button"); remove.type = "button"; remove.className = "shop-discount-remove"; remove.textContent = "Remove"; remove.setAttribute("aria-label", "Remove applied discount code"); remove.addEventListener("click", () => removeBagDiscount()); controls.append(remove);
+  }
+  form.append(label, controls);
+  form.addEventListener("submit", (event) => { event.preventDefault(); if (!bagDiscount.pending && form.reportValidity()) void validateBagDiscount(input.value, true); });
+  const feedback = document.createElement("p"); feedback.id = "bag-discount-message"; feedback.className = `shop-discount-message${bagDiscount.error ? " is-error" : ""}`; feedback.setAttribute("role", bagDiscount.error ? "alert" : "status"); feedback.textContent = bagDiscount.message;
+  input.setAttribute("aria-describedby", feedback.id); block.append(form, feedback); parent.append(block);
+}
 
 function showShoppingNotice(message, type = "success") {
   if (!(shoppingNotice instanceof HTMLDialogElement)) return;
@@ -1421,7 +1560,10 @@ function renderShopDialog() {
     !(shopDialogFooter instanceof HTMLElement)
   ) return;
 
+  syncBagDiscount();
+
   const isCart = activeShopView === "cart";
+  shopDialogFooter.classList.toggle("has-discounts", isCart);
   shopDialogTitle.textContent = isCart
     ? checkoutStage === "bag" ? "Your shopping bag" : checkoutStage === "review" ? "Review your preview" : "Preview complete"
     : "Your wishlist";
@@ -1512,18 +1654,18 @@ function renderShopDialog() {
     const subtotal = [...shoppingCart.entries()].reduce((sum, [key, quantity]) => {
       return sum + (getCartItem(key)?.look.price ?? 0) * quantity;
     }, 0);
-    const total = document.createElement("strong");
-    total.className = "shop-subtotal";
-    total.textContent = `Preview total ${currency.format(subtotal)}`;
     const note = document.createElement("p");
     note.textContent = "Prototype checkout only. Prices are illustrative; tax, shipping, and payment are not configured. No order is placed.";
-    shopDialogFooter.append(total, note);
+    if (subtotal > 0) appendDiscountForm(shopDialogFooter);
+    appendDiscountSummary(shopDialogFooter, subtotal, "Preview total");
+    shopDialogFooter.append(note);
     if (subtotal > 0) {
       const checkout = document.createElement("button");
       checkout.type = "button";
       checkout.className = "shop-primary checkout-preview-button";
       checkout.dataset.checkoutAction = "review";
       checkout.textContent = "Review checkout preview";
+      checkout.disabled = bagDiscount.pending;
       shopDialogFooter.append(checkout);
     }
     const links = document.createElement("nav");
@@ -1590,9 +1732,6 @@ function renderCheckoutStage() {
     review.append(list);
     shopDialogContent.replaceChildren(review);
 
-    const total = document.createElement("strong");
-    total.className = "shop-subtotal";
-    total.textContent = `Illustrative total ${currency.format(subtotal)}`;
     const note = document.createElement("p");
     note.textContent = "Shipping and tax are not calculated. Selecting the button below only displays a sample confirmation.";
     const back = document.createElement("button");
@@ -1604,9 +1743,12 @@ function renderCheckoutStage() {
     confirm.type = "button";
     confirm.className = "shop-primary checkout-preview-button";
     confirm.dataset.checkoutAction = "complete";
-    confirm.disabled = Boolean(checkoutError);
+    confirm.disabled = Boolean(checkoutError) || bagDiscount.pending;
     confirm.textContent = "Show sample confirmation";
-    shopDialogFooter.replaceChildren(total, note, back, confirm);
+    shopDialogFooter.replaceChildren();
+    appendDiscountForm(shopDialogFooter);
+    appendDiscountSummary(shopDialogFooter, subtotal, "Illustrative total");
+    shopDialogFooter.append(note, back, confirm);
     return;
   }
 
@@ -1623,10 +1765,8 @@ function renderCheckoutStage() {
   heading.textContent = "Preview complete.";
   const message = document.createElement("p");
   message.textContent = "This was a checkout demonstration only. No order was placed, no payment was taken, and your shopping bag is unchanged.";
-  const total = document.createElement("strong");
-  total.className = "shop-subtotal";
-  total.textContent = `Illustrative total ${currency.format(subtotal)}`;
-  confirmation.append(mark, heading, message, total);
+  confirmation.append(mark, heading, message);
+  appendDiscountSummary(confirmation, subtotal, "Illustrative total");
   shopDialogContent.replaceChildren(confirmation);
 
   const note = document.createElement("p");
@@ -1644,10 +1784,11 @@ function showShopDialog(view) {
   checkoutStage = "bag";
   checkoutError = "";
   renderShopDialog();
+  if (view === "cart" && bagDiscount.code && !bagDiscount.pending) void validateBagDiscount(bagDiscount.code, true);
   if (shopDialog instanceof HTMLDialogElement && !shopDialog.open) shopDialog.showModal();
 }
 
-document.addEventListener("click", (event) => {
+document.addEventListener("click", async (event) => {
   const target = event.target;
   if (!(target instanceof Element)) return;
 
@@ -1771,6 +1912,7 @@ document.addEventListener("click", (event) => {
         checkoutError = "";
       }
       checkoutStage = "review";
+      if (bagDiscount.code && !bagDiscount.pending) void validateBagDiscount(bagDiscount.code, true);
       renderShopDialog();
       return;
     }
@@ -1781,6 +1923,8 @@ document.addEventListener("click", (event) => {
       return;
     }
     if (action === "complete" && !checkoutError) {
+      if (bagDiscount.pending) return;
+      if (bagDiscount.code && !await validateBagDiscount(bagDiscount.code, true)) return;
       checkoutStage = "complete";
       renderShopDialog();
       shopDialogContent.querySelector("#checkout-preview-complete-title")?.focus();

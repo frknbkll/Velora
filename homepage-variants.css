@@ -1,0 +1,95 @@
+/* Velora collection cards: warm paper, fine rules and quiet editorial type. */
+.looks-grid { gap: 38px 24px; align-items: stretch; }
+.look-tile {
+  padding: 0 0 18px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: border-color .2s ease;
+}
+.look-tile:hover { transform: none; box-shadow: none; border-color: #a99c8a; }
+.look-tile .look-tile-image { aspect-ratio: 9 / 16; background: #fff; overflow: hidden; border-radius: 2px; }
+.look-tile .look-tile-image img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; aspect-ratio: auto; margin: 0; object-fit: cover; object-position: center; background: #fff; }
+/* The frame reserves the same space before and after each color photo loads. */
+.look-tile .look-photo-trigger { position: relative; inset: auto; display: block; width: 100%; height: 100%; }
+.look-tile .look-tile-image .save-look {
+  position: absolute;
+  z-index: 2;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  padding: 0;
+  border: 1px solid #ded7ce80;
+  border-radius: 50%;
+  background: #fffdf9ed;
+  color: var(--ink);
+  font-size: 0;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease;
+}
+.look-tile-image .save-look::before { content: '\2661'; font-family: Arial, sans-serif; font-size: 23px; line-height: 1; }
+.look-tile-image .save-look[aria-pressed="true"]::before { content: '\2665'; color: var(--accent); }
+.look-tile-image .save-look:hover { background: var(--paper); border-color: var(--ink); }
+.look-tile .look-tile-caption { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 7px 12px; padding: 17px 0 0; align-items: baseline; }
+.look-tile .look-tile-caption strong { min-width: 0; font-family: var(--serif); font-size: clamp(16px, 1.4vw, 21px); font-weight: 400; line-height: 1.35; letter-spacing: -.025em; }
+.look-tile .look-tile-caption > strong:first-child { min-height: 2.7em; }
+.look-tile .look-tile-caption .product-price { font-family: var(--sans); font-size: 13px; font-weight: 500; letter-spacing: 0; white-space: nowrap; }
+.look-tile .look-tile-caption > span { grid-column: 1 / -1; font-size: 10px; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); }
+.look-tile .product-options { margin: 16px 0 18px; padding: 0; border: 0; gap: 16px; }
+.look-tile .product-option-group { gap: 8px; width: 100%; }
+.look-tile .product-option-label { font-size: 9px; letter-spacing: .1em; color: var(--muted); }
+.look-tile .product-color-options.has-photo-previews { display: flex; flex-wrap: wrap; gap: 8px; width: 100%; align-items: start; }
+.look-tile .product-options .product-color-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex: 0 0 48px;
+  width: 48px;
+  min-width: 44px;
+  min-height: 44px;
+  height: auto;
+  padding: 0 0 7px;
+  border: 0;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: var(--muted);
+  box-shadow: none;
+  cursor: pointer;
+}
+.look-tile .product-options .product-color-preview[aria-pressed="true"] { border-color: var(--ink); background: transparent; box-shadow: none; color: var(--ink); }
+.look-tile .product-color-preview img { display: block; width: 48px; height: 64px; aspect-ratio: 3 / 4; object-fit: cover; background: #fff; border-radius: 1px; }
+.look-tile .product-color-preview span { max-width: 48px; font-size: 9px; line-height: 1.3; text-align: center; overflow-wrap: anywhere; }
+.look-tile .product-options .product-size-options { display: flex; flex-wrap: wrap; gap: 4px; width: 100%; }
+.look-tile .product-options .product-size-option { flex: 1 0 28px; width: auto; min-width: 28px; max-width: 46px; height: 44px; padding: 0 3px; border: 1px solid var(--line); border-radius: 1px; background: transparent; color: var(--muted); font-size: 10px; }
+.look-tile .product-options .product-size-option[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: var(--paper); box-shadow: none; }
+.look-tile .product-size-help, .look-tile .product-options-note { display: none; }
+.look-tile .product-card-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 12px; align-items: center; margin: auto 0 0; padding: 0; }
+.look-tile .product-card-actions .shop-primary { grid-column: 1; grid-row: 1; min-height: 44px; width: 100%; border: 1px solid var(--ink); border-radius: 1px; background: var(--ink); color: var(--paper); font-size: 10px; font-weight: 400; letter-spacing: .08em; text-transform: uppercase; transition: background .2s ease; }
+.look-tile .product-card-actions .shop-primary:hover { background: #4a443c; }
+.look-tile .product-card-actions .look-quick-view { grid-column: 2; grid-row: 1; display: inline-flex; align-items: center; min-height: 44px; font-size: 10px; color: var(--muted); text-decoration: underline; text-underline-offset: 4px; white-space: nowrap; }
+.look-tile :is(a,button):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 650px) {
+  .looks-grid { gap: 28px 14px; }
+  .look-tile { padding-bottom: 14px; }
+  .look-tile .look-tile-caption { grid-template-columns: minmax(0, 1fr); gap: 5px; padding-top: 13px; }
+  .look-tile .look-tile-caption strong { font-size: 16px; }
+  .look-tile .look-tile-caption .product-price { font-size: 12px; }
+  .look-tile .look-tile-caption > span { font-size: 8px; letter-spacing: .08em; }
+  .look-tile .product-options { margin-top: 13px; gap: 13px; }
+  .look-tile .product-options .product-color-preview { flex-basis: 44px; width: 44px; }
+  .look-tile .product-color-preview img { width: 44px; height: 59px; }
+  .look-tile .product-color-options.has-photo-previews { gap: 5px; }
+  .look-tile .product-color-preview span { font-size: 8px; max-width: 44px; }
+  .look-tile .product-card-actions { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+  .look-tile .product-card-actions .look-quick-view { grid-column: 1; grid-row: 2; justify-content: center; }
+  .look-tile .look-tile-image .save-look { top: 6px; right: 6px; background: #fffdf9dd; }
+}
+@media (prefers-reduced-motion: reduce) { .look-tile, .look-tile :is(button,a) { transition: none; } }

@@ -34,6 +34,9 @@ from urllib.parse import unquote, urlsplit
 import commerce
 import reviews
 import support
+import shared_folders
+import colleagues
+import discounts
 
 from security_core import HandlerSecurity, ServerSecurity, SecurityError, masked_email
 
@@ -272,6 +275,9 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
         self.request_workers = threading.BoundedSemaphore(MAX_REQUEST_WORKERS)
         self.initialize_database(catalog)
         self.initialize_security()
+        shared_folders.initialize(self)
+        colleagues.initialize(self)
+        discounts.initialize(self)
         super().__init__(address, VeloraHandler)
         host, port = address[0].lower(), self.server_port
         names = {host}
@@ -425,6 +431,8 @@ class VeloraServer(ServerSecurity, ThreadingHTTPServer):
                 "last_name": "TEXT NOT NULL DEFAULT ''",
                 "city": "TEXT NOT NULL DEFAULT ''",
                 "country": "TEXT NOT NULL DEFAULT ''",
+                "account_type": "TEXT NOT NULL DEFAULT 'customer' CHECK(account_type IN ('customer','velora'))",
+                "account_enabled": "INTEGER NOT NULL DEFAULT 1 CHECK(account_enabled IN (0,1))",
             }
             for name, declaration in profile_additions.items():
                 if name not in user_columns:
@@ -589,7 +597,7 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                 self.serve_static()
             else:
                 raise APIError(405, "This method is not supported.")
-        except (APIError, SecurityError, reviews.ReviewError, support.SupportError) as error:
+        except (APIError, SecurityError, reviews.ReviewError, support.SupportError, shared_folders.FolderError, colleagues.ColleagueError, discounts.DiscountError) as error:
             self.send_json(error.status, {"error": error.message}, retry_after=getattr(error, "retry_after", None))
         except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError, TimeoutError):
             pass
@@ -700,6 +708,12 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
     def handle_api(self):
         path, method = self.path_only, self.command
         reading = method in {"GET", "HEAD"}
+        if colleagues.handle(self, method, path, (validate_name, validate_email, validate_password, hash_password)):
+            return
+        if discounts.handle(self, method, path):
+            return
+        if shared_folders.handle(self, method, path, image_extension, public_product):
+            return
         if path.startswith("/api/support/") or path == "/api/admin/support" or path.startswith("/api/admin/support/"):
             return support.handle(self, method)
         if path == "/api/reviews" or path.startswith("/api/reviews/"):
@@ -777,7 +791,7 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                     events = connection.execute("SELECT id,actor_name,action,product_id,product_name,created_at FROM product_activity ORDER BY id DESC LIMIT 100").fetchall()
                     return self.send_json(200, {"events": [dict(event) for event in events]})
                 customers = [public_user(row) for row in connection.execute(
-                    "SELECT * FROM users WHERE role = 'customer' ORDER BY id DESC"
+                    "SELECT * FROM users WHERE role = 'customer' AND account_type='customer' ORDER BY id DESC"
                 ).fetchall()]
                 if path.endswith("/customers"):
                     return self.send_json(200, {"customers": customers})
@@ -908,6 +922,7 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
         with self.server.connect() as connection:
             user = connection.execute("SELECT * FROM users WHERE email = ?", (email,)).fetchone()
         accepted = verify_password(payload.get("password"), user["password_hash"] if user else None)
+        accepted = bool(accepted and user["account_enabled"])
         self.server.login_outcome(email, self.client_address[0], accepted)
         if not accepted:
             raise APIError(401, "The email address or password is incorrect.")
@@ -980,6 +995,8 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
             current = self.fresh_security_user(connection, user)
             if current["role"] == "admin" and connection.execute("SELECT COUNT(*) FROM users WHERE role='admin'").fetchone()[0] <= 1:
                 raise APIError(409, "This is the last administrator account. Create another administrator before deleting it.")
+            if current["role"] == "admin" and commerce.role(connection, current) == "owner" and colleagues.owner_count(connection) <= 1:
+                raise APIError(409, "This is the last enabled owner account. Create another owner before deleting it.")
             if current["mfa_enabled"]:
                 self.guard_mfa_budget(connection, current)
                 if not self.verify_mfa_factor(connection, current, payload.get("code")):
@@ -1540,13 +1557,20 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
             target.relative_to(self.server.root)
         except ValueError:
             return self.send_not_found_page()
-        if target in self.server.private_files:
+        if target in self.server.private_files or target.is_relative_to(self.server.shared_folder_root):
             return self.send_not_found_page()
         public_page = target.parent == self.server.root and target.suffix.lower() in {".html", ".css", ".js"}
         public_asset = target.is_relative_to(self.server.root / "assets") and target.suffix.lower() in {
             ".jpg", ".jpeg", ".png", ".webp", ".avif", ".svg", ".gif", ".ico", ".woff", ".woff2", ".ttf",
         }
-        public_asset = public_asset or target == self.server.root / "assets" / "vendor" / "qrcodegen.js"
+        public_vendor_scripts = {
+            "assets/vendor/qrcodegen.js",
+            "assets/vendor/three/three.module.js",
+            "assets/vendor/three/three.core.js",
+            "assets/vendor/three/addons/controls/OrbitControls.js",
+            "assets/vendor/three/addons/exporters/GLTFExporter.js",
+        }
+        public_asset = public_asset or target in {self.server.root / script for script in public_vendor_scripts}
         if not (public_page or public_asset) or not target.is_file():
             return self.send_not_found_page()
         if target.parent == self.server.root and target.name.lower() in {"account.html", "admin.html", "intranet.html"}:
@@ -1560,7 +1584,10 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                 self.common_headers()
                 self.end_headers()
                 return
-            if page in {"admin.html", "intranet.html"} and user["role"] != "admin":
+            if page == "intranet.html" and not shared_folders.can_open_intranet(self.server, user):
+                self.audit("folder_access_denied", user=user, detail="A request for a colleague workspace was rejected.", severity="warning")
+                raise APIError(403, "Your colleague workspace access is not enabled. Contact your administrator.")
+            if page == "admin.html" and user["role"] != "admin":
                 self.audit("permission_denied", user=user, detail="A non-administrator request for a staff page was rejected.", severity="warning")
                 raise APIError(403, "Administrator access is required.")
         content_type = mimetypes.guess_type(target.name)[0] or "application/octet-stream"
@@ -1611,9 +1638,11 @@ def create_admin(server):
         if not hmac.compare_digest(password.encode("utf-8"), getpass.getpass("Confirm password: ").encode("utf-8")):
             raise APIError(400, "The passwords do not match.")
         with server.connect() as connection:
-            connection.execute("INSERT INTO users (name, email, password_hash, role, created_at) VALUES (?, ?, ?, 'admin', ?)", (
-                name, email, hash_password(password), now_iso(),
+            created = connection.execute("INSERT INTO users (name, email, password_hash, role, created_at,account_type) VALUES (?, ?, ?, 'admin', ?,?)", (
+                name, email, hash_password(password), now_iso(), "velora" if colleagues.work_email(email) else "customer",
             ))
+            if colleagues.work_email(email):
+                colleagues.save_access(connection, created.lastrowid, (True, "leadership", "owner", True, []))
     except sqlite3.IntegrityError:
         raise SystemExit("An account with that email already exists. Use a different email for the administrator.")
     except APIError as error:

@@ -52,10 +52,7 @@
       location.replace("login.html?next=intranet.html");
       return;
     }
-    if (user.role !== "admin") {
-      location.replace("account.html");
-      return;
-    }
+    document.querySelectorAll("[data-intranet-admin]").forEach((link) => { link.hidden = user.role !== "admin"; });
     const firstName = user.firstName || user.name?.trim().split(/\s+/)[0] || "team";
     document.querySelector("#intranet-greeting-name").textContent = `${firstName}.`;
     document.querySelector("#intranet-user-name").textContent = user.name || "Team member";

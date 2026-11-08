@@ -1,0 +1,20 @@
+.shop-dialog-footer.has-discounts { display: flex; flex-direction: column; align-items: stretch; gap: 12px; max-height: min(49dvh,420px); overflow: auto; overscroll-behavior: contain; }
+.shop-dialog-footer.has-discounts > p { max-width: none; }
+.shop-dialog-footer.has-discounts > .shop-subtotal { display: block; }
+.shop-dialog-footer.has-discounts > .shop-secondary { align-self: flex-start; }
+.shop-discount-block { margin: 0 0 19px; padding: 16px 17px; border: 1px solid #dfd7c7; border-radius: 7px; background: #faf7ef; }
+.shop-discount-form > label { display: block; margin-bottom: 9px; color: #73634d; font-family: var(--serif); font-size: 1.1rem; line-height: 1.35; }
+.shop-discount-controls { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.shop-discount-controls input { flex: 1 1 170px; min-width: 0; min-height: 41px; width: 100%; padding: 10px 12px; border: 1px solid #d7cebe; border-radius: 4px; background: #fffefa; color: #665842; font: inherit; font-size: .75rem; letter-spacing: .04em; text-transform: uppercase; }
+.shop-discount-controls .shop-secondary { min-height: 41px; padding: 9px 13px; border: 1px solid #8a785b; border-radius: 4px; color: #67583d; font-size: .6875rem; white-space: nowrap; }
+.shop-discount-controls button:disabled { opacity: .55; cursor: wait; }
+.shop-discount-remove { padding: 7px 3px; border: 0; background: transparent; color: #94775d; font: inherit; font-size: .625rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.shop-discount-message { margin: 9px 0 0 !important; color: #687554 !important; font-size: .6875rem !important; line-height: 1.6 !important; overflow-wrap: anywhere; }
+.shop-discount-message:empty { display: none; }
+.shop-discount-message.is-error { color: #9b5b42 !important; }
+.shop-discount-summary { display: grid; gap: 8px; margin-bottom: 14px; padding-bottom: 14px; border-bottom: 1px solid #e5ddcf; font-size: .75rem; }
+.shop-discount-summary > div { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.shop-discount-summary strong { font-size: .8125rem; font-weight: 500; white-space: nowrap; }
+.shop-discount-summary .shop-discount-saving { color: #6d7d52; }
+.shop-discount-saving > span { overflow-wrap: anywhere; }
+@media(max-width:600px) { .shop-discount-block { padding: 14px; } .shop-discount-controls input { font-size: 1rem; flex-basis: 160px; } .shop-discount-controls .shop-secondary { min-height: 42px; } }

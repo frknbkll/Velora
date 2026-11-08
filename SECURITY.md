@@ -31,6 +31,18 @@ Open **Admin portal → Security** to review failed sign-ins, blocked attempts, 
 
 Events include sign-in successes and failures, access denials, request-verification failures, session revocation, password changes, and two-factor changes. Email hints are masked. Passwords, verification codes, setup keys, recovery codes, session cookies and request bodies are not written to these events. The log retains up to 2,000 events for up to 30 days; the portal displays the latest 100. These records describe application activity rather than an external firewall or intrusion-detection service.
 
+## Department folder access
+
+Owner administrators manage `@velora.com` colleague identities and folder grants in **Admin → Velora accounts**. A public sign-up is always a customer, even when its address uses `@velora.com`; only explicit owner provisioning creates colleague access. Customer accounts stay outside the colleague list. Existing explicitly assigned work-address profiles are retained during migration.
+
+Finance and Human Resources require an enabled Velora profile, matching primary department and explicit Read or Manage permission, or an explicitly assigned **Full control** role. Full control grants owner administration and management of all folders. Store-manager and warehouse roles do not grant this override. The override checks current role, enabled state and Full-control assignment on each file request. Other departmental files require an enabled colleague profile and an explicit grant unless Full control is assigned. Company-library Read access is included for enabled colleagues and administrators; its website originals already belong to the public storefront.
+
+Colleague creation and role changes require an authenticated owner session, matching website origin and CSRF token. Starting passwords use the same password hash as other accounts and do not appear in API responses or security events. Disabling a colleague prevents sign-in and revokes sessions; role changes invalidate existing sessions. Self-demotion and deleting or disabling the last enabled owner are prevented. A work address alone grants no privileges or email-mailbox provisioning.
+
+Private files live beside the database in `shared-folders/`, outside the public media library. Their random storage names are not public URLs. All file operations, including direct download and preview links, check current server-side membership and permissions. Revocation takes effect on the next request without requiring sign-out. File responses use no-store caching and nosniff headers, with attachment downloads and raster-only inline previews. Access changes, denied access, uploads and deletions enter the security event log without file contents.
+
+Back up `shared-folders/` with its matching database and security key while the server is stopped. Account deletion removes membership and grants; department-owned files remain shared with other authorized colleagues.
+
 ## Storage and backups
 
 With the default configuration, private account data is in `.velora/velora.sqlite3` and the security master key is in `.velora/security.key`. When using `--database`, the key is stored next to the chosen database. The server derives authenticator secrets using the private master key and a per-account random nonce; plaintext authenticator secrets and recovery codes are not stored in the database.

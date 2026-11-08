@@ -564,6 +564,72 @@ window.VeloraResponsiveImages = {
     "width": 941,
     "height": 1672
   },
+  "assets/gallery/colors/velora-beige-trench-hijab-pose.jpg": {
+    "src": "assets/responsive/009cc935945856272e491552-480.webp",
+    "srcset": "assets/responsive/009cc935945856272e491552-480.webp 480w, assets/responsive/009cc935945856272e491552-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-chocolate-longline-blazer-pose.jpg": {
+    "src": "assets/responsive/b2f827d3e1253528cb977307-480.webp",
+    "srcset": "assets/responsive/b2f827d3e1253528cb977307-480.webp 480w, assets/responsive/b2f827d3e1253528cb977307-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-cloud-ribbed-lounge-pose.jpg": {
+    "src": "assets/responsive/487e057e0bbd5fcd11c97e6a-480.webp",
+    "srcset": "assets/responsive/487e057e0bbd5fcd11c97e6a-480.webp 480w, assets/responsive/487e057e0bbd5fcd11c97e6a-768.webp 768w",
+    "width": 768,
+    "height": 1365
+  },
+  "assets/gallery/colors/velora-espresso-suit-burgundy.jpg": {
+    "src": "assets/responsive/321a5b807176d8a8bfaab11d-480.webp",
+    "srcset": "assets/responsive/321a5b807176d8a8bfaab11d-480.webp 480w, assets/responsive/321a5b807176d8a8bfaab11d-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-ivory-knit-tailored-set-pose.jpg": {
+    "src": "assets/responsive/d98859f1ba063bfde4b7adba-480.webp",
+    "srcset": "assets/responsive/d98859f1ba063bfde4b7adba-480.webp 480w, assets/responsive/d98859f1ba063bfde4b7adba-768.webp 768w",
+    "width": 768,
+    "height": 1365
+  },
+  "assets/gallery/colors/velora-midnight-gown-chocolate.jpg": {
+    "src": "assets/responsive/d10554159e4ae852589e45f4-480.webp",
+    "srcset": "assets/responsive/d10554159e4ae852589e45f4-480.webp 480w, assets/responsive/d10554159e4ae852589e45f4-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-midnight-satin-slip-gown-pose.jpg": {
+    "src": "assets/responsive/6db1a7ce2555c78c57272017-480.webp",
+    "srcset": "assets/responsive/6db1a7ce2555c78c57272017-480.webp 480w, assets/responsive/6db1a7ce2555c78c57272017-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-midnight-suit-navy-pose.jpg": {
+    "src": "assets/responsive/f09232ac5fc73885d5d126f9-480.webp",
+    "srcset": "assets/responsive/f09232ac5fc73885d5d126f9-480.webp 480w, assets/responsive/f09232ac5fc73885d5d126f9-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-taupe-tailored-set-pose.jpg": {
+    "src": "assets/responsive/d8022a98923efe68147f8351-480.webp",
+    "srcset": "assets/responsive/d8022a98923efe68147f8351-480.webp 480w, assets/responsive/d8022a98923efe68147f8351-768.webp 768w",
+    "width": 768,
+    "height": 1365
+  },
+  "assets/gallery/colors/velora-taupe-trouser-set-hijab.jpg": {
+    "src": "assets/responsive/576369ea32dd559c6f38ebaa-480.webp",
+    "srcset": "assets/responsive/576369ea32dd559c6f38ebaa-480.webp 480w, assets/responsive/576369ea32dd559c6f38ebaa-768.webp 768w",
+    "width": 768,
+    "height": 1152
+  },
+  "assets/gallery/colors/velora-wildflower-evening-dress.jpg": {
+    "src": "assets/responsive/e6a8fa3a960fde20bb98033e-480.webp",
+    "srcset": "assets/responsive/e6a8fa3a960fde20bb98033e-480.webp 480w, assets/responsive/e6a8fa3a960fde20bb98033e-768.webp 768w",
+    "width": 768,
+    "height": 1365
+  },
   "assets/gallery/colors/victoria-champagne-blouse-black-trousers-blue-pose-pose-v2.jpg": {
     "src": "assets/responsive/101a910420f858795a0b6c4c-480.webp",
     "srcset": "assets/responsive/101a910420f858795a0b6c4c-480.webp 480w, assets/responsive/101a910420f858795a0b6c4c-941.webp 941w",
@@ -839,6 +905,240 @@ window.VeloraResponsiveImages = {
     "srcset": "assets/responsive/7e5c29a65ec63fa7f3c632aa-480.webp 480w, assets/responsive/7e5c29a65ec63fa7f3c632aa-768.webp 768w",
     "width": 768,
     "height": 1365
+  },
+  "assets/gallery/new-arrivals/black-draped-satin-gown.jpg": {
+    "src": "assets/responsive/7784a8187992285c33226251-480.webp",
+    "srcset": "assets/responsive/7784a8187992285c33226251-480.webp 480w, assets/responsive/7784a8187992285c33226251-960.webp 960w, assets/gallery/new-arrivals/black-draped-satin-gown.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/black-stripe-track-set.jpg": {
+    "src": "assets/responsive/3c8febddc90ae691db711c23-480.webp",
+    "srcset": "assets/responsive/3c8febddc90ae691db711c23-480.webp 480w, assets/responsive/3c8febddc90ae691db711c23-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg": {
+    "src": "assets/responsive/289140695fecc8309264fff6-480.webp",
+    "srcset": "assets/responsive/289140695fecc8309264fff6-480.webp 480w, assets/responsive/289140695fecc8309264fff6-960.webp 960w, assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg": {
+    "src": "assets/responsive/d747a16752af53d614f1f717-480.webp",
+    "srcset": "assets/responsive/d747a16752af53d614f1f717-480.webp 480w, assets/responsive/d747a16752af53d614f1f717-960.webp 960w, assets/gallery/new-arrivals/chocolate-longline-blazer.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg": {
+    "src": "assets/responsive/ff5a6a1c724fec87f553fba9-480.webp",
+    "srcset": "assets/responsive/ff5a6a1c724fec87f553fba9-480.webp 480w, assets/responsive/ff5a6a1c724fec87f553fba9-960.webp 960w, assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/espresso-tailored-suit.jpg": {
+    "src": "assets/responsive/ae22790ac59a2d5c5dc1cee1-480.webp",
+    "srcset": "assets/responsive/ae22790ac59a2d5c5dc1cee1-480.webp 480w, assets/responsive/ae22790ac59a2d5c5dc1cee1-960.webp 960w, assets/gallery/new-arrivals/espresso-tailored-suit.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg": {
+    "src": "assets/responsive/f7548ebd4987011682cadac9-480.webp",
+    "srcset": "assets/responsive/f7548ebd4987011682cadac9-480.webp 480w, assets/responsive/f7548ebd4987011682cadac9-960.webp 960w, assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg": {
+    "src": "assets/responsive/c3299006582186b29725d7c5-480.webp",
+    "srcset": "assets/responsive/c3299006582186b29725d7c5-480.webp 480w, assets/responsive/c3299006582186b29725d7c5-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg": {
+    "src": "assets/responsive/35bb4ff47a4abbbafeb92c37-480.webp",
+    "srcset": "assets/responsive/35bb4ff47a4abbbafeb92c37-480.webp 480w, assets/responsive/35bb4ff47a4abbbafeb92c37-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg": {
+    "src": "assets/responsive/9c2ac166c763942504feaf3d-480.webp",
+    "srcset": "assets/responsive/9c2ac166c763942504feaf3d-480.webp 480w, assets/responsive/9c2ac166c763942504feaf3d-960.webp 960w, assets/gallery/new-arrivals/navy-wide-leg-suit.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg": {
+    "src": "assets/responsive/e5a0bf8c7104c80574ef261b-480.webp",
+    "srcset": "assets/responsive/e5a0bf8c7104c80574ef261b-480.webp 480w, assets/responsive/e5a0bf8c7104c80574ef261b-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg": {
+    "src": "assets/responsive/602d19d849ba7c610a7bbe56-480.webp",
+    "srcset": "assets/responsive/602d19d849ba7c610a7bbe56-480.webp 480w, assets/responsive/602d19d849ba7c610a7bbe56-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg": {
+    "src": "assets/responsive/0d267695846eb392e21858ab-480.webp",
+    "srcset": "assets/responsive/0d267695846eb392e21858ab-480.webp 480w, assets/responsive/0d267695846eb392e21858ab-960.webp 960w, assets/gallery/new-arrivals/sand-longline-trench-coat.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/black-draped-satin-gown-burgundy-pose.jpg": {
+    "src": "assets/responsive/5b9921835971364c8f0342a0-480.webp",
+    "srcset": "assets/responsive/5b9921835971364c8f0342a0-480.webp 480w, assets/responsive/5b9921835971364c8f0342a0-960.webp 960w, assets/gallery/new-arrivals/variants/black-draped-satin-gown-burgundy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/black-draped-satin-gown-emerald-pose.jpg": {
+    "src": "assets/responsive/7447b2887ecdf136c2b8a9aa-480.webp",
+    "srcset": "assets/responsive/7447b2887ecdf136c2b8a9aa-480.webp 480w, assets/responsive/7447b2887ecdf136c2b8a9aa-960.webp 960w, assets/gallery/new-arrivals/variants/black-draped-satin-gown-emerald-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/black-stripe-track-set-burgundy-pose.jpg": {
+    "src": "assets/responsive/697c032593b912857b849196-480.webp",
+    "srcset": "assets/responsive/697c032593b912857b849196-480.webp 480w, assets/responsive/697c032593b912857b849196-941.webp 941w",
+    "width": 941,
+    "height": 1671
+  },
+  "assets/gallery/new-arrivals/variants/black-stripe-track-set-navy-pose.jpg": {
+    "src": "assets/responsive/ef3124d4a4677408173a576b-480.webp",
+    "srcset": "assets/responsive/ef3124d4a4677408173a576b-480.webp 480w, assets/responsive/ef3124d4a4677408173a576b-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-camel-pose.jpg": {
+    "src": "assets/responsive/e6579b514c5eefa8bbc1c2d5-480.webp",
+    "srcset": "assets/responsive/e6579b514c5eefa8bbc1c2d5-480.webp 480w, assets/responsive/e6579b514c5eefa8bbc1c2d5-960.webp 960w, assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-camel-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-navy-pose.jpg": {
+    "src": "assets/responsive/d3867a9479a3637621e2c8b4-480.webp",
+    "srcset": "assets/responsive/d3867a9479a3637621e2c8b4-480.webp 480w, assets/responsive/d3867a9479a3637621e2c8b4-960.webp 960w, assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-navy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-camel-pose.jpg": {
+    "src": "assets/responsive/23a1d2dc5f943a2954423884-480.webp",
+    "srcset": "assets/responsive/23a1d2dc5f943a2954423884-480.webp 480w, assets/responsive/23a1d2dc5f943a2954423884-960.webp 960w, assets/gallery/new-arrivals/variants/chocolate-longline-blazer-camel-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-navy-pose.jpg": {
+    "src": "assets/responsive/627c5ab64329b6fdec3e6738-480.webp",
+    "srcset": "assets/responsive/627c5ab64329b6fdec3e6738-480.webp 480w, assets/responsive/627c5ab64329b6fdec3e6738-960.webp 960w, assets/gallery/new-arrivals/variants/chocolate-longline-blazer-navy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-burgundy-pose.jpg": {
+    "src": "assets/responsive/02aaa7ea809e8cbfe7a14df1-480.webp",
+    "srcset": "assets/responsive/02aaa7ea809e8cbfe7a14df1-480.webp 480w, assets/responsive/02aaa7ea809e8cbfe7a14df1-960.webp 960w, assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-burgundy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-navy-pose.jpg": {
+    "src": "assets/responsive/16d16ecaf702c6bffdb2dab0-480.webp",
+    "srcset": "assets/responsive/16d16ecaf702c6bffdb2dab0-480.webp 480w, assets/responsive/16d16ecaf702c6bffdb2dab0-960.webp 960w, assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-navy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/espresso-tailored-suit-navy-pose.jpg": {
+    "src": "assets/responsive/8a131fa5d4e0d818018ccae0-480.webp",
+    "srcset": "assets/responsive/8a131fa5d4e0d818018ccae0-480.webp 480w, assets/responsive/8a131fa5d4e0d818018ccae0-960.webp 960w, assets/gallery/new-arrivals/variants/espresso-tailored-suit-navy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/espresso-tailored-suit-sage-pose.jpg": {
+    "src": "assets/responsive/e72881fe4796d8a91e91150e-480.webp",
+    "srcset": "assets/responsive/e72881fe4796d8a91e91150e-480.webp 480w, assets/responsive/e72881fe4796d8a91e91150e-960.webp 960w, assets/gallery/new-arrivals/variants/espresso-tailored-suit-sage-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-charcoal-pose.jpg": {
+    "src": "assets/responsive/e9807511061f1daffaa30414-480.webp",
+    "srcset": "assets/responsive/e9807511061f1daffaa30414-480.webp 480w, assets/responsive/e9807511061f1daffaa30414-960.webp 960w, assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-charcoal-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-navy-pose.jpg": {
+    "src": "assets/responsive/0966f675fdee997041f46c18-480.webp",
+    "srcset": "assets/responsive/0966f675fdee997041f46c18-480.webp 480w, assets/responsive/0966f675fdee997041f46c18-960.webp 960w, assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-navy-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-black-pose.jpg": {
+    "src": "assets/responsive/a685757e61120c43f6f26b7b-480.webp",
+    "srcset": "assets/responsive/a685757e61120c43f6f26b7b-480.webp 480w, assets/responsive/a685757e61120c43f6f26b7b-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-mocha-pose.jpg": {
+    "src": "assets/responsive/4f0561e572eeff4103e59288-480.webp",
+    "srcset": "assets/responsive/4f0561e572eeff4103e59288-480.webp 480w, assets/responsive/4f0561e572eeff4103e59288-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-dusty-rose-floral-pose.jpg": {
+    "src": "assets/responsive/9b25bb6c0d9c690bddd637ed-480.webp",
+    "srcset": "assets/responsive/9b25bb6c0d9c690bddd637ed-480.webp 480w, assets/responsive/9b25bb6c0d9c690bddd637ed-941.webp 941w",
+    "width": 941,
+    "height": 1671
+  },
+  "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-sage-floral-pose.jpg": {
+    "src": "assets/responsive/142dbb59be2bf3bbba08d22e-480.webp",
+    "srcset": "assets/responsive/142dbb59be2bf3bbba08d22e-480.webp 480w, assets/responsive/142dbb59be2bf3bbba08d22e-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-charcoal-pose.jpg": {
+    "src": "assets/responsive/0eb11696d24fd584f8fd86b7-480.webp",
+    "srcset": "assets/responsive/0eb11696d24fd584f8fd86b7-480.webp 480w, assets/responsive/0eb11696d24fd584f8fd86b7-960.webp 960w, assets/gallery/new-arrivals/variants/navy-wide-leg-suit-charcoal-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-sage-pose.jpg": {
+    "src": "assets/responsive/986b4412fac2405ddef6eb71-480.webp",
+    "srcset": "assets/responsive/986b4412fac2405ddef6eb71-480.webp 480w, assets/responsive/986b4412fac2405ddef6eb71-960.webp 960w, assets/gallery/new-arrivals/variants/navy-wide-leg-suit-sage-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-charcoal-pose.jpg": {
+    "src": "assets/responsive/c6503c981104e43521eeb7fc-480.webp",
+    "srcset": "assets/responsive/c6503c981104e43521eeb7fc-480.webp 480w, assets/responsive/c6503c981104e43521eeb7fc-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-mocha-pose.jpg": {
+    "src": "assets/responsive/c6d90a2593d76693a9f41012-480.webp",
+    "srcset": "assets/responsive/c6d90a2593d76693a9f41012-480.webp 480w, assets/responsive/c6d90a2593d76693a9f41012-941.webp 941w",
+    "width": 941,
+    "height": 1672
+  },
+  "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-charcoal-pose.jpg": {
+    "src": "assets/responsive/06ad4c427aa0bf452428acd7-480.webp",
+    "srcset": "assets/responsive/06ad4c427aa0bf452428acd7-480.webp 480w, assets/responsive/06ad4c427aa0bf452428acd7-941.webp 941w",
+    "width": 941,
+    "height": 1670
+  },
+  "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-chocolate-pose.jpg": {
+    "src": "assets/responsive/25845606ca17b7c4f412b758-480.webp",
+    "srcset": "assets/responsive/25845606ca17b7c4f412b758-480.webp 480w, assets/responsive/25845606ca17b7c4f412b758-941.webp 941w",
+    "width": 941,
+    "height": 1671
+  },
+  "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-black-pose.jpg": {
+    "src": "assets/responsive/d80af72e5f1f93b8f6c1ae26-480.webp",
+    "srcset": "assets/responsive/d80af72e5f1f93b8f6c1ae26-480.webp 480w, assets/responsive/d80af72e5f1f93b8f6c1ae26-960.webp 960w, assets/gallery/new-arrivals/variants/sand-longline-trench-coat-black-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
+  },
+  "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-olive-pose.jpg": {
+    "src": "assets/responsive/c78efd042b8d676ffb0529fc-480.webp",
+    "srcset": "assets/responsive/c78efd042b8d676ffb0529fc-480.webp 480w, assets/responsive/c78efd042b8d676ffb0529fc-960.webp 960w, assets/gallery/new-arrivals/variants/sand-longline-trench-coat-olive-pose.jpg 1024w",
+    "width": 1024,
+    "height": 1536
   },
   "assets/gallery/new-ivory-executive-suit-pose-v2.jpg": {
     "src": "assets/responsive/d2e9f74fcf127afe20eba38c-480.webp",

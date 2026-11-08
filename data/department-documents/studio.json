@@ -1,0 +1,347 @@
+{
+  "version": 1,
+  "departments": [
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Country planning and decision register",
+          "purpose": "Prepare a working country plan that connects the Netherlands planning context with department priorities. Use the Rotterdam location label already shown in the team workspace as a reference, without treating this draft as an approved operating plan. Keep proposed decisions separate from confirmed decisions.",
+          "workItems": [
+            "List proposed country objectives and record the department that would own each objective, leaving named owners unassigned until confirmed.",
+            "Collect dependencies from creative, design, production and commerce before proposing the order of work.",
+            "Create a decision register with the question, available options, reviewer role and evidence still required.",
+            "Identify which updates belong in the shared company library and which should remain inside restricted departmental folders."
+          ],
+          "deliverables": [
+            "A draft country priority list with clear assumptions and unresolved questions.",
+            "A decision register with owner and review-date fields ready to complete.",
+            "A short handover summary linking the current department briefs."
+          ],
+          "nextAction": "Ask the leadership reviewer to confirm the draft scope, assign an accountable owner and choose a review date."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Cross-department launch readiness",
+          "purpose": "Build a draft readiness view for a proposed France workstream. The Paris location label provides workspace context only. This template helps reviewers compare outstanding work across departments before deciding whether an activity is ready to move forward; it does not confirm a launch or release date.",
+          "workItems": [
+            "Collect draft readiness notes for campaign assets, collection specifications, production checks and storefront content.",
+            "Separate blocking issues from optional improvements and state the evidence required to close each issue.",
+            "Map each proposed approval to a department role and keep the individual reviewer field unassigned.",
+            "Prepare a concise review agenda that highlights dependencies, unresolved assumptions and decisions requiring leadership input."
+          ],
+          "deliverables": [
+            "A draft readiness matrix showing status and supporting document references.",
+            "An open-issues register with proposed next steps and owner fields.",
+            "A review agenda with an empty decision and approval section."
+          ],
+          "nextAction": "Request a department review of the readiness matrix before proposing any release milestone or approval."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Meeting and decision handover",
+          "purpose": "Create a consistent working handover for a United Kingdom planning discussion. Use the London label to identify the country context in the workspace. The document should make decisions, follow-up questions and document versions easy to trace while keeping proposed actions distinct from approved commitments.",
+          "workItems": [
+            "Draft a meeting agenda around open decisions, interdepartmental dependencies and items needing a reviewer.",
+            "Record each discussion item with its source document, revision and question to resolve rather than assuming an agreed outcome.",
+            "Provide separate fields for proposed action, confirmed decision, responsible role and target date to be assigned.",
+            "Check that the handover contains no restricted finance figures or personal HR information before wider circulation."
+          ],
+          "deliverables": [
+            "A reusable agenda and meeting-note outline for the country workstream.",
+            "A draft action register with unassigned ownership and review fields.",
+            "A handover checklist covering document links, versions and visibility."
+          ],
+          "nextAction": "Nominate a meeting coordinator and ask the relevant department leads to supply their open questions."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Dependencies and escalation planning",
+          "purpose": "Prepare a draft dependency map for a Germany workstream, using Frankfurt as the existing workspace location label. The aim is to make handovers and unresolved blockers visible before work is scheduled. The map is a planning aid, not evidence of approved staffing, capacity or delivery commitments.",
+          "workItems": [
+            "Break the proposed work into reviewable stages and identify the department responsible for each handover.",
+            "Record the input needed to start each stage, the expected output and any missing specification or approval.",
+            "Draft an escalation route by role for blocked work without inventing employee assignments or response-time commitments.",
+            "Review whether each proposed milestone depends on supplier confirmation, content approval or a storefront change."
+          ],
+          "deliverables": [
+            "A draft dependency map with clear entry and exit conditions.",
+            "A blocker register with proposed escalation roles and evidence needed.",
+            "A milestone outline whose dates remain pending department review."
+          ],
+          "nextAction": "Ask department reviewers to validate the handover sequence and identify the first dependency that can be resolved."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Country review and approval pack",
+          "purpose": "Assemble a draft country review pack for a proposed United Arab Emirates workstream. Dubai is the workspace location label, not a confirmation of a particular project or event. Keep the pack focused on review ownership, open assumptions and the information needed to make a considered decision.",
+          "workItems": [
+            "Summarize the proposed activity, intended audience, delivery channels and evidence still needed to validate the scope.",
+            "Collect department briefs and highlight unresolved content, operational and customer-experience questions for local review.",
+            "Separate required sign-offs from general feedback and leave all reviewer names and deadlines pending confirmation.",
+            "Check that any financial or people-related supporting material is referenced through its restricted folder rather than copied into the pack."
+          ],
+          "deliverables": [
+            "A draft country overview with assumptions clearly identified.",
+            "A proposed approval checklist covering the departments involved.",
+            "A review index linking the current supporting documents and revisions."
+          ],
+          "nextAction": "Confirm which department roles must review the pack and request evidence for the outstanding scope questions."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Country scope and ownership outline",
+          "purpose": "Create an initial planning outline for the Türkiye country presence shown in the workspace. Keep the scope at country level because no city is specified in that reference. Use this starter to clarify proposed responsibilities and unknowns before creating any location-specific operating plan.",
+          "workItems": [
+            "Describe the proposed country workstream and list the assumptions that need confirmation before planning can progress.",
+            "Map potential responsibilities to department roles while keeping individual contacts and any location details unassigned.",
+            "Identify what information is required from creative, design, production, commerce and community reviewers.",
+            "Create a review sequence that separates scope discovery, proposed decisions and eventual approvals without assigning dates."
+          ],
+          "deliverables": [
+            "A draft country-scope statement with an explicit list of unknowns.",
+            "A proposed responsibility map using department roles only.",
+            "A review-question register ready for local and leadership input."
+          ],
+          "nextAction": "Request confirmation of the country scope and nominate a coordination role before adding any city-level details."
+        }
+      ]
+    },
+    {
+      "id": "creative",
+      "name": "Creative studio",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Editorial shot list and asset handover",
+          "purpose": "Prepare a draft editorial shot list for a Netherlands content workstream. Use the existing Rotterdam workspace label only to identify the country context. The brief should connect each proposed image to a practical use, with visual references, production decisions and publication approval still open for review.",
+          "workItems": [
+            "List proposed portrait, product-detail and wider composition shots, identifying the intended page or content placement.",
+            "Record framing, garment coverage, backdrop and lighting references without treating sample references as approved final direction.",
+            "Provide fields for image-rights evidence, subject approval and the reviewer responsible for confirming intended usage.",
+            "Define a proposed handover package containing selected originals, export sizes, descriptive filenames and a revision note."
+          ],
+          "deliverables": [
+            "A draft shot list mapped to the intended content placements.",
+            "A reference sheet with usage and approval questions clearly marked.",
+            "An asset-handover checklist with owner and review-date fields."
+          ],
+          "nextAction": "Ask the creative reviewer to confirm the proposed shot priorities before arranging any production activity."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Campaign storyboard and copy review",
+          "purpose": "Develop a draft storyboard for a proposed France campaign concept. Paris is a workspace reference, not a confirmed shooting location. Keep the visual narrative tied to the actual collection and reserve space for country-specific copy review rather than assuming audience preferences or approved local messaging.",
+          "workItems": [
+            "Outline a small sequence of proposed scenes with the purpose, garment focus and intended channel for each frame.",
+            "Identify the product details that must remain accurate across crops, close-ups and alternative scene compositions.",
+            "Mark any caption or on-image copy as a draft and add a local-review field for language, clarity and suitability.",
+            "Record the references, asset permissions and final review roles needed before a storyboard can become a production brief."
+          ],
+          "deliverables": [
+            "A draft storyboard with scene objectives and product references.",
+            "A copy-review sheet with unresolved language and approval fields.",
+            "A production-question list covering assets, permissions and handovers."
+          ],
+          "nextAction": "Choose one concept for review and request feedback on its visual sequence and draft message before refinement."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Social asset formats and captions",
+          "purpose": "Build a draft social-content asset plan for a United Kingdom workstream. The London label supplies workspace context only. Organize the brief around intended placements, legible crops and accurate product storytelling, leaving channel specifications and final captions to be confirmed by the responsible reviewers.",
+          "workItems": [
+            "Map each proposed social placement to the source image, product reference and message it is intended to support.",
+            "Create a crop-review checklist that keeps faces, hands, garments and important product details inside the usable frame.",
+            "Draft caption directions and accessibility descriptions, clearly separating working copy from approved publication text.",
+            "Prepare a version and approval log so community and brand reviewers can identify the latest candidate assets."
+          ],
+          "deliverables": [
+            "A draft asset matrix listing placements and corresponding source files.",
+            "A caption and accessibility-copy worksheet with review fields.",
+            "An export and approval checklist ready for channel confirmation."
+          ],
+          "nextAction": "Ask community and brand reviewers to confirm the proposed placements and supply current channel requirements."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Product detail imagery and consistency review",
+          "purpose": "Prepare a draft product-detail photography review for a Germany content workstream. Frankfurt is the existing workspace reference. The objective is a consistent, useful image set that helps reviewers assess garment presentation and material detail without presenting unverified visual claims as confirmed product information.",
+          "workItems": [
+            "List the proposed full-garment, construction-detail and fabric-close-up images needed for each sample product reference.",
+            "Compare background, light direction, color representation and framing across the candidate images before selecting a set.",
+            "Flag any apparent fit, color or construction mismatch for design or production review rather than correcting facts by assumption.",
+            "Define a draft handover with approved file versions, descriptive image names and outstanding retouching or accuracy questions."
+          ],
+          "deliverables": [
+            "A draft product-detail shot matrix with coverage gaps identified.",
+            "A visual-consistency review sheet linking each candidate image.",
+            "An accuracy and handover checklist for the relevant department reviewers."
+          ],
+          "nextAction": "Request design and production feedback on the candidate images before confirming the final selection."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Creative localization review pack",
+          "purpose": "Assemble a draft creative localization pack for a proposed United Arab Emirates content workstream. Use Dubai as the workspace label only. Present adaptable visual options and review questions without making assumptions about local audience preferences, language choices or approved campaign themes.",
+          "workItems": [
+            "Gather candidate imagery and record the product story, intended placement and evidence supporting each visual choice.",
+            "Prepare alternative layouts with space reserved for locally reviewed copy and any accessibility descriptions required by the chosen channels.",
+            "Ask a designated local reviewer to assess the draft imagery and message context, leaving approval status pending.",
+            "Document which source assets, permissions and export variants would be required if a concept is selected for development."
+          ],
+          "deliverables": [
+            "A draft creative-options sheet with clearly separated concepts.",
+            "A localization-question log for language, layout and context review.",
+            "An asset and permissions checklist for the proposed next stage."
+          ],
+          "nextAction": "Confirm the intended channels and reviewer roles before choosing a concept or preparing final country-specific exports."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Creative references and asset permissions",
+          "purpose": "Create a draft reference and permissions register for a Türkiye content workstream. Keep the brief at country level because the workspace does not name a city. This starter helps the creative team distinguish inspiration, owned source material and assets that still need permission or contextual review.",
+          "workItems": [
+            "Collect proposed visual references and label each as inspiration, a candidate production asset or material requiring further permission checks.",
+            "Record the source, intended use and evidence needed for each asset without assuming ownership or unrestricted reuse.",
+            "Add review questions for any country-specific message, language selection or proposed scene context before concepts are developed.",
+            "Create a draft naming and version approach so reference material cannot be mistaken for approved publication-ready imagery."
+          ],
+          "deliverables": [
+            "A draft visual-reference register with source and intended-use fields.",
+            "A permissions evidence checklist for candidate production assets.",
+            "A concept-review question list with owner and date fields unassigned."
+          ],
+          "nextAction": "Ask the creative reviewer to identify which references may progress and which require permission or local-context checks."
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "Design",
+      "briefs": [
+        {
+          "countryCode": "NL",
+          "country": "Netherlands",
+          "title": "Netherlands - Collection sample and fit review",
+          "purpose": "Prepare a draft sample-review worksheet for a Netherlands design workstream. The Rotterdam location label is used only as workspace context. This document organizes fit observations and open questions so the team can review an actual sample before recording any confirmed garment specification or collection decision.",
+          "workItems": [
+            "Identify the sample style and current revision, leaving unconfirmed product codes and sample ownership clearly marked as pending.",
+            "Provide observation fields for silhouette, movement, coverage, seams and closures, recording evidence rather than assumed measurements.",
+            "Separate proposed design changes from production defects and reference the photograph or fitting note supporting each observation.",
+            "Create a sign-off section for the design reviewer and list the information production would need before a revision is released."
+          ],
+          "deliverables": [
+            "A draft fit-review worksheet ready for actual sample observations.",
+            "A proposed change register with supporting reference fields.",
+            "A sample handover checklist showing unresolved specifications and approvals."
+          ],
+          "nextAction": "Assign a sample reviewer and populate the worksheet using a verified sample and its current specification."
+        },
+        {
+          "countryCode": "FR",
+          "country": "France",
+          "title": "France - Color and material concept review",
+          "purpose": "Create a draft color-and-material concept review for a France design workstream. Paris is the workspace reference, not a statement about consumer preferences or sourcing. Use physical swatches and verified product references to evaluate proposed combinations before describing any material or colorway as approved.",
+          "workItems": [
+            "List candidate fabric and color references with their source, sample revision and any composition information still awaiting confirmation.",
+            "Record observations about drape, opacity, texture and color consistency using the actual sample rather than assumptions from images.",
+            "Compare proposed combinations against the collection brief and identify which choices require creative or production feedback.",
+            "Keep sample codes, supplier details and approval decisions pending until the responsible reviewer has validated the evidence."
+          ],
+          "deliverables": [
+            "A draft material and color review sheet with source references.",
+            "An observation log separating sample evidence from proposed choices.",
+            "A cross-department question list for collection and production review."
+          ],
+          "nextAction": "Request the relevant physical swatches and confirm who will review the proposed material and color combinations."
+        },
+        {
+          "countryCode": "GB",
+          "country": "United Kingdom",
+          "title": "United Kingdom - Sizing notes and product information",
+          "purpose": "Build a draft sizing-information review for a United Kingdom design workstream. Use London as the workspace location label only. The brief helps design and commerce check that customer-facing descriptions correspond to verified garment measurements and fit observations; it does not define a new size conversion or approved sizing standard.",
+          "workItems": [
+            "Identify the product revision and measurement source that would support any proposed size guide or fit description.",
+            "List customer-facing fit statements needing evidence, including length, ease, garment coverage and closure information where relevant.",
+            "Flag missing measurements or inconsistent labels for review instead of filling gaps with assumed conversions or model measurements.",
+            "Create a handover section for commerce that distinguishes confirmed specifications, draft descriptions and questions still requiring design approval."
+          ],
+          "deliverables": [
+            "A draft sizing-evidence checklist linked to the relevant product revision.",
+            "A fit-copy review sheet with confirmation and question fields.",
+            "A commerce handover outline with unresolved information clearly identified."
+          ],
+          "nextAction": "Obtain the verified measurement source and ask the design reviewer to assess the proposed customer-facing fit notes."
+        },
+        {
+          "countryCode": "DE",
+          "country": "Germany",
+          "title": "Germany - Technical specification and revision control",
+          "purpose": "Prepare a draft technical-specification handover for a Germany design workstream. Frankfurt is used as the workspace reference. This template focuses on traceable product revisions and clear production questions, without assuming that a pattern, construction detail or measurement has already been approved.",
+          "workItems": [
+            "Record the proposed style reference, specification revision and source files, keeping approval and release fields pending.",
+            "Check that each construction note has an identifiable drawing, sample photograph or verified specification reference.",
+            "List differences between revisions and separate intentional design changes from questions requiring a production response.",
+            "Prepare a release checklist covering file versions, unresolved measurements, sample evidence and the reviewer responsible for final confirmation."
+          ],
+          "deliverables": [
+            "A draft technical-pack index showing the current candidate files.",
+            "A revision comparison log with reasons and supporting references.",
+            "A production-question and release checklist with approval fields unassigned."
+          ],
+          "nextAction": "Ask design and production reviewers to reconcile the revision log before identifying any specification as released."
+        },
+        {
+          "countryCode": "AE",
+          "country": "United Arab Emirates",
+          "title": "United Arab Emirates - Garment presentation and coverage review",
+          "purpose": "Create a draft garment-presentation review for a United Arab Emirates design workstream. Dubai is the workspace context only. Review the actual garment and intended presentation against the collection brief, while leaving audience suitability and local-context questions to designated reviewers rather than assuming country-wide preferences.",
+          "workItems": [
+            "List the garment features that must be represented accurately in photography and product copy, using verified sample references.",
+            "Record open questions about opacity, lining, sleeve details, length and movement without inventing measurements or performance claims.",
+            "Compare proposed styling and imagery with the confirmed garment design, flagging any apparent mismatch for creative review.",
+            "Provide separate approval fields for design accuracy and country-context review before any presentation guidance is published."
+          ],
+          "deliverables": [
+            "A draft garment-feature checklist supported by sample evidence.",
+            "An imagery and description accuracy review sheet.",
+            "A local-context question list with review ownership pending."
+          ],
+          "nextAction": "Select the sample references and ask the appropriate reviewers to resolve the garment and presentation questions."
+        },
+        {
+          "countryCode": "TR",
+          "country": "Türkiye",
+          "title": "Türkiye - Textile sample and design handover",
+          "purpose": "Prepare a draft textile-sample handover for a Türkiye design workstream. Keep the context at country level because the workspace specifies no city. This starter helps track sample evidence and design questions without implying that a supplier, material order or production relationship has been selected.",
+          "workItems": [
+            "Create a candidate sample register with reference codes, source-document fields and composition details awaiting evidence.",
+            "Record the design questions each sample should answer, such as drape, texture, opacity or suitability for the proposed silhouette.",
+            "Provide space for verified test or sample observations, clearly separating them from early visual impressions and design preferences.",
+            "Define the information needed for a production review, leaving supplier identity, quantities, timing and approvals unassigned."
+          ],
+          "deliverables": [
+            "A draft textile-sample register with traceable reference fields.",
+            "A design-question worksheet ready for actual sample observations.",
+            "A production handover outline containing unresolved evidence and approval items."
+          ],
+          "nextAction": "Confirm which samples are available for review and nominate a design reviewer before completing any material recommendation."
+        }
+      ]
+    }
+  ]
+}

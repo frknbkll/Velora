@@ -561,6 +561,448 @@
       "price": 245,
       "description": "An ivory blazer and knit paired with fluid taupe trousers give this tailored look a warm, tonal contrast.",
       "published": true
+    },
+    {
+      "id": "552959ebc1ce3e02",
+      "name": "The Espresso Tailored Suit",
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 149,
+      "base_color": "Espresso",
+      "color_hex": "#493027",
+      "description": "A deep espresso blazer and matching wide-leg trousers create a polished two-piece suit. Notched lapels, a defined waist and a fluid trouser shape make it an easy choice for work or dressed-up occasions.\n\nTwo-piece suit: blazer and trousers. Top, hijab, belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/espresso-tailored-suit.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/espresso-tailored-suit-navy-pose.jpg"
+        },
+        {
+          "name": "Sage",
+          "hex": "#9aab93",
+          "image": "assets/gallery/new-arrivals/variants/espresso-tailored-suit-sage-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "1aff2611e1fe3c8b",
+      "name": "The Black Contrast Track Set",
+      "image": "assets/gallery/new-arrivals/black-stripe-track-set.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 79,
+      "base_color": "Black",
+      "color_hex": "#202020",
+      "description": "A black zip-front track jacket and relaxed wide-leg trousers, finished with crisp white side stripes. Wear the pieces together for an easy off-duty look or style them separately with everyday essentials.\n\nTwo-piece set: jacket and trousers. Top, trainers and accessories are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/black-stripe-track-set.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/black-stripe-track-set-navy-pose.jpg"
+        },
+        {
+          "name": "Burgundy",
+          "hex": "#722f42",
+          "image": "assets/gallery/new-arrivals/variants/black-stripe-track-set-burgundy-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "166871dd1a4996c7",
+      "name": "The Ivory Gold-Button Knit Set",
+      "image": "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE SOFT EDIT",
+      "price": 99,
+      "base_color": "Ivory",
+      "color_hex": "#eee3d2",
+      "description": "An ivory ribbed collared cardigan pairs with a matching long skirt for a softly coordinated look. Gold-tone buttons and a front skirt slit add definition to the clean, tonal silhouette.\n\nTwo-piece set: cardigan and skirt. Belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Mocha",
+          "hex": "#a38875",
+          "image": "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-mocha-pose.jpg"
+        },
+        {
+          "name": "Black",
+          "hex": "#242424",
+          "image": "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-black-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "257524c3ff675ac5",
+      "name": "The Chocolate Gold-Button Jacket",
+      "image": "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 89,
+      "base_color": "Chocolate",
+      "color_hex": "#49312b",
+      "description": "A cropped chocolate jacket with a pointed collar, patch pockets and gold-tone buttons. Its structured silhouette adds a smart finishing layer to high-rise trousers, denim or a simple dress.\n\nJacket only. Knit top, trousers, belt, shoes, bag and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-navy-pose.jpg"
+        },
+        {
+          "name": "Camel",
+          "hex": "#b68f61",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-camel-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "5750c07e3cbf0922",
+      "name": "The Midnight Draped Satin Gown",
+      "image": "assets/gallery/new-arrivals/black-draped-satin-gown.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVENING EDIT",
+      "price": 129,
+      "base_color": "Black",
+      "color_hex": "#171719",
+      "description": "A black satin-look maxi dress with slender straps, a draped neckline and a defined bodice. Gathering through the skirt and a high side slit create an elegant evening silhouette.\n\nDress only. Shoes, clutch and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/black-draped-satin-gown.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Burgundy",
+          "hex": "#722f42",
+          "image": "assets/gallery/new-arrivals/variants/black-draped-satin-gown-burgundy-pose.jpg"
+        },
+        {
+          "name": "Emerald",
+          "hex": "#215e4b",
+          "image": "assets/gallery/new-arrivals/variants/black-draped-satin-gown-emerald-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "f84bedf34737978e",
+      "name": "The Navy Modern Tailored Suit",
+      "image": "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 149,
+      "base_color": "Navy",
+      "color_hex": "#202a45",
+      "description": "A navy notched-lapel blazer and matching wide-leg trousers offer a versatile take on modern tailoring. The clean lines work equally well with a simple camisole or a fine knit.\n\nTwo-piece suit: blazer and trousers. Top, belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-charcoal-pose.jpg"
+        },
+        {
+          "name": "Sage",
+          "hex": "#9aab93",
+          "image": "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-sage-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "14c77cfe7ca32f1c",
+      "name": "The Sand Cropped Tailored Blazer",
+      "image": "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 85,
+      "base_color": "Sand",
+      "color_hex": "#b4a08a",
+      "description": "A sand-toned blazer with a shorter hem, defined shoulders and classic notched lapels. Its compact shape pairs naturally with high-waisted, wide-leg trousers for a balanced everyday silhouette.\n\nBlazer only. Knit top, trousers, belt, shoes, bag and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Chocolate",
+          "hex": "#604032",
+          "image": "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-chocolate-pose.jpg"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-charcoal-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "dcac45b76ac443e0",
+      "name": "The Mocha Blossom Maxi Dress",
+      "image": "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 109,
+      "base_color": "Cream and Mocha",
+      "color_hex": "#d8c1a8",
+      "description": "A cream maxi dress scattered with warm mocha florals. A wrap-effect neckline, tie waist, gathered sleeves and tiered skirt create a flowing silhouette for daytime occasions and relaxed celebrations.\n\nDress only. Shoes, bag and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Sage Floral",
+          "hex": "#9aab93",
+          "image": "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-sage-floral-pose.jpg"
+        },
+        {
+          "name": "Dusty Rose Floral",
+          "hex": "#b9808c",
+          "image": "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-dusty-rose-floral-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "24a9406125222ec8",
+      "name": "The Sand Longline Trench",
+      "image": "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE LAYERING EDIT",
+      "price": 139,
+      "base_color": "Sand",
+      "color_hex": "#c6ad8b",
+      "description": "A long sand-toned trench with broad lapels, a double-breasted front and adjustable cuff straps. The generous length creates an understated outer layer over tailoring or casual separates.\n\nCoat only. Hijab, top, trousers, belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Olive",
+          "hex": "#767b50",
+          "image": "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-olive-pose.jpg"
+        },
+        {
+          "name": "Black",
+          "hex": "#242424",
+          "image": "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-black-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "637245ab86907188",
+      "name": "The Chocolate Longline Blazer",
+      "image": "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 99,
+      "base_color": "Chocolate",
+      "color_hex": "#604032",
+      "description": "A chocolate blazer with a longer cut, notched lapels and flap pockets. Its softly structured shape brings warmth and definition to cream trousers, denim and everyday neutral layers.\n\nBlazer only. Knit top, trousers, belt, shoes, bag and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-navy-pose.jpg"
+        },
+        {
+          "name": "Camel",
+          "hex": "#b68f61",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-camel-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "6e74347edcea55dd",
+      "name": "The Cocoa Asymmetric Draped Dress",
+      "image": "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVENING EDIT",
+      "price": 119,
+      "base_color": "Cocoa",
+      "color_hex": "#54362c",
+      "description": "A cocoa occasion dress with an asymmetric neckline and sculptural draping across the bodice. Side gathering shapes the waist and falls into a long skirt with a wrap-effect opening.\n\nDress only. Shoes, clutch and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Burgundy",
+          "hex": "#722f42",
+          "image": "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-burgundy-pose.jpg"
+        },
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-navy-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "ee173795c6a09788",
+      "name": "The Espresso Pleated Trousers",
+      "image": "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 69,
+      "base_color": "Espresso",
+      "color_hex": "#49352d",
+      "description": "Deep espresso trousers with a high-rise shape, front pleats and a full wide-leg cut. Their understated tailoring pairs easily with a flowing blouse, simple knit or matching-toned jacket.\n\nTrousers only. Blouse, hijab, belt, shoes and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-charcoal-pose.jpg"
+        },
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-navy-pose.jpg"
+        }
+      ]
+    },
+    {
+      "id": "f56dfe081b1b14e0",
+      "name": "The Oat Half-Zip Lounge Set",
+      "image": "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE SOFT EDIT",
+      "price": 89,
+      "base_color": "Oat",
+      "color_hex": "#e1d3bd",
+      "description": "An oat-toned textured knit set with a collared half-zip top and matching relaxed trousers. Ribbed trims and a soft, roomy silhouette make it an effortless choice for quieter days.\n\nTwo-piece set: knit top and trousers. Trainers, bag and jewelry are not included.",
+      "published": true,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "images": [
+        "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg"
+      ],
+      "color_variants": [
+        {
+          "name": "Mocha",
+          "hex": "#a38875",
+          "image": "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-mocha-pose.jpg"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-charcoal-pose.jpg"
+        }
+      ]
     }
   ]
 }
