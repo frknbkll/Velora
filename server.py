@@ -1225,6 +1225,7 @@ class VeloraHandler(HandlerSecurity, BaseHTTPRequestHandler):
                     images = json.loads(values.get("images", current["images"]))
                     if any(variant["image"] in images for variant in variants):
                         raise APIError(400, "Use a separate photo for each alternate color.")
+                commerce.validate_catalog_inventory(connection, current, values, self.server.root)
                 connection.execute(f"UPDATE products SET {assignments} WHERE id = ?", (*values.values(), product_id))
                 product = connection.execute("SELECT * FROM products WHERE id = ?", (product_id,)).fetchone()
                 self.record_product_activity(connection, user, "update", product)

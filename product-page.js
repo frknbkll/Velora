@@ -15,8 +15,7 @@
   const addButton = document.querySelector("#product-page-add");
   const wishlistButton = document.querySelector("#product-page-wishlist");
   const feedback = document.querySelector("#product-page-feedback");
-  const storageKey = "velora-shopping-v1";
-  const currency = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+  const currency = window.VeloraShopping.currency;
 
   let product;
   let colors = [];
@@ -91,36 +90,35 @@
     })];
   }
 
+  function updateBagLink() {
+    const count = Object.values(shopping.cart).reduce((total, quantity) => total + quantity, 0);
+    document.querySelectorAll("[data-product-bag-count]").forEach((node) => { node.textContent = String(count); });
+  }
+
   function persistShopping() {
-    if (!window.VeloraPrivacy?.canSaveLooks()) return false;
-    try {
-      localStorage.setItem(storageKey, JSON.stringify({
-        wishlist: [...shopping.wishlist],
-        cart: shopping.cart,
-      }));
-      return true;
-    } catch (error) {
-      console.error("Could not save the Velora shopping state.", error);
-      return false;
-    }
+    const saved = window.VeloraShopping.save(shopping);
+    updateBagLink();
+    return saved;
   }
 
   function loadShopping() {
-    if (!window.VeloraPrivacy?.canSaveLooks()) return;
-    try {
-      const saved = JSON.parse(localStorage.getItem(storageKey) || "{}");
-      if (Array.isArray(saved.wishlist)) {
-        shopping.wishlist = new Set(saved.wishlist.filter((key) => typeof key === "string" && key.length <= 1000));
-      }
-      if (saved.cart && typeof saved.cart === "object" && !Array.isArray(saved.cart)) {
-        shopping.cart = Object.fromEntries(Object.entries(saved.cart).filter(
-          ([key, quantity]) => key.length <= 1500 && Number.isInteger(quantity) && quantity > 0 && quantity <= 999999,
-        ));
-      }
-    } catch (error) {
-      console.error("Could not load the saved Velora shopping state.", error);
-      feedback.textContent = "Saved bag and wishlist details could not be loaded.";
-    }
+    const state = window.VeloraShopping.read();
+    shopping = { wishlist: state.wishlist, cart: Object.fromEntries(state.cart) };
+    updateBagLink();
+    if (state.readError) feedback.textContent = "Some saved shopping details could not be loaded. Please check your bag before continuing.";
+  }
+
+  function quantityInBag() {
+    const byVariant = product.variant_stock && Object.keys(product.variant_stock).length;
+    return Object.entries(shopping.cart).reduce((total, [key, quantity]) => {
+      if (key !== product.key && !key.startsWith(`${product.key}::`)) return total;
+      if (!byVariant || key === product.key) return total + quantity;
+      const parts = key.slice(product.key.length + 2).split("::");
+      try {
+        return total + (parts.length === 2 && decodeURIComponent(parts[0]).toLowerCase() === selection.color.toLowerCase() &&
+          decodeURIComponent(parts[1]).toLowerCase() === selection.size.toLowerCase() ? quantity : 0);
+      } catch { return total; }
+    }, 0);
   }
 
   function currentStock() {
@@ -305,7 +303,7 @@
     const available = currentStock();
     const cartKey = `${product.key}::${encodeURIComponent(selection.color)}::${encodeURIComponent(selection.size)}`;
     const currentQuantity = shopping.cart[cartKey] || 0;
-    if (available !== null && available !== undefined && currentQuantity >= available) {
+    if (available !== null && available !== undefined && quantityInBag() >= available) {
       feedback.textContent = available === 0
         ? "This size and color is currently sold out."
         : `Only ${available} of this selection can be added to your bag.`;
@@ -315,7 +313,7 @@
     const saved = persistShopping();
     feedback.textContent = saved
       ? `Added ${product.name} to your shopping bag.`
-      : "Added for this visit. To save your bag between visits, allow saved looks in your privacy preferences.";
+      : "Added on this page, but your bag could not be retained. Check that browser storage is available before leaving this page.";
   });
 
   wishlistButton.addEventListener("click", () => {
@@ -330,6 +328,31 @@
       : `${isSaved ? "Added to" : "Removed from"} your wishlist for this visit.`;
   });
 
+  window.addEventListener("velora:privacy-changed", () => {
+    if (!window.VeloraPrivacy?.canSaveLooks()) shopping.wishlist.clear();
+    persistShopping();
+    if (product) {
+      const saved = shopping.wishlist.has(product.key);
+      wishlistButton.setAttribute("aria-pressed", String(saved));
+      wishlistButton.textContent = saved ? "\u2665 Saved" : "\u2661 Wishlist";
+    }
+  });
+  window.addEventListener("velora:device-data-cleared", () => {
+    shopping = { wishlist: new Set(), cart: {} };
+    updateBagLink();
+    wishlistButton.setAttribute("aria-pressed", "false");
+    wishlistButton.textContent = "\u2661 Wishlist";
+    feedback.textContent = "Your bag and saved looks have been cleared.";
+  });
+  window.addEventListener("pageshow", (event) => {
+    if (!event.persisted) return;
+    loadShopping();
+    if (product) {
+      const saved = shopping.wishlist.has(product.key);
+      wishlistButton.setAttribute("aria-pressed", String(saved));
+      wishlistButton.textContent = saved ? "\u2665 Saved" : "\u2661 Wishlist";
+    }
+  });
   loadShopping();
   loadProduct().then((loaded) => {
     if (!loaded) {

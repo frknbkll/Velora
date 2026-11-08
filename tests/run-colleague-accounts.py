@@ -99,8 +99,10 @@ def main():
             def no_errors(description):
                 assert not evaluate("window.__colleagueErrors || []"), description + ": runtime/CSP errors"
 
-            def no_overflow(description):
-                assert evaluate("document.documentElement.scrollWidth<=innerWidth"), description + ": page overflow"
+            def no_overflow(description, mobile_width=None):
+                assert evaluate("document.documentElement.scrollWidth<=document.documentElement.clientWidth"), description + ": page overflow"
+                if mobile_width is not None:
+                    assert evaluate(f"innerWidth==={mobile_width} && document.documentElement.clientWidth==={mobile_width}"), description + ": mobile shrink-to-fit"
                 if evaluate("document.querySelector('#admin-folder-access-dialog')?.open"):
                     assert evaluate("(()=>{const d=document.querySelector('#admin-folder-access-dialog');return d.scrollWidth<=d.clientWidth && d.getBoundingClientRect().width<=innerWidth})()"), description + ": dialog overflow"
 
@@ -189,23 +191,18 @@ def main():
 
             connection.call("Emulation.setDeviceMetricsOverride", {"width": 390, "height": 844, "deviceScaleFactor": 1, "mobile": True})
             navigate("/admin.html#folder-access", "document.querySelectorAll('#admin-folder-access-rows tr[data-colleague-id]').length===1")
-            before_mobile = evaluate("({inner:innerWidth,client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,banner:document.querySelector('#privacy-banner')?.getBoundingClientRect().width})")
-            evaluate("document.querySelector('#privacy-banner').style.width='calc(100vw - 24px)';document.querySelector('#privacy-banner').style.maxWidth='calc(100vw - 24px)'")
-            time.sleep(.2)
-            print({'beforeMobile':before_mobile,'afterBannerWidth':evaluate("({inner:innerWidth,client:document.documentElement.clientWidth,scroll:document.documentElement.scrollWidth,banner:document.querySelector('#privacy-banner')?.getBoundingClientRect().width})")},flush=True)
-            print(evaluate("[...document.querySelectorAll('body > *, .admin-shell > *, .admin-sidebar > *, .admin-main > *, #admin-folder-access > *')].map(e=>({tag:e.tagName,id:e.id,c:String(e.className),x:e.getBoundingClientRect().x,r:e.getBoundingClientRect().right,w:e.getBoundingClientRect().width,overflow:getComputedStyle(e).overflowX,min:getComputedStyle(e).minWidth,grid:getComputedStyle(e).gridTemplateColumns})).filter(e=>e.w>0)"),flush=True)
-            for selector in ['.privacy-banner','.folder-access-table-scroll','.admin-nav','.admin-sidebar-bottom','.admin-sidebar']:
-                print(evaluate("(()=>{const e=document.querySelector("+json.dumps(selector)+");e.style.display='none';return {hidden:"+json.dumps(selector)+",inner:innerWidth,scroll:document.documentElement.scrollWidth}})()"),flush=True)
-            assert evaluate("innerWidth===390"), "Mobile layout viewport was wider than the device: " + str(evaluate("({inner:innerWidth,client:document.documentElement.clientWidth,visual:visualViewport.width,scale:visualViewport.scale,wide:[...document.querySelectorAll('body *')].map(e=>({tag:e.tagName,id:e.id,c:e.className,r:e.getBoundingClientRect().right,w:e.getBoundingClientRect().width})).filter(e=>e.w>390).slice(0,16)})"))
+            assert evaluate("innerWidth===390 && document.documentElement.clientWidth===390"), "Mobile layout viewport does not match the device"
+            no_overflow("Mobile colleague list", 390)
+            assert evaluate("(()=>{const e=document.querySelector('.folder-access-table-scroll');return e.clientWidth<e.scrollWidth && e.getBoundingClientRect().right<=390})()"), "Wide colleague table does not scroll within its own region"
             evaluate("document.querySelector('#admin-colleague-create').click()")
             until("document.querySelector('#admin-folder-access-dialog').open", "Mobile account creation did not open")
-            no_overflow("Mobile create")
+            no_overflow("Mobile create", 390)
             screenshot("create-mobile")
             evaluate("document.querySelector('#admin-colleague-password').value='a temporary test-only password';document.querySelector('#admin-folder-access-cancel').click()")
             assert evaluate("document.querySelector('#admin-colleague-password').value===''")
             evaluate("document.querySelector('.folder-access-edit').click()")
             until("document.querySelector('#admin-folder-access-dialog').open", "Mobile account editor failed")
-            no_overflow("Mobile edit")
+            no_overflow("Mobile edit", 390)
             screenshot("edit-mobile")
             evaluate("document.querySelector('#admin-folder-access-cancel').click()")
             no_errors("Mobile")

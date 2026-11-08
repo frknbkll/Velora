@@ -8,7 +8,7 @@
     <title>Cookie Policy &mdash; Velora</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=61" />
-    <script src="privacy.js?v=1" defer></script>
+    <script src="privacy.js?v=2" defer></script>
     <script src="auth.js?v=6" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
   </head>
@@ -32,17 +32,18 @@
       <div class="info-intro">
         <p class="eyebrow"><span class="eyebrow-line"></span> Your device, your choice</p>
         <h1>Cookie<br /><em>Policy.</em></h1>
-        <p class="info-lead">Updated 4 November 2026. This website uses essential account and requested support-chat storage, and offers optional storage for saved looks.</p>
+        <p class="info-lead">Updated 8 November 2026. This website uses essential account, active-bag and requested support-chat storage, and offers optional storage for saved looks.</p>
       </div>
       <section class="info-section" aria-labelledby="cookie-essential">
         <h2 id="cookie-essential">Essential cookies and choices</h2>
         <p><strong>Sign-in cookie &mdash; <code>velora_session</code>:</strong> set when you sign in or create an account. It contains an opaque session identifier, is HttpOnly and SameSite=Lax, and is used by the account service. Customer sessions expire after 12 hours, or up to 30 days when you choose to remain signed in. Staff sessions expire after 30 minutes of inactivity or eight hours overall. Signing out expires the current session.</p>
         <p><strong>Guest support cookie &mdash; <code>velora_support</code>:</strong> set only when you open support chat as a guest. It contains an opaque identifier for your private guest conversation, is HttpOnly and SameSite=Strict, is limited to the support API path, and expires after seven days. It is used to provide the chat you request, rather than to track browsing. Signed-in support uses your account session. Opening a page without opening chat does not create a guest support session.</p>
         <p><strong>Support panel &mdash; <code>velora-support-panel</code>:</strong> after you first open chat, session storage remembers only whether its panel is open or closed in this tab. This lets the conversation reconnect as you browse this website. It does not contain messages, names or session credentials and ends when the tab's session storage is cleared.</p>
+        <p><strong>Active shopping bag &mdash; <code>velora-session-bag-v1</code>:</strong> session storage keeps the product selections and quantities you add to the preview bag while browsing and reloading pages in the same tab. It does not contain account credentials or payment details. It lasts for the tab's browser session, or until you clear device data. No order is submitted.</p>
         <p><strong>Privacy choice &mdash; <code>veloraPrivacyChoice</code>:</strong> browser local storage remembers whether you allowed saved-look storage, together with the choice version and dates. It lasts up to 180 days. It records your choice rather than tracking your browsing.</p>
         <h2>Optional storage for saved looks</h2>
         <p>With your permission, local storage remembers your wishlist and preview shopping bag on this browser. No order is submitted. The values describe selected products and quantities, not your account password or payment information. They last for up to 180 days, or until you clear them, remove them individually, withdraw this choice or clear your browser's site data.</p>
-        <p>Until you allow this storage, the wishlist and bag can be used on the current page without being remembered after reloading. Refusing this choice does not block browsing, accounts or account security. Withdrawing it removes the saved wishlist and bag from this browser.</p>
+        <p>Without optional storage, your active bag stays available across pages in the current tab's session; your wishlist lasts only for the current page. Refusing this choice does not block browsing, accounts or account security. Withdrawing it removes the long-term saved wishlist and bag, while keeping the active session bag. Clearing device data also removes that session bag.</p>
         <h2>No analytics or advertising categories</h2>
         <p>No analytics, advertising pixels, social-media embeds or marketing SDKs are enabled. There is no additional category to accept for these purposes. Fonts and the QR-code library are served locally, so loading a page does not request them from Google Fonts or an external QR service.</p>
         <h2 id="preferences">Change your preferences</h2>

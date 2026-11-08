@@ -466,7 +466,7 @@ const productDetails = {
   "The After-Hours Power Suit": { price: 245, description: "Evening-ready tailoring pairs a sharp silhouette with a confident, modern finish." },
 };
 
-const currency = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR", minimumFractionDigits: 0, maximumFractionDigits: 2 });
+const currency = window.VeloraShopping.currency;
 const productKey = (look) => `${look.name}:${look.image}`;
 const colorPalette = [
   { name: "Ivory", hex: "#e8e2d6", tokens: ["ivory", "cream", "white", "pearl", "cloud"] },
@@ -575,7 +575,6 @@ individualLooks.forEach((look) => {
 });
 
 const lookByKey = new Map(individualLooks.map((look) => [look.key, look]));
-const shoppingStorageKey = "velora-shopping-v1";
 const selectedVariants = new Map();
 const productKeyAliases = new Map();
 let galleryImageSequence = 0;
@@ -721,13 +720,15 @@ function configurePurchaseButton(button, look) {
   button.textContent = soldOut ? "Sold out" : "Add to bag";
 }
 
-function canAddToBag(look) {
-  const stock = variantAvailableStock(look), selection = getVariantSelection(look);
+function canAddToBag(look, selection = getVariantSelection(look)) {
+  const stock = variantAvailableStock(look, selection);
   if (stock === null || stock === undefined) return true;
   const byVariant = look.variant_stock && Object.keys(look.variant_stock).length;
   const quantity = [...shoppingCart].reduce((total, [key, count]) => {
     const item = getCartItem(key);
-    return total + (item?.look.key === look.key && (!byVariant || item.color === selection.color && item.size === selection.size) ? count : 0);
+    const itemSelection = item && { color: item.color || getVariantSelection(item.look).color, size: item.size || getVariantSelection(item.look).size };
+    const matchesVariant = itemSelection && itemSelection.color.toLowerCase() === selection.color.toLowerCase() && itemSelection.size.toLowerCase() === selection.size.toLowerCase();
+    return total + (item?.look.key === look.key && (!byVariant || matchesVariant) ? count : 0);
   }, 0);
   if (quantity < stock) return true;
   showShoppingNotice(stock === 0 ? "This size and color is currently sold out." : `Only ${stock} of this selection can be added to your bag.`, "neutral");
@@ -908,45 +909,16 @@ function getCartItem(cartKey) {
 }
 
 function readShoppingState() {
-  if (!window.VeloraPrivacy?.canSaveLooks()) return { wishlist: new Set(), cart: new Map() };
-  try {
-    const stored = window.localStorage.getItem(shoppingStorageKey);
-    if (!stored) return { wishlist: new Set(), cart: new Map() };
-    const parsed = JSON.parse(stored);
-    const wishlist = new Set(
-      Array.isArray(parsed.wishlist) ? parsed.wishlist.filter((key) => typeof key === "string" && key.length <= 1000) : [],
-    );
-    const cart = new Map(
-      Object.entries(parsed.cart ?? {}).filter(
-        ([key, quantity]) => key.length <= 1500 && Number.isInteger(quantity) && quantity > 0 && quantity <= 999999,
-      ),
-    );
-    return { wishlist, cart };
-  } catch (error) {
-    console.error("Could not load the saved Velora shopping state.", error);
-    shoppingStateReadError = true;
-    return { wishlist: new Set(), cart: new Map() };
-  }
+  const state = window.VeloraShopping.read();
+  shoppingStateReadError = state.readError;
+  return state;
 }
 
 let shoppingStateReadError = false;
 const { wishlist: savedLooks, cart: shoppingCart } = readShoppingState();
 
 function persistShoppingState() {
-  try {
-    if (!window.VeloraPrivacy?.canSaveLooks()) {
-      window.localStorage.removeItem(shoppingStorageKey);
-      return true;
-    }
-    window.localStorage.setItem(
-      shoppingStorageKey,
-      JSON.stringify({ wishlist: [...savedLooks], cart: Object.fromEntries(shoppingCart) }),
-    );
-    return true;
-  } catch (error) {
-    console.error("Could not save the Velora shopping state.", error);
-    return false;
-  }
+  return window.VeloraShopping.save({ wishlist: savedLooks, cart: shoppingCart });
 }
 
 const founderRecommendations = [
@@ -1511,7 +1483,7 @@ function shoppingSaveNotice(saved, successMessage, successType = "success") {
 }
 
 if (shoppingStateReadError) {
-  showShoppingNotice("Saved shopping details couldn't be loaded. Your current bag and wishlist are empty.", "error");
+  showShoppingNotice("Some saved shopping details couldn't be loaded. Please check your bag before continuing.", "error");
 }
 
 function updateShopCounts() {
@@ -1987,7 +1959,8 @@ document.addEventListener("click", async (event) => {
     const item = key ? getCartItem(key) : null;
     if (!item) return;
     if (item.look.published === false && (action === "increase" || action === "wishlist-to-cart")) return;
-    if ((action === "increase" || action === "wishlist-to-cart") && !canAddToBag(item.look)) return;
+    const selection = { color: item.color || getVariantSelection(item.look).color, size: item.size || getVariantSelection(item.look).size };
+    if ((action === "increase" || action === "wishlist-to-cart") && !canAddToBag(item.look, selection)) return;
     let notice;
     if (action === "increase") shoppingCart.set(key, (shoppingCart.get(key) ?? 0) + 1);
     if (action === "increase") notice = `Added another ${item.look.name} to your shopping bag.`;
@@ -2008,7 +1981,7 @@ document.addEventListener("click", async (event) => {
       notice = `Removed ${item.look.name} from your wishlist.`;
     }
     if (action === "wishlist-to-cart") {
-      const cartKey = createCartKey(item.look);
+      const cartKey = createCartKey(item.look, selection);
       shoppingCart.set(cartKey, (shoppingCart.get(cartKey) ?? 0) + 1);
       notice = `Added ${item.look.name} to your shopping bag.`;
     }
@@ -2085,7 +2058,14 @@ if (window.matchMedia("(hover: hover) and (pointer: fine)").matches && !reducedM
   });
 }
 
-window.addEventListener("velora:privacy-changed", persistShoppingState);
+window.addEventListener("velora:privacy-changed", () => {
+  if (!window.VeloraPrivacy?.canSaveLooks()) savedLooks.clear();
+  persistShoppingState();
+  updateShopCounts();
+  renderLooks();
+  renderRecommendations();
+  if (shopDialog?.open) renderShopDialog();
+});
 window.addEventListener("velora:device-data-cleared", () => {
   savedLooks.clear();
   shoppingCart.clear();
@@ -2178,7 +2158,7 @@ function renderCatalogFilters() {
     "THE EVERYDAY EDIT": "Everyday", "THE SOFT EDIT": "Soft essentials",
     "THE AFTER-HOURS EDIT": "After hours", "THE EVENING EDIT": "Evening",
     "THE MODEST EDIT": "Modest dressing", "THE POLISHED EDIT": "Polished",
-    "THE TAILORED EDIT": "Tailoring", "THE OCCASION EDIT": "Occasion",
+    "THE TAILORED EDIT": "Tailoring", "THE OCCASION EDIT": "Occasion", "THE LAYERING EDIT": "Layering",
   };
   function button(value, text, type, selected) {
     const node = document.createElement("button");
@@ -2231,6 +2211,18 @@ async function loadManagedCatalog() {
   return catalogLoading;
 }
 window.veloraCatalogReady = loadManagedCatalog();
+const requestedShopView = new URLSearchParams(location.search);
+if (requestedShopView.get("view") === "bag") {
+  window.veloraCatalogReady.finally(() => {
+    activeShopView = "cart";
+    checkoutStage = "bag";
+    renderShopDialog();
+    if (shopDialog instanceof HTMLDialogElement && !shopDialog.open) shopDialog.showModal();
+    requestedShopView.delete("view");
+    const search = requestedShopView.toString();
+    history.replaceState(null, "", `${location.pathname}${search ? `?${search}` : ""}${location.hash}`);
+  });
+}
 window.addEventListener("focus", () => {
   if (Date.now() - catalogLoadedAt > 2000) window.veloraCatalogReady = loadManagedCatalog();
 });

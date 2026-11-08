@@ -41,6 +41,10 @@ The admin portal shows product/customer counts, stock alerts, registered custome
 
 Products keep their identity when you change their names or cover photos, so saved wishlist and shopping-bag entries can follow those edits. Published products and their categories, designers, photos and sizes are loaded from the saved catalog by the storefront.
 
+The active preview bag is shared between the collection and product pages using tab session storage, including when visitors choose necessary storage only. Optional saved looks remember the bag and wishlist between visits. Withdrawing optional storage removes the long-term copy and wishlist while preserving the active session bag; **Clear device data** also empties the session bag. Prices are shown in euros throughout.
+
+Use **Shop operations → Inventory** to allocate stock to a product's listed sizes and colors. Unknown options are rejected. Before removing or renaming an option with stock or an outstanding order, resolve its inventory and order records first; catalog edits cannot silently detach those records. Product editors warn before discarding unsaved changes. On mobile, the Admin menu exposes every section and product actions remain visible in each product row.
+
 ## Department folders and colleague access
 
 Open **Admin portal → Velora accounts** using an owner administrator account. Select **Create Velora account**, enter the colleague's name, an unused `@velora.com` work address and a starting password, then choose the department and access role. This creates a website sign-in account for the work address; it does not create an email mailbox. Passwords are hashed and never returned by the API. The colleague can change the starting password after signing in.
@@ -48,6 +52,8 @@ Open **Admin portal → Velora accounts** using an owner administrator account. 
 Public registration always creates a customer account, including registration using an `@velora.com` address. Gmail, Hotmail and other public/customer accounts stay under **Customers** and never appear in colleague folder access. Only explicitly provisioned Velora accounts are listed in **Velora accounts**. Existing customer accounts are never silently converted when a colleague address is already in use. Existing administrator credentials continue working. During migration, existing owner-assigned workspace profiles on `@velora.com` are retained as Velora accounts; other customer email domains do not gain colleague privileges.
 
 Choose **Colleague** for the intranet and assigned folders, **Store manager** for collection and commerce tools, **Warehouse** for fulfillment, or **Full control** for owner administration and management of every shared folder, including Finance and HR. Only owners can create colleagues or change these roles. Disabling an account prevents sign-in and revokes its sessions; role changes also revoke existing sessions. Self-demotion and removing the last enabled owner are prevented.
+
+**Velora accounts** is the single place to change colleague roles and folder access. The former role editor under **Shop operations → Staff** links here; its old role-changing API no longer accepts changes.
 
 Enabled colleagues can open **My account → Team workspace**. Shared folders include a company library and nine department folders. The company library references the existing public website images and current published product catalog without moving the storefront originals. It also accepts private uploads when a colleague has explicit Manage access. Website originals are read-only here and remain public on the storefront.
 

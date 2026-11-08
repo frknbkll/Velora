@@ -11,15 +11,16 @@
     <title>Velora — The opening collection</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=67" />
-    <link rel="stylesheet" href="shopping-enhancements.css?v=1" />
+    <link rel="stylesheet" href="shopping-enhancements.css?v=2" />
     <link rel="stylesheet" href="shop-discounts.css?v=1" />
-    <script src="privacy.js?v=1" defer></script>
+    <script src="privacy.js?v=2" defer></script>
+    <script src="shopping-state.js?v=1" defer></script>
     <script src="founder-portraits.js?v=1" defer></script>
     <script src="auth.js?v=7" defer></script>
     <script src="product-color-images.js?v=8" defer></script>
     <script src="product-responsive-images.js?v=2" defer></script>
-    <script src="script.js?v=51" defer></script>
-    <link rel="stylesheet" href="homepage-variants.css?v=6" />
+    <script src="script.js?v=52" defer></script>
+    <link rel="stylesheet" href="homepage-variants.css?v=7" />
     <link rel="stylesheet" href="school.css?v=1" />
     <script src="scroll-effects.js?v=1" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
@@ -110,7 +111,7 @@
             <p class="eyebrow"><span class="eyebrow-line"></span> Curated with intention</p>
             <h2>Find your<br /><em>own rhythm.</em></h2>
           </div>
-          <p class="section-aside">Explore thoughtfully composed edits, discover the stories behind each look, and find the pieces that feel like you.</p>
+          <p class="section-aside">Explore the edits. Find a piece that feels like you.</p>
         </div>
         <p class="showcase-notice">A concept collection with illustrative prices in euros. Includes AI-created imagery. Fabric names describe the visual style; composition and availability are unconfirmed. No orders or payments are taken. <a href="shopping-info.html">Shopping information</a></p>
         <div class="look-filters look-filters--categories" data-filter-group="category" role="group" aria-label="Shop by category">
@@ -122,6 +123,8 @@
           <button class="look-filter" type="button" data-category="THE POLISHED EDIT" aria-pressed="false">Polished</button>
           <button class="look-filter" type="button" data-category="THE TAILORED EDIT" aria-pressed="false">Tailoring</button>
         </div>
+        <details class="collection-refinements" id="collection-refinements">
+          <summary>Filter &amp; sort <span class="refinement-count" id="refinement-count"></span></summary>
         <div class="look-filters look-filters--founders" data-filter-group="founder" role="group" aria-label="Browse by founder">
           <span class="look-filter-label">THE FOUNDERS</span>
           <button class="look-filter is-active" type="button" data-founder="all" aria-pressed="true">All the looks</button>
@@ -130,8 +133,6 @@
           <button class="look-filter" type="button" data-founder="Luna Moretti" aria-pressed="false">Luna</button>
           <button class="look-filter" type="button" data-founder="Victoria Mendez" aria-pressed="false">Victoria</button>
         </div>
-        <details class="collection-refinements" id="collection-refinements" open>
-          <summary>Filter &amp; sort <span class="refinement-count" id="refinement-count"></span></summary>
           <div class="refinement-fields">
             <label>Find a piece<input id="collection-search" type="search" placeholder="Search the collection" maxlength="120" /></label>
             <label>Size<select id="collection-size"><option value="all">All sizes</option></select></label>
@@ -142,26 +143,28 @@
           </div>
           <div class="refinement-actions">
             <button id="clear-collection-filters" type="button">Clear all filters</button>
-            <p id="collection-filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
           </div>
         </details>
-        <nav class="shopping-help-links" aria-label="Help choosing your piece">
-          <a href="shopping-info.html#size-fit">Size &amp; fit advice</a>
-          <a href="refund-policy.html">Delivery &amp; returns</a>
-          <a href="our-story.html">The story behind Velora</a>
-          <a href="reviews.html">Customer reviews</a>
-        </nav>
-        <div class="shop-tools" aria-label="Your shopping">
+        <div class="collection-browse-summary">
+          <p id="collection-filter-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          <div class="shop-tools" aria-label="Your shopping">
           <button class="shop-tool" type="button" data-shop-view="wishlist" aria-haspopup="dialog">
             Wishlist <span class="shop-tool-count" id="wishlist-count">0</span>
           </button>
           <button class="shop-tool" type="button" data-shop-view="cart" aria-haspopup="dialog">
             Shopping bag <span class="shop-tool-count" id="cart-count">0</span>
           </button>
+          </div>
         </div>
         <div class="looks-grid" id="looks-grid" aria-live="polite"></div>
         <button class="show-more-looks" id="show-more-looks" type="button">A few more, please <span>↓</span></button>
         <p class="looks-note" id="looks-count" aria-live="polite"></p>
+        <nav class="shopping-help-links" aria-label="Help choosing your piece">
+          <a href="shopping-info.html#size-fit">Size &amp; fit advice</a>
+          <a href="refund-policy.html">Delivery &amp; returns</a>
+          <a href="our-story.html">The story behind Velora</a>
+          <a href="reviews.html">Customer reviews</a>
+        </nav>
       </section>
 
       <dialog class="product-dialog" id="product-dialog" aria-labelledby="product-dialog-title">

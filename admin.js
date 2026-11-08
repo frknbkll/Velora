@@ -7,6 +7,11 @@
   const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
   let toastTimer;
   let loading;
+  let currentSection = null;
+  let editorSnapshot = null;
+  let discardAction = null;
+  let discardFocus = null;
+  const mobileNavigation = window.matchMedia("(max-width: 899px)");
   function element(tag, className, text) {
     const node = document.createElement(tag);
     if (className) node.className = className;
@@ -78,7 +83,9 @@
       const actions = element("td"), buttons = element("div", "admin-row-actions");
       if (product.deleted_at) buttons.append(actionButton("Restore", "restore", product.id, "clock"));
       else buttons.append(actionButton("Edit", "edit", product.id, "edit"), actionButton("Duplicate", "duplicate", product.id, "copy"), actionButton("Trash", "trash", product.id, "trash"));
-      actions.append(buttons); row.append(nameCell, element("td", "admin-founder-cell", product.founder), element("td", "admin-price-cell", currency.format(product.price)), stockCell, statusCell, actions); return row;
+      actions.append(buttons); row.append(nameCell, element("td", "admin-founder-cell", product.founder), element("td", "admin-price-cell", currency.format(product.price)), stockCell, statusCell, actions);
+      [...row.cells].forEach((cell, index) => { cell.dataset.label = ["Product", "Founder", "Price", "Stock", "Visibility", "Actions"][index]; });
+      return row;
     });
     $("#admin-products-body").replaceChildren(...rows); $("#admin-products-empty").hidden = matches.length > 0;
     $("#admin-products-empty").textContent = visibility === "trash" && !search ? "Your trash is empty. Removed products can be restored here." : "No products match these filters. Try another search or stock level.";
@@ -104,18 +111,73 @@
   }
   function selectSection() {
     const selected = window.veloraCommerceRole === "warehouse" ? "operations" : location.hash.slice(1), section = sections.includes(selected) ? selected : "overview";
+    if (currentSection && currentSection !== section && editorIsDirty()) {
+      history.replaceState(null, "", `#${currentSection}`);
+      requestEditorDiscard(() => { finishCloseEditor(); location.hash = section; });
+      return;
+    }
+    const sectionChanged = currentSection !== null && currentSection !== section;
+    currentSection = section;
     sections.forEach((name) => { $(`#admin-${name}`).hidden = name !== section; });
     document.querySelectorAll("[data-admin-section]").forEach((link) => { if (link.dataset.adminSection === section) link.setAttribute("aria-current", "page"); else link.removeAttribute("aria-current"); });
     const sectionTitle = section === "business" ? "Business details" : section === "folder-access" ? "Velora accounts" : section === "discounts" ? "Discount codes" : section[0].toUpperCase() + section.slice(1);
     $("#admin-breadcrumb").textContent = sectionTitle; document.title = `${sectionTitle} \u2014 Velora admin`;
+    $("#admin-menu-current").textContent = sectionTitle;
+    closeMobileMenu(false);
     requestAnimationFrame(() => {
       const nav = $(".admin-nav"), current = nav?.querySelector('[aria-current="page"]');
-      if (!current) return;
-      const frame = nav.getBoundingClientRect(), item = current.getBoundingClientRect();
-      if (item.right > frame.right) nav.scrollLeft += item.right - frame.right;
-      else if (item.left < frame.left) nav.scrollLeft += item.left - frame.left;
+      if (!mobileNavigation.matches && current) {
+        const frame = nav.getBoundingClientRect(), item = current.getBoundingClientRect();
+        if (item.right > frame.right) nav.scrollLeft += item.right - frame.right;
+        else if (item.left < frame.left) nav.scrollLeft += item.left - frame.left;
+      }
+      if (sectionChanged) {
+        window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+        const heading = $(`#admin-${section} h1`);
+        if (heading) { heading.tabIndex = -1; heading.focus({ preventScroll: true }); }
+      }
     });
     document.dispatchEvent(new CustomEvent("velora:admin-section", { detail: { section } }));
+  }
+  function closeMobileMenu(restoreFocus = false) {
+    const toggle = $("#admin-menu-toggle");
+    const wasOpen = toggle.getAttribute("aria-expanded") === "true";
+    toggle.setAttribute("aria-expanded", "false");
+    $(".admin-sidebar").classList.remove("is-menu-open");
+    if (restoreFocus && wasOpen) toggle.focus({ preventScroll: true });
+  }
+  function editorValues() {
+    return JSON.stringify({
+      fields: [...$("#admin-edit-form").querySelectorAll("input,select,textarea")]
+        .filter((control) => control.type !== "file")
+        .map((control) => [control.id || control.name, control.type === "checkbox" ? control.checked : control.value]),
+      photos: state.photos,
+      colors: state.colorVariants,
+    });
+  }
+  function editorIsDirty() {
+    return $("#admin-edit-dialog").open && editorSnapshot !== null && (state.uploading || editorValues() !== editorSnapshot);
+  }
+  function finishCloseEditor() {
+    editorSnapshot = null;
+    state.editorVersion += 1;
+    state.uploading = false;
+    $("#admin-edit-dialog").close();
+  }
+  function requestEditorDiscard(action) {
+    if (state.saving) return;
+    if (!editorIsDirty()) { action(); return; }
+    if ($("#admin-discard-dialog").open) return;
+    discardAction = action;
+    discardFocus = document.activeElement;
+    $("#admin-discard-dialog").showModal();
+    $("#admin-discard-keep").focus();
+  }
+  function keepEditing() {
+    discardAction = null;
+    $("#admin-discard-dialog").close();
+    if (discardFocus?.isConnected) discardFocus.focus({ preventScroll: true });
+    else $("#admin-edit-product-name").focus({ preventScroll: true });
   }
   async function refreshData() {
     if (loading) return loading; $("#admin-data-retry").disabled = true; $("#admin-main").setAttribute("aria-busy", "true");
@@ -270,6 +332,11 @@
       if (state.editing?.id === productId) {
         state.editing = response.product;
         state.colorVariants = [...(response.product.color_variants || [])];
+        if (editorSnapshot) {
+          const saved = JSON.parse(editorSnapshot);
+          saved.colors = state.colorVariants;
+          editorSnapshot = JSON.stringify(saved);
+        }
         renderColorVariants();
       }
       renderProducts();
@@ -310,6 +377,7 @@
     $("#admin-edit-save").textContent = product ? "Save changes \u2197" : "Create product \u2197"; $("#admin-edit-save").disabled = state.generatingDescription || state.generatingDraft; $("#admin-image-files").disabled = false;
     editorError(""); renderGallery(); renderColorVariants();
     if (!$("#admin-edit-dialog").open) $("#admin-edit-dialog").showModal();
+    editorSnapshot = editorValues();
     $("#admin-edit-dialog").scrollTop = 0; $("#admin-edit-product-name").focus({ preventScroll: true });
   }
   async function generateDescription() {
@@ -421,7 +489,7 @@
       }
     }
   }
-  function closeEditor() { if (state.saving) return; state.editorVersion += 1; state.uploading = false; $("#admin-edit-dialog").close(); }
+  function closeEditor() { requestEditorDiscard(finishCloseEditor); }
   function setEditorBusy(busy) {
     state.saving = busy; $("#admin-edit-dialog").setAttribute("aria-busy", String(busy));
     $("#admin-edit-form").querySelectorAll("input, textarea, select, button").forEach((control) => { control.disabled = busy; });
@@ -452,7 +520,7 @@
         $("#admin-stock-filter").value = "all";
         $("#admin-product-sort").value = "newest";
       }
-      $("#admin-edit-dialog").close(); state.editorVersion += 1; await refreshData();
+      editorSnapshot = null; $("#admin-edit-dialog").close(); state.editorVersion += 1; await refreshData();
       showToast(product ? "Product updated. Your collection is ready." : "Product created. Your new piece is ready.");
     } catch (error) { if (error.status === 401 || error.status === 403) showError(error); else editorError(error.message || "We couldn\u2019t save this product. Please try again."); }
     finally { setEditorBusy(false); renderGallery(); }
@@ -488,8 +556,12 @@
 
   function openTrash(id) {
     const product = state.products.find((item) => item.id === id); if (!product || product.deleted_at || state.saving) return;
-    if ($("#admin-edit-dialog").open) closeEditor(); state.trash = product;
-    $("#admin-delete-name").textContent = product.name; $("#admin-delete-error").hidden = true; $("#admin-delete-dialog").showModal(); $("#admin-delete-cancel").focus();
+    const proceed = () => {
+      if ($("#admin-edit-dialog").open) finishCloseEditor();
+      state.trash = product;
+      $("#admin-delete-name").textContent = product.name; $("#admin-delete-error").hidden = true; $("#admin-delete-dialog").showModal(); $("#admin-delete-cancel").focus();
+    };
+    if ($("#admin-edit-dialog").open) requestEditorDiscard(proceed); else proceed();
   }
   function closeTrash() { if (!state.trashBusy) $("#admin-delete-dialog").close(); }
   async function trashProduct() {
@@ -541,6 +613,38 @@
     } catch (error) { $("#admin-access").classList.add("has-error"); $("#admin-access h1").textContent = "A moment behind the scenes."; $("#admin-access-message").textContent = error.message || "We couldn\u2019t open the studio. Please try again."; $("#admin-access-retry").hidden = false; }
   }
   window.addEventListener("hashchange", selectSection);
+  $("#admin-menu-toggle").addEventListener("click", () => {
+    const toggle = $("#admin-menu-toggle"), open = toggle.getAttribute("aria-expanded") !== "true";
+    toggle.setAttribute("aria-expanded", String(open));
+    $(".admin-sidebar").classList.toggle("is-menu-open", open);
+    if (open) $(".admin-nav a:not([hidden])[aria-current='page']")?.focus({ preventScroll: true });
+  });
+  document.addEventListener("click", (event) => {
+    if (!(event.target instanceof Element)) return;
+    if (!event.target.closest(".admin-sidebar")) closeMobileMenu(false);
+    const link = event.target.closest("a[href]");
+    if (link?.dataset.adminSection) closeMobileMenu(false);
+    if (!link || link.target === "_blank" || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey || !editorIsDirty()) return;
+    event.preventDefault();
+    requestEditorDiscard(() => { finishCloseEditor(); location.href = link.href; });
+  }, true);
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && $("#admin-menu-toggle").getAttribute("aria-expanded") === "true") {
+      event.preventDefault(); closeMobileMenu(true);
+    }
+  });
+  mobileNavigation.addEventListener("change", () => closeMobileMenu(false));
+  window.addEventListener("beforeunload", (event) => {
+    if (!editorIsDirty()) return;
+    event.preventDefault(); event.returnValue = "";
+  });
+  $("#admin-discard-keep").addEventListener("click", keepEditing);
+  $("#admin-discard-confirm").addEventListener("click", () => {
+    const action = discardAction; discardAction = null;
+    $("#admin-discard-dialog").close();
+    action?.();
+  });
+  $("#admin-discard-dialog").addEventListener("cancel", (event) => { event.preventDefault(); keepEditing(); });
   $("#admin-product-search").addEventListener("input", renderProducts);
   ["#admin-product-filter", "#admin-stock-filter", "#admin-product-sort"].forEach((selector) => $(selector).addEventListener("change", renderProducts));
   $("#admin-customer-search").addEventListener("input", renderCustomers); $("#admin-add-product").addEventListener("click", () => openEditor()); $("#admin-export-products").addEventListener("click", exportProducts);
@@ -567,7 +671,7 @@
     else if (button.dataset.duplicateProduct) productAction(button, "duplicate", button.dataset.duplicateProduct); else if (button.dataset.restoreProduct) productAction(button, "restore", button.dataset.restoreProduct);
   });
   $("#admin-edit-close").addEventListener("click", closeEditor); $("#admin-edit-cancel").addEventListener("click", closeEditor);
-  $("#admin-edit-dialog").addEventListener("cancel", (event) => { if (state.saving) event.preventDefault(); else { state.editorVersion += 1; state.uploading = false; } });
+  $("#admin-edit-dialog").addEventListener("cancel", (event) => { event.preventDefault(); closeEditor(); });
   $("#admin-edit-dialog").addEventListener("click", (event) => { if (event.target !== event.currentTarget) return; const rect = event.currentTarget.getBoundingClientRect(); if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeEditor(); });
   $("#admin-edit-form").addEventListener("submit", saveProduct);
   $("#admin-generate-description").addEventListener("click", generateDescription);
@@ -596,6 +700,10 @@
   $("#admin-activity-refresh").addEventListener("click", async (event) => { event.currentTarget.disabled = true; await refreshData(); $("#admin-activity-refresh").disabled = false; });
   document.querySelectorAll("[data-stock-shortcut]").forEach((button) => button.addEventListener("click", () => { $("#admin-product-filter").value = "all"; $("#admin-product-search").value = ""; $("#admin-stock-filter").value = button.dataset.stockShortcut; location.hash = "products"; selectSection(); renderProducts(); }));
   $("#admin-trash-shortcut").addEventListener("click", () => { $("#admin-product-filter").value = "trash"; $("#admin-product-search").value = ""; $("#admin-stock-filter").value = "all"; location.hash = "products"; selectSection(); renderProducts(); });
-  $("#admin-signout").addEventListener("click", async () => { $("#admin-signout").disabled = true; try { await window.VeloraAuth.logout(); } catch (error) { showError(error); $("#admin-signout").disabled = false; } });
+  $("#admin-signout").addEventListener("click", () => requestEditorDiscard(async () => {
+    if ($("#admin-edit-dialog").open) finishCloseEditor();
+    $("#admin-signout").disabled = true;
+    try { await window.VeloraAuth.logout(); } catch (error) { showError(error); $("#admin-signout").disabled = false; }
+  }));
   init();
 })();

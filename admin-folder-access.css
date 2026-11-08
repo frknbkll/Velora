@@ -43,7 +43,8 @@
 .folder-access-permission select { flex: 0 0 160px; min-width: 0; width: 160px; min-height: 42px; padding: 10px; border: 1px solid #d4c7b6; border-radius: 5px; background: #fffefa; color: #514735; font: inherit; font-size: .75rem; }
 .folder-access-dialog :disabled { cursor: not-allowed; opacity: .55; }
 .folder-access-permission.is-restricted { color: #766958; }
-.folder-access-editor-actions { display: flex; justify-content: flex-end; gap: 12px; margin-top: 25px; padding-top: 22px; border-top: 1px solid #e3d8c8; }
+.folder-access-editor-actions { position: sticky; z-index: 2; bottom: -30px; display: flex; justify-content: flex-end; gap: 12px; margin: 25px -30px -30px; padding: 18px 30px 24px; border-top: 1px solid #e3d8c8; background: #fffdf8f5; backdrop-filter: blur(8px); }
+.folder-access-editor-actions .admin-button { min-height: 44px; }
 .folder-access-heading-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
 .folder-access-role-label { display: block; margin-top: 9px; color: #776b5c; font-size: .625rem; line-height: 1.6; }
 .folder-access-role-label.is-full-control { color: #87602f; }
@@ -65,6 +66,7 @@
   .folder-access-permission-copy { flex-basis: 100%; }
   .folder-access-permission select { flex-basis: 100%; width: 100%; font-size: 1rem; }
   .folder-access-editor-actions .admin-button { flex: 1; }
+  .folder-access-editor-actions { bottom: -24px; margin-inline: -20px; margin-bottom: -24px; padding: 14px 20px 20px; }
   .folder-access-heading-actions { width: 100%; }
   .folder-access-heading-actions .admin-button { flex: 1; font-size: .6875rem; padding-inline: 12px; }
   .colleague-create-fields { grid-template-columns: minmax(0, 1fr); gap: 17px; }

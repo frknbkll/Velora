@@ -43,6 +43,8 @@ class ShoppingChecks(Checks):
 def scenarios(checks):
     checks.navigate("index.html", ready="window.veloraCatalogReady && document.documentElement.dataset.catalogState === 'managed'")
     checks.evaluate("document.querySelector('#privacy-banner [data-privacy-choice=\"necessary\"]')?.click()")
+    checks.click('#collection-refinements > summary')
+    checks.check(checks.evaluate("document.querySelector('#collection-refinements').open"), "Advanced filters open on request")
     checks.check(checks.evaluate("document.querySelectorAll('#collection-color option').length > 2 && document.querySelectorAll('#collection-size option').length > 2"), "Catalog supplies color and size filter choices")
     checks.choose("size", "XS")
     checks.choose("color", "Ivory")
@@ -52,8 +54,9 @@ def scenarios(checks):
     checks.check(checks.evaluate("document.querySelectorAll('.look-tile').length === 1 && document.querySelector('.look-tile-caption strong').textContent === 'The Ivory Linen Set'"), "Size, color, price, occasion and search combine to find the intended piece")
     checks.check(checks.evaluate("document.querySelector('.look-tile .product-size-option[aria-pressed=true]').textContent === 'XS' && document.querySelector('.look-tile .product-color-option[aria-pressed=true]').dataset.optionValue === 'Ivory'"), "Matched size and color carry into product selections")
     checks.check(checks.evaluate("document.querySelector('#refinement-count').textContent === '5 active' && document.querySelector('#collection-filter-status').textContent.includes('1 of 1')"), "Active filters and result count are announced")
-    checks.wait("document.querySelector('.look-tile-image > img').complete && document.querySelector('.look-tile-image > img').naturalWidth > 0")
-    checks.check(checks.evaluate("document.querySelector('.look-tile-image > img').srcset.includes('assets/responsive/')"), "Product cards offer real responsive image candidates")
+    checks.evaluate("document.querySelector('.look-tile-image').scrollIntoView({block:'center',behavior:'instant'})")
+    checks.wait("document.querySelector('.look-photo-trigger img').complete && document.querySelector('.look-photo-trigger img').naturalWidth > 0")
+    checks.check(checks.evaluate("document.querySelector('.look-photo-trigger img').srcset.includes('assets/responsive/')"), "Product cards offer real responsive image candidates")
     checks.choose("search", "No matching garment 4728")
     checks.check(checks.evaluate("document.querySelectorAll('.look-tile').length === 0 && !!document.querySelector('.collection-empty button') && document.querySelector('#show-more-looks').hidden"), "An empty result has an accessible reset action")
     checks.click(".collection-empty button")
@@ -129,6 +132,7 @@ def main():
         except BaseException as error:
             if checks:
                 print('Dialog state:', checks.evaluate("({zoom:document.querySelector('#image-zoom-dialog')?.open,product:document.querySelector('#product-dialog')?.open,active:document.activeElement?.outerHTML.slice(0,300),errors:window.__shoppingErrors})"))
+                print('Product photo:', checks.evaluate("(()=>{const i=document.querySelector('.look-photo-trigger img');return {scrollY,src:i?.src,current:i?.currentSrc,complete:i?.complete,natural:i?.naturalWidth,loading:i?.loading,rect:i?.getBoundingClientRect().toJSON()}})()"))
             report = f'FAIL: {type(error).__name__}: {error}\nCompleted checks: {len(checks.passed) if checks else 0}\n'
             (ROOT / 'tmp/shopping-browser-results.txt').write_text(report, encoding='utf-8')
             print(report)

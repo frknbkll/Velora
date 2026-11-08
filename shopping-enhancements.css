@@ -1,4 +1,13 @@
 /* Collection tools and product advice share the existing Velora palette. */
+.photo-diary.section-shell { padding-top: clamp(38px, 4.5vw, 64px); }
+.photo-diary .section-heading { margin-bottom: 24px; }
+.photo-diary .showcase-notice { margin-bottom: 20px; padding: 12px 16px; }
+.photo-diary .look-filters--categories { margin-bottom: 16px; padding-bottom: 16px; }
+.collection-browse-summary { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px 20px; margin-bottom: 22px; }
+.collection-browse-summary > p { margin: 0; color: var(--muted); font-size: var(--type-small); line-height: 1.5; }
+.collection-browse-summary .shop-tools { margin: 0; }
+.collection-browse-summary .shop-tool { display: inline-flex; align-items: center; justify-content: center; gap: 8px; width: auto; min-height: 44px; white-space: nowrap; }
+.photo-diary > .shopping-help-links { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line); }
 .collection-refinements {
   margin: 22px 0;
   border: 1px solid var(--line);
@@ -22,6 +31,7 @@
 .collection-refinements > summary::after { content: "+"; margin-left: auto; font-size: 22px; font-weight: 400; }
 .collection-refinements[open] > summary::after { content: "−"; }
 .refinement-count { color: var(--muted); font-size: var(--type-small); font-weight: 400; }
+.collection-refinements .look-filters--founders { margin: 0; padding: 0 20px 18px; }
 .refinement-fields {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -225,6 +235,20 @@
 }
 
 @media (max-width: 650px) {
+  .photo-diary.section-shell { padding-top: 32px; }
+  .photo-diary .section-heading { gap: 12px; margin-bottom: 18px; }
+  .photo-diary .section-heading .eyebrow { margin-bottom: 12px; }
+  .photo-diary .section-heading h2 { font-size: clamp(34px, 9vw, 44px); line-height: 1.07; }
+  .photo-diary .section-aside { margin: 0; font-size: 13px; line-height: 1.6; }
+  .photo-diary .showcase-notice { margin-bottom: 16px; padding: 11px 13px; font-size: 12px; line-height: 1.6; }
+  .photo-diary .look-filters--categories { gap: 6px; margin-bottom: 12px; padding-bottom: 12px; }
+  .photo-diary .look-filters--categories .look-filter { min-height: 44px; padding: 9px 12px; font-size: 12px; }
+  .collection-refinements { margin: 12px 0 16px; }
+  .collection-refinements .look-filters--founders { padding: 0 14px 16px; }
+  .collection-refinements .look-filters--founders .look-filter { min-height: 44px; font-size: 12px; }
+  .collection-browse-summary { gap: 10px; margin-bottom: 18px; }
+  .collection-browse-summary > p { flex: 1 0 100%; font-size: 12px; }
+  .collection-browse-summary .shop-tool { min-height: 44px; }
   .collection-refinements > summary { padding-inline: 14px; }
   .refinement-fields { gap: 14px 10px; padding: 0 14px 16px; }
   .refinement-actions { align-items: flex-start; padding: 0 14px 14px; }

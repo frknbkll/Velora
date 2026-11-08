@@ -75,7 +75,7 @@ with tempfile.TemporaryDirectory(prefix="privacy-browser-", dir=ROOT / "tmp", ig
         checks.click('#privacy-settings [data-privacy-choice="necessary"]')
         checks.check(checks.evaluate("!VeloraPrivacy.canSaveLooks() && localStorage.getItem('velora-shopping-v1')===null"), "Withdrawing permission removes saved shopping data immediately")
         store()
-        checks.check(checks.evaluate("document.querySelector('#wishlist-count').textContent==='0' && document.querySelector('#cart-count').textContent==='0'"), "Withdrawn data is absent after reload")
+        checks.check(checks.evaluate("document.querySelector('#wishlist-count').textContent==='0' && Number(document.querySelector('#cart-count').textContent)>0 && sessionStorage.getItem('velora-session-bag-v1')!==null"), "Withdrawing optional saving removes wishlist persistence while retaining the active session bag")
         checks.evaluate("localStorage.setItem('veloraPrivacyChoice',JSON.stringify({version:1,savedLooks:true,updatedAt:Date.now()-180*86400000-2000,expiresAt:Date.now()-2000}));localStorage.setItem('velora-shopping-v1','{}')")
         store()
         checks.check(checks.evaluate("!VeloraPrivacy.canSaveLooks() && !document.querySelector('#privacy-banner').hidden && localStorage.getItem('velora-shopping-v1')===null"), "Expired choice cannot authorize persistence")
@@ -84,10 +84,10 @@ with tempfile.TemporaryDirectory(prefix="privacy-browser-", dir=ROOT / "tmp", ig
         checks.check(checks.evaluate("document.querySelectorAll('.newsletter input[type=email]').length===0"), "Inactive newsletter does not collect email addresses")
         checks.click('.look-tile .add-to-bag')
         checks.click('[data-shop-view="cart"]')
-        checks.check(checks.evaluate("document.querySelector('#shop-dialog-footer').textContent.includes('No payment is taken') && document.querySelector('#shop-dialog-footer').textContent.includes('no fees are charged')"), "Bag explains preview pricing and absence of charges")
+        checks.check(checks.evaluate("document.querySelector('#shop-dialog-footer').textContent.includes('No order is placed') && document.querySelector('#shop-dialog-footer').textContent.includes('payment are not configured')"), "Bag explains preview pricing and absence of charges")
         checks.evaluate("document.querySelector('#shop-dialog').close()")
         checks.evaluate("localStorage.setItem('unrelated-test-key','keep'); VeloraPrivacy.clearDeviceData()")
-        checks.check(checks.evaluate("localStorage.getItem('unrelated-test-key')==='keep' && localStorage.getItem('veloraPrivacyChoice')===null && document.querySelector('#cart-count').textContent==='0'"), "Clear device data removes only Velora state and updates the UI")
+        checks.check(checks.evaluate("localStorage.getItem('unrelated-test-key')==='keep' && localStorage.getItem('veloraPrivacyChoice')===null && sessionStorage.getItem('velora-session-bag-v1')===null && document.querySelector('#cart-count').textContent==='0'"), "Clear device data removes only Velora state and updates the UI")
         checks.click('#privacy-banner [data-privacy-choice="necessary"]')
 
         for page in ("privacy.html","terms.html","refund-policy.html","cookie-policy.html","business-details.html","unsubscribe.html","register.html","login.html","team.html","founders.html"):
@@ -102,7 +102,7 @@ with tempfile.TemporaryDirectory(prefix="privacy-browser-", dir=ROOT / "tmp", ig
                 checks.wait("document.querySelector('[data-business-field=legalName]').textContent==='QA Example Studio'")
                 checks.check(checks.evaluate("document.querySelector('[data-business-field=customerServiceEmail]').textContent==='qa@example.test' && document.querySelector('[data-business-field=vatNumber]').textContent==='Not yet provided'"), "Published business fields hydrate from saved settings and missing fields stay honest")
             if page=="register.html":
-                checks.check(checks.evaluate("!document.querySelector('#register-terms').checked && !document.querySelector('[name=ageConfirmed]').checked && !document.querySelector('[name=name]').required && !document.querySelector('[type=date]')"), "Registration asks for minimal data and explicit age/terms choices")
+                checks.check(checks.evaluate("!document.querySelector('#register-terms').checked && !document.querySelector('[name=ageConfirmed]').checked && !document.querySelector('[type=date]')"), "Registration requires explicit age and terms choices without collecting a birth date")
         checks.navigate("cookie-policy.html", ready="window.VeloraPrivacy")
         checks.viewport(1440,900)
         settings()

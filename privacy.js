@@ -28,7 +28,7 @@
   banner.hidden = Boolean(current);
   banner.innerHTML = `<div class="privacy-banner-copy">
     <h2 id="privacy-banner-title">Your privacy, your choice.</h2>
-    <p>We use essential storage for sign-in and your privacy choice. With your permission, we can also remember your bag and wishlist on this device. No advertising or analytics trackers.</p>
+    <p>We use essential storage for sign-in, your privacy choice and your bag during this browser-tab session. With your permission, we can also remember your bag and wishlist on this device. No advertising or analytics trackers.</p>
     <a href="cookie-policy.html">Read our Cookie Policy</a>
   </div><div class="privacy-actions">
     <button type="button" data-privacy-choice="necessary">Necessary only</button>
@@ -43,8 +43,8 @@
     <div class="privacy-dialog-heading"><h2 id="privacy-settings-title">Privacy preferences</h2>
       <button type="button" class="privacy-close" aria-label="Close privacy preferences">×</button></div>
     <p>You can browse, sign in and use the bag without optional storage. Change your choice here at any time.</p>
-    <label class="privacy-option"><input type="checkbox" checked disabled /><span><strong>Essential storage</strong><span>Sign-in sessions and your privacy choice. Always active.</span></span></label>
-    <label class="privacy-option"><input id="privacy-saved-looks" type="checkbox" /><span><strong>Remember bag and wishlist</strong><span>Save your chosen looks on this device for up to 180 days. Otherwise, they stay on this page until you leave or reload.</span></span></label>
+    <label class="privacy-option"><input type="checkbox" checked disabled /><span><strong>Essential storage</strong><span>Sign-in, your privacy choice and your active browser-tab bag. Always active.</span></span></label>
+    <label class="privacy-option"><input id="privacy-saved-looks" type="checkbox" /><span><strong>Remember bag and wishlist</strong><span>Save your chosen looks on this device for up to 180 days. Otherwise, your bag stays for this browser-tab session and your wishlist stays on this page.</span></span></label>
     <p class="privacy-small">There are no analytics or marketing cookies to enable. <a href="privacy.html">Privacy Policy</a> · <a href="cookie-policy.html">Cookie Policy</a></p>
     <div class="privacy-actions"><button type="button" data-privacy-choice="necessary">Necessary only</button><button type="submit">Save preferences</button></div>
   </form>`;
@@ -78,6 +78,7 @@
   const clearDeviceData = () => {
     remove(KEY);
     remove(SHOP_KEY);
+    try { sessionStorage.removeItem("velora-session-bag-v1"); } catch {}
     current = null;
     banner.hidden = false;
     reserveSpace();

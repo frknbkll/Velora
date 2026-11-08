@@ -3,6 +3,66 @@ import json
 import secrets
 import sqlite3
 from datetime import datetime, timezone, timedelta
+from pathlib import Path
+from functools import lru_cache
+
+
+@lru_cache(maxsize=8)
+def _color_previews(path, modified):
+    source = Path(path).read_text(encoding="utf-8")
+    assignment = "window.veloraColorImages ="
+    if assignment not in source:
+        return {}
+    return json.loads(source.split(assignment, 1)[1].strip().removesuffix(";").strip())
+
+
+def inventory_options(product, root):
+    """Match the sizes and photographed colors selectable in the storefront."""
+    path = Path(root) / "product-color-images.js"
+    previews = _color_previews(str(path), path.stat().st_mtime_ns) if path.is_file() else {}
+    mapped = previews.get(product.get("color_key") or product["image"], [])
+    primary = product.get("base_color") or "Original"
+    if primary == "Original" and mapped:
+        primary = mapped[0]["name"]
+    custom = product.get("color_variants", [])
+    custom_names = {color["name"].casefold() for color in custom}
+    names = [primary, *(color["name"] for color in mapped[1:] if color["name"].casefold() not in custom_names),
+             *(color["name"] for color in custom)]
+    colors, seen = [], set()
+    for name in names:
+        if name.casefold() not in seen:
+            seen.add(name.casefold())
+            colors.append(name)
+    return {"sizes": product["sizes"], "colors": colors}
+
+
+def outstanding_variants(state):
+    reserved = set()
+    now = datetime.now(timezone.utc)
+    for order in state["orders"]:
+        delivered = order.get("deliveredAt")
+        if delivered and now > datetime.fromisoformat(delivered.replace("Z", "+00:00")) + timedelta(days=order["returnDays"]):
+            continue
+        reserved.update(line["variant"] for line in order["lines"] if line["quantity"] > line["returned"])
+    return reserved
+
+
+def validate_catalog_inventory(connection, current, values, root):
+    """Keep stock attached to selectable options when the catalog is edited."""
+    from server import APIError, public_product
+    candidate = public_product({**dict(current), **values})
+    options = inventory_options(candidate, root)
+    before = inventory_options(public_product(current), root)
+    removed_sizes = {size.casefold() for size in before["sizes"]} - {size.casefold() for size in options["sizes"]}
+    removed_colors = {color.casefold() for color in before["colors"]} - {color.casefold() for color in options["colors"]}
+    if not removed_sizes and not removed_colors:
+        return
+    state = json.loads(connection.execute("SELECT data FROM commerce_state WHERE id=1").fetchone()[0])
+    reserved = outstanding_variants(state)
+    for variant in state["variants"]:
+        if variant["product"] == current["id"] and (variant["stock"] > 0 or variant["id"] in reserved) and (
+                variant["size"].casefold() in removed_sizes or variant["color"].casefold() in removed_colors):
+            raise APIError(409, "This size or color has stock or an outstanding order. Keep it in the product until its inventory and orders are resolved before removing or renaming it.")
 
 
 def initialize(connection):
@@ -48,7 +108,11 @@ def handle(handler, method):
                 if key in p: number(p[key], key)
             for key in ("role", "condition", "resolution"):
                 if key in p and not isinstance(p[key], str): fail("Choose a valid " + key + ".")
-            allowed = {"owner": {"variant", "location", "bulk", "guide", "order", "ship", "deliver", "return", "staff", "settings"}, "manager": {"variant", "location", "bulk", "guide", "order", "ship", "deliver", "return", "settings"}, "warehouse": {"ship", "deliver"}}
+            if action == "staff":
+                if access != "owner":
+                    raise APIError(403, "Only an owner can manage Velora colleague accounts.")
+                raise APIError(409, "Manage colleague roles and folder permissions together in Velora Accounts.")
+            allowed = {"owner": {"variant", "retire-variant", "location", "bulk", "guide", "order", "ship", "deliver", "return", "settings"}, "manager": {"variant", "retire-variant", "location", "bulk", "guide", "order", "ship", "deliver", "return", "settings"}, "warehouse": {"ship", "deliver"}}
             if action not in allowed.get(access, set()):
                 raise APIError(403, "Your staff role does not permit this action.")
             if p.get("revision") != s["revision"]:
@@ -62,11 +126,16 @@ def handle(handler, method):
                 if not product: fail("Select an active product.")
                 size = text(p.get("size"), "size", 30)
                 color = text(p.get("color"), "color", 80)
+                choices = inventory_options(product, handler.server.root)
+                size = next((choice for choice in choices["sizes"] if choice.casefold() == size.casefold()), None)
+                color = next((choice for choice in choices["colors"] if choice.casefold() == color.casefold()), None)
+                if size is None or color is None:
+                    fail("Choose a size and color listed for this product. Add new options in Products first.")
                 location = p.get("location")
                 if location not in s["locations"]: fail("Select a stock location.")
                 existing = next((v for v in s["variants"] if (v["product"], v["size"].casefold(), v["color"].casefold(), v["location"]) == (product["id"], size.casefold(), color.casefold(), location)), None)
                 v = existing or {"id": secrets.token_hex(8), "product": product["id"], "size": size, "color": color, "location": location}
-                v.update(stock=number(p.get("stock"), "Stock"), threshold=number(p.get("threshold"), "Safety threshold"), target=number(p.get("target"), "Reorder target"), lot=text(p.get("lot", "Default"), "color lot", 80))
+                v.update(size=size, color=color, stock=number(p.get("stock"), "Stock"), threshold=number(p.get("threshold"), "Safety threshold"), target=number(p.get("target"), "Reorder target"), lot=text(p.get("lot", "Default"), "color lot", 80))
                 if v["target"] < v["threshold"]: fail("Reorder target must be at least the safety threshold.")
                 # A stable style/color/size code identifies the garment across locations.
                 identity = product["id"] + "|" + color.casefold() + "|" + size.casefold()
@@ -76,6 +145,20 @@ def handle(handler, method):
                 if not existing: s["variants"].append(v)
                 total = sum(x["stock"] for x in s["variants"] if x["product"] == product["id"])
                 c.execute("UPDATE products SET stock=?,updated_at=? WHERE id=?", (total, now_iso(), product["id"]))
+            elif action == "retire-variant":
+                variant = find(s["variants"], p.get("variant"))
+                product = products.get(variant["product"])
+                if not product: fail("Restore this product before correcting its inventory.")
+                choices = inventory_options(product, handler.server.root)
+                if (variant["size"].casefold() in {size.casefold() for size in choices["sizes"]} and
+                        variant["color"].casefold() in {color.casefold() for color in choices["colors"]}):
+                    fail("This stock record uses active product options. Update it with Save variant.")
+                if variant["id"] in outstanding_variants(s):
+                    raise APIError(409, "This stock record is still needed by an outstanding order or eligible return. Resolve those orders before clearing it.")
+                s["variants"].remove(variant)
+                total = sum(item["stock"] for item in s["variants"] if item["product"] == product["id"])
+                c.execute("UPDATE products SET stock=?,updated_at=? WHERE id=?", (total, now_iso(), product["id"]))
+                handler.record_product_activity(c, user, "inventory cleanup", product)
             elif action == "bulk":
                 ids = p.get("products")
                 if not isinstance(ids, list) or not ids or len(ids) > 200 or any(not isinstance(i, str) or i not in products for i in ids): fail("Select up to 200 active products.")
@@ -99,11 +182,6 @@ def handle(handler, method):
                 days = number(p.get("days"), "Return window", 365)
                 if days < 1: fail("Return window must be at least one day.")
                 s["returnDays"] = days
-            elif action == "staff":
-                target = c.execute("SELECT * FROM users WHERE id=? AND role='admin'", (p.get("user"),)).fetchone()
-                if not target or target["id"] == user["id"]: fail("Select another administrator account.")
-                if p.get("role") not in {"owner", "manager", "warehouse"}: fail("Select a staff role.")
-                s["staff"][str(target["id"])] = p["role"]
             elif action == "order":
                 customer = c.execute("SELECT id,name,email FROM users WHERE id=? AND role='customer' AND account_type='customer'", (p.get("customer"),)).fetchone()
                 if not customer: fail("Select a registered customer.")
@@ -172,6 +250,7 @@ def handle(handler, method):
             for order in result["orders"]:
                 order["lines"] = [{k: v for k, v in l.items() if k != "priceCents"} for l in order["lines"]]
         else:
+            result["variantOptions"] = {product["id"]: inventory_options(product, handler.server.root) for product in result["products"]}
             result["customers"] = [dict(r) for r in c.execute("SELECT id,name,email FROM users WHERE role='customer' AND account_type='customer'")]
             if access == "owner": result["admins"] = [dict(r) for r in c.execute("SELECT id,name,email FROM users WHERE role='admin'")]
     handler.send_json(200, result)

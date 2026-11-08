@@ -35,6 +35,10 @@ def main():
             connection.call("Page.addScriptToEvaluateOnNewDocument", {"source": "window.__discountErrors=[];addEventListener('error',e=>{if(e.message)__discountErrors.push(e.message)});addEventListener('unhandledrejection',e=>__discountErrors.push(String(e.reason)));addEventListener('securitypolicyviolation',e=>__discountErrors.push('CSP '+e.violatedDirective));"})
             origin = f"http://127.0.0.1:{app.server_port}"
             checks = Checks(connection, origin)
+            def viewport(width, height=900):
+                connection.call("Emulation.setDeviceMetricsOverride", {"width": width, "height": height, "deviceScaleFactor": 1, "mobile": width <= 650})
+                checks.evaluate("new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve)))")
+            checks.viewport = viewport
             def cookie(owner=True):
                 connection.call("Network.clearBrowserCookies")
                 if owner:
@@ -47,12 +51,15 @@ def main():
             def storefront():
                 checks.navigate("index.html", ready="window.veloraCatalogReady && document.documentElement.dataset.catalogState==='managed'")
                 checks.evaluate("document.querySelector('#privacy-banner [data-privacy-choice=necessary]')?.click()")
+                # Each independent offer scenario starts with one fixture item;
+                # normal page navigation now correctly retains the session bag.
+                checks.evaluate("shoppingCart.clear();persistShoppingState();updateShopCounts()")
                 checks.show_all_store_products()
                 checks.click(f'.add-to-bag[data-product-key="product:{product_id}"]')
                 checks.click('.header-shop-actions [data-shop-view="cart"]')
                 checks.wait("document.querySelector('#shop-dialog').open && document.querySelector('.shop-discount-form')")
             def fits(label):
-                checks.check(checks.evaluate("document.documentElement.scrollWidth<=innerWidth+1"), label + " page fits")
+                checks.check(checks.evaluate("document.documentElement.scrollWidth<=document.documentElement.clientWidth+1 && innerWidth===390 && document.documentElement.clientWidth===390"), label + " page fits without shrink-to-fit")
                 checks.check(checks.evaluate("(()=>{const d=document.querySelector('dialog[open]');return !d || (d.getBoundingClientRect().left>=-1 && d.getBoundingClientRect().right<=innerWidth+1 && d.scrollWidth<=d.clientWidth+1)})()"), label + " dialog fits")
 
             cookie(); checks.viewport(1440, 1000)

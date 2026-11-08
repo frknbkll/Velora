@@ -381,8 +381,11 @@ def run_scenarios(checks, admin_email, admin_password, customer_email, customer_
     checks.show_all_store_products()
     rendered = checks.evaluate(f"""Array.from(document.querySelectorAll('.look-tile')).find(card =>
         card.querySelector('.look-tile-caption strong')?.textContent === {json.dumps(product['name'])})?.textContent || ''""")
-    checks.check(description in rendered, "Republishing restores the product with the edited description")
+    checks.check(product["name"] in rendered, "Republishing restores the product to the storefront")
     checks.check(f"{price:.2f}" in rendered, "Storefront preserves and displays cents in edited prices")
+    checks.navigate(f"product.html?id={product['id']}", ready="document.querySelector('#product-page-content') && !document.querySelector('#product-page-content').hidden")
+    checks.check(description in checks.evaluate("document.querySelector('#product-page-description').textContent"), "The republished product detail displays the edited description")
+    checks.check(f"{price:.2f}" in checks.evaluate("document.querySelector('#product-page-price').textContent"), "The product detail preserves and displays cents in edited prices")
     checks.no_credentials_in_storage(admin_email, admin_password, customer_email, customer_password, new_password)
 
 

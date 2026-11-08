@@ -8,18 +8,18 @@
     <title>Admin studio — Velora</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=61" />
-    <link rel="stylesheet" href="admin.css?v=7" />
+    <link rel="stylesheet" href="admin.css?v=9" />
     <link rel="stylesheet" href="admin-business.css?v=1" />
-    <link rel="stylesheet" href="admin-folder-access.css?v=2" />
+    <link rel="stylesheet" href="admin-folder-access.css?v=3" />
     <link rel="stylesheet" href="admin-discounts.css?v=1" />
-    <script src="privacy.js?v=1" defer></script>
+    <script src="privacy.js?v=2" defer></script>
     <script src="auth.js?v=7" defer></script>
-    <script src="admin.js?v=13" defer></script>
+    <script src="admin.js?v=14" defer></script>
     <script src="admin-folder-access.js?v=2" defer></script>
     <script src="admin-discounts.js?v=1" defer></script>
     <script src="admin-support.js?v=1" defer></script>
     <link rel="stylesheet" href="admin-support.css?v=1" />
-    <script src="admin-commerce.js?v=1" defer></script>
+    <script src="admin-commerce.js?v=2" defer></script>
     <link rel="stylesheet" href="admin-commerce.css?v=1" />
     <script src="admin-security.js?v=1" defer></script>
     <script src="admin-business.js?v=1" defer></script>
@@ -57,7 +57,8 @@
           <span class="admin-studio-label">THE ADMIN STUDIO</span>
         </div>
         <p class="admin-nav-label">Your workspace</p>
-        <nav class="admin-nav" aria-label="Admin sections">
+        <button class="admin-menu-toggle" id="admin-menu-toggle" type="button" aria-expanded="false" aria-controls="admin-section-nav"><span>Admin menu</span><span id="admin-menu-current">Overview</span><span class="admin-menu-chevron" aria-hidden="true">⌄</span></button>
+        <nav class="admin-nav" id="admin-section-nav" aria-label="Admin sections">
           <a href="#overview" data-admin-section="overview" aria-current="page"><svg class="admin-icon"><use href="#studio-grid"/></svg><span>Overview</span></a>
           <a href="#products" data-admin-section="products"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Products</span><span class="admin-nav-count" id="admin-product-nav-count"></span></a>
           <a href="#operations" data-admin-section="operations"><svg class="admin-icon"><use href="#studio-bag"/></svg><span>Shop operations</span></a>
@@ -235,7 +236,7 @@
               </div>
               <div class="admin-field-row">
                 <label class="admin-field" for="admin-edit-designer">Founder / designer<input id="admin-edit-designer" name="founder" type="text" list="admin-founders" maxlength="80" required /><datalist id="admin-founders"><option value="Beyza Keskinci"></option><option value="Derya Kasal"></option><option value="Luna Moretti"></option><option value="Victoria Mendez"></option></datalist></label>
-                <label class="admin-field" for="admin-edit-collection">Category<select id="admin-edit-collection" name="collection" required><option value="THE EVERYDAY EDIT">Everyday</option><option value="THE SOFT EDIT">Soft essentials</option><option value="THE MODEST EDIT">Modest dressing</option><option value="THE POLISHED EDIT">Polished</option><option value="THE TAILORED EDIT">Tailoring</option><option value="THE EVENING EDIT">Evening</option><option value="THE OCCASION EDIT">Occasion</option><option value="THE AFTER-HOURS EDIT">After hours</option></select></label>
+                <label class="admin-field" for="admin-edit-collection">Category<select id="admin-edit-collection" name="collection" required><option value="THE EVERYDAY EDIT">Everyday</option><option value="THE SOFT EDIT">Soft essentials</option><option value="THE MODEST EDIT">Modest dressing</option><option value="THE POLISHED EDIT">Polished</option><option value="THE TAILORED EDIT">Tailoring</option><option value="THE LAYERING EDIT">Layering</option><option value="THE EVENING EDIT">Evening</option><option value="THE OCCASION EDIT">Occasion</option><option value="THE AFTER-HOURS EDIT">After hours</option></select></label>
               </div>
               <label class="admin-field" for="admin-edit-description">Description<textarea id="admin-edit-description" name="description" rows="5" maxlength="2000" required></textarea></label>
               <div class="admin-description-tools"><button class="admin-button admin-button-secondary" id="admin-generate-description" type="button">Generate draft with AI</button><span>Uses the product name, category, color and cover photo. Review before saving.</span></div>
@@ -275,6 +276,11 @@
         <p class="admin-edit-error" id="admin-edit-error" role="alert" hidden></p>
         <div class="admin-edit-actions"><button class="admin-button admin-button-danger admin-editor-trash" type="button" id="admin-editor-trash" hidden>Move to trash</button><button class="admin-button admin-button-secondary" type="button" id="admin-edit-cancel">Cancel</button><button class="admin-button" type="submit" id="admin-edit-save">Save changes <span aria-hidden="true">&nearr;</span></button></div>
       </form>
+    </dialog>
+    <dialog class="admin-edit-dialog admin-discard-dialog" id="admin-discard-dialog" aria-labelledby="admin-discard-title" aria-describedby="admin-discard-description">
+      <div class="admin-edit-heading"><div><p class="admin-eyebrow">YOUR WORK, KEPT CLOSE</p><h2 id="admin-discard-title">Keep your changes?</h2></div></div>
+      <p id="admin-discard-description">This product has unsaved changes. Keep editing, or discard this draft to continue.</p>
+      <div class="admin-edit-actions"><button class="admin-button admin-button-secondary" type="button" id="admin-discard-keep" autofocus>Keep editing</button><button class="admin-button admin-button-danger" type="button" id="admin-discard-confirm">Discard changes</button></div>
     </dialog>
     <dialog class="admin-edit-dialog admin-color-dialog" id="admin-color-dialog" aria-labelledby="admin-color-title">
       <div class="admin-edit-heading"><div><p class="admin-eyebrow">A NEW SHADE</p><h2 id="admin-color-title">Add a product color</h2></div><button class="admin-dialog-close" type="button" id="admin-color-close" aria-label="Close color editor">&times;</button></div>
