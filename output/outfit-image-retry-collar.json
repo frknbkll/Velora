@@ -1,0 +1,22 @@
+{
+  "id": "garment-c9f06c204bdee72a-v3",
+  "output": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+  "reference": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+  "kind": "garment",
+  "name": "Ivory Cardigan and Taupe Trouser Set",
+  "description": "Long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers; one coordinated three-piece styling.",
+  "color": "Ivory and taupe",
+  "hex": "#d0bda5",
+  "target_product_id": "c9f06c204bdee72a",
+  "parent_product_id": "c9f06c204bdee72a",
+  "is_primary": true,
+  "prompt": "Use case: product-mockup. Create one photorealistic standalone e-commerce photograph of the coordinated three-piece outfit from the reference: long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers. Remove the person and every styling accessory. Show only these three garments on an invisible display, fully visible to the hems, closely centered against seamless soft off-white with real knit and woven textures and gentle contact shadows. Match the reference's garment cut, color, texture, seams, drape and sleeve length. The inside back neckline of the ivory top must be a CONTINUOUS, UNINTERRUPTED band of plain ivory ribbed knitting. ABSOLUTELY NO sewn-in collar tag, NO rectangular patch, NO label, NO lettering, NO gray marks, NO printed text anywhere. Make the collar entirely knit fabric. No scarf, person, head, body, hands, mannequin, hanger, bag, shoes, accessories, text, logo or watermark. Avoid CGI, plastic texture, rendering appearance, warped seams, extra limbs, melted fabric, duplicate garments, excessive HDR, blur or oversharpening. One clean realistic photographic product arrangement.",
+  "used_by": [
+    "c9f06c204bdee72a"
+  ],
+  "replaces_id": "garment-c9f06c204bdee72a-v2",
+  "replaces_output": "assets/generated-items/garment-c9f06c204bdee72a-v2.png",
+  "generation_references": [
+    "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg"
+  ]
+}

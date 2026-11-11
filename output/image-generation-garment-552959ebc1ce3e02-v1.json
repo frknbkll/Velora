@@ -1,0 +1,7 @@
+{
+  "id": "garment-552959ebc1ce3e02-v1",
+  "reference": "C:\\Users\\Furkan\\Documents\\Velora\\assets\\gallery\\new-arrivals\\espresso-tailored-suit.jpg",
+  "prompt": "Use case: product-mockup. Asset type: one coordinated suit product photo for Velora. Reference image 1 shows the exact espresso-brown tailored blazer and matching wide-leg trousers to reproduce. Generate a photorealistic product-only studio photograph of this TWO-PIECE SUIT as ONE coordinated product, with both garments fully visible, the blazer above and the trousers below in a coherent invisible-mannequin presentation. Preserve dark chocolate espresso brown, the long single-breasted lapel blazer with its front flap pockets and straight sleeves, high-waisted tailored wide-leg trousers and natural fabric drape. Do not include the cream knit top, belt, scarf, bag, shoes, model, human body, head, hands, visible mannequin, hanger, jewelry, text, labels, logos or watermark. Seamless soft off-white studio background, natural soft directional lighting, restrained true fabric texture and gentle ground shadow, complete suit centered in a portrait image with a modest margin. No CGI, illustration, plastic texture, melted seams, warped clothes, oversaturation, blur or excessive HDR. Keep the reference design rather than inventing a new suit.",
+  "output": "assets/generated-items/garment-552959ebc1ce3e02-v1.png",
+  "mode": "built-in"
+}

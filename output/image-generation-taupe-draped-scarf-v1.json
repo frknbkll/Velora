@@ -1,0 +1,8 @@
+{
+  "id": "taupe-draped-scarf-v1",
+  "reference": "C:\\Users\\Furkan\\Documents\\Velora\\assets\\gallery\\new-arrivals\\espresso-tailored-suit.jpg",
+  "prompt": "Use case: product-mockup. Asset type: separate fashion e-commerce item photograph for Velora. Input image 1 is the exact product reference. Primary request: generate a photorealistic product-only studio photograph of ONLY the taupe/mushroom-brown draped headscarf worn by the model. Preserve its plain muted taupe shade, fine soft slightly lustrous cloth appearance, neat edge finish and fluid drape. Photograph the scarf alone, arranged in loose, naturally folded flowing folds that show its shape and edges. No head, face, hair, neck, mannequin or person. Do not add a print, fringe, tassels, embroidery or a logo. Seamless soft off-white studio background, gentle realistic contact shadows, balanced close portrait framing, item entirely in frame with a modest margin. Natural restrained studio light and real textures. Exclude the model, all clothing and accessories other than the requested item, text, labels, prices, logos and watermarks. Avoid CGI, artificial rendering, warped geometry, plastic sheen, melted fabric, duplicated items beyond a pair of shoes, excessive smoothing, oversaturation, blur and excessive HDR. Faithfully preserve the reference design; do not invent a different product.",
+  "output": "assets/generated-items/taupe-draped-scarf-v1.png",
+  "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1aa93-c4dc-7bf2-a8eb-e2529f2b3d6e\\exec-d22c02aa-9cbf-4eec-b5a1-2bb161e47c22.png",
+  "mode": "built-in"
+}

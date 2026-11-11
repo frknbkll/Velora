@@ -24,7 +24,8 @@
   async function mutate(action,payload){try{data=await window.VeloraAuth.request('/api/admin/commerce',{method:'POST',body:{action,revision:data.revision,...payload}});$('#commerce-message').textContent='Saved. Records are up to date.';render();}catch(e){$('#commerce-message').textContent=e.message;if(e.status===409)await load();}}
   function render(){ const tabs=data.role==='warehouse'?['Orders']:['Inventory','Products','Orders','Returns','Customers','Analytics',...(data.role==='owner'?['Staff']:[])];if(!tabs.includes(tab))tab=tabs[0];$('#commerce-tabs').replaceChildren(...tabs.map(name=>{const b=button(name,()=>{tab=name;render();});if(tab===name)b.setAttribute('aria-current','page');return b;}));const root=$('#commerce-content');root.replaceChildren(); ({Inventory:inventory,Products:products,Orders:orders,Returns:returns,Customers:customers,Analytics:analytics,Staff:staff})[tab](root); }
   const productOptions=()=>data.products.map(p=>[p.id,p.name]);
-  const variantOptions=()=>data.variants.map(v=>[v.id,variantName(v)]);
+  const listedVariant=v=>{const choices=data.variantOptions[v.product];return choices && choices.sizes.some(size=>size.toLocaleLowerCase()===v.size.toLocaleLowerCase()) && choices.colors.some(color=>color.toLocaleLowerCase()===v.color.toLocaleLowerCase());};
+  const variantOptions=()=>data.variants.filter(listedVariant).map(v=>[v.id,variantName(v)]);
   const lineOptions=o=>o.lines.map(l=>[l.id,`${l.name} / ${l.size} / ${l.color} (${l.quantity-l.shipped} to ship)`]);
   function inventory(root){
     const low=data.variants.filter(v=>v.stock<=v.threshold);const alert=card('Stock attention',root);alert.append(el('p',`${low.length} size / color / location records at or below their safety threshold. Refresh to check the latest stock.`,low.length?'commerce-alert':''));

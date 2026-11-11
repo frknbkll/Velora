@@ -1,0 +1,478 @@
+[
+  {
+    "id": "garment-40b272d4673736dc-v1",
+    "output": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+    "reference": "assets/gallery/luna-cloud-knit-layer-set.jpg",
+    "kind": "garment",
+    "name": "The Oat Knit Cardigan Trouser Set",
+    "description": "Coordinated oat-beige oversized open chunky rib-knit cardigan and matching high-waisted drawstring wide-leg knit trousers, isolated together as one lounge set; exclude the white tank.",
+    "color": "Oat",
+    "hex": "#d7c7b0",
+    "target_product_id": "40b272d4673736dc",
+    "parent_product_id": "40b272d4673736dc",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Oat Knit Cardigan Trouser Set. Visible construction to preserve: Coordinated oat-beige oversized open chunky rib-knit cardigan and matching high-waisted drawstring wide-leg knit trousers, isolated together as one lounge set; exclude the white tank.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "40b272d4673736dc"
+    ]
+  },
+  {
+    "id": "garment-53a68a01bbdedf19-v1",
+    "output": "assets/generated-items/garment-53a68a01bbdedf19-v1.png",
+    "reference": "assets/uploads/3758f269b89cb2b6645cb2c42be12760-pose-v2.jpg",
+    "kind": "garment",
+    "name": "Black Gold-Cuff Tailored Trouser Suit",
+    "description": "Black notched-lapel longline single-breasted blazer with gold-tone cuff buttons and matching high-waist wide-leg trousers.",
+    "color": "Black",
+    "hex": "#232323",
+    "target_product_id": "53a68a01bbdedf19",
+    "parent_product_id": "53a68a01bbdedf19",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Black Gold-Cuff Tailored Trouser Suit. Visible construction to preserve: Black notched-lapel longline single-breasted blazer with gold-tone cuff buttons and matching high-waist wide-leg trousers.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "53a68a01bbdedf19"
+    ]
+  },
+  {
+    "id": "garment-6834dbb23ca63224-v1",
+    "output": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+    "reference": "assets/gallery/derya-chocolate-tailoring.jpg",
+    "kind": "outerwear",
+    "name": "The Chocolate Longline Blazer",
+    "description": "The chocolate brown very long notched-lapel outer blazer/coat with long open front panels reaching the calves, worn over a taupe top and cream trousers; isolate only the brown outer layer.",
+    "color": "Chocolate",
+    "hex": "#4f3428",
+    "target_product_id": "6834dbb23ca63224",
+    "parent_product_id": "6834dbb23ca63224",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Chocolate Longline Blazer. Visible construction to preserve: The chocolate brown very long notched-lapel outer blazer/coat with long open front panels reaching the calves, worn over a taupe top and cream trousers; isolate only the brown outer layer.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "6834dbb23ca63224"
+    ]
+  },
+  {
+    "id": "garment-6e74347edcea55dd-v1",
+    "output": "assets/generated-items/garment-6e74347edcea55dd-v1.png",
+    "reference": "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg",
+    "kind": "garment",
+    "name": "Cocoa Asymmetric Draped Dress",
+    "description": "Deep cocoa ankle-length dress with asymmetric boat-style shoulder drape, one small capped shoulder, side gathering at the waist and a softly wrapped skirt.",
+    "color": "Cocoa",
+    "hex": "#563425",
+    "target_product_id": "6e74347edcea55dd",
+    "parent_product_id": "6e74347edcea55dd",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Cocoa Asymmetric Draped Dress. Visible construction to preserve: Deep cocoa ankle-length dress with asymmetric boat-style shoulder drape, one small capped shoulder, side gathering at the waist and a softly wrapped skirt.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "6e74347edcea55dd"
+    ]
+  },
+  {
+    "id": "garment-751e40965ad3a20d-v1",
+    "output": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+    "reference": "assets/gallery/derya-ivory-tailored-look.jpg",
+    "kind": "garment",
+    "name": "The Ivory Tailored Suit",
+    "description": "Ivory single-breasted notched-lapel blazer with flap pockets and ivory high-rise pleated wide-leg tailored trousers, together as a two-piece suit; exclude the inner top.",
+    "color": "Ivory",
+    "hex": "#e6dbcd",
+    "target_product_id": "751e40965ad3a20d",
+    "parent_product_id": "751e40965ad3a20d",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Ivory Tailored Suit. Visible construction to preserve: Ivory single-breasted notched-lapel blazer with flap pockets and ivory high-rise pleated wide-leg tailored trousers, together as a two-piece suit; exclude the inner top.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "751e40965ad3a20d"
+    ]
+  },
+  {
+    "id": "garment-7b8ef54e6321f222-v1",
+    "output": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+    "reference": "assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+    "kind": "garment",
+    "name": "Ivory Ribbed Knit and Taupe Trouser Set",
+    "description": "Ivory fine-rib fitted roll-neck long-sleeve top with taupe high-rise pleated wide-leg trousers; one coordinated two-piece styling.",
+    "color": "Ivory and taupe",
+    "hex": "#a79584",
+    "target_product_id": "7b8ef54e6321f222",
+    "parent_product_id": "7b8ef54e6321f222",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Ivory Ribbed Knit and Taupe Trouser Set. Visible construction to preserve: Ivory fine-rib fitted roll-neck long-sleeve top with taupe high-rise pleated wide-leg trousers; one coordinated two-piece styling.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "7b8ef54e6321f222"
+    ]
+  },
+  {
+    "id": "garment-8896b52b23cd0824-v1",
+    "output": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+    "reference": "assets/gallery/luna-ivory-tie-neck-set.jpg",
+    "kind": "garment",
+    "name": "The Ivory Collared Blouse Trouser Set",
+    "description": "Ivory lustrous collared button-front blouse with voluminous gathered long sleeves and tall cuffs, paired with ivory high-waisted pleated wide-leg trousers; isolate together as one coordinated set.",
+    "color": "Ivory",
+    "hex": "#e8ddcf",
+    "target_product_id": "8896b52b23cd0824",
+    "parent_product_id": "8896b52b23cd0824",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Ivory Collared Blouse Trouser Set. Visible construction to preserve: Ivory lustrous collared button-front blouse with voluminous gathered long sleeves and tall cuffs, paired with ivory high-waisted pleated wide-leg trousers; isolate together as one coordinated set.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "8896b52b23cd0824"
+    ]
+  },
+  {
+    "id": "garment-9b7becdf69faba45-v1",
+    "output": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+    "reference": "assets/gallery/rosewater-occasion-abaya.jpg",
+    "kind": "garment",
+    "name": "The Rosewater Occasion Abaya",
+    "description": "Dusty rose floor-length occasion dress with a crossover draped bodice, wrapped wide waist, long sleeves with flared translucent-look cuffs and a softly layered full hem; preserve the trailing skirt panel.",
+    "color": "Dusty Rose",
+    "hex": "#c7917f",
+    "target_product_id": "9b7becdf69faba45",
+    "parent_product_id": "9b7becdf69faba45",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Rosewater Occasion Abaya. Visible construction to preserve: Dusty rose floor-length occasion dress with a crossover draped bodice, wrapped wide waist, long sleeves with flared translucent-look cuffs and a softly layered full hem; preserve the trailing skirt panel.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "9b7becdf69faba45"
+    ]
+  },
+  {
+    "id": "garment-a26d4ac081364941-v1",
+    "output": "assets/generated-items/garment-a26d4ac081364941-v1.png",
+    "reference": "assets/gallery/new-sandstone-half-zip-lounge-set-pose-v2.jpg",
+    "kind": "garment",
+    "name": "Sandstone Half-Zip Lounge Set",
+    "description": "Sandstone long-sleeve half-zip collared pullover with relaxed shoulders and gathered cuffs, paired with drawstring high-waist wide-leg lounge trousers.",
+    "color": "Sandstone",
+    "hex": "#c6b19a",
+    "target_product_id": "a26d4ac081364941",
+    "parent_product_id": "a26d4ac081364941",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Sandstone Half-Zip Lounge Set. Visible construction to preserve: Sandstone long-sleeve half-zip collared pullover with relaxed shoulders and gathered cuffs, paired with drawstring high-waist wide-leg lounge trousers.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "a26d4ac081364941"
+    ]
+  },
+  {
+    "id": "garment-b21271819fbf773c-v1",
+    "output": "assets/generated-items/garment-b21271819fbf773c-v1.png",
+    "reference": "assets/uploads/aeb6919c86ef984831b7ec099d6902b1.png",
+    "kind": "garment",
+    "name": "Navy Draped Cowl-Back Trumpet Gown",
+    "description": "Dark navy full-length fitted gown with long slim sleeves, a deep open back framed by a low draped cowl, contoured hip seam and a flared trailing trumpet hem. Reference is back/three-quarter view.",
+    "color": "Navy",
+    "hex": "#202038",
+    "target_product_id": "b21271819fbf773c",
+    "parent_product_id": "b21271819fbf773c",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Navy Draped Cowl-Back Trumpet Gown. Visible construction to preserve: Dark navy full-length fitted gown with long slim sleeves, a deep open back framed by a low draped cowl, contoured hip seam and a flared trailing trumpet hem. Reference is back/three-quarter view.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "b21271819fbf773c"
+    ]
+  },
+  {
+    "id": "garment-c9f06c204bdee72a-v1",
+    "output": "assets/generated-items/garment-c9f06c204bdee72a-v1.png",
+    "reference": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+    "kind": "garment",
+    "name": "Ivory Cardigan and Taupe Trouser Set",
+    "description": "Long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers; one coordinated three-piece styling.",
+    "color": "Ivory and taupe",
+    "hex": "#d0bda5",
+    "target_product_id": "c9f06c204bdee72a",
+    "parent_product_id": "c9f06c204bdee72a",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Ivory Cardigan and Taupe Trouser Set. Visible construction to preserve: Long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers; one coordinated three-piece styling.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "c9f06c204bdee72a"
+    ]
+  },
+  {
+    "id": "garment-d48662bc960d8ad2-v1",
+    "output": "assets/generated-items/garment-d48662bc960d8ad2-v1.png",
+    "reference": "assets/uploads/d403488017dbd9cdf2d25f6ea5a8c215.png",
+    "kind": "bottom",
+    "name": "Charcoal Pleated Wide-Leg Trousers",
+    "description": "Charcoal grey high-waisted tailored trousers with front pleats, belt loops and broad straight legs; subtle heathered surface.",
+    "color": "Charcoal",
+    "hex": "#5c5c5d",
+    "target_product_id": "d48662bc960d8ad2",
+    "parent_product_id": "d48662bc960d8ad2",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Charcoal Pleated Wide-Leg Trousers. Visible construction to preserve: Charcoal grey high-waisted tailored trousers with front pleats, belt loops and broad straight legs; subtle heathered surface.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "d48662bc960d8ad2"
+    ]
+  },
+  {
+    "id": "garment-db747bb55dc91722-v1",
+    "output": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+    "reference": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+    "kind": "outerwear",
+    "name": "Taupe Collared Zip Bomber Jacket",
+    "description": "Taupe zip-front bomber jacket with broad pointed collar, loose sleeves, gathered ribbed cuffs and elasticated ribbed hem; isolate jacket.",
+    "color": "Taupe",
+    "hex": "#8e7462",
+    "target_product_id": "db747bb55dc91722",
+    "parent_product_id": "db747bb55dc91722",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Taupe Collared Zip Bomber Jacket. Visible construction to preserve: Taupe zip-front bomber jacket with broad pointed collar, loose sleeves, gathered ribbed cuffs and elasticated ribbed hem; isolate jacket.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "db747bb55dc91722"
+    ]
+  },
+  {
+    "id": "garment-dd6d6bac12f4b6d4-v1",
+    "output": "assets/generated-items/garment-dd6d6bac12f4b6d4-v1.png",
+    "reference": "assets/uploads/84e08997be650452ac8d4f7ab4e0b8be.png",
+    "kind": "garment",
+    "name": "Sand Tailored Blazer and Trouser Set",
+    "description": "Coordinated pale sand single-breasted notched-lapel blazer with a small gold-tone front button and high-waisted pleated wide-leg trousers with front creases.",
+    "color": "Sand",
+    "hex": "#d8c1a0",
+    "target_product_id": "dd6d6bac12f4b6d4",
+    "parent_product_id": "dd6d6bac12f4b6d4",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Sand Tailored Blazer and Trouser Set. Visible construction to preserve: Coordinated pale sand single-breasted notched-lapel blazer with a small gold-tone front button and high-waisted pleated wide-leg trousers with front creases.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "dd6d6bac12f4b6d4"
+    ]
+  },
+  {
+    "id": "garment-e57f33ce2e1562d2-v1",
+    "output": "assets/generated-items/garment-e57f33ce2e1562d2-v1.png",
+    "reference": "assets/gallery/derya-soft-knit-lounge-set.jpg",
+    "kind": "garment",
+    "name": "The Cloud-Knit Three-Piece Lounge Set",
+    "description": "The coordinated ivory chunky open cardigan, fitted ribbed scoop-neck tank and relaxed wide-leg ribbed knit trousers; isolate the three visible pieces together as one lounge set, removing the wearer, mug and sofa.",
+    "color": "Ivory",
+    "hex": "#e4d9c7",
+    "target_product_id": "e57f33ce2e1562d2",
+    "parent_product_id": "e57f33ce2e1562d2",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Cloud-Knit Three-Piece Lounge Set. Visible construction to preserve: The coordinated ivory chunky open cardigan, fitted ribbed scoop-neck tank and relaxed wide-leg ribbed knit trousers; isolate the three visible pieces together as one lounge set, removing the wearer, mug and sofa.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "e57f33ce2e1562d2"
+    ]
+  },
+  {
+    "id": "garment-edc6983c2ab5268c-v1",
+    "output": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+    "reference": "assets/gallery/derya-city-cream-look.jpg",
+    "kind": "garment",
+    "name": "The City-Cream Tailored Trouser Set",
+    "description": "Cream single-breasted notched-lapel blazer with rolled sleeves and matching high-waisted pleated wide-leg trousers, together as a suit; exclude the ivory inner top.",
+    "color": "Cream",
+    "hex": "#e8ddc9",
+    "target_product_id": "edc6983c2ab5268c",
+    "parent_product_id": "edc6983c2ab5268c",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The City-Cream Tailored Trouser Set. Visible construction to preserve: Cream single-breasted notched-lapel blazer with rolled sleeves and matching high-waisted pleated wide-leg trousers, together as a suit; exclude the ivory inner top.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "edc6983c2ab5268c"
+    ]
+  },
+  {
+    "id": "garment-f14603c04434f518-v1",
+    "output": "assets/generated-items/garment-f14603c04434f518-v1.png",
+    "reference": "assets/uploads/0dfe9e6ca50669520cd11700e5f4ce75.png",
+    "kind": "outerwear",
+    "name": "Chocolate Oversized Longline Coat",
+    "description": "Deep chocolate longline coat with textured soft surface, oversized notched lapels, broad sleeves, turned cuffs and an open straight front extending to the ankle.",
+    "color": "Chocolate",
+    "hex": "#5d3923",
+    "target_product_id": "f14603c04434f518",
+    "parent_product_id": "f14603c04434f518",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Chocolate Oversized Longline Coat. Visible construction to preserve: Deep chocolate longline coat with textured soft surface, oversized notched lapels, broad sleeves, turned cuffs and an open straight front extending to the ankle.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "f14603c04434f518"
+    ]
+  },
+  {
+    "id": "garment-f62ee6e41ab495d3-v1",
+    "output": "assets/generated-items/garment-f62ee6e41ab495d3-v1.png",
+    "reference": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+    "kind": "garment",
+    "name": "Champagne Collared Satin-Look Maxi Gown",
+    "description": "Champagne satin-look full-length garment with pointed shirt collar, overlapping wrap-front bodice, billowing cuffed sleeves, fitted waistband and flowing skirt; preserve exact visible drape.",
+    "color": "Champagne",
+    "hex": "#ccb094",
+    "target_product_id": "f62ee6e41ab495d3",
+    "parent_product_id": "f62ee6e41ab495d3",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Champagne Collared Satin-Look Maxi Gown. Visible construction to preserve: Champagne satin-look full-length garment with pointed shirt collar, overlapping wrap-front bodice, billowing cuffed sleeves, fitted waistband and flowing skirt; preserve exact visible drape.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "f62ee6e41ab495d3"
+    ]
+  },
+  {
+    "id": "item-c4be6ef00a85a97f9f96-v1",
+    "output": "assets/generated-items/item-c4be6ef00a85a97f9f96-v1.png",
+    "reference": "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg",
+    "kind": "bottom",
+    "name": "Ivory Belted Wide-Leg Trousers",
+    "description": "Ivory high-waisted wide-leg trousers with front crease, belt loops and a slim ivory belt with gold-tone rectangular buckle.",
+    "color": "Ivory",
+    "hex": "#e6dac7",
+    "target_product_id": "piece-c4be6ef00a85a97f9f96",
+    "parent_product_id": "24a9406125222ec8",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Ivory Belted Wide-Leg Trousers. Visible construction to preserve: Ivory high-waisted wide-leg trousers with front crease, belt loops and a slim ivory belt with gold-tone rectangular buckle.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "24a9406125222ec8"
+    ]
+  },
+  {
+    "id": "item-d124506f8321055790bc-v1",
+    "output": "assets/generated-items/item-d124506f8321055790bc-v1.png",
+    "reference": "assets/uploads/a121d4e36fc57f7b94b559321afda40b.png",
+    "kind": "bottom",
+    "name": "Black Pleated Wide-Leg Trousers",
+    "description": "Black high-rise tailored trousers with front pleats, broad straight legs, pockets and belt loops; styled with a black belt and gold-tone rectangular buckle.",
+    "color": "Black",
+    "hex": "#242321",
+    "target_product_id": "piece-d124506f8321055790bc",
+    "parent_product_id": "74e5ecf28c897588",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Black Pleated Wide-Leg Trousers. Visible construction to preserve: Black high-rise tailored trousers with front pleats, broad straight legs, pockets and belt loops; styled with a black belt and gold-tone rectangular buckle.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "74e5ecf28c897588"
+    ]
+  },
+  {
+    "id": "item-d6deeaa5c3f60d4f2333-v1",
+    "output": "assets/generated-items/item-d6deeaa5c3f60d4f2333-v1.png",
+    "reference": "assets/gallery/luna-beige-trench-tailored-look.jpg",
+    "kind": "bag",
+    "name": "The Beige Belt-Flap Top-Handle Bag",
+    "description": "Structured beige trapezoid handbag with a short rolled top handle, flap, narrow horizontal front belt and central rectangular gold-tone turn-lock detail.",
+    "color": "Beige",
+    "hex": "#b9a186",
+    "target_product_id": "piece-d6deeaa5c3f60d4f2333",
+    "parent_product_id": "a2e2bfb6aed5c608",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Beige Belt-Flap Top-Handle Bag. Visible construction to preserve: Structured beige trapezoid handbag with a short rolled top handle, flap, narrow horizontal front belt and central rectangular gold-tone turn-lock detail.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "a2e2bfb6aed5c608"
+    ]
+  },
+  {
+    "id": "item-e0e903671c4d58c1ac32-v1",
+    "output": "assets/generated-items/item-e0e903671c4d58c1ac32-v1.png",
+    "reference": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+    "kind": "bag",
+    "name": "Black Top-Handle Bag",
+    "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+    "color": "Black",
+    "hex": "#242221",
+    "target_product_id": "piece-e0e903671c4d58c1ac32",
+    "parent_product_id": "ee63e133d40760be",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Black Top-Handle Bag. Visible construction to preserve: Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "ee63e133d40760be"
+    ]
+  },
+  {
+    "id": "item-e85c6cd35b3eb3d8c075-v1",
+    "output": "assets/generated-items/item-e85c6cd35b3eb3d8c075-v1.png",
+    "reference": "assets/uploads/a121d4e36fc57f7b94b559321afda40b.png",
+    "kind": "bag",
+    "name": "Black Structured Gold-Monogram Bag",
+    "description": "Black structured rectangular top-handle flap bag with short handle, pebbled surface, and the visible slender interlocking gold-tone emblem centered on its front; do not invent extra branding.",
+    "color": "Black",
+    "hex": "#171514",
+    "target_product_id": "piece-e85c6cd35b3eb3d8c075",
+    "parent_product_id": "74e5ecf28c897588",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Black Structured Gold-Monogram Bag. Visible construction to preserve: Black structured rectangular top-handle flap bag with short handle, pebbled surface, and the visible slender interlocking gold-tone emblem centered on its front; do not invent extra branding.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "74e5ecf28c897588"
+    ]
+  },
+  {
+    "id": "item-ec31700d07745f2858cf-v1",
+    "output": "assets/generated-items/item-ec31700d07745f2858cf-v1.png",
+    "reference": "assets/gallery/new-arrivals/black-draped-satin-gown.jpg",
+    "kind": "bag",
+    "name": "Black Gold-Bar Evening Clutch",
+    "description": "Small black softly rectangular foldover evening clutch held at the hip, with a short broad gold-tone bar detail across its top edge.",
+    "color": "Black",
+    "hex": "#201d1e",
+    "target_product_id": "piece-ec31700d07745f2858cf",
+    "parent_product_id": "5750c07e3cbf0922",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Black Gold-Bar Evening Clutch. Visible construction to preserve: Small black softly rectangular foldover evening clutch held at the hip, with a short broad gold-tone bar detail across its top edge.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "5750c07e3cbf0922"
+    ]
+  },
+  {
+    "id": "item-f431c456f2d25afddf5a-v1",
+    "output": "assets/generated-items/item-f431c456f2d25afddf5a-v1.png",
+    "reference": "assets/gallery/derya-chocolate-coord.jpg",
+    "kind": "top",
+    "name": "The Chocolate Ribbed Round-Neck Top",
+    "description": "Chocolate brown fine-ribbed fitted sleeveless round-neck top visible inside the blazer.",
+    "color": "Chocolate",
+    "hex": "#4d342a",
+    "target_product_id": "piece-f431c456f2d25afddf5a",
+    "parent_product_id": "070e122b3b2a0a1d",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Chocolate Ribbed Round-Neck Top. Visible construction to preserve: Chocolate brown fine-ribbed fitted sleeveless round-neck top visible inside the blazer.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "070e122b3b2a0a1d"
+    ]
+  },
+  {
+    "id": "item-f8c380df476ed050184e-v1",
+    "output": "assets/generated-items/item-f8c380df476ed050184e-v1.png",
+    "reference": "assets/gallery/luna-weekend-denim-look-hd.jpg",
+    "kind": "bag",
+    "name": "The Chocolate Belted Top-Handle Tote",
+    "description": "Small structured chocolate-brown trapezoid tote with two rolled short handles, a narrow front belt and small gold-tone clasp hardware.",
+    "color": "Chocolate",
+    "hex": "#52392c",
+    "target_product_id": "piece-f8c380df476ed050184e",
+    "parent_product_id": "0cece17490138dac",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Chocolate Belted Top-Handle Tote. Visible construction to preserve: Small structured chocolate-brown trapezoid tote with two rolled short handles, a narrow front belt and small gold-tone clasp hardware.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "0cece17490138dac"
+    ]
+  },
+  {
+    "id": "item-fc4c03ec75230caa4500-v1",
+    "output": "assets/generated-items/item-fc4c03ec75230caa4500-v1.png",
+    "reference": "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg",
+    "kind": "bag",
+    "name": "Navy Gold-Clasp Top-Handle Bag",
+    "description": "Structured navy trapezoid top-handle handbag with short arched handle, front flap, rectangular gold-tone clasp and gold-tone handle attachments.",
+    "color": "Navy",
+    "hex": "#242a3e",
+    "target_product_id": "piece-fc4c03ec75230caa4500",
+    "parent_product_id": "f84bedf34737978e",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Navy Gold-Clasp Top-Handle Bag. Visible construction to preserve: Structured navy trapezoid top-handle handbag with short arched handle, front flap, rectangular gold-tone clasp and gold-tone handle attachments.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "f84bedf34737978e"
+    ]
+  },
+  {
+    "id": "item-ff1af3bf3c58d70f0fc6-v1",
+    "output": "assets/generated-items/item-ff1af3bf3c58d70f0fc6-v1.png",
+    "reference": "assets/gallery/derya-chocolate-coord.jpg",
+    "kind": "bag",
+    "name": "The Tan Belted Top-Handle Tote",
+    "description": "Structured tan trapezoid tote with two short rolled top handles, a narrow horizontal front belt, gold-tone clasp hardware and a hanging covered key detail.",
+    "color": "Tan",
+    "hex": "#96795f",
+    "target_product_id": "piece-ff1af3bf3c58d70f0fc6",
+    "parent_product_id": "070e122b3b2a0a1d",
+    "is_primary": false,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: The Tan Belted Top-Handle Tote. Visible construction to preserve: Structured tan trapezoid tote with two short rolled top handles, a narrow horizontal front belt, gold-tone clasp hardware and a hanging covered key detail.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR.",
+    "used_by": [
+      "070e122b3b2a0a1d"
+    ]
+  }
+]

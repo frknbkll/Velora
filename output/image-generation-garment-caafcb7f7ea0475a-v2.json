@@ -1,0 +1,12 @@
+{
+  "id": "garment-caafcb7f7ea0475a-v2",
+  "output": "assets/generated-items/garment-caafcb7f7ea0475a-v2.png",
+  "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1aa93-c4dc-7bf2-a8eb-e2529f2b3d6e\\exec-5e1c285c-17f0-408d-8536-b117399245e9.png",
+  "reference": "assets/gallery/new-merlot-tailored-set-pose-v2.jpg",
+  "referenced_images": [
+    "assets/generated-items/garment-caafcb7f7ea0475a-v1.png",
+    "assets/gallery/new-merlot-tailored-set-pose-v2.jpg"
+  ],
+  "mode": "built-in",
+  "prompt": "Use case: precise-object-edit. Asset type: standalone fashion product photo. Image 1 is the product photo to edit; image 2 is the original outfit reference. Correct ONLY the blazer's FRONT button arrangement in image 1: it must have exactly FOUR gold-tone FRONT buttons total, TWO vertically aligned on the viewer's left front panel and TWO on the viewer's right front panel, matching the visible arrangement in image 2. Remove the extra third row of front buttons completely and restore uninterrupted merlot fabric. Preserve cuff buttons, lapels, pockets, belt and buckle, trousers, proportions, colors, photographic texture, off-white studio background and full-item framing. Keep the blazer and matching trouser suit fully visible without a person, body, hands, mannequin, bag, shoes or accessories. No text, label, logo or watermark."
+}

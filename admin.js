@@ -4,7 +4,32 @@
   const currency = new Intl.NumberFormat("en-IE", { style: "currency", currency: "EUR", maximumFractionDigits: 2 });
   const shortDate = new Intl.DateTimeFormat("en-GB", { day: "numeric", month: "short", year: "numeric" });
   const sections = ["overview", "products", "customers", "activity", "security", "business", "operations", "support", "folder-access", "discounts"];
-  const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
+  const state = { overview: null, products: [], customers: [], events: [], editing: null, photos: [], colorVariants: [], colorImage: null, colorUploading: false, colorSaving: false, detectingColor: false, generatingDescription: false, generatingDraft: false, saving: false, uploading: false, editorVersion: 0, trash: null, trashBusy: false };
+  const primaryDetection = { revision: 0, request: 0, manual: false, source: "" };
+  const alternateDetection = { revision: 0, manual: false, source: "" };
+  const hotspotEditor = window.VeloraAdminImageHotspots?.mount($("#admin-image-hotspots"), { onChange() {} });
+  function hotspotPhotos() {
+    const presets = window.veloraColorImages?.[state.editing?.color_key || state.photos[0]] || [];
+    return [...new Set([...state.photos, ...presets.flatMap((variant) => [variant.image, ...(variant.poses || [])]), ...state.colorVariants.map((variant) => variant.image)].filter(Boolean))];
+  }
+  function refreshHotspotPhotos() {
+    hotspotEditor?.set({ products: state.products, photos: hotspotPhotos(), disabled: state.saving });
+    const select = $("#admin-edit-item-image"), selected = select.value;
+    select.replaceChildren(new Option("Use the cover photo", ""));
+    state.photos.forEach((image, index) => select.add(new Option(`Photo ${index + 1} · ${image.split("/").pop()}`, image)));
+    select.value = state.photos.includes(selected) ? selected : "";
+  }
+  function renderOutfitParents(product) {
+    const select = $("#admin-edit-parent-product");
+    select.replaceChildren(new Option("Standalone outfit / collection product", ""));
+    state.products.filter((item) => !item.deleted_at && !item.parent_product_id && item.id !== product?.id).forEach((item) => {
+      select.add(new Option(`${item.name} · ${item.sku || item.id}`, item.id));
+    });
+    if (product?.parent_product_id && ![...select.options].some((option) => option.value === product.parent_product_id)) {
+      select.add(new Option("Saved outfit is unavailable", product.parent_product_id));
+    }
+    select.value = product?.parent_product_id || "";
+  }
   let toastTimer;
   let loading;
   let currentSection = null;
@@ -32,7 +57,11 @@
     if (Number.isNaN(date.getTime())) return "\u2014";
     return shortDate.format(date) + (withTime ? ` \u00b7 ${date.toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit" })}` : "");
   }
-  function productImage(product, className) { const image = element("img", className); image.src = product.image; image.alt = ""; image.loading = "lazy"; image.decoding = "async"; return image; }
+  function optimizedPhoto(image, source, sizes) {
+    if (window.VeloraImageSources) window.VeloraImageSources.apply(image, source, sizes);
+    else image.src = source;
+  }
+  function productImage(product, className) { const image = element("img", className); optimizedPhoto(image, product.image, "160px"); image.alt = ""; image.loading = "lazy"; image.decoding = "async"; return image; }
   function showToast(message) { clearTimeout(toastTimer); $("#admin-toast").textContent = message; $("#admin-toast").hidden = false; toastTimer = setTimeout(() => { $("#admin-toast").hidden = true; }, 5500); }
   function showError(error) {
     if (error?.status === 401) { location.replace("login.html?next=admin.html"); return; }
@@ -63,11 +92,22 @@
     if (iconName) button.append(icon(iconName)); button.append(element("span", "", label)); return button;
   }
   function renderProducts() {
-    const search = $("#admin-product-search").value.trim().toLocaleLowerCase(), visibility = $("#admin-product-filter").value, stockFilter = $("#admin-stock-filter").value;
+    const search = $("#admin-product-search").value.trim().toLocaleLowerCase(), visibility = $("#admin-product-filter").value, stockFilter = $("#admin-stock-filter").value, categoryFilter = $("#admin-category-filter").value, founderFilter = $("#admin-founder-filter").value;
+
+    const categories = [...new Set(state.products.map((p) => p.collection))].sort();
+    const founders = [...new Set(state.products.map((p) => p.founder))].sort();
+    const categorySelect = $("#admin-category-filter"), founderSelect = $("#admin-founder-filter");
+    const categoryCurrent = categorySelect.value, founderCurrent = founderSelect.value;
+    categorySelect.replaceChildren(new Option("All categories", "all"));
+    categories.forEach((category) => categorySelect.add(new Option(category.replace(/^THE | EDIT$/g, ""), category)));
+    founderSelect.replaceChildren(new Option("All founders", "all"));
+    founders.forEach((founder) => founderSelect.add(new Option(founder, founder)));
+    categorySelect.value = categoryCurrent; founderSelect.value = founderCurrent;
+
     const matches = state.products.filter((product) => {
       const visible = visibility === "trash" ? Boolean(product.deleted_at) : !product.deleted_at && (visibility === "all" || (visibility === "published" ? product.published : !product.published));
       const stock = stockFilter === "all" || (stockFilter === "low" && product.stock > 0 && product.stock <= 5) || (stockFilter === "out" && product.stock === 0) || (stockFilter === "untracked" && product.stock == null);
-      return visible && stock && `${product.name} ${product.sku || ""} ${product.founder} ${product.collection}`.toLocaleLowerCase().includes(search);
+      return visible && stock && (categoryFilter === "all" || product.collection === categoryFilter) && (founderFilter === "all" || product.founder === founderFilter) && `${product.name} ${product.sku || ""} ${product.founder} ${product.collection}`.toLocaleLowerCase().includes(search);
     });
     const sort = $("#admin-product-sort").value;
     matches.sort((a, b) => { if (sort === "name") return a.name.localeCompare(b.name); if (sort === "price-low") return a.price - b.price; if (sort === "price-high") return b.price - a.price; if (sort === "stock") return (a.stock ?? Infinity) - (b.stock ?? Infinity) || a.name.localeCompare(b.name); return String(b.updated_at || "").localeCompare(String(a.updated_at || "")); });
@@ -76,6 +116,10 @@
       const nameCell = element("td"), cell = element("div", "admin-product-cell"), copy = element("div");
       copy.append(element("strong", "", product.name), element("small", "", `${product.sku || "No SKU"} \u00b7 ${product.collection.replace(/^THE | EDIT$/g, "")}`));
       const imageCount = product.images?.length || 1; if (imageCount > 1) copy.append(element("span", "admin-photo-count", `${imageCount} photos`));
+      if (product.parent_product_id) {
+        const parent = state.products.find((item) => item.id === product.parent_product_id);
+        copy.append(element("span", "admin-photo-count", `Item in ${parent?.name || "a saved outfit"}`));
+      }
       cell.append(productImage(product), copy); nameCell.append(cell);
       const statusCell = element("td"); statusCell.append(element("span", `admin-status${!product.deleted_at && product.published ? " is-published" : ""}`, product.deleted_at ? "In trash" : product.published ? "Published" : "Draft"));
       const stockCell = element("td"), tracked = product.stock != null;
@@ -149,19 +193,22 @@
   function editorValues() {
     return JSON.stringify({
       fields: [...$("#admin-edit-form").querySelectorAll("input,select,textarea")]
-        .filter((control) => control.type !== "file")
+        .filter((control) => control.type !== "file" && !control.closest("#admin-image-hotspots"))
         .map((control) => [control.id || control.name, control.type === "checkbox" ? control.checked : control.value]),
       photos: state.photos,
       colors: state.colorVariants,
+      hotspots: hotspotEditor?.snapshot(),
     });
   }
   function editorIsDirty() {
-    return $("#admin-edit-dialog").open && editorSnapshot !== null && (state.uploading || editorValues() !== editorSnapshot);
+    return $("#admin-edit-dialog").open && editorSnapshot !== null && (state.uploading || state.detectingColor || editorValues() !== editorSnapshot);
   }
   function finishCloseEditor() {
     editorSnapshot = null;
     state.editorVersion += 1;
     state.uploading = false;
+    state.detectingColor = false;
+    primaryDetection.request += 1;
     $("#admin-edit-dialog").close();
   }
   function requestEditorDiscard(action) {
@@ -194,29 +241,84 @@
   function renderGallery() {
     const cards = state.photos.map((src, index) => {
       const card = element("div", "admin-photo-card"); card.dataset.imageIndex = index;
-      const image = element("img"); image.src = src; image.alt = `Product photo ${index + 1}${index === 0 ? ", cover" : ""}`;
+      const image = element("img"); optimizedPhoto(image, src, "180px"); image.alt = `Product photo ${index + 1}${index === 0 ? ", cover" : ""}`;
       const label = element("span", `admin-photo-label${index === 0 ? " is-cover" : ""}`, index === 0 ? "Cover photo" : `Photo ${index + 1}`);
       const cover = element("button", "admin-photo-cover", index === 0 ? "Cover selected" : "Make cover");
-      cover.type = "button"; cover.dataset.imageAction = "cover"; cover.dataset.imageIndex = index; cover.disabled = index === 0 || state.uploading;
+      cover.type = "button"; cover.dataset.imageAction = "cover"; cover.dataset.imageIndex = index; cover.disabled = index === 0 || state.uploading || state.detectingColor;
       const actions = element("div", "admin-photo-actions");
       [["left", "\u2190", "Move photo earlier"], ["right", "\u2192", "Move photo later"], ["remove", "\u00d7", "Remove photo"]].forEach(([action, text, name]) => {
         const button = element("button", "", text); button.type = "button"; button.dataset.imageAction = action; button.dataset.imageIndex = index;
         button.setAttribute("aria-label", `${name} ${index + 1}`);
-        button.disabled = state.uploading || (action === "left" && index === 0) || (action === "right" && index === state.photos.length - 1); actions.append(button);
+        button.disabled = state.uploading || state.detectingColor || (action === "left" && index === 0) || (action === "right" && index === state.photos.length - 1); actions.append(button);
       });
       card.append(image, label, cover, actions); return card;
     });
     $("#admin-image-gallery").replaceChildren(...(cards.length ? cards : [element("p", "admin-photos-empty", "Add at least one photo to bring this piece to life.")]));
     $("#admin-image-count").textContent = `${state.photos.length} of 12 photos`;
-    $("#admin-generate-product").disabled = !state.photos.length || state.uploading || state.saving || state.generatingDraft || Boolean(state.editing);
+    $("#admin-generate-product").disabled = !state.photos.length || state.uploading || state.detectingColor || state.saving || state.generatingDraft || Boolean(state.editing);
+    $("#admin-detect-color").disabled = !state.photos.length || state.uploading || state.detectingColor || state.saving || state.generatingDraft || state.generatingDescription;
     const image = $("#admin-edit-image"); image.hidden = !state.photos.length;
-    if (state.photos.length) image.src = state.photos[0]; else image.removeAttribute("src");
+    if (state.photos.length) optimizedPhoto(image, state.photos[0], "360px"); else { image.removeAttribute("src"); image.removeAttribute("srcset"); }
+    refreshHotspotPhotos();
+  }
+  async function detectPhotoColor(source, product = {}) {
+    // Color detection is local and optional: an unreadable/ambiguous photo must never fail an upload.
+    if (!window.VeloraProductColor?.detect) return null;
+    let timer;
+    try {
+      const result = await Promise.race([
+        window.VeloraProductColor.detect(source, { productName: product.name || "", collection: product.collection || "" }),
+        new Promise((resolve) => { timer = setTimeout(() => resolve(null), 10000); }),
+      ]);
+      return result && typeof result.name === "string" && result.name.trim().length > 0 && result.name.length <= 40
+        && /^#[0-9a-f]{6}$/i.test(result.hex) && Number.isFinite(result.confidence) && result.confidence >= 0.55 ? result : null;
+    } catch { return null; }
+    finally { clearTimeout(timer); }
+  }
+  async function detectPrimaryColor(force = false) {
+    if (!state.photos.length || state.saving || state.detectingColor || state.generatingDraft || state.generatingDescription
+        || (force && state.uploading) || (!force && (state.editing || primaryDetection.manual))) return;
+    const version = state.editorVersion, revision = primaryDetection.revision, request = ++primaryDetection.request;
+    const source = state.photos[0], name = $("#admin-edit-base-color"), hex = $("#admin-edit-color-hex");
+    if (!primaryDetection.manual && primaryDetection.source && primaryDetection.source !== source) {
+      name.value = ""; hex.value = "#d1c8bd"; primaryDetection.source = "";
+    }
+    const before = [name.value, hex.value];
+    state.detectingColor = true;
+    $("#admin-auto-color-status").textContent = "Detecting the garment color…";
+    $("#admin-edit-save").disabled = true;
+    $("#admin-image-files").disabled = true;
+    $("#admin-generate-description").disabled = true;
+    renderGallery();
+    try {
+      const result = await detectPhotoColor(source, { name: $("#admin-edit-product-name").value, collection: $("#admin-edit-collection").value });
+      if (version !== state.editorVersion || request !== primaryDetection.request || !$("#admin-edit-dialog").open || source !== state.photos[0]) return;
+      if (revision !== primaryDetection.revision || name.value !== before[0] || hex.value !== before[1]) {
+        $("#admin-auto-color-status").textContent = "Your color correction has been kept.";
+        return;
+      }
+      if (!result) {
+        $("#admin-auto-color-status").textContent = "This photo's color is unclear. Enter a color and swatch, or try another cover photo.";
+        return;
+      }
+      name.value = result.name.trim(); hex.value = result.hex;
+      primaryDetection.manual = false; primaryDetection.source = source;
+      $("#admin-auto-color-status").textContent = `Detected ${result.name}. You can adjust the name or swatch before saving.`;
+    } finally {
+      if (version === state.editorVersion && request === primaryDetection.request) {
+        state.detectingColor = false;
+        $("#admin-edit-save").disabled = state.uploading || state.saving || state.generatingDraft || state.generatingDescription;
+        $("#admin-image-files").disabled = state.uploading || state.saving || state.generatingDraft;
+        $("#admin-generate-description").disabled = state.generatingDraft || state.generatingDescription;
+        renderGallery();
+      }
+    }
   }
   function renderColorVariants() {
     const list = state.colorVariants.map((variant, index) => {
       const row = element("div", "admin-color-variant");
       const image = element("img");
-      image.src = variant.image; image.alt = ""; image.loading = "lazy";
+      optimizedPhoto(image, variant.image, "100px"); image.alt = ""; image.loading = "lazy";
       const swatch = element("span", "admin-color-variant-swatch");
       swatch.style.setProperty("--variant-color", variant.hex);
       const copy = element("div", "admin-color-variant-copy");
@@ -240,6 +342,7 @@
     $("#admin-color-variants").replaceChildren(...(list.length ? list : [
       element("p", "admin-color-variants-empty", state.editing ? "No extra colors added yet." : "Create the product first, then add its colors here."),
     ]));
+    refreshHotspotPhotos();
   }
   function openColorDialog(productId = "") {
     const select = $("#admin-color-product");
@@ -253,6 +356,9 @@
     state.colorImage = null;
     state.colorUploading = false;
     state.colorSaving = false;
+    alternateDetection.revision += 1;
+    alternateDetection.manual = false; alternateDetection.source = "";
+    $("#admin-color-detection-status").textContent = "Upload the photo first. Its color name and swatch will be filled in automatically; you can adjust both.";
     $("#admin-color-image-file").disabled = false;
     $("#admin-color-image-label").textContent = "Choose this color's product photo";
     $("#admin-color-image-preview").hidden = true;
@@ -262,7 +368,7 @@
     $("#admin-color-error").textContent = "";
     $("#admin-color-error").hidden = true;
     if (!$("#admin-color-dialog").open) $("#admin-color-dialog").showModal();
-    if (productId) $("#admin-color-name").focus({ preventScroll: true });
+    if (productId) $("#admin-color-image-file").focus({ preventScroll: true });
     else select.focus({ preventScroll: true });
   }
   async function uploadColorImage(event) {
@@ -271,6 +377,10 @@
     if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) { $("#admin-color-error").textContent = "Choose a JPG, PNG or WebP photo."; $("#admin-color-error").hidden = false; return; }
     if (file.size > 8 * 1024 * 1024 || file.size === 0) { $("#admin-color-error").textContent = "The photo must be between 1 byte and 8 MB."; $("#admin-color-error").hidden = false; return; }
     state.colorUploading = true;
+    const revision = alternateDetection.revision;
+    let before = [$("#admin-color-name").value, $("#admin-color-hex").value];
+    const productSelect = $("#admin-color-product"), productWasDisabled = productSelect.disabled;
+    productSelect.disabled = true;
     $("#admin-color-image-file").disabled = true;
     $("#admin-color-save").disabled = true;
     $("#admin-color-cancel").disabled = true;
@@ -287,12 +397,31 @@
       $("#admin-color-image-preview").hidden = false;
       $("#admin-color-image-label").textContent = file.name;
       $("#admin-color-upload-status").textContent = "Color photo uploaded.";
+      if (!alternateDetection.manual) {
+        if (alternateDetection.source && alternateDetection.source !== response.image && revision === alternateDetection.revision
+            && $("#admin-color-name").value === before[0] && $("#admin-color-hex").value === before[1]) {
+          $("#admin-color-name").value = ""; $("#admin-color-hex").value = "#9b9d83"; alternateDetection.source = "";
+          before = [$("#admin-color-name").value, $("#admin-color-hex").value];
+        }
+        $("#admin-color-detection-status").textContent = "Detecting the garment color…";
+        const product = state.products.find((item) => item.id === $("#admin-color-product").value);
+        const result = await detectPhotoColor(response.image, product);
+        if (revision === alternateDetection.revision && !alternateDetection.manual && $("#admin-color-dialog").open
+            && $("#admin-color-name").value === before[0] && $("#admin-color-hex").value === before[1]) {
+          if (result) {
+            $("#admin-color-name").value = result.name.trim(); $("#admin-color-hex").value = result.hex;
+            alternateDetection.source = response.image;
+            $("#admin-color-detection-status").textContent = `Detected ${result.name}. You can adjust the name or swatch before adding this color.`;
+          } else $("#admin-color-detection-status").textContent = "This photo's color is unclear. Enter a color name and swatch to continue.";
+        }
+      }
     } catch (error) {
       if (error.status === 401 || error.status === 403) showError(error);
       else { $("#admin-color-error").textContent = error.message || "We couldn't upload this color photo."; $("#admin-color-error").hidden = false; }
       $("#admin-color-upload-status").textContent = "";
     } finally {
       state.colorUploading = false;
+      productSelect.disabled = productWasDisabled;
       $("#admin-color-image-file").disabled = false;
       $("#admin-color-save").disabled = false;
       $("#admin-color-cancel").disabled = false;
@@ -356,6 +485,7 @@
     const product = id ? state.products.find((item) => String(item.id) === String(id)) : null;
     if (id && (!product || product.deleted_at)) return;
     state.editorVersion += 1; state.editing = product; state.photos = product ? [...(product.images?.length ? product.images : [product.image])] : []; state.colorVariants = product ? [...(product.color_variants || [])] : []; state.uploading = false;
+    state.detectingColor = false; primaryDetection.request += 1; primaryDetection.revision += 1; primaryDetection.manual = Boolean(product); primaryDetection.source = "";
     $("#admin-edit-form").reset();
     $("#admin-edit-title").textContent = product ? "Edit product" : "Add a new piece";
     $("#admin-edit-name").textContent = product?.name || "Your next favorite piece"; $("#admin-edit-founder").textContent = product?.founder || "A considered addition to your collection";
@@ -365,7 +495,10 @@
     for (const field of ["material", "fabric_weight", "origin", "fit"]) {
       $(`#admin-edit-${field.replaceAll("_", "-")}`).value = product?.[field] || "";
     }
-    $("#admin-edit-base-color").value = product?.base_color || "Original"; $("#admin-edit-color-hex").value = product?.color_hex || "#d1c8bd"; $("#admin-edit-published").checked = Boolean(product?.published);
+    $("#admin-edit-base-color").value = product?.base_color || ""; $("#admin-edit-color-hex").value = product?.color_hex || "#d1c8bd"; $("#admin-edit-published").checked = Boolean(product?.published);
+    $("#admin-auto-color-status").textContent = product
+      ? "Saved color kept. Use Detect from cover photo to check it again, or edit the name and swatch."
+      : "Upload a cover photo to fill in its color automatically. You can edit the name and swatch.";
     const sizes = product?.sizes || ["XS", "S", "M", "L"];
     document.querySelectorAll('#admin-size-options input').forEach((input) => { input.checked = sizes.includes(input.value); });
     $("#admin-editor-trash").hidden = !product; $("#admin-upload-status").textContent = "";
@@ -375,13 +508,16 @@
       : "Upload a photo to generate a product name, description, category, colors, sizes and suggested price. The AI suggests 10 units of stock; confirm your real count. The SKU is assigned when saved. This image is sent to OpenAI only when you generate. New products stay unpublished.";
     $("#admin-generate-description").disabled = state.generatingDescription || state.generatingDraft;
     $("#admin-edit-save").textContent = product ? "Save changes \u2197" : "Create product \u2197"; $("#admin-edit-save").disabled = state.generatingDescription || state.generatingDraft; $("#admin-image-files").disabled = false;
+    renderOutfitParents(product);
     editorError(""); renderGallery(); renderColorVariants();
+    $("#admin-edit-item-image").value = product?.item_image || "";
+    hotspotEditor?.set({ products: state.products, photos: hotspotPhotos(), hotspots: product?.image_hotspots || [], disabled: false });
     if (!$("#admin-edit-dialog").open) $("#admin-edit-dialog").showModal();
     editorSnapshot = editorValues();
     $("#admin-edit-dialog").scrollTop = 0; $("#admin-edit-product-name").focus({ preventScroll: true });
   }
   async function generateDescription() {
-    if (state.generatingDescription || state.saving) return;
+    if (state.generatingDescription || state.saving || state.uploading || state.detectingColor) return;
     const name = $("#admin-edit-product-name").value.trim();
     const baseColor = $("#admin-edit-base-color").value.trim();
     if (!name) {
@@ -431,7 +567,7 @@
     }
   }
   async function generateProductDraft() {
-    if (state.generatingDraft || state.generatingDescription || state.saving || state.uploading) return;
+    if (state.generatingDraft || state.generatingDescription || state.saving || state.uploading || state.detectingColor) return;
     if (state.editing) {
       $("#admin-product-draft-status").textContent = "Image-first generation is available when adding a new product.";
       return;
@@ -466,6 +602,21 @@
       $("#admin-edit-stock").value = String(draft.stock);
       $("#admin-edit-base-color").value = draft.base_color;
       $("#admin-edit-color-hex").value = draft.color_hex;
+      $("#admin-edit-material").value = draft.material || "";
+      $("#admin-edit-fabric-weight").value = draft.fabric_weight || "";
+      $("#admin-edit-origin").value = draft.origin || "";
+      $("#admin-edit-fit").value = draft.fit || "";
+      const skuSuggestion = "VL-" + draft.name.replace(/[^A-Za-z0-9]/g, "").slice(0, 8).toUpperCase();
+      $("#admin-edit-sku").value = skuSuggestion;
+      const parentSelect = $("#admin-edit-parent-product");
+      const sameCollection = state.products.filter((item) => !item.deleted_at && !item.parent_product_id && item.collection === draft.collection);
+      if (sameCollection.length && !parentSelect.value) {
+        const suggestion = sameCollection[0];
+        parentSelect.value = suggestion.id;
+        $("#admin-product-draft-status").textContent += ` Suggested outfit link: ${suggestion.name}.`;
+      }
+      primaryDetection.manual = true; primaryDetection.revision += 1;
+      $("#admin-auto-color-status").textContent = "Color filled in from the product draft. You can edit the name and swatch.";
       $("#admin-edit-published").checked = false;
       document.querySelectorAll("#admin-size-options input").forEach((input) => {
         input.checked = draft.sizes.includes(input.value);
@@ -473,7 +624,7 @@
       const colorSuggestion = $("#admin-ai-color-suggestion");
       colorSuggestion.textContent = `AI suggests ${draft.extra_color} (${draft.extra_color_hex}) as an additional color. Upload a matching photo in “Add color” to add it as a product variant.`;
       colorSuggestion.hidden = false;
-      $("#admin-product-draft-status").textContent = `Draft generated. The €${draft.price.toFixed(2)} price and ${draft.sizes.join(", ")} sizes are suggestions; stock is an estimated 10 units. Confirm details before publishing. The SKU will be assigned when you save.`;
+      $("#admin-product-draft-status").textContent = `Draft generated. The €${draft.price.toFixed(2)} price, SKU ${skuSuggestion}, and ${draft.sizes.join(", ")} sizes are suggestions; stock is an estimated 10 units. Confirm details before publishing.`;
       $("#admin-edit-description").dispatchEvent(new Event("input", { bubbles: true }));
     } catch (error) {
       if (version !== state.editorVersion || !$("#admin-edit-dialog").open) return;
@@ -494,9 +645,11 @@
     state.saving = busy; $("#admin-edit-dialog").setAttribute("aria-busy", String(busy));
     $("#admin-edit-form").querySelectorAll("input, textarea, select, button").forEach((control) => { control.disabled = busy; });
     $("#admin-edit-close").disabled = busy; $("#admin-edit-save").textContent = busy ? "Saving\u2026" : state.editing ? "Save changes \u2197" : "Create product \u2197";
+    hotspotEditor?.setDisabled(busy);
   }
   async function saveProduct(event) {
-    event.preventDefault(); if (state.saving || state.uploading || state.generatingDescription || state.generatingDraft || !$("#admin-edit-form").reportValidity()) return;
+    event.preventDefault(); if (state.saving || state.uploading || state.detectingColor || state.generatingDescription || state.generatingDraft || !$("#admin-edit-form").reportValidity()) return;
+    if (hotspotEditor?.hasPending()) { editorError("Add or update the photo marker, or cancel its edit before saving this product."); $("#admin-image-hotspots").scrollIntoView({ block: "center" }); return; }
     const sizes = [...document.querySelectorAll('#admin-size-options input:checked')].map((input) => input.value);
     if (!state.photos.length) { editorError("Add at least one product photo before saving."); $("#admin-image-files").focus(); return; }
     if (!sizes.length) { editorError("Select at least one available size."); $("#admin-size-options input").focus(); return; }
@@ -504,6 +657,9 @@
       name: $("#admin-edit-product-name").value.trim(), founder: $("#admin-edit-designer").value.trim(), collection: $("#admin-edit-collection").value,
       price: Number($("#admin-edit-price").value), description: $("#admin-edit-description").value.trim(), stock: $("#admin-edit-stock").value === "" ? null : Number($("#admin-edit-stock").value),
       sizes, images: [...state.photos], base_color: $("#admin-edit-base-color").value.trim(), color_hex: $("#admin-edit-color-hex").value, color_variants: [...state.colorVariants], published: $("#admin-edit-published").checked,
+      image_hotspots: hotspotEditor ? hotspotEditor.get() : state.editing?.image_hotspots || [],
+      parent_product_id: $("#admin-edit-parent-product").value,
+      item_image: $("#admin-edit-item-image").value,
     };
     for (const field of ["material", "fabric_weight", "origin", "fit"]) {
       values[field] = $(`#admin-edit-${field.replaceAll("_", "-")}`).value.trim();
@@ -530,7 +686,7 @@
   }
   async function uploadPhotos(event) {
     const files = [...event.target.files]; event.target.value = "";
-    if (!files.length || state.uploading || state.saving) return;
+    if (!files.length || state.uploading || state.saving || state.detectingColor) return;
     if (files.length > 12 - state.photos.length) { editorError(`You can add ${12 - state.photos.length} more photos. A product can have up to 12.`); return; }
     const version = state.editorVersion; state.uploading = true; $("#admin-edit-save").disabled = true; $("#admin-image-files").disabled = true; editorError(""); renderGallery();
     let added = 0;
@@ -547,6 +703,8 @@
         const response = await window.VeloraAuth.request("/api/admin/uploads", { method: "POST", body: { name: file.name, data } });
         if (version !== state.editorVersion) return;
         state.photos.push(response.image); added += 1; renderGallery();
+        if (state.photos.length === 1) await detectPrimaryColor();
+        if (version !== state.editorVersion) return;
       }
       $("#admin-upload-status").textContent = `${added} ${added === 1 ? "photo" : "photos"} added. Choose your favorite cover.`;
     } catch (error) {
@@ -655,6 +813,10 @@
   $("#admin-color-dialog").addEventListener("cancel", (event) => { if (state.colorSaving || state.colorUploading) event.preventDefault(); });
   $("#admin-color-dialog").addEventListener("click", (event) => { if (event.target === event.currentTarget && !state.colorSaving && !state.colorUploading) $("#admin-color-dialog").close(); });
   $("#admin-color-image-file").addEventListener("change", uploadColorImage);
+  ["#admin-color-name", "#admin-color-hex"].forEach((selector) => $(selector).addEventListener("input", () => {
+    alternateDetection.manual = true; alternateDetection.revision += 1;
+    $("#admin-color-detection-status").textContent = "Your color correction will be kept when uploading a photo.";
+  }));
   $("#admin-color-form").addEventListener("submit", saveColorVariant);
   $("#admin-color-variants").addEventListener("click", (event) => {
     if (!(event.target instanceof Element) || state.saving) return;
@@ -676,18 +838,24 @@
   $("#admin-edit-form").addEventListener("submit", saveProduct);
   $("#admin-generate-description").addEventListener("click", generateDescription);
   $("#admin-generate-product").addEventListener("click", generateProductDraft);
+  $("#admin-detect-color").addEventListener("click", () => detectPrimaryColor(true));
+  ["#admin-edit-base-color", "#admin-edit-color-hex"].forEach((selector) => $(selector).addEventListener("input", () => {
+    primaryDetection.manual = true; primaryDetection.revision += 1;
+    $("#admin-auto-color-status").textContent = "Your color correction will be kept. Use Detect from cover photo to check it again.";
+  }));
   $("#admin-edit-product-name").addEventListener("input", () => { $("#admin-edit-name").textContent = $("#admin-edit-product-name").value.trim() || "Your next favorite piece"; });
   $("#admin-edit-designer").addEventListener("input", () => { $("#admin-edit-founder").textContent = $("#admin-edit-designer").value.trim() || "A considered addition to your collection"; });
   $("#admin-image-files").addEventListener("change", uploadPhotos);
   $("#admin-image-gallery").addEventListener("click", (event) => {
-    if (!(event.target instanceof Element) || state.saving || state.uploading) return;
+    if (!(event.target instanceof Element) || state.saving || state.uploading || state.detectingColor) return;
     const button = event.target.closest("[data-image-action]"); if (!button) return;
     const index = Number(button.dataset.imageIndex); if (!Number.isInteger(index) || index < 0 || index >= state.photos.length) return;
-    const action = button.dataset.imageAction;
+    const action = button.dataset.imageAction, previousCover = state.photos[0];
     if (action === "remove") state.photos.splice(index, 1); else if (action === "cover") state.photos.unshift(state.photos.splice(index, 1)[0]);
     else if (action === "left" && index > 0) [state.photos[index - 1], state.photos[index]] = [state.photos[index], state.photos[index - 1]];
     else if (action === "right" && index < state.photos.length - 1) [state.photos[index + 1], state.photos[index]] = [state.photos[index], state.photos[index + 1]];
     renderGallery();
+    if (state.photos[0] !== previousCover) detectPrimaryColor();
     const nextIndex = action === "cover" ? 0 : action === "left" ? index - 1 : action === "right" ? index + 1 : Math.min(index, state.photos.length - 1);
     const card = document.querySelector(`#admin-image-gallery > [data-image-index="${nextIndex}"]`);
     const nextControl = card?.querySelector(`[data-image-action="${action}"]:not(:disabled)`) || card?.querySelector("button:not(:disabled)");

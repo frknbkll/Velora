@@ -1,0 +1,66 @@
+[
+  {
+    "product_id": "8896b52b23cd0824",
+    "old_name": "The Ivory Tie-Neck Set",
+    "proposed_name": "The Ivory Collared Blouse Trouser Set",
+    "reason": "The photograph shows an open pointed-collar blouse and matching ivory trousers. No tie-neck detail is visible, so the proposed name removes that specific unsupported construction claim.",
+    "photo": "assets/gallery/luna-ivory-tie-neck-set.jpg",
+    "confidence": 0.98
+  },
+  {
+    "product_id": "4e2b0a33f31318ac",
+    "old_name": "The Ivory Knit-Tailored Set",
+    "proposed_name": "The Champagne Halter Draped Gown",
+    "reason": "The photograph shows one champagne halter-neck gown with gathered waist draping and a high skirt slit, rather than a knit top or tailored trouser set.",
+    "photo": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+    "confidence": 0.999
+  },
+  {
+    "product_id": "52e502c50f2fff58",
+    "old_name": "The Champagne Halter Gown",
+    "proposed_name": "The Midnight Draped Slip Gown",
+    "reason": "The photograph shows a black thin-strap gown with a draped neckline and side slit. Both champagne color and halter construction conflict with the visible garment; Midnight preserves an established creative color name.",
+    "photo": "assets/gallery/victoria-champagne-halter-gown.jpg",
+    "confidence": 0.999
+  },
+  {
+    "product_id": "874d7c0173a9d2a8",
+    "old_name": "The Midnight Satin Slip Gown",
+    "proposed_name": "The Ivory Belted Longline Coat",
+    "reason": "The photograph shows an ivory longline coat with a self-tie waist belt, worn over an ivory top and trousers. It does not show a dark slip gown.",
+    "photo": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+    "confidence": 0.999
+  },
+  {
+    "product_id": "ee63e133d40760be",
+    "old_name": "The Ivory Trench Ensemble",
+    "proposed_name": "The Champagne Halter Blouse & Black Trousers",
+    "reason": "The photograph shows a sleeveless champagne halter blouse and black tailored wide-leg trousers. There is no ivory trench or other coat.",
+    "photo": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+    "confidence": 0.999
+  },
+  {
+    "product_id": "6664bf77ae517850",
+    "old_name": "The Champagne Blouse & Black Trousers",
+    "proposed_name": "The Ivory Tailored Trouser Suit",
+    "reason": "The photograph shows an ivory blazer and matching ivory trousers over a light inner top, rather than a champagne blouse with black trousers.",
+    "photo": "assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+    "confidence": 0.999
+  },
+  {
+    "product_id": "db747bb55dc91722",
+    "old_name": "The Weekend Denim Jacket Look",
+    "proposed_name": "The Weekend Taupe Bomber & Denim Look",
+    "reason": "The jacket is a plain taupe collared zip bomber. Blue denim is visible only in the jeans, so the revised wording retains the Weekend and denim styling theme while identifying the jacket correctly.",
+    "photo": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+    "confidence": 0.99
+  },
+  {
+    "product_id": "0d3ef24445790a06",
+    "old_name": "Noir Élégance Tailored Suit",
+    "proposed_name": "The Cream Pleated Belted Maxi Dress",
+    "reason": "The photograph shows a cream long-sleeve pleated maxi dress with a tie belt and matching headscarf. The color and garment type conflict with Noir and tailored suit.",
+    "photo": "assets/uploads/21102994fa83b26267c383a7d211db0e-pose-v2.jpg",
+    "confidence": 0.999
+  }
+]

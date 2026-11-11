@@ -1,0 +1,11 @@
+{
+  "id": "garment-c9f06c204bdee72a-v3",
+  "output": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+  "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1aa93-c4dc-7bf2-a8eb-e2529f2b3d6e\\exec-f9e47f7b-ead4-453b-9cfd-9f726c5f9689.png",
+  "reference": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+  "referenced_images": [
+    "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg"
+  ],
+  "mode": "built-in",
+  "prompt": "Use case: product-mockup. Create one photorealistic standalone e-commerce photograph of the coordinated three-piece outfit from the reference: long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers. Remove the person and every styling accessory. Show only these three garments on an invisible display, fully visible to the hems, closely centered against seamless soft off-white with real knit and woven textures and gentle contact shadows. Match the reference's garment cut, color, texture, seams, drape and sleeve length. The inside back neckline of the ivory top must be a CONTINUOUS, UNINTERRUPTED band of plain ivory ribbed knitting. ABSOLUTELY NO sewn-in collar tag, NO rectangular patch, NO label, NO lettering, NO gray marks, NO printed text anywhere. Make the collar entirely knit fabric. No scarf, person, head, body, hands, mannequin, hanger, bag, shoes, accessories, text, logo or watermark. Avoid CGI, plastic texture, rendering appearance, warped seams, extra limbs, melted fabric, duplicate garments, excessive HDR, blur or oversharpening. One clean realistic photographic product arrangement."
+}

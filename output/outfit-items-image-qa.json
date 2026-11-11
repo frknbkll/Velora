@@ -1,0 +1,2131 @@
+{
+  "images": [
+    {
+      "id": "nude-pointed-court-shoes-v1",
+      "output": "assets/generated-items/nude-pointed-court-shoes-v1.png",
+      "sha256": "885510775b7231896c2b113c28c419e8513d8a9f955abb59996522f76b1affe7",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved isolated matching nude pointed court shoe pair; complete framing, plain low-cut uppers, no wearer or text. Generated heel/back details are concept reconstruction where outfit hems hide them."
+    },
+    {
+      "id": "item-edb847363b513850797c-v1",
+      "output": "assets/generated-items/item-edb847363b513850797c-v1.png",
+      "sha256": "56ae6e28d2c44f136c50d915e22f0af9775c8b1f703d4d7d083a15aa60abd610",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved black plain wrapped headscarf only, with folded neck and open face area but no actual head or person; complete framing and no text."
+    },
+    {
+      "id": "item-13c14185327517d0300a-v1",
+      "output": "assets/generated-items/item-13c14185327517d0300a-v1.png",
+      "sha256": "02c26f841b7e3f1fee97e0cfcaefd1816ba72cf70e0cbb5d9bc35d89b1475c72",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved taupe structured trapezoid flap bag with short rounded handle and gold rectangular clasp; clean complete item image, no extra objects/text."
+    },
+    {
+      "id": "item-2dc2fa19e237834e3824-v1",
+      "output": "assets/generated-items/item-2dc2fa19e237834e3824-v1.png",
+      "sha256": "249ed52989c6fe0c1d7221216a78340a8949241265758e8254f31a2428e73790",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved ivory ribbed sleeveless scoop-neck top only; rib texture, neckline and hem visible, clean framing, no body/mannequin or accessories."
+    },
+    {
+      "id": "item-8a86693a4e2adb99e788-v1",
+      "output": "assets/generated-items/item-8a86693a4e2adb99e788-v1.png",
+      "sha256": "6054617a8f98f5a2f60f9abc420445dbe5bd8e8b0f2d9f43ee4e555b38d6f99d",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved pale nude pointed court shoe pair with rectangular sparkling frame buckles; both shoes complete, correct category/ornament, no extra objects/text."
+    },
+    {
+      "id": "item-1634f31e76a0bdd98717-v1",
+      "output": "assets/generated-items/item-1634f31e76a0bdd98717-v1.png",
+      "sha256": "2759730d03cde7155161e3ecd818ef6b0ad299696ed064836743a0c6b97943ae",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved nude pointed court shoe pair with gold linked vamp hardware; complete pair, correct pale nude glossy appearance, no extra objects/text."
+    },
+    {
+      "id": "espresso-top-handle-bag-v1",
+      "output": "assets/generated-items/espresso-top-handle-bag-v1.png",
+      "sha256": "2342f203cb5ae99ffb85e8f7b0c71240380a439671ea35e3d043d17f7458c54d",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved isolated espresso structured top-handle flap bag; gold rectangular clasp, matching color/shape, complete handle/body, no extra objects or text."
+    },
+    {
+      "id": "taupe-draped-scarf-v1",
+      "output": "assets/generated-items/taupe-draped-scarf-v1.png",
+      "sha256": "7ae4db1d70a49cc5a70c1b6e7b3a8d5011ee37ec4e042540a9787a95f501b3e1",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved taupe scarf-only image with natural folds and wrapped opening; no wearer/head/mannequin or text, all fabric edges visible."
+    },
+    {
+      "id": "garment-552959ebc1ce3e02-v1",
+      "output": "assets/generated-items/garment-552959ebc1ce3e02-v1.png",
+      "sha256": "8996dbc6a8afa92cb88f61aceb571a3c9c6b7ed1ddc0259bb92afc31e757a9ab",
+      "checkedAt": "2026-11-09T09:01:56+00:00",
+      "status": "approved",
+      "note": "Approved matching espresso blazer and wide-leg trousers as one coordinated garment image, complete and person-free. The reference styling belt is omitted; do not describe a supplied belt as reproduced."
+    },
+    {
+      "id": "item-88b9dd8eb510a3b55301-v1",
+      "output": "assets/generated-items/item-88b9dd8eb510a3b55301-v1.png",
+      "sha256": "7de43146a9cfc83026b731c35939509acf8db8c40e25edd9406c954a0a82f6d3",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved complete white low-top lace-up trainer pair; rounded toes, plain thick white soles and restrained natural shadows, no logos/extra objects."
+    },
+    {
+      "id": "item-7bac59a839fff2cf42ff-v1",
+      "output": "assets/generated-items/item-7bac59a839fff2cf42ff-v1.png",
+      "sha256": "31ac78829e2952e7be5888c976504d68076e3d4b001cb3f9c30c069daaa20bd6",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved isolated white fine-ribbed scoop-neck tank with broad straps; full hem and neckline, no wearer or added garments."
+    },
+    {
+      "id": "item-abc1356c64d6fba2dbc4-v1",
+      "output": "assets/generated-items/item-abc1356c64d6fba2dbc4-v1.png",
+      "sha256": "81e4b41704664008e034ccb5435ae5b4b85175438029140a9b3e4636f95248dd",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved matching black glossy pointed court shoe pair, plain vamps and narrow heels, complete framing and no text."
+    },
+    {
+      "id": "item-c35357c6d15204e698ee-v1",
+      "output": "assets/generated-items/item-c35357c6d15204e698ee-v1.png",
+      "sha256": "c196e0a0f2e687549201cb3fbac59c086d2f4435d744eaf1e1eda9cc4e535bd3",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved pale nude plain pointed shoe pair; no invented ornament. Hidden heel/back construction is a reasonable concept reconstruction rather than verified product specification."
+    },
+    {
+      "id": "item-d00bdae55ae3e00e1e91-v1",
+      "output": "assets/generated-items/item-d00bdae55ae3e00e1e91-v1.png",
+      "sha256": "ecca8e60302d5823448d0c221bbab9e4438406956c7425c95c61ccf653c25382",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved ivory fine-rib long-sleeve mock-neck top only; full sleeves and hem, appropriate fitted shape, clean neutral background and no person."
+    },
+    {
+      "id": "item-db26b74d526e9b8ffc55-v1",
+      "output": "assets/generated-items/item-db26b74d526e9b8ffc55-v1.png",
+      "sha256": "e5ba5436e49c45f7112cdc6cd384f75a5cdbe07eeb475a91f03b0b4ff510d1d3",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved cream structured trapezoid short-handle flap bag with gold rectangular clasp; complete clean item-only photograph."
+    },
+    {
+      "id": "item-25743c9e0eb105927ca2-v1",
+      "output": "assets/generated-items/item-25743c9e0eb105927ca2-v1.png",
+      "sha256": "50f70f40ec86acbc3fa9f5fffa9fcf8c7ab745d7c51daf2b3bb67e60f8d6e09e",
+      "checkedAt": "2026-11-09T09:02:52+00:00",
+      "status": "approved",
+      "note": "Approved ivory trapezoid top-handle flap bag with tall gold hinged center lock; correct visible hardware family, complete handle/body, no extra objects/text."
+    },
+    {
+      "id": "item-6eaa84dd1ffa73ab40bf-v1",
+      "output": "assets/generated-items/item-6eaa84dd1ffa73ab40bf-v1.png",
+      "sha256": "6b06c2bdfa6d410a85c82ec5494025d3df9c3e9cf2729ddd515cc596b6392e37",
+      "checkedAt": "2026-11-09T09:03:47+00:00",
+      "status": "approved",
+      "note": "Approved ivory fine-ribbed fitted high-neck top, fully isolated with complete sleeves and hem. Long sleeves are a plausible garment reconstruction where the reference outer coat hides them."
+    },
+    {
+      "id": "item-214c013a85adf0257182-v1",
+      "output": "assets/generated-items/item-214c013a85adf0257182-v1.png",
+      "sha256": "3511c75f6cdfed7de999b8a7d5d42f156a117a909a1b3f3aadae21c1a476f582",
+      "checkedAt": "2026-11-09T09:03:47+00:00",
+      "status": "approved",
+      "note": "Approved espresso brown wrapped scarf only, smooth layered folds and empty opening; no actual head/person, no text, complete scarf shape."
+    },
+    {
+      "id": "item-3aa472a54574342aac65-v1",
+      "output": "assets/generated-items/item-3aa472a54574342aac65-v1.png",
+      "sha256": "cc18991d1d30ebb357963081f7c5284fb067626ba042e6828c1567873744b6d0",
+      "checkedAt": "2026-11-09T09:03:47+00:00",
+      "status": "approved",
+      "note": "Approved merlot structured top-handle flap bag with gold clasp and fine-grain-looking surface; faithful color/category and clean complete framing."
+    },
+    {
+      "id": "item-4942e7b3c11d1c0c8c0d-v1",
+      "output": "assets/generated-items/item-4942e7b3c11d1c0c8c0d-v1.png",
+      "sha256": "26bc4b2c867cce02160d6db7d65b3bbbaed849a16526e3ea0c8cfe3890911548",
+      "checkedAt": "2026-11-09T09:04:22+00:00",
+      "status": "approved",
+      "note": "Approved complete plain nude glossy pointed court shoe pair with narrow heels; clean framing, correct unadorned uppers and no text/extra objects."
+    },
+    {
+      "id": "item-511599456a4940d710dd-v1",
+      "output": "assets/generated-items/item-511599456a4940d710dd-v1.png",
+      "sha256": "4a3b51fe815f3118279f6f2a67a1d3edd3ff05df590be39c4f772999ee73a7d5",
+      "checkedAt": "2026-11-09T09:04:22+00:00",
+      "status": "approved",
+      "note": "Approved ivory fine-rib long-sleeve top with folded roll neck; complete sleeves/hem and item-only presentation. The source filename is misleading but its visible outfit genuinely contains this ivory roll-neck."
+    },
+    {
+      "id": "item-5c49a03f9a7d3a0fbe49-v1",
+      "output": "assets/generated-items/item-5c49a03f9a7d3a0fbe49-v1.png",
+      "sha256": "9fe8de990ca7c0d8a2fa0bcd3c9654dc1ecd20a536b7259c133baca6d5dbe6c7",
+      "checkedAt": "2026-11-09T09:04:22+00:00",
+      "status": "approved",
+      "note": "Approved ivory fine-ribbed long-sleeve crew-neck top, matching the visible round neckline under the reference coat; complete and person-free."
+    },
+    {
+      "id": "item-67a1be98d1323affc094-v1",
+      "output": "assets/generated-items/item-67a1be98d1323affc094-v1.png",
+      "sha256": "3a3b67fce27fd85b82fb0c6a96ec59d49cb317ead99732daf3a59c5b9c5ba152",
+      "checkedAt": "2026-11-09T09:04:22+00:00",
+      "status": "approved",
+      "note": "Approved white fine-rib scoop-neck wide-strap tank, complete bound neckline and hem; no person or other garments."
+    },
+    {
+      "id": "item-79df3121a6b4735ebc9f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-79df3121a6b4735ebc9f-v1.png",
+      "sha256": "7b571658b276a01f047e13e32e76d816e7c36880c09d5c3b2129a7deaaba3541",
+      "note": "Approved isolated The Ivory Slim-Strap Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-7d8f62e61b809eae61ff-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-7d8f62e61b809eae61ff-v1.png",
+      "sha256": "52662657fc7376fd678dc6bbf23f5649258014f6456b020511c4a7b430a7d1ea",
+      "note": "Approved isolated The White Platform Lace-Up Trainers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-c5a5c7fc046e514c4978-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-c5a5c7fc046e514c4978-v1.png",
+      "sha256": "90860d9223fc27ad89b292d4bcc11475d1bffe248f6b43696a2b91ce0e878271",
+      "note": "Approved isolated Merlot Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-ff84faa985a9d5dbd583-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-ff84faa985a9d5dbd583-v1.png",
+      "sha256": "4c5c05378fdfb3a99c8d44834335088c7cf8beb5b3f37bf9a71ce758aaf5bcc4",
+      "note": "Approved isolated The Ivory Belted Wide-Leg Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-0060dab0fc44aea700f8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-0060dab0fc44aea700f8-v1.png",
+      "sha256": "666abc547bf53c4b8e6253e245b17243fba22207d02f1b96900f78927ec5321c",
+      "note": "Approved isolated Sage Smooth Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-02a6ac30576c8d0f9803-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-02a6ac30576c8d0f9803-v1.png",
+      "sha256": "0ec81590677bb9c35c4f7dbb99724b6747b02553d2827362bb4c3ca865d2bf52",
+      "note": "Approved isolated Light Blue Wide-Leg Jeans; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-02e52f59c838a13af993-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-02e52f59c838a13af993-v1.png",
+      "sha256": "146c0199d201521876f362fbf6f5341d39ae8f62d9ec0f2bb4bd67557ef9c489",
+      "note": "Approved burgundy ribbed folded-neck sweater only; neckline/color match the visible reference. Sleeve and hem construction concealed by the coat is illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-04562df33ac9ad6146c6-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-04562df33ac9ad6146c6-v1.png",
+      "sha256": "33f5ec9b32daee65794c7b8c6a45098501fcc90d86783f9598b28415e9016711",
+      "note": "Approved isolated Cream Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-061feb823cc13b256c42-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-061feb823cc13b256c42-v1.png",
+      "sha256": "30b0effaeb4ad35c9a012174bdf2e81d623c2632016b55f314ba56d326b24cb9",
+      "note": "Approved isolated Gold Oval Hardcase Clutch; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-0910b902f39d4486e3a9-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-0910b902f39d4486e3a9-v1.png",
+      "sha256": "6f52202d2afc386b958da6de695f064e583068a9a53628d902c57a877043ec79",
+      "note": "Approved isolated Ivory Gold-Clasp Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-0ce0faf7e84af62d7380-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-0ce0faf7e84af62d7380-v1.png",
+      "sha256": "470810e4875f80b546fd38b1f5898c12595c7fea8ea5c92247f687f295afd456",
+      "note": "Approved isolated black pointed ankle-boot pair. Heel/upper details obscured by the reference trousers remain concept reconstruction; complete framing, no wearer or text.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-0dee573220edb40f2e90-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-0dee573220edb40f2e90-v1.png",
+      "sha256": "1610ff67a3aba9c9022f785cc03d24cbfee7f5d3cf89b2be12c5cca889c2de86",
+      "note": "Approved isolated Nude Slim-Strap Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-1179ba1b69e040932bd6-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-1179ba1b69e040932bd6-v1.png",
+      "sha256": "9253d42db0a7a6e2dc3dc10c9d347ca7831b2c4d45e7c6dbe56e54f1bf7ca417",
+      "note": "Approved isolated Ivory Square-Neck Cami Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-11baa7a83b3b63ec487e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-11baa7a83b3b63ec487e-v1.png",
+      "sha256": "3db39e47cb1ab8df61f376b17a040549d77ad4d01c70fbcaa45bc37135487cfc",
+      "note": "Approved isolated The Nude Glossy Stiletto Pumps; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-12a78e3e1d0c60b1eb48-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-12a78e3e1d0c60b1eb48-v1.png",
+      "sha256": "7214721737214462d88a27eafe5d5c81a5248cb03e49b6424808e56fb4fa8376",
+      "note": "Approved isolated The Espresso Double-Strap Pointed Pumps; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-150a666c293c0d1909b4-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-150a666c293c0d1909b4-v1.png",
+      "sha256": "86fad88f96c76cf69e591f7eda7a0286d207a7a17cada272eb3edfe89965c649",
+      "note": "Approved isolated Chocolate Pleated Wide-Leg Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-1563a4bbc31be2fd21d3-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-1563a4bbc31be2fd21d3-v1.png",
+      "sha256": "9d9413dc784f59185e726782ff5d9bfcad5d3d2fefd8fc6d9d0d01bb828f5c32",
+      "note": "Approved isolated The White Perforated-Toe Lace-Up Trainers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-174ac997d98e5c8c688e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-174ac997d98e5c8c688e-v1.png",
+      "sha256": "f0b9b9579594f5ea28f279e665b602f4327f3f03abfafef133df166389fe1e33",
+      "note": "Approved isolated The Taupe Mini Chain-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-17f6a8a74dba84a7feb4-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-17f6a8a74dba84a7feb4-v1.png",
+      "sha256": "a3c70c256fe332061f4dc9e222b0e264a45f4ea9626f99fd221b7ba3451ac3dd",
+      "note": "Approved isolated Burgundy Soft Shoulder Tote; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-1d55dc69d92690d44d2f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-1d55dc69d92690d44d2f-v1.png",
+      "sha256": "0647d72e8a963f02fec1c8293c7f64dede9e01268f0acc5b12b17646982d2893",
+      "note": "Approved isolated The Espresso Mini Gold-Clasp Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-1ef083bae598a0437390-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-1ef083bae598a0437390-v1.png",
+      "sha256": "94e41619cd371b51f6b0322805d7318fd6220ea48c27f2ad1052ebb768650bed",
+      "note": "Approved isolated Cream Small Shoulder Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-1f22feb8b29400af46a8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-1f22feb8b29400af46a8-v1.png",
+      "sha256": "43439a9d8213bcf9c92bdd541927e3ecbae648a439c18f3903c16ef1201d9c5b",
+      "note": "Approved isolated The Gold Slim-Strap Heeled Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-20f6d0b0fc2425890384-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-20f6d0b0fc2425890384-v1.png",
+      "sha256": "7941e2b416856a48eb6910558dda21e25470761311382489df769379d93154ed",
+      "note": "Approved isolated White Paneled Low-Top Sneakers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-2179aaea8a0526b3976d-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-2179aaea8a0526b3976d-v1.png",
+      "sha256": "9941ea1de8702f44eb08082ce8b85d37f4e239b123d1d6b0dccf340783eb5fc7",
+      "note": "Approved isolated Burgundy Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-22fa1f903fb7b8242af1-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-22fa1f903fb7b8242af1-v1.png",
+      "sha256": "98844d7aa002a01f96676e2ae8d340ebb9722abc10141509b142b68851b00f8b",
+      "note": "Approved isolated Black Gold-Frame Box Clutch; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-233feed618df246613d8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-233feed618df246613d8-v1.png",
+      "sha256": "60441bded8fe6a557d922e978b3650cf30bf682de83b3ed9483dc25d75a23b89",
+      "note": "Approved isolated Black Fitted Roll-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-23fec7367f25774f83bc-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-23fec7367f25774f83bc-v1.png",
+      "sha256": "40d31b112bea928227dbd860d634870d84ff4e77ce785c52ac58339b11786819",
+      "note": "Approved isolated The Cream Belt-Flap Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-24a6c58cfb182fd4c063-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-24a6c58cfb182fd4c063-v1.png",
+      "sha256": "188d70849bc5f0077b444fc3f5de469edc41d25ed0ec67061229c9d34d67adc9",
+      "note": "Approved isolated Ivory Ribbed Turtleneck; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-24da8ecf2bfe0550f422-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-24da8ecf2bfe0550f422-v1.png",
+      "sha256": "ec3f909e76f0317cc12972935a41115a7733e215db545246f3b17bd2dbd7582a",
+      "note": "Approved champagne lace-trim camisole only; V neckline, lace placement and color match the reference. Exact cropped hem length remains unconfirmed.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-24f199f758ad14f5b618-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-24f199f758ad14f5b618-v1.png",
+      "sha256": "8ffdcc0ced5dd03bbde15722c57baeef1582bd73a06f861e6e6a0c68060c6fb7",
+      "note": "Approved chocolate ribbed crew-neck top, represented sleeveless without inventing hidden long sleeves; clean item-only framing and no person/text.",
+      "checkedAt": "2026-11-09T13:58:52+00:00"
+    },
+    {
+      "id": "item-27b04162b59291dd21cc-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-27b04162b59291dd21cc-v1.png",
+      "sha256": "8d0cb6508c523fa890eeb92bdecc63aa67b8af2fd13555856973443cd2125cb3",
+      "note": "Approved isolated Chocolate Twin-Handle Bowling Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-294ec637528d505f3050-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-294ec637528d505f3050-v1.png",
+      "sha256": "4e8c3800c61a6de3809c76c2e24a99c313c49cbfd2bc2db59142018d42aa5e0d",
+      "note": "Approved isolated Black Ankle-Strap Heeled Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-29581b8ee6e98283563c-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-29581b8ee6e98283563c-v1.png",
+      "sha256": "34eedcd72def1fcf4a1f2c9272ef249ec216024ab2d74c9969e3fa3334751c35",
+      "note": "Approved isolated Ivory Fitted Crew-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-2bd36b2070b2cb98285a-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-2bd36b2070b2cb98285a-v1.png",
+      "sha256": "950d3aa83c8129aaabf9f8bb3747f1b2efb3bed5a0d81e0fcdbbdbf507f36e9d",
+      "note": "Approved isolated Ivory Gold-Chain Flap Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-2c64eb68f60edcd53c9a-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-2c64eb68f60edcd53c9a-v1.png",
+      "sha256": "14b85f119522b62b4028c8c826d70bb68625b0b2ca371d65861c25bf0fbcfd8c",
+      "note": "Approved isolated Taupe Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-2e34a3d16cdab3923417-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-2e34a3d16cdab3923417-v1.png",
+      "sha256": "e74b5c5b0ce181d916e742c241b7d2d413baec50ec35128c703a4ce2dd9f4710",
+      "note": "Approved isolated White Platform Low-Top Sneakers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-399440f415fb060184ca-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-399440f415fb060184ca-v1.png",
+      "sha256": "f154bd18f52876e5ab2bc92ed72d59fe04b339d3ebd8f2d84906c92b79914949",
+      "note": "Approved isolated Ivory Pleated Wide-Leg Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-39bb7efbed8bccdab668-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-39bb7efbed8bccdab668-v1.png",
+      "sha256": "16cd4077a8d5650cdbd7f6faf0d383c347f8571bce50fd3c979a9c059088637d",
+      "note": "Approved isolated The Taupe Gold-Clasp Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-3c4526d04ba6676b9c29-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-3c4526d04ba6676b9c29-v1.png",
+      "sha256": "ec16099521c62680b8527e3ebd85e8d28fdf76a6847ec76d70bbeb055789dc93",
+      "note": "Approved isolated Oat Chunky Button Cardigan; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-3d86497279f44605b1ca-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-3d86497279f44605b1ca-v1.png",
+      "sha256": "644bb8e79d9413021fee48aee990caaeff190c4ce7e8e1b7238626c5c9ff6c93",
+      "note": "Approved isolated The Cream Ribbed Square-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-441ffa54f674be6a1b48-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-441ffa54f674be6a1b48-v1.png",
+      "sha256": "5c4afc6fa5b3af0958c173a161c38076372470341799140f2285cb449d023fd4",
+      "note": "Approved isolated Ivory Ribbed Crew-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:30+00:00"
+    },
+    {
+      "id": "item-2fda23305be751222767-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-2fda23305be751222767-v1.png",
+      "sha256": "5d540280efbec9667de5d8a08b7e759b4c229e49eec8227521f5360ad0e25aa1",
+      "note": "Approved isolated Ivory Chain-Trim Pointed Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:50+00:00"
+    },
+    {
+      "id": "item-43087cf9c8532d208317-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-43087cf9c8532d208317-v1.png",
+      "sha256": "94e7af13d713acaa7d3cceb3556c84b69dcaadda71a002ed568f5e20c7285a6d",
+      "note": "Approved isolated Gold Ankle-Strap Heeled Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:50+00:00"
+    },
+    {
+      "id": "item-445ecc26ad0c91dbc4e7-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-445ecc26ad0c91dbc4e7-v1.png",
+      "sha256": "5d04458432b9742d665d67fa51f000cdd33e10ba1123d31810524f2abb4a89ef",
+      "note": "Approved isolated Brown Suede-Look Zip Tote; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:50+00:00"
+    },
+    {
+      "id": "item-46a20b1b1476300d0eee-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-46a20b1b1476300d0eee-v1.png",
+      "sha256": "de968523737c198435be8d7e060b9f4e561e3d02d959bf6fa4c257e7de237590",
+      "note": "Approved isolated Chocolate Textured Fringed Scarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:50+00:00"
+    },
+    {
+      "id": "item-46eee4037024b11c38f6-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-46eee4037024b11c38f6-v1.png",
+      "sha256": "6bfb5e6390a76c08f2d6db2945fd163eb9143d862657343180af92e48283555e",
+      "note": "Approved isolated Black Fitted Crew-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:01:50+00:00"
+    },
+    {
+      "id": "item-265dfa141e5ddf067137-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-265dfa141e5ddf067137-v1.png",
+      "sha256": "cb854e88a6dca4ca8a7b446a2ce00e5dc44dc5c78144ba521b52bbc99ca06859",
+      "note": "Approved isolated Taupe Block-Heel Ankle Boots; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-35adb47003bb0c9f78f5-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-35adb47003bb0c9f78f5-v1.png",
+      "sha256": "bd1bc70da69ab635e26344a23701c128ad9fdb2e34361edc5859e049ae3055db",
+      "note": "Approved isolated Oat Wide-Leg Drawstring Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-35b682ca221a31ad8c17-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-35b682ca221a31ad8c17-v1.png",
+      "sha256": "8bf25e8436969ba093ff3ee6ff21466d25d8fafdc775f0d12ee8fe120090d24b",
+      "note": "Approved isolated Ivory Gold-Pendant Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-384b8a3c0f4ad32d6e1f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-384b8a3c0f4ad32d6e1f-v1.png",
+      "sha256": "f1a9ce70b3c31c07bf1a446250b2992811d585247c3455a07e7b98df88622263",
+      "note": "Approved isolated Black Smooth Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-468dcb718d9575d3cb0f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-468dcb718d9575d3cb0f-v1.png",
+      "sha256": "3b9566deee093bd74d29b0944885fa38f6312fb1c54d677c02594463ccd1c436",
+      "note": "Approved isolated Espresso Pointed Ankle Boots; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-47d8e6634ac7b1a77958-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-47d8e6634ac7b1a77958-v1.png",
+      "sha256": "4382094758612bba082393dc106c10c8d39dd7a0b6468492331643b163d317a3",
+      "note": "Approved isolated The White Square-Neck Inner Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-493958ea0b8b3d571a7e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-493958ea0b8b3d571a7e-v1.png",
+      "sha256": "79b1ce17982fa84fc0438e956473b703b14240cd2bfce4fef369960d8643d7ef",
+      "note": "Approved isolated Chocolate Smooth Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-4b27f6739dcccce8e92c-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4b27f6739dcccce8e92c-v1.png",
+      "sha256": "46809f4a08bccf3fd3d62575ac2ad33ef702c0e0b4200b2651d35bd8304cec37",
+      "note": "Approved isolated Ivory Fine-Knit Turtleneck; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:32+00:00"
+    },
+    {
+      "id": "item-391057e3281e1a8be85e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-391057e3281e1a8be85e-v1.png",
+      "sha256": "9c1d1d984852fe5d9857d3372df0d6bd9c97387da125d5e81a11098c3fa229aa",
+      "note": "Approved isolated Burgundy Cable-Knit Fringed Scarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:50+00:00"
+    },
+    {
+      "id": "item-4baa8a17be7b641d68a3-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4baa8a17be7b641d68a3-v1.png",
+      "sha256": "0a8c4d48ced27223e7f1f33b1f1ffb8e010b05f94fadfcc0afc0c9bed22d1f5b",
+      "note": "Approved isolated Cream Smooth Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:50+00:00"
+    },
+    {
+      "id": "item-4bd178f48f9d5eddf6d4-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4bd178f48f9d5eddf6d4-v1.png",
+      "sha256": "263dcca12998f555d160095838e83a961a54b68e372dd633a59917ee5b6560e4",
+      "note": "Approved isolated The Pale Nude Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:03:50+00:00"
+    },
+    {
+      "id": "item-4cf68b24b1af1f0c5800-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4cf68b24b1af1f0c5800-v1.png",
+      "sha256": "80288f56d516df23f553928035d67b2024404ee5764ed9e8d759d8a795281970",
+      "note": "Approved isolated White Scoop-Neck Cami Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-4d69354540ad6921c40d-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4d69354540ad6921c40d-v1.png",
+      "sha256": "4e0ddbf508e7a48faa2963df50ba9fc365a22c069891249edce4d78f626f8d74",
+      "note": "Approved isolated Oat Drawstring Knit Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-4f47e3f248a0b3c75912-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4f47e3f248a0b3c75912-v1.png",
+      "sha256": "488d5b8ef87adf1760eaf9d3bf573cac8b8ff2f5c383f524025b0b17789e41cb",
+      "note": "Approved isolated Black Biker Jacket; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-4f80b842b24759b0f6af-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4f80b842b24759b0f6af-v1.png",
+      "sha256": "92140f0215de7c0d0614dfd10552bcade0cb57d6ac91bd444f9a9fa98a4dad33",
+      "note": "Approved isolated Cream Balloon-Sleeve Blouse; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-4f9e7f4ccafdaad53659-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-4f9e7f4ccafdaad53659-v1.png",
+      "sha256": "57d5256af55e21ed0a7d86a186216457c946c977a13a53e74946f5741cb95eec",
+      "note": "Approved isolated Chocolate Smooth Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-534201edcc42f3598963-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-534201edcc42f3598963-v1.png",
+      "sha256": "57f352dadc69c11a248dbf9ddf27683d9ac2df0efb2f8e59669c3f1ef90c6b2b",
+      "note": "Approved isolated The Ivory Woven Chain Shoulder Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-53924b26459b428f3469-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-53924b26459b428f3469-v1.png",
+      "sha256": "4808f07c76dfd941d143a6d5f6f4a9d32883f07161c2645cfe8a59b1dc5b18dc",
+      "note": "Approved isolated The Champagne Gold-Bar Clutch; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-56fad4e690793e44fdf7-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-56fad4e690793e44fdf7-v1.png",
+      "sha256": "7ba3f6fd645e7c5d8097b0b5f7ee84976174aeee7df7eb9fbb318a4702ff9bd8",
+      "note": "Approved isolated Ivory Pleated Wide-Leg Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-57ebdc27946486afd888-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-57ebdc27946486afd888-v1.png",
+      "sha256": "53b860946f308018be350fc640919413a110cfb6a2a828a0583ae8f37245e264",
+      "note": "Approved isolated Ivory Perforated Low-Top Sneakers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-5abb49e2eed6cfeb08d1-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-5abb49e2eed6cfeb08d1-v1.png",
+      "sha256": "0012a14512d2401786de21ff7b4b5edd384b01cfb22f6277347b10f1a58cb8ad",
+      "note": "Approved isolated Taupe Fringed Knit Scarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-5ae19970b72cf0bef879-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-5ae19970b72cf0bef879-v1.png",
+      "sha256": "5e93284952e8361e48acf62f55451a17f8b67e4cf11c6a5d8aef4ccc0cb643ee",
+      "note": "Approved isolated Cream Ribbed Turtleneck; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-5bef1cad7783e160b798-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-5bef1cad7783e160b798-v1.png",
+      "sha256": "abfa3cda067d83289ea2bd5df487c32b2435f2fa1eb5902144bc51f0321d1a95",
+      "note": "Approved ivory shoulder bag with the gold interlocking monogram visibly present in the outfit reference; no new lettering was invented. Brand identity is not independently claimed by this concept listing.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-61121722d0773f1fea27-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-61121722d0773f1fea27-v1.png",
+      "sha256": "7e7ae38fcd9670eac9f642d18da6bd72d24d8c7f2c53fde608a3b970f50e7cac",
+      "note": "Approved chocolate pebbled top-handle bag; enlarged source inspection confirms the two large outer eyelets and small central gold ring, matching the generated three-position front hardware.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-64b94fb748297d7dde80-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-64b94fb748297d7dde80-v1.png",
+      "sha256": "7eea242356c080678db49c5768ca45c893bd40b7be5e8a044dc51eeb27151e4c",
+      "note": "Approved isolated Ivory Pointed Stiletto Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-656fb11622550f48f16f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-656fb11622550f48f16f-v1.png",
+      "sha256": "039faf0f9cf54af429c6263f033e59e9cedd5dba5a0728600fdc5a5154fd9a82",
+      "note": "Approved isolated Ivory Wide-Leg Tailored Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-65c36ab78f0ce373be7d-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-65c36ab78f0ce373be7d-v1.png",
+      "sha256": "899971d5db25eac4c8053673a4fcc6a459327048176109b1e85564d36003c57d",
+      "note": "Approved isolated Chocolate Gold-Clasp Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-691dadb07df3fc6df8af-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-691dadb07df3fc6df8af-v1.png",
+      "sha256": "0014cc8b9e3b09871b5f1fb4db314e5bb095a9293a5f0cc3890eba9094355a3b",
+      "note": "Approved isolated The Chocolate Wrapped Hijab; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-6a7825d84c2f7ff04370-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-6a7825d84c2f7ff04370-v1.png",
+      "sha256": "79acfd333c306fda04e3634f3c2501b4130eb37b9ae563d50a802223667e5344",
+      "note": "Approved isolated The Black Slim-Strap Heeled Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-6af633ec8034a225d852-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-6af633ec8034a225d852-v1.png",
+      "sha256": "9dcb2ba4f1e22c16c29db6cb98bcb1930b8c2997fee87e6645432a750da64710",
+      "note": "Approved isolated Ivory Ankle-Strap Pointed Pumps; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-6bc4aadc3fdcde6c8fd8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-6bc4aadc3fdcde6c8fd8-v1.png",
+      "sha256": "77ad0b2f70563635787ad9dd74c8250254f0d5e6ef99e5285dd8e26d3680e0cb",
+      "note": "Approved isolated Black Lug-Sole Chelsea Boots; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-6d0d6c777249e9839fa3-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-6d0d6c777249e9839fa3-v1.png",
+      "sha256": "ce244a1e5ec6af74744c95face26719ba7333c385c481dec8afd7ebeb8f60eb7",
+      "note": "Approved isolated The Black Gold-Bar Clutch; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-72f70f9c8ea315b9132b-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-72f70f9c8ea315b9132b-v1.png",
+      "sha256": "822a8bbc2666727100ed7494d510ac5820774aefcdd7c6f2c4d4d55fd30a7580",
+      "note": "Approved isolated Ivory Plain Scoop-Neck Tank; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-7662c86ef7881336979a-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-7662c86ef7881336979a-v1.png",
+      "sha256": "c933f7720560b8c7f8e0f00ea685b5087f33b45602e4b9b85cc0a88190a330b3",
+      "note": "Approved isolated Gold Rounded Box Clutch; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-78dc1cd631882d2db076-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-78dc1cd631882d2db076-v1.png",
+      "sha256": "56281ea47fdb490341a7d86bfcdca5a00e80dce04f0ab32ed119574d8f83545d",
+      "note": "Approved isolated Chocolate Soft Shoulder Tote; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-7c150af438a0057c1ad8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-7c150af438a0057c1ad8-v1.png",
+      "sha256": "a062893db5f60074f5dcf02009f688c16823f2f59692d2a2ca34da2c1291bfc7",
+      "note": "Approved isolated Ivory Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-7ef63b2a8c0223c92e01-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-7ef63b2a8c0223c92e01-v1.png",
+      "sha256": "fb1b9eb85aa200ff276c69504742b6513618dd8cf759680f9ba986b5bd8ec887",
+      "note": "Approved isolated Navy Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-812a9a8b6a6b96859e6b-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-812a9a8b6a6b96859e6b-v1.png",
+      "sha256": "9c11544a2c4149c5c4449aa307ef597b06750f342628277d21f683f47e85dc45",
+      "note": "Approved isolated Espresso Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-82a4907ce1671b632d78-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-82a4907ce1671b632d78-v1.png",
+      "sha256": "c63f82e0fa1a0499408a14b069a43b18eb8ec4db3d944eed2318d5f076786def",
+      "note": "Approved isolated Cream Draped Scarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-849cf356661484f574e2-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-849cf356661484f574e2-v1.png",
+      "sha256": "dcb1c2fc89d90af5eef820715ac33b50469c8bf96a2f54826b1f036009bbdad3",
+      "note": "Approved isolated Nude Slim-Strap Sandals; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-855041b8357eacc12b94-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-855041b8357eacc12b94-v1.png",
+      "sha256": "16ec5fe7639281d7e816ebcf0e0d82e563e8457b083e7bdd3f6c117850d2ff38",
+      "note": "Approved isolated Cream Smooth Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-8804e8b05ac1ee4d4c41-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-8804e8b05ac1ee4d4c41-v1.png",
+      "sha256": "45ada3d04b7eb6d7f1d3b9b0deb880488df20ea9b6c7943d436fb48ef6bb4e2d",
+      "note": "Approved isolated The Mocha Wrapped Hijab; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-8e3b0ea73815ac96b2eb-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-8e3b0ea73815ac96b2eb-v1.png",
+      "sha256": "1dff8b3d2306561bb177f8e93d42625a971c3995e03b3bdf8ab6aa9a2f733abf",
+      "note": "Approved isolated Chocolate Pointed Heeled Ankle Boots; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-907145d1993d05bf766a-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-907145d1993d05bf766a-v1.png",
+      "sha256": "4d3fc00916ff821e9389d1b23cfce06a5bfac6b69df1fac7ffa7796c1b924ac4",
+      "note": "Approved isolated Ivory Cowl-Neck Satin-Look Blouse; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-91ea5f283590df7f262e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-91ea5f283590df7f262e-v1.png",
+      "sha256": "821bc5e2b2196c17beb904bebfbc3236c1b934e93b7ecb2baa6b9d9642290be8",
+      "note": "Approved isolated Espresso Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-934e75510f1b47a89f54-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-934e75510f1b47a89f54-v1.png",
+      "sha256": "5664e600b89948441e9431a55937ff8c6446f0d09e4892fa2ef6f0e66fea6193",
+      "note": "Approved isolated The Taupe Zip-Front Collared Jacket; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-95034be9c585e63b36d1-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-95034be9c585e63b36d1-v1.png",
+      "sha256": "139681e0f30087915bcea994e9425a89b931fa81b8baad48c901974a62335504",
+      "note": "Approved isolated Cream Gold-Clasp Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-9555d2a0eb6b1ca295f4-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-9555d2a0eb6b1ca295f4-v1.png",
+      "sha256": "577ee7eeab34c362c8e368846b39a21d453ce2fc20cc9785e33c40b836376479",
+      "note": "Approved isolated Merlot Square-Neck Cami Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-95ba2dab9595868a56bf-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-95ba2dab9595868a56bf-v1.png",
+      "sha256": "49134b2e2fd1912e4dfde14a99d32a205ee3ab1372d3af0b5bf9dfe7c17d8ff8",
+      "note": "Approved isolated The Ivory Fitted High-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-95ddc2178228b3a030dd-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-95ddc2178228b3a030dd-v1.png",
+      "sha256": "709af538240ca931862cb6f378bc9dce21491978c1a16c44cfe9f0867e24e1cc",
+      "note": "Approved isolated Tan Platform Slip-On Ankle Boots; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-9636f729324b4ce5f674-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-9636f729324b4ce5f674-v1.png",
+      "sha256": "c4ae6d9b872c7734841c706e9677e651325a4f6009e8616e89f49c690c625dcb",
+      "note": "Approved isolated The Champagne Plain Pointed Pumps; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-9817710db9647d062975-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-9817710db9647d062975-v1.png",
+      "sha256": "ee09c8afe32a385d17750b4ddb25e50363ed42107d834a64e9228cfa0167634e",
+      "note": "Approved isolated Oat Knit Drawstring Wide-Leg Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-988a0ace37bb6ef9c77f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-988a0ace37bb6ef9c77f-v1.png",
+      "sha256": "a76879ed21378d08394df20ce6de73f094cad42e6cdd8fba95bf98ae297e0469",
+      "note": "Approved isolated Ivory Wide-Leg Tailored Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-9929c958433650d6453a-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-9929c958433650d6453a-v1.png",
+      "sha256": "7617ff93a2a6e1b26b62a28b0ceb6aaa7fed151a93a092fb520eb904ad3822a0",
+      "note": "Approved isolated Chocolate Pointed Ankle Boots; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-99ef977ef612dd0e68fe-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-99ef977ef612dd0e68fe-v1.png",
+      "sha256": "76e3b2d0f36e1b5b4981bcc5a08dd1162bdd26564de17a5962603f5e2cc7f880",
+      "note": "Approved isolated The Taupe Ribbed Round-Neck Top; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-9bc4e17f2496f4ed2851-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-9bc4e17f2496f4ed2851-v1.png",
+      "sha256": "a92e949fce2be47a34edf6760052c186443e2504452a6dff362eb40f4764fff8",
+      "note": "Approved isolated Taupe Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:32+00:00"
+    },
+    {
+      "id": "item-96a784f9237891d51486-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-96a784f9237891d51486-v1.png",
+      "sha256": "64e669d9a53f8534915148c1dc7e0962950688a6367793c793fbb0c9f97712f3",
+      "note": "Approved isolated The Rosewater Draped Hijab; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:48+00:00"
+    },
+    {
+      "id": "item-97b115d9cee7a219ac8e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-97b115d9cee7a219ac8e-v1.png",
+      "sha256": "5d9c45484be0bc637c0984f122b72e89878d4f8f6221664603856bd6ceb13244",
+      "note": "Approved isolated Espresso Gold-Clasp Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:48+00:00"
+    },
+    {
+      "id": "item-a2e75afb6bad8d352439-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-a2e75afb6bad8d352439-v1.png",
+      "sha256": "07fd8f74aa3242e973c2f729c871029af26dac0f3b9246c1798fbc5e669146ed",
+      "note": "Approved isolated Black Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:48+00:00"
+    },
+    {
+      "id": "item-a79ba450e0233ce08baf-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-a79ba450e0233ce08baf-v1.png",
+      "sha256": "60c70c3b0667a3563513c9cbdb9cb67b6489d054605dbb2533ee46c6a70801ec",
+      "note": "Approved isolated The Nude Plain Pointed Pumps; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:48+00:00"
+    },
+    {
+      "id": "item-a84c170ade2fe8faf025-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-a84c170ade2fe8faf025-v1.png",
+      "sha256": "f901b8801165f2b4c048fdb0f19ee6bdb0dbfd03bde8795abe9e4df9a1f11a8a",
+      "note": "Approved isolated Brown Soft Shoulder Tote; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:14:48+00:00"
+    },
+    {
+      "id": "item-9811a88bacb06b569310-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-9811a88bacb06b569310-v1.png",
+      "sha256": "16db12c1d3b9c9a18b05027fb70f7f15f5dde78319fec4e25a3566dec0c9e176",
+      "note": "Approved isolated Ivory Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-a9ed46c4c5715f952faf-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-a9ed46c4c5715f952faf-v1.png",
+      "sha256": "55e980003f4efcb154b6277892baf0e2152a5503136e44cc4b05c7f107298bd1",
+      "note": "Approved isolated Black Fitted Turtleneck; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-ac9119ac6ee909eebe34-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-ac9119ac6ee909eebe34-v1.png",
+      "sha256": "a92d8944e54ef7a4801c3a5d7fbd8563f6ebe726550abba175cedc83633808bc",
+      "note": "Approved isolated The Champagne Wrapped Hijab; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-acd5a2fc1e6ec646fb60-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-acd5a2fc1e6ec646fb60-v1.png",
+      "sha256": "2db40f38786d1dfd85e083b66fc1c3d194375dd885462afc3a075deb67e7500a",
+      "note": "Approved isolated Ivory Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-ada8503a88736d27a16a-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-ada8503a88736d27a16a-v1.png",
+      "sha256": "99d752228709f9f56609e4b4926cc47449fa8df2628b4a20c1a88df8b8d46511",
+      "note": "Approved isolated Cream Woven Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-ae14860439f24cd0511e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-ae14860439f24cd0511e-v1.png",
+      "sha256": "8a0ef759f03bb0c3552f3498f9e8f7eefc8e42a8dddb9ce46c2fb02d23678cc8",
+      "note": "Approved isolated Light-Blue Wide-Leg Jeans; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-ae9bd4742ca91b6bd3a9-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-ae9bd4742ca91b6bd3a9-v1.png",
+      "sha256": "82c76ce46ca41cbfffd04bebc214f842e6cb8090c9eb4598e7c3726e677811e9",
+      "note": "Approved isolated The Tan Gold-Clasp Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-af9f14bfbbcdd4db4cdb-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-af9f14bfbbcdd4db4cdb-v1.png",
+      "sha256": "668bde7317771288f1056b23a9718bd71049259895365def0667d275d9b7b3e2",
+      "note": "Approved isolated The Natural Woven Tan-Trim Tote; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-afa856daf58e0cc533f8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-afa856daf58e0cc533f8-v1.png",
+      "sha256": "d3c661dc4d01ad7fc0fb329c7cd9ca129baa2195e5c1088ccd70978da4d6ca5d",
+      "note": "Approved isolated Ivory Tailored Wide-Leg Trousers; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-afe00ec84f5c7a53c9f8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-afe00ec84f5c7a53c9f8-v1.png",
+      "sha256": "52e8fab2805c1fa40977596466cfeaa152bcb9979f553e327e45a01db7150692",
+      "note": "Approved isolated The Blush Beige Mini Top-Handle Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-b40409e5fd26cdc4b32d-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-b40409e5fd26cdc4b32d-v1.png",
+      "sha256": "8c5b6032456fab157e644e90d7cf1aa18d3c2730ebae595835e26946e5b249d4",
+      "note": "Approved isolated Ivory Draped Headscarf; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-b5dc98cb1f643adc1531-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-b5dc98cb1f643adc1531-v1.png",
+      "sha256": "8df3af5d07267fae41967f1868915efc336b2309231bc05a4a7f9dbbd897655c",
+      "note": "Approved isolated The Stone Taupe Wrapped Hijab; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-bab5fe2671385add278e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-bab5fe2671385add278e-v1.png",
+      "sha256": "357a3a4dfabc74eb1f6c08ef22bc8c1d6612d41b40f1f8f79f29b1fe0b4a6e5b",
+      "note": "Approved isolated The Deep Espresso Wrapped Hijab; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-c1120882f25760cb533f-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-c1120882f25760cb533f-v1.png",
+      "sha256": "bd3dd35ea4322f2316edf41a20502a9cc580364e9e91c07f6222fc5fb8151a31",
+      "note": "Approved isolated Champagne Crystal-Buckle Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-c30f284815b182346043-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-c30f284815b182346043-v1.png",
+      "sha256": "5d5eca99d20b4991e88014dbad1798a87c8b55216b6440b355abd507c90b4262",
+      "note": "Approved isolated Chocolate Soft Shoulder Bag; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "item-d03fd5bd2664c5baba04-v1",
+      "status": "approved",
+      "output": "assets/generated-items/item-d03fd5bd2664c5baba04-v1.png",
+      "sha256": "c74ff77fc1b07ecabcbf1a2e42edf5d4831fac06099e008430df143393cc7103",
+      "note": "Approved isolated Ivory Pointed Court Shoes; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:19:35+00:00"
+    },
+    {
+      "id": "garment-070e122b3b2a0a1d-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+      "sha256": "36ffc4b9d892a1d93997ce9cbbaa579fe5d0d93af0826fa6c2ce66e97a8af2cc",
+      "note": "Approved the specified two-piece chocolate blazer and ivory trouser product. Full-size inspection confirms the dark central panel is the blazer back lining with a center seam, not an added ribbed inner top. No wearer, bag or shoes.",
+      "checkedAt": "2026-11-09T14:21:16+00:00"
+    },
+    {
+      "id": "garment-0d3ef24445790a06-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-0d3ef24445790a06-v1.png",
+      "sha256": "988f339bcbc4e881686751e7235f88e4a53838f20f5beb07daae6c48203b9117",
+      "note": "Approved cream pleated belted maxi dress only; bishop sleeves, cuff bands, fine pleating and self-tie belt match the source. Complete hem, no scarf/person/accessories.",
+      "checkedAt": "2026-11-09T14:21:16+00:00"
+    },
+    {
+      "id": "garment-17ef8e76f3900391-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-17ef8e76f3900391-v1.png",
+      "sha256": "9504492eeee3e8976602fb446e2cd97b6eee48c8a7e30c85f22aa066c13982a8",
+      "note": "Approved isolated Powder Blue Blazer and Wide-Leg Trouser Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:21:32+00:00"
+    },
+    {
+      "id": "garment-0641bb0833534697-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-0641bb0833534697-v1.png",
+      "sha256": "eb17df9b47ad9ba714a62cd9bfa93b565198e070e63f4224c3abfe17f528f73e",
+      "note": "Approved isolated Merlot Cowl Blouse and Wide-Leg Trouser Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-0cece17490138dac-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-0cece17490138dac-v1.png",
+      "sha256": "b6ec2971a9b369fea359cf4d541e618d08747f376f52cefd692047797d1bdb81",
+      "note": "Approved isolated The Weekend Wide-Leg Jeans; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-166871dd1a4996c7-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-166871dd1a4996c7-v1.png",
+      "sha256": "186c9e165117a97771cd4dbee634d2794bc93ed7a23a5bbd1a0835bc78dda4fb",
+      "note": "Approved isolated Ivory Gold-Button Ribbed Skirt Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-1ae845d453aa1fce-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-1ae845d453aa1fce-v1.png",
+      "sha256": "d91d70d1cb60f512bc06e55eb4a27130fe4d0d1947fa5530010afcfc9abc4272",
+      "note": "Approved isolated The Champagne Occasion Abaya; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-1aff2611e1fe3c8b-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-1aff2611e1fe3c8b-v1.png",
+      "sha256": "404d70cb99806f16ab81cd95bf0a0a666e435620bd1563df1359c60cb21b768e",
+      "note": "Approved isolated Black Contrast-Stripe Track Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-1f89c653c09528d1-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-1f89c653c09528d1-v1.png",
+      "sha256": "31da1c62a7e2c87ef1ae1ccb05ee75b7edc81807881ddf4fd8c037f3490f7d97",
+      "note": "Approved isolated The Emerald Tailored Suit; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-27e73ff910a71df3-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+      "sha256": "5bfc0d80d0f6368389bdcbbfa33a06c7515d194cc80adc83a017b142b4f9c0df",
+      "note": "Approved isolated The Espresso Evening Abaya; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:20+00:00"
+    },
+    {
+      "id": "garment-0499c134586039c3-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-0499c134586039c3-v1.png",
+      "sha256": "7ee865480ba0efe2ab0fec9eb04bff383a928a424427fe0174019c15ac46a9d5",
+      "note": "Approved isolated Burgundy Satin Mock-Neck Maxi Dress; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-0c9f048ac48a707e-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-0c9f048ac48a707e-v1.png",
+      "sha256": "438948a139d8f5c3b3c73f838aae973ba5fb1171083ed81ae2f8d93ad0241eeb",
+      "note": "Approved isolated The Rose-Stripe Shirt and Shorts Pajama Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-14c77cfe7ca32f1c-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-14c77cfe7ca32f1c-v1.png",
+      "sha256": "8a96f057e173435131b5c33b750846c6c6233222229581d42d6dd20576bde27c",
+      "note": "Approved isolated Sand Cropped Tailored Blazer; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-18610d00ae8436f0-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+      "sha256": "06b1456b0d11b31fc246e573cbb84bed1c96d830d586b7265b91073de1ada03d",
+      "note": "Approved isolated The Taupe Gold-Button Tailored Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-1efd9419870c45d5-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-1efd9419870c45d5-v1.png",
+      "sha256": "ec5e9564c2b38a5c12e4140ba33795cbb0eb642973f70d07d3d48f1144c4796c",
+      "note": "Approved isolated Cream Chunky Cable-Knit Sweater; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-24a9406125222ec8-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-24a9406125222ec8-v1.png",
+      "sha256": "4cd2b63042233b4e536fbbb59f830df68932f025aeb2fec43faa2339c4f6219c",
+      "note": "Approved isolated Sand Longline Trench Coat; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-257524c3ff675ac5-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-257524c3ff675ac5-v1.png",
+      "sha256": "1467d1616172a61efeaf15cfcfbf40d9f2d9b7bfbe14e856c0ed0607b388c8c7",
+      "note": "Approved isolated Chocolate Gold-Button Cropped Jacket; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:22:48+00:00"
+    },
+    {
+      "id": "garment-2f1f477ab7e06ceb-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+      "sha256": "0796f301722f6b95739a9edd5f016e616189aebd4faa3d23251dfad1406732ef",
+      "note": "Approved isolated The Ivory Executive Suit; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:23:10+00:00"
+    },
+    {
+      "id": "garment-39baac639a81b1b5-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-39baac639a81b1b5-v1.png",
+      "sha256": "00e6b7dff32ac24ca52cd18584a88f42bd7b3e9e85c1d8348be827671a3eb3ef",
+      "note": "Approved isolated Cream Plisse Mock-Neck Evening Dress; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:23:10+00:00"
+    },
+    {
+      "id": "garment-4ba84e164ca92c24-v1",
+      "status": "approved",
+      "output": "assets/generated-items/garment-4ba84e164ca92c24-v1.png",
+      "sha256": "863bb67b9dd076097eb476b77c8baa9e8a62da8a9dea3234f5915ed638b12768",
+      "note": "Approved isolated Taupe Ribbed Knit and Ivory Trouser Set; correct visible category/color and key construction, complete framing, no wearer, unrelated item or text. Hidden construction remains illustrative.",
+      "checkedAt": "2026-11-09T14:23:40+00:00"
+    },
+    {
+      "id": "garment-356e3b3db3284328-v1",
+      "output": "assets/generated-items/garment-356e3b3db3284328-v1.png",
+      "sha256": "5b6a628c0286f4fa6ad5bd203f2e7f37fcf2285c5e21ee318265914a5a326524",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Black double-breasted coordinated suit preserves gold-button rows, tailored lapels and wide-leg trousers; complete isolated item, no wearer or text."
+    },
+    {
+      "id": "garment-4b961836a5114101-v1",
+      "output": "assets/generated-items/garment-4b961836a5114101-v1.png",
+      "sha256": "fbfc0d53fe036ac7f833894f82797c2cb8d01ed477129c98d2bbd3199a677d86",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Stone cropped puff-sleeve jacket and pleated wide-leg trouser set preserves flap pockets, deep cuffs and covered buckle belt; clean complete product arrangement."
+    },
+    {
+      "id": "garment-4d51a0de1ad5592f-v1",
+      "output": "assets/generated-items/garment-4d51a0de1ad5592f-v1.png",
+      "sha256": "fcbf47c7f9a731fabbb5c7ed733c136ca4533454c34e08d0853b83ed0d181136",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Ivory three-piece lounge set preserves ribbed camisole, relaxed cardigan and drawstring trousers; all three pieces isolated and fully framed."
+    },
+    {
+      "id": "garment-4e2b0a33f31318ac-v1",
+      "output": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+      "sha256": "375866400af3c65d51ffdfcc70e5568e36be37dcfd2c3c24e044f6f79627ed02",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Champagne halter gown preserves gathered high neck, broad ruched waistband, draped hip folds and high side slit; complete natural satin item-only image."
+    },
+    {
+      "id": "garment-52137095165dcac4-v1",
+      "output": "assets/generated-items/garment-52137095165dcac4-v1.png",
+      "sha256": "1ed560e4e1b87d246b3339822b06a06239b8fc5e7a601f494664377fc19e9f11",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Oat knit set preserves chunky rib texture, long open sleeveless layer, relaxed sweater and wide trousers; complete isolated arrangement without scarf or wearer."
+    },
+    {
+      "id": "garment-52e502c50f2fff58-v1",
+      "output": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+      "sha256": "810dc7eecb645c193308d10c761fdf6f22cf0005b4f4c244dd70218e152715f5",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Black satin slip gown preserves thin straps, cowl neck, gathered waist and high slit; complete isolated garment with restrained reflections."
+    },
+    {
+      "id": "garment-5750c07e3cbf0922-v1",
+      "output": "assets/generated-items/garment-5750c07e3cbf0922-v1.png",
+      "sha256": "0663a4a5841678107e9f2740e37cc7a52f1ed3cc03a4736ac3fcb5a4dc9abe73",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Black fitted draped gown preserves thin straps, cowl neckline, bodice seams, gathered hip and high side slit; full item framing without extra accessories."
+    },
+    {
+      "id": "garment-5aa1a4c95b8b43cf-v1",
+      "output": "assets/generated-items/garment-5aa1a4c95b8b43cf-v1.png",
+      "sha256": "397bc3974436a729dd344b45760d34818dcaae319d43356fe5acfea915abd5ac",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Cream boucle longline coat preserves wide lapels, dropped shoulders, broad sleeves and low patch pockets; textured complete coat-only image."
+    },
+    {
+      "id": "garment-637245ab86907188-v1",
+      "output": "assets/generated-items/garment-637245ab86907188-v1.png",
+      "sha256": "70e5cf639685e9f261d8e6077baac27ea806adfe1972a4c8793ec79de490e9c7",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Chocolate longline blazer preserves single-breasted front, notched lapels, cuff buttons and flap pockets; complete isolated garment and matching brown tone."
+    },
+    {
+      "id": "garment-66160c188c347697-v1",
+      "output": "assets/generated-items/garment-66160c188c347697-v1.png",
+      "sha256": "0a5122712c146c6d815d37049535aadc1adea7a78a8b3fd660d9525df6303cb6",
+      "checkedAt": "2026-11-10T05:58:51+00:00",
+      "status": "approved",
+      "note": "Ivory blouse and trouser set preserves gathered high neck, puff shoulders, fitted cuffs and high-rise pleated trousers; complete item-only arrangement."
+    },
+    {
+      "id": "garment-2f92545d9cbed177-v1",
+      "output": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+      "sha256": "a4464361660703cd3cf7f3926362034172103210551667adba5eb2fe351b3fcf",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Ivory off-shoulder ribbed long-sleeve top and light-wash jeans preserve neckline, fit and straight wide legs; complete isolated two-piece arrangement."
+    },
+    {
+      "id": "garment-40b272d4673736dc-v1",
+      "output": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+      "sha256": "ce34c6d84d87241c011fac8115ff374b5fc1f23b44ebcb151ca43f55ab67dc0e",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Oat open chunky-rib cardigan and drawstring wide-leg trousers preserve loose silhouette and matching knit texture; inner tank excluded as requested."
+    },
+    {
+      "id": "garment-4d4304a128904e2f-v1",
+      "output": "assets/generated-items/garment-4d4304a128904e2f-v1.png",
+      "sha256": "1a4a2d74f17288f1b47051dc5ff15a5165719c96d11f5a4782f9243076f179f0",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Ivory tailored blazer with taupe high-rise trousers preserves two-tone styling, notched lapels and narrow brown belt; full isolated set."
+    },
+    {
+      "id": "garment-4f74d57ae172a738-v1",
+      "output": "assets/generated-items/garment-4f74d57ae172a738-v1.png",
+      "sha256": "790b47fd0a82de5b9c50cb745efee2754b37abf64c13822c9469379973167220",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Taupe modest satin maxi dress preserves draped cowl, gathered side waist and long bell sleeves; complete garment-only framing."
+    },
+    {
+      "id": "garment-53a68a01bbdedf19-v1",
+      "output": "assets/generated-items/garment-53a68a01bbdedf19-v1.png",
+      "sha256": "100f79ba67333161b204114dc7a3db116da123e9af0a9a3631d1f1e0084e0ae1",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Black suit preserves single-breasted longline blazer, gold cuff buttons and wide-leg trousers; complete matching isolated two-piece set."
+    },
+    {
+      "id": "garment-617d6a4389d34fe2-v1",
+      "output": "assets/generated-items/garment-617d6a4389d34fe2-v1.png",
+      "sha256": "0da087d13ea2dbb0fc346cb5e2a570bf339a8515e4e2ed9b48ccd85d00f3c13a",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Ivory soft-structure suit preserves notched lapels, gold cuff buttons, tonal belt and pleated wide-leg trousers; no added inner top or wearer."
+    },
+    {
+      "id": "garment-6664bf77ae517850-v1",
+      "output": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+      "sha256": "733e682e5b9cdcd6c61f4ab287c6e8d7109a5c6bba1547e00836edeebc03faaa",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Ivory two-piece suit preserves soft tailoring, flap pockets, turned sleeves and clean-waist wide-leg trousers; complete isolated coordinated pieces."
+    },
+    {
+      "id": "garment-6834dbb23ca63224-v1",
+      "output": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+      "sha256": "720722c26bcf5839a858e65482f50f4f4d0ef8edf634d86a078e933f2294e0cf",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Chocolate calf-length outer blazer preserves long open panels, notched lapels and softly pushed sleeves; only the requested brown outer layer."
+    },
+    {
+      "id": "garment-6a22b234a18f036d-v1",
+      "output": "assets/generated-items/garment-6a22b234a18f036d-v1.png",
+      "sha256": "8b1bbeeceea7164b60e524a689badfb8bdd84c2c0bd0d7c2384fe9aa972c325d",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Cream open longline coat preserves broad lapels, relaxed straight shape, textured surface and dark cuff buttons; complete garment-only image."
+    },
+    {
+      "id": "garment-6bf4acf66562795c-v1",
+      "output": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+      "sha256": "04bf52c1e411b3d9d695a96aa60672ea64fdafb7f5223f82bd414eadfb253d9f",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Sage rolled-sleeve open shirt and ivory pleated wide-leg trousers preserve colors and silhouette; white inner top excluded, clean isolated set."
+    },
+    {
+      "id": "garment-6e74347edcea55dd-v1",
+      "output": "assets/generated-items/garment-6e74347edcea55dd-v1.png",
+      "sha256": "72a98023d7892186291ead5ae6716258e1f7fbd58b343c0977186960a45511b2",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Cocoa asymmetric draped dress preserves shoulder drape, small capped shoulder and gathered wrap skirt; full isolated garment with natural folds."
+    },
+    {
+      "id": "garment-72cb66b82bef90ad-v1",
+      "output": "assets/generated-items/garment-72cb66b82bef90ad-v1.png",
+      "sha256": "44c8eae93c7ff3ea66717f8fc6d412537da5698e48923aa30c9fc21fdecbc280",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Taupe lustrous open collared shirt and drawstring trousers preserve cuff turn-ups, relaxed shape and satin reflections; no styling camisole or wearer."
+    },
+    {
+      "id": "garment-74e5ecf28c897588-v1",
+      "output": "assets/generated-items/garment-74e5ecf28c897588-v1.png",
+      "sha256": "1aa2e7488796fcc2f42c4ced185317e0b9e9bffeec4935c8231af5a81ebd20f8",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Burgundy double-breasted longline coat preserves broad lapels, dark buttons and open tailored shape; clean full product framing."
+    },
+    {
+      "id": "garment-751e40965ad3a20d-v1",
+      "output": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+      "sha256": "48e4fa2451732eeb4e8506d0a2d444b2ef6eeb4f0dd5719bcb1ff3c68c41f830",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Ivory tailored suit preserves notched lapels, flap pockets and pleated wide-leg trousers; coordinated garment-only image without inner top."
+    },
+    {
+      "id": "garment-7782745d0efd8c24-v1",
+      "output": "assets/generated-items/garment-7782745d0efd8c24-v1.png",
+      "sha256": "62721a322d79a0cd51e24fa0d9b91c85b93b03fb0612d2c25639f4de2e4f24d3",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Camel belted longline coat preserves reference back-side viewpoint, matching tie belt, textured surface and vertical back seam; no invented front or wearer."
+    },
+    {
+      "id": "garment-79e0b7a097df924b-v1",
+      "output": "assets/generated-items/garment-79e0b7a097df924b-v1.png",
+      "sha256": "c9cea9f362576d081698d86b7fd998645485dd27c60d362fdbd20fb838395be1",
+      "checkedAt": "2026-11-10T06:00:36+00:00",
+      "status": "approved",
+      "note": "Sage modest maxi dress preserves high neckline, crossover drape, side cascading sash and lantern sleeves with fitted cuffs; complete garment-only image."
+    },
+    {
+      "id": "garment-7b8ef54e6321f222-v1",
+      "output": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+      "sha256": "89b12ea4951950cf8fd3ae2eef241d736e2184dc10c2b4e4b7d6da8868e750e3",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Ivory fitted ribbed roll-neck and taupe pleated wide-leg trousers preserve the two-piece colors, waist and silhouette; complete isolated arrangement."
+    },
+    {
+      "id": "garment-7f2d1f88d06fb45c-v1",
+      "output": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+      "sha256": "426b2e88846476159adf600c34a3a9cc0148cb60e42ffab14f2b01ae5bc210fa",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Black lustrous slip gown preserves narrow straps, cowl neckline, panelled fitted waist and diagonal ruched hip with high slit; complete item-only image."
+    },
+    {
+      "id": "garment-874d7c0173a9d2a8-v1",
+      "output": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+      "sha256": "55d44e2f57c7ccefd8ab4b4f4351da09c834f91e0ac39c3aae1d17110c3a0c4e",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Ivory longline coat preserves notched lapels, straight full sleeves and matching knotted tie belt; complete isolated coat without trousers or inner top."
+    },
+    {
+      "id": "garment-8896b52b23cd0824-v1",
+      "output": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+      "sha256": "21e8355b949befcfaf430af05c2a437b984904b3b219d7c870ea04b830ed305a",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Ivory collared lustrous blouse and pleated wide-leg trousers preserve voluminous gathered sleeves and tall cuffs; complete coordinated set without wearer."
+    },
+    {
+      "id": "garment-8e861c306b731e29-v1",
+      "output": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+      "sha256": "b17d09755f04e6b5ff0ba570288f3cf13ead3ab220612aa10b76345bcea144a2",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Mocha belted robe-style abaya preserves shawl-like lapels, high inner neckline, bell sleeves and layered cascading front panels; clean full garment framing."
+    },
+    {
+      "id": "garment-8ec4205f9115385e-v1",
+      "output": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+      "sha256": "8f9b1dcc21f95a7b0487ef1187a43398530185f16fe7a5fa9222f804df2a37e9",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Ivory power suit preserves structured notched-lapel blazer and matching high-rise pleated wide-leg trousers; complete isolated two-piece set."
+    },
+    {
+      "id": "garment-9b7becdf69faba45-v1",
+      "output": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+      "sha256": "38be66450d679224f8433ad1f3df2009bac62e062fee055f8dee6cb24833f7cf",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Dusty-rose occasion dress preserves crossover bodice, wrapped waist, flared translucent-look cuffs and layered skirt panel; complete isolated garment."
+    },
+    {
+      "id": "garment-9ef1f074154c608c-v1",
+      "output": "assets/generated-items/garment-9ef1f074154c608c-v1.png",
+      "sha256": "e80131b042e048e5aa8610d285f18b3df22be4f2a80ceb7d2575b85029f7deaf",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Taupe drawstring wide-leg trousers preserve elastic waist, pockets, front seams and floor-length breadth; full trousers-only photograph with natural texture."
+    },
+    {
+      "id": "garment-a01299210acf7627-v1",
+      "output": "assets/generated-items/garment-a01299210acf7627-v1.png",
+      "sha256": "e6b711b02cc482ed6888fa1fc4a0106d7e32f491667592fbe9c417246e9f36b3",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Sandstone lustrous abaya preserves high draped crossover neck, ruched wrapped waist, cascading side panel and puff sleeves with fitted cuffs; full garment-only image."
+    },
+    {
+      "id": "garment-a26d4ac081364941-v1",
+      "output": "assets/generated-items/garment-a26d4ac081364941-v1.png",
+      "sha256": "3ad0980902825b61414eb9e63de43943f92304f1f11483e716e3b50fc10e8f5b",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Sandstone half-zip lounge set preserves relaxed collared pullover, gathered cuffs and drawstring wide-leg trousers; complete isolated matching set."
+    },
+    {
+      "id": "garment-a505c9f975120e21-v1",
+      "output": "assets/generated-items/garment-a505c9f975120e21-v1.png",
+      "sha256": "4567a47147407f124cb1df474efc8a09e92519da861dc34aa69de863424441b3",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Oat oversized cardigan preserves chunky rib-knit texture, broad rolled edge, dropped shoulders and voluminous cuffed sleeves; full isolated garment without wearer."
+    },
+    {
+      "id": "garment-b21271819fbf773c-v1",
+      "output": "assets/generated-items/garment-b21271819fbf773c-v1.png",
+      "sha256": "8202b24df56ace9546e900a71dd31c202a05e97543bb296036e743fc5548599f",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Navy trumpet gown preserves back three-quarter viewpoint, low draped open-back cowl, slim long sleeves and trailing flared hem; complete item without invented front."
+    },
+    {
+      "id": "garment-bab9b9c87f0abba0-v1",
+      "output": "assets/generated-items/garment-bab9b9c87f0abba0-v1.png",
+      "sha256": "2378198396be3e1010cea3d439f28040b41709ec4d0d3b60c67dc464b8fcb274",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Brown aviator jacket preserves cream shearling-like collar, lapels, hem and turn-up cuffs, diagonal zip and buckled side tabs; complete clean item-only photograph."
+    },
+    {
+      "id": "garment-c9f06c204bdee72a-v1",
+      "output": "assets/generated-items/garment-c9f06c204bdee72a-v1.png",
+      "sha256": "619f707a240d1e6dee14aa46d0003cbe531997449e110e16fc4f1c41375e60fc",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "superseded",
+      "note": "Retry: tiny invented text label visible inside top collar at full image resolution; remove collar text/label while preserving garment construction. Superseded by approved garment-c9f06c204bdee72a-v3."
+    },
+    {
+      "id": "garment-cbc653452f6001b8-v1",
+      "output": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+      "sha256": "d7467c8e9b4983efad51763c6bd0de012123b50f3b5b5b52d98de832d48b2c42",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Ivory hip-length tailored blazer and high-rise pleated wide-leg trousers preserve notched lapels and two-piece silhouette; complete isolated suit without inner top."
+    },
+    {
+      "id": "garment-d48662bc960d8ad2-v1",
+      "output": "assets/generated-items/garment-d48662bc960d8ad2-v1.png",
+      "sha256": "170ec1773cc1272054a7b64466f92c0bad423b202c110be48bde2018cd96a2dc",
+      "checkedAt": "2026-11-10T06:01:43+00:00",
+      "status": "approved",
+      "note": "Charcoal tailored wide-leg trousers preserve high waist, front pleats, belt loops and heathered texture; complete isolated trousers-only image."
+    },
+    {
+      "id": "garment-a2e2bfb6aed5c608-v1",
+      "output": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+      "sha256": "6efc01e5297a882f7e1b977c5a6f3de50b95d9ac8a1a5aa3af0821ffaafc670e",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Pale beige longline trench preserves broad lapels, long straight panels and sleeve cuff tabs; clean isolated coat-only framing."
+    },
+    {
+      "id": "garment-b4ffbe06207e3314-v1",
+      "output": "assets/generated-items/garment-b4ffbe06207e3314-v1.png",
+      "sha256": "004d5fa44a3ec1b63839e1796a800987e9705d66d43735c1bddbabc36142cadd",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Oat ribbed wide-leg lounge pants preserve elastic drawstring waist, pockets and broad relaxed hems; full isolated trousers with knit texture."
+    },
+    {
+      "id": "garment-d638ee48cacb4abe-v1",
+      "output": "assets/generated-items/garment-d638ee48cacb4abe-v1.png",
+      "sha256": "82fcc1669ff82dbe39d048ca24b9cf861d9809ead5ba4902f5377492e7cd7a18",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Black single-breasted suit preserves dark front button, notched lapels, slim shoulders and matching high-rise wide-leg trousers; complete item-only image."
+    },
+    {
+      "id": "garment-db747bb55dc91722-v1",
+      "output": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+      "sha256": "1c364c8bf53fd277e00532ead07c954cba9881aef0d98b923815d49c4482ba11",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Taupe bomber jacket preserves broad pointed collar, zip front, loose sleeves and gathered cuffs and hem; complete isolated jacket."
+    },
+    {
+      "id": "garment-dd6d6bac12f4b6d4-v1",
+      "output": "assets/generated-items/garment-dd6d6bac12f4b6d4-v1.png",
+      "sha256": "f50020ace3f6cae831af27ada974b20b16299f0afccbe82e14fa1744e0cbc505",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Sand tailored two-piece suit preserves notched lapels, small gold-tone buttons and pleated wide-leg trousers with front creases; isolated complete matching pieces."
+    },
+    {
+      "id": "garment-e57f33ce2e1562d2-v1",
+      "output": "assets/generated-items/garment-e57f33ce2e1562d2-v1.png",
+      "sha256": "45e8c48af2fbbb64f8a3f2df598d7bf6bb030de24af21bdff4ce138099d7adb0",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Cloud-knit three-piece lounge set preserves open chunky cardigan, fitted ribbed scoop-neck tank and wide-leg ribbed trousers; complete set without mug or wearer."
+    },
+    {
+      "id": "garment-edc6983c2ab5268c-v1",
+      "output": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+      "sha256": "5adc9b3ade4c51b23c0ad954a63d04dff302495bdd8a2bc469a2cf08054e82b6",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "City-cream tailored two-piece suit preserves notched lapels, rolled sleeves and matching high-rise pleated wide-leg trousers; inner top excluded."
+    },
+    {
+      "id": "garment-f14603c04434f518-v1",
+      "output": "assets/generated-items/garment-f14603c04434f518-v1.png",
+      "sha256": "9a835d789eb7cb1a7ec6393a9f96b667ef39f2b30837b2c2d55e097f55b66059",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "approved",
+      "note": "Deep chocolate oversized longline coat preserves wide notched lapels, textured fabric, turned cuffs and open ankle-length straight shape; complete isolated garment."
+    },
+    {
+      "id": "garment-caafcb7f7ea0475a-v1",
+      "output": "assets/generated-items/garment-caafcb7f7ea0475a-v1.png",
+      "sha256": "7af87c8639e8c818bea49673e3006b9317d15cb24c4eee6678e063d390177d7a",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "superseded",
+      "note": "Retry: generated blazer has six front gold buttons (three per side); close-up reference has four front gold buttons (two per side). Superseded by approved garment-caafcb7f7ea0475a-v2."
+    },
+    {
+      "id": "garment-f62ee6e41ab495d3-v1",
+      "output": "assets/generated-items/garment-f62ee6e41ab495d3-v1.png",
+      "sha256": "c82c54c833353f2e2101d2f4e321c3cdfb38b842bb945651fd75872514108205",
+      "checkedAt": "2026-11-10T06:03:13+00:00",
+      "status": "superseded",
+      "note": "Retry: reference shows separate collared wrap blouse and two wide trouser legs with waistband/belt loops; generated image incorrectly turns lower half into a maxi skirt/gown. Superseded by approved garment-f62ee6e41ab495d3-v2."
+    },
+    {
+      "id": "item-c4be6ef00a85a97f9f96-v1",
+      "output": "assets/generated-items/item-c4be6ef00a85a97f9f96-v1.png",
+      "sha256": "99659fc23717ecb42dab29af11c05f3b6e11b43b9725acc642a7bd769ae47793",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Ivory belted wide-leg trousers preserve high waist, front creases, loops and slim tonal belt with rectangular gold buckle; complete item-only photograph."
+    },
+    {
+      "id": "item-c8d7df974eab370755e7-v1",
+      "output": "assets/generated-items/item-c8d7df974eab370755e7-v1.png",
+      "sha256": "8fdce543e9a12bf26af42a5052351600141b9688699dc806d35c7c6ef096bc8f",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Burgundy smooth headscarf preserves matching deep color and close head/neck wrap; empty face opening without head or person, complete framing."
+    },
+    {
+      "id": "item-d0173c6258769a97e088-v1",
+      "output": "assets/generated-items/item-d0173c6258769a97e088-v1.png",
+      "sha256": "d025dc2df81ef29c3bf3494c1554f6b18415e6637125d08bab2ebc46fe1ad118",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Black ankle-strap sandal pair preserves thin straight toe bands, narrow buckled ankle straps and slim heels; both shoes complete without feet."
+    },
+    {
+      "id": "item-d124506f8321055790bc-v1",
+      "output": "assets/generated-items/item-d124506f8321055790bc-v1.png",
+      "sha256": "c589b00b865baf30d70c5664fb97bcffa43d73d61963e57f975032366cdf9fe6",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Black pleated wide-leg trousers preserve high waist, broad straight legs, loops and black belt with gold rectangular buckle; isolated complete item."
+    },
+    {
+      "id": "item-d226adcfb5b3fc6e1a4c-v1",
+      "output": "assets/generated-items/item-d226adcfb5b3fc6e1a4c-v1.png",
+      "sha256": "2b881d8a68c8869b1b61f349c0e762b19d491b0b70805bb260a2e9dcccf9a2a6",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Navy square-neck top preserves plain close fit and straight neckline; simple sleeveless construction without invented decoration, no wearer."
+    },
+    {
+      "id": "item-d2c77fc0c972e16c4688-v1",
+      "output": "assets/generated-items/item-d2c77fc0c972e16c4688-v1.png",
+      "sha256": "50402ef267a7cb3103ef44e721cca08c1193a42c2f0f2f272a6fd7c04bf02f0f",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Stone-greige trapezoid bag preserves short rounded handle, side gusset and rectangular gold clasp; complete isolated bag with clean hardware."
+    },
+    {
+      "id": "item-d6deeaa5c3f60d4f2333-v1",
+      "output": "assets/generated-items/item-d6deeaa5c3f60d4f2333-v1.png",
+      "sha256": "238eeca04f915e07223fc3111d5f1083c4e35610fca3050e91ef204635d441b9",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Beige belt-flap bag preserves structured trapezoid body, short rolled handle, horizontal front belt and gold turn-lock detail; complete item-only image."
+    },
+    {
+      "id": "item-dbcf2706c4cf05981c3d-v1",
+      "output": "assets/generated-items/item-dbcf2706c4cf05981c3d-v1.png",
+      "sha256": "61f3532eba38ff6db4780752173d562893ec4ce38a7bcddfc0372c740252d46c",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Light nude pointed pump pair preserves glossy low-cut plain uppers and narrow heels; complete clean shoe pair without feet or added decoration."
+    },
+    {
+      "id": "item-e0e903671c4d58c1ac32-v1",
+      "output": "assets/generated-items/item-e0e903671c4d58c1ac32-v1.png",
+      "sha256": "be0c5434bf75707e463449d74a1a6a53750f91d9ef328e510836eae6be0a961c",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Black top-handle bag preserves trapezoid shape, short arched handle, front flap and centered gold rectangular clasp; complete natural product photograph."
+    },
+    {
+      "id": "item-e4920025d4fba457a2fb-v1",
+      "output": "assets/generated-items/item-e4920025d4fba457a2fb-v1.png",
+      "sha256": "b4733a6b3d20161102d69e8890e9c33459ffa0e818f8008569e21248aa520716",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Taupe structured bag preserves trapezoid body, arched handle, gold handle attachments and small rectangular clasp; complete isolated item."
+    },
+    {
+      "id": "item-e85c6cd35b3eb3d8c075-v1",
+      "output": "assets/generated-items/item-e85c6cd35b3eb3d8c075-v1.png",
+      "sha256": "27468e94a8e5f9220903f79b0f1b38d108a5992aecd797030a873bd6ac4bcd43",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Black structured bag preserves visible reference interlocking gold monogram hardware, short handle and pebbled surface; complete isolated bag with no additional branding."
+    },
+    {
+      "id": "item-eab488f36b9c569f8af3-v1",
+      "output": "assets/generated-items/item-eab488f36b9c569f8af3-v1.png",
+      "sha256": "4d9950d8f5a9bf6e67fbf25e32491d2f7b6761e0f96890ebef7e38fa561d3f2a",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Espresso rounded shoulder bag preserves rounded flap, narrow shoulder strap and gold strap attachments, without adding a central clasp; complete isolated item."
+    },
+    {
+      "id": "item-ec31700d07745f2858cf-v1",
+      "output": "assets/generated-items/item-ec31700d07745f2858cf-v1.png",
+      "sha256": "c02824c87a379440d5c0c83662ea960874fd6778233ef822b07cc68b529d4a6e",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Black foldover evening clutch preserves soft rectangular profile and broad gold bar at the upper edge; complete natural item-only photograph."
+    },
+    {
+      "id": "item-f174ba9ec4e5f772deab-v1",
+      "output": "assets/generated-items/item-f174ba9ec4e5f772deab-v1.png",
+      "sha256": "12186b41b24c945f383f7ef28b4a3f58a1872a88dfd105d8bf8afeb8818709b8",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Cream oversized open cardigan preserves thick ribbed texture, broad front edge, dropped voluminous sleeves and deep cuffs; full isolated garment without buttons or wearer."
+    },
+    {
+      "id": "item-f8b26b8405d2dc275693-v1",
+      "output": "assets/generated-items/item-f8b26b8405d2dc275693-v1.png",
+      "sha256": "9d2b2785afc8de4c81b33b072af3eebd9bb5a9cb26fb4338cd4fca4e75ea8744",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "White low-top sneaker pair preserves rounded paneled toes, lace-up uppers and thick off-white cupsoles; complete matching pair without colored logos."
+    },
+    {
+      "id": "item-fc2c02e0cb14e12918f3-v1",
+      "output": "assets/generated-items/item-fc2c02e0cb14e12918f3-v1.png",
+      "sha256": "928cae9745b17b89f32795de6cbc37d39296cc0364eb4e4a8210c963f066001c",
+      "checkedAt": "2026-11-10T06:03:49+00:00",
+      "status": "approved",
+      "note": "Ivory pleated wide-leg trousers preserve high waist, belt loops, pockets and broad straight legs; full isolated garment with natural fabric folds."
+    },
+    {
+      "id": "item-d822cc735b7032c230df-v1",
+      "output": "assets/generated-items/item-d822cc735b7032c230df-v1.png",
+      "sha256": "f152ae2d9dd35284933e167f8e7d59049fe693b0e6bc462c9312f4d576616eb0",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Burgundy trapezoid bag preserves short arched handle, front flap, rectangular gold clasp and small gold feet; complete isolated matching item."
+    },
+    {
+      "id": "item-e10b2a26108795d5aada-v1",
+      "output": "assets/generated-items/item-e10b2a26108795d5aada-v1.png",
+      "sha256": "0a3f1c17b7667f2642fcafc2f03d0503ebbffef164e9ebb2e2a232b333a4f476",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Gold sandal pair preserves metallic toe straps, narrow buckled ankle straps and slim heels; complete matching pair without wearer."
+    },
+    {
+      "id": "item-e8e4f8c58f5010df0695-v1",
+      "output": "assets/generated-items/item-e8e4f8c58f5010df0695-v1.png",
+      "sha256": "9da9ae5dea5c87fa901120d431d2fe1a1ce3dcafe5b3c8ea07d185b9c22e4284",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Espresso fitted high-neck top preserves plain dark color, long sleeves and close silhouette; complete isolated garment without blazer."
+    },
+    {
+      "id": "item-ed9b4a4c7b950dd08c5d-v1",
+      "output": "assets/generated-items/item-ed9b4a4c7b950dd08c5d-v1.png",
+      "sha256": "06cc29c694b88b70799e45f6cd901f0c318147c82f767eb7abdcce06bcf63f6c",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Beige tailored wide-leg trousers preserve high rise, clean waistband, belt loops and front creases without adding a separate belt; complete framing."
+    },
+    {
+      "id": "item-f431c456f2d25afddf5a-v1",
+      "output": "assets/generated-items/item-f431c456f2d25afddf5a-v1.png",
+      "sha256": "d7fe8995e013ab965e81a42bca2d94dabeeac53fef1c6aef99f931968b775aea",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Chocolate fine-ribbed round-neck top preserves fitted sleeveless construction and brown color; complete isolated garment without added decoration."
+    },
+    {
+      "id": "item-f8c380df476ed050184e-v1",
+      "output": "assets/generated-items/item-f8c380df476ed050184e-v1.png",
+      "sha256": "7ca7e6a7991b79094907c1caad24c0d9dc5b83a614d85b8d5af135b554612c4f",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Chocolate trapezoid tote preserves two rolled short handles, narrow front belt and gold clasp hardware; complete isolated item."
+    },
+    {
+      "id": "item-fc4c03ec75230caa4500-v1",
+      "output": "assets/generated-items/item-fc4c03ec75230caa4500-v1.png",
+      "sha256": "1e308d4701ef29a9c862db8b2a9b5b13c9f150122898dd44898c9776cdb65b7f",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Navy trapezoid bag preserves arched handle, front flap and rectangular gold clasp with gold handle attachments; complete matching product image."
+    },
+    {
+      "id": "item-fe3fe696632d1d83fc45-v1",
+      "output": "assets/generated-items/item-fe3fe696632d1d83fc45-v1.png",
+      "sha256": "e7a09a586f452bf80663cfc9b11fa65004a2a399b8f9ca294a007ce3a4db4bb1",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Ivory collared button blouse preserves softly lustrous surface, open V-neck and simple button front; complete garment-only image."
+    },
+    {
+      "id": "item-ff1af3bf3c58d70f0fc6-v1",
+      "output": "assets/generated-items/item-ff1af3bf3c58d70f0fc6-v1.png",
+      "sha256": "a36860c5220590f015a440f2f9bd4064b8897b687b4e49349d7bf8ede39f94fe",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Tan belt-front tote preserves two short rolled handles, narrow horizontal belt, gold clasp and hanging covered key detail; full item framing."
+    },
+    {
+      "id": "garment-da1ec676efabfe8d-v1",
+      "output": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+      "sha256": "2dfb091847c7cf485f74e4e6de797af59338e914fb82570ba0450820c70c1c14",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Ivory open-shirt and pleated wide-leg trousers preserve rolled cuffs and coordinated light tone; inner top excluded, complete isolated two-piece arrangement."
+    },
+    {
+      "id": "garment-dcac45b76ac443e0-v1",
+      "output": "assets/generated-items/garment-dcac45b76ac443e0-v1.png",
+      "sha256": "762c2db83cc73d27bbd62fd1e27c881142a3edb80b355f136afa243af233d91a",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Ivory mocha-floral wrap maxi dress preserves wrap V-neck, balloon three-quarter sleeves, tie waist and tiered gathered skirt; full garment-only image."
+    },
+    {
+      "id": "garment-dd10700aabef4abc-v1",
+      "output": "assets/generated-items/garment-dd10700aabef4abc-v1.png",
+      "sha256": "4f12679040d8a455997e769d11ce3877fc8b0c6538ca8c6eca1c200459b1246f",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Ivory mock-neck ribbed sweater and wide-leg trouser set preserves balloon sleeves, deep cuffs and slim beige belt; complete coordinated isolated pieces."
+    },
+    {
+      "id": "garment-e1051eeab7dcec5f-v1",
+      "output": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+      "sha256": "fd5acc8ffae01df4da11c77eb27da04dfb72aadc4190e78d615d8efd8953e83d",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Espresso longline trench preserves broad lapels, relaxed sleeves, buttoned cuff tabs and straight open panels; clean complete coat-only image."
+    },
+    {
+      "id": "garment-e51eb39916bcceab-v1",
+      "output": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+      "sha256": "6e722d8a717e9e4fb611c611b45bcccd39b264404156994c069539a032c4613a",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Ivory below-knee coat preserves textured surface, broad notched lapels, full sleeves and cuff straps; complete isolated outer garment."
+    },
+    {
+      "id": "garment-e7adba5f950e57c3-v1",
+      "output": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+      "sha256": "8e56aeeb4f8b9b4982528f77469e5a19b751f251de5fa65e0aa3f36fb69d4749",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Olive trench and trousers preserve calf-length open coat, notched lapels, cuff straps, matching pleated trousers and belt; complete coordinated set without inner top."
+    },
+    {
+      "id": "garment-e9a2c2dfa9f8f42d-v1",
+      "output": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+      "sha256": "6ce2410cc1902dc8d8b3867529a57a760ec39a948cbb5d2828b491b04d9d7ab1",
+      "checkedAt": "2026-11-10T06:04:21+00:00",
+      "status": "approved",
+      "note": "Champagne satin evening dress preserves thin straps, cowl neckline, panelled waist and diagonal hip gathering opening to high side slit; complete isolated gown."
+    },
+    {
+      "id": "garment-ee173795c6a09788-v1",
+      "output": "assets/generated-items/garment-ee173795c6a09788-v1.png",
+      "sha256": "503aac9dd109ebd298fc33d04cf311ee4fb672237c899c36bddd9252eef672f3",
+      "checkedAt": "2026-11-10T06:05:28+00:00",
+      "status": "approved",
+      "note": "Espresso pleated trousers preserve deep brown color, high waist, loops, pockets, pressed creases and broad straight legs; complete trousers-only framing."
+    },
+    {
+      "id": "garment-ee63e133d40760be-v1",
+      "output": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+      "sha256": "fa6193f19f742f761c9357cef28e2b5b709a3c8613d9c75ede4e68bf966ed902",
+      "checkedAt": "2026-11-10T06:05:28+00:00",
+      "status": "approved",
+      "note": "Champagne halter blouse and black wide-leg trousers preserve gathered high neck, sleeveless satin top and tailored high-rise lower piece; complete isolated two-piece styling."
+    },
+    {
+      "id": "garment-f348c4635fca0606-v1",
+      "output": "assets/generated-items/garment-f348c4635fca0606-v1.png",
+      "sha256": "4c0f11e05e31e33efdd002f72927ffdb873a977e84839c988bdbc59250979338",
+      "checkedAt": "2026-11-10T06:05:28+00:00",
+      "status": "approved",
+      "note": "Espresso two-piece suit preserves single-breasted notched-lapel blazer, flap pockets and matching high-rise wide-leg trousers; complete isolated set."
+    },
+    {
+      "id": "garment-f56dfe081b1b14e0-v1",
+      "output": "assets/generated-items/garment-f56dfe081b1b14e0-v1.png",
+      "sha256": "e14d8344684eb717fff2403b06e303c3e5d818200dd58ebe03075d3b62379275",
+      "checkedAt": "2026-11-10T06:05:28+00:00",
+      "status": "approved",
+      "note": "Oat half-zip lounge set preserves textured knit collared sweater, ribbed cuffs and hem, and matching loose wide-leg trousers with front seams; complete item-only set."
+    },
+    {
+      "id": "garment-f84bedf34737978e-v1",
+      "output": "assets/generated-items/garment-f84bedf34737978e-v1.png",
+      "sha256": "837912695001b2a00d604196443be51ee84bfc9579037e8bd66fd1efc2aa78a1",
+      "checkedAt": "2026-11-10T06:05:28+00:00",
+      "status": "approved",
+      "note": "Navy tailored two-piece suit preserves notched lapels, single-breasted front, flap pockets, pleated wide-leg trousers and slim matching gold-buckle belt; complete isolated image."
+    },
+    {
+      "id": "garment-fe93ba37bb9ba2f6-v1",
+      "output": "assets/generated-items/garment-fe93ba37bb9ba2f6-v1.png",
+      "sha256": "782379ef5dbd4534a2615cb3f5ea64ddc92e56ce9b19039cdfd910c74c3f673a",
+      "checkedAt": "2026-11-10T06:05:28+00:00",
+      "status": "superseded",
+      "note": "Retry: reference coat shows dark buttons on both front panels; generated coat has buttons only in one front row. Preserve visible double-breasted button arrangement instead of inferred single-breasted construction. Superseded by approved garment-fe93ba37bb9ba2f6-v2."
+    },
+    {
+      "id": "item-f69d57c4b3b365330f61-v1",
+      "output": "assets/generated-items/item-f69d57c4b3b365330f61-v1.png",
+      "sha256": "61c34b07616451da5bdc2a0210fdbd95e710b0e5c7b26dcd5fd56025a61b81c1",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "approved",
+      "note": "White sneaker pair preserves plain rounded toes, lace-up uppers and slightly beige ribbed rubber soles; both shoes complete and free of colored logos."
+    },
+    {
+      "id": "item-f9e922a0180cbd699da1-v1",
+      "output": "assets/generated-items/item-f9e922a0180cbd699da1-v1.png",
+      "sha256": "403b43a2f2a8cbe860720bbb96dc96fec905452050c0732ded616aa049b6d137",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "approved",
+      "note": "Black fitted mock-neck top preserves fine vertical ribs, long sleeves and clean straight cuffs; complete isolated garment."
+    },
+    {
+      "id": "item-fc7d0c74a602e0d13c71-v1",
+      "output": "assets/generated-items/item-fc7d0c74a602e0d13c71-v1.png",
+      "sha256": "292c18493d0f74d839672ff795b79b384e99f50488bdc4f461ab3f445cd7343f",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "approved",
+      "note": "Sandstone wrapped hijab preserves warm greige tone and softly layered head/neck folds; empty face opening without person or mannequin."
+    },
+    {
+      "id": "item-ff1d2c8b639800c4aa4a-v1",
+      "output": "assets/generated-items/item-ff1d2c8b639800c4aa4a-v1.png",
+      "sha256": "d426c8e6631b82abfe9fecc4f2327273aae7ae9c141aecbaff7ab697c45f15a8",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "approved",
+      "note": "Chocolate small shoulder bag preserves visible rounded side profile, short plain strap and dark-brown surface; full isolated bag without invented front decoration."
+    },
+    {
+      "id": "garment-caafcb7f7ea0475a-v2",
+      "output": "assets/generated-items/garment-caafcb7f7ea0475a-v2.png",
+      "sha256": "31d190bd58a8f4bbe22a0f424026f20da9469f8290d1b3cded280141c688a280",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "approved",
+      "note": "Corrected Merlot suit now has exactly four round gold front buttons, two per side, matching close-up reference; cuff buttons, belt and wide-leg trousers preserved."
+    },
+    {
+      "id": "garment-f62ee6e41ab495d3-v2",
+      "output": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+      "sha256": "5f745c244e209f06789f8d247567efad4d2c7b40473de1126db4e52899f1b83b",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "approved",
+      "note": "Corrected Champagne wrap blouse and trouser set now preserves collared overlapping top, two-button cuffs, belt-loop waistband and two distinct wide trouser legs."
+    },
+    {
+      "id": "garment-c9f06c204bdee72a-v2",
+      "output": "assets/generated-items/garment-c9f06c204bdee72a-v2.png",
+      "sha256": "a46efa679b683a453ca71a164c5683e5b09acb7f4050c7b1c203719417663c5c",
+      "checkedAt": "2026-11-10T06:07:08+00:00",
+      "status": "superseded",
+      "note": "Retry: six-times collar crop confirms tiny gray pseudo-text still remains on sewn label inside neckline; remove entire label and replace with plain knit fabric. Superseded by approved garment-c9f06c204bdee72a-v3."
+    },
+    {
+      "id": "garment-fe93ba37bb9ba2f6-v2",
+      "output": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+      "sha256": "26d4d9c1246a0857715f67407336f08649d7c999a2376b4927ae1069e879350a",
+      "checkedAt": "2026-11-10T06:07:38+00:00",
+      "status": "approved",
+      "note": "Corrected taupe coat and cream trouser set now preserves dark round buttons on both front panels, notched lapels and original two-tone arrangement; complete isolated pieces."
+    },
+    {
+      "id": "garment-c9f06c204bdee72a-v3",
+      "output": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+      "sha256": "19f2333fb8847673d76b6989599c41ee149859fbfd2793b700dcd488d131efef",
+      "checkedAt": "2026-11-10T06:09:22+00:00",
+      "status": "approved",
+      "note": "Corrected ivory cardigan, ribbed crew-neck top and taupe trouser set preserves all three pieces. Full image and six-times collar crop confirm sewn label and pseudo-text entirely removed, leaving plain knit fabric."
+    }
+  ],
+  "counts": {
+    "reviewed": 260,
+    "approved": 260,
+    "retry": 0,
+    "superseded": 5
+  },
+  "validatedCurrentManifestAt": "2026-11-10T06:09:22+00:00"
+}

@@ -47,6 +47,14 @@ def outstanding_variants(state):
     return reserved
 
 
+def variant_is_listed(variant, product, root):
+    if not product:
+        return False
+    options = inventory_options(product, root)
+    return (variant["size"].casefold() in {size.casefold() for size in options["sizes"]} and
+            variant["color"].casefold() in {color.casefold() for color in options["colors"]})
+
+
 def validate_catalog_inventory(connection, current, values, root):
     """Keep stock attached to selectable options when the catalog is edited."""
     from server import APIError, public_product
@@ -193,6 +201,8 @@ def handle(handler, method):
                     v = find(s["variants"], line.get("variant"))
                     qty = number(line.get("quantity"), "Quantity", 10000)
                     product = products.get(v["product"])
+                    if not variant_is_listed(v, product, handler.server.root):
+                        fail("Choose a size and color currently listed for this product. Clear or correct obsolete inventory before reserving it.")
                     if not qty or qty > v["stock"] or not product: fail("Insufficient stock or unavailable product.")
                     v["stock"] -= qty
                     order["lines"].append({"id": secrets.token_hex(6), "variant": v["id"], "product": v["product"], "name": product["name"], "sku": v["sku"], "size": v["size"], "color": v["color"], "quantity": qty, "shipped": 0, "returned": 0, "priceCents": round(product["price"] * 100)})
@@ -226,6 +236,8 @@ def handle(handler, method):
                 r = {"id": secrets.token_hex(6), "order": order["id"], "line": line["id"], "product": line["product"], "quantity": qty, "resolution": resolution, "condition": condition, "reason": text(p.get("reason"), "return reason", 500), "amountCents": qty * line["priceCents"], "createdAt": now_iso(), "paymentStatus": "pending external settlement" if resolution == "refund" else "recorded"}
                 if resolution == "exchange":
                     replacement = find(s["variants"], p.get("replacement"))
+                    if not variant_is_listed(replacement, products.get(replacement["product"]), handler.server.root):
+                        fail("Choose an exchange size and color currently listed for this product.")
                     if replacement["product"] != line["product"] or replacement["stock"] < qty: fail("Choose an in-stock size or color of the same product.")
                     replacement["stock"] -= qty
                     exchange = {**order, "id": secrets.token_hex(6).upper(), "status": "incoming", "createdAt": now_iso(), "shipments": [], "lines": [{**line, "id": secrets.token_hex(6), "variant": replacement["id"], "sku": replacement["sku"], "size": replacement["size"], "color": replacement["color"], "quantity": qty, "shipped": 0, "returned": 0, "priceCents": 0}]}

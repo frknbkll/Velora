@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="noindex, nofollow" />
     <meta name="theme-color" content="#f6f2ec" />
-    <title>Admin studio — Velora</title>
     <link rel="stylesheet" href="fonts.css?v=1" />
     <link rel="stylesheet" href="styles.css?v=61" />
     <link rel="stylesheet" href="admin.css?v=9" />
     <link rel="stylesheet" href="admin-business.css?v=1" />
     <link rel="stylesheet" href="admin-folder-access.css?v=3" />
     <link rel="stylesheet" href="admin-discounts.css?v=1" />
+
+    <script src="product-responsive-images.js?v=3" defer></script>
+    <script src="site-images.js?v=1" defer></script>
     <script src="privacy.js?v=2" defer></script>
     <script src="auth.js?v=7" defer></script>
-    <script src="admin.js?v=14" defer></script>
+    <script src="product-color-detection.js?v=1" defer></script>
+    <script src="product-color-images.js?v=8" defer></script>
+    <script src="admin-image-hotspots.js?v=2" defer></script>
+    <link rel="stylesheet" href="admin-image-hotspots.css?v=1" />
+    <script src="admin.js?v=18" defer></script>
     <script src="admin-folder-access.js?v=2" defer></script>
     <script src="admin-discounts.js?v=1" defer></script>
     <script src="admin-support.js?v=1" defer></script>
@@ -24,6 +29,31 @@
     <script src="admin-security.js?v=1" defer></script>
     <script src="admin-business.js?v=1" defer></script>
     <link rel="stylesheet" href="privacy.css?v=2" />
+    <!-- velora:page-metadata -->
+    <title>Admin Studio | Velora</title>
+    <meta name="description" content="Manage the Velora collection, operations and colleague access." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:site_name" content="Velora" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Admin Studio | Velora" />
+    <meta property="og:description" content="Manage the Velora collection, operations and colleague access." />
+    <meta property="og:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta property="og:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Admin Studio | Velora" />
+    <meta name="twitter:description" content="Manage the Velora collection, operations and colleague access." />
+    <meta name="twitter:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta name="twitter:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <!-- /velora:page-metadata -->
+      <!-- velora:brand-assets -->
+    <link rel="icon" href="/assets/brand/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- /velora:brand-assets -->
   </head>
   <body class="admin-page">
     <svg class="admin-icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -104,7 +134,7 @@
         <section class="admin-view" id="admin-products" aria-labelledby="admin-products-title" hidden>
           <div class="admin-heading"><div><p class="admin-eyebrow">CURATED WITH INTENTION</p><h1 id="admin-products-title">Your <em>collection.</em></h1><p>Every piece, with its details in one place.</p></div><div class="admin-heading-actions"><button class="admin-button admin-button-secondary" type="button" id="admin-export-products">Export CSV</button><button class="admin-button admin-button-secondary" type="button" id="admin-add-color"><svg class="admin-icon"><use href="#studio-plus"/></svg>Add color</button><button class="admin-button" type="button" id="admin-add-product"><svg class="admin-icon"><use href="#studio-plus"/></svg>Add product</button></div></div>
           <div class="admin-panel">
-            <div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon"><use href="#studio-search"/></svg><span class="sr-only">Search products</span><input id="admin-product-search" type="search" placeholder="Search name, SKU or founder&#8230;" autocomplete="off" /></label><label class="admin-filter"><span class="sr-only">Filter products by visibility</span><select id="admin-product-filter"><option value="all">All products</option><option value="published">Published</option><option value="draft">Drafts</option><option value="trash">Trash</option></select></label><label class="admin-filter"><span class="sr-only">Filter by stock</span><select id="admin-stock-filter"><option value="all">All stock levels</option><option value="low">Low stock (1&ndash;5)</option><option value="out">Out of stock</option><option value="untracked">Not tracked</option></select></label><label class="admin-filter"><span class="sr-only">Sort products</span><select id="admin-product-sort"><option value="newest">Recently updated</option><option value="name">Name: A&ndash;Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="stock">Stock: low to high</option></select></label><span class="admin-result-count" id="admin-product-count" aria-live="polite"></span></div>
+            <div class="admin-table-tools"><label class="admin-search"><svg class="admin-icon"><use href="#studio-search"/></svg><span class="sr-only">Search products</span><input id="admin-product-search" type="search" placeholder="Search name, SKU or founder&#8230;" autocomplete="off" /></label><label class="admin-filter"><span class="sr-only">Filter products by visibility</span><select id="admin-product-filter"><option value="all">All products</option><option value="published">Published</option><option value="draft">Drafts</option><option value="trash">Trash</option></select></label><label class="admin-filter"><span class="sr-only">Filter by stock</span><select id="admin-stock-filter"><option value="all">All stock levels</option><option value="low">Low stock (1&ndash;5)</option><option value="out">Out of stock</option><option value="untracked">Not tracked</option></select></label><label class="admin-filter"><span class="sr-only">Filter products by category</span><select id="admin-category-filter"><option value="all">All categories</option></select></label><label class="admin-filter"><span class="sr-only">Filter products by founder</span><select id="admin-founder-filter"><option value="all">All founders</option></select></label><label class="admin-filter"><span class="sr-only">Sort products</span><select id="admin-product-sort"><option value="newest">Recently updated</option><option value="name">Name: A&ndash;Z</option><option value="price-low">Price: low to high</option><option value="price-high">Price: high to low</option><option value="stock">Stock: low to high</option></select></label><span class="admin-result-count" id="admin-product-count" aria-live="polite"></span></div>
             <div class="admin-table-scroll" tabindex="0" role="region" aria-label="Products table"><table class="admin-table"><thead><tr><th scope="col">Product</th><th scope="col">Founder</th><th scope="col">Price</th><th scope="col">Stock</th><th scope="col">Visibility</th><th scope="col"><span class="sr-only">Actions</span></th></tr></thead><tbody id="admin-products-body"></tbody></table></div>
             <p class="admin-table-empty" id="admin-products-empty" hidden>No pieces match your search. Try another name or visibility.</p>
             <div class="admin-table-footer">Prices are in EUR. Drafts and trashed products stay out of the storefront. Products without a variant matrix retain shared stock. Manage size and color stock in Shop operations.</div>
@@ -238,6 +268,7 @@
                 <label class="admin-field" for="admin-edit-designer">Founder / designer<input id="admin-edit-designer" name="founder" type="text" list="admin-founders" maxlength="80" required /><datalist id="admin-founders"><option value="Beyza Keskinci"></option><option value="Derya Kasal"></option><option value="Luna Moretti"></option><option value="Victoria Mendez"></option></datalist></label>
                 <label class="admin-field" for="admin-edit-collection">Category<select id="admin-edit-collection" name="collection" required><option value="THE EVERYDAY EDIT">Everyday</option><option value="THE SOFT EDIT">Soft essentials</option><option value="THE MODEST EDIT">Modest dressing</option><option value="THE POLISHED EDIT">Polished</option><option value="THE TAILORED EDIT">Tailoring</option><option value="THE LAYERING EDIT">Layering</option><option value="THE EVENING EDIT">Evening</option><option value="THE OCCASION EDIT">Occasion</option><option value="THE AFTER-HOURS EDIT">After hours</option></select></label>
               </div>
+              <label class="admin-field" for="admin-edit-parent-product">Part of an outfit<select id="admin-edit-parent-product" name="parent_product_id"><option value="">Standalone outfit / collection product</option></select><span class="admin-field-hint">Individual items remain in Products and can be opened from their outfit. Only the outfit gets a card in the collection.</span></label>
               <label class="admin-field" for="admin-edit-description">Description<textarea id="admin-edit-description" name="description" rows="5" maxlength="2000" required></textarea></label>
               <div class="admin-description-tools"><button class="admin-button admin-button-secondary" id="admin-generate-description" type="button">Generate draft with AI</button><span>Uses the product name, category, color and cover photo. Review before saving.</span></div>
               <p class="admin-description-status" id="admin-description-status" role="status" aria-live="polite">When you generate, these details and the cover photo are sent to OpenAI.</p>
@@ -251,8 +282,10 @@
             </fieldset>
             <fieldset class="admin-editor-section"><legend><span>02</span> Inventory &amp; options</legend>
               <label class="admin-field" for="admin-edit-stock">Available stock<input id="admin-edit-stock" name="stock" type="number" min="0" max="999999" step="1" inputmode="numeric" placeholder="Not tracked" /><span class="admin-field-hint">Leave blank for untracked stock. Zero marks this product as sold out.</span></label>
-              <fieldset class="admin-size-options"><legend>Available sizes</legend><div id="admin-size-options"><label><input type="checkbox" name="sizes" value="XS" />XS</label><label><input type="checkbox" name="sizes" value="S" />S</label><label><input type="checkbox" name="sizes" value="M" />M</label><label><input type="checkbox" name="sizes" value="L" />L</label><label><input type="checkbox" name="sizes" value="XL" />XL</label><label><input type="checkbox" name="sizes" value="XXL" />XXL</label><label><input type="checkbox" name="sizes" value="3XL" />3XL</label><label><input type="checkbox" name="sizes" value="One size" />One size</label></div></fieldset>
-              <div class="admin-field-row admin-color-row"><label class="admin-field" for="admin-edit-base-color">Primary color<input id="admin-edit-base-color" name="base_color" type="text" maxlength="40" value="Original" required /></label><label class="admin-field" for="admin-edit-color-hex">Color swatch<input id="admin-edit-color-hex" name="color_hex" type="color" value="#d1c8bd" /></label></div>
+              <fieldset class="admin-size-options"><legend>Available sizes</legend><div id="admin-size-options"><label><input type="checkbox" name="sizes" value="XS" />XS</label><label><input type="checkbox" name="sizes" value="S" />S</label><label><input type="checkbox" name="sizes" value="M" />M</label><label><input type="checkbox" name="sizes" value="L" />L</label><label><input type="checkbox" name="sizes" value="XL" />XL</label><label><input type="checkbox" name="sizes" value="XXL" />XXL</label><label><input type="checkbox" name="sizes" value="3XL" />3XL</label><label><input type="checkbox" name="sizes" value="One size" />One size</label><label><input type="checkbox" name="sizes" value="36" />EU 36</label><label><input type="checkbox" name="sizes" value="37" />EU 37</label><label><input type="checkbox" name="sizes" value="38" />EU 38</label><label><input type="checkbox" name="sizes" value="39" />EU 39</label><label><input type="checkbox" name="sizes" value="40" />EU 40</label><label><input type="checkbox" name="sizes" value="41" />EU 41</label><label><input type="checkbox" name="sizes" value="42" />EU 42</label></div></fieldset>
+              <div class="admin-field-row admin-color-row"><label class="admin-field" for="admin-edit-base-color">Primary color<input id="admin-edit-base-color" name="base_color" type="text" maxlength="40" placeholder="Detected from your cover photo" aria-describedby="admin-auto-color-status" required /></label><label class="admin-field" for="admin-edit-color-hex">Color swatch<input id="admin-edit-color-hex" name="color_hex" type="color" value="#d1c8bd" /></label></div>
+              <p class="admin-field-hint" id="admin-auto-color-status" role="status" aria-live="polite">Upload a cover photo to fill in its color automatically. You can edit the name and swatch.</p>
+              <button class="admin-button admin-button-secondary" id="admin-detect-color" type="button" disabled>Detect from cover photo</button>
               <div class="admin-color-variants-heading"><div><strong>Additional colors</strong><span>Each color uses its own product photo and swatch.</span></div><button class="admin-button admin-button-secondary" id="admin-add-color-editor" type="button">Add color</button></div>
               <div class="admin-color-variants" id="admin-color-variants"></div>
               <p class="admin-ai-color-suggestion" id="admin-ai-color-suggestion" role="status" aria-live="polite" hidden></p>
@@ -269,6 +302,10 @@
               <p class="admin-upload-status" id="admin-upload-status" role="status" aria-live="polite"></p>
               <div class="admin-image-gallery" id="admin-image-gallery" aria-label="Product photos"></div>
               <p class="admin-field-hint">Choose a cover, change the order, or remove a photo. Gallery photos show with the primary color.</p>
+              <label class="admin-field" for="admin-edit-item-image">Individual product photo<select id="admin-edit-item-image" name="item_image"><option value="">Use the cover photo</option></select><span class="admin-field-hint">Choose an item-only photo from this gallery for “Shop this look”. Keep the full outfit as its cover.</span></label>
+            </fieldset>
+            <fieldset class="admin-editor-section"><legend><span>04</span> Shop the photo</legend>
+              <div id="admin-image-hotspots"></div>
             </fieldset>
             <label class="admin-publish-control"><input id="admin-edit-published" name="published" type="checkbox" /><span><strong>Publish this product</strong><span>Make this piece visible in the collection. Leave off to save a draft.</span></span></label>
           </div>
@@ -288,9 +325,10 @@
         <label class="admin-field" for="admin-color-product">Add this color to<select id="admin-color-product" name="productId" required><option value="">Choose an existing product</option></select></label>
         <p class="admin-field-hint">The new color will be added to the selected product, not created as a separate listing. It shares the product's price, sizes and stock.</p>
         <div class="admin-field-row admin-color-row">
-          <label class="admin-field" for="admin-color-name">Color name<input id="admin-color-name" name="name" type="text" maxlength="40" required /></label>
+          <label class="admin-field" for="admin-color-name">Color name<input id="admin-color-name" name="name" type="text" maxlength="40" placeholder="Detected from your photo" aria-describedby="admin-color-detection-status" required /></label>
           <label class="admin-field" for="admin-color-hex">Swatch<input id="admin-color-hex" name="hex" type="color" value="#9b9d83" /></label>
         </div>
+        <p class="admin-field-hint" id="admin-color-detection-status" role="status" aria-live="polite">Upload the photo first. Its color name and swatch will be filled in automatically; you can adjust both.</p>
         <label class="admin-upload-area admin-color-upload" for="admin-color-image-file"><svg class="admin-icon"><use href="#studio-plus"/></svg><strong id="admin-color-image-label">Choose this color's product photo</strong><span>JPG, PNG or WebP · up to 8 MB</span><input id="admin-color-image-file" type="file" accept="image/jpeg,image/png,image/webp" /></label>
         <img class="admin-color-image-preview" id="admin-color-image-preview" alt="Selected color photo preview" hidden />
         <p class="admin-upload-status" id="admin-color-upload-status" role="status" aria-live="polite"></p>

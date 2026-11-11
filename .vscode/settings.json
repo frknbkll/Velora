@@ -4,5 +4,10 @@
   "liveServer.settings.useLocalIp": false,
   "liveServer.settings.mount": [],
   "liveServer.settings.proxy": { "enable": false },
-  "liveServer.settings.NoBrowser": true
+  "liveServer.settings.NoBrowser": true,
+  "python.testing.pytestArgs": [
+    "."
+  ],
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true
 }

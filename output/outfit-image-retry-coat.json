@@ -1,0 +1,23 @@
+{
+  "id": "garment-fe93ba37bb9ba2f6-v2",
+  "output": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+  "reference": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+  "kind": "garment",
+  "name": "Taupe Longline Coat and Cream Trouser Set",
+  "description": "Taupe double-breasted longline coat with notched lapels and dark round buttons on both front panels, paired with high-rise cream wide-leg pleated trousers.",
+  "color": "Taupe and cream",
+  "hex": "#b49c84",
+  "target_product_id": "fe93ba37bb9ba2f6",
+  "parent_product_id": "fe93ba37bb9ba2f6",
+  "is_primary": true,
+  "prompt": "Use case: precise-object-edit. Asset type: individual fashion product photo. Image 1 is the studio item photo to correct; image 2 is the original outfit reference. Change ONLY the taupe coat's front fastenings in image 1: the reference coat is DOUBLE-BREASTED with dark round buttons on BOTH front panels, as visible on the left and lower right sides of image 2. Replace the single three-button row with TWO symmetric rows of two dark round buttons each (four front buttons total). Remove mismatched existing buttonholes and restore taupe fabric where needed. Keep the coat open with both front panels visible. Preserve notched lapels, pockets, longline length, sleeves, fabric texture, precise taupe hue, cream high-waisted wide-leg pleated trousers, photographic light, off-white background, and complete product framing. No person, body, mannequin, scarf, bag, shoes, labels, brand, text or watermark.",
+  "used_by": [
+    "fe93ba37bb9ba2f6"
+  ],
+  "replaces_id": "garment-fe93ba37bb9ba2f6-v1",
+  "replaces_output": "assets/generated-items/garment-fe93ba37bb9ba2f6-v1.png",
+  "generation_references": [
+    "assets/generated-items/garment-fe93ba37bb9ba2f6-v1.png",
+    "assets/gallery/beyza-taupe-longline-coat-set.jpg"
+  ]
+}

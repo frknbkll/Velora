@@ -1,0 +1,12 @@
+{
+  "id": "garment-fe93ba37bb9ba2f6-v2",
+  "output": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+  "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1aa93-c4dc-7bf2-a8eb-e2529f2b3d6e\\exec-b04ae4a7-b756-4b1b-9fcc-60e44518f3a7.png",
+  "reference": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+  "referenced_images": [
+    "assets/generated-items/garment-fe93ba37bb9ba2f6-v1.png",
+    "assets/gallery/beyza-taupe-longline-coat-set.jpg"
+  ],
+  "mode": "built-in",
+  "prompt": "Use case: precise-object-edit. Asset type: individual fashion product photo. Image 1 is the studio item photo to correct; image 2 is the original outfit reference. Change ONLY the taupe coat's front fastenings in image 1: the reference coat is DOUBLE-BREASTED with dark round buttons on BOTH front panels, as visible on the left and lower right sides of image 2. Replace the single three-button row with TWO symmetric rows of two dark round buttons each (four front buttons total). Remove mismatched existing buttonholes and restore taupe fabric where needed. Keep the coat open with both front panels visible. Preserve notched lapels, pockets, longline length, sleeves, fabric texture, precise taupe hue, cream high-waisted wide-leg pleated trousers, photographic light, off-white background, and complete product framing. No person, body, mannequin, scarf, bag, shoes, labels, brand, text or watermark."
+}

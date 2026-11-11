@@ -194,6 +194,28 @@ class CommerceTests(unittest.TestCase):
         with self.app.connect() as connection:
             self.assertEqual(connection.execute("SELECT COUNT(*) FROM product_activity WHERE action='inventory cleanup'").fetchone()[0],1)
 
+    def test_obsolete_stock_cannot_be_reserved_or_used_for_new_exchanges(self):
+        customer,variant=self.seed()
+        with self.app.connect() as connection:
+            state=json.loads(connection.execute('SELECT data FROM commerce_state WHERE id=1').fetchone()[0])
+            state['variants'].append({**state['variants'][0],'id':'obsolete-stock','color':'TYPO COLOR','stock':4})
+            connection.execute('UPDATE commerce_state SET data=? WHERE id=1',(json.dumps(state),))
+            connection.execute('UPDATE products SET stock=9 WHERE id=?',('123456789abcdef0',))
+        before=self.state()
+        self.assertEqual(self.change('order',customer=customer,address='Test',lines=[{'variant':'obsolete-stock','quantity':1}])[0],400)
+        self.assertEqual(self.state()['revision'],before['revision'])
+        self.assertEqual(self.state()['orders'],before['orders'])
+        self.assertEqual(self.state()['variants'],before['variants'])
+        self.assertEqual(self.change('order',customer=customer,address='Test',lines=[{'variant':variant,'quantity':1}])[0],200)
+        order=self.state()['orders'][0];line=order['lines'][0]['id']
+        self.assertEqual(self.change('ship',order=order['id'],line=line,quantity=1,tracking='Carrier')[0],200)
+        self.assertEqual(self.change('deliver',order=order['id'])[0],200)
+        before=self.state()
+        self.assertEqual(self.change('return',order=order['id'],line=line,quantity=1,condition='unworn',resolution='exchange',replacement='obsolete-stock',reason='Swap')[0],400)
+        self.assertEqual(self.state()['revision'],before['revision'])
+        self.assertEqual(self.state()['variants'],before['variants'])
+        self.assertEqual(self.state()['returns'],before['returns'])
+
     def test_invalid_stock_cleanup_cannot_remove_pending_order_or_return_mapping(self):
         customer,variant=self.seed()
         self.assertEqual(self.change('order',customer=customer,address='Test',lines=[{'variant':variant,'quantity':5}])[0],200)

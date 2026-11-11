@@ -100,7 +100,8 @@ def main():
                 before = evaluate(f"document.querySelectorAll('.team-portrait-swap')[{index}].getBoundingClientRect().height")
                 connection.call("Input.dispatchMouseEvent", {"type": "mouseMoved", **point(index)})
                 until(f"document.querySelectorAll('.team-portrait-swap')[{index}].getAttribute('aria-pressed')==='true' && getComputedStyle(document.querySelectorAll('.team-portrait-alternate')[{index}]).opacity==='1'", f"Hover failed for {record['name']}")
-                assert evaluate(f"document.querySelectorAll('.team-portrait-alternate')[{index}].naturalWidth>=768"), "Low resolution alternate"
+                assert evaluate(f"document.querySelectorAll('.team-portrait-alternate')[{index}].dataset.originalSrc===" + json.dumps(record["target"])), "Alternate portrait identity changed"
+                assert evaluate(f"(()=>{{const image=document.querySelectorAll('.team-portrait-alternate')[{index}],candidate=Number(new URL(image.currentSrc).pathname.match(/-(\\d+)\\.webp$/)?.[1]);return image.complete && image.naturalWidth>0 && image.currentSrc.includes('/assets/responsive/') && candidate>=Math.ceil(image.getBoundingClientRect().width*devicePixelRatio)-1}})()"), "Optimized alternate is missing or undersized"
                 after = evaluate(f"document.querySelectorAll('.team-portrait-swap')[{index}].getBoundingClientRect().height")
                 assert before == after, "Hover changed card height"
                 assert evaluate("document.querySelectorAll('.team-portrait-swap[aria-pressed=true]').length===1"), "Multiple portraits stayed active"
@@ -132,13 +133,15 @@ def main():
                     screenshot("team-portrait-hover-mobile.png")
             assert not evaluate("window.__teamErrors"), "Runtime or CSP errors"
 
-            connection.call("Network.setBlockedURLs", {"urls": ["*assets/team/hover/charlotte-de-vries-portrait.jpg*"]})
+            first_alternate = records[0]["target"]
+            blocked = evaluate("VeloraImageSources.get(" + json.dumps(first_alternate) + ").srcset.split(', ').map(value=>'*'+value.split(' ')[0]+'*')")
+            connection.call("Network.setBlockedURLs", {"urls": [*blocked, "*" + first_alternate + "*"]})
             navigate()
             evaluate("document.querySelector('.team-portrait-swap').scrollIntoView({block:'center'})")
             until("document.querySelector('.team-portrait-swap').disabled", "Failed alternate did not fall back")
             until("document.querySelector('.team-portrait-original').naturalWidth>0 && !document.querySelector('.team-portrait-swap').querySelector('.team-portrait-alternate')", "Fallback hid or broke original")
             assert not evaluate("window.__teamErrors"), "Fallback caused runtime errors"
-            result = {"portraitsChecked": len(records), "hoverAndLeave": "passed", "keyboardAndEscape": "passed", "mobileTap": "passed", "layoutShift": "none", "reducedMotion": "passed", "unavailableImageFallback": "passed", "runtimeAndCSP": "no errors"}
+            result = {"portraitsChecked": len(records), "hoverAndLeave": "passed", "keyboardAndEscape": "passed", "mobileTap": "passed", "layoutShift": "none", "optimizedPortraitIdentityAndPixels": "passed", "reducedMotion": "passed", "unavailableImageFallback": "passed", "runtimeAndCSP": "no errors"}
             (output / "team-portrait-check-results.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
             print(json.dumps(result))
         finally:

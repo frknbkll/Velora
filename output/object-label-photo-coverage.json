@@ -1,0 +1,17 @@
+{
+  "ui_photo_occurrences": 512,
+  "existing_and_planned_labelled_existing_files": 510,
+  "broken_refs": [
+    {
+      "id": "a1b2c3d4e5f6a7b8",
+      "photo": "assets/generated-items/garment-a1b2c3d4e5f6a7b8-v1.png"
+    },
+    {
+      "id": "f9e8d7c6b5a44321",
+      "photo": "assets/generated-items/garment-f9e8d7c6b5a44321-v1.png"
+    }
+  ],
+  "remaining_unlabelled_existing_files": [],
+  "planned_photos": 299,
+  "planned_points": 303
+}

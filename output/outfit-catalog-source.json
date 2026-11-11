@@ -1,0 +1,3506 @@
+{
+  "products": [
+    {
+      "id": "da1ec676efabfe8d",
+      "name": "The Ivory Linen Set",
+      "image": "assets/gallery/derya-ivory-linen-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 69.95,
+      "description": "An ivory two-piece concept with a linen-look texture and clean, relaxed lines.",
+      "published": true,
+      "updated_at": "2026-11-01T07:49:57Z",
+      "images": [
+        "assets/gallery/derya-ivory-linen-set.jpg"
+      ],
+      "color_key": "assets/gallery/derya-ivory-linen-set.jpg",
+      "legacy_key": "The Ivory Linen Set:assets/gallery/derya-ivory-linen-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-DA1EC676EFAB",
+      "stock": 15,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:45:57Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "6bf4acf66562795c",
+      "name": "The Sage Linen Set",
+      "image": "assets/gallery/derya-sage-linen-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 54.95,
+      "description": "A sage two-piece concept with a linen-look texture and a coordinated silhouette.",
+      "published": true,
+      "updated_at": "2026-11-01T07:49:57Z",
+      "images": [
+        "assets/gallery/derya-sage-linen-set.jpg"
+      ],
+      "color_key": "assets/gallery/derya-sage-linen-set.jpg",
+      "legacy_key": "The Sage Linen Set:assets/gallery/derya-sage-linen-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-6BF4ACF66562",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:47:12Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "751e40965ad3a20d",
+      "name": "The Ivory Tailored Look",
+      "image": "assets/gallery/derya-ivory-tailored-look.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 34.95,
+      "description": "A crisp ivory silhouette with considered tailoring for a fresh, quietly confident finish.",
+      "published": true,
+      "updated_at": "2026-10-31T07:05:21Z",
+      "images": [
+        "assets/gallery/derya-ivory-tailored-look.jpg"
+      ],
+      "color_key": "assets/gallery/derya-ivory-tailored-look.jpg",
+      "legacy_key": "The Ivory Tailored Look:assets/gallery/derya-ivory-tailored-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-751E40965AD3",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "1f89c653c09528d1",
+      "name": "The Emerald Tailored Suit",
+      "image": "assets/gallery/derya-emerald-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 59.95,
+      "description": "Rich emerald color and confident structure give this modern suit a memorable, elegant presence.",
+      "published": true,
+      "updated_at": "2026-10-31T07:05:14Z",
+      "images": [
+        "assets/gallery/derya-emerald-tailoring.jpg"
+      ],
+      "color_key": "assets/gallery/derya-emerald-tailoring.jpg",
+      "legacy_key": "The Emerald Tailored Suit:assets/gallery/derya-emerald-tailoring.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-1F89C653C095",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "8ec4205f9115385e",
+      "name": "The Ivory Power Suit",
+      "image": "assets/gallery/derya-ivory-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 37.95,
+      "description": "A light, refined take on power dressing, shaped with a clean line and softly defined structure.",
+      "published": true,
+      "updated_at": "2026-10-31T07:05:08Z",
+      "images": [
+        "assets/gallery/derya-ivory-tailoring.jpg"
+      ],
+      "color_key": "assets/gallery/derya-ivory-tailoring.jpg",
+      "legacy_key": "The Ivory Power Suit:assets/gallery/derya-ivory-tailoring.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-8EC4205F9115",
+      "stock": 70,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "6834dbb23ca63224",
+      "name": "The Chocolate Longline Blazer",
+      "image": "assets/gallery/derya-chocolate-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 19.95,
+      "description": "A longline chocolate blazer brings depth and graceful structure to a versatile wardrobe layer.",
+      "published": true,
+      "updated_at": "2026-10-31T07:05:01Z",
+      "images": [
+        "assets/gallery/derya-chocolate-tailoring.jpg"
+      ],
+      "color_key": "assets/gallery/derya-chocolate-tailoring.jpg",
+      "legacy_key": "The Chocolate Longline Blazer:assets/gallery/derya-chocolate-tailoring.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-6834DBB23CA6",
+      "stock": 30,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "e7adba5f950e57c3",
+      "name": "The Olive Trench Ensemble",
+      "image": "assets/gallery/derya-olive-trench.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 29.95,
+      "description": "A modern olive trench look with a fluid finish, designed to move easily between seasons.",
+      "published": true,
+      "updated_at": "2026-10-31T07:04:51Z",
+      "images": [
+        "assets/gallery/derya-olive-trench.jpg"
+      ],
+      "color_key": "assets/gallery/derya-olive-trench.jpg",
+      "legacy_key": "The Olive Trench Ensemble:assets/gallery/derya-olive-trench.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-E7ADBA5F950E",
+      "stock": 50,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "18610d00ae8436f0",
+      "name": "The Taupe Tailored Set",
+      "image": "assets/gallery/derya-taupe-tailoring.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 69.99,
+      "description": "Soft taupe tailoring balances a composed silhouette with the ease of a set made to wear together.",
+      "published": true,
+      "updated_at": "2026-10-31T07:11:12Z",
+      "images": [
+        "assets/gallery/derya-taupe-tailoring.jpg"
+      ],
+      "color_key": "assets/gallery/derya-taupe-tailoring.jpg",
+      "legacy_key": "The Taupe Tailored Set:assets/gallery/derya-taupe-tailoring.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-18610D00AE84",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "070e122b3b2a0a1d",
+      "name": "The Chocolate Blazer Co-ord",
+      "image": "assets/gallery/derya-chocolate-coord.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE POLISHED EDIT",
+      "price": 49.95,
+      "description": "A tonal chocolate co-ord with an easy, pulled-together shape and understated polish.",
+      "published": true,
+      "updated_at": "2026-10-31T07:11:06Z",
+      "images": [
+        "assets/gallery/derya-chocolate-coord.jpg"
+      ],
+      "color_key": "assets/gallery/derya-chocolate-coord.jpg",
+      "legacy_key": "The Chocolate Blazer Co-ord:assets/gallery/derya-chocolate-coord.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-070E122B3B2A",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "9b7becdf69faba45",
+      "name": "The Rosewater Occasion Abaya",
+      "image": "assets/gallery/rosewater-occasion-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 89.99,
+      "description": "A graceful rosewater abaya with fluid draping and an occasion-ready sense of softness.",
+      "published": true,
+      "updated_at": "2026-11-02T08:42:46Z",
+      "images": [
+        "assets/gallery/rosewater-occasion-abaya.jpg"
+      ],
+      "color_key": "assets/gallery/rosewater-occasion-abaya.jpg",
+      "legacy_key": "The Rosewater Occasion Abaya:assets/gallery/rosewater-occasion-abaya.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-9B7BECDF69FA",
+      "stock": 50,
+      "sizes": [
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "a01299210acf7627",
+      "name": "The Sandstone Drape Abaya",
+      "image": "assets/gallery/modest-drape-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 119.95,
+      "description": "Sculptural sandstone draping creates an elegant, modest silhouette with movement in every step.",
+      "published": true,
+      "updated_at": "2026-10-31T07:10:42Z",
+      "images": [
+        "assets/gallery/modest-drape-abaya.jpg"
+      ],
+      "color_key": "assets/gallery/modest-drape-abaya.jpg",
+      "legacy_key": "The Sandstone Drape Abaya:assets/gallery/modest-drape-abaya.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-A01299210ACF",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "27e73ff910a71df3",
+      "name": "The Espresso Evening Abaya",
+      "image": "assets/gallery/espresso-evening-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 109.95,
+      "description": "Deep espresso tones and a sweeping line bring quiet drama to this refined evening abaya.",
+      "published": true,
+      "updated_at": "2026-10-31T07:10:37Z",
+      "images": [
+        "assets/gallery/espresso-evening-abaya.jpg"
+      ],
+      "color_key": "assets/gallery/espresso-evening-abaya.jpg",
+      "legacy_key": "The Espresso Evening Abaya:assets/gallery/espresso-evening-abaya.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-27E73FF910A7",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "8e861c306b731e29",
+      "name": "The Mocha Belted Abaya",
+      "image": "assets/gallery/mocha-belted-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 99.95,
+      "description": "A softly defined waist and rich mocha palette lend this modest look a beautifully balanced shape.",
+      "published": true,
+      "updated_at": "2026-10-31T07:10:25Z",
+      "images": [
+        "assets/gallery/mocha-belted-abaya.jpg"
+      ],
+      "color_key": "assets/gallery/mocha-belted-abaya.jpg",
+      "legacy_key": "The Mocha Belted Abaya:assets/gallery/mocha-belted-abaya.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-8E861C306B73",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "1ae845d453aa1fce",
+      "name": "The Champagne Occasion Abaya",
+      "image": "assets/gallery/champagne-occasion-abaya.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 109.99,
+      "description": "Luminous champagne color and graceful coverage make this a considered choice for special moments.",
+      "published": true,
+      "updated_at": "2026-10-31T07:10:19Z",
+      "images": [
+        "assets/gallery/champagne-occasion-abaya.jpg"
+      ],
+      "color_key": "assets/gallery/champagne-occasion-abaya.jpg",
+      "legacy_key": "The Champagne Occasion Abaya:assets/gallery/champagne-occasion-abaya.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-1AE845D453AA",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "e1051eeab7dcec5f",
+      "name": "The Espresso Trench Look",
+      "image": "assets/gallery/espresso-trench-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 89.95,
+      "description": "A refined espresso layer with a long, clean line for a confident city-ready finish.",
+      "published": true,
+      "updated_at": "2026-10-31T07:10:33Z",
+      "images": [
+        "assets/gallery/espresso-trench-look.jpg"
+      ],
+      "color_key": "assets/gallery/espresso-trench-look.jpg",
+      "legacy_key": "The Espresso Trench Look:assets/gallery/espresso-trench-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-E1051EEAB7DC",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "4b961836a5114101",
+      "name": "The Stone Tailored Look",
+      "image": "assets/gallery/stone-tailored-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 68.99,
+      "description": "Soft stone tailoring brings a modern, understated ease to an elegant, covered silhouette.",
+      "published": true,
+      "updated_at": "2026-10-31T07:10:09Z",
+      "images": [
+        "assets/gallery/stone-tailored-look.jpg"
+      ],
+      "color_key": "assets/gallery/stone-tailored-look.jpg",
+      "legacy_key": "The Stone Tailored Look:assets/gallery/stone-tailored-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-4B961836A511",
+      "stock": 20,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "edc6983c2ab5268c",
+      "name": "The City-Cream Trouser Set",
+      "image": "assets/gallery/derya-city-cream-look.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 57.96,
+      "description": "A sunlit cream blazer and flowing trousers create a polished city look with an easy, contemporary feel.",
+      "published": true,
+      "updated_at": "2026-10-31T07:09:17Z",
+      "images": [
+        "assets/gallery/derya-city-cream-look.jpg"
+      ],
+      "color_key": "assets/gallery/derya-city-cream-look.jpg",
+      "legacy_key": "The City-Cream Trouser Set:assets/gallery/derya-city-cream-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-EDC6983C2AB5",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "e57f33ce2e1562d2",
+      "name": "The Cloud-Knit Lounge Set",
+      "image": "assets/gallery/derya-soft-knit-lounge-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE SOFT EDIT",
+      "price": 19.95,
+      "description": "A tactile knit and relaxed matching layers bring a soft, considered finish to slow days at home.",
+      "published": true,
+      "updated_at": "2026-10-31T07:09:53Z",
+      "images": [
+        "assets/gallery/derya-soft-knit-lounge-set.jpg"
+      ],
+      "color_key": "assets/gallery/derya-soft-knit-lounge-set.jpg",
+      "legacy_key": "The Cloud-Knit Lounge Set:assets/gallery/derya-soft-knit-lounge-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-E57F33CE2E15",
+      "stock": 20,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "0c9f048ac48a707e",
+      "name": "The Rose-Stripe Pajama Set",
+      "image": "assets/gallery/derya-rose-stripe-pajama-set.jpg",
+      "founder": "Derya Kasal",
+      "collection": "THE SOFT EDIT",
+      "price": 19.95,
+      "description": "A delicate rose stripe and relaxed pajama silhouette make unwinding feel quietly special.",
+      "published": true,
+      "updated_at": "2026-10-31T07:11:31Z",
+      "images": [
+        "assets/gallery/derya-rose-stripe-pajama-set.jpg"
+      ],
+      "color_key": "assets/gallery/derya-rose-stripe-pajama-set.jpg",
+      "legacy_key": "The Rose-Stripe Pajama Set:assets/gallery/derya-rose-stripe-pajama-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-0C9F048AC48A",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "8896b52b23cd0824",
+      "name": "The Ivory Tie-Neck Set",
+      "image": "assets/gallery/luna-ivory-tie-neck-set.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 44.95,
+      "description": "An airy ivory blouse and softly tailored trousers, finished with a graceful tie neckline for understated polish.",
+      "published": true,
+      "updated_at": "2026-10-31T07:12:40Z",
+      "images": [
+        "assets/gallery/luna-ivory-tie-neck-set.jpg"
+      ],
+      "color_key": "assets/gallery/luna-ivory-tie-neck-set.jpg",
+      "legacy_key": "The Ivory Tie-Neck Set:assets/gallery/luna-ivory-tie-neck-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-8896B52B23CD",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "40b272d4673736dc",
+      "name": "The Cloud-Knit Layer Set",
+      "image": "assets/gallery/luna-cloud-knit-layer-set.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 29.95,
+      "description": "A relaxed knit layer and matching soft separates create an easy, tactile look for slower days.",
+      "published": true,
+      "updated_at": "2026-10-31T07:12:49Z",
+      "images": [
+        "assets/gallery/luna-cloud-knit-layer-set.jpg"
+      ],
+      "color_key": "assets/gallery/luna-cloud-knit-layer-set.jpg",
+      "legacy_key": "The Cloud-Knit Layer Set:assets/gallery/luna-cloud-knit-layer-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-40B272D46737",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "72cb66b82bef90ad",
+      "name": "The Taupe Satin Lounge Set",
+      "image": "assets/gallery/luna-taupe-satin-lounge-set-hd.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 46.99,
+      "description": "A fluid taupe satin set with delicate lace details, made for a quietly elevated evening in.",
+      "published": true,
+      "updated_at": "2026-10-31T07:13:03Z",
+      "images": [
+        "assets/gallery/luna-taupe-satin-lounge-set-hd.jpg"
+      ],
+      "color_key": "assets/gallery/luna-taupe-satin-lounge-set-hd.jpg",
+      "legacy_key": "The Taupe Satin Lounge Set:assets/gallery/luna-taupe-satin-lounge-set-hd.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-72CB66B82BEF",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "0cece17490138dac",
+      "name": "The Weekend Denim Look",
+      "image": "assets/gallery/luna-weekend-denim-look-hd.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 89.99,
+      "description": "Relaxed blue denim and warm chocolate layers give this off-duty look a confident city feel.",
+      "published": true,
+      "updated_at": "2026-10-31T07:13:28Z",
+      "images": [
+        "assets/gallery/luna-weekend-denim-look-hd.jpg"
+      ],
+      "color_key": "assets/gallery/luna-weekend-denim-look-hd.jpg",
+      "legacy_key": "The Weekend Denim Look:assets/gallery/luna-weekend-denim-look-hd.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-0CECE1749013",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "7f2d1f88d06fb45c",
+      "name": "The Midnight Satin Gown",
+      "image": "assets/gallery/luna-midnight-satin-gown-hd.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVENING EDIT",
+      "price": 209.99,
+      "description": "A striking black satin gown with a fluid silhouette, made for an elegant evening out.",
+      "published": true,
+      "updated_at": "2026-10-31T07:13:47Z",
+      "images": [
+        "assets/gallery/luna-midnight-satin-gown-hd.jpg"
+      ],
+      "color_key": "assets/gallery/luna-midnight-satin-gown-hd.jpg",
+      "legacy_key": "The Midnight Satin Gown:assets/gallery/luna-midnight-satin-gown-hd.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-7F2D1F88D06F",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "e9a2c2dfa9f8f42d",
+      "name": "The Champagne Satin Evening Dress",
+      "image": "assets/gallery/luna-champagne-satin-evening-dress.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVENING EDIT",
+      "price": 196.95,
+      "description": "A luminous champagne satin gown with graceful draping, designed for memorable evenings.",
+      "published": true,
+      "updated_at": "2026-10-31T07:14:01Z",
+      "images": [
+        "assets/gallery/luna-champagne-satin-evening-dress.jpg"
+      ],
+      "color_key": "assets/gallery/luna-champagne-satin-evening-dress.jpg",
+      "legacy_key": "The Champagne Satin Evening Dress:assets/gallery/luna-champagne-satin-evening-dress.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-E9A2C2DFA9F8",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "cbc653452f6001b8",
+      "name": "The Ivory Tailored Suit",
+      "image": "assets/gallery/luna-ivory-tailored-suit.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 54.95,
+      "description": "A beautifully composed ivory blazer and trouser suit for polished, modern dressing.",
+      "published": true,
+      "updated_at": "2026-10-31T07:14:11Z",
+      "images": [
+        "assets/gallery/luna-ivory-tailored-suit.jpg"
+      ],
+      "color_key": "assets/gallery/luna-ivory-tailored-suit.jpg",
+      "legacy_key": "The Ivory Tailored Suit:assets/gallery/luna-ivory-tailored-suit.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-CBC653452F60",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "66160c188c347697",
+      "name": "The High-Neck Ivory Trouser Set",
+      "image": "assets/gallery/luna-high-neck-ivory-trouser-set.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 59.95,
+      "description": "A soft high-neck blouse and flowing ivory trousers create an effortlessly refined silhouette.",
+      "published": true,
+      "updated_at": "2026-10-31T07:14:29Z",
+      "images": [
+        "assets/gallery/luna-high-neck-ivory-trouser-set.jpg"
+      ],
+      "color_key": "assets/gallery/luna-high-neck-ivory-trouser-set.jpg",
+      "legacy_key": "The High-Neck Ivory Trouser Set:assets/gallery/luna-high-neck-ivory-trouser-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-66160C188C34",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "a2e2bfb6aed5c608",
+      "name": "The Beige Trench Tailored Look",
+      "image": "assets/gallery/luna-beige-trench-tailored-look.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 27.95,
+      "description": "A fluid beige trench layered over tonal tailoring brings timeless polish to the city.",
+      "published": true,
+      "updated_at": "2026-10-31T07:14:46Z",
+      "images": [
+        "assets/gallery/luna-beige-trench-tailored-look.jpg"
+      ],
+      "color_key": "assets/gallery/luna-beige-trench-tailored-look.jpg",
+      "legacy_key": "The Beige Trench Tailored Look:assets/gallery/luna-beige-trench-tailored-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-A2E2BFB6AED5",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "2f1f477ab7e06ceb",
+      "name": "The Ivory Executive Suit",
+      "image": "assets/gallery/victoria-ivory-executive-suit.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 49.95,
+      "description": "A softly structured ivory blazer and wide-leg trousers bring quiet confidence to modern tailoring.",
+      "published": true,
+      "updated_at": "2026-10-31T07:15:04Z",
+      "images": [
+        "assets/gallery/victoria-ivory-executive-suit.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-ivory-executive-suit.jpg",
+      "legacy_key": "The Ivory Executive Suit:assets/gallery/victoria-ivory-executive-suit.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-2F1F477AB7E0",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "4d51a0de1ad5592f",
+      "name": "The Cloud Ribbed Lounge Set",
+      "image": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE SOFT EDIT",
+      "price": 29.95,
+      "description": "A ribbed knit top and relaxed trousers make this creamy lounge set an easy choice for slower days.",
+      "published": true,
+      "updated_at": "2026-10-31T07:15:16Z",
+      "images": [
+        "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+      "legacy_key": "The Cloud Ribbed Lounge Set:assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-4D51A0DE1AD5",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "2f92545d9cbed177",
+      "name": "The Off-Shoulder Denim Look",
+      "image": "assets/gallery/victoria-off-shoulder-denim-look.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 39.95,
+      "description": "An easy off-shoulder knit and relaxed blue denim create a polished take on casual dressing.",
+      "published": true,
+      "updated_at": "2026-10-31T07:15:28Z",
+      "images": [
+        "assets/gallery/victoria-off-shoulder-denim-look.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-off-shoulder-denim-look.jpg",
+      "legacy_key": "The Off-Shoulder Denim Look:assets/gallery/victoria-off-shoulder-denim-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-2F92545D9CBE",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "4ba84e164ca92c24",
+      "name": "The Soft-Neutral Knit Set",
+      "image": "assets/gallery/victoria-soft-neutral-knit-set.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 39.95,
+      "description": "A fine neutral knit paired with fluid ivory trousers makes a graceful, everyday combination.",
+      "published": true,
+      "updated_at": "2026-10-31T07:15:38Z",
+      "images": [
+        "assets/gallery/victoria-soft-neutral-knit-set.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-soft-neutral-knit-set.jpg",
+      "legacy_key": "The Soft-Neutral Knit Set:assets/gallery/victoria-soft-neutral-knit-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-4BA84E164CA9",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "4e2b0a33f31318ac",
+      "name": "The Ivory Knit-Tailored Set",
+      "image": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 199.99,
+      "description": "A fitted high-neck knit and tailored ivory trousers balance softness with a clean, considered line.",
+      "published": true,
+      "updated_at": "2026-10-31T07:15:49Z",
+      "images": [
+        "assets/gallery/victoria-ivory-knit-tailored-set.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+      "legacy_key": "The Ivory Knit-Tailored Set:assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-4E2B0A33F313",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "52e502c50f2fff58",
+      "name": "The Champagne Halter Gown",
+      "image": "assets/gallery/victoria-champagne-halter-gown.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 198.99,
+      "description": "A luminous champagne halter gown drapes elegantly for celebrations and evenings out.",
+      "published": true,
+      "updated_at": "2026-10-31T07:16:04Z",
+      "images": [
+        "assets/gallery/victoria-champagne-halter-gown.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-champagne-halter-gown.jpg",
+      "legacy_key": "The Champagne Halter Gown:assets/gallery/victoria-champagne-halter-gown.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-52E502C50F2F",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "874d7c0173a9d2a8",
+      "name": "The Midnight Satin Slip Gown",
+      "image": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 79.99,
+      "description": "A sleek black satin gown with a fluid silhouette brings understated drama after dark.",
+      "published": true,
+      "updated_at": "2026-10-31T07:16:16Z",
+      "images": [
+        "assets/gallery/victoria-midnight-satin-slip-gown.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+      "legacy_key": "The Midnight Satin Slip Gown:assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-874D7C0173A9",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "ee63e133d40760be",
+      "name": "The Ivory Trench Ensemble",
+      "image": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 79.95,
+      "description": "A long ivory trench layered over tonal separates makes a striking, timeless city look.",
+      "published": true,
+      "updated_at": "2026-10-31T07:16:27Z",
+      "images": [
+        "assets/gallery/victoria-ivory-trench-ensemble.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+      "legacy_key": "The Ivory Trench Ensemble:assets/gallery/victoria-ivory-trench-ensemble.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-EE63E133D407",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "6664bf77ae517850",
+      "name": "The Champagne Blouse & Black Trousers",
+      "image": "assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 45.96,
+      "description": "A lustrous champagne blouse and fluid black trousers create an effortless evening-ready pairing.",
+      "published": true,
+      "updated_at": "2026-10-31T07:16:39Z",
+      "images": [
+        "assets/gallery/victoria-champagne-blouse-black-trousers.jpg"
+      ],
+      "color_key": "assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+      "legacy_key": "The Champagne Blouse & Black Trousers:assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-6664BF77AE51",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "7b8ef54e6321f222",
+      "name": "The Taupe Knit & Trouser Set",
+      "image": "assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 29.99,
+      "description": "A soft ivory knit and flowing taupe trousers make a graceful, polished look for everyday wear.",
+      "published": true,
+      "updated_at": "2026-10-31T07:16:52Z",
+      "images": [
+        "assets/gallery/beyza-taupe-knit-trouser-look.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+      "legacy_key": "The Taupe Knit & Trouser Set:assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-7B8EF54E6321",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "c9f06c204bdee72a",
+      "name": "The Ivory Cardigan Trouser Set",
+      "image": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE SOFT EDIT",
+      "price": 34.96,
+      "description": "A longline cardigan layers over an ivory knit-look top and tailored trousers in a tonal outfit concept.",
+      "published": true,
+      "updated_at": "2026-11-01T07:49:57Z",
+      "images": [
+        "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+      "legacy_key": "The Ivory Cardigan Trouser Set:assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-C9F06C204BDE",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "e51eb39916bcceab",
+      "name": "The Ivory Longline Coat",
+      "image": "assets/gallery/beyza-ivory-longline-coat-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 29.99,
+      "description": "A softly structured longline coat brings timeless polish to a light, tonal outfit.",
+      "published": true,
+      "updated_at": "2026-10-31T07:17:26Z",
+      "images": [
+        "assets/gallery/beyza-ivory-longline-coat-look.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-ivory-longline-coat-look.jpg",
+      "legacy_key": "The Ivory Longline Coat:assets/gallery/beyza-ivory-longline-coat-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-E51EB39916BC",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "fe93ba37bb9ba2f6",
+      "name": "The Taupe Longline Coat Set",
+      "image": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 29.96,
+      "description": "A warm taupe coat and fluid trousers create an elegant layered silhouette with a modern finish.",
+      "published": true,
+      "updated_at": "2026-10-31T07:17:37Z",
+      "images": [
+        "assets/gallery/beyza-taupe-longline-coat-set.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+      "legacy_key": "The Taupe Longline Coat Set:assets/gallery/beyza-taupe-longline-coat-set.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-FE93BA37BB9B",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "f62ee6e41ab495d3",
+      "name": "The Champagne Satin Occasion Gown",
+      "image": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE OCCASION EDIT",
+      "price": 89.99,
+      "description": "A luminous champagne satin gown falls in fluid folds for an occasion-ready statement.",
+      "published": true,
+      "updated_at": "2026-10-31T07:17:50Z",
+      "images": [
+        "assets/gallery/beyza-champagne-satin-occasion-gown.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+      "legacy_key": "The Champagne Satin Occasion Gown:assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-F62EE6E41AB4",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "db747bb55dc91722",
+      "name": "The Weekend Denim Jacket Look",
+      "image": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 19.99,
+      "description": "A relaxed brown jacket and pale wide-leg denim make an effortless, city-ready pairing.",
+      "published": true,
+      "updated_at": "2026-10-31T07:18:04Z",
+      "images": [
+        "assets/gallery/beyza-weekend-denim-jacket-look.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+      "legacy_key": "The Weekend Denim Jacket Look:assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-DB747BB55DC9",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "f348c4635fca0606",
+      "name": "The Espresso Tailored Suit",
+      "image": "assets/gallery/beyza-espresso-tailored-suit.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 59.99,
+      "description": "Rich espresso tailoring pairs a softly structured blazer with fluid trousers for confident dressing.",
+      "published": true,
+      "updated_at": "2026-10-31T07:18:16Z",
+      "images": [
+        "assets/gallery/beyza-espresso-tailored-suit.jpg"
+      ],
+      "color_key": "assets/gallery/beyza-espresso-tailored-suit.jpg",
+      "legacy_key": "The Espresso Tailored Suit:assets/gallery/beyza-espresso-tailored-suit.jpg",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-F348C4635FCA",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-10-30T22:32:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "dd10700aabef4abc",
+      "name": "The Ivory Ribbed Knit Set",
+      "image": "assets/gallery/new-ivory-ribbed-knit-set.png",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 39.95,
+      "description": "A fine ivory ribbed knit and flowing wide-leg trousers create a softly polished monochrome look.",
+      "published": true,
+      "updated_at": "2026-11-02T12:30:18Z",
+      "images": [
+        "assets/gallery/new-ivory-ribbed-knit-set.png",
+        "assets/uploads/bc52d037b4b360c10270415dc38607be-pose-v2.jpg",
+        "assets/uploads/57b47dc4151392d632949d149dc6b8f2-pose-v2.jpg",
+        "assets/uploads/b97e748dfaf3af9d821094206146817e-pose-v2.jpg",
+        "assets/uploads/bf9e72439c4778e029f96f7d028b217a-pose-v2.jpg"
+      ],
+      "color_key": "assets/gallery/new-ivory-ribbed-knit-set.png",
+      "legacy_key": "The Ivory Ribbed Knit Set:assets/gallery/new-ivory-ribbed-knit-set.png",
+      "base_color": "Beige",
+      "color_hex": "#cdbda7",
+      "sku": "VL-DD10700AABEF",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [
+        {
+          "name": "Navy Blue",
+          "hex": "#1c238d",
+          "image": "assets/uploads/0a5e3456d0eddac9b70eca464d7a71ed-pose-v2.jpg"
+        },
+        {
+          "name": "Black",
+          "hex": "#000000",
+          "image": "assets/uploads/6255f62cbd85eed56184eb3994e462e8-pose-v2.jpg"
+        },
+        {
+          "name": "Charcoal Gray",
+          "hex": "#a3a3a3",
+          "image": "assets/uploads/997bd0b7fcf99c4b54f39d013b0d6418-pose-v2.jpg"
+        },
+        {
+          "name": "Pure White",
+          "hex": "#ffffff",
+          "image": "assets/uploads/4d0db5592d60ec50d98ac90fa2fbae5f-pose-v2.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "356e3b3db3284328",
+      "name": "The Midnight Double-Breasted Suit",
+      "image": "assets/gallery/new-midnight-double-breasted-suit.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 89.99,
+      "description": "A black double-breasted blazer, high-neck layer and wide-leg trousers make a confident, considered statement.",
+      "published": true,
+      "updated_at": "2026-11-04T06:41:12Z",
+      "images": [
+        "assets/gallery/new-midnight-double-breasted-suit.png",
+        "assets/uploads/fcdd26d97efed0c4a37f576987e19a04.jpg",
+        "assets/uploads/12451c6fa84fb073e4a0854fdc467c24.jpg",
+        "assets/uploads/efcd18141745155dd166419809ec0546.jpg"
+      ],
+      "color_key": "assets/gallery/new-midnight-double-breasted-suit.png",
+      "legacy_key": "The Midnight Double-Breasted Suit:assets/gallery/new-midnight-double-breasted-suit.png",
+      "base_color": "Black",
+      "color_hex": "#252321",
+      "sku": "VL-356E3B3DB328",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "0641bb0833534697",
+      "name": "The Merlot Satin Trouser Set",
+      "image": "assets/gallery/new-merlot-satin-trouser-set.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVENING EDIT",
+      "price": 57.99,
+      "description": "A lustrous merlot blouse and fluid matching trousers bring a graceful finish to evening dressing.",
+      "published": true,
+      "updated_at": "2026-11-04T06:43:16Z",
+      "images": [
+        "assets/gallery/new-merlot-satin-trouser-set.png",
+        "assets/uploads/deceb895f644514cc7bbb2b8994feb47.jpg",
+        "assets/uploads/11e7266aa749cf8b75bf0e466c3ef3e1.jpg",
+        "assets/uploads/554710fd4b4d8e77f9b816810d482490.jpg"
+      ],
+      "color_key": "assets/gallery/new-merlot-satin-trouser-set.png",
+      "legacy_key": "The Merlot Satin Trouser Set:assets/gallery/new-merlot-satin-trouser-set.png",
+      "base_color": "Red",
+      "color_hex": "#9f3c3c",
+      "sku": "VL-0641BB083353",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "caafcb7f7ea0475a",
+      "name": "The Merlot Tailored Set",
+      "image": "assets/gallery/new-merlot-tailored-set-pose-v2.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 78.95,
+      "description": "A rich burgundy blazer and coordinated wide-leg trousers balance clean tailoring with a soft, modern line.",
+      "published": true,
+      "updated_at": "2026-11-02T09:21:23Z",
+      "images": [
+        "assets/gallery/new-merlot-tailored-set-pose-v2.jpg"
+      ],
+      "color_key": "assets/gallery/new-merlot-tailored-set-pose-v2.jpg",
+      "legacy_key": "The Merlot Tailored Set:assets/gallery/new-merlot-tailored-set.png",
+      "base_color": "Red",
+      "color_hex": "#9f3c3c",
+      "sku": "VL-CAAFCB7F7EA0",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "a26d4ac081364941",
+      "name": "The Sandstone Half-Zip Lounge Set",
+      "image": "assets/gallery/new-sandstone-half-zip-lounge-set-pose-v2.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 46.99,
+      "description": "A relaxed half-zip knit and matching drawstring trousers make a tonal set for slower days.",
+      "published": true,
+      "updated_at": "2026-11-02T09:21:23Z",
+      "images": [
+        "assets/gallery/new-sandstone-half-zip-lounge-set-pose-v2.jpg"
+      ],
+      "color_key": "assets/gallery/new-sandstone-half-zip-lounge-set-pose-v2.jpg",
+      "legacy_key": "The Sandstone Half-Zip Lounge Set:assets/gallery/new-sandstone-half-zip-lounge-set.png",
+      "base_color": "Beige",
+      "color_hex": "#cdbda7",
+      "sku": "VL-A26D4AC08136",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "d638ee48cacb4abe",
+      "name": "The Midnight High-Neck Suit",
+      "image": "assets/gallery/new-midnight-high-neck-suit-pose-v2.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 79.99,
+      "description": "A sleek black blazer and trousers layered over a high-neck knit create an understated, versatile suit look.",
+      "published": true,
+      "updated_at": "2026-11-02T09:21:23Z",
+      "images": [
+        "assets/gallery/new-midnight-high-neck-suit-pose-v2.jpg"
+      ],
+      "color_key": "assets/gallery/new-midnight-high-neck-suit-pose-v2.jpg",
+      "legacy_key": "The Midnight High-Neck Suit:assets/gallery/new-midnight-high-neck-suit.png",
+      "base_color": "Black",
+      "color_hex": "#252321",
+      "sku": "VL-D638EE48CACB",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "617d6a4389d34fe2",
+      "name": "The Ivory Soft-Structure Suit",
+      "image": "assets/gallery/new-ivory-executive-suit-pose-v2.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 69.99,
+      "description": "An ivory blazer and matching wide-leg trousers offer a light, softly structured take on modern tailoring.",
+      "published": true,
+      "updated_at": "2026-11-02T12:31:49Z",
+      "images": [
+        "assets/gallery/new-ivory-executive-suit-pose-v2.jpg"
+      ],
+      "color_key": "assets/gallery/new-ivory-executive-suit-pose-v2.jpg",
+      "legacy_key": "The Ivory Soft-Structure Suit:assets/gallery/new-ivory-executive-suit.png",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-617D6A4389D3",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "4d4304a128904e2f",
+      "name": "The Ivory & Taupe Tailored Set",
+      "image": "assets/gallery/new-ivory-taupe-tailored-set-pose-v2.jpg",
+      "founder": "Victoria Mendez",
+      "collection": "THE TAILORED EDIT",
+      "price": 46.95,
+      "description": "An ivory blazer and knit paired with fluid taupe trousers give this tailored look a warm, tonal contrast.",
+      "published": true,
+      "updated_at": "2026-11-02T12:31:43Z",
+      "images": [
+        "assets/gallery/new-ivory-taupe-tailored-set-pose-v2.jpg"
+      ],
+      "color_key": "assets/gallery/new-ivory-taupe-tailored-set-pose-v2.jpg",
+      "legacy_key": "The Ivory & Taupe Tailored Set:assets/gallery/new-ivory-taupe-tailored-set.png",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-4D4304A12890",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T09:21:23Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "53a68a01bbdedf19",
+      "name": "Ivory Knit & Wide-Leg Trousers",
+      "image": "assets/uploads/3758f269b89cb2b6645cb2c42be12760-pose-v2.jpg",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 39.95,
+      "description": "A test",
+      "published": true,
+      "updated_at": "2026-11-07T06:22:31Z",
+      "images": [
+        "assets/uploads/3758f269b89cb2b6645cb2c42be12760-pose-v2.jpg"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-53A68A01BBDE",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-02T10:38:43Z",
+      "color_variants": [
+        {
+          "name": "Green",
+          "hex": "#9b9d83",
+          "image": "assets/uploads/38d6bd7538e724e7384f8f07d3c3538b-pose-v2.jpg"
+        },
+        {
+          "name": "Red",
+          "hex": "#b62525",
+          "image": "assets/uploads/75d9a32471ae1a37bb90fc99f9b06b0e-pose-v2.jpg"
+        },
+        {
+          "name": "Brown",
+          "hex": "#ad5401",
+          "image": "assets/uploads/72df13a43a0557be0bd12faf3929fd32-pose-v2.jpg"
+        },
+        {
+          "name": "Blue",
+          "hex": "#1100ff",
+          "image": "assets/uploads/a2d50c9aa5a4e4564c471d32ee6aa0a4-pose-v2.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "0d3ef24445790a06",
+      "name": "Noir Élégance Tailored Suit",
+      "image": "assets/uploads/21102994fa83b26267c383a7d211db0e-pose-v2.jpg",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVENING EDIT",
+      "price": 78.95,
+      "description": "Elevate your wardrobe with this sophisticated black tailored suit, featuring a structured blazer with elegant gold-tone buttons and flattering wide-leg trousers. Designed for a timeless, confident look, perfect for office wear, business meetings, and elegant occasions.",
+      "published": true,
+      "updated_at": "2026-11-07T06:21:02Z",
+      "images": [
+        "assets/uploads/21102994fa83b26267c383a7d211db0e-pose-v2.jpg"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "White",
+      "color_hex": "#ffffff",
+      "sku": "VL-0D3EF2444579",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-03T06:54:17Z",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "552959ebc1ce3e02",
+      "name": "The Espresso Tailored Suit",
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 149.0,
+      "description": "A deep espresso blazer and matching wide-leg trousers create a polished two-piece suit. Notched lapels, a defined waist and a fluid trouser shape make it an easy choice for work or dressed-up occasions.\n\nTwo-piece suit: blazer and trousers. Top, hijab, belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "updated_at": "2026-11-09T08:32:32+00:00",
+      "images": [
+        "assets/gallery/new-arrivals/espresso-tailored-suit.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "legacy_key": "The Espresso Tailored Suit:assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "base_color": "Espresso",
+      "color_hex": "#493027",
+      "sku": "VL-552959EBC1CE",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/espresso-tailored-suit-navy-pose.jpg"
+        },
+        {
+          "name": "Sage",
+          "hex": "#9aab93",
+          "image": "assets/gallery/new-arrivals/variants/espresso-tailored-suit-sage-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": [
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.288,
+          "y": 0.634,
+          "product_id": "velora-example-espresso-bag",
+          "label": "Bag",
+          "product": {
+            "id": "velora-example-espresso-bag",
+            "name": "The Espresso Top-Handle Bag",
+            "price": 49.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#4e342e"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.233,
+          "y": 0.966,
+          "product_id": "velora-example-nude-court-shoes",
+          "label": "Shoes",
+          "product": {
+            "id": "velora-example-nude-court-shoes",
+            "name": "The Nude Pointed Court Shoes",
+            "price": 59.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Nude",
+            "color_hex": "#d1ac94"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.516,
+          "y": 0.151,
+          "product_id": "velora-example-taupe-scarf",
+          "label": "Scarf",
+          "product": {
+            "id": "velora-example-taupe-scarf",
+            "name": "The Taupe Draped Scarf",
+            "price": 19.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Taupe",
+            "color_hex": "#9e8173"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.467,
+          "y": 0.451,
+          "product_id": "552959ebc1ce3e02",
+          "label": "Tailored suit",
+          "product": {
+            "id": "552959ebc1ce3e02",
+            "name": "The Espresso Tailored Suit",
+            "price": 149.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#493027"
+          }
+        }
+      ]
+    },
+    {
+      "id": "1aff2611e1fe3c8b",
+      "name": "The Black Contrast Track Set",
+      "image": "assets/gallery/new-arrivals/black-stripe-track-set.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 79.0,
+      "description": "A black zip-front track jacket and relaxed wide-leg trousers, finished with crisp white side stripes. Wear the pieces together for an easy off-duty look or style them separately with everyday essentials.\n\nTwo-piece set: jacket and trousers. Top, trainers and accessories are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/black-stripe-track-set.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/black-stripe-track-set.jpg",
+      "legacy_key": "The Black Contrast Track Set:assets/gallery/new-arrivals/black-stripe-track-set.jpg",
+      "base_color": "Black",
+      "color_hex": "#202020",
+      "sku": "VL-1AFF2611E1FE",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/black-stripe-track-set-navy-pose.jpg"
+        },
+        {
+          "name": "Burgundy",
+          "hex": "#722f42",
+          "image": "assets/gallery/new-arrivals/variants/black-stripe-track-set-burgundy-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "166871dd1a4996c7",
+      "name": "The Ivory Gold-Button Knit Set",
+      "image": "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE SOFT EDIT",
+      "price": 99.0,
+      "description": "An ivory ribbed collared cardigan pairs with a matching long skirt for a softly coordinated look. Gold-tone buttons and a front skirt slit add definition to the clean, tonal silhouette.\n\nTwo-piece set: cardigan and skirt. Belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg",
+      "legacy_key": "The Ivory Gold-Button Knit Set:assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg",
+      "base_color": "Ivory",
+      "color_hex": "#eee3d2",
+      "sku": "VL-166871DD1A49",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Mocha",
+          "hex": "#a38875",
+          "image": "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-mocha-pose.jpg"
+        },
+        {
+          "name": "Black",
+          "hex": "#242424",
+          "image": "assets/gallery/new-arrivals/variants/ivory-ribbed-skirt-set-black-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "257524c3ff675ac5",
+      "name": "The Chocolate Gold-Button Jacket",
+      "image": "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 89.0,
+      "description": "A cropped chocolate jacket with a pointed collar, patch pockets and gold-tone buttons. Its structured silhouette adds a smart finishing layer to high-rise trousers, denim or a simple dress.\n\nJacket only. Knit top, trousers, belt, shoes, bag and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg",
+      "legacy_key": "The Chocolate Gold-Button Jacket:assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg",
+      "base_color": "Chocolate",
+      "color_hex": "#49312b",
+      "sku": "VL-257524C3FF67",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-navy-pose.jpg"
+        },
+        {
+          "name": "Camel",
+          "hex": "#b68f61",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-gold-button-jacket-camel-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "5750c07e3cbf0922",
+      "name": "The Midnight Draped Satin Gown",
+      "image": "assets/gallery/new-arrivals/black-draped-satin-gown.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVENING EDIT",
+      "price": 129.0,
+      "description": "A black satin-look maxi dress with slender straps, a draped neckline and a defined bodice. Gathering through the skirt and a high side slit create an elegant evening silhouette.\n\nDress only. Shoes, clutch and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/black-draped-satin-gown.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/black-draped-satin-gown.jpg",
+      "legacy_key": "The Midnight Draped Satin Gown:assets/gallery/new-arrivals/black-draped-satin-gown.jpg",
+      "base_color": "Black",
+      "color_hex": "#171719",
+      "sku": "VL-5750C07E3CBF",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Burgundy",
+          "hex": "#722f42",
+          "image": "assets/gallery/new-arrivals/variants/black-draped-satin-gown-burgundy-pose.jpg"
+        },
+        {
+          "name": "Emerald",
+          "hex": "#215e4b",
+          "image": "assets/gallery/new-arrivals/variants/black-draped-satin-gown-emerald-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "f84bedf34737978e",
+      "name": "The Navy Modern Tailored Suit",
+      "image": "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 149.0,
+      "description": "A navy notched-lapel blazer and matching wide-leg trousers offer a versatile take on modern tailoring. The clean lines work equally well with a simple camisole or a fine knit.\n\nTwo-piece suit: blazer and trousers. Top, belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/navy-wide-leg-suit.jpg",
+      "legacy_key": "The Navy Modern Tailored Suit:assets/gallery/new-arrivals/navy-wide-leg-suit.jpg",
+      "base_color": "Navy",
+      "color_hex": "#202a45",
+      "sku": "VL-F84BEDF34737",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-charcoal-pose.jpg"
+        },
+        {
+          "name": "Sage",
+          "hex": "#9aab93",
+          "image": "assets/gallery/new-arrivals/variants/navy-wide-leg-suit-sage-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "14c77cfe7ca32f1c",
+      "name": "The Sand Cropped Tailored Blazer",
+      "image": "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 85.0,
+      "description": "A sand-toned blazer with a shorter hem, defined shoulders and classic notched lapels. Its compact shape pairs naturally with high-waisted, wide-leg trousers for a balanced everyday silhouette.\n\nBlazer only. Knit top, trousers, belt, shoes, bag and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg",
+      "legacy_key": "The Sand Cropped Tailored Blazer:assets/gallery/new-arrivals/sand-cropped-tailored-blazer.jpg",
+      "base_color": "Sand",
+      "color_hex": "#b4a08a",
+      "sku": "VL-14C77CFE7CA3",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Chocolate",
+          "hex": "#604032",
+          "image": "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-chocolate-pose.jpg"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/sand-cropped-tailored-blazer-charcoal-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "dcac45b76ac443e0",
+      "name": "The Mocha Blossom Maxi Dress",
+      "image": "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 109.0,
+      "description": "A cream maxi dress scattered with warm mocha florals. A wrap-effect neckline, tie waist, gathered sleeves and tiered skirt create a flowing silhouette for daytime occasions and relaxed celebrations.\n\nDress only. Shoes, bag and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg",
+      "legacy_key": "The Mocha Blossom Maxi Dress:assets/gallery/new-arrivals/mocha-floral-wrap-maxi-dress.jpg",
+      "base_color": "Cream and Mocha",
+      "color_hex": "#d8c1a8",
+      "sku": "VL-DCAC45B76AC4",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Sage Floral",
+          "hex": "#9aab93",
+          "image": "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-sage-floral-pose.jpg"
+        },
+        {
+          "name": "Dusty Rose Floral",
+          "hex": "#b9808c",
+          "image": "assets/gallery/new-arrivals/variants/mocha-floral-wrap-maxi-dress-dusty-rose-floral-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "24a9406125222ec8",
+      "name": "The Sand Longline Trench",
+      "image": "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE LAYERING EDIT",
+      "price": 139.0,
+      "description": "A long sand-toned trench with broad lapels, a double-breasted front and adjustable cuff straps. The generous length creates an understated outer layer over tailoring or casual separates.\n\nCoat only. Hijab, top, trousers, belt, shoes, bag and jewelry are styling accessories.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/sand-longline-trench-coat.jpg",
+      "legacy_key": "The Sand Longline Trench:assets/gallery/new-arrivals/sand-longline-trench-coat.jpg",
+      "base_color": "Sand",
+      "color_hex": "#c6ad8b",
+      "sku": "VL-24A940612522",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Olive",
+          "hex": "#767b50",
+          "image": "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-olive-pose.jpg"
+        },
+        {
+          "name": "Black",
+          "hex": "#242424",
+          "image": "assets/gallery/new-arrivals/variants/sand-longline-trench-coat-black-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "637245ab86907188",
+      "name": "The Chocolate Longline Blazer",
+      "image": "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 99.0,
+      "description": "A chocolate blazer with a longer cut, notched lapels and flap pockets. Its softly structured shape brings warmth and definition to cream trousers, denim and everyday neutral layers.\n\nBlazer only. Knit top, trousers, belt, shoes, bag and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg",
+      "legacy_key": "The Chocolate Longline Blazer:assets/gallery/new-arrivals/chocolate-longline-blazer.jpg",
+      "base_color": "Chocolate",
+      "color_hex": "#604032",
+      "sku": "VL-637245AB8690",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-navy-pose.jpg"
+        },
+        {
+          "name": "Camel",
+          "hex": "#b68f61",
+          "image": "assets/gallery/new-arrivals/variants/chocolate-longline-blazer-camel-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "6e74347edcea55dd",
+      "name": "The Cocoa Asymmetric Draped Dress",
+      "image": "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE EVENING EDIT",
+      "price": 119.0,
+      "description": "A cocoa occasion dress with an asymmetric neckline and sculptural draping across the bodice. Side gathering shapes the waist and falls into a long skirt with a wrap-effect opening.\n\nDress only. Shoes, clutch and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg",
+      "legacy_key": "The Cocoa Asymmetric Draped Dress:assets/gallery/new-arrivals/cocoa-asymmetric-draped-dress.jpg",
+      "base_color": "Cocoa",
+      "color_hex": "#54362c",
+      "sku": "VL-6E74347EDCEA",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Burgundy",
+          "hex": "#722f42",
+          "image": "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-burgundy-pose.jpg"
+        },
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/cocoa-asymmetric-draped-dress-navy-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "ee173795c6a09788",
+      "name": "The Espresso Pleated Trousers",
+      "image": "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE TAILORED EDIT",
+      "price": 69.0,
+      "description": "Deep espresso trousers with a high-rise shape, front pleats and a full wide-leg cut. Their understated tailoring pairs easily with a flowing blouse, simple knit or matching-toned jacket.\n\nTrousers only. Blouse, hijab, belt, shoes and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg",
+      "legacy_key": "The Espresso Pleated Trousers:assets/gallery/new-arrivals/espresso-wide-leg-trousers.jpg",
+      "base_color": "Espresso",
+      "color_hex": "#49352d",
+      "sku": "VL-EE173795C6A0",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-charcoal-pose.jpg"
+        },
+        {
+          "name": "Navy",
+          "hex": "#24334e",
+          "image": "assets/gallery/new-arrivals/variants/espresso-wide-leg-trousers-navy-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "f56dfe081b1b14e0",
+      "name": "The Oat Half-Zip Lounge Set",
+      "image": "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE SOFT EDIT",
+      "price": 89.0,
+      "description": "An oat-toned textured knit set with a collared half-zip top and matching relaxed trousers. Ribbed trims and a soft, roomy silhouette make it an effortless choice for quieter days.\n\nTwo-piece set: knit top and trousers. Trainers, bag and jewelry are not included.",
+      "published": true,
+      "updated_at": "2026-11-06T13:22:18Z",
+      "images": [
+        "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg"
+      ],
+      "color_key": "assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg",
+      "legacy_key": "The Oat Half-Zip Lounge Set:assets/gallery/new-arrivals/oat-half-zip-lounge-set.jpg",
+      "base_color": "Oat",
+      "color_hex": "#e1d3bd",
+      "sku": "VL-F56DFE081B1B",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-06T13:22:18Z",
+      "color_variants": [
+        {
+          "name": "Mocha",
+          "hex": "#a38875",
+          "image": "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-mocha-pose.jpg"
+        },
+        {
+          "name": "Charcoal",
+          "hex": "#4d5057",
+          "image": "assets/gallery/new-arrivals/variants/oat-half-zip-lounge-set-charcoal-pose.jpg"
+        }
+      ],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": []
+    },
+    {
+      "id": "79e0b7a097df924b",
+      "name": "Sage Green Satin Maxi Dress with Lantern Sleeves",
+      "image": "assets/uploads/388dc16c686edd785ccb75076bb105a9.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 129.0,
+      "description": "Exude timeless elegance at your next special event with this sophisticated Draped Satin Modest Evening Gown. Crafted from a luxurious, fluid satin that beautifully catches the light, this floor-length dress is designed with a high, modest neckline and graceful, voluminous lantern sleeves that taper into elegant cuffs. The true highlight of the gown is the exquisite wrap-around draping and delicate ruching across the bodice, which flows flawlessly into a cascading ruffle detail down the skirt. De",
+      "published": true,
+      "updated_at": "2026-11-08T10:55:02Z",
+      "images": [
+        "assets/uploads/388dc16c686edd785ccb75076bb105a9.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Sage Green",
+      "color_hex": "#c4d1bd",
+      "sku": "VL-79E0B7A097DF",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T10:53:58Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Stretch Satin\n• Composition: 100% High-Grade Polyester\n• Finish: Smooth, lustrous satin sheen with a soft hand-feel.",
+      "fabric_weight": "Premium Stretch Satin",
+      "origin": "",
+      "fit": "• Silhouette: A-line with a defined, draped waistband to enhance your natural shape.\n• Neckline: High modest neckline / Mock neck.\n• Sleeves: Full-length bishop/lantern sleeves with buttoned or elasticated cuffs.\n• Stretch: Minimal to light stretch across the fabric; fits true to size. It is recommended to choose your standard size based on bust and waist measurements.\n• Length: Floor-length (approx. 150–160 cm from shoulder to hem), ideal for styling with heels.\n• Closure: Concealed zipper clos",
+      "image_hotspots": []
+    },
+    {
+      "id": "39baac639a81b1b5",
+      "name": "Cream Plisse Mock-Neck Hijab Evening Dress",
+      "image": "assets/uploads/4636359008f5317eabbb1c3a08b27469.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVENING EDIT",
+      "price": 109.0,
+      "description": "Make an unforgettable impression with this breathtaking Pleated Chiffon Modest Evening Gown. Designed with magnificent plissé detailing that runs from the mock neckline down to the sweeping floor-length hem, this dress combines fluid texture with refined grace. Elegant, voluminous balloon sleeves gather beautifully at the cuffs, creating a dramatic and regal look. The waist is defined by a coordinating fabric belt adorned with a sophisticated metallic hardware emblem, giving way to a beautifully flowing, fully pleated maxi skirt that moves beautifully with every step. Perfectly tailored for formal events, weddings, and special religious celebrations",
+      "published": true,
+      "updated_at": "2026-11-08T10:59:15Z",
+      "images": [
+        "assets/uploads/4636359008f5317eabbb1c3a08b27469.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Ecru",
+      "color_hex": "#e7dcd0",
+      "sku": "VL-39BAAC639A81",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T10:58:09Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Crinkled Yoryo Chiffon / Plissé Georgette\n• Composition: 100% High-Grade Polyester\n• Lining: Fully lined bodice and skirt to ensure maximum opacity",
+      "fabric_weight": "Light to medium-weight (approx. 130–150 GSM for the outer chiffon layer) Airy, delicate, and highly br",
+      "origin": "",
+      "fit": "• Silhouette: Flowing A-line maxi with a structured waist.\n• Neckline: High mock neck / gathered stand-up collar.\n• Sleeves: Voluminous statement bishop/balloon sleeves with comfortable smocked or banded cuffs.\n• Belt: Includes a detachable matching belt with a golden accent buckle to cinch the waist.\n• Length: Full floor-length (approx. 149–150 cm from shoulder to hem).\n• Stretch: Fabric has no inherent stretch but the plissé technique provides natural give across the bust and hips. Fits true t",
+      "image_hotspots": []
+    },
+    {
+      "id": "f14603c04434f518",
+      "name": "Double-Faced Tailored Maxi Trench Coat",
+      "image": "assets/uploads/0dfe9e6ca50669520cd11700e5f4ce75.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 109.0,
+      "description": "Wrap yourself in effortless chic with this luxurious Oversized Longline Wool Coat. Designed for the ultimate cold-weather layering, this floor-length maxi coat features a striking, exaggerated notch lapel collar and dropped shoulders that lean into a modern, relaxed aesthetic. Its structured yet fluid double-faced fabric creates a smooth, clean drape, while deep side welt pockets offer functionality without altering the silhouette. Styled open for a dramatic sweeping look or belted to cinch the waist, it is a timeless capsule piece that pairs perfectly over structured trousers, chunky knitwear, or elegant evening wear",
+      "published": true,
+      "updated_at": "2026-11-08T17:42:27Z",
+      "images": [
+        "assets/uploads/0dfe9e6ca50669520cd11700e5f4ce75.png",
+        "assets/uploads/5e78e636ef63e7dcaca7d5daf0155735.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Chocolate Brown",
+      "color_hex": "#b48e5f",
+      "sku": "VL-F14603C04434",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T12:38:53Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Double-Woven Double-Faced Wool Blend\n• Composition: 70% Virgin Wool, 25% Polyester, 5% Other Recycled Fibres\n• Lining: Unlined or partially self-lined for a soft, fluid structure",
+      "fabric_weight": "• Weight: Heavy-weight Feel: Substantial, cozy, and highly insulating",
+      "origin": "",
+      "fit": "• Silhouette: Intentionally oversized, loose-cut H-line silhouette.\n• Sleeves: Wide, relaxed long sleeves that leave plenty of room to easily layer over thick sweaters or blazers.\n• Length: Full maxi/floor length (approx. 125–135 cm depending on the size).\n• Closure: Open-front style; includes a detachable self-tie fabric belt to customize and define your waist.\n• Sizing Suggestion: Fits very generously. For a true streetwear, oversized look, select your normal size. If you prefer a closer, more",
+      "image_hotspots": []
+    },
+    {
+      "id": "74e5ecf28c897588",
+      "name": "Tailored Double-Breasted Longline Wool Coat",
+      "image": "assets/uploads/a121d4e36fc57f7b94b559321afda40b.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 110.0,
+      "description": "Command the room in this exquisitely tailored Double-Breasted Longline Wool Coat. Perfect for sophisticated autumnal and winter dressing, this premium outerwear piece is sculpted with sharp padded shoulders, structured notch lapels, and a classic double-breasted button closure. The full length offers a dramatic, sweeping silhouette while providing exceptional warmth. Complete with deep, practical side pockets and a beautifully smooth interior lining, it seamlessly bridges the gap between functional cold-weather protection and high-end street style. Layer it open over monochrome separates for an effortless power look or button it up for a clean, sharp look",
+      "published": true,
+      "updated_at": "2026-11-08T12:40:58Z",
+      "images": [
+        "assets/uploads/a121d4e36fc57f7b94b559321afda40b.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Burgundy",
+      "color_hex": "#612323",
+      "sku": "VL-74E5ECF28C89",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T12:40:53Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Brushed Wool-Blend Broadcloth\n• Composition: 60% Wool, 35% Polyester, 5% Other Fibers\n• Lining: 100% Satin Polyester (Fully lined for easy layering over knitwear)",
+      "fabric_weight": "Weight: Heavy-weight",
+      "origin": "",
+      "fit": "• Silhouette: Tailored H-line cut with structure through the shoulders and a straight drop to the hem.\n• Sleeves: Set-in long sleeves designed to hit exactly at the wrist, comfortably leaving room for fitted turtlenecks and lightweight blazers.\n• Length: Full maxi length (approx. 120–125 cm from shoulder to hem depending on the size).\n• Closure: Double-breasted front with matching resin tonal buttons.\n• Sizing Suggestion: Fits true to size through the shoulders. If you plan to layer over heavily",
+      "image_hotspots": []
+    },
+    {
+      "id": "dd6d6bac12f4b6d4",
+      "name": "Classic Tailored Blazer and High-Waisted Wide-Leg Trouser Set",
+      "image": "assets/uploads/84e08997be650452ac8d4f7ab4e0b8be.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE TAILORED EDIT",
+      "price": 99.0,
+      "description": "Redefine contemporary power dressing with this impeccably tailored Two-Piece Suiting Set. Combining sharp masculine structure with a fluid feminine drape, this matching set is a masterclass in sophisticated styling. The single-breasted blazer is constructed with defined padded shoulders, elegant notched lapels, structural darting, and gold-accented button cuffs. It pairs flawlessly with the sweeping, floor-length trousers that feature a ultra-high rise, structured front pleats, sharp pressed creases, and a dramatic wide-leg silhouette. Designed to easily transition from high-stakes business meetings to upscale social events, this set offers an instant, polished monochrome look",
+      "published": true,
+      "updated_at": "2026-11-08T12:43:09Z",
+      "images": [
+        "assets/uploads/84e08997be650452ac8d4f7ab4e0b8be.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Creamy Sand",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-DD6D6BAC12F4",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T12:43:09Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Mid-Weight Suiting Twill\n• Composition: 74% Polyester, 21% Rayon/Viscose, 5% Elastane (Spandex)\n• Lining (Blazer): 100% Satin Polyester (Fully lined for a smooth fit over knitwear)",
+      "fabric_weight": "Medium-weight",
+      "origin": "",
+      "fit": "• Blazer Fit: Semi-fitted, structured silhouette. Features a slightly elongated body that hits below the hips. True to size through the shoulders.\n• Trouser Fit: High-waisted with a fitted waist band, flowing into a dramatic, extra-wide leg.\n• Stretch: Subtle 4-way mechanical stretch for comfort and easy movement.\n• Length (Trousser): Extra-long inseam (approx. 82–84 cm / 32-33 inches), explicitly patterned to cascade elegantly over heels or platform loafers.\n• Closure: Blazer features a single",
+      "image_hotspots": []
+    },
+    {
+      "id": "52137095165dcac4",
+      "name": "Cozy Ribbed Three-Piece Cable Knit Lounge Set",
+      "image": "assets/uploads/49819f2c1bb20cf39521e7048ecba24a.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE OCCASION EDIT",
+      "price": 98.0,
+      "description": "Indulge in ultimate comfort without sacrificing style with this luxurious Three-Piece Ribbed Knit Lounge Set. Designed for sophisticated layering, this set features a relaxed oversized crewneck sweater with slouchy drop-shoulder sleeves, a matching floor-length open-front longline duster cardigan, and effortless wide-leg knit trousers. Crafted from an incredibly soft, plush ribbed knit fabrication, it offers a cozy texture that beautifully catches the light. Whether you wear the pieces together for a seamless monochrome winter look or mix and match them with your capsule wardrobe, this set bridges the gap between high-end loungewear and elegant street style",
+      "published": true,
+      "updated_at": "2026-11-08T12:45:11Z",
+      "images": [
+        "assets/uploads/49819f2c1bb20cf39521e7048ecba24a.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Original",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-52137095165D",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T12:45:11Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Heavyweight Bouclé Soft Knit\n• Composition: 52% Acrylic, 28% Nylon, 20% Polyester\n• Finish: Ultra-soft, brushed texture that mimics the warmth of wool without any itchiness.",
+      "fabric_weight": "Heavyweight",
+      "origin": "",
+      "fit": "• Cardigan Fit: Relaxed, open-front duster silhouette with an ankle-length hem.\n• Sweater Fit: Intentionally oversized with a roomy chest, drop-shoulder seams, and wide ribbed cuffs.\n• Trouser Fit: High-waisted with a comfortable, wide elastic waistband that flows down into a dramatic, sweeping wide-leg hem.\n• Stretch: High elastomeric stretch; naturally accommodates various body shapes while retaining its structural form. Fits true to size for a relaxed look",
+      "image_hotspots": []
+    },
+    {
+      "id": "4f74d57ae172a738",
+      "name": "Draped Cowl-Neck Satin Modest Evening Dress",
+      "image": "assets/uploads/86b8aea2ec194a984b0023653a19c554.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE EVENING EDIT",
+      "price": 99.0,
+      "description": "Step into pure sophistication with this breathtaking Draped Cowl-Neck Satin Modest Evening Gown. Cut from an ultra-luxurious liquid satin that flows elegantly, this floor-length maxi dress features a high modest neckline enhanced by a beautiful, cascading cowl-draped overlay across the bodice. The true showstopper is the dramatic silhouette, defined by an asymmetric split cape sleeve that catches the wind effortlessly as you move. A cinched, ruched waistband highlights the figure before dropping into a clean, minimalist column skirt. Completely tailored for high-end modest formal wear, this dress is the ultimate statement choice for gala dinners, weddings, and special events.",
+      "published": true,
+      "updated_at": "2026-11-08T14:27:40Z",
+      "images": [
+        "assets/uploads/86b8aea2ec194a984b0023653a19c554.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Taupe",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-4F74D57AE172",
+      "stock": 16,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T14:27:40Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Heavyweight Liquid Satin\n• Composition: 97% High-Grade Polyester, 3% Elastane (Spandex)\n• Finish: Luminous satin sheen with an incredibly smooth, non-static interior finish.",
+      "fabric_weight": "Heavy-weight (approx. 260–280 GSM)",
+      "origin": "",
+      "fit": "• Silhouette: Slim-fit column/A-line silhouette with a heavily draped top overlay.\n• Neckline: High gathered mock/cowl neckline.\n• Sleeves: Full-length draped batwing/cape sleeves with an asymmetric cascading panel on one side.\n• Length: Full floor-length (approx. 150–155 cm from shoulder to hem), tailored perfectly to skim over formal heels.\n• Stretch: Subtle mechanical give through the body; fits true to size. If you are between sizes, it is recommended to size up for a more relaxed, modest dr",
+      "image_hotspots": []
+    },
+    {
+      "id": "6a22b234a18f036d",
+      "name": "Classic Longline Wool-Blend Wrap Coat",
+      "image": "assets/uploads/0979edec72f43cc734432bdce624dbcf.png",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 74.0,
+      "description": "Elevate your cold-weather wardrobe with this beautifully tailored Longline Wool-Blend Coat. Designed with a timeless H-line silhouette, this premium outerwear piece features classic notched lapels, structural tortoiseshell-effect double-breasted buttons, and elegant cuff button detailing. Its full length offers a dramatic, sweeping appearance while maximizing warmth against winter weather. Cut with a generous yet structured drape, it seamlessly layers over chunky knitwear and formal tailoring alike. Complete with functional side pockets, it's the ultimate foundational layer for an elegant, tonal ensemble",
+      "published": true,
+      "updated_at": "2026-11-08T17:46:00Z",
+      "images": [
+        "assets/uploads/0979edec72f43cc734432bdce624dbcf.png",
+        "assets/uploads/906976f264b26b634dd671bd89866f74.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Oatmeal",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-6A22B234A18F",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-08T17:45:30Z",
+      "color_variants": [],
+      "material": "• Fabric: Premium Felted Wool-Blend Melton\n• Composition: 55% Wool, 40% Polyester, 5% Other Fibers\n• Lining: 100% Satin Polyester (Fully lined for easy sliding over heavy fabrics)",
+      "fabric_weight": "420–450 GSM",
+      "origin": "",
+      "fit": "• Silhouette: Tailored straight-cut / H-line with structured shoulders.\n• Sleeves: Standard full-length sleeves with clean button cuffs.\n• Length: Longline maxi length (approx. 120–125 cm from shoulder to hem depending on the size).\n• Closure: Front button closure with an open-front aesthetic when left unbuttoned.\n• Sizing Suggestion: Fits true to size through the shoulders. If you are aiming for a highly oversized streetwear fit, consider sizing up by one size",
+      "image_hotspots": []
+    },
+    {
+      "id": "1efd9419870c45d5",
+      "name": "Oversized Chunky Cable-Knit Sweater",
+      "image": "assets/uploads/3310f36791e1c2b05be73fddf5c62150.png",
+      "founder": "Derya Kasal",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 39.0,
+      "description": "An ultra-cozy, thick winter staple featuring an intricate, mixed-direction cable-knit pattern on the body and arms. Designed with a timeless crew neckline, significantly dropped shoulder seams for a modern slouchy look, and chunky ribbed trim finishes along the collar, hem, and extended cuffs",
+      "published": true,
+      "updated_at": "2026-11-09T06:16:45Z",
+      "images": [
+        "assets/uploads/3310f36791e1c2b05be73fddf5c62150.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Cream",
+      "color_hex": "#f1f0ef",
+      "sku": "VL-1EFD9419870C",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T06:16:45Z",
+      "color_variants": [],
+      "material": "Premium Heavyweight Acrylic-Wool Blend (typically 70% Acrylic, 30% Wool or high-grade 100% Recycled Polyester threading for softness without the scratch)",
+      "fabric_weight": "Heavyweight / Chunky Knit",
+      "origin": "",
+      "fit": "• Silhouette: Slouchy, oversized, and slightly boxy silhouette.\n• Length: Standard length, designed to sit relaxed at or just below the waistband (perfect for partial tucks into high-waisted denim).\n• Sizing Advice: Intentionally designed for a loose, voluminous look. We recommend ordering your true size for the intended cozy drape, or sizing down if you prefer a closer, more tailored fit.",
+      "image_hotspots": []
+    },
+    {
+      "id": "bab9b9c87f0abba0",
+      "name": "Faux Suede Faux-Shearling Aviator Jacket",
+      "image": "assets/uploads/61d978e6b26289f3ad2b399eb37942ac.png",
+      "founder": "Luna Moretti",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 45.0,
+      "description": "A chic, winter-ready outerwear staple featuring a rich distressed faux-suede exterior paired with plush, contrasting faux-shearling lining. Designed with an oversized collar, an asymmetrical front zipper, adjustable side belt details at the hem, and generous shearling-trimmed cuffs for a cozy, structured look",
+      "published": true,
+      "updated_at": "2026-11-09T06:20:13Z",
+      "images": [
+        "assets/uploads/61d978e6b26289f3ad2b399eb37942ac.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Chocolate Brown",
+      "color_hex": "#5c390f",
+      "sku": "VL-BAB9B9C87F0A",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T06:20:13Z",
+      "color_variants": [],
+      "material": "• Heavyweight Synthetic Shearling Blend (100% Polyester shell and lining, or premium polyurethane-coated faux suede for durability and warmth).",
+      "fabric_weight": "Heavyweight Outerwear",
+      "origin": "",
+      "fit": "• Silhouette: Boxy, slightly oversized aviator silhouette designed for easy layering.\n• Length: Cropped to standard hip length, sitting beautifully right above the waistband of tailored trousers.\n• Sizing Advice: Designed with a relaxed fit to comfortably accommodate thick sweaters underneath. Order your true size for the intended cozy drape, or size down if you prefer a narrower, less voluminous profile",
+      "image_hotspots": []
+    },
+    {
+      "id": "a505c9f975120e21",
+      "name": "Chunky Ribbed Oversized Cardigan",
+      "image": "assets/uploads/e764bbf18f12246f564f3b0906831ece.png",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 48.0,
+      "description": "A luxurious, ultra-cozy layering piece featuring a heavy-gauge vertical rib knit. This open-front cardigan is defined by its dramatic balloon sleeves, dropped shoulder seams, and thick ribbed trim details on the hem and cuffs, creating a beautifully relaxed, voluminous silhouette.",
+      "published": true,
+      "updated_at": "2026-11-09T06:25:16Z",
+      "images": [
+        "assets/uploads/e764bbf18f12246f564f3b0906831ece.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Oatmeal",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-A505C9F97512",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T06:25:16Z",
+      "color_variants": [],
+      "material": "Premium Soft-Spun Knit Blend (60% Acrylic, 30% Nylon, 10% Wool or high-grade recycled polyester blend for maximum warmth without skin irritation)",
+      "fabric_weight": "Heavyweight Knit",
+      "origin": "",
+      "fit": "• Silhouette: Exaggerated, oversized slouchy fit with structured, voluminous sleeves.\n• Length: Mid-length cut, designed to drape relaxed below the hips.\n• Sizing Advice: Intentionally designed for a loose, relaxed aesthetic. We recommend ordering your true size for the intended cozy look, or sizing down if you prefer less volume through the arms and body",
+      "image_hotspots": []
+    },
+    {
+      "id": "9ef1f074154c608c",
+      "name": "Tailored Drawstring Wide-Leg Trousers",
+      "image": "assets/uploads/c9d7b05ccef5742ea409880ad9b834bf.png",
+      "founder": "Luna Moretti",
+      "collection": "THE TAILORED EDIT",
+      "price": 68.0,
+      "description": "A sophisticated hybrid pant that combines the elegant structure of smart tailoring with the comfort of casual wear. Featuring a comfortable, high-rise elasticated waistband with an adjustable drawstring, front pleated detailing, practical side slip pockets, and a fluid, sweeping wide-leg cut that elongates the silhouette",
+      "published": true,
+      "updated_at": "2026-11-09T06:27:40Z",
+      "images": [
+        "assets/uploads/c9d7b05ccef5742ea409880ad9b834bf.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Taupe",
+      "color_hex": "#d1c8bd",
+      "sku": "VL-9EF1F074154C",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T06:27:29Z",
+      "color_variants": [],
+      "material": "Premium Lightweight Suiting Blend (65% Polyester, 31% Rayon, 4% Spandex for a soft feel, smooth drape, and subtle comfortable stretch)",
+      "fabric_weight": "Medium-weight woven fabric",
+      "origin": "",
+      "fit": "• Silhouette: High-waisted, relaxed through the thighs, flowing into a structured, wide-leg profile.\n• Length: Full-length inseam, meticulously cut to stack beautifully over platform sneakers, loafers, or low heels.\n• Sizing Advice: Fits true to size. The elasticated waistband offers flex comfort, so choose your standard size for a relaxed, polished look.",
+      "image_hotspots": []
+    },
+    {
+      "id": "5aa1a4c95b8b43cf",
+      "name": "Bouclé Longline Trench Coat",
+      "image": "assets/uploads/2c8852c12a85c1ab06ddb1aea98f42cb.png",
+      "founder": "Luna Moretti",
+      "collection": "THE TAILORED EDIT",
+      "price": 149.0,
+      "description": "An elegant and cozy cold-weather staple crafted from a textured bouclé fabrication. This longline coat features structured notch lapels, a relaxed open-front design with a matching self-tie belt, dropped shoulder seams, and deep functional side pockets for a perfect blend of style and utility",
+      "published": true,
+      "updated_at": "2026-11-09T06:30:12Z",
+      "images": [
+        "assets/uploads/2c8852c12a85c1ab06ddb1aea98f42cb.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Cream",
+      "color_hex": "#e6dcd1",
+      "sku": "VL-5AA1A4C95B8B",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T06:29:59Z",
+      "color_variants": [],
+      "material": "Heavyweight Textured Bouclé Knit (100% Polyester shell with a smooth 100% Satin Polyester inner lining for effortless layering over sweaters).",
+      "fabric_weight": "Heavyweight",
+      "origin": "",
+      "fit": "• Silhouette: Relaxed, slightly oversized tailored silhouette designed to drape fluidly down the body.\n• Length: Maxi length, hitting mid-calf to ankle depending on height.\n• Sizing Advice: Designed for a comfortable, loose fit that accommodates chunky knitwear underneath. Order your true size for the intended cozy, high-end look, or size down for a slimmer, more defined frame",
+      "image_hotspots": []
+    },
+    {
+      "id": "b21271819fbf773c",
+      "name": "Draped Cowl-Back Jersey Trumpet Gown",
+      "image": "assets/uploads/aeb6919c86ef984831b7ec099d6902b1.png",
+      "founder": "Luna Moretti",
+      "collection": "THE EVENING EDIT",
+      "price": 398.0,
+      "description": "An exquisite floor-length evening gown crafted from an ultra-smooth, premium jersey fabrication that elegantly hugs your curves. It features long, sleek sleeves balanced by a modest high-cut bateau neckline in the front, transitioning into a dramatic, fluid cowl draped open-back design. Subtle ruching across the lower back seamlessly moves down into a sweeping trumpet skirt that puddles beautifully around the feet.",
+      "published": true,
+      "updated_at": "2026-11-09T08:07:50Z",
+      "images": [
+        "assets/uploads/aeb6919c86ef984831b7ec099d6902b1.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Navy",
+      "color_hex": "#201e30",
+      "sku": "VL-B21271819FBF",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:07:50Z",
+      "color_variants": [],
+      "material": "Heavy-knit stretch jersey fabric (95% Polyester, 5% Spandex/Elastane for a supportive fit with graceful movement; fully lined down to the floor)",
+      "fabric_weight": "Medium-to-Heavyweight",
+      "origin": "",
+      "fit": "• Silhouette: Form-fitting, contoured body-skimming bodice that softly flares into a classic trumpet/mermaid silhouette below the knee.\n• Length: Maxi/Floor length, featuring a slight pooling hemline tailored to look spectacular when paired with sleek stiletto heels.\n• Sizing Advice: Fits true to size with exceptional comfortable stretch across the waist and hips. We recommend using shapewear if a perfectly seamless look is desired under the fluid jersey fabric.",
+      "image_hotspots": []
+    },
+    {
+      "id": "17ef8e76f3900391",
+      "name": "Tailored Single-Breasted Blazer & Wide-Leg Trousers Set",
+      "image": "assets/uploads/df9e7a6b5f14080fdef9b2a82a9921d2.png",
+      "founder": "Derya Kasal",
+      "collection": "THE TAILORED EDIT",
+      "price": 248.0,
+      "description": "A sophisticated and modern take on classic power suiting. The single-breasted blazer features structured shoulders, sharp notch lapels, a classic single-button front closure, and elegant tortoiseshell buttons on the cuffs. The matching high-waisted trousers are designed with a clean, flat-front waistband, belt loops, practical side slash pockets, and a fluid wide-leg silhouette that pairs beautifully with heels.",
+      "published": true,
+      "updated_at": "2026-11-09T08:09:35Z",
+      "images": [
+        "assets/uploads/df9e7a6b5f14080fdef9b2a82a9921d2.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Powder Blue",
+      "color_hex": "#8289a4",
+      "sku": "VL-17EF8E76F390",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:09:35Z",
+      "color_variants": [],
+      "material": "Premium Woven Suiting Blend (68% Polyester, 28% Rayon, 4% Spandex for a smooth drape with a comfortable, subtle stretch; blazer is fully lined with 100% Polyester satin)",
+      "fabric_weight": "Medium-weight",
+      "origin": "",
+      "fit": "• Silhouette (Blazer): Tailored, slightly relaxed boyfriend silhouette that nips in gently at the waist.\n• Silhouette (Trousers): High-rise fitted waist and hip that relaxes into a sweeping, straight wide-leg cut.\n• Sizing Advice: Fits true to size. If you are between sizes in the trousers or prefer a more relaxed fit across the hips, we recommend sizing up.",
+      "image_hotspots": []
+    },
+    {
+      "id": "d48662bc960d8ad2",
+      "name": "Pleated Wool-Blend Wide-Leg Trousers",
+      "image": "assets/uploads/d403488017dbd9cdf2d25f6ea5a8c215.png",
+      "founder": "Derya Kasal",
+      "collection": "THE TAILORED EDIT",
+      "price": 110.0,
+      "description": "A classic cold-weather wardrobe essential combining a sophisticated tailored drape with everyday comfort. These trousers feature a high-rise waist with crisp front pleats, practical side slash pockets, a matching slim belt, and an elegant wide-leg silhouette that flows effortlessly with movement.",
+      "published": true,
+      "updated_at": "2026-11-09T08:11:41Z",
+      "images": [
+        "assets/uploads/d403488017dbd9cdf2d25f6ea5a8c215.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Charcoal Grey Melange",
+      "color_hex": "#323034",
+      "sku": "VL-D48662BC960D",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:11:41Z",
+      "color_variants": [],
+      "material": "Premium Structured Wool Blend (50% Wool, 45% Polyester, 5% Elastane for a soft feel, structured weight, and subtle comfortable stretch; half-lined to the knee with 100% Polyester for smooth wear)",
+      "fabric_weight": "Medium-to-Heavyweight",
+      "origin": "",
+      "fit": "• Silhouette: High-waisted, fitted through the hips, relaxing into a dramatic, straight wide-leg cut.\n• Length: Full-length inseam, tailored to fall cleanly over chunky boots or loafers.\n• Sizing Advice: Fits true to size. If you are between sizes, we recommend sizing up to ensure a relaxed, elegant drape through the pleated hip area.",
+      "image_hotspots": []
+    },
+    {
+      "id": "0499c134586039c3",
+      "name": "Satin Mock-Neck Maxi Evening Dress",
+      "image": "assets/uploads/81bcc3195f0b0c0042173cc371c8111c.png",
+      "founder": "Beyza Keskinci",
+      "collection": "THE MODEST EDIT",
+      "price": 189.0,
+      "description": "A breathtakingly elegant maxi dress designed with sophisticated coverage. This gown features a classic mock neckline with a beautifully gathered bodice, leading into dramatic, voluminous bishop sleeves finished with structured long button cuffs. A wide, matching fabric waistband defines the waistline before flowing into a rich, fluid A-line maxi skirt that captures the light beautifully.",
+      "published": true,
+      "updated_at": "2026-11-09T08:13:49Z",
+      "images": [
+        "assets/uploads/81bcc3195f0b0c0042173cc371c8111c.png",
+        "assets/uploads/a4898542ece27586621814db7832af4c.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Burgundy",
+      "color_hex": "#48131d",
+      "sku": "VL-0499C1345860",
+      "stock": null,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:13:34Z",
+      "color_variants": [
+        {
+          "name": "Olive",
+          "hex": "#929377",
+          "image": "assets/uploads/b3bbaad1b180b53e82839fb9fa8ba937.png"
+        }
+      ],
+      "material": "Premium High-Shine Heavy Satin (97% Polyester, 3% Spandex for a liquid-like drape, luxurious touch, and subtle, comfortable flex).",
+      "fabric_weight": "Medium-weight",
+      "origin": "",
+      "fit": "• Silhouette: Fitted through the high waist with a relaxed, blouson-style bodice and a sweeping, floor-length A-line skirt.\n• Length: Maxi length, tailored to fully cover the feet and pair beautifully with dressy heels.\n• Sizing Advice: Fits true to size through the waist. The chest and sleeves are intentionally cut with extra fabric for a fluid, draped effect.",
+      "image_hotspots": []
+    },
+    {
+      "id": "b4ffbe06207e3314",
+      "name": "Ribbed Knit Wide-Leg Lounge Pants",
+      "image": "assets/uploads/254d3c645b153ff32911b437f8e0821c.png",
+      "founder": "Luna Moretti",
+      "collection": "THE SOFT EDIT",
+      "price": 88.0,
+      "description": "The ultimate blend of casual comfort and effortless style. These high-rise lounge pants are crafted from a plush, textured knit featuring subtle vertical ribbing. Designed with a supportive elasticized waistband, an adjustable functional drawstring, practical side slit pockets, and a fluid wide-leg silhouette that flows gracefully down to the hem",
+      "published": true,
+      "updated_at": "2026-11-09T08:18:34Z",
+      "images": [
+        "assets/uploads/254d3c645b153ff32911b437f8e0821c.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Beige",
+      "color_hex": "#caaf9b",
+      "sku": "VL-B4FFBE06207E",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:18:34Z",
+      "color_variants": [],
+      "material": "• Premium Ultra-Soft Knit Blend (52% Rayon, 28% Polyester, 20% Nylon or high-quality brushed acrylic-blend for maximum cloud-like softness and shape recovery).",
+      "fabric_weight": "Medium-to-Heavyweight Knit",
+      "origin": "",
+      "fit": "• Silhouette: High-waisted, relaxed through the hips, opening into a fluid, sweeping wide-leg drape.\n• Length: Full-length inseam designed to graze the top of sneakers or platform boots without dragging excessively.\n• Sizing Advice: Fits true to size with generous, comfortable stretch. Choose your regular size for a relaxed, chic lounge look, or size down for a more fitted silhouette through the seat.",
+      "image_hotspots": []
+    },
+    {
+      "id": "7782745d0efd8c24",
+      "name": "Belted Wool-Blend Longline Wrap Coat",
+      "image": "assets/uploads/f3719a41116c7b0c36a492568d84b25d.png",
+      "founder": "Victoria Mendez",
+      "collection": "THE EVERYDAY EDIT",
+      "price": 198.0,
+      "description": "A timeless cold-weather investment piece offering effortless elegance. This maxi wrap coat features structured notch lapels, a classic storm flap detail at the back, functional deep side pockets, and an unlined interior that accentuates its fluid drape. The look is completed with a matching self-tie waist belt to cinch the relaxed silhouette as desired.",
+      "published": true,
+      "updated_at": "2026-11-09T08:20:46Z",
+      "images": [
+        "assets/uploads/f3719a41116c7b0c36a492568d84b25d.png"
+      ],
+      "color_key": "",
+      "legacy_key": "",
+      "base_color": "Camel",
+      "color_hex": "#93603d",
+      "sku": "VL-7782745D0EFD",
+      "stock": 20,
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:20:46Z",
+      "color_variants": [],
+      "material": "Premium Heavyweight Wool Blend (60% Wool, 40% Polyester for a warm, soft-brushed exterior tactile finish with high structural durability).",
+      "fabric_weight": "Heavyweight Outerwear",
+      "origin": "",
+      "fit": "• Silhouette: Relaxed, slightly oversized tailored silhouette designed to drape fluidly down the body.\n• Length: Maxi length, hitting mid-calf to ankle depending on height.\n• Sizing Advice: Designed intentionally for a comfortable, loose fit that accommodates chunky knitwear underneath. Order your true size for the intended premium look, or size down if you prefer a narrower, closer fit",
+      "image_hotspots": []
+    },
+    {
+      "id": "velora-example-espresso-bag",
+      "name": "The Espresso Top-Handle Bag",
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE POLISHED EDIT",
+      "price": 49.0,
+      "description": "An espresso top-handle bag with a structured shape and gold-tone clasp, shown with the Espresso Tailored Suit. This editable accessory example uses the full styling photograph; the bag is the linked item. Material, measurements and availability are not confirmed.",
+      "published": true,
+      "updated_at": "2026-11-09T08:34:52+00:00",
+      "images": [
+        "assets/gallery/new-arrivals/espresso-tailored-suit.jpg"
+      ],
+      "color_key": "velora-example-espresso-bag",
+      "legacy_key": "",
+      "base_color": "Espresso",
+      "color_hex": "#4e342e",
+      "sku": "VL-EXAMPLE-ESPRESSO-BAG",
+      "stock": null,
+      "sizes": [
+        "One size"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:32:32+00:00",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": [
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.288,
+          "y": 0.634,
+          "product_id": "velora-example-espresso-bag",
+          "label": "Bag",
+          "product": {
+            "id": "velora-example-espresso-bag",
+            "name": "The Espresso Top-Handle Bag",
+            "price": 49.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#4e342e"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.233,
+          "y": 0.966,
+          "product_id": "velora-example-nude-court-shoes",
+          "label": "Shoes",
+          "product": {
+            "id": "velora-example-nude-court-shoes",
+            "name": "The Nude Pointed Court Shoes",
+            "price": 59.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Nude",
+            "color_hex": "#d1ac94"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.516,
+          "y": 0.151,
+          "product_id": "velora-example-taupe-scarf",
+          "label": "Scarf",
+          "product": {
+            "id": "velora-example-taupe-scarf",
+            "name": "The Taupe Draped Scarf",
+            "price": 19.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Taupe",
+            "color_hex": "#9e8173"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.467,
+          "y": 0.451,
+          "product_id": "552959ebc1ce3e02",
+          "label": "Tailored suit",
+          "product": {
+            "id": "552959ebc1ce3e02",
+            "name": "The Espresso Tailored Suit",
+            "price": 149.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#493027"
+          }
+        }
+      ]
+    },
+    {
+      "id": "velora-example-nude-court-shoes",
+      "name": "The Nude Pointed Court Shoes",
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE POLISHED EDIT",
+      "price": 59.0,
+      "description": "Nude pointed-toe court shoes styled with the Espresso Tailored Suit. This editable accessory example uses the full styling photograph; the shoes are the linked item. EU sizes and price are illustrative. Material, fit and availability require confirmation.",
+      "published": true,
+      "updated_at": "2026-11-09T08:34:52+00:00",
+      "images": [
+        "assets/gallery/new-arrivals/espresso-tailored-suit.jpg"
+      ],
+      "color_key": "velora-example-nude-court-shoes",
+      "legacy_key": "",
+      "base_color": "Nude",
+      "color_hex": "#d1ac94",
+      "sku": "VL-EXAMPLE-NUDE-COURT-SHOES",
+      "stock": null,
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40",
+        "41",
+        "42"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:32:32+00:00",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": [
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.288,
+          "y": 0.634,
+          "product_id": "velora-example-espresso-bag",
+          "label": "Bag",
+          "product": {
+            "id": "velora-example-espresso-bag",
+            "name": "The Espresso Top-Handle Bag",
+            "price": 49.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#4e342e"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.233,
+          "y": 0.966,
+          "product_id": "velora-example-nude-court-shoes",
+          "label": "Shoes",
+          "product": {
+            "id": "velora-example-nude-court-shoes",
+            "name": "The Nude Pointed Court Shoes",
+            "price": 59.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Nude",
+            "color_hex": "#d1ac94"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.516,
+          "y": 0.151,
+          "product_id": "velora-example-taupe-scarf",
+          "label": "Scarf",
+          "product": {
+            "id": "velora-example-taupe-scarf",
+            "name": "The Taupe Draped Scarf",
+            "price": 19.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Taupe",
+            "color_hex": "#9e8173"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.467,
+          "y": 0.451,
+          "product_id": "552959ebc1ce3e02",
+          "label": "Tailored suit",
+          "product": {
+            "id": "552959ebc1ce3e02",
+            "name": "The Espresso Tailored Suit",
+            "price": 149.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#493027"
+          }
+        }
+      ]
+    },
+    {
+      "id": "velora-example-taupe-scarf",
+      "name": "The Taupe Draped Scarf",
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "founder": "Velora Studio",
+      "collection": "THE POLISHED EDIT",
+      "price": 19.0,
+      "description": "A taupe scarf with a softly wrapped, draped finish, styled with the Espresso Tailored Suit. This editable accessory example uses the full styling photograph; the scarf is the linked item. Fabric, dimensions and availability are not confirmed.",
+      "published": true,
+      "updated_at": "2026-11-09T08:34:52+00:00",
+      "images": [
+        "assets/gallery/new-arrivals/espresso-tailored-suit.jpg"
+      ],
+      "color_key": "velora-example-taupe-scarf",
+      "legacy_key": "",
+      "base_color": "Taupe",
+      "color_hex": "#9e8173",
+      "sku": "VL-EXAMPLE-TAUPE-SCARF",
+      "stock": null,
+      "sizes": [
+        "One size"
+      ],
+      "deleted_at": null,
+      "created_at": "2026-11-09T08:32:32+00:00",
+      "color_variants": [],
+      "material": "",
+      "fabric_weight": "",
+      "origin": "",
+      "fit": "",
+      "image_hotspots": [
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.288,
+          "y": 0.634,
+          "product_id": "velora-example-espresso-bag",
+          "label": "Bag",
+          "product": {
+            "id": "velora-example-espresso-bag",
+            "name": "The Espresso Top-Handle Bag",
+            "price": 49.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#4e342e"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.233,
+          "y": 0.966,
+          "product_id": "velora-example-nude-court-shoes",
+          "label": "Shoes",
+          "product": {
+            "id": "velora-example-nude-court-shoes",
+            "name": "The Nude Pointed Court Shoes",
+            "price": 59.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Nude",
+            "color_hex": "#d1ac94"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.516,
+          "y": 0.151,
+          "product_id": "velora-example-taupe-scarf",
+          "label": "Scarf",
+          "product": {
+            "id": "velora-example-taupe-scarf",
+            "name": "The Taupe Draped Scarf",
+            "price": 19.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Taupe",
+            "color_hex": "#9e8173"
+          }
+        },
+        {
+          "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+          "x": 0.467,
+          "y": 0.451,
+          "product_id": "552959ebc1ce3e02",
+          "label": "Tailored suit",
+          "product": {
+            "id": "552959ebc1ce3e02",
+            "name": "The Espresso Tailored Suit",
+            "price": 149.0,
+            "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+            "base_color": "Espresso",
+            "color_hex": "#493027"
+          }
+        }
+      ]
+    }
+  ]
+}

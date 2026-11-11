@@ -1,5 +1,9 @@
 # Velora accounts and administration
 
+Public metadata, favicons, sharing images and the dynamic sitemap are documented
+in [LAUNCH_SETUP.md](LAUNCH_SETUP.md). The configured public origin is
+`https://velora.org`; local previews remain noindex.
+
 The storefront, registration, login, customer account and admin portal run together using Python 3.10 or newer. No package installation is needed.
 
 On Windows, double-click **`Start-Velora.cmd`** to open the correct sign-in page. It reuses the server when it is already running; otherwise it starts Velora on port 8000. Keep the terminal window open while using the site.

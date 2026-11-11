@@ -578,6 +578,33 @@ const lookByKey = new Map(individualLooks.map((look) => [look.key, look]));
 const selectedVariants = new Map();
 const productKeyAliases = new Map();
 let galleryImageSequence = 0;
+const cardPhotoInspectors = new Map();
+
+function inspectorPhotoData(look, image) {
+  const color = getVariantSelection(look).color;
+  const alternateColor = color !== look.colors[0]?.name;
+  const selfLink = `product.html?id=${encodeURIComponent(look.id || "")}${alternateColor ? `&color=${encodeURIComponent(color)}` : look.item_image ? "&view=item" : ""}`;
+  return { src: image.dataset.originalSrc || getProductImage(look), alt: image.alt, title: look.name,
+    hotspots: look.image_hotspots || [], productId: look.id, selfLink };
+}
+
+function syncCardPhotoInspector(container, look) {
+  if (!container?.classList.contains("look-tile-image") || !window.VeloraImageInspector) return;
+  const image = container.querySelector("[data-gallery-main]");
+  if (!image) return;
+  let controller = cardPhotoInspectors.get(container);
+  if (!controller) {
+    controller = window.VeloraImageInspector.mount({ frame: container, image, labelsOnly: true });
+    cardPhotoInspectors.set(container, controller);
+  }
+  controller.update(inspectorPhotoData(look, image));
+}
+
+function destroyCardPhotoInspectors(container) {
+  for (const [frame, controller] of cardPhotoInspectors) {
+    if (container.contains(frame)) { controller.destroy(); cardPhotoInspectors.delete(frame); }
+  }
+}
 const defaultSize = "M";
 
 function getVariantSelection(look) {
@@ -599,14 +626,16 @@ function setProductImage(image, look, color = getVariantSelection(look).color) {
   image.alt = garmentOnly
     ? `${look.name} — ${color}, garment-only preview`
     : `${look.name} — ${color}, modeled by ${look.founder}`;
+  if (image.classList.contains("product-dialog-image")) syncQuickPhotoInspector(look);
+  syncCardPhotoInspector(image.closest(".look-tile-image"), look);
 }
 
 function setProductPhotoSource(image, source) {
   image.dataset.originalSrc = source;
-  const responsive = !image.classList.contains("product-dialog-image") && window.VeloraResponsiveImages?.[source];
+  const responsive = window.VeloraResponsiveImages?.[source];
   if (responsive) {
     image.srcset = responsive.srcset;
-    image.sizes ||= "(max-width: 650px) 100vw, (max-width: 1100px) 33vw, 25vw";
+    image.sizes ||= image.classList.contains("product-dialog-image") ? "(max-width: 650px) 100vw, 50vw" : "(max-width: 650px) 100vw, (max-width: 1100px) 33vw, 25vw";
     image.src = responsive.src;
     image.width = responsive.width;
     image.height = responsive.height;
@@ -657,7 +686,7 @@ function attachProductGallery(container, look) {
   image.id ||= `gallery-image-${++galleryImageSequence}`;
   container.querySelectorAll(".product-gallery-controls, .product-gallery-thumbnails, .product-gallery-count").forEach((node) => node.remove());
   const photos = galleryImages(look);
-  if (photos.length < 2) return;
+  if (photos.length < 2) { syncCardPhotoInspector(container, look); return; }
   const controls = document.createElement("div");
   controls.className = "product-gallery-controls";
   for (const [action, text, label] of [["previous", "‹", "Previous photo"], ["next", "›", "Next photo"]]) {
@@ -686,7 +715,8 @@ function attachProductGallery(container, look) {
     button.setAttribute("aria-pressed", String(index === 0));
     button.setAttribute("aria-controls", image.id);
     const thumbnail = document.createElement("img");
-    thumbnail.src = src;
+    thumbnail.sizes = "64px";
+    setProductPhotoSource(thumbnail, src);
     thumbnail.alt = "";
     thumbnail.loading = "lazy";
     thumbnail.decoding = "async";
@@ -694,6 +724,7 @@ function attachProductGallery(container, look) {
     thumbnails.append(button);
   });
   container.append(controls, count, thumbnails);
+  syncCardPhotoInspector(container, look);
 }
 
 function selectGalleryPhoto(container, look, index) {
@@ -704,6 +735,8 @@ function selectGalleryPhoto(container, look, index) {
   container.dataset.currentGalleryIndex = String(current);
   setProductPhotoSource(image, photos[current]);
   image.alt = `${look.name} — ${getVariantSelection(look).color}, photo ${current + 1} of ${photos.length}`;
+  if (image.classList.contains("product-dialog-image")) syncQuickPhotoInspector(look);
+  syncCardPhotoInspector(container, look);
   const count = container.querySelector(".product-gallery-count");
   if (count) count.textContent = `${current + 1} / ${photos.length}`;
   container.querySelectorAll("button[data-gallery-index]").forEach((button) => button.setAttribute("aria-pressed", String(Number(button.dataset.galleryIndex) === current)));
@@ -1113,6 +1146,17 @@ for (const [key, field] of Object.entries(collectionFields)) {
 document.querySelector("#clear-collection-filters")?.addEventListener("click", resetCollectionFilters);
 renderFacetOptions();
 
+const categoryOrder = [
+  "THE EVERYDAY EDIT", "THE SOFT EDIT", "THE AFTER-HOURS EDIT", "THE MODEST EDIT",
+  "THE POLISHED EDIT", "THE TAILORED EDIT", "THE OCCASION EDIT", "THE EVENING EDIT", "THE LAYERING EDIT",
+];
+const categoryNames = {
+  "THE EVERYDAY EDIT": "Everyday", "THE SOFT EDIT": "Soft essentials",
+  "THE AFTER-HOURS EDIT": "After hours", "THE EVENING EDIT": "Evening",
+  "THE MODEST EDIT": "Modest dressing", "THE POLISHED EDIT": "Polished",
+  "THE TAILORED EDIT": "Tailoring", "THE OCCASION EDIT": "Occasion", "THE LAYERING EDIT": "Layering",
+};
+
 function renderLooks() {
   if (!(looksGrid instanceof HTMLElement) || !(showMoreLooks instanceof HTMLButtonElement)) return;
 
@@ -1136,7 +1180,109 @@ function renderLooks() {
   if (sort === "price-asc") filteredLooks.sort((a, b) => a.price - b.price);
   if (sort === "price-desc") filteredLooks.sort((a, b) => b.price - a.price);
   if (sort === "name") filteredLooks.sort((a, b) => a.name.localeCompare(b.name));
-  const visibleLooks = filteredLooks.slice(0, visibleLookCount);
+
+  const renderTiles = (looks) => looks.map((look) => {
+    const selection = { ...getVariantSelection(look) };
+    if (size !== "all") selection.size = size;
+    if (color !== "all") selection.color = look.colors.find((variant) => variant.name.toLocaleLowerCase() === color.toLocaleLowerCase()).name;
+    selectedVariants.set(look.key, selection);
+    const tile = document.createElement("article");
+    tile.className = "look-tile";
+    if (look.id) tile.dataset.productId = look.id;
+    const imageContainer = document.createElement("div");
+    imageContainer.className = "look-tile-image";
+
+    const image = document.createElement("img");
+    setProductImage(image, look);
+    image.loading = "lazy";
+    image.decoding = "async";
+    image.sizes = "(max-width: 360px) calc(100vw - 48px), (max-width: 799px) calc((100vw - 60px) / 2), (max-width: 1099px) 30vw, (max-width: 1499px) 23vw, (max-width: 1799px) 18vw, 15vw";
+    if (look.number === "02" || look.number.startsWith("17 ·")) image.dataset.fullFrame = "true";
+
+    const number = document.createElement("span");
+    number.className = "look-tile-number";
+    number.textContent = look.collection.replace(/^THE | EDIT$/g, "");
+
+    const imageQuickView = document.createElement("a");
+    imageQuickView.className = "look-photo-trigger";
+    imageQuickView.href = productPageUrl(look);
+    imageQuickView.setAttribute("aria-label", `View product: ${look.name}, modeled by ${look.founder}`);
+    imageQuickView.append(image);
+
+    const caption = document.createElement("div");
+    caption.className = "look-tile-caption";
+    const founder = document.createElement("strong");
+    const titleLink = document.createElement("a");
+    titleLink.href = productPageUrl(look);
+    titleLink.textContent = look.name;
+    founder.append(titleLink);
+    const note = document.createElement("span");
+    note.textContent = look.founder;
+    const capsule = document.createElement("span");
+    capsule.className = "look-tile-capsule";
+    capsule.textContent = `${look.managed ? look.sku : `LOOK ${look.number}`} · ${look.collection}`;
+
+    const description = document.createElement("p");
+    description.className = "look-tile-description";
+    description.textContent = look.description;
+    const priceNode = document.createElement("strong");
+    priceNode.className = "product-price";
+    priceNode.textContent = currency.format(look.price);
+
+    const actions = document.createElement("div");
+    actions.className = "product-card-actions";
+
+    const quickView = document.createElement("a");
+    quickView.className = "look-quick-view";
+    quickView.href = productPageUrl(look);
+    quickView.textContent = "View product";
+
+    const saveButton = document.createElement("button");
+    saveButton.className = "save-look";
+    saveButton.type = "button";
+    saveButton.dataset.image = look.image;
+    saveButton.dataset.name = look.name;
+    saveButton.dataset.productKey = look.key;
+    saveButton.setAttribute("aria-label", `Save ${look.name}`);
+    const isSaved = savedLooks.has(look.key);
+    saveButton.setAttribute("aria-pressed", String(isSaved));
+    saveButton.setAttribute("aria-label", `${isSaved ? "Remove saved" : "Save"} ${look.name}`);
+    saveButton.textContent = isSaved ? "♥ Saved" : "♡ Wishlist";
+
+    const addButton = document.createElement("button");
+    addButton.className = "shop-primary add-to-bag";
+    addButton.type = "button";
+    addButton.dataset.productKey = look.key;
+    configurePurchaseButton(addButton, look);
+
+    imageContainer.append(imageQuickView, saveButton);
+    attachProductGallery(imageContainer, look);
+    actions.append(quickView, addButton);
+    caption.append(founder, priceNode, note);
+    tile.append(imageContainer, caption, createProductOptions(look, {
+      photoPreviews: true,
+    }), actions);
+    return tile;
+  });
+
+  let groupedLooks;
+  if (activeCategory === "all") {
+    groupedLooks = new Map();
+    categoryOrder.forEach((category) => {
+      const items = filteredLooks.filter((look) => look.collection === category);
+      if (items.length) groupedLooks.set(category, items);
+    });
+    filteredLooks.filter((look) => !categoryOrder.includes(look.collection)).forEach((look) => {
+      if (!groupedLooks.has(look.collection)) groupedLooks.set(look.collection, []);
+      groupedLooks.get(look.collection).push(look);
+    });
+  } else {
+    groupedLooks = new Map([["", filteredLooks]]);
+  }
+
+  const visibleLooks = activeCategory === "all"
+    ? [...groupedLooks.values()].flat()
+    : filteredLooks.slice(0, visibleLookCount);
   const resultText = `Showing ${visibleLooks.length} of ${filteredLooks.length} ${filteredLooks.length === 1 ? "piece" : "pieces"}`;
   if (collectionFilterStatus) collectionFilterStatus.textContent = resultText;
   const filterCount = [search, size !== "all", color !== "all", price !== "all", occasion !== "all", activeFounder !== "all", activeCategory !== "all"].filter(Boolean).length;
@@ -1145,91 +1291,24 @@ function renderLooks() {
     looksCount.textContent = resultText;
   }
 
-  looksGrid.replaceChildren(
-    ...visibleLooks.map((look) => {
-      const selection = { ...getVariantSelection(look) };
-      if (size !== "all") selection.size = size;
-      if (color !== "all") selection.color = look.colors.find((variant) => variant.name.toLocaleLowerCase() === color.toLocaleLowerCase()).name;
-      selectedVariants.set(look.key, selection);
-      const tile = document.createElement("article");
-      tile.className = "look-tile";
-      if (look.id) tile.dataset.productId = look.id;
-      const imageContainer = document.createElement("div");
-      imageContainer.className = "look-tile-image";
-
-      const image = document.createElement("img");
-      setProductImage(image, look);
-      image.loading = "lazy";
-      image.decoding = "async";
-      image.sizes = "(max-width: 360px) calc(100vw - 48px), (max-width: 799px) calc((100vw - 60px) / 2), (max-width: 1099px) 30vw, (max-width: 1499px) 23vw, (max-width: 1799px) 18vw, 15vw";
-      if (look.number === "02" || look.number.startsWith("17 ·")) image.dataset.fullFrame = "true";
-
-      const number = document.createElement("span");
-      number.className = "look-tile-number";
-      number.textContent = look.collection.replace(/^THE | EDIT$/g, "");
-
-      const imageQuickView = document.createElement("a");
-      imageQuickView.className = "look-photo-trigger";
-      imageQuickView.href = productPageUrl(look);
-      imageQuickView.setAttribute("aria-label", `View product: ${look.name}, modeled by ${look.founder}`);
-      imageQuickView.append(image);
-
-      const caption = document.createElement("div");
-      caption.className = "look-tile-caption";
-      const founder = document.createElement("strong");
-      const titleLink = document.createElement("a");
-      titleLink.href = productPageUrl(look);
-      titleLink.textContent = look.name;
-      founder.append(titleLink);
-      const note = document.createElement("span");
-      note.textContent = look.founder;
-      const capsule = document.createElement("span");
-      capsule.className = "look-tile-capsule";
-      capsule.textContent = `${look.managed ? look.sku : `LOOK ${look.number}`} · ${look.collection}`;
-
-      const description = document.createElement("p");
-      description.className = "look-tile-description";
-      description.textContent = look.description;
-      const price = document.createElement("strong");
-      price.className = "product-price";
-      price.textContent = currency.format(look.price);
-
-      const actions = document.createElement("div");
-      actions.className = "product-card-actions";
-
-      const quickView = document.createElement("a");
-      quickView.className = "look-quick-view";
-      quickView.href = productPageUrl(look);
-      quickView.textContent = "View product";
-
-      const saveButton = document.createElement("button");
-      saveButton.className = "save-look";
-      saveButton.type = "button";
-      saveButton.dataset.image = look.image;
-      saveButton.dataset.name = look.name;
-      saveButton.dataset.productKey = look.key;
-      saveButton.setAttribute("aria-label", `Save ${look.name}`);
-      const isSaved = savedLooks.has(look.key);
-      saveButton.setAttribute("aria-pressed", String(isSaved));
-      saveButton.setAttribute("aria-label", `${isSaved ? "Remove saved" : "Save"} ${look.name}`);
-      saveButton.textContent = isSaved ? "♥ Saved" : "♡ Wishlist";
-
-      const addButton = document.createElement("button");
-      addButton.className = "shop-primary add-to-bag";
-      addButton.type = "button";
-      addButton.dataset.productKey = look.key;
-      configurePurchaseButton(addButton, look);
-
-      imageContainer.append(imageQuickView, saveButton);
-      attachProductGallery(imageContainer, look);
-      actions.append(quickView, addButton);
-      caption.append(founder, price, note);
-      tile.append(imageContainer, caption, createProductOptions(look, {
-        photoPreviews: true,
-      }), actions);
-      return tile;
-    }),
-  );
+  destroyCardPhotoInspectors(looksGrid);
+  looksGrid.replaceChildren();
+  if (activeCategory === "all") {
+    let shown = 0;
+    for (const [category, items] of groupedLooks) {
+      if (shown >= visibleLookCount) break;
+      const header = document.createElement("div");
+      header.className = "collection-category-header";
+      header.textContent = categoryNames[category] || category;
+      looksGrid.append(header);
+      const remaining = visibleLookCount - shown;
+      const categoryTiles = renderTiles(items.slice(0, remaining));
+      looksGrid.append(...categoryTiles);
+      shown += categoryTiles.length;
+    }
+  } else {
+    looksGrid.append(...renderTiles(visibleLooks));
+  }
 
   if (!filteredLooks.length) {
     const empty = document.createElement("div");
@@ -1299,43 +1378,13 @@ const productDialogClose = document.querySelector(".product-dialog-close");
 const productDialogLink = document.querySelector(".product-dialog-link");
 const productDialogAdd = document.querySelector(".product-dialog-add");
 const productDialogSave = document.querySelector(".product-dialog-save");
-const imageZoomDialog = document.querySelector("#image-zoom-dialog");
-const imageZoomViewport = document.querySelector(".image-zoom-viewport");
-const imageZoomImage = document.querySelector(".image-zoom-image");
-const imageZoomToggle = document.querySelector(".image-zoom-toggle");
-
-document.querySelector(".product-zoom-open")?.addEventListener("click", () => {
-  if (!(imageZoomDialog instanceof HTMLDialogElement) || !productDialogImage?.getAttribute("src")) return;
-  imageZoomImage.src = productDialogImage.dataset.originalSrc || productDialogImage.src;
-  imageZoomImage.alt = productDialogImage.alt;
-  document.querySelector("#image-zoom-title").textContent = productDialogTitle.textContent;
-  imageZoomViewport.classList.remove("is-zoomed");
-  imageZoomToggle.setAttribute("aria-pressed", "false");
-  imageZoomToggle.textContent = "Zoom in";
-  imageZoomDialog.showModal();
-  document.querySelector(".image-zoom-close")?.focus();
-  imageZoomViewport.scrollTo(0, 0);
+const quickPhotoInspector = window.VeloraImageInspector?.mount({
+  frame: document.querySelector(".product-dialog-gallery"), image: productDialogImage,
+  trigger: document.querySelector(".product-zoom-open"),
 });
-imageZoomToggle?.addEventListener("click", () => {
-  const zoomed = imageZoomViewport.classList.toggle("is-zoomed");
-  imageZoomToggle.setAttribute("aria-pressed", String(zoomed));
-  imageZoomToggle.textContent = zoomed ? "Fit photo" : "Zoom in";
-  imageZoomViewport.scrollTo(0, 0);
-});
-document.querySelector(".image-zoom-close")?.addEventListener("click", () => imageZoomDialog.close());
-imageZoomDialog?.addEventListener("click", (event) => {
-  if (event.target === imageZoomDialog) imageZoomDialog.close();
-});
-imageZoomDialog?.addEventListener("close", () => {
-  imageZoomImage.removeAttribute("src");
-  if (productDialog?.open) document.querySelector(".product-zoom-open")?.focus();
-});
-imageZoomDialog?.addEventListener("keydown", (event) => {
-  if (event.key !== "Escape") return;
-  event.preventDefault();
-  event.stopPropagation();
-  imageZoomDialog.close();
-});
+function syncQuickPhotoInspector(look) {
+  quickPhotoInspector?.update(inspectorPhotoData(look, productDialogImage));
+}
 const shopDialog = document.querySelector("#shop-dialog");
 const shopDialogTitle = document.querySelector("#shop-dialog-title");
 const shopDialogContent = document.querySelector("#shop-dialog-content");
@@ -1564,6 +1613,7 @@ function renderShopDialog() {
     const row = document.createElement("article");
     row.className = "shop-line-item";
     const image = document.createElement("img");
+    image.sizes = "100px";
     setProductImage(image, look, item.color ?? getVariantSelection(look).color);
     image.loading = "lazy";
     const copy = document.createElement("div");
@@ -2144,7 +2194,9 @@ function reconcileManagedProducts(products) {
   shoppingCart.clear();
   cart.forEach((quantity, key) => shoppingCart.set(key, quantity));
   items.sort((left, right) => (Date.parse(right.created_at) || 0) - (Date.parse(left.created_at) || 0));
-  individualLooks.splice(0, individualLooks.length, ...items);
+  // Linked pieces remain addressable for bags and wishlists, while the collection
+  // presents each styled look once rather than repeating it for every accessory.
+  individualLooks.splice(0, individualLooks.length, ...items.filter((look) => !look.parent_product_id));
   if (migrated) persistShoppingState();
 }
 

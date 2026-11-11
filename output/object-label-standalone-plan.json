@@ -1,0 +1,1746 @@
+{
+  "entries": [
+    {
+      "product_id": "velora-example-espresso-bag",
+      "name": "The Espresso Satchel",
+      "image": "assets/generated-items/espresso-top-handle-bag-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Espresso Satchel",
+      "target_product_id": "velora-example-espresso-bag"
+    },
+    {
+      "product_id": "velora-example-nude-court-shoes",
+      "name": "The Nude Pointed Court Shoes",
+      "image": "assets/generated-items/nude-pointed-court-shoes-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Nude Pointed Court Shoes",
+      "target_product_id": "velora-example-nude-court-shoes"
+    },
+    {
+      "product_id": "velora-example-taupe-scarf",
+      "name": "The Taupe Draped Scarf",
+      "image": "assets/generated-items/taupe-draped-scarf-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Taupe Draped Scarf",
+      "target_product_id": "velora-example-taupe-scarf"
+    },
+    {
+      "product_id": "piece-d00bdae55ae3e00e1e91",
+      "name": "Ivory Ribbed Mock-Neck Top",
+      "image": "assets/generated-items/item-d00bdae55ae3e00e1e91-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Ribbed Mock-Neck Top",
+      "target_product_id": "piece-d00bdae55ae3e00e1e91"
+    },
+    {
+      "product_id": "piece-2dc2fa19e237834e3824",
+      "name": "The Ivory Ribbed Scoop-Neck Top",
+      "image": "assets/generated-items/item-2dc2fa19e237834e3824-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Ivory Ribbed Scoop-Neck Top",
+      "target_product_id": "piece-2dc2fa19e237834e3824"
+    },
+    {
+      "product_id": "piece-5bef1cad7783e160b798",
+      "name": "The Ivory Gold-Detail Crossbody",
+      "image": "assets/generated-items/item-5bef1cad7783e160b798-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Ivory Gold-Detail Crossbody",
+      "target_product_id": "piece-5bef1cad7783e160b798"
+    },
+    {
+      "product_id": "piece-11baa7a83b3b63ec487e",
+      "name": "The Nude Glossy Stiletto Pumps",
+      "image": "assets/generated-items/item-11baa7a83b3b63ec487e-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Nude Glossy Stiletto Pumps",
+      "target_product_id": "piece-11baa7a83b3b63ec487e"
+    },
+    {
+      "product_id": "piece-bab5fe2671385add278e",
+      "name": "The Deep Espresso Wrapped Hijab",
+      "image": "assets/generated-items/item-bab5fe2671385add278e-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Deep Espresso Wrapped Hijab",
+      "target_product_id": "piece-bab5fe2671385add278e"
+    },
+    {
+      "product_id": "piece-1d55dc69d92690d44d2f",
+      "name": "The Espresso Mini Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-1d55dc69d92690d44d2f-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Espresso Mini Gold-Clasp Satchel",
+      "target_product_id": "piece-1d55dc69d92690d44d2f"
+    },
+    {
+      "product_id": "piece-12a78e3e1d0c60b1eb48",
+      "name": "The Espresso Double-Strap Pointed Pumps",
+      "image": "assets/generated-items/item-12a78e3e1d0c60b1eb48-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "The Espresso Double-Strap Pointed Pumps",
+      "target_product_id": "piece-12a78e3e1d0c60b1eb48"
+    },
+    {
+      "product_id": "piece-ac9119ac6ee909eebe34",
+      "name": "The Champagne Wrapped Hijab",
+      "image": "assets/generated-items/item-ac9119ac6ee909eebe34-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Champagne Wrapped Hijab",
+      "target_product_id": "piece-ac9119ac6ee909eebe34"
+    },
+    {
+      "product_id": "piece-8a86693a4e2adb99e788",
+      "name": "The Nude Crystal-Buckle Court Shoes",
+      "image": "assets/generated-items/item-8a86693a4e2adb99e788-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Nude Crystal-Buckle Court Shoes",
+      "target_product_id": "piece-8a86693a4e2adb99e788"
+    },
+    {
+      "product_id": "piece-13c14185327517d0300a",
+      "name": "Taupe Satchel",
+      "image": "assets/generated-items/item-13c14185327517d0300a-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Taupe Satchel",
+      "target_product_id": "piece-13c14185327517d0300a"
+    },
+    {
+      "product_id": "piece-3aa472a54574342aac65",
+      "name": "Merlot Satchel",
+      "image": "assets/generated-items/item-3aa472a54574342aac65-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Merlot Satchel",
+      "target_product_id": "piece-3aa472a54574342aac65"
+    },
+    {
+      "product_id": "piece-c5a5c7fc046e514c4978",
+      "name": "Merlot Pointed Court Shoes",
+      "image": "assets/generated-items/item-c5a5c7fc046e514c4978-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Merlot Pointed Court Shoes",
+      "target_product_id": "piece-c5a5c7fc046e514c4978"
+    },
+    {
+      "product_id": "piece-82a4907ce1671b632d78",
+      "name": "Cream Draped Scarf",
+      "image": "assets/generated-items/item-82a4907ce1671b632d78-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Cream Draped Scarf",
+      "target_product_id": "piece-82a4907ce1671b632d78"
+    },
+    {
+      "product_id": "piece-04562df33ac9ad6146c6",
+      "name": "Cream Satchel",
+      "image": "assets/generated-items/item-04562df33ac9ad6146c6-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Cream Satchel",
+      "target_product_id": "piece-04562df33ac9ad6146c6"
+    },
+    {
+      "product_id": "piece-25743c9e0eb105927ca2",
+      "name": "Ivory Satchel",
+      "image": "assets/generated-items/item-25743c9e0eb105927ca2-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Ivory Satchel",
+      "target_product_id": "piece-25743c9e0eb105927ca2"
+    },
+    {
+      "product_id": "piece-6af633ec8034a225d852",
+      "name": "Ivory Ankle-Strap Pointed Pumps",
+      "image": "assets/generated-items/item-6af633ec8034a225d852-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Ivory Ankle-Strap Pointed Pumps",
+      "target_product_id": "piece-6af633ec8034a225d852"
+    },
+    {
+      "product_id": "piece-511599456a4940d710dd",
+      "name": "Ivory Ribbed Roll-Neck Top",
+      "image": "assets/generated-items/item-511599456a4940d710dd-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Ribbed Roll-Neck Top",
+      "target_product_id": "piece-511599456a4940d710dd"
+    },
+    {
+      "product_id": "piece-656fb11622550f48f16f",
+      "name": "Ivory Wide-Leg Tailored Trousers",
+      "image": "assets/generated-items/item-656fb11622550f48f16f-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Wide-Leg Tailored Trousers",
+      "target_product_id": "piece-656fb11622550f48f16f"
+    },
+    {
+      "product_id": "piece-27b04162b59291dd21cc",
+      "name": "Chocolate Twin-Handle Bowler",
+      "image": "assets/generated-items/item-27b04162b59291dd21cc-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Chocolate Twin-Handle Bowler",
+      "target_product_id": "piece-27b04162b59291dd21cc"
+    },
+    {
+      "product_id": "piece-2179aaea8a0526b3976d",
+      "name": "Burgundy Pointed Court Shoes",
+      "image": "assets/generated-items/item-2179aaea8a0526b3976d-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Burgundy Pointed Court Shoes",
+      "target_product_id": "piece-2179aaea8a0526b3976d"
+    },
+    {
+      "product_id": "piece-4baa8a17be7b641d68a3",
+      "name": "Cream Smooth Headscarf",
+      "image": "assets/generated-items/item-4baa8a17be7b641d68a3-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Cream Smooth Headscarf",
+      "target_product_id": "piece-4baa8a17be7b641d68a3"
+    },
+    {
+      "product_id": "piece-ada8503a88736d27a16a",
+      "name": "Cream Woven Tote",
+      "image": "assets/generated-items/item-ada8503a88736d27a16a-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Cream Woven Tote",
+      "target_product_id": "piece-ada8503a88736d27a16a"
+    },
+    {
+      "product_id": "piece-0dee573220edb40f2e90",
+      "name": "Nude Slim-Strap Sandals",
+      "image": "assets/generated-items/item-0dee573220edb40f2e90-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Nude Slim-Strap Sandals",
+      "target_product_id": "piece-0dee573220edb40f2e90"
+    },
+    {
+      "product_id": "piece-02a6ac30576c8d0f9803",
+      "name": "Light Blue Wide-Leg Jeans",
+      "image": "assets/generated-items/item-02a6ac30576c8d0f9803-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Light Blue Wide-Leg Jeans",
+      "target_product_id": "piece-02a6ac30576c8d0f9803"
+    },
+    {
+      "product_id": "piece-391057e3281e1a8be85e",
+      "name": "Burgundy Cable-Knit Fringed Scarf",
+      "image": "assets/generated-items/item-391057e3281e1a8be85e-v1.png",
+      "kind": "scarf",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Burgundy Cable-Knit Fringed Scarf",
+      "target_product_id": "piece-391057e3281e1a8be85e"
+    },
+    {
+      "product_id": "piece-17f6a8a74dba84a7feb4",
+      "name": "Burgundy Soft Shoulder Tote",
+      "image": "assets/generated-items/item-17f6a8a74dba84a7feb4-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Burgundy Soft Shoulder Tote",
+      "target_product_id": "piece-17f6a8a74dba84a7feb4"
+    },
+    {
+      "product_id": "piece-95ddc2178228b3a030dd",
+      "name": "Tan Platform Slip-On Ankle Boots",
+      "image": "assets/generated-items/item-95ddc2178228b3a030dd-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Tan Platform Slip-On Ankle Boots",
+      "target_product_id": "piece-95ddc2178228b3a030dd"
+    },
+    {
+      "product_id": "piece-907145d1993d05bf766a",
+      "name": "Ivory Cowl-Neck Satin-Look Blouse",
+      "image": "assets/generated-items/item-907145d1993d05bf766a-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Cowl-Neck Satin-Look Blouse",
+      "target_product_id": "piece-907145d1993d05bf766a"
+    },
+    {
+      "product_id": "piece-64b94fb748297d7dde80",
+      "name": "Ivory Pointed Stiletto Court Shoes",
+      "image": "assets/generated-items/item-64b94fb748297d7dde80-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Ivory Pointed Stiletto Court Shoes",
+      "target_product_id": "piece-64b94fb748297d7dde80"
+    },
+    {
+      "product_id": "piece-95ba2dab9595868a56bf",
+      "name": "The Ivory Fitted High-Neck Top",
+      "image": "assets/generated-items/item-95ba2dab9595868a56bf-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Ivory Fitted High-Neck Top",
+      "target_product_id": "piece-95ba2dab9595868a56bf"
+    },
+    {
+      "product_id": "piece-b5dc98cb1f643adc1531",
+      "name": "The Stone Taupe Wrapped Hijab",
+      "image": "assets/generated-items/item-b5dc98cb1f643adc1531-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Stone Taupe Wrapped Hijab",
+      "target_product_id": "piece-b5dc98cb1f643adc1531"
+    },
+    {
+      "product_id": "piece-db26b74d526e9b8ffc55",
+      "name": "The Cream Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-db26b74d526e9b8ffc55-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Cream Gold-Clasp Satchel",
+      "target_product_id": "piece-db26b74d526e9b8ffc55"
+    },
+    {
+      "product_id": "piece-c35357c6d15204e698ee",
+      "name": "The Pale Nude Plain Pointed Shoes",
+      "image": "assets/generated-items/item-c35357c6d15204e698ee-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Pale Nude Plain Pointed Shoes",
+      "target_product_id": "piece-c35357c6d15204e698ee"
+    },
+    {
+      "product_id": "piece-57ebdc27946486afd888",
+      "name": "Ivory Perforated Low-Top Sneakers",
+      "image": "assets/generated-items/item-57ebdc27946486afd888-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Ivory Perforated Low-Top Sneakers",
+      "target_product_id": "piece-57ebdc27946486afd888"
+    },
+    {
+      "product_id": "piece-7662c86ef7881336979a",
+      "name": "Gold Rounded Box Clutch",
+      "image": "assets/generated-items/item-7662c86ef7881336979a-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Gold Rounded Box Clutch",
+      "target_product_id": "piece-7662c86ef7881336979a"
+    },
+    {
+      "product_id": "piece-43087cf9c8532d208317",
+      "name": "Gold Ankle-Strap Heeled Sandals",
+      "image": "assets/generated-items/item-43087cf9c8532d208317-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Gold Ankle-Strap Heeled Sandals",
+      "target_product_id": "piece-43087cf9c8532d208317"
+    },
+    {
+      "product_id": "piece-22fa1f903fb7b8242af1",
+      "name": "Black Gold-Frame Box Clutch",
+      "image": "assets/generated-items/item-22fa1f903fb7b8242af1-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Black Gold-Frame Box Clutch",
+      "target_product_id": "piece-22fa1f903fb7b8242af1"
+    },
+    {
+      "product_id": "piece-294ec637528d505f3050",
+      "name": "Black Ankle-Strap Heeled Sandals",
+      "image": "assets/generated-items/item-294ec637528d505f3050-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Black Ankle-Strap Heeled Sandals",
+      "target_product_id": "piece-294ec637528d505f3050"
+    },
+    {
+      "product_id": "piece-233feed618df246613d8",
+      "name": "Black Fitted Roll-Neck Top",
+      "image": "assets/generated-items/item-233feed618df246613d8-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Black Fitted Roll-Neck Top",
+      "target_product_id": "piece-233feed618df246613d8"
+    },
+    {
+      "product_id": "piece-abc1356c64d6fba2dbc4",
+      "name": "Black Pointed Court Shoes",
+      "image": "assets/generated-items/item-abc1356c64d6fba2dbc4-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Black Pointed Court Shoes",
+      "target_product_id": "piece-abc1356c64d6fba2dbc4"
+    },
+    {
+      "product_id": "piece-24f199f758ad14f5b618",
+      "name": "Chocolate Ribbed Crew-Neck Top",
+      "image": "assets/generated-items/item-24f199f758ad14f5b618-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Chocolate Ribbed Crew-Neck Top",
+      "target_product_id": "piece-24f199f758ad14f5b618"
+    },
+    {
+      "product_id": "piece-56fad4e690793e44fdf7",
+      "name": "Ivory Pleated Wide-Leg Trousers",
+      "image": "assets/generated-items/item-56fad4e690793e44fdf7-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Pleated Wide-Leg Trousers",
+      "target_product_id": "piece-56fad4e690793e44fdf7"
+    },
+    {
+      "product_id": "piece-0910b902f39d4486e3a9",
+      "name": "Ivory Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-0910b902f39d4486e3a9-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Ivory Gold-Clasp Satchel",
+      "target_product_id": "piece-0910b902f39d4486e3a9"
+    },
+    {
+      "product_id": "piece-4942e7b3c11d1c0c8c0d",
+      "name": "Nude Pointed Court Shoes",
+      "image": "assets/generated-items/item-4942e7b3c11d1c0c8c0d-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Nude Pointed Court Shoes",
+      "target_product_id": "piece-4942e7b3c11d1c0c8c0d"
+    },
+    {
+      "product_id": "piece-5abb49e2eed6cfeb08d1",
+      "name": "Taupe Fringed Knit Scarf",
+      "image": "assets/generated-items/item-5abb49e2eed6cfeb08d1-v1.png",
+      "kind": "scarf",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Taupe Fringed Knit Scarf",
+      "target_product_id": "piece-5abb49e2eed6cfeb08d1"
+    },
+    {
+      "product_id": "piece-4f9e7f4ccafdaad53659",
+      "name": "Chocolate Smooth Headscarf",
+      "image": "assets/generated-items/item-4f9e7f4ccafdaad53659-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Chocolate Smooth Headscarf",
+      "target_product_id": "piece-4f9e7f4ccafdaad53659"
+    },
+    {
+      "product_id": "piece-78dc1cd631882d2db076",
+      "name": "Chocolate Soft Shoulder Tote",
+      "image": "assets/generated-items/item-78dc1cd631882d2db076-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Chocolate Soft Shoulder Tote",
+      "target_product_id": "piece-78dc1cd631882d2db076"
+    },
+    {
+      "product_id": "piece-265dfa141e5ddf067137",
+      "name": "Taupe Block-Heel Ankle Boots",
+      "image": "assets/generated-items/item-265dfa141e5ddf067137-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Taupe Block-Heel Ankle Boots",
+      "target_product_id": "piece-265dfa141e5ddf067137"
+    },
+    {
+      "product_id": "piece-7bac59a839fff2cf42ff",
+      "name": "White Ribbed Scoop-Neck Tank",
+      "image": "assets/generated-items/item-7bac59a839fff2cf42ff-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "White Ribbed Scoop-Neck Tank",
+      "target_product_id": "piece-7bac59a839fff2cf42ff"
+    },
+    {
+      "product_id": "piece-4d69354540ad6921c40d",
+      "name": "Oat Drawstring Knit Trousers",
+      "image": "assets/generated-items/item-4d69354540ad6921c40d-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Oat Drawstring Knit Trousers",
+      "target_product_id": "piece-4d69354540ad6921c40d"
+    },
+    {
+      "product_id": "piece-46a20b1b1476300d0eee",
+      "name": "Chocolate Textured Fringed Scarf",
+      "image": "assets/generated-items/item-46a20b1b1476300d0eee-v1.png",
+      "kind": "scarf",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Chocolate Textured Fringed Scarf",
+      "target_product_id": "piece-46a20b1b1476300d0eee"
+    },
+    {
+      "product_id": "piece-65c36ab78f0ce373be7d",
+      "name": "Chocolate Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-65c36ab78f0ce373be7d-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Chocolate Gold-Clasp Satchel",
+      "target_product_id": "piece-65c36ab78f0ce373be7d"
+    },
+    {
+      "product_id": "piece-88b9dd8eb510a3b55301",
+      "name": "White Low-Top Trainers",
+      "image": "assets/generated-items/item-88b9dd8eb510a3b55301-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "White Low-Top Trainers",
+      "target_product_id": "piece-88b9dd8eb510a3b55301"
+    },
+    {
+      "product_id": "piece-534201edcc42f3598963",
+      "name": "The Ivory Woven Chain Crossbody",
+      "image": "assets/generated-items/item-534201edcc42f3598963-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Ivory Woven Chain Crossbody",
+      "target_product_id": "piece-534201edcc42f3598963"
+    },
+    {
+      "product_id": "piece-79df3121a6b4735ebc9f",
+      "name": "The Ivory Slim-Strap Sandals",
+      "image": "assets/generated-items/item-79df3121a6b4735ebc9f-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "The Ivory Slim-Strap Sandals",
+      "target_product_id": "piece-79df3121a6b4735ebc9f"
+    },
+    {
+      "product_id": "piece-af9f14bfbbcdd4db4cdb",
+      "name": "The Natural Woven Tan-Trim Tote",
+      "image": "assets/generated-items/item-af9f14bfbbcdd4db4cdb-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Natural Woven Tan-Trim Tote",
+      "target_product_id": "piece-af9f14bfbbcdd4db4cdb"
+    },
+    {
+      "product_id": "piece-4bd178f48f9d5eddf6d4",
+      "name": "The Pale Nude Pointed Court Shoes",
+      "image": "assets/generated-items/item-4bd178f48f9d5eddf6d4-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Pale Nude Pointed Court Shoes",
+      "target_product_id": "piece-4bd178f48f9d5eddf6d4"
+    },
+    {
+      "product_id": "piece-fe3fe696632d1d83fc45",
+      "name": "The Ivory Collared Button Blouse",
+      "image": "assets/generated-items/item-fe3fe696632d1d83fc45-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Ivory Collared Button Blouse",
+      "target_product_id": "piece-fe3fe696632d1d83fc45"
+    },
+    {
+      "product_id": "piece-a79ba450e0233ce08baf",
+      "name": "The Nude Plain Pointed Pumps",
+      "image": "assets/generated-items/item-a79ba450e0233ce08baf-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Nude Plain Pointed Pumps",
+      "target_product_id": "piece-a79ba450e0233ce08baf"
+    },
+    {
+      "product_id": "piece-1634f31e76a0bdd98717",
+      "name": "The Nude Chain-Detail Court Shoes",
+      "image": "assets/generated-items/item-1634f31e76a0bdd98717-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Nude Chain-Detail Court Shoes",
+      "target_product_id": "piece-1634f31e76a0bdd98717"
+    },
+    {
+      "product_id": "piece-99ef977ef612dd0e68fe",
+      "name": "The Taupe Ribbed Round-Neck Top",
+      "image": "assets/generated-items/item-99ef977ef612dd0e68fe-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Taupe Ribbed Round-Neck Top",
+      "target_product_id": "piece-99ef977ef612dd0e68fe"
+    },
+    {
+      "product_id": "piece-ff84faa985a9d5dbd583",
+      "name": "The Ivory Belted Wide-Leg Trousers",
+      "image": "assets/generated-items/item-ff84faa985a9d5dbd583-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "The Ivory Belted Wide-Leg Trousers",
+      "target_product_id": "piece-ff84faa985a9d5dbd583"
+    },
+    {
+      "product_id": "piece-ae9bd4742ca91b6bd3a9",
+      "name": "The Tan Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-ae9bd4742ca91b6bd3a9-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Tan Gold-Clasp Satchel",
+      "target_product_id": "piece-ae9bd4742ca91b6bd3a9"
+    },
+    {
+      "product_id": "piece-6eaa84dd1ffa73ab40bf",
+      "name": "The Ivory Ribbed High-Neck Top",
+      "image": "assets/generated-items/item-6eaa84dd1ffa73ab40bf-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Ivory Ribbed High-Neck Top",
+      "target_product_id": "piece-6eaa84dd1ffa73ab40bf"
+    },
+    {
+      "product_id": "piece-f431c456f2d25afddf5a",
+      "name": "The Chocolate Ribbed Round-Neck Top",
+      "image": "assets/generated-items/item-f431c456f2d25afddf5a-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Chocolate Ribbed Round-Neck Top",
+      "target_product_id": "piece-f431c456f2d25afddf5a"
+    },
+    {
+      "product_id": "piece-ff1af3bf3c58d70f0fc6",
+      "name": "The Tan Belted Top-Handle Tote",
+      "image": "assets/generated-items/item-ff1af3bf3c58d70f0fc6-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Tan Belted Top-Handle Tote",
+      "target_product_id": "piece-ff1af3bf3c58d70f0fc6"
+    },
+    {
+      "product_id": "piece-96a784f9237891d51486",
+      "name": "The Rosewater Draped Hijab",
+      "image": "assets/generated-items/item-96a784f9237891d51486-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Rosewater Draped Hijab",
+      "target_product_id": "piece-96a784f9237891d51486"
+    },
+    {
+      "product_id": "piece-fc7d0c74a602e0d13c71",
+      "name": "The Sandstone Wrapped Hijab",
+      "image": "assets/generated-items/item-fc7d0c74a602e0d13c71-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Sandstone Wrapped Hijab",
+      "target_product_id": "piece-fc7d0c74a602e0d13c71"
+    },
+    {
+      "product_id": "piece-174ac997d98e5c8c688e",
+      "name": "The Taupe Mini Chain Satchel",
+      "image": "assets/generated-items/item-174ac997d98e5c8c688e-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Taupe Mini Chain Satchel",
+      "target_product_id": "piece-174ac997d98e5c8c688e"
+    },
+    {
+      "product_id": "piece-9636f729324b4ce5f674",
+      "name": "The Champagne Plain Pointed Pumps",
+      "image": "assets/generated-items/item-9636f729324b4ce5f674-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Champagne Plain Pointed Pumps",
+      "target_product_id": "piece-9636f729324b4ce5f674"
+    },
+    {
+      "product_id": "piece-8804e8b05ac1ee4d4c41",
+      "name": "The Mocha Wrapped Hijab",
+      "image": "assets/generated-items/item-8804e8b05ac1ee4d4c41-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Mocha Wrapped Hijab",
+      "target_product_id": "piece-8804e8b05ac1ee4d4c41"
+    },
+    {
+      "product_id": "piece-afe00ec84f5c7a53c9f8",
+      "name": "The Blush Beige Mini Satchel",
+      "image": "assets/generated-items/item-afe00ec84f5c7a53c9f8-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Blush Beige Mini Satchel",
+      "target_product_id": "piece-afe00ec84f5c7a53c9f8"
+    },
+    {
+      "product_id": "piece-691dadb07df3fc6df8af",
+      "name": "The Chocolate Wrapped Hijab",
+      "image": "assets/generated-items/item-691dadb07df3fc6df8af-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "The Chocolate Wrapped Hijab",
+      "target_product_id": "piece-691dadb07df3fc6df8af"
+    },
+    {
+      "product_id": "piece-39bb7efbed8bccdab668",
+      "name": "The Taupe Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-39bb7efbed8bccdab668-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Taupe Gold-Clasp Satchel",
+      "target_product_id": "piece-39bb7efbed8bccdab668"
+    },
+    {
+      "product_id": "piece-7d8f62e61b809eae61ff",
+      "name": "The White Platform Lace-Up Trainers",
+      "image": "assets/generated-items/item-7d8f62e61b809eae61ff-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The White Platform Lace-Up Trainers",
+      "target_product_id": "piece-7d8f62e61b809eae61ff"
+    },
+    {
+      "product_id": "piece-67a1be98d1323affc094",
+      "name": "The White Ribbed Scoop-Neck Tank",
+      "image": "assets/generated-items/item-67a1be98d1323affc094-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The White Ribbed Scoop-Neck Tank",
+      "target_product_id": "piece-67a1be98d1323affc094"
+    },
+    {
+      "product_id": "piece-24da8ecf2bfe0550f422",
+      "name": "The Champagne Lace-Trim Camisole",
+      "image": "assets/generated-items/item-24da8ecf2bfe0550f422-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Champagne Lace-Trim Camisole",
+      "target_product_id": "piece-24da8ecf2bfe0550f422"
+    },
+    {
+      "product_id": "piece-934e75510f1b47a89f54",
+      "name": "The Taupe Zip-Front Collared Jacket",
+      "image": "assets/generated-items/item-934e75510f1b47a89f54-v1.png",
+      "kind": "outerwear",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "The Taupe Zip-Front Collared Jacket",
+      "target_product_id": "piece-934e75510f1b47a89f54"
+    },
+    {
+      "product_id": "piece-f8c380df476ed050184e",
+      "name": "The Chocolate Belted Top-Handle Tote",
+      "image": "assets/generated-items/item-f8c380df476ed050184e-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Chocolate Belted Top-Handle Tote",
+      "target_product_id": "piece-f8c380df476ed050184e"
+    },
+    {
+      "product_id": "piece-1563a4bbc31be2fd21d3",
+      "name": "The White Perforated-Toe Lace-Up Trainers",
+      "image": "assets/generated-items/item-1563a4bbc31be2fd21d3-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The White Perforated-Toe Lace-Up Trainers",
+      "target_product_id": "piece-1563a4bbc31be2fd21d3"
+    },
+    {
+      "product_id": "piece-6d0d6c777249e9839fa3",
+      "name": "The Black Gold-Bar Clutch",
+      "image": "assets/generated-items/item-6d0d6c777249e9839fa3-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Black Gold-Bar Clutch",
+      "target_product_id": "piece-6d0d6c777249e9839fa3"
+    },
+    {
+      "product_id": "piece-6a7825d84c2f7ff04370",
+      "name": "The Black Slim-Strap Heeled Sandals",
+      "image": "assets/generated-items/item-6a7825d84c2f7ff04370-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "The Black Slim-Strap Heeled Sandals",
+      "target_product_id": "piece-6a7825d84c2f7ff04370"
+    },
+    {
+      "product_id": "piece-53924b26459b428f3469",
+      "name": "The Champagne Gold-Bar Clutch",
+      "image": "assets/generated-items/item-53924b26459b428f3469-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Champagne Gold-Bar Clutch",
+      "target_product_id": "piece-53924b26459b428f3469"
+    },
+    {
+      "product_id": "piece-1f22feb8b29400af46a8",
+      "name": "The Gold Slim-Strap Heeled Sandals",
+      "image": "assets/generated-items/item-1f22feb8b29400af46a8-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "The Gold Slim-Strap Heeled Sandals",
+      "target_product_id": "piece-1f22feb8b29400af46a8"
+    },
+    {
+      "product_id": "piece-3d86497279f44605b1ca",
+      "name": "The Cream Ribbed Square-Neck Top",
+      "image": "assets/generated-items/item-3d86497279f44605b1ca-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The Cream Ribbed Square-Neck Top",
+      "target_product_id": "piece-3d86497279f44605b1ca"
+    },
+    {
+      "product_id": "piece-23fec7367f25774f83bc",
+      "name": "The Cream Belt-Flap Satchel",
+      "image": "assets/generated-items/item-23fec7367f25774f83bc-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Cream Belt-Flap Satchel",
+      "target_product_id": "piece-23fec7367f25774f83bc"
+    },
+    {
+      "product_id": "piece-ed9b4a4c7b950dd08c5d",
+      "name": "The Beige Wide-Leg Tailored Trousers",
+      "image": "assets/generated-items/item-ed9b4a4c7b950dd08c5d-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "The Beige Wide-Leg Tailored Trousers",
+      "target_product_id": "piece-ed9b4a4c7b950dd08c5d"
+    },
+    {
+      "product_id": "piece-d6deeaa5c3f60d4f2333",
+      "name": "The Beige Belt-Flap Satchel",
+      "image": "assets/generated-items/item-d6deeaa5c3f60d4f2333-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Beige Belt-Flap Satchel",
+      "target_product_id": "piece-d6deeaa5c3f60d4f2333"
+    },
+    {
+      "product_id": "piece-47d8e6634ac7b1a77958",
+      "name": "The White Square-Neck Inner Top",
+      "image": "assets/generated-items/item-47d8e6634ac7b1a77958-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "The White Square-Neck Inner Top",
+      "target_product_id": "piece-47d8e6634ac7b1a77958"
+    },
+    {
+      "product_id": "piece-d2c77fc0c972e16c4688",
+      "name": "The Stone Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-d2c77fc0c972e16c4688-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "The Stone Gold-Clasp Satchel",
+      "target_product_id": "piece-d2c77fc0c972e16c4688"
+    },
+    {
+      "product_id": "piece-dbcf2706c4cf05981c3d",
+      "name": "The Light Nude Glossy Pointed Pumps",
+      "image": "assets/generated-items/item-dbcf2706c4cf05981c3d-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "The Light Nude Glossy Pointed Pumps",
+      "target_product_id": "piece-dbcf2706c4cf05981c3d"
+    },
+    {
+      "product_id": "piece-7c150af438a0057c1ad8",
+      "name": "Ivory Satchel",
+      "image": "assets/generated-items/item-7c150af438a0057c1ad8-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.78,
+      "label": "Ivory Satchel",
+      "target_product_id": "piece-7c150af438a0057c1ad8"
+    },
+    {
+      "product_id": "piece-2e34a3d16cdab3923417",
+      "name": "White Platform Low-Top Sneakers",
+      "image": "assets/generated-items/item-2e34a3d16cdab3923417-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "White Platform Low-Top Sneakers",
+      "target_product_id": "piece-2e34a3d16cdab3923417"
+    },
+    {
+      "product_id": "piece-988a0ace37bb6ef9c77f",
+      "name": "Ivory Wide-Leg Tailored Trousers",
+      "image": "assets/generated-items/item-988a0ace37bb6ef9c77f-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Wide-Leg Tailored Trousers",
+      "target_product_id": "piece-988a0ace37bb6ef9c77f"
+    },
+    {
+      "product_id": "piece-e0e903671c4d58c1ac32",
+      "name": "Black Satchel",
+      "image": "assets/generated-items/item-e0e903671c4d58c1ac32-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Black Satchel",
+      "target_product_id": "piece-e0e903671c4d58c1ac32"
+    },
+    {
+      "product_id": "piece-1179ba1b69e040932bd6",
+      "name": "Ivory Square-Neck Cami Top",
+      "image": "assets/generated-items/item-1179ba1b69e040932bd6-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Square-Neck Cami Top",
+      "target_product_id": "piece-1179ba1b69e040932bd6"
+    },
+    {
+      "product_id": "piece-edb847363b513850797c",
+      "name": "Black Draped Scarf",
+      "image": "assets/generated-items/item-edb847363b513850797c-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Black Draped Scarf",
+      "target_product_id": "piece-edb847363b513850797c"
+    },
+    {
+      "product_id": "piece-9bc4e17f2496f4ed2851",
+      "name": "Taupe Satchel",
+      "image": "assets/generated-items/item-9bc4e17f2496f4ed2851-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Taupe Satchel",
+      "target_product_id": "piece-9bc4e17f2496f4ed2851"
+    },
+    {
+      "product_id": "piece-5c49a03f9a7d3a0fbe49",
+      "name": "Ivory Ribbed Crew-Neck Top",
+      "image": "assets/generated-items/item-5c49a03f9a7d3a0fbe49-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Ribbed Crew-Neck Top",
+      "target_product_id": "piece-5c49a03f9a7d3a0fbe49"
+    },
+    {
+      "product_id": "piece-399440f415fb060184ca",
+      "name": "Ivory Pleated Wide-Leg Trousers",
+      "image": "assets/generated-items/item-399440f415fb060184ca-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Pleated Wide-Leg Trousers",
+      "target_product_id": "piece-399440f415fb060184ca"
+    },
+    {
+      "product_id": "piece-c1120882f25760cb533f",
+      "name": "Champagne Crystal-Buckle Court Shoes",
+      "image": "assets/generated-items/item-c1120882f25760cb533f-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Champagne Crystal-Buckle Court Shoes",
+      "target_product_id": "piece-c1120882f25760cb533f"
+    },
+    {
+      "product_id": "piece-29581b8ee6e98283563c",
+      "name": "Ivory Fitted Crew-Neck Top",
+      "image": "assets/generated-items/item-29581b8ee6e98283563c-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Fitted Crew-Neck Top",
+      "target_product_id": "piece-29581b8ee6e98283563c"
+    },
+    {
+      "product_id": "piece-ae14860439f24cd0511e",
+      "name": "Light-Blue Wide-Leg Jeans",
+      "image": "assets/generated-items/item-ae14860439f24cd0511e-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Light-Blue Wide-Leg Jeans",
+      "target_product_id": "piece-ae14860439f24cd0511e"
+    },
+    {
+      "product_id": "piece-ff1d2c8b639800c4aa4a",
+      "name": "Chocolate Small Crossbody",
+      "image": "assets/generated-items/item-ff1d2c8b639800c4aa4a-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Chocolate Small Crossbody",
+      "target_product_id": "piece-ff1d2c8b639800c4aa4a"
+    },
+    {
+      "product_id": "piece-20f6d0b0fc2425890384",
+      "name": "White Paneled Low-Top Sneakers",
+      "image": "assets/generated-items/item-20f6d0b0fc2425890384-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "White Paneled Low-Top Sneakers",
+      "target_product_id": "piece-20f6d0b0fc2425890384"
+    },
+    {
+      "product_id": "piece-e8e4f8c58f5010df0695",
+      "name": "Espresso Fitted High-Neck Top",
+      "image": "assets/generated-items/item-e8e4f8c58f5010df0695-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Espresso Fitted High-Neck Top",
+      "target_product_id": "piece-e8e4f8c58f5010df0695"
+    },
+    {
+      "product_id": "piece-9811a88bacb06b569310",
+      "name": "Ivory Satchel",
+      "image": "assets/generated-items/item-9811a88bacb06b569310-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Ivory Satchel",
+      "target_product_id": "piece-9811a88bacb06b569310"
+    },
+    {
+      "product_id": "piece-9555d2a0eb6b1ca295f4",
+      "name": "Merlot Square-Neck Cami Top",
+      "image": "assets/generated-items/item-9555d2a0eb6b1ca295f4-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Merlot Square-Neck Cami Top",
+      "target_product_id": "piece-9555d2a0eb6b1ca295f4"
+    },
+    {
+      "product_id": "piece-f69d57c4b3b365330f61",
+      "name": "White Ribbed-Sole Low-Top Sneakers",
+      "image": "assets/generated-items/item-f69d57c4b3b365330f61-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "White Ribbed-Sole Low-Top Sneakers",
+      "target_product_id": "piece-f69d57c4b3b365330f61"
+    },
+    {
+      "product_id": "piece-f9e922a0180cbd699da1",
+      "name": "Black Ribbed Mock-Neck Top",
+      "image": "assets/generated-items/item-f9e922a0180cbd699da1-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Black Ribbed Mock-Neck Top",
+      "target_product_id": "piece-f9e922a0180cbd699da1"
+    },
+    {
+      "product_id": "piece-a2e75afb6bad8d352439",
+      "name": "Black Satchel",
+      "image": "assets/generated-items/item-a2e75afb6bad8d352439-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Black Satchel",
+      "target_product_id": "piece-a2e75afb6bad8d352439"
+    },
+    {
+      "product_id": "piece-2c64eb68f60edcd53c9a",
+      "name": "Taupe Satchel",
+      "image": "assets/generated-items/item-2c64eb68f60edcd53c9a-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Taupe Satchel",
+      "target_product_id": "piece-2c64eb68f60edcd53c9a"
+    },
+    {
+      "product_id": "piece-4cf68b24b1af1f0c5800",
+      "name": "White Scoop-Neck Cami Top",
+      "image": "assets/generated-items/item-4cf68b24b1af1f0c5800-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "White Scoop-Neck Cami Top",
+      "target_product_id": "piece-4cf68b24b1af1f0c5800"
+    },
+    {
+      "product_id": "piece-f8b26b8405d2dc275693",
+      "name": "White Paneled Low-Top Sneakers",
+      "image": "assets/generated-items/item-f8b26b8405d2dc275693-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "White Paneled Low-Top Sneakers",
+      "target_product_id": "piece-f8b26b8405d2dc275693"
+    },
+    {
+      "product_id": "piece-ec31700d07745f2858cf",
+      "name": "Black Gold-Bar Evening Clutch",
+      "image": "assets/generated-items/item-ec31700d07745f2858cf-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Black Gold-Bar Evening Clutch",
+      "target_product_id": "piece-ec31700d07745f2858cf"
+    },
+    {
+      "product_id": "piece-d0173c6258769a97e088",
+      "name": "Black Ankle-Strap Sandals",
+      "image": "assets/generated-items/item-d0173c6258769a97e088-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Black Ankle-Strap Sandals",
+      "target_product_id": "piece-d0173c6258769a97e088"
+    },
+    {
+      "product_id": "piece-d226adcfb5b3fc6e1a4c",
+      "name": "Navy Square-Neck Top",
+      "image": "assets/generated-items/item-d226adcfb5b3fc6e1a4c-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Navy Square-Neck Top",
+      "target_product_id": "piece-d226adcfb5b3fc6e1a4c"
+    },
+    {
+      "product_id": "piece-fc4c03ec75230caa4500",
+      "name": "Navy Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-fc4c03ec75230caa4500-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Navy Gold-Clasp Satchel",
+      "target_product_id": "piece-fc4c03ec75230caa4500"
+    },
+    {
+      "product_id": "piece-7ef63b2a8c0223c92e01",
+      "name": "Navy Pointed Court Shoes",
+      "image": "assets/generated-items/item-7ef63b2a8c0223c92e01-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Navy Pointed Court Shoes",
+      "target_product_id": "piece-7ef63b2a8c0223c92e01"
+    },
+    {
+      "product_id": "piece-441ffa54f674be6a1b48",
+      "name": "Ivory Ribbed Crew-Neck Top",
+      "image": "assets/generated-items/item-441ffa54f674be6a1b48-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Ribbed Crew-Neck Top",
+      "target_product_id": "piece-441ffa54f674be6a1b48"
+    },
+    {
+      "product_id": "piece-fc2c02e0cb14e12918f3",
+      "name": "Ivory Pleated Wide-Leg Trousers",
+      "image": "assets/generated-items/item-fc2c02e0cb14e12918f3-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Pleated Wide-Leg Trousers",
+      "target_product_id": "piece-fc2c02e0cb14e12918f3"
+    },
+    {
+      "product_id": "piece-97b115d9cee7a219ac8e",
+      "name": "Espresso Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-97b115d9cee7a219ac8e-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Espresso Gold-Clasp Satchel",
+      "target_product_id": "piece-97b115d9cee7a219ac8e"
+    },
+    {
+      "product_id": "piece-d03fd5bd2664c5baba04",
+      "name": "Ivory Pointed Court Shoes",
+      "image": "assets/generated-items/item-d03fd5bd2664c5baba04-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Ivory Pointed Court Shoes",
+      "target_product_id": "piece-d03fd5bd2664c5baba04"
+    },
+    {
+      "product_id": "piece-1ef083bae598a0437390",
+      "name": "Cream Small Crossbody",
+      "image": "assets/generated-items/item-1ef083bae598a0437390-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Cream Small Crossbody",
+      "target_product_id": "piece-1ef083bae598a0437390"
+    },
+    {
+      "product_id": "piece-849cf356661484f574e2",
+      "name": "Nude Slim-Strap Sandals",
+      "image": "assets/generated-items/item-849cf356661484f574e2-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Nude Slim-Strap Sandals",
+      "target_product_id": "piece-849cf356661484f574e2"
+    },
+    {
+      "product_id": "piece-4b27f6739dcccce8e92c",
+      "name": "Ivory Fine-Knit Turtleneck",
+      "image": "assets/generated-items/item-4b27f6739dcccce8e92c-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Fine-Knit Turtleneck",
+      "target_product_id": "piece-4b27f6739dcccce8e92c"
+    },
+    {
+      "product_id": "piece-c4be6ef00a85a97f9f96",
+      "name": "Ivory Belted Wide-Leg Trousers",
+      "image": "assets/generated-items/item-c4be6ef00a85a97f9f96-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Belted Wide-Leg Trousers",
+      "target_product_id": "piece-c4be6ef00a85a97f9f96"
+    },
+    {
+      "product_id": "piece-b40409e5fd26cdc4b32d",
+      "name": "Ivory Draped Headscarf",
+      "image": "assets/generated-items/item-b40409e5fd26cdc4b32d-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Ivory Draped Headscarf",
+      "target_product_id": "piece-b40409e5fd26cdc4b32d"
+    },
+    {
+      "product_id": "piece-95034be9c585e63b36d1",
+      "name": "Cream Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-95034be9c585e63b36d1-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Cream Gold-Clasp Satchel",
+      "target_product_id": "piece-95034be9c585e63b36d1"
+    },
+    {
+      "product_id": "piece-061feb823cc13b256c42",
+      "name": "Gold Oval Hardcase Clutch",
+      "image": "assets/generated-items/item-061feb823cc13b256c42-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Gold Oval Hardcase Clutch",
+      "target_product_id": "piece-061feb823cc13b256c42"
+    },
+    {
+      "product_id": "piece-e10b2a26108795d5aada",
+      "name": "Gold Ankle-Strap Sandals",
+      "image": "assets/generated-items/item-e10b2a26108795d5aada-v1.png",
+      "kind": "shoes",
+      "x": 0.48,
+      "y": 0.8,
+      "label": "Gold Ankle-Strap Sandals",
+      "target_product_id": "piece-e10b2a26108795d5aada"
+    },
+    {
+      "product_id": "piece-4f80b842b24759b0f6af",
+      "name": "Cream Balloon-Sleeve Blouse",
+      "image": "assets/generated-items/item-4f80b842b24759b0f6af-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Cream Balloon-Sleeve Blouse",
+      "target_product_id": "piece-4f80b842b24759b0f6af"
+    },
+    {
+      "product_id": "piece-214c013a85adf0257182",
+      "name": "Espresso Smooth Headscarf",
+      "image": "assets/generated-items/item-214c013a85adf0257182-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Espresso Smooth Headscarf",
+      "target_product_id": "piece-214c013a85adf0257182"
+    },
+    {
+      "product_id": "piece-812a9a8b6a6b96859e6b",
+      "name": "Espresso Pointed Court Shoes",
+      "image": "assets/generated-items/item-812a9a8b6a6b96859e6b-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Espresso Pointed Court Shoes",
+      "target_product_id": "piece-812a9a8b6a6b96859e6b"
+    },
+    {
+      "product_id": "piece-a84c170ade2fe8faf025",
+      "name": "Brown Soft Shoulder Tote",
+      "image": "assets/generated-items/item-a84c170ade2fe8faf025-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Brown Soft Shoulder Tote",
+      "target_product_id": "piece-a84c170ade2fe8faf025"
+    },
+    {
+      "product_id": "piece-0060dab0fc44aea700f8",
+      "name": "Sage Smooth Headscarf",
+      "image": "assets/generated-items/item-0060dab0fc44aea700f8-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Sage Smooth Headscarf",
+      "target_product_id": "piece-0060dab0fc44aea700f8"
+    },
+    {
+      "product_id": "piece-2bd36b2070b2cb98285a",
+      "name": "Ivory Chain Flap Clutch",
+      "image": "assets/generated-items/item-2bd36b2070b2cb98285a-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Ivory Chain Flap Clutch",
+      "target_product_id": "piece-2bd36b2070b2cb98285a"
+    },
+    {
+      "product_id": "piece-2fda23305be751222767",
+      "name": "Ivory Chain-Trim Pointed Shoes",
+      "image": "assets/generated-items/item-2fda23305be751222767-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Ivory Chain-Trim Pointed Shoes",
+      "target_product_id": "piece-2fda23305be751222767"
+    },
+    {
+      "product_id": "piece-24a6c58cfb182fd4c063",
+      "name": "Ivory Ribbed Turtleneck",
+      "image": "assets/generated-items/item-24a6c58cfb182fd4c063-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Ribbed Turtleneck",
+      "target_product_id": "piece-24a6c58cfb182fd4c063"
+    },
+    {
+      "product_id": "piece-afa856daf58e0cc533f8",
+      "name": "Ivory Tailored Wide-Leg Trousers",
+      "image": "assets/generated-items/item-afa856daf58e0cc533f8-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Ivory Tailored Wide-Leg Trousers",
+      "target_product_id": "piece-afa856daf58e0cc533f8"
+    },
+    {
+      "product_id": "piece-493958ea0b8b3d571a7e",
+      "name": "Chocolate Smooth Headscarf",
+      "image": "assets/generated-items/item-493958ea0b8b3d571a7e-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Chocolate Smooth Headscarf",
+      "target_product_id": "piece-493958ea0b8b3d571a7e"
+    },
+    {
+      "product_id": "piece-61121722d0773f1fea27",
+      "name": "Chocolate Gold-Eyelet Satchel",
+      "image": "assets/generated-items/item-61121722d0773f1fea27-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Chocolate Gold-Eyelet Satchel",
+      "target_product_id": "piece-61121722d0773f1fea27"
+    },
+    {
+      "product_id": "piece-9929c958433650d6453a",
+      "name": "Chocolate Pointed Ankle Boots",
+      "image": "assets/generated-items/item-9929c958433650d6453a-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Chocolate Pointed Ankle Boots",
+      "target_product_id": "piece-9929c958433650d6453a"
+    },
+    {
+      "product_id": "piece-a9ed46c4c5715f952faf",
+      "name": "Black Fitted Turtleneck",
+      "image": "assets/generated-items/item-a9ed46c4c5715f952faf-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Black Fitted Turtleneck",
+      "target_product_id": "piece-a9ed46c4c5715f952faf"
+    },
+    {
+      "product_id": "piece-d124506f8321055790bc",
+      "name": "Black Pleated Wide-Leg Trousers",
+      "image": "assets/generated-items/item-d124506f8321055790bc-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Black Pleated Wide-Leg Trousers",
+      "target_product_id": "piece-d124506f8321055790bc"
+    },
+    {
+      "product_id": "piece-384b8a3c0f4ad32d6e1f",
+      "name": "Black Smooth Headscarf",
+      "image": "assets/generated-items/item-384b8a3c0f4ad32d6e1f-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Black Smooth Headscarf",
+      "target_product_id": "piece-384b8a3c0f4ad32d6e1f"
+    },
+    {
+      "product_id": "piece-e85c6cd35b3eb3d8c075",
+      "name": "Black Monogram Satchel",
+      "image": "assets/generated-items/item-e85c6cd35b3eb3d8c075-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Black Monogram Satchel",
+      "target_product_id": "piece-e85c6cd35b3eb3d8c075"
+    },
+    {
+      "product_id": "piece-0ce0faf7e84af62d7380",
+      "name": "Black Pointed Ankle Boots",
+      "image": "assets/generated-items/item-0ce0faf7e84af62d7380-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Black Pointed Ankle Boots",
+      "target_product_id": "piece-0ce0faf7e84af62d7380"
+    },
+    {
+      "product_id": "piece-5ae19970b72cf0bef879",
+      "name": "Cream Ribbed Turtleneck",
+      "image": "assets/generated-items/item-5ae19970b72cf0bef879-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Cream Ribbed Turtleneck",
+      "target_product_id": "piece-5ae19970b72cf0bef879"
+    },
+    {
+      "product_id": "piece-855041b8357eacc12b94",
+      "name": "Cream Smooth Headscarf",
+      "image": "assets/generated-items/item-855041b8357eacc12b94-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Cream Smooth Headscarf",
+      "target_product_id": "piece-855041b8357eacc12b94"
+    },
+    {
+      "product_id": "piece-35b682ca221a31ad8c17",
+      "name": "Ivory Gold-Pendant Satchel",
+      "image": "assets/generated-items/item-35b682ca221a31ad8c17-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Ivory Gold-Pendant Satchel",
+      "target_product_id": "piece-35b682ca221a31ad8c17"
+    },
+    {
+      "product_id": "piece-acd5a2fc1e6ec646fb60",
+      "name": "Ivory Pointed Court Shoes",
+      "image": "assets/generated-items/item-acd5a2fc1e6ec646fb60-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Ivory Pointed Court Shoes",
+      "target_product_id": "piece-acd5a2fc1e6ec646fb60"
+    },
+    {
+      "product_id": "piece-eab488f36b9c569f8af3",
+      "name": "Espresso Rounded Crossbody",
+      "image": "assets/generated-items/item-eab488f36b9c569f8af3-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Espresso Rounded Crossbody",
+      "target_product_id": "piece-eab488f36b9c569f8af3"
+    },
+    {
+      "product_id": "piece-91ea5f283590df7f262e",
+      "name": "Espresso Pointed Court Shoes",
+      "image": "assets/generated-items/item-91ea5f283590df7f262e-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Espresso Pointed Court Shoes",
+      "target_product_id": "piece-91ea5f283590df7f262e"
+    },
+    {
+      "product_id": "piece-02e52f59c838a13af993",
+      "name": "Burgundy Ribbed Turtleneck",
+      "image": "assets/generated-items/item-02e52f59c838a13af993-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Burgundy Ribbed Turtleneck",
+      "target_product_id": "piece-02e52f59c838a13af993"
+    },
+    {
+      "product_id": "piece-150a666c293c0d1909b4",
+      "name": "Chocolate Pleated Wide-Leg Trousers",
+      "image": "assets/generated-items/item-150a666c293c0d1909b4-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Chocolate Pleated Wide-Leg Trousers",
+      "target_product_id": "piece-150a666c293c0d1909b4"
+    },
+    {
+      "product_id": "piece-d822cc735b7032c230df",
+      "name": "Burgundy Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-d822cc735b7032c230df-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Burgundy Gold-Clasp Satchel",
+      "target_product_id": "piece-d822cc735b7032c230df"
+    },
+    {
+      "product_id": "piece-468dcb718d9575d3cb0f",
+      "name": "Espresso Pointed Ankle Boots",
+      "image": "assets/generated-items/item-468dcb718d9575d3cb0f-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Espresso Pointed Ankle Boots",
+      "target_product_id": "piece-468dcb718d9575d3cb0f"
+    },
+    {
+      "product_id": "piece-35adb47003bb0c9f78f5",
+      "name": "Oat Wide-Leg Drawstring Trousers",
+      "image": "assets/generated-items/item-35adb47003bb0c9f78f5-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Oat Wide-Leg Drawstring Trousers",
+      "target_product_id": "piece-35adb47003bb0c9f78f5"
+    },
+    {
+      "product_id": "piece-445ecc26ad0c91dbc4e7",
+      "name": "Brown Suede-Look Zip Tote",
+      "image": "assets/generated-items/item-445ecc26ad0c91dbc4e7-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Brown Suede-Look Zip Tote",
+      "target_product_id": "piece-445ecc26ad0c91dbc4e7"
+    },
+    {
+      "product_id": "piece-9817710db9647d062975",
+      "name": "Oat Knit Drawstring Wide-Leg Trousers",
+      "image": "assets/generated-items/item-9817710db9647d062975-v1.png",
+      "kind": "bottom",
+      "x": 0.4,
+      "y": 0.6,
+      "label": "Oat Knit Drawstring Wide-Leg Trousers",
+      "target_product_id": "piece-9817710db9647d062975"
+    },
+    {
+      "product_id": "piece-e4920025d4fba457a2fb",
+      "name": "Taupe Gold-Clasp Satchel",
+      "image": "assets/generated-items/item-e4920025d4fba457a2fb-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Taupe Gold-Clasp Satchel",
+      "target_product_id": "piece-e4920025d4fba457a2fb"
+    },
+    {
+      "product_id": "piece-f174ba9ec4e5f772deab",
+      "name": "Cream Oversized Open Cardigan",
+      "image": "assets/generated-items/item-f174ba9ec4e5f772deab-v1.png",
+      "kind": "outerwear",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "Cream Oversized Open Cardigan",
+      "target_product_id": "piece-f174ba9ec4e5f772deab"
+    },
+    {
+      "product_id": "piece-4f47e3f248a0b3c75912",
+      "name": "Black Biker Jacket",
+      "image": "assets/generated-items/item-4f47e3f248a0b3c75912-v1.png",
+      "kind": "outerwear",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "Black Biker Jacket",
+      "target_product_id": "piece-4f47e3f248a0b3c75912"
+    },
+    {
+      "product_id": "piece-46eee4037024b11c38f6",
+      "name": "Black Fitted Crew-Neck Top",
+      "image": "assets/generated-items/item-46eee4037024b11c38f6-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Black Fitted Crew-Neck Top",
+      "target_product_id": "piece-46eee4037024b11c38f6"
+    },
+    {
+      "product_id": "piece-6bc4aadc3fdcde6c8fd8",
+      "name": "Black Lug-Sole Chelsea Boots",
+      "image": "assets/generated-items/item-6bc4aadc3fdcde6c8fd8-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Black Lug-Sole Chelsea Boots",
+      "target_product_id": "piece-6bc4aadc3fdcde6c8fd8"
+    },
+    {
+      "product_id": "piece-c8d7df974eab370755e7",
+      "name": "Burgundy Smooth Headscarf",
+      "image": "assets/generated-items/item-c8d7df974eab370755e7-v1.png",
+      "kind": "scarf",
+      "x": 0.5,
+      "y": 0.8,
+      "label": "Burgundy Smooth Headscarf",
+      "target_product_id": "piece-c8d7df974eab370755e7"
+    },
+    {
+      "product_id": "piece-3c4526d04ba6676b9c29",
+      "name": "Oat Chunky Button Cardigan",
+      "image": "assets/generated-items/item-3c4526d04ba6676b9c29-v1.png",
+      "kind": "outerwear",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "Oat Chunky Button Cardigan",
+      "target_product_id": "piece-3c4526d04ba6676b9c29"
+    },
+    {
+      "product_id": "piece-72f70f9c8ea315b9132b",
+      "name": "Ivory Plain Scoop-Neck Tank",
+      "image": "assets/generated-items/item-72f70f9c8ea315b9132b-v1.png",
+      "kind": "top",
+      "x": 0.5,
+      "y": 0.47,
+      "label": "Ivory Plain Scoop-Neck Tank",
+      "target_product_id": "piece-72f70f9c8ea315b9132b"
+    },
+    {
+      "product_id": "piece-c30f284815b182346043",
+      "name": "Chocolate Soft Crossbody",
+      "image": "assets/generated-items/item-c30f284815b182346043-v1.png",
+      "kind": "bag",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Chocolate Soft Crossbody",
+      "target_product_id": "piece-c30f284815b182346043"
+    },
+    {
+      "product_id": "piece-8e3b0ea73815ac96b2eb",
+      "name": "Chocolate Pointed Heeled Ankle Boots",
+      "image": "assets/generated-items/item-8e3b0ea73815ac96b2eb-v1.png",
+      "kind": "shoes",
+      "x": 0.62,
+      "y": 0.66,
+      "label": "Chocolate Pointed Heeled Ankle Boots",
+      "target_product_id": "piece-8e3b0ea73815ac96b2eb"
+    }
+  ],
+  "reviewed": true,
+  "review_note": "All174 source photos inspected in six labelled contact sheets. Positions adjusted for scarf neck folds, open sandal footbeds and long-chain small bags."
+}

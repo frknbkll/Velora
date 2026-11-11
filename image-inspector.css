@@ -1,0 +1,64 @@
+/* The image itself stays unchanged; controls follow its displayed pixels. */
+.vpi-frame { position: relative; }
+.vpi-photo { cursor: zoom-in; }
+.vpi-open { position: absolute; z-index: 4; top: 12px; right: 12px; display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 14px; border: 1px solid #e2d9cc; border-radius: 5px; background: #fffdf8ed; color: var(--ink, #303128); box-shadow: 0 3px 15px #30292010; font: 500 12px/1.4 var(--sans, sans-serif); cursor: pointer; }
+.vpi-open:hover { background: #fffdf8; border-color: #99836c; }
+.vpi-hotspots { --vpi-label-width: 132px; position: absolute; inset: 0; z-index: 5; pointer-events: none; }
+.vpi-marker { position: absolute; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: transparent; pointer-events: auto; cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.vpi-marker-dot { position: relative; z-index: 1; display: grid; place-items: center; width: 23px; height: 23px; border: 1px solid #fffffff0; border-radius: 50%; background: #fffdf8eb; color: #383b30; box-shadow: 0 1px 9px #24241f35; font: 400 18px/1 Arial, sans-serif; transition: background .16s ease, transform .16s ease; }
+.vpi-marker-dot::before { content: ""; position: absolute; inset: -6px; border: 1px solid #fffdf8bb; border-radius: 50%; animation: vpi-pulse 2.2s ease-out 3; }
+.vpi-marker-label { position: absolute; z-index: 2; left: 39px; top: 50%; display: block; box-sizing: border-box; width: max-content; max-width: var(--vpi-label-width); padding: 5px 8px; border: 1px solid #d8cbbb; border-radius: 14px; background: #fffdf9f2; color: #453b2f; box-shadow: 0 2px 8px #30292018; font: 500 11px/1.25 var(--sans, sans-serif); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transform: translateY(-50%); transition: background .16s ease, color .16s ease; }
+.vpi-marker.vpi-label-left .vpi-marker-label { left: auto; right: 39px; }
+.vpi-marker:hover .vpi-marker-label, .vpi-marker[aria-expanded="true"] .vpi-marker-label { background: #303128; border-color: #303128; color: #fffdf8; }
+.look-tile-image.vpi-labels-only .vpi-hotspots { --vpi-label-width: 84px; }
+.look-tile-image.vpi-labels-only .vpi-marker-label { padding: 4px 7px; font-size: 10px; }
+.look-tile-image.vpi-labels-only .vpi-marker-dot { width: 21px; height: 21px; font-size: 16px; }
+.look-tile:hover .look-tile-image.vpi-labels-only > .look-photo-trigger > img { transform: none; }
+.look-tile-image.vpi-labels-only > .save-look, .look-tile-image.vpi-labels-only > .product-gallery-controls,
+.look-tile-image.vpi-labels-only > .product-gallery-count, .look-tile-image.vpi-labels-only > .product-gallery-thumbnails { z-index: 6; }
+.look-tile-image.vpi-labels-only > .product-gallery-count { right: auto; left: 10px; }
+.look-tile-image.vpi-labels-only > .vpi-hotspots.is-item-open { z-index: 7; }
+.vpi-marker:hover .vpi-marker-dot, .vpi-marker[aria-expanded="true"] .vpi-marker-dot { background: #303128; color: #fffdf8; transform: scale(1.12); }
+.vpi-marker:focus-visible, .vpi-open:focus-visible, .vpi-item-link:focus-visible, .vpi-dialog button:focus-visible, .vpi-viewport:focus-visible { outline: 2px solid var(--accent, #a64e37); outline-offset: 3px; }
+.vpi-item-card { position: absolute; z-index: 7; display: grid; gap: 6px; box-sizing: border-box; max-width: calc(100% - 16px); overflow-y: auto; overscroll-behavior: contain; padding: 15px 16px 12px; border: 1px solid #d7cdbf; border-radius: 7px; background: #fffdf9f8; color: #303128; box-shadow: 0 8px 28px #29221b25; pointer-events: auto; text-align: left; animation: vpi-card-in .18s ease both; font-family: var(--sans, sans-serif); }
+.vpi-item-label { color: #8b6d54; font-size: 10px; line-height: 1.4; letter-spacing: .10em; text-transform: uppercase; }
+.vpi-item-name { display: block; font-size: 13px; font-weight: 500; line-height: 1.45; overflow-wrap: anywhere; }
+.vpi-item-price { display: block; font-size: 14px; line-height: 1.4; font-weight: 500; }
+.vpi-item-link { display: flex; align-items: center; min-height: 44px; margin-top: 2px; border-top: 1px solid #e7dfd3; color: #684d38; font-size: 12px; font-weight: 500; text-decoration: none; }
+.vpi-item-link:hover { color: #a64e37; text-decoration: underline; text-underline-offset: 3px; }
+.vpi-dialog { position: fixed; inset: 0; box-sizing: border-box; width: min(1440px, calc(100vw - 32px)); height: min(1040px, calc(100svh - 32px)); max-width: none; max-height: none; margin: auto; padding: 0; overflow: hidden; border: 1px solid #d5cabc; border-radius: 10px; background: #f9f6f0; color: #303128; box-shadow: 0 25px 100px #17161145; font-family: var(--sans, sans-serif); }
+.vpi-dialog[open] { display: grid; grid-template-rows: auto auto auto minmax(0, 1fr); }
+.vpi-dialog::backdrop { background: #25241ee0; }
+.vpi-header { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-width: 0; padding: 16px 20px 10px; }
+.vpi-header h2 { min-width: 0; margin: 0; color: #303128; font: 400 clamp(20px, 3vw, 30px)/1.15 var(--serif, Georgia, serif); overflow-wrap: anywhere; }
+.vpi-dialog .vpi-close { display: grid; place-items: center; flex: 0 0 44px; width: 44px; height: 44px; padding: 0; border: 1px solid #d8cfc2; border-radius: 50%; background: #fffdf8; color: #655640; font: 400 27px/1 Arial, sans-serif; cursor: pointer; }
+.vpi-toolbar { display: flex; align-items: center; justify-content: center; gap: 9px; padding: 3px 16px; }
+.vpi-toolbar button { min-width: 44px; min-height: 44px; padding: 7px 12px; border: 1px solid #d8cfc2; border-radius: 5px; background: #fffdf8; color: #303128; font: 500 20px/1 var(--sans, sans-serif); cursor: pointer; }
+.vpi-toolbar button.vpi-fit { margin-left: 7px; font-size: 12px; }
+.vpi-toolbar button:disabled { opacity: .45; cursor: default; }
+.vpi-amount { display: inline-block; min-width: 45px; color: #625b52; font-size: 12px; text-align: center; }
+.vpi-hint { margin: 0; padding: 6px 20px 12px; color: #786d60; font-size: 11px; line-height: 1.5; text-align: center; }
+.vpi-viewport { position: relative; min-width: 0; min-height: 0; width: 100%; height: 100%; overflow: auto; overscroll-behavior: contain; background: #ece7df; scrollbar-width: thin; scrollbar-color: #bfb3a4 #ece7df; }
+.vpi-viewport.is-zoomed { cursor: grab; }
+.vpi-viewport.is-dragging { cursor: grabbing; user-select: none; }
+.vpi-canvas { position: relative; display: grid; place-items: center; box-sizing: border-box; padding: 16px; min-width: 100%; min-height: 100%; }
+.vpi-picture { position: relative; flex: 0 0 auto; }
+.vpi-picture > .vpi-original { display: block; width: 100%; height: 100%; max-width: none; max-height: none; object-fit: fill; user-select: none; -webkit-user-drag: none; }
+.vpi-load-state { grid-row: 4; display: grid; place-content: center; min-width: 0; margin: 0; padding: 30px; color: #786d60; font-size: 13px; line-height: 1.6; text-align: center; }
+.vpi-hotspots[hidden], .vpi-marker[hidden], .vpi-marker-label[hidden], .vpi-item-card[hidden], .vpi-open[hidden], .vpi-viewport[hidden], .vpi-toolbar[hidden], .vpi-load-state[hidden] { display: none !important; }
+@keyframes vpi-pulse { 0% { opacity: .8; transform: scale(.75); } 85%, 100% { opacity: 0; transform: scale(1.6); } }
+@keyframes vpi-card-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 600px) {
+  .vpi-hotspots { --vpi-label-width: 96px; }
+  .vpi-dialog { width: 100vw; height: 100svh; border: 0; border-radius: 0; }
+  .vpi-header { gap: 12px; padding: max(12px, env(safe-area-inset-top)) 14px 6px; }
+  .vpi-header h2 { font-size: 23px; }
+  .vpi-hint { padding-inline: 16px; }
+  .vpi-open { top: 10px; right: 10px; padding-inline: 12px; font-size: 11px; }
+  .vpi-dialog .vpi-viewport { padding-bottom: env(safe-area-inset-bottom); }
+  .vpi-item-card { padding: 12px 13px 8px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vpi-marker-dot::before, .vpi-item-card { animation: none; }
+  .vpi-marker-dot, .vpi-marker-label { transition: none; }
+}

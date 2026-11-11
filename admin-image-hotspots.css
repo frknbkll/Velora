@@ -1,0 +1,38 @@
+.admin-image-hotspots { min-width: 0; }
+.admin-hotspot-intro { margin-bottom: 16px; }
+.admin-hotspot-field { min-width: 0; }
+.admin-hotspot-field select, .admin-hotspot-field input { min-width: 0; max-width: 100%; min-height: 44px; }
+.admin-hotspot-preview { position: relative; min-width: 0; min-height: 160px; margin-top: 14px; overflow: hidden; border: 1px solid #dfd4c6; border-radius: 6px; background: #eee8df; cursor: crosshair; }
+.admin-hotspot-preview > img { display: block; width: 100%; height: 320px; max-height: 55svh; object-fit: contain; object-position: center; user-select: none; }
+.admin-hotspot-preview > img[hidden] { display: none; }
+.admin-hotspot-preview.is-disabled { cursor: default; opacity: .7; }
+.admin-hotspot-preview-empty { margin: 0; padding: 40px 18px; color: #817263; font: 400 .75rem/1.7 var(--sans); text-align: center; }
+.admin-hotspot-preview-empty[hidden] { display: none; }
+.admin-hotspot-marker-layer { position: absolute; inset: 0; pointer-events: none; }
+.admin-hotspot-dot, .admin-hotspot-pending { position: absolute; display: grid; place-items: center; width: 44px; height: 44px; padding: 0; transform: translate(-50%, -50%); border: 1px solid #fff9ec; border-radius: 50%; background: #30392ce8; color: #fffdf7; font: 500 .8125rem var(--sans); box-shadow: 0 2px 12px #0003; }
+.admin-hotspot-dot { pointer-events: auto; cursor: pointer; }
+.admin-hotspot-dot.is-selected { outline: 3px solid #ba8b66; outline-offset: 2px; }
+.admin-hotspot-dot:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+.admin-hotspot-dot:disabled { cursor: default; }
+.admin-hotspot-pending { width: 30px; height: 30px; border: 2px dashed #fff; background: #94684ee8; font-size: 21px; }
+.admin-hotspot-edit-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+.admin-hotspot-edit-actions .admin-button, .admin-hotspot-row-actions .admin-button { min-height: 44px; padding: 9px 12px; white-space: normal; }
+.admin-hotspot-edit-actions .admin-button:disabled { opacity: .5; cursor: not-allowed; }
+.admin-hotspot-feedback { min-height: 1.5em; margin: 10px 0 0; color: #52674a; font: 400 .6875rem/1.7 var(--sans); }
+.admin-hotspot-feedback.is-error { color: #a04d35; }
+.admin-hotspot-list-heading { margin: 20px 0 10px; color: #6e6254; font-size: .75rem; }
+.admin-hotspot-list-heading strong { font-weight: 500; }
+.admin-hotspot-list { display: grid; gap: 8px; min-width: 0; }
+.admin-hotspot-empty { margin: 0; padding: 13px; border: 1px dashed #ded4c6; border-radius: 5px; color: #817263; font: 400 .6875rem/1.7 var(--sans); }
+.admin-hotspot-row { display: grid; grid-template-columns: 25px minmax(0, 1fr); align-items: start; gap: 8px; min-width: 0; padding: 11px; border: 1px solid #e1d7c9; border-radius: 5px; background: #fffefa; }
+.admin-hotspot-row.is-selected { border-color: #8d977a; background: #f2f4ec; }
+.admin-hotspot-number { display: grid; place-items: center; width: 25px; height: 25px; border-radius: 50%; background: #efeadf; color: #75644f; font-size: .6875rem; }
+.admin-hotspot-copy { min-width: 0; }
+.admin-hotspot-copy strong, .admin-hotspot-copy span { display: block; overflow-wrap: anywhere; }
+.admin-hotspot-copy strong { color: var(--ink); font: 500 .75rem/1.5 var(--sans); }
+.admin-hotspot-copy span { margin-top: 4px; color: #887766; font: 400 .625rem/1.6 var(--sans); }
+.admin-hotspot-row-actions { grid-column: 2; display: flex; flex-wrap: wrap; gap: 8px; }
+@media (max-width: 380px) {
+  .admin-hotspot-position { grid-template-columns: minmax(0, 1fr); gap: 0; }
+  .admin-hotspot-edit-actions { display: grid; grid-template-columns: minmax(0, 1fr); }
+}

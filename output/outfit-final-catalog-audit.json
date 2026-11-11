@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "live_products": 260,
+    "roots": 86,
+    "children": 174,
+    "placements": 330,
+    "checked_markers": 330,
+    "complete_parents": 86
+  },
+  "pending": [],
+  "errors": [],
+  "checkedAt": "2026-11-10T06:10:39.178Z",
+  "checks": [
+    "All manifest marker coordinates and product IDs match the public catalog.",
+    "All marker product prices and standalone image references match current public products.",
+    "All 86 original outfit names, prices, stock, sizes, covers, colors and color variants are preserved.",
+    "All174 child products have valid top-level outfit parents and standalone covers without copied outfit markers.",
+    "Product catalog seed setup fields match the public API."
+  ]
+}

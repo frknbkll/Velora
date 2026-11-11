@@ -52,13 +52,14 @@
       state.button.setAttribute("aria-pressed", "false");
       state.alternate.remove();
     }, { once: true });
-    state.alternate.src = state.source;
+    if (window.VeloraImageSources) window.VeloraImageSources.apply(state.alternate, state.source, "(max-width: 650px) 90vw, 28vw");
+    else state.alternate.src = state.source;
   }
 
   document.querySelectorAll(".team-profile-portrait").forEach((wrapper) => {
     const original = wrapper.querySelector("img");
     const name = wrapper.closest(".team-profile")?.querySelector("h3")?.textContent.trim();
-    const source = original?.getAttribute("src");
+    const source = original?.dataset.originalSrc || original?.getAttribute("src");
     if (!name || !/^assets\/team\/[a-z0-9-]+\.jpg$/.test(source || "")) return;
 
     const button = document.createElement("button");

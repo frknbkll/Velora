@@ -1,0 +1,1476 @@
+[
+  {
+    "index": 29,
+    "product_id": "4d51a0de1ad5592f",
+    "name": "The Cloud Ribbed Lounge Set",
+    "image": "assets/gallery/victoria-cloud-ribbed-lounge-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Three-Piece Ribbed Lounge Set",
+        "description": "Coordinated ivory ribbed camisole with thin straps, open relaxed cardigan and drawstring wide-leg trousers; arrange as one three-piece set.",
+        "color": "Ivory",
+        "hex": "#f0e5d5",
+        "x": 0.52,
+        "y": 0.51,
+        "is_primary": true,
+        "visual_key": "primary_4d51a0de1ad5592f"
+      },
+      {
+        "kind": "shoes",
+        "name": "Ivory Perforated Low-Top Sneakers",
+        "description": "Pair of ivory lace-up low-top sneakers, perforated rounded toe, layered side panels and thick off-white cupsoles.",
+        "color": "Ivory",
+        "hex": "#e9e1d5",
+        "x": 0.54,
+        "y": 0.925,
+        "is_primary": false,
+        "visual_key": "shoes_ivory_perforated_lowtop_layered_cupsole"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 30,
+    "product_id": "2f92545d9cbed177",
+    "name": "The Off-Shoulder Denim Look",
+    "image": "assets/gallery/victoria-off-shoulder-denim-look.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Off-Shoulder Top and Light-Blue Jeans Set",
+        "description": "Ivory fitted off-shoulder long-sleeve ribbed top paired with light-wash high-rise wide straight-leg jeans; show exact two-piece outfit.",
+        "color": "Ivory and light blue",
+        "hex": "#9daebc",
+        "x": 0.52,
+        "y": 0.51,
+        "is_primary": true,
+        "visual_key": "primary_2f92545d9cbed177"
+      },
+      {
+        "kind": "bag",
+        "name": "Ivory Top-Handle Bag",
+        "description": "Small ivory shoulder bag with a front flap, gold-tone chain shoulder strap and compact rectangular body.",
+        "color": "Ivory",
+        "hex": "#eee4d9",
+        "x": 0.416,
+        "y": 0.389,
+        "is_primary": false,
+        "visual_key": "bag_ivory_gold_chain_small_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "White Platform Low-Top Sneakers",
+        "description": "White lace-up low-top sneakers, rounded perforated toe, paneled uppers and thick cream platform cupsoles.",
+        "color": "White",
+        "hex": "#eeeae2",
+        "x": 0.244,
+        "y": 0.938,
+        "is_primary": false,
+        "visual_key": "shoes_white_platform_lowtop_perforated_cupsole"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 31,
+    "product_id": "4ba84e164ca92c24",
+    "name": "The Soft-Neutral Knit Set",
+    "image": "assets/gallery/victoria-soft-neutral-knit-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Taupe Ribbed Knit and Ivory Trouser Set",
+        "description": "Fitted taupe fine-rib roll-neck long-sleeve sweater with high-waisted ivory wide-leg tailored trousers; show the coordinated two-piece styling.",
+        "color": "Taupe and ivory",
+        "hex": "#b7a391",
+        "x": 0.52,
+        "y": 0.49,
+        "is_primary": true,
+        "visual_key": "primary_4ba84e164ca92c24"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Taupe",
+        "hex": "#b6a18e",
+        "x": 0.306,
+        "y": 0.614,
+        "is_primary": false,
+        "visual_key": "bag_taupe_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d0b096",
+        "x": 0.652,
+        "y": 0.938,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 32,
+    "product_id": "4e2b0a33f31318ac",
+    "name": "The Ivory Knit-Tailored Set",
+    "image": "assets/gallery/victoria-ivory-knit-tailored-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Champagne Halter Draped Gown",
+        "description": "Champagne satin-look floor-length halter gown with gathered high neck, broad draped ruched waistband, hip folds and high side slit.",
+        "color": "Champagne",
+        "hex": "#dbc4aa",
+        "x": 0.48,
+        "y": 0.51,
+        "is_primary": true,
+        "visual_key": "primary_4e2b0a33f31318ac"
+      },
+      {
+        "kind": "bag",
+        "name": "Gold Rounded Box Clutch",
+        "description": "Small gold-tone rigid rounded-rectangle evening clutch with narrow side frame and subtly textured face, no visible strap.",
+        "color": "Gold",
+        "hex": "#b99b63",
+        "x": 0.295,
+        "y": 0.543,
+        "is_primary": false,
+        "visual_key": "bag_gold_rounded_box_clutch_textured"
+      },
+      {
+        "kind": "shoes",
+        "name": "Gold Ankle-Strap Heeled Sandals",
+        "description": "Pair of gold-tone open-toe sandals with thin toe strap, thin ankle strap and slender high heels.",
+        "color": "Gold",
+        "hex": "#b79b70",
+        "x": 0.734,
+        "y": 0.907,
+        "is_primary": false,
+        "visual_key": "shoes_gold_thin_ankle_toe_strap_sandal"
+      }
+    ],
+    "note": "Name/image mismatch: named Ivory Knit-Tailored Set, but the actual photograph is a champagne halter draped gown. Plan follows the visible photograph."
+  },
+  {
+    "index": 33,
+    "product_id": "52e502c50f2fff58",
+    "name": "The Champagne Halter Gown",
+    "image": "assets/gallery/victoria-champagne-halter-gown.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Black Draped Satin Slip Gown",
+        "description": "Black satin-look floor-length slip gown with thin shoulder straps, soft cowl neckline, ruched waist and high side slit.",
+        "color": "Black",
+        "hex": "#211e1d",
+        "x": 0.48,
+        "y": 0.53,
+        "is_primary": true,
+        "visual_key": "primary_52e502c50f2fff58"
+      },
+      {
+        "kind": "bag",
+        "name": "Black Gold-Frame Box Clutch",
+        "description": "Compact black rigid rectangular evening clutch with rounded corners and polished gold-tone frame, no visible handle.",
+        "color": "Black",
+        "hex": "#211e1e",
+        "x": 0.305,
+        "y": 0.525,
+        "is_primary": false,
+        "visual_key": "bag_black_rounded_box_gold_frame"
+      },
+      {
+        "kind": "shoes",
+        "name": "Black Ankle-Strap Heeled Sandals",
+        "description": "Pair of black open-toe heeled sandals with slim toe strap, thin ankle strap and narrow high heels.",
+        "color": "Black",
+        "hex": "#211c1a",
+        "x": 0.745,
+        "y": 0.913,
+        "is_primary": false,
+        "visual_key": "shoes_black_thin_ankle_toe_strap_sandal"
+      }
+    ],
+    "note": "Name/image mismatch: named Champagne Halter Gown, but the photograph is a black thin-strap draped gown."
+  },
+  {
+    "index": 34,
+    "product_id": "874d7c0173a9d2a8",
+    "name": "The Midnight Satin Slip Gown",
+    "image": "assets/gallery/victoria-midnight-satin-slip-gown.jpg",
+    "items": [
+      {
+        "kind": "outerwear",
+        "name": "Ivory Belted Longline Coat",
+        "description": "Ivory longline coat with notched lapels, straight full-length sleeves and a matching waist tie knotted at front; isolate the coat only.",
+        "color": "Ivory",
+        "hex": "#ede0cd",
+        "x": 0.39,
+        "y": 0.456,
+        "is_primary": true,
+        "visual_key": "primary_874d7c0173a9d2a8"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Roll-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with folded roll neck and clean straight cuffs.",
+        "color": "Ivory",
+        "hex": "#f0e5d5",
+        "x": 0.52,
+        "y": 0.259,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_rollneck"
+      },
+      {
+        "kind": "bottom",
+        "name": "Ivory Wide-Leg Tailored Trousers",
+        "description": "High-waisted ivory tailored trousers with long wide legs, clean front and side pockets.",
+        "color": "Ivory",
+        "hex": "#eadcc7",
+        "x": 0.54,
+        "y": 0.664,
+        "is_primary": false,
+        "visual_key": "bottom_ivory_wideleg_tailored_clean_front"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Taupe",
+        "hex": "#b8a28e",
+        "x": 0.285,
+        "y": 0.597,
+        "is_primary": false,
+        "visual_key": "bag_taupe_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d0b096",
+        "x": 0.657,
+        "y": 0.938,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": "Name/image mismatch: named Midnight Satin Slip Gown, but photograph shows ivory belted coat, knit top and trousers."
+  },
+  {
+    "index": 35,
+    "product_id": "ee63e133d40760be",
+    "name": "The Ivory Trench Ensemble",
+    "image": "assets/gallery/victoria-ivory-trench-ensemble.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Champagne Halter Blouse and Black Trouser Set",
+        "description": "Champagne satin-look sleeveless gathered halter blouse with high neck, paired with black high-rise tailored wide-leg trousers.",
+        "color": "Champagne and black",
+        "hex": "#cfb496",
+        "x": 0.51,
+        "y": 0.47,
+        "is_primary": true,
+        "visual_key": "primary_ee63e133d40760be"
+      },
+      {
+        "kind": "bag",
+        "name": "Black Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Black",
+        "hex": "#242221",
+        "x": 0.287,
+        "y": 0.608,
+        "is_primary": false,
+        "visual_key": "bag_black_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Black Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Black",
+        "hex": "#19191a",
+        "x": 0.231,
+        "y": 0.953,
+        "is_primary": false,
+        "visual_key": "shoes_black_glossy_pointed_pumps"
+      }
+    ],
+    "note": "Name/image mismatch: named Ivory Trench Ensemble, but photograph shows champagne halter blouse and black trousers."
+  },
+  {
+    "index": 36,
+    "product_id": "6664bf77ae517850",
+    "name": "The Champagne Blouse & Black Trousers",
+    "image": "assets/gallery/victoria-champagne-blouse-black-trousers.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Tailored Trouser Suit",
+        "description": "Ivory single-breasted notched-lapel blazer and coordinated high-waist wide-leg trousers; preserve soft tailoring, flap pockets and clean waist.",
+        "color": "Ivory",
+        "hex": "#ddc8b2",
+        "x": 0.53,
+        "y": 0.49,
+        "is_primary": true,
+        "visual_key": "primary_6664bf77ae517850"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Square-Neck Cami Top",
+        "description": "Fitted ivory plain square-neck sleeveless camisole top visible beneath the blazer.",
+        "color": "Ivory",
+        "hex": "#e4cfba",
+        "x": 0.55,
+        "y": 0.285,
+        "is_primary": false,
+        "visual_key": "top_ivory_plain_square_neck_cami"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Taupe",
+        "hex": "#c2aa90",
+        "x": 0.299,
+        "y": 0.604,
+        "is_primary": false,
+        "visual_key": "bag_taupe_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d0b096",
+        "x": 0.727,
+        "y": 0.941,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": "Name/image mismatch: named Champagne Blouse & Black Trousers, but photograph shows an ivory trouser suit."
+  },
+  {
+    "index": 37,
+    "product_id": "7b8ef54e6321f222",
+    "name": "The Taupe Knit & Trouser Set",
+    "image": "assets/gallery/beyza-taupe-knit-trouser-look.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Ribbed Knit and Taupe Trouser Set",
+        "description": "Ivory fine-rib fitted roll-neck long-sleeve top with taupe high-rise pleated wide-leg trousers; one coordinated two-piece styling.",
+        "color": "Ivory and taupe",
+        "hex": "#a79584",
+        "x": 0.52,
+        "y": 0.49,
+        "is_primary": true,
+        "visual_key": "primary_7b8ef54e6321f222"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.453,
+        "y": 0.125,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Taupe structured trapezoid top-handle bag with horizontal front band, small rectangular gold-tone turn-lock and folded side gussets.",
+        "color": "Taupe",
+        "hex": "#a88f77",
+        "x": 0.286,
+        "y": 0.602,
+        "is_primary": false,
+        "visual_key": "bag_taupe_horizontal_band_turnlock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#c7a58c",
+        "x": 0.63,
+        "y": 0.935,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 38,
+    "product_id": "c9f06c204bdee72a",
+    "name": "The Ivory Cardigan Trouser Set",
+    "image": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Cardigan and Taupe Trouser Set",
+        "description": "Long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers; one coordinated three-piece styling.",
+        "color": "Ivory and taupe",
+        "hex": "#d0bda5",
+        "x": 0.48,
+        "y": 0.49,
+        "is_primary": true,
+        "visual_key": "primary_c9f06c204bdee72a"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.465,
+        "y": 0.128,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Taupe",
+        "hex": "#b6a18e",
+        "x": 0.301,
+        "y": 0.606,
+        "is_primary": false,
+        "visual_key": "bag_taupe_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d0b096",
+        "x": 0.716,
+        "y": 0.944,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 39,
+    "product_id": "e51eb39916bcceab",
+    "name": "The Ivory Longline Coat",
+    "image": "assets/gallery/beyza-ivory-longline-coat-look.jpg",
+    "items": [
+      {
+        "kind": "outerwear",
+        "name": "Ivory Longline Notched-Lapel Coat",
+        "description": "Ivory below-knee straight coat with soft textured surface, broad notched lapels, full sleeves and cuff straps; isolate coat only.",
+        "color": "Ivory",
+        "hex": "#deccb3",
+        "x": 0.36,
+        "y": 0.458,
+        "is_primary": true,
+        "visual_key": "primary_e51eb39916bcceab"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Crew-Neck Top",
+        "description": "Fitted ivory fine vertical-rib long-sleeve top with a simple high round crew neckline.",
+        "color": "Ivory",
+        "hex": "#ede3d4",
+        "x": 0.53,
+        "y": 0.264,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_crewneck"
+      },
+      {
+        "kind": "bottom",
+        "name": "Ivory Pleated Wide-Leg Trousers",
+        "description": "High-rise ivory trousers with front pleats, side pockets, belt loops and full-length wide legs.",
+        "color": "Ivory",
+        "hex": "#e2d1b9",
+        "x": 0.55,
+        "y": 0.686,
+        "is_primary": false,
+        "visual_key": "bottom_ivory_pleated_wideleg"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.474,
+        "y": 0.135,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Taupe",
+        "hex": "#b6a18e",
+        "x": 0.312,
+        "y": 0.605,
+        "is_primary": false,
+        "visual_key": "bag_taupe_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d0b096",
+        "x": 0.725,
+        "y": 0.945,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 40,
+    "product_id": "fe93ba37bb9ba2f6",
+    "name": "The Taupe Longline Coat Set",
+    "image": "assets/gallery/beyza-taupe-longline-coat-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Taupe Longline Coat and Cream Trouser Set",
+        "description": "Taupe single-breasted longline coat with notched lapels and dark buttons, paired with high-rise cream wide-leg pleated trousers.",
+        "color": "Taupe and cream",
+        "hex": "#b49c84",
+        "x": 0.47,
+        "y": 0.477,
+        "is_primary": true,
+        "visual_key": "primary_fe93ba37bb9ba2f6"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Crew-Neck Top",
+        "description": "Fitted ivory fine vertical-rib long-sleeve top with a simple high round crew neckline.",
+        "color": "Ivory",
+        "hex": "#ede3d4",
+        "x": 0.535,
+        "y": 0.267,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_crewneck"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.486,
+        "y": 0.13,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Taupe",
+        "hex": "#b6a18e",
+        "x": 0.784,
+        "y": 0.383,
+        "is_primary": false,
+        "visual_key": "bag_taupe_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d0b096",
+        "x": 0.521,
+        "y": 0.952,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 41,
+    "product_id": "f62ee6e41ab495d3",
+    "name": "The Champagne Satin Occasion Gown",
+    "image": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Champagne Collared Satin-Look Maxi Gown",
+        "description": "Champagne satin-look full-length garment with pointed shirt collar, overlapping wrap-front bodice, billowing cuffed sleeves, fitted waistband and flowing skirt; preserve exact visible drape.",
+        "color": "Champagne",
+        "hex": "#ccb094",
+        "x": 0.51,
+        "y": 0.51,
+        "is_primary": true,
+        "visual_key": "primary_f62ee6e41ab495d3"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.486,
+        "y": 0.198,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "shoes",
+        "name": "Champagne Crystal-Buckle Court Shoes",
+        "description": "Champagne pointed-toe high-heel court shoes with ornate sparkling buckle-like embellishment across the toe uppers.",
+        "color": "Champagne",
+        "hex": "#c5a78a",
+        "x": 0.792,
+        "y": 0.851,
+        "is_primary": false,
+        "visual_key": "shoes_champagne_pointed_pumps_ornate_crystal_buckle"
+      }
+    ],
+    "note": "Waist construction may be a dress or blouse/skirt coordination; preserve visible reference and do not invent hidden fastening details. No handbag is visible."
+  },
+  {
+    "index": 42,
+    "product_id": "db747bb55dc91722",
+    "name": "The Weekend Denim Jacket Look",
+    "image": "assets/gallery/beyza-weekend-denim-jacket-look.jpg",
+    "items": [
+      {
+        "kind": "outerwear",
+        "name": "Taupe Collared Zip Bomber Jacket",
+        "description": "Taupe zip-front bomber jacket with broad pointed collar, loose sleeves, gathered ribbed cuffs and elasticated ribbed hem; isolate jacket.",
+        "color": "Taupe",
+        "hex": "#8e7462",
+        "x": 0.349,
+        "y": 0.327,
+        "is_primary": true,
+        "visual_key": "primary_db747bb55dc91722"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Fitted Crew-Neck Top",
+        "description": "Plain fitted ivory long-sleeve crew-neck top worn beneath the bomber jacket.",
+        "color": "Ivory",
+        "hex": "#e8e2d7",
+        "x": 0.521,
+        "y": 0.272,
+        "is_primary": false,
+        "visual_key": "top_ivory_plain_fitted_crewneck"
+      },
+      {
+        "kind": "bottom",
+        "name": "Light-Blue Wide-Leg Jeans",
+        "description": "High-rise light-wash blue jeans with button waist, belt loops, front pockets and full-length wide legs.",
+        "color": "Light blue",
+        "hex": "#a2b0ba",
+        "x": 0.546,
+        "y": 0.619,
+        "is_primary": false,
+        "visual_key": "bottom_light_blue_highrise_wideleg_denim"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.49,
+        "y": 0.115,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Chocolate Small Shoulder Bag",
+        "description": "Small dark-brown shoulder bag tucked under the arm, short plain shoulder strap and softly structured rounded body; preserve visible side profile.",
+        "color": "Chocolate",
+        "hex": "#4e3023",
+        "x": 0.346,
+        "y": 0.297,
+        "is_primary": false,
+        "visual_key": "bag_chocolate_small_underarm_shortstrap"
+      },
+      {
+        "kind": "shoes",
+        "name": "White Paneled Low-Top Sneakers",
+        "description": "White lace-up low-top sneakers with rounded perforated toe, layered upper panels and chunky white cupsoles.",
+        "color": "White",
+        "hex": "#efede7",
+        "x": 0.693,
+        "y": 0.907,
+        "is_primary": false,
+        "visual_key": "shoes_white_paneled_perforated_lowtop_cupsole"
+      }
+    ],
+    "note": "Name/image mismatch: titled Denim Jacket Look, but jacket is taupe and plain; the blue denim is the trousers. Shoulder bag is partly hidden, so unseen front hardware is uncertain."
+  },
+  {
+    "index": 43,
+    "product_id": "f348c4635fca0606",
+    "name": "The Espresso Tailored Suit",
+    "image": "assets/gallery/beyza-espresso-tailored-suit.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Espresso Tailored Trouser Suit",
+        "description": "Deep espresso single-breasted notched-lapel blazer with flap pockets and matching high-waisted wide-leg tailored trousers.",
+        "color": "Espresso",
+        "hex": "#493027",
+        "x": 0.54,
+        "y": 0.493,
+        "is_primary": true,
+        "visual_key": "primary_f348c4635fca0606"
+      },
+      {
+        "kind": "top",
+        "name": "Espresso Fitted High-Neck Top",
+        "description": "Plain fitted dark-espresso long-sleeve high-neck top visible under the blazer.",
+        "color": "Espresso",
+        "hex": "#30221b",
+        "x": 0.526,
+        "y": 0.272,
+        "is_primary": false,
+        "visual_key": "top_espresso_plain_highneck"
+      },
+      {
+        "kind": "scarf",
+        "name": "Black Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Black",
+        "hex": "#151515",
+        "x": 0.466,
+        "y": 0.126,
+        "is_primary": false,
+        "visual_key": "scarf_black_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Espresso Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Espresso",
+        "hex": "#493027",
+        "x": 0.306,
+        "y": 0.607,
+        "is_primary": false,
+        "visual_key": "bag_espresso_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Black Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Black",
+        "hex": "#201a18",
+        "x": 0.719,
+        "y": 0.934,
+        "is_primary": false,
+        "visual_key": "shoes_black_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 44,
+    "product_id": "dd10700aabef4abc",
+    "name": "The Ivory Ribbed Knit Set",
+    "image": "assets/gallery/new-ivory-ribbed-knit-set.png",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Ribbed Knit and Wide-Leg Trouser Set",
+        "description": "Ivory mock-neck vertical-rib sweater with balloon sleeves and deep fitted cuffs, coordinated ivory high-rise wide-leg trousers and slim beige belt.",
+        "color": "Ivory",
+        "hex": "#e9d9c0",
+        "x": 0.51,
+        "y": 0.477,
+        "is_primary": true,
+        "visual_key": "primary_dd10700aabef4abc"
+      },
+      {
+        "kind": "bag",
+        "name": "Ivory Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Ivory",
+        "hex": "#dfcbb0",
+        "x": 0.314,
+        "y": 0.628,
+        "is_primary": false,
+        "visual_key": "bag_ivory_classic_flap"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d8baa0",
+        "x": 0.445,
+        "y": 0.975,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": "Footwear mostly hidden; one nude pointed toe is visible. Do not invent straps or other unseen decoration."
+  },
+  {
+    "index": 45,
+    "product_id": "356e3b3db3284328",
+    "name": "The Midnight Double-Breasted Suit",
+    "image": "assets/gallery/new-midnight-double-breasted-suit.png",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Black Gold-Button Double-Breasted Suit",
+        "description": "Black double-breasted blazer with two rows of gold-tone round buttons, peaked/notched lapels and coordinated high-rise wide-leg trousers.",
+        "color": "Black",
+        "hex": "#211f20",
+        "x": 0.52,
+        "y": 0.486,
+        "is_primary": true,
+        "visual_key": "primary_356e3b3db3284328"
+      },
+      {
+        "kind": "top",
+        "name": "Black Fitted Roll-Neck Top",
+        "description": "Plain fitted black long-sleeve roll-neck top worn beneath the double-breasted blazer.",
+        "color": "Black",
+        "hex": "#171516",
+        "x": 0.492,
+        "y": 0.26,
+        "is_primary": false,
+        "visual_key": "top_black_plain_rollneck"
+      },
+      {
+        "kind": "shoes",
+        "name": "Black Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Black",
+        "hex": "#171617",
+        "x": 0.251,
+        "y": 0.972,
+        "is_primary": false,
+        "visual_key": "shoes_black_glossy_pointed_pumps"
+      }
+    ],
+    "note": "No handbag is visible in this photograph."
+  },
+  {
+    "index": 46,
+    "product_id": "0641bb0833534697",
+    "name": "The Merlot Satin Trouser Set",
+    "image": "assets/gallery/new-merlot-satin-trouser-set.png",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Merlot Cowl Blouse and Wide-Leg Trouser Set",
+        "description": "Merlot satin-look cowl-neck blouse with full cuffed sleeves and matching-color high-waist wide-leg tailored trousers with a slim belt.",
+        "color": "Merlot",
+        "hex": "#6d2031",
+        "x": 0.51,
+        "y": 0.481,
+        "is_primary": true,
+        "visual_key": "primary_0641bb0833534697"
+      },
+      {
+        "kind": "bag",
+        "name": "Merlot Top-Handle Bag",
+        "description": "Merlot structured trapezoid top-handle bag with fine-grain-looking surface, short rounded handle, flap and centered rectangular gold-tone clasp.",
+        "color": "Merlot",
+        "hex": "#582432",
+        "x": 0.296,
+        "y": 0.638,
+        "is_primary": false,
+        "visual_key": "bag_merlot_finegrain_flap_gold_rectangle"
+      },
+      {
+        "kind": "shoes",
+        "name": "Merlot Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Merlot",
+        "hex": "#5d202b",
+        "x": 0.264,
+        "y": 0.966,
+        "is_primary": false,
+        "visual_key": "shoes_merlot_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 47,
+    "product_id": "caafcb7f7ea0475a",
+    "name": "The Merlot Tailored Set",
+    "image": "assets/gallery/new-merlot-tailored-set-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Merlot Gold-Button Tailored Trouser Suit",
+        "description": "Merlot tailored notched-lapel blazer with round gold-tone front and cuff buttons, matching belted wide-leg trousers; one coordinated suit.",
+        "color": "Merlot",
+        "hex": "#642132",
+        "x": 0.505,
+        "y": 0.471,
+        "is_primary": true,
+        "visual_key": "primary_caafcb7f7ea0475a"
+      },
+      {
+        "kind": "top",
+        "name": "Merlot Square-Neck Cami Top",
+        "description": "Plain fitted merlot square-neck sleeveless camisole visible beneath the blazer.",
+        "color": "Merlot",
+        "hex": "#682332",
+        "x": 0.553,
+        "y": 0.275,
+        "is_primary": false,
+        "visual_key": "top_merlot_plain_square_neck_cami"
+      },
+      {
+        "kind": "bag",
+        "name": "Merlot Top-Handle Bag",
+        "description": "Merlot structured trapezoid top-handle bag with fine-grain-looking surface, short rounded handle, flap and centered rectangular gold-tone clasp.",
+        "color": "Merlot",
+        "hex": "#582432",
+        "x": 0.566,
+        "y": 0.605,
+        "is_primary": false,
+        "visual_key": "bag_merlot_finegrain_flap_gold_rectangle"
+      },
+      {
+        "kind": "shoes",
+        "name": "Merlot Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Merlot",
+        "hex": "#5d202b",
+        "x": 0.517,
+        "y": 0.958,
+        "is_primary": false,
+        "visual_key": "shoes_merlot_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 48,
+    "product_id": "a26d4ac081364941",
+    "name": "The Sandstone Half-Zip Lounge Set",
+    "image": "assets/gallery/new-sandstone-half-zip-lounge-set-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Sandstone Half-Zip Lounge Set",
+        "description": "Sandstone long-sleeve half-zip collared pullover with relaxed shoulders and gathered cuffs, paired with drawstring high-waist wide-leg lounge trousers.",
+        "color": "Sandstone",
+        "hex": "#c6b19a",
+        "x": 0.485,
+        "y": 0.465,
+        "is_primary": true,
+        "visual_key": "primary_a26d4ac081364941"
+      },
+      {
+        "kind": "shoes",
+        "name": "White Ribbed-Sole Low-Top Sneakers",
+        "description": "White lace-up low-top sneakers with rounded plain toe and slightly beige ribbed rubber outsole.",
+        "color": "White",
+        "hex": "#ece7df",
+        "x": 0.529,
+        "y": 0.927,
+        "is_primary": false,
+        "visual_key": "shoes_white_plain_lowtop_cream_ribbed_outsole"
+      }
+    ],
+    "note": "No handbag is visible."
+  },
+  {
+    "index": 49,
+    "product_id": "d638ee48cacb4abe",
+    "name": "The Midnight High-Neck Suit",
+    "image": "assets/gallery/new-midnight-high-neck-suit-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Black Single-Breasted Wide-Leg Suit",
+        "description": "Black single-breasted tailored blazer with plain dark front buttons and matching high-rise wide-leg trousers; preserve slim structured shoulders.",
+        "color": "Black",
+        "hex": "#222020",
+        "x": 0.46,
+        "y": 0.486,
+        "is_primary": true,
+        "visual_key": "primary_d638ee48cacb4abe"
+      },
+      {
+        "kind": "top",
+        "name": "Black Ribbed Mock-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with short high mock neck and clean straight cuffs.",
+        "color": "Black",
+        "hex": "#171617",
+        "x": 0.537,
+        "y": 0.251,
+        "is_primary": false,
+        "visual_key": "top_black_fine_rib_mockneck"
+      },
+      {
+        "kind": "bag",
+        "name": "Black Top-Handle Bag",
+        "description": "Black structured trapezoid top-handle bag with short rounded handle, flap, fine-grain-looking side panels and tall hinged gold-tone center lock.",
+        "color": "Black",
+        "hex": "#242222",
+        "x": 0.57,
+        "y": 0.605,
+        "is_primary": false,
+        "visual_key": "bag_black_tall_gold_hinged_lock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Black Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Black",
+        "hex": "#171617",
+        "x": 0.516,
+        "y": 0.958,
+        "is_primary": false,
+        "visual_key": "shoes_black_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 50,
+    "product_id": "617d6a4389d34fe2",
+    "name": "The Ivory Soft-Structure Suit",
+    "image": "assets/gallery/new-ivory-executive-suit-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Soft-Structure Trouser Suit",
+        "description": "Ivory single-breasted notched-lapel blazer with gold-tone cuff buttons and matching high-waisted wide-leg trousers with slim tonal belt.",
+        "color": "Ivory",
+        "hex": "#e7d6bd",
+        "x": 0.485,
+        "y": 0.489,
+        "is_primary": true,
+        "visual_key": "primary_617d6a4389d34fe2"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Mock-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with short high mock neck and clean straight cuffs.",
+        "color": "Ivory",
+        "hex": "#eee3d3",
+        "x": 0.512,
+        "y": 0.281,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_mockneck"
+      },
+      {
+        "kind": "bag",
+        "name": "Ivory Top-Handle Bag",
+        "description": "Ivory structured trapezoid top-handle bag with short rounded handle, front flap and tall hinged gold-tone center lock.",
+        "color": "Ivory",
+        "hex": "#dfcbb0",
+        "x": 0.657,
+        "y": 0.624,
+        "is_primary": false,
+        "visual_key": "bag_ivory_tall_gold_hinged_lock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d4b397",
+        "x": 0.484,
+        "y": 0.963,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 51,
+    "product_id": "4d4304a128904e2f",
+    "name": "The Ivory & Taupe Tailored Set",
+    "image": "assets/gallery/new-ivory-taupe-tailored-set-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Blazer and Taupe Trouser Set",
+        "description": "Ivory longline notched-lapel tailored blazer paired with taupe high-waist wide-leg trousers and narrow brown belt; one two-tone coordinated styling.",
+        "color": "Ivory and taupe",
+        "hex": "#b29b83",
+        "x": 0.48,
+        "y": 0.479,
+        "is_primary": true,
+        "visual_key": "primary_4d4304a128904e2f"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Mock-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with short high mock neck and clean straight cuffs.",
+        "color": "Ivory",
+        "hex": "#eee3d3",
+        "x": 0.524,
+        "y": 0.273,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_mockneck"
+      },
+      {
+        "kind": "bag",
+        "name": "Taupe Top-Handle Bag",
+        "description": "Taupe structured trapezoid top-handle bag with short rounded handle, front flap and tall hinged gold-tone center lock.",
+        "color": "Taupe",
+        "hex": "#b59b7f",
+        "x": 0.405,
+        "y": 0.457,
+        "is_primary": false,
+        "visual_key": "bag_taupe_tall_gold_hinged_lock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d4b397",
+        "x": 0.626,
+        "y": 0.943,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 52,
+    "product_id": "53a68a01bbdedf19",
+    "name": "Ivory Knit & Wide-Leg Trousers",
+    "image": "assets/uploads/3758f269b89cb2b6645cb2c42be12760-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Black Gold-Cuff Tailored Trouser Suit",
+        "description": "Black notched-lapel longline single-breasted blazer with gold-tone cuff buttons and matching high-waist wide-leg trousers.",
+        "color": "Black",
+        "hex": "#232323",
+        "x": 0.49,
+        "y": 0.496,
+        "is_primary": true,
+        "visual_key": "primary_53a68a01bbdedf19"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Mock-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with short high mock neck and clean straight cuffs.",
+        "color": "Ivory",
+        "hex": "#eee3d3",
+        "x": 0.516,
+        "y": 0.268,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_mockneck"
+      },
+      {
+        "kind": "bag",
+        "name": "Ivory Top-Handle Bag",
+        "description": "Ivory structured trapezoid top-handle bag with short rounded handle, front flap and tall hinged gold-tone center lock.",
+        "color": "Ivory",
+        "hex": "#dfcbb0",
+        "x": 0.296,
+        "y": 0.635,
+        "is_primary": false,
+        "visual_key": "bag_ivory_tall_gold_hinged_lock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d4b397",
+        "x": 0.648,
+        "y": 0.972,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": "Name/image mismatch: named Ivory Knit & Wide-Leg Trousers, but photo is a black suit with an ivory ribbed high-neck top."
+  },
+  {
+    "index": 53,
+    "product_id": "0d3ef24445790a06",
+    "name": "Noir Élégance Tailored Suit",
+    "image": "assets/uploads/21102994fa83b26267c383a7d211db0e-pose-v2.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Cream Pleated Belted Maxi Dress",
+        "description": "Cream finely pleated full-length maxi dress with round high neckline, long bishop sleeves, fitted cuffs and long matching self-tie waist belt.",
+        "color": "Cream",
+        "hex": "#ecdfcc",
+        "x": 0.466,
+        "y": 0.482,
+        "is_primary": true,
+        "visual_key": "primary_0d3ef24445790a06"
+      },
+      {
+        "kind": "scarf",
+        "name": "Cream Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Cream",
+        "hex": "#e8dac6",
+        "x": 0.466,
+        "y": 0.103,
+        "is_primary": false,
+        "visual_key": "scarf_cream_soft_wrapped_hijab"
+      },
+      {
+        "kind": "bag",
+        "name": "Cream Top-Handle Bag",
+        "description": "Cream structured top-handle handbag with short rounded handle, flap and centered horizontal rectangular gold-tone lock.",
+        "color": "Cream",
+        "hex": "#e4d3bb",
+        "x": 0.646,
+        "y": 0.573,
+        "is_primary": false,
+        "visual_key": "bag_cream_horizontal_gold_lock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#ddc2a5",
+        "x": 0.53,
+        "y": 0.957,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps"
+      }
+    ],
+    "note": "Name/image mismatch: named Noir ?l?gance Tailored Suit, but photo is a cream pleated modest maxi dress."
+  },
+  {
+    "index": 54,
+    "product_id": "552959ebc1ce3e02",
+    "name": "The Espresso Tailored Suit",
+    "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Espresso Tailored Trouser Suit",
+        "description": "Espresso single-breasted longline notched-lapel blazer and matching belted high-waisted wide-leg tailored trousers.",
+        "color": "Espresso",
+        "hex": "#493027",
+        "x": 0.477,
+        "y": 0.449,
+        "is_primary": true,
+        "visual_key": "primary_552959ebc1ce3e02"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Mock-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with short high mock neck and clean straight cuffs.",
+        "color": "Ivory",
+        "hex": "#eee3d3",
+        "x": 0.506,
+        "y": 0.263,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_mockneck"
+      },
+      {
+        "kind": "bag",
+        "name": "Espresso Top-Handle Bag",
+        "description": "Structured trapezoid top-handle bag, front flap, short arched handle, centered rectangular gold-tone clasp, smooth-looking surface.",
+        "color": "Espresso",
+        "hex": "#4e342e",
+        "x": 0.288,
+        "y": 0.634,
+        "is_primary": false,
+        "visual_key": "bag_espresso_classic_flap",
+        "existing_product_id": "velora-example-espresso-bag"
+      },
+      {
+        "kind": "shoes",
+        "name": "Nude Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Nude",
+        "hex": "#d1ac94",
+        "x": 0.233,
+        "y": 0.966,
+        "is_primary": false,
+        "visual_key": "shoes_nude_glossy_pointed_pumps",
+        "existing_product_id": "velora-example-nude-court-shoes"
+      },
+      {
+        "kind": "scarf",
+        "name": "Taupe Draped Scarf",
+        "description": "Plain softly draped headscarf with gathered side folds and neat wrapped neck; show scarf alone, no head or person.",
+        "color": "Taupe",
+        "hex": "#9e8173",
+        "x": 0.516,
+        "y": 0.151,
+        "is_primary": false,
+        "visual_key": "scarf_taupe_soft_wrapped_hijab",
+        "existing_product_id": "velora-example-taupe-scarf"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 55,
+    "product_id": "1aff2611e1fe3c8b",
+    "name": "The Black Contrast Track Set",
+    "image": "assets/gallery/new-arrivals/black-stripe-track-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Black Contrast-Stripe Track Set",
+        "description": "Black zip-front stand-collar track jacket with white sleeve stripes and matching loose wide-leg trousers with parallel white side stripes.",
+        "color": "Black",
+        "hex": "#202021",
+        "x": 0.524,
+        "y": 0.471,
+        "is_primary": true,
+        "visual_key": "primary_1aff2611e1fe3c8b"
+      },
+      {
+        "kind": "top",
+        "name": "White Scoop-Neck Cami Top",
+        "description": "Plain fitted white scoop-neck sleeveless camisole visible beneath the open track jacket.",
+        "color": "White",
+        "hex": "#efefea",
+        "x": 0.508,
+        "y": 0.267,
+        "is_primary": false,
+        "visual_key": "top_white_plain_scoop_neck_cami"
+      },
+      {
+        "kind": "shoes",
+        "name": "White Paneled Low-Top Sneakers",
+        "description": "White lace-up low-top sneakers with rounded paneled toes and thick off-white cupsoles, no colored logos.",
+        "color": "White",
+        "hex": "#efede7",
+        "x": 0.545,
+        "y": 0.949,
+        "is_primary": false,
+        "visual_key": "shoes_white_paneled_lowtop_offwhite_cupsole"
+      }
+    ],
+    "note": "No handbag or scarf is visible; omit the sunglasses from product markers."
+  },
+  {
+    "index": 56,
+    "product_id": "166871dd1a4996c7",
+    "name": "The Ivory Gold-Button Knit Set",
+    "image": "assets/gallery/new-arrivals/ivory-ribbed-skirt-set.jpg",
+    "items": [
+      {
+        "kind": "garment",
+        "name": "Ivory Gold-Button Ribbed Skirt Set",
+        "description": "Ivory fine-rib collared button-front knit top with round gold-tone buttons and matching fitted long skirt with front slit and tonal belt.",
+        "color": "Ivory",
+        "hex": "#e4d2ba",
+        "x": 0.508,
+        "y": 0.476,
+        "is_primary": true,
+        "visual_key": "primary_166871dd1a4996c7"
+      },
+      {
+        "kind": "bag",
+        "name": "Ivory Top-Handle Bag",
+        "description": "Ivory structured trapezoid top-handle bag with short rounded handle, front flap and tall hinged gold-tone center lock.",
+        "color": "Ivory",
+        "hex": "#e5d6c0",
+        "x": 0.305,
+        "y": 0.633,
+        "is_primary": false,
+        "visual_key": "bag_ivory_tall_gold_hinged_lock"
+      },
+      {
+        "kind": "shoes",
+        "name": "Ivory Ankle-Strap Pointed Pumps",
+        "description": "Ivory pointed-toe high-heel court shoes with thin ankle straps and slender heels; preserve pale glossy uppers.",
+        "color": "Ivory",
+        "hex": "#e9dcc7",
+        "x": 0.598,
+        "y": 0.926,
+        "is_primary": false,
+        "visual_key": "shoes_ivory_pointed_ankle_strap_pumps"
+      }
+    ],
+    "note": ""
+  },
+  {
+    "index": 57,
+    "product_id": "257524c3ff675ac5",
+    "name": "The Chocolate Gold-Button Jacket",
+    "image": "assets/gallery/new-arrivals/chocolate-gold-button-jacket.jpg",
+    "items": [
+      {
+        "kind": "outerwear",
+        "name": "Chocolate Gold-Button Cropped Jacket",
+        "description": "Chocolate cropped straight jacket with shirt collar, two front flap patch pockets and round gold-tone front and pocket buttons.",
+        "color": "Chocolate",
+        "hex": "#4c3029",
+        "x": 0.4,
+        "y": 0.332,
+        "is_primary": true,
+        "visual_key": "primary_257524c3ff675ac5"
+      },
+      {
+        "kind": "top",
+        "name": "Ivory Ribbed Roll-Neck Top",
+        "description": "Fitted fine vertical-rib long-sleeve top with folded roll neck and clean straight cuffs.",
+        "color": "Ivory",
+        "hex": "#eee3d3",
+        "x": 0.515,
+        "y": 0.264,
+        "is_primary": false,
+        "visual_key": "top_ivory_fine_rib_rollneck"
+      },
+      {
+        "kind": "bottom",
+        "name": "Ivory Wide-Leg Tailored Trousers",
+        "description": "Ivory high-rise wide-leg tailored trousers with front crease, slant side pockets, belt loops and narrow chocolate belt.",
+        "color": "Ivory",
+        "hex": "#e5d7c4",
+        "x": 0.555,
+        "y": 0.645,
+        "is_primary": false,
+        "visual_key": "bottom_ivory_creased_wideleg_brown_belt"
+      },
+      {
+        "kind": "bag",
+        "name": "Chocolate Twin-Handle Bowling Bag",
+        "description": "Dark chocolate structured trapezoid bowling-style handbag with long twin handles, curved zip-top body, center vertical tab and gold-tone lock.",
+        "color": "Chocolate",
+        "hex": "#3d2c29",
+        "x": 0.289,
+        "y": 0.679,
+        "is_primary": false,
+        "visual_key": "bag_chocolate_bowling_twin_longhandles_gold_tab"
+      },
+      {
+        "kind": "shoes",
+        "name": "Burgundy Pointed Court Shoes",
+        "description": "Pair of glossy closed pointed-toe court shoes with slim heels and low-cut plain uppers.",
+        "color": "Burgundy",
+        "hex": "#4b2525",
+        "x": 0.743,
+        "y": 0.972,
+        "is_primary": false,
+        "visual_key": "shoes_burgundy_glossy_pointed_pumps"
+      }
+    ],
+    "note": ""
+  }
+]

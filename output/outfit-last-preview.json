@@ -1,0 +1,882 @@
+{
+  "applied": false,
+  "counts": {
+    "ready": 0,
+    "pending": 73,
+    "skipped": 0,
+    "already_applied": 13,
+    "applied_plan_changed_review_required": 0
+  },
+  "wouldCreate": 0,
+  "wouldUpdate": 0,
+  "backup": null,
+  "seedConflictsPreserved": [],
+  "outfits": [
+    {
+      "product_id": "da1ec676efabfe8d",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "6bf4acf66562795c",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "751e40965ad3a20d",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "1f89c653c09528d1",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-fe3fe696632d1d83fc45-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "8ec4205f9115385e",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "6834dbb23ca63224",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "e7adba5f950e57c3",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "18610d00ae8436f0",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "070e122b3b2a0a1d",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-f431c456f2d25afddf5a-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-ff1af3bf3c58d70f0fc6-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "9b7becdf69faba45",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "a01299210acf7627",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-a01299210acf7627-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-fc7d0c74a602e0d13c71-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "27e73ff910a71df3",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "8e861c306b731e29",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "1ae845d453aa1fce",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "e1051eeab7dcec5f",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "4b961836a5114101",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-4b961836a5114101-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "edc6983c2ab5268c",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "e57f33ce2e1562d2",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-e57f33ce2e1562d2-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "0c9f048ac48a707e",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "8896b52b23cd0824",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "40b272d4673736dc",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "72cb66b82bef90ad",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-72cb66b82bef90ad-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "0cece17490138dac",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-f8c380df476ed050184e-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "7f2d1f88d06fb45c",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "e9a2c2dfa9f8f42d",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "cbc653452f6001b8",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "66160c188c347697",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-66160c188c347697-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "a2e2bfb6aed5c608",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-ed9b4a4c7b950dd08c5d-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-d6deeaa5c3f60d4f2333-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "2f1f477ab7e06ceb",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-d2c77fc0c972e16c4688-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-dbcf2706c4cf05981c3d-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "4d51a0de1ad5592f",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-4d51a0de1ad5592f-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "2f92545d9cbed177",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "4ba84e164ca92c24",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "4e2b0a33f31318ac",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "52e502c50f2fff58",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "874d7c0173a9d2a8",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "ee63e133d40760be",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-e0e903671c4d58c1ac32-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "6664bf77ae517850",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "7b8ef54e6321f222",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "c9f06c204bdee72a",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-c9f06c204bdee72a-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "e51eb39916bcceab",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "fe93ba37bb9ba2f6",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-fe93ba37bb9ba2f6-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "f62ee6e41ab495d3",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-f62ee6e41ab495d3-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "db747bb55dc91722",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-ff1d2c8b639800c4aa4a-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "f348c4635fca0606",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-f348c4635fca0606-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-e8e4f8c58f5010df0695-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "dd10700aabef4abc",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-dd10700aabef4abc-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "356e3b3db3284328",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-356e3b3db3284328-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "0641bb0833534697",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "caafcb7f7ea0475a",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-caafcb7f7ea0475a-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "a26d4ac081364941",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-a26d4ac081364941-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-f69d57c4b3b365330f61-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "d638ee48cacb4abe",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-d638ee48cacb4abe-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-f9e922a0180cbd699da1-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "617d6a4389d34fe2",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-617d6a4389d34fe2-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "4d4304a128904e2f",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-4d4304a128904e2f-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "53a68a01bbdedf19",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-53a68a01bbdedf19-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "0d3ef24445790a06",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "552959ebc1ce3e02",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "1aff2611e1fe3c8b",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-f8b26b8405d2dc275693-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "166871dd1a4996c7",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "257524c3ff675ac5",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "5750c07e3cbf0922",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-5750c07e3cbf0922-v1.png",
+          "reason": "image_not_approved"
+        },
+        {
+          "asset": "assets/generated-items/item-ec31700d07745f2858cf-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-d0173c6258769a97e088-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "f84bedf34737978e",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-f84bedf34737978e-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-d226adcfb5b3fc6e1a4c-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-fc4c03ec75230caa4500-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "14c77cfe7ca32f1c",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-fc2c02e0cb14e12918f3-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "dcac45b76ac443e0",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-dcac45b76ac443e0-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "24a9406125222ec8",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-c4be6ef00a85a97f9f96-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "637245ab86907188",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-637245ab86907188-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "6e74347edcea55dd",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-6e74347edcea55dd-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-e10b2a26108795d5aada-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "ee173795c6a09788",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-ee173795c6a09788-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "f56dfe081b1b14e0",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-f56dfe081b1b14e0-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "79e0b7a097df924b",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-79e0b7a097df924b-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "39baac639a81b1b5",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "f14603c04434f518",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-f14603c04434f518-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "74e5ecf28c897588",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-74e5ecf28c897588-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-d124506f8321055790bc-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-e85c6cd35b3eb3d8c075-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "dd6d6bac12f4b6d4",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-dd6d6bac12f4b6d4-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "52137095165dcac4",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-52137095165dcac4-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "4f74d57ae172a738",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-4f74d57ae172a738-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-eab488f36b9c569f8af3-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "6a22b234a18f036d",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-6a22b234a18f036d-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-d822cc735b7032c230df-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "1efd9419870c45d5",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "bab9b9c87f0abba0",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-bab9b9c87f0abba0-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "a505c9f975120e21",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-a505c9f975120e21-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-e4920025d4fba457a2fb-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "9ef1f074154c608c",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-9ef1f074154c608c-v1.png",
+          "reason": "image_missing"
+        },
+        {
+          "asset": "assets/generated-items/item-f174ba9ec4e5f772deab-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "5aa1a4c95b8b43cf",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-5aa1a4c95b8b43cf-v1.png",
+          "reason": "image_not_approved"
+        }
+      ]
+    },
+    {
+      "product_id": "b21271819fbf773c",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-b21271819fbf773c-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "17ef8e76f3900391",
+      "status": "already_applied"
+    },
+    {
+      "product_id": "d48662bc960d8ad2",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-d48662bc960d8ad2-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "0499c134586039c3",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/item-c8d7df974eab370755e7-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "b4ffbe06207e3314",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-b4ffbe06207e3314-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    },
+    {
+      "product_id": "7782745d0efd8c24",
+      "status": "pending",
+      "reasons": [
+        {
+          "asset": "assets/generated-items/garment-7782745d0efd8c24-v1.png",
+          "reason": "image_missing"
+        }
+      ]
+    }
+  ]
+}

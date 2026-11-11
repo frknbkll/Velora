@@ -246,7 +246,8 @@
 
       const image = document.createElement("img");
       image.className = "vacancy-artwork";
-      image.src = `assets/careers/${vacancy.slug}.jpg`;
+      if (window.VeloraImageSources) window.VeloraImageSources.apply(image, `assets/careers/${vacancy.slug}.jpg`, "(max-width: 650px) 90vw, 33vw");
+      else image.src = `assets/careers/${vacancy.slug}.jpg`;
       image.alt = vacancy.photoAlt;
       image.width = 600;
       image.height = 750;
@@ -323,7 +324,8 @@
     element("p", "vacancy-detail-lead", vacancy.introduction)
   );
   const heroImage = element("img", "vacancy-detail-image");
-  heroImage.src = `assets/careers/${vacancy.slug}.jpg`;
+  if (window.VeloraImageSources) window.VeloraImageSources.apply(heroImage, `assets/careers/${vacancy.slug}.jpg`, "(max-width: 760px) 100vw, 50vw");
+  else heroImage.src = `assets/careers/${vacancy.slug}.jpg`;
   heroImage.alt = vacancy.photoAlt;
   heroImage.width = 600;
   heroImage.height = 750;
@@ -345,7 +347,8 @@
   const contact = element("section", "vacancy-contact vacancy-hr-contact");
   contact.setAttribute("aria-labelledby", "vacancy-hr-heading");
   const contactImage = element("img", "vacancy-hr-contact-photo");
-  contactImage.src = hrContact.photo;
+  if (window.VeloraImageSources) window.VeloraImageSources.apply(contactImage, hrContact.photo, "(max-width: 650px) 40vw, 250px");
+  else contactImage.src = hrContact.photo;
   contactImage.alt = `Illustrative portrait of ${hrContact.name}`;
   contactImage.width = 768;
   contactImage.height = 960;

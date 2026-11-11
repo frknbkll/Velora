@@ -1,0 +1,8 @@
+{
+  "id": "nude-pointed-court-shoes-v1",
+  "reference": "C:\\Users\\Furkan\\Documents\\Velora\\assets\\gallery\\new-arrivals\\espresso-tailored-suit.jpg",
+  "prompt": "Use case: product-mockup. Asset type: separate fashion e-commerce item photograph for Velora. Input image 1 is the exact product reference. Primary request: generate a photorealistic product-only studio photograph of ONE MATCHING PAIR of the nude beige pointed-toe high-heeled court shoes worn by the model. Preserve their closed pointed toes, glossy nude appearance and slim heel style. Show the shoes alone from a flattering three-quarter view, one slightly behind the other, complete toes and heels fully visible. Do not turn them into sandals, platforms, boots or sneakers. Seamless soft off-white studio background, gentle realistic contact shadows, balanced close portrait framing, item entirely in frame with a modest margin. Natural restrained studio light and real textures. Exclude the model, all clothing and accessories other than the requested item, text, labels, prices, logos and watermarks. Avoid CGI, artificial rendering, warped geometry, plastic sheen, melted fabric, duplicated items beyond a pair of shoes, excessive smoothing, oversaturation, blur and excessive HDR. Faithfully preserve the reference design; do not invent a different product.",
+  "output": "assets/generated-items/nude-pointed-court-shoes-v1.png",
+  "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1aa93-c4dc-7bf2-a8eb-e2529f2b3d6e\\exec-7e3c5c26-80eb-4fd2-af05-ff381029d94e.png",
+  "mode": "built-in"
+}

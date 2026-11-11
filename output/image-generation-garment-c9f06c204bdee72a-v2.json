@@ -1,0 +1,12 @@
+{
+  "id": "garment-c9f06c204bdee72a-v2",
+  "output": "assets/generated-items/garment-c9f06c204bdee72a-v2.png",
+  "source": "C:\\Users\\Furkan\\.codex\\generated_images\\01a1aa93-c4dc-7bf2-a8eb-e2529f2b3d6e\\exec-00dc08e3-1a9b-4575-a8d0-7bc6bb8ee2b5.png",
+  "reference": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+  "referenced_images": [
+    "assets/generated-items/garment-c9f06c204bdee72a-v1.png",
+    "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg"
+  ],
+  "mode": "built-in",
+  "prompt": "Use case: precise-object-edit. Asset type: standalone fashion product photo. Image 1 is the product photo to edit; image 2 is the original outfit reference for garment identity. Make ONLY this correction to image 1: remove the tiny collar label and every trace of printed text at the inside neckline. Replace it with continuous plain ivory ribbed knit matching the existing top. Preserve the entire cardigan, ribbed top and taupe trousers, seam lines, drape, proportions, colors, framing, off-white studio background and photographic texture exactly. No person, body, mannequin, accessories, logo, text, watermark or added object. Keep all three pieces fully visible."
+}

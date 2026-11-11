@@ -1,0 +1,46 @@
+{
+  "auditedDate": "2026-11-09",
+  "source": "Local published catalog at /api/catalog; original asset files inspected read-only",
+  "publishedProducts": 89,
+  "uniqueCoverPaths": 86,
+  "missingCoverFiles": [],
+  "identicalFileContentAcrossDifferentPaths": [],
+  "sharedCoverGroups": [
+    {
+      "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg",
+      "outfitProductId": "552959ebc1ce3e02",
+      "outfitProductName": "The Espresso Tailored Suit",
+      "accessories": [
+        {"id": "velora-example-espresso-bag", "name": "The Espresso Top-Handle Bag", "priceEUR": 49},
+        {"id": "velora-example-nude-court-shoes", "name": "The Nude Pointed Court Shoes", "priceEUR": 59},
+        {"id": "velora-example-taupe-scarf", "name": "The Taupe Draped Scarf", "priceEUR": 19}
+      ],
+      "recommendedAction": "Keep the full styling photograph on the existing outfit product. Replace each accessory cover and gallery with its own generated item-only photo, preserving accessory IDs and current prices. Keep outfit markers linked to those same IDs. Remove outfit-only marker coordinates from accessory packshot records."
+    }
+  ],
+  "duplicateTitlesForReviewOnly": [
+    {
+      "title": "The Chocolate Longline Blazer",
+      "products": [
+        {"id": "6834dbb23ca63224", "image": "assets/gallery/derya-chocolate-tailoring.jpg", "priceEUR": 19.95},
+        {"id": "637245ab86907188", "image": "assets/gallery/new-arrivals/chocolate-longline-blazer.jpg", "priceEUR": 99}
+      ],
+      "finding": "Different photos and visibly different outerwear lengths/styling. Matching titles alone do not justify merging the records."
+    },
+    {
+      "title": "The Espresso Tailored Suit",
+      "products": [
+        {"id": "f348c4635fca0606", "image": "assets/gallery/beyza-espresso-tailored-suit.jpg", "priceEUR": 59.99},
+        {"id": "552959ebc1ce3e02", "image": "assets/gallery/new-arrivals/espresso-tailored-suit.jpg", "priceEUR": 149}
+      ],
+      "finding": "Different source photos, styling, accessories and prices. There is no verified SKU/garment equivalence; retain both unless the owner confirms they are the same item."
+    }
+  ],
+  "implementationNotes": [
+    "The current shared-image issue can be fixed through asset and product-record updates; no frontend grouping or schema change is required.",
+    "Do not collapse physically separate bag, shoes and scarf records into one SKU; preserving IDs keeps existing marker links, saved bags, bookmarks and stock references valid.",
+    "Preserve accessory-specific color_key values so reused styling photographs do not inherit outfit color presets.",
+    "Do not hide or merge arbitrary products simply because titles or image paths match; replacing the incorrect accessory images resolves the observed duplicate outfit cards.",
+    "If the user confirms every outfit should be split into individual items, that is a separate broader generation/mapping pass across the remaining distinct outfit photographs."
+  ]
+}

@@ -1,0 +1,1086 @@
+{
+  "entries": [
+    {
+      "id": "da1ec676efabfe8d",
+      "name": "The Ivory Linen Set",
+      "photo": "assets/gallery/colors/derya-ivory-linen-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "da1ec676efabfe8d",
+      "name": "The Ivory Linen Set",
+      "photo": "assets/gallery/colors/derya-ivory-linen-set-terracotta-pose-pose-v2.jpg",
+      "color": "Terracotta",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "6bf4acf66562795c",
+      "name": "The Sage Linen Set",
+      "photo": "assets/gallery/colors/derya-sage-linen-set-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "6bf4acf66562795c",
+      "name": "The Sage Linen Set",
+      "photo": "assets/gallery/colors/derya-sage-linen-set-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "751e40965ad3a20d",
+      "name": "The Ivory Tailored Look",
+      "photo": "assets/gallery/colors/derya-ivory-tailored-look-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "751e40965ad3a20d",
+      "name": "The Ivory Tailored Look",
+      "photo": "assets/gallery/colors/derya-ivory-tailored-look-black-pose-pose-v2.jpg",
+      "color": "Black",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "1f89c653c09528d1",
+      "name": "The Emerald Tailored Suit",
+      "photo": "assets/gallery/colors/derya-emerald-tailoring-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "1f89c653c09528d1",
+      "name": "The Emerald Tailored Suit",
+      "photo": "assets/gallery/colors/derya-emerald-tailoring-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "8ec4205f9115385e",
+      "name": "The Ivory Power Suit",
+      "photo": "assets/gallery/colors/derya-ivory-tailoring-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "8ec4205f9115385e",
+      "name": "The Ivory Power Suit",
+      "photo": "assets/gallery/colors/derya-ivory-tailoring-blue-pose-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "6834dbb23ca63224",
+      "name": "The Chocolate Longline Blazer",
+      "photo": "assets/gallery/colors/velora-chocolate-longline-blazer-pose.jpg",
+      "color": "Espresso",
+      "x": 0.43,
+      "y": 0.34,
+      "label": "Jacket"
+    },
+    {
+      "id": "6834dbb23ca63224",
+      "name": "The Chocolate Longline Blazer",
+      "photo": "assets/gallery/colors/derya-chocolate-tailoring-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "Coat"
+    },
+    {
+      "id": "6834dbb23ca63224",
+      "name": "The Chocolate Longline Blazer",
+      "photo": "assets/gallery/colors/derya-chocolate-tailoring-sage-pose-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "Coat"
+    },
+    {
+      "id": "e7adba5f950e57c3",
+      "name": "The Olive Trench Ensemble",
+      "photo": "assets/gallery/colors/derya-olive-trench-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "e7adba5f950e57c3",
+      "name": "The Olive Trench Ensemble",
+      "photo": "assets/gallery/colors/derya-olive-trench-camel-pose-pose-v2.jpg",
+      "color": "Camel",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "18610d00ae8436f0",
+      "name": "The Taupe Tailored Set",
+      "photo": "assets/gallery/colors/velora-taupe-tailored-set-pose.jpg",
+      "color": "Taupe",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "18610d00ae8436f0",
+      "name": "The Taupe Tailored Set",
+      "photo": "assets/gallery/colors/derya-taupe-tailoring-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "18610d00ae8436f0",
+      "name": "The Taupe Tailored Set",
+      "photo": "assets/gallery/colors/derya-taupe-tailoring-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "070e122b3b2a0a1d",
+      "name": "The Chocolate Blazer Co-ord",
+      "photo": "assets/gallery/colors/derya-chocolate-coord-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "070e122b3b2a0a1d",
+      "name": "The Chocolate Blazer Co-ord",
+      "photo": "assets/gallery/colors/derya-chocolate-coord-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "9b7becdf69faba45",
+      "name": "The Rosewater Occasion Abaya",
+      "photo": "assets/gallery/colors/rosewater-occasion-abaya-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "9b7becdf69faba45",
+      "name": "The Rosewater Occasion Abaya",
+      "photo": "assets/gallery/colors/rosewater-occasion-abaya-lavender-pose-pose-v2.jpg",
+      "color": "Lavender",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "a01299210acf7627",
+      "name": "The Sandstone Drape Abaya",
+      "photo": "assets/gallery/colors/modest-drape-abaya-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "a01299210acf7627",
+      "name": "The Sandstone Drape Abaya",
+      "photo": "assets/gallery/colors/modest-drape-abaya-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "27e73ff910a71df3",
+      "name": "The Espresso Evening Abaya",
+      "photo": "assets/gallery/colors/espresso-evening-abaya-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "27e73ff910a71df3",
+      "name": "The Espresso Evening Abaya",
+      "photo": "assets/gallery/colors/espresso-evening-abaya-emerald-pose-pose-v2.jpg",
+      "color": "Emerald",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "8e861c306b731e29",
+      "name": "The Mocha Belted Abaya",
+      "photo": "assets/gallery/colors/mocha-belted-abaya-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "8e861c306b731e29",
+      "name": "The Mocha Belted Abaya",
+      "photo": "assets/gallery/colors/mocha-belted-abaya-black-pose-pose-v2.jpg",
+      "color": "Black",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "1ae845d453aa1fce",
+      "name": "The Champagne Occasion Abaya",
+      "photo": "assets/gallery/colors/champagne-occasion-abaya-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "1ae845d453aa1fce",
+      "name": "The Champagne Occasion Abaya",
+      "photo": "assets/gallery/colors/champagne-occasion-abaya-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "e1051eeab7dcec5f",
+      "name": "The Espresso Trench Look",
+      "photo": "assets/gallery/colors/espresso-trench-look-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.38,
+      "y": 0.45,
+      "label": "Coat"
+    },
+    {
+      "id": "e1051eeab7dcec5f",
+      "name": "The Espresso Trench Look",
+      "photo": "assets/gallery/colors/espresso-trench-look-stone-pose-pose-v2.jpg",
+      "color": "Stone",
+      "x": 0.38,
+      "y": 0.5,
+      "label": "Coat"
+    },
+    {
+      "id": "4b961836a5114101",
+      "name": "The Stone Tailored Look",
+      "photo": "assets/gallery/colors/stone-tailored-look-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "4b961836a5114101",
+      "name": "The Stone Tailored Look",
+      "photo": "assets/gallery/colors/stone-tailored-look-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "a576c37940c1e9e5",
+      "name": "The Sculpted Wrap Blouse",
+      "photo": "assets/gallery/colors/look-09-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Wrapped outfit"
+    },
+    {
+      "id": "a576c37940c1e9e5",
+      "name": "The Sculpted Wrap Blouse",
+      "photo": "assets/gallery/colors/look-09-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Wrapped outfit"
+    },
+    {
+      "id": "9f7d06414a165d1a",
+      "name": "The Heritage Blazer",
+      "photo": "assets/gallery/colors/look-11-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.4,
+      "y": 0.38,
+      "label": "Blazer"
+    },
+    {
+      "id": "9f7d06414a165d1a",
+      "name": "The Heritage Blazer",
+      "photo": "assets/gallery/colors/look-11-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.43,
+      "y": 0.34,
+      "label": "Blazer"
+    },
+    {
+      "id": "c4ddabd11da2e603",
+      "name": "The After-Hours Power Suit",
+      "photo": "assets/gallery/colors/look-12-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "c4ddabd11da2e603",
+      "name": "The After-Hours Power Suit",
+      "photo": "assets/gallery/colors/look-12-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "edc6983c2ab5268c",
+      "name": "The City-Cream Trouser Set",
+      "photo": "assets/gallery/colors/derya-city-cream-look-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "edc6983c2ab5268c",
+      "name": "The City-Cream Trouser Set",
+      "photo": "assets/gallery/colors/derya-city-cream-look-blue-pose-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "e57f33ce2e1562d2",
+      "name": "The Cloud-Knit Lounge Set",
+      "photo": "assets/gallery/colors/derya-soft-knit-lounge-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "e57f33ce2e1562d2",
+      "name": "The Cloud-Knit Lounge Set",
+      "photo": "assets/gallery/colors/derya-soft-knit-lounge-set-rose-pose-pose-v2.jpg",
+      "color": "Rose",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "0c9f048ac48a707e",
+      "name": "The Rose-Stripe Pajama Set",
+      "photo": "assets/gallery/colors/derya-rose-stripe-pajama-set-blue-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "0c9f048ac48a707e",
+      "name": "The Rose-Stripe Pajama Set",
+      "photo": "assets/gallery/colors/derya-rose-stripe-pajama-set-lavender-pose-pose-v2.jpg",
+      "color": "Lavender",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "8896b52b23cd0824",
+      "name": "The Ivory Tie-Neck Set",
+      "photo": "assets/gallery/colors/luna-ivory-tie-neck-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "8896b52b23cd0824",
+      "name": "The Ivory Tie-Neck Set",
+      "photo": "assets/gallery/colors/luna-ivory-tie-neck-set-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "40b272d4673736dc",
+      "name": "The Cloud-Knit Layer Set",
+      "photo": "assets/gallery/colors/luna-cloud-knit-layer-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "40b272d4673736dc",
+      "name": "The Cloud-Knit Layer Set",
+      "photo": "assets/gallery/colors/luna-cloud-knit-layer-set-mocha-pose-pose-v2.jpg",
+      "color": "Mocha",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "72cb66b82bef90ad",
+      "name": "The Taupe Satin Lounge Set",
+      "photo": "assets/gallery/colors/luna-taupe-satin-lounge-set-hd-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.3,
+      "y": 0.4,
+      "label": "Set"
+    },
+    {
+      "id": "72cb66b82bef90ad",
+      "name": "The Taupe Satin Lounge Set",
+      "photo": "assets/gallery/colors/luna-taupe-satin-lounge-set-hd-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.6,
+      "y": 0.27,
+      "label": "Set"
+    },
+    {
+      "id": "0cece17490138dac",
+      "name": "The Weekend Denim Look",
+      "photo": "assets/gallery/colors/luna-weekend-denim-look-hd-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Trousers"
+    },
+    {
+      "id": "0cece17490138dac",
+      "name": "The Weekend Denim Look",
+      "photo": "assets/gallery/colors/luna-weekend-denim-look-hd-indigo-pose-pose-v2.jpg",
+      "color": "Indigo",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Trousers"
+    },
+    {
+      "id": "7f2d1f88d06fb45c",
+      "name": "The Midnight Satin Gown",
+      "photo": "assets/gallery/colors/luna-midnight-satin-gown-hd-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "7f2d1f88d06fb45c",
+      "name": "The Midnight Satin Gown",
+      "photo": "assets/gallery/colors/luna-midnight-satin-gown-hd-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "e9a2c2dfa9f8f42d",
+      "name": "The Champagne Satin Evening Dress",
+      "photo": "assets/gallery/colors/luna-champagne-satin-evening-dress-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "e9a2c2dfa9f8f42d",
+      "name": "The Champagne Satin Evening Dress",
+      "photo": "assets/gallery/colors/luna-champagne-satin-evening-dress-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "e9a2c2dfa9f8f42d",
+      "name": "The Champagne Satin Evening Dress",
+      "photo": "assets/gallery/colors/velora-wildflower-evening-dress.jpg",
+      "color": "Floral",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "cbc653452f6001b8",
+      "name": "The Ivory Tailored Suit",
+      "photo": "assets/gallery/colors/luna-ivory-tailored-suit-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "cbc653452f6001b8",
+      "name": "The Ivory Tailored Suit",
+      "photo": "assets/gallery/colors/luna-ivory-tailored-suit-blue-pose-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "66160c188c347697",
+      "name": "The High-Neck Ivory Trouser Set",
+      "photo": "assets/gallery/colors/luna-high-neck-ivory-trouser-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "66160c188c347697",
+      "name": "The High-Neck Ivory Trouser Set",
+      "photo": "assets/gallery/colors/luna-high-neck-ivory-trouser-set-rose-pose-pose-v2.jpg",
+      "color": "Rose",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "a2e2bfb6aed5c608",
+      "name": "The Beige Trench Tailored Look",
+      "photo": "assets/gallery/colors/luna-beige-trench-tailored-look-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.4,
+      "y": 0.45,
+      "label": "Coat"
+    },
+    {
+      "id": "a2e2bfb6aed5c608",
+      "name": "The Beige Trench Tailored Look",
+      "photo": "assets/gallery/colors/luna-beige-trench-tailored-look-chocolate-pose-pose-v2.jpg",
+      "color": "Chocolate",
+      "x": 0.4,
+      "y": 0.4,
+      "label": "Coat"
+    },
+    {
+      "id": "a2e2bfb6aed5c608",
+      "name": "The Beige Trench Tailored Look",
+      "photo": "assets/gallery/colors/velora-beige-trench-hijab-pose.jpg",
+      "color": "Camel",
+      "x": 0.4,
+      "y": 0.45,
+      "label": "Coat"
+    },
+    {
+      "id": "2f1f477ab7e06ceb",
+      "name": "The Ivory Executive Suit",
+      "photo": "assets/gallery/colors/victoria-ivory-executive-suit-red-pose-v2.jpg",
+      "color": "Red",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "2f1f477ab7e06ceb",
+      "name": "The Ivory Executive Suit",
+      "photo": "assets/gallery/colors/victoria-ivory-executive-suit-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "4d51a0de1ad5592f",
+      "name": "The Cloud Ribbed Lounge Set",
+      "photo": "assets/gallery/colors/velora-cloud-ribbed-lounge-pose.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "4d51a0de1ad5592f",
+      "name": "The Cloud Ribbed Lounge Set",
+      "photo": "assets/gallery/colors/victoria-cloud-ribbed-lounge-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "4d51a0de1ad5592f",
+      "name": "The Cloud Ribbed Lounge Set",
+      "photo": "assets/gallery/colors/victoria-cloud-ribbed-lounge-set-rose-pose-pose-v2.jpg",
+      "color": "Rose",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "2f92545d9cbed177",
+      "name": "The Off-Shoulder Denim Look",
+      "photo": "assets/gallery/colors/victoria-off-shoulder-denim-look-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "2f92545d9cbed177",
+      "name": "The Off-Shoulder Denim Look",
+      "photo": "assets/gallery/colors/victoria-off-shoulder-denim-look-indigo-pose-pose-v2.jpg",
+      "color": "Indigo",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "4ba84e164ca92c24",
+      "name": "The Soft-Neutral Knit Set",
+      "photo": "assets/gallery/colors/victoria-soft-neutral-knit-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "4ba84e164ca92c24",
+      "name": "The Soft-Neutral Knit Set",
+      "photo": "assets/gallery/colors/victoria-soft-neutral-knit-set-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "4e2b0a33f31318ac",
+      "name": "The Ivory Knit-Tailored Set",
+      "photo": "assets/gallery/colors/velora-ivory-knit-tailored-set-pose.jpg",
+      "color": "Champagne",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "4e2b0a33f31318ac",
+      "name": "The Ivory Knit-Tailored Set",
+      "photo": "assets/gallery/colors/victoria-ivory-knit-tailored-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "4e2b0a33f31318ac",
+      "name": "The Ivory Knit-Tailored Set",
+      "photo": "assets/gallery/colors/victoria-ivory-knit-tailored-set-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "52e502c50f2fff58",
+      "name": "The Champagne Halter Gown",
+      "photo": "assets/gallery/colors/victoria-champagne-halter-gown-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "52e502c50f2fff58",
+      "name": "The Champagne Halter Gown",
+      "photo": "assets/gallery/colors/victoria-champagne-halter-gown-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "874d7c0173a9d2a8",
+      "name": "The Midnight Satin Slip Gown",
+      "photo": "assets/gallery/colors/velora-midnight-satin-slip-gown-pose.jpg",
+      "color": "Black",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "874d7c0173a9d2a8",
+      "name": "The Midnight Satin Slip Gown",
+      "photo": "assets/gallery/colors/victoria-midnight-satin-slip-gown-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.4,
+      "y": 0.43,
+      "label": "Coat"
+    },
+    {
+      "id": "874d7c0173a9d2a8",
+      "name": "The Midnight Satin Slip Gown",
+      "photo": "assets/gallery/colors/victoria-midnight-satin-slip-gown-camel-pose-pose-v2.jpg",
+      "color": "Camel",
+      "x": 0.4,
+      "y": 0.52,
+      "label": "Coat"
+    },
+    {
+      "id": "874d7c0173a9d2a8",
+      "name": "The Midnight Satin Slip Gown",
+      "photo": "assets/gallery/colors/velora-midnight-gown-chocolate.jpg",
+      "color": "Chocolate",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Dress"
+    },
+    {
+      "id": "ee63e133d40760be",
+      "name": "The Ivory Trench Ensemble",
+      "photo": "assets/gallery/colors/victoria-ivory-trench-ensemble-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "ee63e133d40760be",
+      "name": "The Ivory Trench Ensemble",
+      "photo": "assets/gallery/colors/victoria-ivory-trench-ensemble-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "6664bf77ae517850",
+      "name": "The Champagne Blouse & Black Trousers",
+      "photo": "assets/gallery/colors/victoria-champagne-blouse-black-trousers-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "6664bf77ae517850",
+      "name": "The Champagne Blouse & Black Trousers",
+      "photo": "assets/gallery/colors/victoria-champagne-blouse-black-trousers-blue-pose-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "7b8ef54e6321f222",
+      "name": "The Taupe Knit & Trouser Set",
+      "photo": "assets/gallery/colors/beyza-taupe-knit-trouser-look-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "7b8ef54e6321f222",
+      "name": "The Taupe Knit & Trouser Set",
+      "photo": "assets/gallery/colors/beyza-taupe-knit-trouser-look-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "7b8ef54e6321f222",
+      "name": "The Taupe Knit & Trouser Set",
+      "photo": "assets/gallery/colors/velora-taupe-trouser-set-hijab.jpg",
+      "color": "Chocolate",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "c9f06c204bdee72a",
+      "name": "The Ivory Cardigan Trouser Set",
+      "photo": "assets/gallery/colors/beyza-ivory-cardigan-trouser-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "c9f06c204bdee72a",
+      "name": "The Ivory Cardigan Trouser Set",
+      "photo": "assets/gallery/colors/beyza-ivory-cardigan-trouser-set-rose-pose-pose-v2.jpg",
+      "color": "Rose",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "e51eb39916bcceab",
+      "name": "The Ivory Longline Coat",
+      "photo": "assets/gallery/colors/beyza-ivory-longline-coat-look-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.4,
+      "y": 0.5,
+      "label": "Coat"
+    },
+    {
+      "id": "e51eb39916bcceab",
+      "name": "The Ivory Longline Coat",
+      "photo": "assets/gallery/colors/beyza-ivory-longline-coat-look-camel-pose-pose-v2.jpg",
+      "color": "Camel",
+      "x": 0.4,
+      "y": 0.45,
+      "label": "Coat"
+    },
+    {
+      "id": "fe93ba37bb9ba2f6",
+      "name": "The Taupe Longline Coat Set",
+      "photo": "assets/gallery/colors/beyza-taupe-longline-coat-set-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "fe93ba37bb9ba2f6",
+      "name": "The Taupe Longline Coat Set",
+      "photo": "assets/gallery/colors/beyza-taupe-longline-coat-set-burgundy-pose-pose-v2.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "f62ee6e41ab495d3",
+      "name": "The Champagne Satin Occasion Gown",
+      "photo": "assets/gallery/colors/beyza-champagne-satin-occasion-gown-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.52,
+      "y": 0.67,
+      "label": "Set"
+    },
+    {
+      "id": "f62ee6e41ab495d3",
+      "name": "The Champagne Satin Occasion Gown",
+      "photo": "assets/gallery/colors/beyza-champagne-satin-occasion-gown-navy-pose-pose-v2.jpg",
+      "color": "Navy",
+      "x": 0.52,
+      "y": 0.67,
+      "label": "Set"
+    },
+    {
+      "id": "db747bb55dc91722",
+      "name": "The Weekend Denim Jacket Look",
+      "photo": "assets/gallery/colors/beyza-weekend-denim-jacket-look-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.4,
+      "y": 0.34,
+      "label": "Jacket"
+    },
+    {
+      "id": "db747bb55dc91722",
+      "name": "The Weekend Denim Jacket Look",
+      "photo": "assets/gallery/colors/beyza-weekend-denim-jacket-look-indigo-pose-pose-v2.jpg",
+      "color": "Indigo",
+      "x": 0.4,
+      "y": 0.34,
+      "label": "Jacket"
+    },
+    {
+      "id": "f348c4635fca0606",
+      "name": "The Espresso Tailored Suit",
+      "photo": "assets/gallery/colors/beyza-espresso-tailored-suit-ivory-pose-v2.jpg",
+      "color": "Ivory",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "f348c4635fca0606",
+      "name": "The Espresso Tailored Suit",
+      "photo": "assets/gallery/colors/beyza-espresso-tailored-suit-blue-pose-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "f348c4635fca0606",
+      "name": "The Espresso Tailored Suit",
+      "photo": "assets/gallery/colors/velora-espresso-suit-burgundy.jpg",
+      "color": "Burgundy",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "dd10700aabef4abc",
+      "name": "The Ivory Ribbed Knit Set",
+      "photo": "assets/gallery/colors/ivory-ribbed-knit-set-pure-white-pose-v2.jpg",
+      "color": "Pure White",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "dd10700aabef4abc",
+      "name": "The Ivory Ribbed Knit Set",
+      "photo": "assets/gallery/colors/ivory-ribbed-knit-set-navy-blue-pose-v2.jpg",
+      "color": "Navy Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "dd10700aabef4abc",
+      "name": "The Ivory Ribbed Knit Set",
+      "photo": "assets/gallery/colors/ivory-ribbed-knit-set-black-pose-v2.jpg",
+      "color": "Black",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "dd10700aabef4abc",
+      "name": "The Ivory Ribbed Knit Set",
+      "photo": "assets/gallery/colors/ivory-ribbed-knit-set-charcoal-gray-pose-v2.jpg",
+      "color": "Charcoal Gray",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Set"
+    },
+    {
+      "id": "356e3b3db3284328",
+      "name": "The Midnight Double-Breasted Suit",
+      "photo": "assets/gallery/colors/midnight-double-breasted-suit-pure-white-pose-v2.jpg",
+      "color": "Pure White",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "356e3b3db3284328",
+      "name": "The Midnight Double-Breasted Suit",
+      "photo": "assets/gallery/colors/midnight-double-breasted-suit-navy-blue-pose-v2.jpg",
+      "color": "Navy Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "356e3b3db3284328",
+      "name": "The Midnight Double-Breasted Suit",
+      "photo": "assets/gallery/colors/velora-midnight-suit-navy-pose.jpg",
+      "color": "Navy Blue",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "356e3b3db3284328",
+      "name": "The Midnight Double-Breasted Suit",
+      "photo": "assets/gallery/colors/midnight-double-breasted-suit-yellow-pose-v2.jpg",
+      "color": "Yellow",
+      "x": 0.5,
+      "y": 0.5,
+      "label": "Suit"
+    },
+    {
+      "id": "0641bb0833534697",
+      "name": "The Merlot Satin Trouser Set",
+      "photo": "assets/gallery/colors/merlot-satin-trouser-set-midnight-blue-pose-v2.jpg",
+      "color": "Midnight Blue",
+      "x": 0.42,
+      "y": 0.8,
+      "label": "Set"
+    },
+    {
+      "id": "0641bb0833534697",
+      "name": "The Merlot Satin Trouser Set",
+      "photo": "assets/gallery/colors/merlot-satin-trouser-set-charcoal-gray-pose-v2.jpg",
+      "color": "Charcoal Gray",
+      "x": 0.5,
+      "y": 0.62,
+      "label": "Set"
+    },
+    {
+      "id": "0641bb0833534697",
+      "name": "The Merlot Satin Trouser Set",
+      "photo": "assets/gallery/colors/merlot-satin-trouser-set-dark-green-pose-v2.jpg",
+      "color": "Dark Green",
+      "x": 0.5,
+      "y": 0.6,
+      "label": "Set"
+    },
+    {
+      "id": "a1b2c3d4e5f6a7b8",
+      "name": "The Chocolate Wide-Leg Trousers",
+      "photo": "assets/gallery/colors/merlot-satin-trouser-set-midnight-blue-pose-v2.jpg",
+      "color": "Midnight Blue",
+      "x": 0.42,
+      "y": 0.8,
+      "label": "Trousers"
+    },
+    {
+      "id": "a1b2c3d4e5f6a7b8",
+      "name": "The Chocolate Wide-Leg Trousers",
+      "photo": "assets/gallery/colors/merlot-satin-trouser-set-charcoal-gray-pose-v2.jpg",
+      "color": "Charcoal Gray",
+      "x": 0.48,
+      "y": 0.68,
+      "label": "Trousers"
+    },
+    {
+      "id": "a1b2c3d4e5f6a7b8",
+      "name": "The Chocolate Wide-Leg Trousers",
+      "photo": "assets/gallery/colors/merlot-satin-trouser-set-dark-green-pose-v2.jpg",
+      "color": "Dark Green",
+      "x": 0.48,
+      "y": 0.68,
+      "label": "Trousers"
+    },
+    {
+      "id": "f9e8d7c6b5a44321",
+      "name": "The Ivory Wrap Blouse",
+      "photo": "assets/gallery/colors/victoria-champagne-blouse-black-trousers-sage-pose-v2.jpg",
+      "color": "Sage",
+      "x": 0.52,
+      "y": 0.28,
+      "label": "Top"
+    },
+    {
+      "id": "f9e8d7c6b5a44321",
+      "name": "The Ivory Wrap Blouse",
+      "photo": "assets/gallery/colors/victoria-champagne-blouse-black-trousers-blue-pose-pose-v2.jpg",
+      "color": "Blue",
+      "x": 0.52,
+      "y": 0.28,
+      "label": "Top"
+    }
+  ],
+  "reviewed": true,
+  "review_note": "All120 variant/pose photos visually inspected in four contact sheets. Label type follows actual visible garment; specific point positions adjusted for outerwear, seated sets, flat lays, individual trousers and tops."
+}

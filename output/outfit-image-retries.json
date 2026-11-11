@@ -1,0 +1,70 @@
+[
+  {
+    "id": "garment-c9f06c204bdee72a-v2",
+    "output": "assets/generated-items/garment-c9f06c204bdee72a-v2.png",
+    "reference": "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg",
+    "kind": "garment",
+    "name": "Ivory Cardigan and Taupe Trouser Set",
+    "description": "Long open ivory chunky-knit cardigan, fitted ivory ribbed crew-neck top and light-taupe wide-leg pleated trousers; one coordinated three-piece styling.",
+    "color": "Ivory and taupe",
+    "hex": "#d0bda5",
+    "target_product_id": "c9f06c204bdee72a",
+    "parent_product_id": "c9f06c204bdee72a",
+    "is_primary": true,
+    "prompt": "Use case: precise-object-edit. Asset type: standalone fashion product photo. Image 1 is the product photo to edit; image 2 is the original outfit reference for garment identity. Make ONLY this correction to image 1: remove the tiny collar label and every trace of printed text at the inside neckline. Replace it with continuous plain ivory ribbed knit matching the existing top. Preserve the entire cardigan, ribbed top and taupe trousers, seam lines, drape, proportions, colors, framing, off-white studio background and photographic texture exactly. No person, body, mannequin, accessories, logo, text, watermark or added object. Keep all three pieces fully visible.",
+    "used_by": [
+      "c9f06c204bdee72a"
+    ],
+    "replaces_id": "garment-c9f06c204bdee72a-v1",
+    "replaces_output": "assets/generated-items/garment-c9f06c204bdee72a-v1.png",
+    "generation_references": [
+      "assets/generated-items/garment-c9f06c204bdee72a-v1.png",
+      "assets/gallery/beyza-ivory-cardigan-trouser-set.jpg"
+    ]
+  },
+  {
+    "id": "garment-caafcb7f7ea0475a-v2",
+    "output": "assets/generated-items/garment-caafcb7f7ea0475a-v2.png",
+    "reference": "assets/gallery/new-merlot-tailored-set-pose-v2.jpg",
+    "kind": "garment",
+    "name": "Merlot Gold-Button Tailored Trouser Suit",
+    "description": "Merlot tailored notched-lapel blazer with exactly four round gold-tone front buttons, two on each side, and and cuff buttons, matching belted wide-leg trousers; one coordinated suit.",
+    "color": "Merlot",
+    "hex": "#642132",
+    "target_product_id": "caafcb7f7ea0475a",
+    "parent_product_id": "caafcb7f7ea0475a",
+    "is_primary": true,
+    "prompt": "Use case: precise-object-edit. Asset type: standalone fashion product photo. Image 1 is the product photo to edit; image 2 is the original outfit reference. Correct ONLY the blazer's FRONT button arrangement in image 1: it must have exactly FOUR gold-tone FRONT buttons total, TWO vertically aligned on the viewer's left front panel and TWO on the viewer's right front panel, matching the visible arrangement in image 2. Remove the extra third row of front buttons completely and restore uninterrupted merlot fabric. Preserve cuff buttons, lapels, pockets, belt and buckle, trousers, proportions, colors, photographic texture, off-white studio background and full-item framing. Keep the blazer and matching trouser suit fully visible without a person, body, hands, mannequin, bag, shoes or accessories. No text, label, logo or watermark.",
+    "used_by": [
+      "caafcb7f7ea0475a"
+    ],
+    "replaces_id": "garment-caafcb7f7ea0475a-v1",
+    "replaces_output": "assets/generated-items/garment-caafcb7f7ea0475a-v1.png",
+    "generation_references": [
+      "assets/generated-items/garment-caafcb7f7ea0475a-v1.png",
+      "assets/gallery/new-merlot-tailored-set-pose-v2.jpg"
+    ]
+  },
+  {
+    "id": "garment-f62ee6e41ab495d3-v2",
+    "output": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+    "reference": "assets/gallery/beyza-champagne-satin-occasion-gown.jpg",
+    "kind": "garment",
+    "name": "Champagne Collared Wrap Blouse and Wide-Leg Trouser Set",
+    "description": "Champagne satin-look pointed-collar wrap blouse with overlapping front and billowing two-button cuffed sleeves, paired with matching high-rise wide-leg trousers with belt loops and two distinct trouser legs; one coordinated two-piece set.",
+    "color": "Champagne",
+    "hex": "#ccb094",
+    "target_product_id": "f62ee6e41ab495d3",
+    "parent_product_id": "f62ee6e41ab495d3",
+    "is_primary": true,
+    "prompt": "Use case: product-mockup. Asset type: individual fashion e-commerce item photograph for Velora. Input image 1 is the exact outfit/product reference. Generate ONLY the following product, isolated from the person and the rest of the outfit: Champagne Collared Wrap Blouse and Wide-Leg Trouser Set. Visible construction to preserve: Champagne satin-look pointed-collar wrap blouse with overlapping front and billowing two-button cuffed sleeves, paired with matching high-rise wide-leg trousers with belt loops and two distinct trouser legs; one coordinated two-piece set.  Match the reference design, color, shape, seam lines and hardware faithfully. If the named product is a coordinated two- or three-piece set, show its matching pieces together as ONE product image. Use a natural invisible-mannequin presentation or neat product arrangement for garments; a three-quarter product view for bags and shoes; loose natural folds for scarves. Preserve a back/side view when the reference only shows that view; do not invent hidden front details. Photorealistic studio photograph on seamless soft off-white, restrained natural lighting, real fabric texture and gentle contact shadows. Entire item or coordinated set visible, centered, balanced close portrait framing with a modest margin. No person, head, body, hair, hands, mannequin, hanger or accessories other than the requested product. No brand names, text, price, watermark, added patterns, invented decorations or extra straps. Avoid CGI, 3D render, cartoon, synthetic surfaces, plastic fabric, warped geometry, melted seams, floating parts, duplicated objects (except a matching shoe pair), blur, overexposure, oversaturation, oversharpening and excessive HDR. Critical garment structure: the seated reference shows a separate collared wrap blouse tucked into HIGH-RISE TROUSERS, with belt loops at the waistband and two wide trouser legs crossing while seated. This is a TWO-PIECE BLOUSE AND TROUSER SET. Show the blouse above the trousers on an invisible display, with both full trouser legs clearly separated and visible down to the hems. Preserve the reference champagne hue and satin-like texture. No skirt, no gown, no dress, no scarf.",
+    "used_by": [
+      "f62ee6e41ab495d3"
+    ],
+    "replaces_id": "garment-f62ee6e41ab495d3-v1",
+    "replaces_output": "assets/generated-items/garment-f62ee6e41ab495d3-v1.png",
+    "generation_references": [
+      "assets/gallery/beyza-champagne-satin-occasion-gown.jpg"
+    ]
+  }
+]
