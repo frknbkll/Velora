@@ -1,0 +1,1789 @@
+[
+  {
+    "id": "da1ec676efabfe8d",
+    "photo": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+        "x": 0.566,
+        "y": 0.606,
+        "product_id": "da1ec676efabfe8d",
+        "label": "The Ivory Linen Set"
+      },
+      {
+        "image": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+        "x": 0.553,
+        "y": 0.278,
+        "product_id": "piece-2dc2fa19e237834e3824",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+        "x": 0.316,
+        "y": 0.632,
+        "product_id": "piece-534201edcc42f3598963",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+        "x": 0.825,
+        "y": 0.941,
+        "product_id": "piece-79df3121a6b4735ebc9f",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-da1ec676efabfe8d-v1.png",
+        "x": 0.566,
+        "y": 0.606,
+        "product_id": "da1ec676efabfe8d",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "6bf4acf66562795c",
+    "photo": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+        "x": 0.573,
+        "y": 0.569,
+        "product_id": "6bf4acf66562795c",
+        "label": "The Sage Linen Set"
+      },
+      {
+        "image": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+        "x": 0.55,
+        "y": 0.284,
+        "product_id": "piece-2dc2fa19e237834e3824",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+        "x": 0.342,
+        "y": 0.623,
+        "product_id": "piece-af9f14bfbbcdd4db4cdb",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+        "x": 0.819,
+        "y": 0.945,
+        "product_id": "piece-79df3121a6b4735ebc9f",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-6bf4acf66562795c-v1.png",
+        "x": 0.573,
+        "y": 0.569,
+        "product_id": "6bf4acf66562795c",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "751e40965ad3a20d",
+    "photo": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+        "x": 0.586,
+        "y": 0.572,
+        "product_id": "751e40965ad3a20d",
+        "label": "The Ivory Tailored Look"
+      },
+      {
+        "image": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+        "x": 0.543,
+        "y": 0.281,
+        "product_id": "piece-2dc2fa19e237834e3824",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+        "x": 0.203,
+        "y": 0.949,
+        "product_id": "piece-4bd178f48f9d5eddf6d4",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-751e40965ad3a20d-v1.png",
+        "x": 0.586,
+        "y": 0.572,
+        "product_id": "751e40965ad3a20d",
+        "label": "Suit"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "1f89c653c09528d1",
+    "photo": "assets/generated-items/garment-1f89c653c09528d1-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-1f89c653c09528d1-v1.png",
+        "x": 0.596,
+        "y": 0.591,
+        "product_id": "1f89c653c09528d1",
+        "label": "The Emerald Tailored Suit"
+      },
+      {
+        "image": "assets/generated-items/garment-1f89c653c09528d1-v1.png",
+        "x": 0.54,
+        "y": 0.299,
+        "product_id": "piece-fe3fe696632d1d83fc45",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-1f89c653c09528d1-v1.png",
+        "x": 0.829,
+        "y": 0.937,
+        "product_id": "piece-a79ba450e0233ce08baf",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-1f89c653c09528d1-v1.png",
+        "x": 0.596,
+        "y": 0.591,
+        "product_id": "1f89c653c09528d1",
+        "label": "Suit"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "8ec4205f9115385e",
+    "photo": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+        "x": 0.591,
+        "y": 0.583,
+        "product_id": "8ec4205f9115385e",
+        "label": "The Ivory Power Suit"
+      },
+      {
+        "image": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+        "x": 0.542,
+        "y": 0.294,
+        "product_id": "piece-2dc2fa19e237834e3824",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+        "x": 0.327,
+        "y": 0.604,
+        "product_id": "piece-db26b74d526e9b8ffc55",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+        "x": 0.682,
+        "y": 0.955,
+        "product_id": "piece-1634f31e76a0bdd98717",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-8ec4205f9115385e-v1.png",
+        "x": 0.591,
+        "y": 0.583,
+        "product_id": "8ec4205f9115385e",
+        "label": "Suit"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "6834dbb23ca63224",
+    "photo": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+        "x": 0.342,
+        "y": 0.449,
+        "product_id": "6834dbb23ca63224",
+        "label": "The Chocolate Longline Blazer"
+      },
+      {
+        "image": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+        "x": 0.55,
+        "y": 0.272,
+        "product_id": "piece-99ef977ef612dd0e68fe",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+        "x": 0.606,
+        "y": 0.596,
+        "product_id": "piece-ff84faa985a9d5dbd583",
+        "label": "Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+        "x": 0.343,
+        "y": 0.602,
+        "product_id": "piece-ae9bd4742ca91b6bd3a9",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+        "x": 0.707,
+        "y": 0.95,
+        "product_id": "piece-1634f31e76a0bdd98717",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-6834dbb23ca63224-v1.png",
+        "x": 0.342,
+        "y": 0.449,
+        "product_id": "6834dbb23ca63224",
+        "label": "Coat"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "e7adba5f950e57c3",
+    "photo": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+        "x": 0.585,
+        "y": 0.596,
+        "product_id": "e7adba5f950e57c3",
+        "label": "The Olive Trench Ensemble"
+      },
+      {
+        "image": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+        "x": 0.549,
+        "y": 0.264,
+        "product_id": "piece-6eaa84dd1ffa73ab40bf",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+        "x": 0.347,
+        "y": 0.588,
+        "product_id": "piece-db26b74d526e9b8ffc55",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+        "x": 0.723,
+        "y": 0.952,
+        "product_id": "piece-1634f31e76a0bdd98717",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-e7adba5f950e57c3-v1.png",
+        "x": 0.585,
+        "y": 0.596,
+        "product_id": "e7adba5f950e57c3",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "18610d00ae8436f0",
+    "photo": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+        "x": 0.578,
+        "y": 0.606,
+        "product_id": "18610d00ae8436f0",
+        "label": "The Taupe Tailored Set"
+      },
+      {
+        "image": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+        "x": 0.547,
+        "y": 0.284,
+        "product_id": "piece-2dc2fa19e237834e3824",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+        "x": 0.325,
+        "y": 0.632,
+        "product_id": "piece-5bef1cad7783e160b798",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+        "x": 0.767,
+        "y": 0.951,
+        "product_id": "piece-11baa7a83b3b63ec487e",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-18610d00ae8436f0-v1.png",
+        "x": 0.578,
+        "y": 0.606,
+        "product_id": "18610d00ae8436f0",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "070e122b3b2a0a1d",
+    "photo": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+        "x": 0.588,
+        "y": 0.573,
+        "product_id": "070e122b3b2a0a1d",
+        "label": "The Chocolate Blazer Co-ord"
+      },
+      {
+        "image": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+        "x": 0.559,
+        "y": 0.274,
+        "product_id": "piece-f431c456f2d25afddf5a",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+        "x": 0.278,
+        "y": 0.599,
+        "product_id": "piece-ff1af3bf3c58d70f0fc6",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+        "x": 0.777,
+        "y": 0.954,
+        "product_id": "piece-1634f31e76a0bdd98717",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-070e122b3b2a0a1d-v1.png",
+        "x": 0.588,
+        "y": 0.573,
+        "product_id": "070e122b3b2a0a1d",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "9b7becdf69faba45",
+    "photo": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+        "x": 0.545,
+        "y": 0.584,
+        "product_id": "9b7becdf69faba45",
+        "label": "The Rosewater Occasion Abaya"
+      },
+      {
+        "image": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+        "x": 0.465,
+        "y": 0.088,
+        "product_id": "piece-96a784f9237891d51486",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+        "x": 0.593,
+        "y": 0.955,
+        "product_id": "piece-8a86693a4e2adb99e788",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-9b7becdf69faba45-v1.png",
+        "x": 0.545,
+        "y": 0.584,
+        "product_id": "9b7becdf69faba45",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "a01299210acf7627",
+    "photo": "assets/generated-items/garment-a01299210acf7627-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-a01299210acf7627-v1.png",
+        "x": 0.563,
+        "y": 0.555,
+        "product_id": "a01299210acf7627",
+        "label": "The Sandstone Drape Abaya"
+      },
+      {
+        "image": "assets/generated-items/garment-a01299210acf7627-v1.png",
+        "x": 0.452,
+        "y": 0.101,
+        "product_id": "piece-fc7d0c74a602e0d13c71",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-a01299210acf7627-v1.png",
+        "x": 0.315,
+        "y": 0.616,
+        "product_id": "piece-174ac997d98e5c8c688e",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-a01299210acf7627-v1.png",
+        "x": 0.621,
+        "y": 0.946,
+        "product_id": "piece-9636f729324b4ce5f674",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-a01299210acf7627-v1.png",
+        "x": 0.563,
+        "y": 0.555,
+        "product_id": "a01299210acf7627",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "27e73ff910a71df3",
+    "photo": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+        "x": 0.556,
+        "y": 0.592,
+        "product_id": "27e73ff910a71df3",
+        "label": "The Espresso Evening Abaya"
+      },
+      {
+        "image": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+        "x": 0.466,
+        "y": 0.092,
+        "product_id": "piece-bab5fe2671385add278e",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+        "x": 0.58,
+        "y": 0.539,
+        "product_id": "piece-1d55dc69d92690d44d2f",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+        "x": 0.513,
+        "y": 0.958,
+        "product_id": "piece-12a78e3e1d0c60b1eb48",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-27e73ff910a71df3-v1.png",
+        "x": 0.556,
+        "y": 0.592,
+        "product_id": "27e73ff910a71df3",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "8e861c306b731e29",
+    "photo": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+        "x": 0.568,
+        "y": 0.578,
+        "product_id": "8e861c306b731e29",
+        "label": "The Mocha Belted Abaya"
+      },
+      {
+        "image": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+        "x": 0.468,
+        "y": 0.088,
+        "product_id": "piece-8804e8b05ac1ee4d4c41",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+        "x": 0.385,
+        "y": 0.58,
+        "product_id": "piece-afe00ec84f5c7a53c9f8",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+        "x": 0.662,
+        "y": 0.95,
+        "product_id": "piece-8a86693a4e2adb99e788",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-8e861c306b731e29-v1.png",
+        "x": 0.568,
+        "y": 0.578,
+        "product_id": "8e861c306b731e29",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "1ae845d453aa1fce",
+    "photo": "assets/generated-items/garment-1ae845d453aa1fce-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-1ae845d453aa1fce-v1.png",
+        "x": 0.537,
+        "y": 0.588,
+        "product_id": "1ae845d453aa1fce",
+        "label": "The Champagne Occasion Abaya"
+      },
+      {
+        "image": "assets/generated-items/garment-1ae845d453aa1fce-v1.png",
+        "x": 0.463,
+        "y": 0.088,
+        "product_id": "piece-ac9119ac6ee909eebe34",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-1ae845d453aa1fce-v1.png",
+        "x": 0.551,
+        "y": 0.957,
+        "product_id": "piece-8a86693a4e2adb99e788",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-1ae845d453aa1fce-v1.png",
+        "x": 0.537,
+        "y": 0.588,
+        "product_id": "1ae845d453aa1fce",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "e1051eeab7dcec5f",
+    "photo": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.351,
+        "y": 0.443,
+        "product_id": "e1051eeab7dcec5f",
+        "label": "The Espresso Trench Look"
+      },
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.533,
+        "y": 0.253,
+        "product_id": "piece-6eaa84dd1ffa73ab40bf",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.605,
+        "y": 0.598,
+        "product_id": "piece-ff84faa985a9d5dbd583",
+        "label": "Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.465,
+        "y": 0.084,
+        "product_id": "piece-691dadb07df3fc6df8af",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.376,
+        "y": 0.583,
+        "product_id": "piece-39bb7efbed8bccdab668",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.686,
+        "y": 0.949,
+        "product_id": "piece-8a86693a4e2adb99e788",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-e1051eeab7dcec5f-v1.png",
+        "x": 0.37,
+        "y": 0.5,
+        "product_id": "e1051eeab7dcec5f",
+        "label": "Coat"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment. Geometry reviewed on generated image: marker moved onto fabric rather than a seam/open gap."
+  },
+  {
+    "id": "4b961836a5114101",
+    "photo": "assets/generated-items/garment-4b961836a5114101-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-4b961836a5114101-v1.png",
+        "x": 0.577,
+        "y": 0.596,
+        "product_id": "4b961836a5114101",
+        "label": "The Stone Tailored Look"
+      },
+      {
+        "image": "assets/generated-items/garment-4b961836a5114101-v1.png",
+        "x": 0.535,
+        "y": 0.253,
+        "product_id": "piece-95ba2dab9595868a56bf",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-4b961836a5114101-v1.png",
+        "x": 0.465,
+        "y": 0.083,
+        "product_id": "piece-b5dc98cb1f643adc1531",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-4b961836a5114101-v1.png",
+        "x": 0.381,
+        "y": 0.582,
+        "product_id": "piece-db26b74d526e9b8ffc55",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-4b961836a5114101-v1.png",
+        "x": 0.676,
+        "y": 0.947,
+        "product_id": "piece-8a86693a4e2adb99e788",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-4b961836a5114101-v1.png",
+        "x": 0.577,
+        "y": 0.596,
+        "product_id": "4b961836a5114101",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "edc6983c2ab5268c",
+    "photo": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+        "x": 0.571,
+        "y": 0.594,
+        "product_id": "edc6983c2ab5268c",
+        "label": "The City-Cream Trouser Set"
+      },
+      {
+        "image": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+        "x": 0.539,
+        "y": 0.286,
+        "product_id": "piece-2dc2fa19e237834e3824",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+        "x": 0.621,
+        "y": 0.937,
+        "product_id": "piece-7d8f62e61b809eae61ff",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-edc6983c2ab5268c-v1.png",
+        "x": 0.571,
+        "y": 0.594,
+        "product_id": "edc6983c2ab5268c",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "e57f33ce2e1562d2",
+    "photo": "assets/generated-items/garment-e57f33ce2e1562d2-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-e57f33ce2e1562d2-v1.png",
+        "x": 0.688,
+        "y": 0.662,
+        "product_id": "e57f33ce2e1562d2",
+        "label": "The Cloud-Knit Lounge Set"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-e57f33ce2e1562d2-v1.png",
+        "x": 0.43,
+        "y": 0.65,
+        "product_id": "e57f33ce2e1562d2",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "0c9f048ac48a707e",
+    "photo": "assets/generated-items/garment-0c9f048ac48a707e-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-0c9f048ac48a707e-v1.png",
+        "x": 0.714,
+        "y": 0.552,
+        "product_id": "0c9f048ac48a707e",
+        "label": "The Rose-Stripe Pajama Set"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-0c9f048ac48a707e-v1.png",
+        "x": 0.4,
+        "y": 0.35,
+        "product_id": "0c9f048ac48a707e",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "8896b52b23cd0824",
+    "photo": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+        "x": 0.564,
+        "y": 0.616,
+        "product_id": "8896b52b23cd0824",
+        "label": "The Ivory Tie-Neck Set"
+      },
+      {
+        "image": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+        "x": 0.427,
+        "y": 0.967,
+        "product_id": "piece-c35357c6d15204e698ee",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-8896b52b23cd0824-v1.png",
+        "x": 0.564,
+        "y": 0.616,
+        "product_id": "8896b52b23cd0824",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "40b272d4673736dc",
+    "photo": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+        "x": 0.588,
+        "y": 0.643,
+        "product_id": "40b272d4673736dc",
+        "label": "The Cloud-Knit Layer Set"
+      },
+      {
+        "image": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+        "x": 0.483,
+        "y": 0.298,
+        "product_id": "piece-67a1be98d1323affc094",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+        "x": 0.536,
+        "y": 0.949,
+        "product_id": "piece-7d8f62e61b809eae61ff",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-40b272d4673736dc-v1.png",
+        "x": 0.588,
+        "y": 0.643,
+        "product_id": "40b272d4673736dc",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "72cb66b82bef90ad",
+    "photo": "assets/generated-items/garment-72cb66b82bef90ad-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-72cb66b82bef90ad-v1.png",
+        "x": 0.574,
+        "y": 0.613,
+        "product_id": "72cb66b82bef90ad",
+        "label": "The Taupe Satin Lounge Set"
+      },
+      {
+        "image": "assets/generated-items/garment-72cb66b82bef90ad-v1.png",
+        "x": 0.521,
+        "y": 0.316,
+        "product_id": "piece-24da8ecf2bfe0550f422",
+        "label": "Top"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-72cb66b82bef90ad-v1.png",
+        "x": 0.574,
+        "y": 0.613,
+        "product_id": "72cb66b82bef90ad",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "0cece17490138dac",
+    "photo": "assets/generated-items/garment-0cece17490138dac-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-0cece17490138dac-v1.png",
+        "x": 0.47,
+        "y": 0.619,
+        "product_id": "0cece17490138dac",
+        "label": "The Weekend Denim Look"
+      },
+      {
+        "image": "assets/generated-items/garment-0cece17490138dac-v1.png",
+        "x": 0.325,
+        "y": 0.337,
+        "product_id": "piece-934e75510f1b47a89f54",
+        "label": "Outerwear"
+      },
+      {
+        "image": "assets/generated-items/garment-0cece17490138dac-v1.png",
+        "x": 0.493,
+        "y": 0.302,
+        "product_id": "piece-67a1be98d1323affc094",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-0cece17490138dac-v1.png",
+        "x": 0.231,
+        "y": 0.6,
+        "product_id": "piece-f8c380df476ed050184e",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-0cece17490138dac-v1.png",
+        "x": 0.455,
+        "y": 0.929,
+        "product_id": "piece-1563a4bbc31be2fd21d3",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-0cece17490138dac-v1.png",
+        "x": 0.4,
+        "y": 0.6,
+        "product_id": "0cece17490138dac",
+        "label": "Jeans"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "7f2d1f88d06fb45c",
+    "photo": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+        "x": 0.494,
+        "y": 0.484,
+        "product_id": "7f2d1f88d06fb45c",
+        "label": "The Midnight Satin Gown"
+      },
+      {
+        "image": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+        "x": 0.294,
+        "y": 0.496,
+        "product_id": "piece-6d0d6c777249e9839fa3",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+        "x": 0.509,
+        "y": 0.946,
+        "product_id": "piece-6a7825d84c2f7ff04370",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-7f2d1f88d06fb45c-v1.png",
+        "x": 0.494,
+        "y": 0.484,
+        "product_id": "7f2d1f88d06fb45c",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "e9a2c2dfa9f8f42d",
+    "photo": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+        "x": 0.503,
+        "y": 0.488,
+        "product_id": "e9a2c2dfa9f8f42d",
+        "label": "The Champagne Satin Evening Dress"
+      },
+      {
+        "image": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+        "x": 0.293,
+        "y": 0.496,
+        "product_id": "piece-53924b26459b428f3469",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+        "x": 0.507,
+        "y": 0.952,
+        "product_id": "piece-1f22feb8b29400af46a8",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-e9a2c2dfa9f8f42d-v1.png",
+        "x": 0.503,
+        "y": 0.488,
+        "product_id": "e9a2c2dfa9f8f42d",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "cbc653452f6001b8",
+    "photo": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+        "x": 0.581,
+        "y": 0.597,
+        "product_id": "cbc653452f6001b8",
+        "label": "The Ivory Tailored Suit"
+      },
+      {
+        "image": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+        "x": 0.512,
+        "y": 0.302,
+        "product_id": "piece-3d86497279f44605b1ca",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+        "x": 0.283,
+        "y": 0.618,
+        "product_id": "piece-23fec7367f25774f83bc",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+        "x": 0.782,
+        "y": 0.965,
+        "product_id": "piece-c35357c6d15204e698ee",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-cbc653452f6001b8-v1.png",
+        "x": 0.581,
+        "y": 0.597,
+        "product_id": "cbc653452f6001b8",
+        "label": "Suit"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "66160c188c347697",
+    "photo": "assets/generated-items/garment-66160c188c347697-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-66160c188c347697-v1.png",
+        "x": 0.557,
+        "y": 0.6,
+        "product_id": "66160c188c347697",
+        "label": "The High-Neck Ivory Trouser Set"
+      },
+      {
+        "image": "assets/generated-items/garment-66160c188c347697-v1.png",
+        "x": 0.28,
+        "y": 0.612,
+        "product_id": "piece-db26b74d526e9b8ffc55",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-66160c188c347697-v1.png",
+        "x": 0.449,
+        "y": 0.961,
+        "product_id": "piece-c35357c6d15204e698ee",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-66160c188c347697-v1.png",
+        "x": 0.557,
+        "y": 0.6,
+        "product_id": "66160c188c347697",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "a2e2bfb6aed5c608",
+    "photo": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+        "x": 0.338,
+        "y": 0.48,
+        "product_id": "a2e2bfb6aed5c608",
+        "label": "The Beige Trench Tailored Look"
+      },
+      {
+        "image": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+        "x": 0.528,
+        "y": 0.277,
+        "product_id": "piece-6eaa84dd1ffa73ab40bf",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+        "x": 0.556,
+        "y": 0.607,
+        "product_id": "piece-ed9b4a4c7b950dd08c5d",
+        "label": "Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+        "x": 0.267,
+        "y": 0.625,
+        "product_id": "piece-d6deeaa5c3f60d4f2333",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+        "x": 0.576,
+        "y": 0.965,
+        "product_id": "piece-c35357c6d15204e698ee",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-a2e2bfb6aed5c608-v1.png",
+        "x": 0.338,
+        "y": 0.48,
+        "product_id": "a2e2bfb6aed5c608",
+        "label": "Coat"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "2f1f477ab7e06ceb",
+    "photo": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+        "x": 0.562,
+        "y": 0.594,
+        "product_id": "2f1f477ab7e06ceb",
+        "label": "The Ivory Executive Suit"
+      },
+      {
+        "image": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+        "x": 0.53,
+        "y": 0.281,
+        "product_id": "piece-47d8e6634ac7b1a77958",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+        "x": 0.275,
+        "y": 0.601,
+        "product_id": "piece-d2c77fc0c972e16c4688",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+        "x": 0.232,
+        "y": 0.947,
+        "product_id": "piece-dbcf2706c4cf05981c3d",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-2f1f477ab7e06ceb-v1.png",
+        "x": 0.562,
+        "y": 0.594,
+        "product_id": "2f1f477ab7e06ceb",
+        "label": "Suit"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "4d51a0de1ad5592f",
+    "photo": "assets/generated-items/garment-4d51a0de1ad5592f-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-4d51a0de1ad5592f-v1.png",
+        "x": 0.52,
+        "y": 0.51,
+        "product_id": "4d51a0de1ad5592f",
+        "label": "The Cloud Ribbed Lounge Set"
+      },
+      {
+        "image": "assets/generated-items/garment-4d51a0de1ad5592f-v1.png",
+        "x": 0.54,
+        "y": 0.925,
+        "product_id": "piece-57ebdc27946486afd888",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-4d51a0de1ad5592f-v1.png",
+        "x": 0.52,
+        "y": 0.51,
+        "product_id": "4d51a0de1ad5592f",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "2f92545d9cbed177",
+    "photo": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+        "x": 0.52,
+        "y": 0.51,
+        "product_id": "2f92545d9cbed177",
+        "label": "The Off-Shoulder Denim Look"
+      },
+      {
+        "image": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+        "x": 0.416,
+        "y": 0.389,
+        "product_id": "piece-7c150af438a0057c1ad8",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+        "x": 0.244,
+        "y": 0.938,
+        "product_id": "piece-2e34a3d16cdab3923417",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-2f92545d9cbed177-v1.png",
+        "x": 0.38,
+        "y": 0.61,
+        "product_id": "2f92545d9cbed177",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment. Geometry reviewed on generated image: marker moved onto fabric rather than a seam/open gap."
+  },
+  {
+    "id": "4ba84e164ca92c24",
+    "photo": "assets/generated-items/garment-4ba84e164ca92c24-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-4ba84e164ca92c24-v1.png",
+        "x": 0.52,
+        "y": 0.49,
+        "product_id": "4ba84e164ca92c24",
+        "label": "The Soft-Neutral Knit Set"
+      },
+      {
+        "image": "assets/generated-items/garment-4ba84e164ca92c24-v1.png",
+        "x": 0.306,
+        "y": 0.614,
+        "product_id": "piece-13c14185327517d0300a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-4ba84e164ca92c24-v1.png",
+        "x": 0.652,
+        "y": 0.938,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-4ba84e164ca92c24-v1.png",
+        "x": 0.52,
+        "y": 0.49,
+        "product_id": "4ba84e164ca92c24",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "4e2b0a33f31318ac",
+    "photo": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+        "x": 0.48,
+        "y": 0.51,
+        "product_id": "4e2b0a33f31318ac",
+        "label": "The Ivory Knit-Tailored Set"
+      },
+      {
+        "image": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+        "x": 0.295,
+        "y": 0.543,
+        "product_id": "piece-7662c86ef7881336979a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+        "x": 0.734,
+        "y": 0.907,
+        "product_id": "piece-43087cf9c8532d208317",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-4e2b0a33f31318ac-v1.png",
+        "x": 0.48,
+        "y": 0.51,
+        "product_id": "4e2b0a33f31318ac",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "52e502c50f2fff58",
+    "photo": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+        "x": 0.48,
+        "y": 0.53,
+        "product_id": "52e502c50f2fff58",
+        "label": "The Champagne Halter Gown"
+      },
+      {
+        "image": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+        "x": 0.305,
+        "y": 0.525,
+        "product_id": "piece-22fa1f903fb7b8242af1",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+        "x": 0.745,
+        "y": 0.913,
+        "product_id": "piece-294ec637528d505f3050",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-52e502c50f2fff58-v1.png",
+        "x": 0.48,
+        "y": 0.53,
+        "product_id": "52e502c50f2fff58",
+        "label": "Dress"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "874d7c0173a9d2a8",
+    "photo": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+        "x": 0.39,
+        "y": 0.456,
+        "product_id": "874d7c0173a9d2a8",
+        "label": "The Midnight Satin Slip Gown"
+      },
+      {
+        "image": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+        "x": 0.52,
+        "y": 0.259,
+        "product_id": "piece-511599456a4940d710dd",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+        "x": 0.54,
+        "y": 0.664,
+        "product_id": "piece-988a0ace37bb6ef9c77f",
+        "label": "Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+        "x": 0.285,
+        "y": 0.597,
+        "product_id": "piece-13c14185327517d0300a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+        "x": 0.657,
+        "y": 0.938,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-874d7c0173a9d2a8-v1.png",
+        "x": 0.39,
+        "y": 0.456,
+        "product_id": "874d7c0173a9d2a8",
+        "label": "Coat"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "ee63e133d40760be",
+    "photo": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+        "x": 0.51,
+        "y": 0.47,
+        "product_id": "ee63e133d40760be",
+        "label": "The Ivory Trench Ensemble"
+      },
+      {
+        "image": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+        "x": 0.287,
+        "y": 0.608,
+        "product_id": "piece-e0e903671c4d58c1ac32",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+        "x": 0.231,
+        "y": 0.953,
+        "product_id": "piece-abc1356c64d6fba2dbc4",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-ee63e133d40760be-v1.png",
+        "x": 0.4,
+        "y": 0.61,
+        "product_id": "ee63e133d40760be",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment. Geometry reviewed on generated image: marker moved onto fabric rather than a seam/open gap."
+  },
+  {
+    "id": "6664bf77ae517850",
+    "photo": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+        "x": 0.53,
+        "y": 0.49,
+        "product_id": "6664bf77ae517850",
+        "label": "The Champagne Blouse & Black Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+        "x": 0.55,
+        "y": 0.285,
+        "product_id": "piece-1179ba1b69e040932bd6",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+        "x": 0.299,
+        "y": 0.604,
+        "product_id": "piece-13c14185327517d0300a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+        "x": 0.727,
+        "y": 0.941,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-6664bf77ae517850-v1.png",
+        "x": 0.32,
+        "y": 0.32,
+        "product_id": "6664bf77ae517850",
+        "label": "Suit"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "7b8ef54e6321f222",
+    "photo": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+        "x": 0.52,
+        "y": 0.49,
+        "product_id": "7b8ef54e6321f222",
+        "label": "The Taupe Knit & Trouser Set"
+      },
+      {
+        "image": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+        "x": 0.453,
+        "y": 0.125,
+        "product_id": "piece-edb847363b513850797c",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+        "x": 0.286,
+        "y": 0.602,
+        "product_id": "piece-9bc4e17f2496f4ed2851",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+        "x": 0.63,
+        "y": 0.935,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-7b8ef54e6321f222-v1.png",
+        "x": 0.52,
+        "y": 0.49,
+        "product_id": "7b8ef54e6321f222",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "c9f06c204bdee72a",
+    "photo": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+        "x": 0.48,
+        "y": 0.49,
+        "product_id": "c9f06c204bdee72a",
+        "label": "The Ivory Cardigan Trouser Set"
+      },
+      {
+        "image": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+        "x": 0.465,
+        "y": 0.128,
+        "product_id": "piece-edb847363b513850797c",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+        "x": 0.301,
+        "y": 0.606,
+        "product_id": "piece-13c14185327517d0300a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+        "x": 0.716,
+        "y": 0.944,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-c9f06c204bdee72a-v3.png",
+        "x": 0.48,
+        "y": 0.49,
+        "product_id": "c9f06c204bdee72a",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "e51eb39916bcceab",
+    "photo": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.36,
+        "y": 0.458,
+        "product_id": "e51eb39916bcceab",
+        "label": "The Ivory Longline Coat"
+      },
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.53,
+        "y": 0.264,
+        "product_id": "piece-5c49a03f9a7d3a0fbe49",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.55,
+        "y": 0.686,
+        "product_id": "piece-399440f415fb060184ca",
+        "label": "Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.474,
+        "y": 0.135,
+        "product_id": "piece-edb847363b513850797c",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.312,
+        "y": 0.605,
+        "product_id": "piece-13c14185327517d0300a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.725,
+        "y": 0.945,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-e51eb39916bcceab-v1.png",
+        "x": 0.36,
+        "y": 0.458,
+        "product_id": "e51eb39916bcceab",
+        "label": "Coat"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "fe93ba37bb9ba2f6",
+    "photo": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+        "x": 0.47,
+        "y": 0.477,
+        "product_id": "fe93ba37bb9ba2f6",
+        "label": "The Taupe Longline Coat Set"
+      },
+      {
+        "image": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+        "x": 0.535,
+        "y": 0.267,
+        "product_id": "piece-5c49a03f9a7d3a0fbe49",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+        "x": 0.486,
+        "y": 0.13,
+        "product_id": "piece-edb847363b513850797c",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+        "x": 0.784,
+        "y": 0.383,
+        "product_id": "piece-13c14185327517d0300a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+        "x": 0.521,
+        "y": 0.952,
+        "product_id": "velora-example-nude-court-shoes",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-fe93ba37bb9ba2f6-v2.png",
+        "x": 0.47,
+        "y": 0.477,
+        "product_id": "fe93ba37bb9ba2f6",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  },
+  {
+    "id": "f62ee6e41ab495d3",
+    "photo": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+        "x": 0.51,
+        "y": 0.51,
+        "product_id": "f62ee6e41ab495d3",
+        "label": "The Champagne Satin Occasion Gown"
+      },
+      {
+        "image": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+        "x": 0.486,
+        "y": 0.198,
+        "product_id": "piece-edb847363b513850797c",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+        "x": 0.792,
+        "y": 0.851,
+        "product_id": "piece-c1120882f25760cb533f",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-f62ee6e41ab495d3-v2.png",
+        "x": 0.4,
+        "y": 0.61,
+        "product_id": "f62ee6e41ab495d3",
+        "label": "Set"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment. Geometry reviewed on generated image: marker moved onto fabric rather than a seam/open gap."
+  },
+  {
+    "id": "db747bb55dc91722",
+    "photo": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+    "before": [
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.349,
+        "y": 0.327,
+        "product_id": "db747bb55dc91722",
+        "label": "The Weekend Denim Jacket Look"
+      },
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.521,
+        "y": 0.272,
+        "product_id": "piece-29581b8ee6e98283563c",
+        "label": "Top"
+      },
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.546,
+        "y": 0.619,
+        "product_id": "piece-ae14860439f24cd0511e",
+        "label": "Trousers"
+      },
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.49,
+        "y": 0.115,
+        "product_id": "piece-edb847363b513850797c",
+        "label": "Scarf"
+      },
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.346,
+        "y": 0.297,
+        "product_id": "piece-ff1d2c8b639800c4aa4a",
+        "label": "Satchel"
+      },
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.693,
+        "y": 0.907,
+        "product_id": "piece-20f6d0b0fc2425890384",
+        "label": "Shoes"
+      }
+    ],
+    "after": [
+      {
+        "image": "assets/generated-items/garment-db747bb55dc91722-v1.png",
+        "x": 0.349,
+        "y": 0.327,
+        "product_id": "db747bb55dc91722",
+        "label": "Jacket"
+      }
+    ],
+    "reason": "Reviewed isolated primary garment/set photo. Remove full-outfit accessory copies absent from this photo; retain one self label on the actual garment."
+  }
+]

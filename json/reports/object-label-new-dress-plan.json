@@ -1,0 +1,62 @@
+{
+  "reviewed": true,
+  "products": [
+    {
+      "id": "velora-dress-01",
+      "photo": "assets/gallery/luna-champagne-satin-evening-dress.jpg",
+      "points": [
+        {
+          "image": "assets/gallery/luna-champagne-satin-evening-dress.jpg",
+          "x": 0.48,
+          "y": 0.42,
+          "product_id": "velora-dress-01",
+          "label": "Dress"
+        }
+      ]
+    },
+    {
+      "id": "velora-dress-01",
+      "photo": "assets/gallery/colors/luna-champagne-satin-evening-dress-navy-pose-pose-v2.jpg",
+      "points": [
+        {
+          "image": "assets/gallery/colors/luna-champagne-satin-evening-dress-navy-pose-pose-v2.jpg",
+          "x": 0.5,
+          "y": 0.47,
+          "product_id": "velora-dress-01",
+          "label": "Dress"
+        }
+      ]
+    },
+    {
+      "id": "velora-dress-01",
+      "photo": "assets/gallery/colors/luna-champagne-satin-evening-dress-sage-pose-v2.jpg",
+      "points": [
+        {
+          "image": "assets/gallery/colors/luna-champagne-satin-evening-dress-sage-pose-v2.jpg",
+          "x": 0.52,
+          "y": 0.45,
+          "product_id": "velora-dress-01",
+          "label": "Dress"
+        }
+      ]
+    },
+    {
+      "id": "velora-dress-01",
+      "photo": "assets/gallery/colors/velora-wildflower-evening-dress.jpg",
+      "points": [
+        {
+          "image": "assets/gallery/colors/velora-wildflower-evening-dress.jpg",
+          "x": 0.53,
+          "y": 0.56,
+          "product_id": "velora-dress-01",
+          "label": "Dress"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Inspected all four photographs in tmp/new-dress-contact.jpg. Dress label is placed on visible dress fabric in every photo.",
+    "Floral preset is a different long-sleeved floral wrap dress, unlike the Champagne Satin Gown title and cowl-neck satin description. No owner metadata renamed.",
+    "Nonexistent generated garment reference excluded; root handles guarded missing-reference repair."
+  ]
+}

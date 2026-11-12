@@ -62,8 +62,8 @@ The included browser policies restrict script sources, framing, cross-origin res
 API tests use temporary databases and keys. Browser checks use disposable accounts:
 
 ```powershell
-python -m unittest discover -s tests -p "test_*.py" -v
-python tests/run-security-browser.py
+python -m unittest discover -s py/tests -p "test_*.py" -v
+python py/tests/run-security-browser.py
 ```
 
-Authenticator behavior follows [RFC 6238](https://www.rfc-editor.org/rfc/rfc6238). Design references include the [OWASP multifactor authentication guidance](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html) and [OWASP session management guidance](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html). The bundled [Nayuki QR Code Generator](https://www.nayuki.io/page/qr-code-generator-library) is MIT-licensed; its release URL and SHA-256 are recorded in `assets/vendor/qrcodegen-source.json`.
+Authenticator behavior follows [RFC 6238](https://www.rfc-editor.org/rfc/rfc6238). Design references include the [OWASP multifactor authentication guidance](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html) and [OWASP session management guidance](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html). The bundled [Nayuki QR Code Generator](https://www.nayuki.io/page/qr-code-generator-library) is MIT-licensed; its release URL and SHA-256 are recorded in `json/vendor/qrcodegen-source.json`.

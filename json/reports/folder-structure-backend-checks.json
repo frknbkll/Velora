@@ -1,0 +1,54 @@
+{
+  "focusedTests": 36,
+  "routingTests": 5,
+  "hardeningTests": 20,
+  "launcherTests": 3,
+  "seoTests": 8,
+  "publicProducts": 266,
+  "liveReadOnlyBoundaries": [
+    {
+      "path": "/admin.html",
+      "status": 302
+    },
+    {
+      "path": "/%61dmin.html",
+      "status": 302
+    },
+    {
+      "path": "/html/admin.html",
+      "status": 404
+    },
+    {
+      "path": "/html%2fadmin.html",
+      "status": 404
+    },
+    {
+      "path": "/html/../admin.html",
+      "status": 404
+    },
+    {
+      "path": "/css/../html/admin.html",
+      "status": 404
+    },
+    {
+      "path": "/js/../html/admin.html",
+      "status": 404
+    },
+    {
+      "path": "/py/app/server.py",
+      "status": 404
+    },
+    {
+      "path": "/json/catalog/product-catalog.json",
+      "status": 404
+    },
+    {
+      "path": "/json/config/site-config.json",
+      "status": 404
+    },
+    {
+      "path": "/json/vendor/three-source.json",
+      "status": 404
+    }
+  ]
+}

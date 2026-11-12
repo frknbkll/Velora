@@ -27,3 +27,5 @@ node_modules/
 tmp/
 .coverage
 htmlcov/
+.pytest_cache/
+debug.log

@@ -1,0 +1,14 @@
+{
+  "products": 266,
+  "displayablePhotos": 514,
+  "labels": 864,
+  "correctedPhotos": 130,
+  "standalonePhotosChecked": 86,
+  "unlabelledPhotos": [],
+  "brokenPhotos": [],
+  "unexpectedMetadataChanges": [],
+  "invalidLabels": [],
+  "incorrectStandaloneLabels": [],
+  "unappliedCorrections": [],
+  "changedUnreviewedLabels": []
+}

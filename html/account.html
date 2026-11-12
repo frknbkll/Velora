@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf8f4" />
+    <link rel="stylesheet" href="/css/fonts.css?v=2" />
+    <link rel="stylesheet" href="/css/styles.css?v=61" />
+    <link rel="stylesheet" href="/css/account.css?v=5" />
+    <script src="/js/privacy.js?v=2" defer></script>
+    <script src="/js/auth.js?v=9" defer></script>
+    <script src="/js/vendor/qrcodegen.js?v=1" defer></script>
+    <script src="/js/account-security.js?v=1" defer></script>
+    <script src="/js/account-privacy.js?v=2" defer></script>
+    <link rel="stylesheet" href="/css/privacy.css?v=2" />
+    <!-- velora:page-metadata -->
+    <title>Your Account | Velora</title>
+    <meta name="description" content="Manage your Velora account, security preferences and website data." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:site_name" content="Velora" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Account | Velora" />
+    <meta property="og:description" content="Manage your Velora account, security preferences and website data." />
+    <meta property="og:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta property="og:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Account | Velora" />
+    <meta name="twitter:description" content="Manage your Velora account, security preferences and website data." />
+    <meta name="twitter:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta name="twitter:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <!-- /velora:page-metadata -->
+      <!-- velora:brand-assets -->
+    <link rel="icon" href="/assets/brand/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- /velora:brand-assets -->
+  </head>
+  <body class="account-page account-page--profile" data-auth-page="account">
+    <a class="account-skip" href="#account-main">Skip to account</a>
+    <header class="account-header">
+      <a class="wordmark" href="index.html" aria-label="Velora home">velora<span>®</span></a>
+      <nav class="account-header-nav" aria-label="Your account navigation">
+        <a class="account-back" href="index.html#collection"><span aria-hidden="true">←</span> The collection</a>
+        <button class="account-signout" type="button" data-auth-logout>Sign out <span aria-hidden="true">↗</span></button>
+      </nav>
+    </header>
+    <main class="profile-main" id="account-main" tabindex="-1">
+      <p class="account-loading" id="account-loading" role="status" aria-live="polite">Opening your personal space…</p>
+      <p class="auth-message" id="auth-message" role="status" aria-live="polite" aria-atomic="true"></p>
+      <noscript><p class="auth-message is-error">Please enable JavaScript to view your account.</p></noscript>
+      <div id="account-content" hidden>
+        <div class="profile-intro">
+          <div><p class="account-eyebrow"><span></span> YOUR PERSONAL SPACE</p><h1>A little more <em>you.</em></h1></div>
+          <p>Your details, thoughtfully kept.<br />Make yourself at home.</p>
+        </div>
+        <div class="profile-layout">
+          <aside class="profile-sidebar" aria-label="Your profile">
+            <section class="profile-identity" aria-labelledby="account-name">
+              <span class="profile-avatar" id="account-avatar" aria-hidden="true"></span>
+              <p class="profile-overline">HELLO, LOVELY</p>
+              <h2 id="account-name"></h2>
+              <p class="profile-email" id="account-email"></p>
+              <p class="profile-since">With us since <span id="account-since"></span></p>
+            </section>
+            <section class="profile-explore" aria-labelledby="profile-explore-title">
+              <p class="profile-overline" id="profile-explore-title">A LITTLE INSPIRATION</p>
+              <h2>Find your<br /><em>next favorite.</em></h2>
+              <p>Explore the pieces and perspectives that make Velora.</p>
+              <a href="index.html#collection">Explore the collection <span aria-hidden="true">↗</span></a>
+              <a href="reviews.html#review-composer">Your review <span aria-hidden="true">↗</span></a>
+              <a href="#security">Account security <span aria-hidden="true">↘</span></a>
+              <a href="#privacy">Privacy and deletion <span aria-hidden="true">↘</span></a>
+              <a href="admin.html" data-admin-link hidden>Open admin portal <span aria-hidden="true">↗</span></a>
+              <a href="intranet.html" data-intranet-link hidden>Open team intranet <span aria-hidden="true">↗</span></a>
+            </section>
+          </aside>
+          <section class="profile-details" aria-labelledby="profile-details-title">
+            <div class="profile-section-heading"><span class="profile-section-number">01</span><div><h2 id="profile-details-title">Your details</h2><p>The essentials that make this space yours.</p></div></div>
+            <form class="account-form" id="profile-form">
+              <div class="account-field">
+                <label for="profile-first-name">First name</label>
+                <input id="profile-first-name" name="firstName" type="text" autocomplete="given-name" maxlength="80" required />
+              </div>
+              <div class="account-field">
+                <label for="profile-last-name">Last name</label>
+                <input id="profile-last-name" name="lastName" type="text" autocomplete="family-name" maxlength="80" />
+              </div>
+              <div class="account-field">
+                <label for="profile-city">City</label>
+                <input id="profile-city" name="city" type="text" autocomplete="address-level2" maxlength="100" />
+              </div>
+              <div class="account-field">
+                <label for="profile-country">Country</label>
+                <input id="profile-country" name="country" type="text" autocomplete="country-name" maxlength="100" />
+              </div>
+              <p class="profile-email-note">Your email address is used to sign in to this account.</p>
+              <fieldset class="profile-password">
+                <legend>Change your password</legend>
+                <p class="account-hint">Leave these fields empty to keep your current password.</p>
+                <div class="account-field">
+                  <label for="profile-current-password">Current password</label>
+                  <div class="password-field">
+                    <input id="profile-current-password" name="currentPassword" type="password" autocomplete="current-password" maxlength="128" />
+                    <button class="password-toggle" type="button" data-toggle-password="profile-current-password" aria-label="Show current password" aria-pressed="false">Show</button>
+                  </div>
+                </div>
+                <div class="account-field">
+                  <label for="profile-new-password">New password</label>
+                  <div class="password-field">
+                    <input id="profile-new-password" name="newPassword" type="password" autocomplete="new-password" minlength="15" maxlength="128" aria-describedby="profile-password-hint" />
+                    <button class="password-toggle" type="button" data-toggle-password="profile-new-password" aria-label="Show new password" aria-pressed="false">Show</button>
+                  </div>
+                  <p class="account-hint" id="profile-password-hint">Use 12–128 characters. Choose a password you don’t use elsewhere.</p>
+                </div>
+              </fieldset>
+              <div class="profile-save-row"><button class="account-primary" type="submit" data-submit-label="Save changes">Save changes <span aria-hidden="true">↗</span></button><span>Your changes apply to this account.</span></div>
+            </form>
+          </section>
+        </div>
+        <section class="account-security" id="security" aria-labelledby="security-title">
+          <div class="security-heading">
+            <div class="profile-section-heading"><span class="profile-section-number">02</span><div><h2 id="security-title">Account security</h2><p>A little extra care for your personal space.</p></div></div>
+            <button class="security-button security-button-secondary" type="button" id="security-refresh">Refresh security</button>
+          </div>
+          <p class="auth-message" id="security-message" role="status" aria-live="polite" aria-atomic="true"></p>
+          <p class="security-loading" id="security-loading" role="status">Checking your account protection…</p>
+          <div class="security-content" id="security-content" hidden>
+            <div class="security-grid" id="account-security">
+              <section class="security-panel" aria-labelledby="mfa-title">
+                <div class="security-panel-heading"><span class="security-symbol" aria-hidden="true">✳</span><span class="security-badge" id="security-mfa-badge">Checking</span></div>
+                <h3 id="mfa-title">Two-factor sign-in</h3>
+                <p class="security-intro">Add a code from your authenticator app when you sign in, alongside your password.</p>
+                <div id="mfa-disabled" hidden>
+                  <p class="security-description">A second step helps keep your account yours. Set it up with an authenticator app on your phone.</p>
+                  <form class="security-form" id="mfa-setup-form">
+                    <div class="account-field"><label for="mfa-password">Confirm your current password</label><div class="password-field"><input id="mfa-password" name="password" type="password" autocomplete="current-password" maxlength="128" required /><button class="password-toggle" type="button" data-toggle-password="mfa-password" aria-label="Show current password" aria-pressed="false">Show</button></div></div>
+                    <button class="security-button" type="submit" id="mfa-setup-start">Set up two-factor sign-in <span aria-hidden="true">↗</span></button>
+                  </form>
+                </div>
+                <div class="mfa-enrollment" id="mfa-enrollment" hidden>
+                  <p class="security-description">Scan this code in your authenticator app, or add the setup key manually.</p>
+                  <div class="mfa-qr" id="mfa-qr" role="img" aria-label="Authenticator setup QR code"></div>
+                  <div class="mfa-manual-key"><span>SETUP KEY</span><code id="mfa-secret"></code><button class="security-text-button" type="button" id="mfa-copy-secret">Copy setup key</button></div>
+                  <p class="account-hint" id="mfa-setup-expiry"></p>
+                  <form class="security-form" id="mfa-enable-form">
+                    <div class="account-field"><label for="mfa-enable-code">Six-digit authenticator code</label><input id="mfa-enable-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" minlength="6" maxlength="6" placeholder="000000" required /></div>
+                    <div class="security-actions"><button class="security-button" type="submit" id="mfa-enable">Enable two-factor sign-in</button><button class="security-button security-button-secondary" type="button" id="mfa-cancel-setup">Cancel setup</button></div>
+                  </form>
+                </div>
+                <div id="mfa-enabled" hidden>
+                  <p class="security-description">Your account uses an authenticator code or a recovery code when you sign in.</p>
+                  <p class="mfa-recovery-remaining" id="mfa-recovery-remaining"></p>
+                  <details class="mfa-manage" id="mfa-manage">
+                    <summary>Manage two-factor sign-in</summary>
+                    <p class="account-hint">Confirm your password and a fresh authenticator code, or one unused recovery code.</p>
+                    <form class="security-form" id="mfa-manage-form">
+                      <div class="account-field"><label for="mfa-manage-password">Current password</label><div class="password-field"><input id="mfa-manage-password" name="password" type="password" autocomplete="current-password" maxlength="128" required /><button class="password-toggle" type="button" data-toggle-password="mfa-manage-password" aria-label="Show current password" aria-pressed="false">Show</button></div></div>
+                      <div class="account-field"><label for="mfa-manage-code">Authenticator or recovery code</label><input id="mfa-manage-code" name="code" type="text" autocomplete="one-time-code" autocapitalize="off" spellcheck="false" minlength="6" maxlength="32" required /></div>
+                      <div class="security-actions"><button class="security-button security-button-secondary" type="submit" name="action" value="regenerate" id="mfa-regenerate">Replace recovery codes</button><button class="security-text-button security-danger" type="submit" name="action" value="disable" id="mfa-disable">Turn off two-factor sign-in</button></div>
+                      <p class="account-hint">Replacing recovery codes invalidates the old set. Both actions sign out your other sessions.</p>
+                    </form>
+                  </details>
+                </div>
+                <div class="mfa-recovery-panel" id="mfa-recovery-panel" hidden>
+                  <span class="security-overline">KEEP THESE SOMEWHERE PRIVATE</span>
+                  <h4>Your recovery codes</h4>
+                  <p>Save these codes before leaving this page. Each code works once if you cannot use your authenticator. This set is shown only now.</p>
+                  <ul class="mfa-recovery-codes" id="mfa-recovery-codes" aria-label="Single-use recovery codes"></ul>
+                  <div class="security-actions"><button class="security-button security-button-secondary" type="button" id="mfa-recovery-download">Download codes</button><button class="security-button" type="button" id="mfa-recovery-saved">I have saved my codes</button></div>
+                </div>
+              </section>
+              <section class="security-panel security-sessions-panel" aria-labelledby="security-sessions-title">
+                <div class="security-panel-heading"><span class="security-symbol security-device-symbol" aria-hidden="true">↗</span><span class="security-badge" id="security-session-count"></span></div>
+                <h3 id="security-sessions-title">Your signed-in devices</h3>
+                <p class="security-intro">Review the sessions connected to your account. Sign out a device whenever you need to.</p>
+                <div class="security-session-list" id="security-sessions" aria-live="polite"></div>
+                <button class="security-button security-button-secondary" type="button" id="security-revoke-others">Sign out other devices</button>
+                <p class="security-admin-timeout" id="security-admin-timeout" hidden>Admin sessions end after 30 minutes of inactivity and at most 8 hours.</p>
+              </section>
+            </div>
+          </div>
+        </section>
+        <section class="account-privacy" id="privacy" aria-labelledby="privacy-title">
+          <div class="profile-section-heading"><span class="profile-section-number">03</span><div><h2 id="privacy-title">Your privacy</h2><p>Manage what stays on this device, or delete your account.</p></div></div>
+          <p class="auth-message" id="privacy-message" role="status" aria-live="polite" aria-atomic="true"></p>
+          <div class="security-grid">
+            <section class="security-panel" aria-labelledby="privacy-device-title">
+              <h3 id="privacy-device-title">Data on this device</h3>
+              <p class="security-intro">Saved wishlist items, your preview bag and cookie choices belong to this browser. Clear them at any time. This does not delete your account or sign you out.</p>
+              <div class="security-actions"><button class="security-button security-button-secondary" type="button" id="privacy-clear-device">Clear saved device data</button><button class="security-text-button" type="button" id="privacy-cookie-settings">Cookie settings</button></div>
+              <p class="account-hint account-privacy-notice">Learn more in the <a href="privacy.html">Privacy Policy</a> and <a href="cookie-policy.html">Cookie Policy</a>.</p>
+            </section>
+            <section class="security-panel" aria-labelledby="privacy-delete-title">
+              <h3 id="privacy-delete-title">Delete your account</h3>
+              <p class="security-intro">Permanently delete your account details, password credentials and two-factor setup. All account sessions will end. Browser data on this device is cleared too.</p>
+              <button class="security-button security-button-secondary privacy-delete-start" type="button" id="privacy-delete-open">Delete my account</button>
+              <p class="account-hint account-privacy-notice">A final administrator must hand over administrator access before deleting their account. Limited non-identifying records and existing private backups may remain as described in the <a href="privacy.html#retention">Privacy Policy</a>.</p>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+    <dialog class="account-delete-dialog" id="account-delete-dialog" aria-labelledby="account-delete-title" aria-describedby="account-delete-description">
+      <form class="account-form" id="account-delete-form">
+        <h2 id="account-delete-title">Delete your account?</h2>
+        <p id="account-delete-description">This permanently removes your account and signs out every device. You cannot undo this action.</p>
+        <p class="auth-message" id="account-delete-message" role="alert" aria-live="assertive" aria-atomic="true"></p>
+        <div class="account-field"><label for="account-delete-password">Current password</label><div class="password-field"><input id="account-delete-password" name="password" type="password" autocomplete="current-password" maxlength="128" required /><button class="password-toggle" type="button" data-toggle-password="account-delete-password" aria-label="Show current password" aria-pressed="false">Show</button></div></div>
+        <div class="account-field" id="account-delete-factor" hidden><label for="account-delete-code">Authenticator or recovery code</label><input id="account-delete-code" name="code" type="text" autocomplete="one-time-code" autocapitalize="off" spellcheck="false" minlength="6" maxlength="32" aria-describedby="account-delete-code-hint" /><p class="account-hint" id="account-delete-code-hint">Use a fresh authenticator code or an unused recovery code.</p></div>
+        <div class="account-delete-actions"><button class="security-button security-button-secondary" id="account-delete-cancel" type="button" autofocus>Cancel</button><button class="security-button account-delete-confirm" id="account-delete-confirm" type="submit">Permanently delete account</button></div>
+      </form>
+    </dialog>
+    <footer class="account-footer">
+      <p>© Velora, with love.</p>
+      <nav aria-label="Account information"><a href="contact.html">Contact</a></nav>
+    
+      <nav class="legal-links" aria-label="Policies and privacy">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <button type="button" data-privacy-settings>Cookie settings</button>
+        <a href="business-details.html">Business Details</a>
+        <a href="unsubscribe.html">Unsubscribe</a>
+      </nav>
+    </footer>
+  </body>
+</html>

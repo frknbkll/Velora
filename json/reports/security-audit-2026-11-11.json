@@ -1,0 +1,116 @@
+{
+  "scope": "Workspace source, small text build/test artefacts, environment names, reachable Git text history and recorded browser dependency integrity. Private configuration/key/database contents are never read.",
+  "working_tree": {
+    "files_scanned": 622,
+    "findings": [
+      {
+        "category": "credential-in-url",
+        "file": "py/tests/test_seo_server.py",
+        "line": 174,
+        "source": "working-tree"
+      }
+    ],
+    "skipped": [
+      {
+        "file": ".env.local",
+        "reason": "private-file-not-opened"
+      },
+      {
+        "file": "tmp/color-detection-pixels.json",
+        "reason": "size-limit"
+      }
+    ]
+  },
+  "git": {
+    "status": "scanned",
+    "history_blobs_scanned": 793,
+    "history_objects_skipped": 0,
+    "findings": [
+      {
+        "category": "credential-in-url",
+        "file": "py/tests/test_seo_server.py",
+        "line": 174,
+        "source": "git-history"
+      }
+    ],
+    "limits": [
+      "Only reachable text blobs up to 2 MiB are scanned; private configuration, key and database files are flagged by path, never opened. Unreachable/deleted Git objects and remote-only history are not scanned."
+    ]
+  },
+  "environment": {
+    "sensitive_variable_names_present": [
+      "VELORA_OPENAI_API_KEY"
+    ],
+    "debug_classification": {
+      "DEBUG": "set-nonboolean"
+    },
+    "environment_files": [
+      ".env.local"
+    ],
+    "values_are_never_reported": true
+  },
+  "dependencies": {
+    "python_runtime_executing_audit": "3.15.2",
+    "third_party_python_imports_by_entry_file": {
+      "colleagues.py": [],
+      "commerce.py": [],
+      "discounts.py": [],
+      "reviews.py": [],
+      "security_core.py": [],
+      "seo.py": [],
+      "server.py": [],
+      "shared_folders.py": [],
+      "start-velora.py": [],
+      "support.py": [],
+      "update-runtime.py": []
+    },
+    "package_manifests": [],
+    "vendor": {
+      "name": "Nayuki QR Code Generator",
+      "version": "1.8.0",
+      "integrity": "matches-recorded-release"
+    },
+    "vendors": [
+      {
+        "name": "Nayuki QR Code Generator",
+        "version": "1.8.0",
+        "integrity": "matches-recorded-release"
+      },
+      {
+        "name": "Three.js",
+        "version": "0.180.0",
+        "integrity": "matches-recorded-release",
+        "files": [
+          {
+            "file": "addons/controls/OrbitControls.js",
+            "integrity": "matches-recorded-release"
+          },
+          {
+            "file": "addons/exporters/GLTFExporter.js",
+            "integrity": "matches-recorded-release"
+          },
+          {
+            "file": "three.core.js",
+            "integrity": "matches-recorded-release"
+          },
+          {
+            "file": "three.module.js",
+            "integrity": "matches-recorded-release"
+          }
+        ]
+      }
+    ],
+    "note": "This command does not contact vulnerability databases or update unrelated global packages."
+  },
+  "gitignore_patterns_missing": [],
+  "private_storage": {
+    "database_exists": true,
+    "master_key_exists": true,
+    "contents_read": false
+  },
+  "limits": [
+    "Pattern scanning cannot prove that every secret is absent; provider-revocation status and external services are outside this local check.",
+    "No host/network penetration test or full dependency vulnerability-database scan is performed by this command.",
+    "Private environment/key files are deliberately not opened. Skipped files and absent Git history are reported, not treated as proven clean."
+  ]
+}

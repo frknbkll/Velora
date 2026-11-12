@@ -1,0 +1,2359 @@
+{
+  "status": "complete",
+  "moves": [
+    {
+      "from": "404.html",
+      "to": "html/404.html"
+    },
+    {
+      "from": "account.html",
+      "to": "html/account.html"
+    },
+    {
+      "from": "admin.html",
+      "to": "html/admin.html"
+    },
+    {
+      "from": "business-details.html",
+      "to": "html/business-details.html"
+    },
+    {
+      "from": "careers.html",
+      "to": "html/careers.html"
+    },
+    {
+      "from": "contact.html",
+      "to": "html/contact.html"
+    },
+    {
+      "from": "cookie-policy.html",
+      "to": "html/cookie-policy.html"
+    },
+    {
+      "from": "faq.html",
+      "to": "html/faq.html"
+    },
+    {
+      "from": "founders.html",
+      "to": "html/founders.html"
+    },
+    {
+      "from": "index.html",
+      "to": "html/index.html"
+    },
+    {
+      "from": "intranet.html",
+      "to": "html/intranet.html"
+    },
+    {
+      "from": "login.html",
+      "to": "html/login.html"
+    },
+    {
+      "from": "our-story.html",
+      "to": "html/our-story.html"
+    },
+    {
+      "from": "privacy.html",
+      "to": "html/privacy.html"
+    },
+    {
+      "from": "product.html",
+      "to": "html/product.html"
+    },
+    {
+      "from": "refund-policy.html",
+      "to": "html/refund-policy.html"
+    },
+    {
+      "from": "register.html",
+      "to": "html/register.html"
+    },
+    {
+      "from": "reviews.html",
+      "to": "html/reviews.html"
+    },
+    {
+      "from": "shopping-info.html",
+      "to": "html/shopping-info.html"
+    },
+    {
+      "from": "team.html",
+      "to": "html/team.html"
+    },
+    {
+      "from": "terms.html",
+      "to": "html/terms.html"
+    },
+    {
+      "from": "unsubscribe.html",
+      "to": "html/unsubscribe.html"
+    },
+    {
+      "from": "vacancy.html",
+      "to": "html/vacancy.html"
+    },
+    {
+      "from": "velora-school.html",
+      "to": "html/velora-school.html"
+    },
+    {
+      "from": "account.css",
+      "to": "css/account.css"
+    },
+    {
+      "from": "admin-business.css",
+      "to": "css/admin-business.css"
+    },
+    {
+      "from": "admin-commerce.css",
+      "to": "css/admin-commerce.css"
+    },
+    {
+      "from": "admin-discounts.css",
+      "to": "css/admin-discounts.css"
+    },
+    {
+      "from": "admin-folder-access.css",
+      "to": "css/admin-folder-access.css"
+    },
+    {
+      "from": "admin-image-hotspots.css",
+      "to": "css/admin-image-hotspots.css"
+    },
+    {
+      "from": "admin-support.css",
+      "to": "css/admin-support.css"
+    },
+    {
+      "from": "admin.css",
+      "to": "css/admin.css"
+    },
+    {
+      "from": "fonts.css",
+      "to": "css/fonts.css"
+    },
+    {
+      "from": "homepage-discovery.css",
+      "to": "css/homepage-discovery.css"
+    },
+    {
+      "from": "homepage-variants.css",
+      "to": "css/homepage-variants.css"
+    },
+    {
+      "from": "image-inspector.css",
+      "to": "css/image-inspector.css"
+    },
+    {
+      "from": "intranet-folders.css",
+      "to": "css/intranet-folders.css"
+    },
+    {
+      "from": "intranet.css",
+      "to": "css/intranet.css"
+    },
+    {
+      "from": "login-security.css",
+      "to": "css/login-security.css"
+    },
+    {
+      "from": "privacy.css",
+      "to": "css/privacy.css"
+    },
+    {
+      "from": "product-page.css",
+      "to": "css/product-page.css"
+    },
+    {
+      "from": "reviews.css",
+      "to": "css/reviews.css"
+    },
+    {
+      "from": "school-3d.css",
+      "to": "css/school-3d.css"
+    },
+    {
+      "from": "school.css",
+      "to": "css/school.css"
+    },
+    {
+      "from": "shop-discounts.css",
+      "to": "css/shop-discounts.css"
+    },
+    {
+      "from": "shopping-enhancements.css",
+      "to": "css/shopping-enhancements.css"
+    },
+    {
+      "from": "styles.css",
+      "to": "css/styles.css"
+    },
+    {
+      "from": "support-chat.css",
+      "to": "css/support-chat.css"
+    },
+    {
+      "from": "team-map.css",
+      "to": "css/team-map.css"
+    },
+    {
+      "from": "team-portraits.css",
+      "to": "css/team-portraits.css"
+    },
+    {
+      "from": "account-privacy.js",
+      "to": "js/account-privacy.js"
+    },
+    {
+      "from": "account-security.js",
+      "to": "js/account-security.js"
+    },
+    {
+      "from": "admin-business.js",
+      "to": "js/admin-business.js"
+    },
+    {
+      "from": "admin-commerce.js",
+      "to": "js/admin-commerce.js"
+    },
+    {
+      "from": "admin-discounts.js",
+      "to": "js/admin-discounts.js"
+    },
+    {
+      "from": "admin-folder-access.js",
+      "to": "js/admin-folder-access.js"
+    },
+    {
+      "from": "admin-image-hotspots.js",
+      "to": "js/admin-image-hotspots.js"
+    },
+    {
+      "from": "admin-security.js",
+      "to": "js/admin-security.js"
+    },
+    {
+      "from": "admin-support.js",
+      "to": "js/admin-support.js"
+    },
+    {
+      "from": "admin.js",
+      "to": "js/admin.js"
+    },
+    {
+      "from": "auth.js",
+      "to": "js/auth.js"
+    },
+    {
+      "from": "careers.js",
+      "to": "js/careers.js"
+    },
+    {
+      "from": "founder-portraits.js",
+      "to": "js/founder-portraits.js"
+    },
+    {
+      "from": "image-inspector.js",
+      "to": "js/image-inspector.js"
+    },
+    {
+      "from": "intranet-folders.js",
+      "to": "js/intranet-folders.js"
+    },
+    {
+      "from": "intranet.js",
+      "to": "js/intranet.js"
+    },
+    {
+      "from": "privacy.js",
+      "to": "js/privacy.js"
+    },
+    {
+      "from": "product-color-detection.js",
+      "to": "js/product-color-detection.js"
+    },
+    {
+      "from": "product-color-images.js",
+      "to": "js/product-color-images.js"
+    },
+    {
+      "from": "product-page.js",
+      "to": "js/product-page.js"
+    },
+    {
+      "from": "product-responsive-images.js",
+      "to": "js/product-responsive-images.js"
+    },
+    {
+      "from": "reviews.js",
+      "to": "js/reviews.js"
+    },
+    {
+      "from": "school-3d-models.js",
+      "to": "js/school-3d-models.js"
+    },
+    {
+      "from": "school-3d.js",
+      "to": "js/school-3d.js"
+    },
+    {
+      "from": "school.js",
+      "to": "js/school.js"
+    },
+    {
+      "from": "script.js",
+      "to": "js/script.js"
+    },
+    {
+      "from": "scroll-effects.js",
+      "to": "js/scroll-effects.js"
+    },
+    {
+      "from": "shopping-state.js",
+      "to": "js/shopping-state.js"
+    },
+    {
+      "from": "site-images.js",
+      "to": "js/site-images.js"
+    },
+    {
+      "from": "support-chat.js",
+      "to": "js/support-chat.js"
+    },
+    {
+      "from": "team-map.js",
+      "to": "js/team-map.js"
+    },
+    {
+      "from": "team-portraits.js",
+      "to": "js/team-portraits.js"
+    },
+    {
+      "from": "colleagues.py",
+      "to": "py/app/colleagues.py"
+    },
+    {
+      "from": "commerce.py",
+      "to": "py/app/commerce.py"
+    },
+    {
+      "from": "discounts.py",
+      "to": "py/app/discounts.py"
+    },
+    {
+      "from": "reviews.py",
+      "to": "py/app/reviews.py"
+    },
+    {
+      "from": "security_core.py",
+      "to": "py/app/security_core.py"
+    },
+    {
+      "from": "seo.py",
+      "to": "py/app/seo.py"
+    },
+    {
+      "from": "server.py",
+      "to": "py/app/server.py"
+    },
+    {
+      "from": "shared_folders.py",
+      "to": "py/app/shared_folders.py"
+    },
+    {
+      "from": "start-velora.py",
+      "to": "py/launch/start-velora.py"
+    },
+    {
+      "from": "support.py",
+      "to": "py/app/support.py"
+    },
+    {
+      "from": "update-runtime.py",
+      "to": "py/launch/update-runtime.py"
+    },
+    {
+      "from": "tools/add-accessory-examples.py",
+      "to": "py/tools/add-accessory-examples.py"
+    },
+    {
+      "from": "tools/apply-object-labels.py",
+      "to": "py/tools/apply-object-labels.py"
+    },
+    {
+      "from": "tools/apply-outfit-items.py",
+      "to": "py/tools/apply-outfit-items.py"
+    },
+    {
+      "from": "tools/audit-assets.py",
+      "to": "py/tools/audit-assets.py"
+    },
+    {
+      "from": "tools/import-new-arrival-variations.py",
+      "to": "py/tools/import-new-arrival-variations.py"
+    },
+    {
+      "from": "tools/prepare-brand-assets.py",
+      "to": "py/tools/prepare-brand-assets.py"
+    },
+    {
+      "from": "tools/prepare-outfit-items.py",
+      "to": "py/tools/prepare-outfit-items.py"
+    },
+    {
+      "from": "tools/prepare-responsive-images.py",
+      "to": "py/tools/prepare-responsive-images.py"
+    },
+    {
+      "from": "tools/prepare-site-pages.py",
+      "to": "py/tools/prepare-site-pages.py"
+    },
+    {
+      "from": "tools/prepare-team-hover-prompts.py",
+      "to": "py/tools/prepare-team-hover-prompts.py"
+    },
+    {
+      "from": "tools/recover-outfit-image-records.py",
+      "to": "py/tools/recover-outfit-image-records.py"
+    },
+    {
+      "from": "tools/security-audit.py",
+      "to": "py/tools/security-audit.py"
+    },
+    {
+      "from": "tools/seed-department-documents.py",
+      "to": "py/tools/seed-department-documents.py"
+    },
+    {
+      "from": "tests/run-account-browser.py",
+      "to": "py/tests/run-account-browser.py"
+    },
+    {
+      "from": "tests/run-account-connection.py",
+      "to": "py/tests/run-account-connection.py"
+    },
+    {
+      "from": "tests/run-account-privacy-browser.py",
+      "to": "py/tests/run-account-privacy-browser.py"
+    },
+    {
+      "from": "tests/run-admin-auto-color.py",
+      "to": "py/tests/run-admin-auto-color.py"
+    },
+    {
+      "from": "tests/run-admin-usability.py",
+      "to": "py/tests/run-admin-usability.py"
+    },
+    {
+      "from": "tests/run-business-browser.py",
+      "to": "py/tests/run-business-browser.py"
+    },
+    {
+      "from": "tests/run-catalog-browser.py",
+      "to": "py/tests/run-catalog-browser.py"
+    },
+    {
+      "from": "tests/run-colleague-accounts.py",
+      "to": "py/tests/run-colleague-accounts.py"
+    },
+    {
+      "from": "tests/run-collection-layout.py",
+      "to": "py/tests/run-collection-layout.py"
+    },
+    {
+      "from": "tests/run-commerce-browser.py",
+      "to": "py/tests/run-commerce-browser.py"
+    },
+    {
+      "from": "tests/run-discounts-browser.py",
+      "to": "py/tests/run-discounts-browser.py"
+    },
+    {
+      "from": "tests/run-discovery-browser.py",
+      "to": "py/tests/run-discovery-browser.py"
+    },
+    {
+      "from": "tests/run-image-delivery.py",
+      "to": "py/tests/run-image-delivery.py"
+    },
+    {
+      "from": "tests/run-outfit-admin.py",
+      "to": "py/tests/run-outfit-admin.py"
+    },
+    {
+      "from": "tests/run-outfit-items.py",
+      "to": "py/tests/run-outfit-items.py"
+    },
+    {
+      "from": "tests/run-privacy-browser.py",
+      "to": "py/tests/run-privacy-browser.py"
+    },
+    {
+      "from": "tests/run-product-card-layout.py",
+      "to": "py/tests/run-product-card-layout.py"
+    },
+    {
+      "from": "tests/run-product-colors.py",
+      "to": "py/tests/run-product-colors.py"
+    },
+    {
+      "from": "tests/run-product-launch-ux.py",
+      "to": "py/tests/run-product-launch-ux.py"
+    },
+    {
+      "from": "tests/run-reviews-browser.py",
+      "to": "py/tests/run-reviews-browser.py"
+    },
+    {
+      "from": "tests/run-school-3d.py",
+      "to": "py/tests/run-school-3d.py"
+    },
+    {
+      "from": "tests/run-school.py",
+      "to": "py/tests/run-school.py"
+    },
+    {
+      "from": "tests/run-security-browser.py",
+      "to": "py/tests/run-security-browser.py"
+    },
+    {
+      "from": "tests/run-shared-folders.py",
+      "to": "py/tests/run-shared-folders.py"
+    },
+    {
+      "from": "tests/run-shoppable-images.py",
+      "to": "py/tests/run-shoppable-images.py"
+    },
+    {
+      "from": "tests/run-shopping-browser.py",
+      "to": "py/tests/run-shopping-browser.py"
+    },
+    {
+      "from": "tests/run-shopping-state.py",
+      "to": "py/tests/run-shopping-state.py"
+    },
+    {
+      "from": "tests/run-support-browser.py",
+      "to": "py/tests/run-support-browser.py"
+    },
+    {
+      "from": "tests/run-team-portraits.py",
+      "to": "py/tests/run-team-portraits.py"
+    },
+    {
+      "from": "tests/run-xss-browser.py",
+      "to": "py/tests/run-xss-browser.py"
+    },
+    {
+      "from": "tests/test_accessory_examples.py",
+      "to": "py/tests/test_accessory_examples.py"
+    },
+    {
+      "from": "tests/test_auth_server.py",
+      "to": "py/tests/test_auth_server.py"
+    },
+    {
+      "from": "tests/test_catalog_server.py",
+      "to": "py/tests/test_catalog_server.py"
+    },
+    {
+      "from": "tests/test_colleagues_server.py",
+      "to": "py/tests/test_colleagues_server.py"
+    },
+    {
+      "from": "tests/test_commerce_server.py",
+      "to": "py/tests/test_commerce_server.py"
+    },
+    {
+      "from": "tests/test_department_documents.py",
+      "to": "py/tests/test_department_documents.py"
+    },
+    {
+      "from": "tests/test_discounts_server.py",
+      "to": "py/tests/test_discounts_server.py"
+    },
+    {
+      "from": "tests/test_hardening_server.py",
+      "to": "py/tests/test_hardening_server.py"
+    },
+    {
+      "from": "tests/test_image_hotspots_server.py",
+      "to": "py/tests/test_image_hotspots_server.py"
+    },
+    {
+      "from": "tests/test_image_masters.py",
+      "to": "py/tests/test_image_masters.py"
+    },
+    {
+      "from": "tests/test_object_labels_setup.py",
+      "to": "py/tests/test_object_labels_setup.py"
+    },
+    {
+      "from": "tests/test_outfit_items_server.py",
+      "to": "py/tests/test_outfit_items_server.py"
+    },
+    {
+      "from": "tests/test_outfit_items_setup.py",
+      "to": "py/tests/test_outfit_items_setup.py"
+    },
+    {
+      "from": "tests/test_privacy_server.py",
+      "to": "py/tests/test_privacy_server.py"
+    },
+    {
+      "from": "tests/test_reviews_server.py",
+      "to": "py/tests/test_reviews_server.py"
+    },
+    {
+      "from": "tests/test_runtime_launcher.py",
+      "to": "py/tests/test_runtime_launcher.py"
+    },
+    {
+      "from": "tests/test_security_audit_tool.py",
+      "to": "py/tests/test_security_audit_tool.py"
+    },
+    {
+      "from": "tests/test_security_server.py",
+      "to": "py/tests/test_security_server.py"
+    },
+    {
+      "from": "tests/test_seo_server.py",
+      "to": "py/tests/test_seo_server.py"
+    },
+    {
+      "from": "tests/test_shared_folders.py",
+      "to": "py/tests/test_shared_folders.py"
+    },
+    {
+      "from": "tests/test_support_server.py",
+      "to": "py/tests/test_support_server.py"
+    },
+    {
+      "from": "catalog-copy-updates.json",
+      "to": "json/catalog/catalog-copy-updates.json"
+    },
+    {
+      "from": "image-rights-register.json",
+      "to": "json/media/image-rights-register.json"
+    },
+    {
+      "from": "product-catalog.json",
+      "to": "json/catalog/product-catalog.json"
+    },
+    {
+      "from": "runtime-lock.json",
+      "to": "json/config/runtime-lock.json"
+    },
+    {
+      "from": "site-config.json",
+      "to": "json/config/site-config.json"
+    },
+    {
+      "from": "assets/vendor/qrcodegen.js",
+      "to": "js/vendor/qrcodegen.js"
+    },
+    {
+      "from": "assets/vendor/three/three.core.js",
+      "to": "js/vendor/three/three.core.js"
+    },
+    {
+      "from": "assets/vendor/three/three.module.js",
+      "to": "js/vendor/three/three.module.js"
+    },
+    {
+      "from": "assets/vendor/three/addons/controls/OrbitControls.js",
+      "to": "js/vendor/three/addons/controls/OrbitControls.js"
+    },
+    {
+      "from": "assets/vendor/three/addons/exporters/GLTFExporter.js",
+      "to": "js/vendor/three/addons/exporters/GLTFExporter.js"
+    },
+    {
+      "from": "assets/world-land-source.json",
+      "to": "json/maps/world-land-source.json"
+    },
+    {
+      "from": "assets/world-land.json",
+      "to": "json/maps/world-land.json"
+    },
+    {
+      "from": "data/creative/additional-team-portrait-prompts.json",
+      "to": "json/creative/additional-team-portrait-prompts.json"
+    },
+    {
+      "from": "data/creative/color-pose-prompts.json",
+      "to": "json/creative/color-pose-prompts.json"
+    },
+    {
+      "from": "data/creative/generated-color-files.json",
+      "to": "json/creative/generated-color-files.json"
+    },
+    {
+      "from": "data/creative/generated-team-portraits.json",
+      "to": "json/creative/generated-team-portraits.json"
+    },
+    {
+      "from": "data/creative/ivory-ribbed-knit-color-prompts.json",
+      "to": "json/creative/ivory-ribbed-knit-color-prompts.json"
+    },
+    {
+      "from": "data/creative/merlot-satin-trouser-set-color-prompts.json",
+      "to": "json/creative/merlot-satin-trouser-set-color-prompts.json"
+    },
+    {
+      "from": "data/creative/midnight-double-breasted-suit-color-prompts.json",
+      "to": "json/creative/midnight-double-breasted-suit-color-prompts.json"
+    },
+    {
+      "from": "data/creative/product-pose-revisions.json",
+      "to": "json/creative/product-pose-revisions.json"
+    },
+    {
+      "from": "data/creative/replacement-team-portrait-prompts.json",
+      "to": "json/creative/replacement-team-portrait-prompts.json"
+    },
+    {
+      "from": "data/creative/team-portrait-prompts.json",
+      "to": "json/creative/team-portrait-prompts.json"
+    },
+    {
+      "from": "data/creative/vacancy-photo-prompts.json",
+      "to": "json/creative/vacancy-photo-prompts.json"
+    },
+    {
+      "from": "data/department-documents/business.json",
+      "to": "json/departments/department-documents/business.json"
+    },
+    {
+      "from": "data/department-documents/operations.json",
+      "to": "json/departments/department-documents/operations.json"
+    },
+    {
+      "from": "data/department-documents/studio.json",
+      "to": "json/departments/department-documents/studio.json"
+    },
+    {
+      "from": "output/applied-outfit-items.json",
+      "to": "json/reports/applied-outfit-items.json"
+    },
+    {
+      "from": "output/asset-cleanup-manifest.json",
+      "to": "json/reports/asset-cleanup-manifest.json"
+    },
+    {
+      "from": "output/asset-dependency-audit.json",
+      "to": "json/reports/asset-dependency-audit.json"
+    },
+    {
+      "from": "output/catalog-image-audit.json",
+      "to": "json/reports/catalog-image-audit.json"
+    },
+    {
+      "from": "output/image-generation-espresso-top-handle-bag-v1.json",
+      "to": "json/reports/image-generation-espresso-top-handle-bag-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-0499c134586039c3-v1.json",
+      "to": "json/reports/image-generation-garment-0499c134586039c3-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-0641bb0833534697-v1.json",
+      "to": "json/reports/image-generation-garment-0641bb0833534697-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-070e122b3b2a0a1d-v1.json",
+      "to": "json/reports/image-generation-garment-070e122b3b2a0a1d-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-0c9f048ac48a707e-v1.json",
+      "to": "json/reports/image-generation-garment-0c9f048ac48a707e-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-0cece17490138dac-v1.json",
+      "to": "json/reports/image-generation-garment-0cece17490138dac-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-0d3ef24445790a06-v1.json",
+      "to": "json/reports/image-generation-garment-0d3ef24445790a06-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-14c77cfe7ca32f1c-v1.json",
+      "to": "json/reports/image-generation-garment-14c77cfe7ca32f1c-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-166871dd1a4996c7-v1.json",
+      "to": "json/reports/image-generation-garment-166871dd1a4996c7-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-17ef8e76f3900391-v1.json",
+      "to": "json/reports/image-generation-garment-17ef8e76f3900391-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-18610d00ae8436f0-v1.json",
+      "to": "json/reports/image-generation-garment-18610d00ae8436f0-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-1ae845d453aa1fce-v1.json",
+      "to": "json/reports/image-generation-garment-1ae845d453aa1fce-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-1aff2611e1fe3c8b-v1.json",
+      "to": "json/reports/image-generation-garment-1aff2611e1fe3c8b-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-1efd9419870c45d5-v1.json",
+      "to": "json/reports/image-generation-garment-1efd9419870c45d5-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-1f89c653c09528d1-v1.json",
+      "to": "json/reports/image-generation-garment-1f89c653c09528d1-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-24a9406125222ec8-v1.json",
+      "to": "json/reports/image-generation-garment-24a9406125222ec8-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-257524c3ff675ac5-v1.json",
+      "to": "json/reports/image-generation-garment-257524c3ff675ac5-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-27e73ff910a71df3-v1.json",
+      "to": "json/reports/image-generation-garment-27e73ff910a71df3-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-2f1f477ab7e06ceb-v1.json",
+      "to": "json/reports/image-generation-garment-2f1f477ab7e06ceb-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-2f92545d9cbed177-v1.json",
+      "to": "json/reports/image-generation-garment-2f92545d9cbed177-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-356e3b3db3284328-v1.json",
+      "to": "json/reports/image-generation-garment-356e3b3db3284328-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-39baac639a81b1b5-v1.json",
+      "to": "json/reports/image-generation-garment-39baac639a81b1b5-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-40b272d4673736dc-v1.json",
+      "to": "json/reports/image-generation-garment-40b272d4673736dc-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-4b961836a5114101-v1.json",
+      "to": "json/reports/image-generation-garment-4b961836a5114101-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-4ba84e164ca92c24-v1.json",
+      "to": "json/reports/image-generation-garment-4ba84e164ca92c24-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-4d4304a128904e2f-v1.json",
+      "to": "json/reports/image-generation-garment-4d4304a128904e2f-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-4d51a0de1ad5592f-v1.json",
+      "to": "json/reports/image-generation-garment-4d51a0de1ad5592f-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-4e2b0a33f31318ac-v1.json",
+      "to": "json/reports/image-generation-garment-4e2b0a33f31318ac-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-4f74d57ae172a738-v1.json",
+      "to": "json/reports/image-generation-garment-4f74d57ae172a738-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-52137095165dcac4-v1.json",
+      "to": "json/reports/image-generation-garment-52137095165dcac4-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-52e502c50f2fff58-v1.json",
+      "to": "json/reports/image-generation-garment-52e502c50f2fff58-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-53a68a01bbdedf19-v1.json",
+      "to": "json/reports/image-generation-garment-53a68a01bbdedf19-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-552959ebc1ce3e02-v1.json",
+      "to": "json/reports/image-generation-garment-552959ebc1ce3e02-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-5750c07e3cbf0922-v1.json",
+      "to": "json/reports/image-generation-garment-5750c07e3cbf0922-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-5aa1a4c95b8b43cf-v1.json",
+      "to": "json/reports/image-generation-garment-5aa1a4c95b8b43cf-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-617d6a4389d34fe2-v1.json",
+      "to": "json/reports/image-generation-garment-617d6a4389d34fe2-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-637245ab86907188-v1.json",
+      "to": "json/reports/image-generation-garment-637245ab86907188-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-66160c188c347697-v1.json",
+      "to": "json/reports/image-generation-garment-66160c188c347697-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-6664bf77ae517850-v1.json",
+      "to": "json/reports/image-generation-garment-6664bf77ae517850-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-6834dbb23ca63224-v1.json",
+      "to": "json/reports/image-generation-garment-6834dbb23ca63224-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-6a22b234a18f036d-v1.json",
+      "to": "json/reports/image-generation-garment-6a22b234a18f036d-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-6bf4acf66562795c-v1.json",
+      "to": "json/reports/image-generation-garment-6bf4acf66562795c-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-6e74347edcea55dd-v1.json",
+      "to": "json/reports/image-generation-garment-6e74347edcea55dd-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-72cb66b82bef90ad-v1.json",
+      "to": "json/reports/image-generation-garment-72cb66b82bef90ad-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-74e5ecf28c897588-v1.json",
+      "to": "json/reports/image-generation-garment-74e5ecf28c897588-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-751e40965ad3a20d-v1.json",
+      "to": "json/reports/image-generation-garment-751e40965ad3a20d-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-7782745d0efd8c24-v1.json",
+      "to": "json/reports/image-generation-garment-7782745d0efd8c24-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-79e0b7a097df924b-v1.json",
+      "to": "json/reports/image-generation-garment-79e0b7a097df924b-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-7b8ef54e6321f222-v1.json",
+      "to": "json/reports/image-generation-garment-7b8ef54e6321f222-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-7f2d1f88d06fb45c-v1.json",
+      "to": "json/reports/image-generation-garment-7f2d1f88d06fb45c-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-874d7c0173a9d2a8-v1.json",
+      "to": "json/reports/image-generation-garment-874d7c0173a9d2a8-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-8896b52b23cd0824-v1.json",
+      "to": "json/reports/image-generation-garment-8896b52b23cd0824-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-8e861c306b731e29-v1.json",
+      "to": "json/reports/image-generation-garment-8e861c306b731e29-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-8ec4205f9115385e-v1.json",
+      "to": "json/reports/image-generation-garment-8ec4205f9115385e-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-9b7becdf69faba45-v1.json",
+      "to": "json/reports/image-generation-garment-9b7becdf69faba45-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-9ef1f074154c608c-v1.json",
+      "to": "json/reports/image-generation-garment-9ef1f074154c608c-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-a01299210acf7627-v1.json",
+      "to": "json/reports/image-generation-garment-a01299210acf7627-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-a26d4ac081364941-v1.json",
+      "to": "json/reports/image-generation-garment-a26d4ac081364941-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-a2e2bfb6aed5c608-v1.json",
+      "to": "json/reports/image-generation-garment-a2e2bfb6aed5c608-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-a505c9f975120e21-v1.json",
+      "to": "json/reports/image-generation-garment-a505c9f975120e21-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-b21271819fbf773c-v1.json",
+      "to": "json/reports/image-generation-garment-b21271819fbf773c-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-b4ffbe06207e3314-v1.json",
+      "to": "json/reports/image-generation-garment-b4ffbe06207e3314-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-bab9b9c87f0abba0-v1.json",
+      "to": "json/reports/image-generation-garment-bab9b9c87f0abba0-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-c9f06c204bdee72a-v1.json",
+      "to": "json/reports/image-generation-garment-c9f06c204bdee72a-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-c9f06c204bdee72a-v2.json",
+      "to": "json/reports/image-generation-garment-c9f06c204bdee72a-v2.json"
+    },
+    {
+      "from": "output/image-generation-garment-c9f06c204bdee72a-v3.json",
+      "to": "json/reports/image-generation-garment-c9f06c204bdee72a-v3.json"
+    },
+    {
+      "from": "output/image-generation-garment-caafcb7f7ea0475a-v1.json",
+      "to": "json/reports/image-generation-garment-caafcb7f7ea0475a-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-caafcb7f7ea0475a-v2.json",
+      "to": "json/reports/image-generation-garment-caafcb7f7ea0475a-v2.json"
+    },
+    {
+      "from": "output/image-generation-garment-cbc653452f6001b8-v1.json",
+      "to": "json/reports/image-generation-garment-cbc653452f6001b8-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-d48662bc960d8ad2-v1.json",
+      "to": "json/reports/image-generation-garment-d48662bc960d8ad2-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-d638ee48cacb4abe-v1.json",
+      "to": "json/reports/image-generation-garment-d638ee48cacb4abe-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-da1ec676efabfe8d-v1.json",
+      "to": "json/reports/image-generation-garment-da1ec676efabfe8d-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-db747bb55dc91722-v1.json",
+      "to": "json/reports/image-generation-garment-db747bb55dc91722-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-dcac45b76ac443e0-v1.json",
+      "to": "json/reports/image-generation-garment-dcac45b76ac443e0-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-dd10700aabef4abc-v1.json",
+      "to": "json/reports/image-generation-garment-dd10700aabef4abc-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-dd6d6bac12f4b6d4-v1.json",
+      "to": "json/reports/image-generation-garment-dd6d6bac12f4b6d4-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-e1051eeab7dcec5f-v1.json",
+      "to": "json/reports/image-generation-garment-e1051eeab7dcec5f-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-e51eb39916bcceab-v1.json",
+      "to": "json/reports/image-generation-garment-e51eb39916bcceab-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-e57f33ce2e1562d2-v1.json",
+      "to": "json/reports/image-generation-garment-e57f33ce2e1562d2-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-e7adba5f950e57c3-v1.json",
+      "to": "json/reports/image-generation-garment-e7adba5f950e57c3-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-e9a2c2dfa9f8f42d-v1.json",
+      "to": "json/reports/image-generation-garment-e9a2c2dfa9f8f42d-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-edc6983c2ab5268c-v1.json",
+      "to": "json/reports/image-generation-garment-edc6983c2ab5268c-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-ee173795c6a09788-v1.json",
+      "to": "json/reports/image-generation-garment-ee173795c6a09788-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-ee63e133d40760be-v1.json",
+      "to": "json/reports/image-generation-garment-ee63e133d40760be-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-f14603c04434f518-v1.json",
+      "to": "json/reports/image-generation-garment-f14603c04434f518-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-f348c4635fca0606-v1.json",
+      "to": "json/reports/image-generation-garment-f348c4635fca0606-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-f56dfe081b1b14e0-v1.json",
+      "to": "json/reports/image-generation-garment-f56dfe081b1b14e0-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-f62ee6e41ab495d3-v1.json",
+      "to": "json/reports/image-generation-garment-f62ee6e41ab495d3-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-f62ee6e41ab495d3-v2.json",
+      "to": "json/reports/image-generation-garment-f62ee6e41ab495d3-v2.json"
+    },
+    {
+      "from": "output/image-generation-garment-f84bedf34737978e-v1.json",
+      "to": "json/reports/image-generation-garment-f84bedf34737978e-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-fe93ba37bb9ba2f6-v1.json",
+      "to": "json/reports/image-generation-garment-fe93ba37bb9ba2f6-v1.json"
+    },
+    {
+      "from": "output/image-generation-garment-fe93ba37bb9ba2f6-v2.json",
+      "to": "json/reports/image-generation-garment-fe93ba37bb9ba2f6-v2.json"
+    },
+    {
+      "from": "output/image-generation-item-0060dab0fc44aea700f8-v1.json",
+      "to": "json/reports/image-generation-item-0060dab0fc44aea700f8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-02a6ac30576c8d0f9803-v1.json",
+      "to": "json/reports/image-generation-item-02a6ac30576c8d0f9803-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-02e52f59c838a13af993-v1.json",
+      "to": "json/reports/image-generation-item-02e52f59c838a13af993-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-04562df33ac9ad6146c6-v1.json",
+      "to": "json/reports/image-generation-item-04562df33ac9ad6146c6-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-061feb823cc13b256c42-v1.json",
+      "to": "json/reports/image-generation-item-061feb823cc13b256c42-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-0910b902f39d4486e3a9-v1.json",
+      "to": "json/reports/image-generation-item-0910b902f39d4486e3a9-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-0ce0faf7e84af62d7380-v1.json",
+      "to": "json/reports/image-generation-item-0ce0faf7e84af62d7380-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-0dee573220edb40f2e90-v1.json",
+      "to": "json/reports/image-generation-item-0dee573220edb40f2e90-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-1179ba1b69e040932bd6-v1.json",
+      "to": "json/reports/image-generation-item-1179ba1b69e040932bd6-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-11baa7a83b3b63ec487e-v1.json",
+      "to": "json/reports/image-generation-item-11baa7a83b3b63ec487e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-12a78e3e1d0c60b1eb48-v1.json",
+      "to": "json/reports/image-generation-item-12a78e3e1d0c60b1eb48-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-13c14185327517d0300a-v1.json",
+      "to": "json/reports/image-generation-item-13c14185327517d0300a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-150a666c293c0d1909b4-v1.json",
+      "to": "json/reports/image-generation-item-150a666c293c0d1909b4-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-1563a4bbc31be2fd21d3-v1.json",
+      "to": "json/reports/image-generation-item-1563a4bbc31be2fd21d3-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-1634f31e76a0bdd98717-v1.json",
+      "to": "json/reports/image-generation-item-1634f31e76a0bdd98717-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-174ac997d98e5c8c688e-v1.json",
+      "to": "json/reports/image-generation-item-174ac997d98e5c8c688e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-17f6a8a74dba84a7feb4-v1.json",
+      "to": "json/reports/image-generation-item-17f6a8a74dba84a7feb4-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-1d55dc69d92690d44d2f-v1.json",
+      "to": "json/reports/image-generation-item-1d55dc69d92690d44d2f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-1ef083bae598a0437390-v1.json",
+      "to": "json/reports/image-generation-item-1ef083bae598a0437390-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-1f22feb8b29400af46a8-v1.json",
+      "to": "json/reports/image-generation-item-1f22feb8b29400af46a8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-20f6d0b0fc2425890384-v1.json",
+      "to": "json/reports/image-generation-item-20f6d0b0fc2425890384-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-214c013a85adf0257182-v1.json",
+      "to": "json/reports/image-generation-item-214c013a85adf0257182-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-2179aaea8a0526b3976d-v1.json",
+      "to": "json/reports/image-generation-item-2179aaea8a0526b3976d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-22fa1f903fb7b8242af1-v1.json",
+      "to": "json/reports/image-generation-item-22fa1f903fb7b8242af1-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-233feed618df246613d8-v1.json",
+      "to": "json/reports/image-generation-item-233feed618df246613d8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-23fec7367f25774f83bc-v1.json",
+      "to": "json/reports/image-generation-item-23fec7367f25774f83bc-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-24a6c58cfb182fd4c063-v1.json",
+      "to": "json/reports/image-generation-item-24a6c58cfb182fd4c063-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-24da8ecf2bfe0550f422-v1.json",
+      "to": "json/reports/image-generation-item-24da8ecf2bfe0550f422-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-24f199f758ad14f5b618-v1.json",
+      "to": "json/reports/image-generation-item-24f199f758ad14f5b618-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-25743c9e0eb105927ca2-v1.json",
+      "to": "json/reports/image-generation-item-25743c9e0eb105927ca2-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-265dfa141e5ddf067137-v1.json",
+      "to": "json/reports/image-generation-item-265dfa141e5ddf067137-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-27b04162b59291dd21cc-v1.json",
+      "to": "json/reports/image-generation-item-27b04162b59291dd21cc-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-294ec637528d505f3050-v1.json",
+      "to": "json/reports/image-generation-item-294ec637528d505f3050-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-29581b8ee6e98283563c-v1.json",
+      "to": "json/reports/image-generation-item-29581b8ee6e98283563c-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-2bd36b2070b2cb98285a-v1.json",
+      "to": "json/reports/image-generation-item-2bd36b2070b2cb98285a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-2c64eb68f60edcd53c9a-v1.json",
+      "to": "json/reports/image-generation-item-2c64eb68f60edcd53c9a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-2dc2fa19e237834e3824-v1.json",
+      "to": "json/reports/image-generation-item-2dc2fa19e237834e3824-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-2e34a3d16cdab3923417-v1.json",
+      "to": "json/reports/image-generation-item-2e34a3d16cdab3923417-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-2fda23305be751222767-v1.json",
+      "to": "json/reports/image-generation-item-2fda23305be751222767-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-35adb47003bb0c9f78f5-v1.json",
+      "to": "json/reports/image-generation-item-35adb47003bb0c9f78f5-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-35b682ca221a31ad8c17-v1.json",
+      "to": "json/reports/image-generation-item-35b682ca221a31ad8c17-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-384b8a3c0f4ad32d6e1f-v1.json",
+      "to": "json/reports/image-generation-item-384b8a3c0f4ad32d6e1f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-391057e3281e1a8be85e-v1.json",
+      "to": "json/reports/image-generation-item-391057e3281e1a8be85e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-399440f415fb060184ca-v1.json",
+      "to": "json/reports/image-generation-item-399440f415fb060184ca-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-39bb7efbed8bccdab668-v1.json",
+      "to": "json/reports/image-generation-item-39bb7efbed8bccdab668-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-3aa472a54574342aac65-v1.json",
+      "to": "json/reports/image-generation-item-3aa472a54574342aac65-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-3c4526d04ba6676b9c29-v1.json",
+      "to": "json/reports/image-generation-item-3c4526d04ba6676b9c29-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-3d86497279f44605b1ca-v1.json",
+      "to": "json/reports/image-generation-item-3d86497279f44605b1ca-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-43087cf9c8532d208317-v1.json",
+      "to": "json/reports/image-generation-item-43087cf9c8532d208317-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-441ffa54f674be6a1b48-v1.json",
+      "to": "json/reports/image-generation-item-441ffa54f674be6a1b48-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-445ecc26ad0c91dbc4e7-v1.json",
+      "to": "json/reports/image-generation-item-445ecc26ad0c91dbc4e7-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-468dcb718d9575d3cb0f-v1.json",
+      "to": "json/reports/image-generation-item-468dcb718d9575d3cb0f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-46a20b1b1476300d0eee-v1.json",
+      "to": "json/reports/image-generation-item-46a20b1b1476300d0eee-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-46eee4037024b11c38f6-v1.json",
+      "to": "json/reports/image-generation-item-46eee4037024b11c38f6-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-47d8e6634ac7b1a77958-v1.json",
+      "to": "json/reports/image-generation-item-47d8e6634ac7b1a77958-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-493958ea0b8b3d571a7e-v1.json",
+      "to": "json/reports/image-generation-item-493958ea0b8b3d571a7e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4942e7b3c11d1c0c8c0d-v1.json",
+      "to": "json/reports/image-generation-item-4942e7b3c11d1c0c8c0d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4b27f6739dcccce8e92c-v1.json",
+      "to": "json/reports/image-generation-item-4b27f6739dcccce8e92c-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4baa8a17be7b641d68a3-v1.json",
+      "to": "json/reports/image-generation-item-4baa8a17be7b641d68a3-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4bd178f48f9d5eddf6d4-v1.json",
+      "to": "json/reports/image-generation-item-4bd178f48f9d5eddf6d4-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4cf68b24b1af1f0c5800-v1.json",
+      "to": "json/reports/image-generation-item-4cf68b24b1af1f0c5800-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4d69354540ad6921c40d-v1.json",
+      "to": "json/reports/image-generation-item-4d69354540ad6921c40d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4f47e3f248a0b3c75912-v1.json",
+      "to": "json/reports/image-generation-item-4f47e3f248a0b3c75912-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4f80b842b24759b0f6af-v1.json",
+      "to": "json/reports/image-generation-item-4f80b842b24759b0f6af-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-4f9e7f4ccafdaad53659-v1.json",
+      "to": "json/reports/image-generation-item-4f9e7f4ccafdaad53659-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-511599456a4940d710dd-v1.json",
+      "to": "json/reports/image-generation-item-511599456a4940d710dd-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-534201edcc42f3598963-v1.json",
+      "to": "json/reports/image-generation-item-534201edcc42f3598963-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-53924b26459b428f3469-v1.json",
+      "to": "json/reports/image-generation-item-53924b26459b428f3469-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-56fad4e690793e44fdf7-v1.json",
+      "to": "json/reports/image-generation-item-56fad4e690793e44fdf7-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-57ebdc27946486afd888-v1.json",
+      "to": "json/reports/image-generation-item-57ebdc27946486afd888-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-5abb49e2eed6cfeb08d1-v1.json",
+      "to": "json/reports/image-generation-item-5abb49e2eed6cfeb08d1-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-5ae19970b72cf0bef879-v1.json",
+      "to": "json/reports/image-generation-item-5ae19970b72cf0bef879-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-5bef1cad7783e160b798-v1.json",
+      "to": "json/reports/image-generation-item-5bef1cad7783e160b798-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-5c49a03f9a7d3a0fbe49-v1.json",
+      "to": "json/reports/image-generation-item-5c49a03f9a7d3a0fbe49-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-61121722d0773f1fea27-v1.json",
+      "to": "json/reports/image-generation-item-61121722d0773f1fea27-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-64b94fb748297d7dde80-v1.json",
+      "to": "json/reports/image-generation-item-64b94fb748297d7dde80-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-656fb11622550f48f16f-v1.json",
+      "to": "json/reports/image-generation-item-656fb11622550f48f16f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-65c36ab78f0ce373be7d-v1.json",
+      "to": "json/reports/image-generation-item-65c36ab78f0ce373be7d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-67a1be98d1323affc094-v1.json",
+      "to": "json/reports/image-generation-item-67a1be98d1323affc094-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-691dadb07df3fc6df8af-v1.json",
+      "to": "json/reports/image-generation-item-691dadb07df3fc6df8af-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-6a7825d84c2f7ff04370-v1.json",
+      "to": "json/reports/image-generation-item-6a7825d84c2f7ff04370-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-6af633ec8034a225d852-v1.json",
+      "to": "json/reports/image-generation-item-6af633ec8034a225d852-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-6bc4aadc3fdcde6c8fd8-v1.json",
+      "to": "json/reports/image-generation-item-6bc4aadc3fdcde6c8fd8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-6d0d6c777249e9839fa3-v1.json",
+      "to": "json/reports/image-generation-item-6d0d6c777249e9839fa3-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-6eaa84dd1ffa73ab40bf-v1.json",
+      "to": "json/reports/image-generation-item-6eaa84dd1ffa73ab40bf-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-72f70f9c8ea315b9132b-v1.json",
+      "to": "json/reports/image-generation-item-72f70f9c8ea315b9132b-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-7662c86ef7881336979a-v1.json",
+      "to": "json/reports/image-generation-item-7662c86ef7881336979a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-78dc1cd631882d2db076-v1.json",
+      "to": "json/reports/image-generation-item-78dc1cd631882d2db076-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-79df3121a6b4735ebc9f-v1.json",
+      "to": "json/reports/image-generation-item-79df3121a6b4735ebc9f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-7bac59a839fff2cf42ff-v1.json",
+      "to": "json/reports/image-generation-item-7bac59a839fff2cf42ff-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-7c150af438a0057c1ad8-v1.json",
+      "to": "json/reports/image-generation-item-7c150af438a0057c1ad8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-7d8f62e61b809eae61ff-v1.json",
+      "to": "json/reports/image-generation-item-7d8f62e61b809eae61ff-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-7ef63b2a8c0223c92e01-v1.json",
+      "to": "json/reports/image-generation-item-7ef63b2a8c0223c92e01-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-812a9a8b6a6b96859e6b-v1.json",
+      "to": "json/reports/image-generation-item-812a9a8b6a6b96859e6b-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-82a4907ce1671b632d78-v1.json",
+      "to": "json/reports/image-generation-item-82a4907ce1671b632d78-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-849cf356661484f574e2-v1.json",
+      "to": "json/reports/image-generation-item-849cf356661484f574e2-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-855041b8357eacc12b94-v1.json",
+      "to": "json/reports/image-generation-item-855041b8357eacc12b94-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-8804e8b05ac1ee4d4c41-v1.json",
+      "to": "json/reports/image-generation-item-8804e8b05ac1ee4d4c41-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-88b9dd8eb510a3b55301-v1.json",
+      "to": "json/reports/image-generation-item-88b9dd8eb510a3b55301-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-8a86693a4e2adb99e788-v1.json",
+      "to": "json/reports/image-generation-item-8a86693a4e2adb99e788-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-8e3b0ea73815ac96b2eb-v1.json",
+      "to": "json/reports/image-generation-item-8e3b0ea73815ac96b2eb-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-907145d1993d05bf766a-v1.json",
+      "to": "json/reports/image-generation-item-907145d1993d05bf766a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-91ea5f283590df7f262e-v1.json",
+      "to": "json/reports/image-generation-item-91ea5f283590df7f262e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-934e75510f1b47a89f54-v1.json",
+      "to": "json/reports/image-generation-item-934e75510f1b47a89f54-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-95034be9c585e63b36d1-v1.json",
+      "to": "json/reports/image-generation-item-95034be9c585e63b36d1-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-9555d2a0eb6b1ca295f4-v1.json",
+      "to": "json/reports/image-generation-item-9555d2a0eb6b1ca295f4-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-95ba2dab9595868a56bf-v1.json",
+      "to": "json/reports/image-generation-item-95ba2dab9595868a56bf-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-95ddc2178228b3a030dd-v1.json",
+      "to": "json/reports/image-generation-item-95ddc2178228b3a030dd-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-9636f729324b4ce5f674-v1.json",
+      "to": "json/reports/image-generation-item-9636f729324b4ce5f674-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-96a784f9237891d51486-v1.json",
+      "to": "json/reports/image-generation-item-96a784f9237891d51486-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-97b115d9cee7a219ac8e-v1.json",
+      "to": "json/reports/image-generation-item-97b115d9cee7a219ac8e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-9811a88bacb06b569310-v1.json",
+      "to": "json/reports/image-generation-item-9811a88bacb06b569310-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-9817710db9647d062975-v1.json",
+      "to": "json/reports/image-generation-item-9817710db9647d062975-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-988a0ace37bb6ef9c77f-v1.json",
+      "to": "json/reports/image-generation-item-988a0ace37bb6ef9c77f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-9929c958433650d6453a-v1.json",
+      "to": "json/reports/image-generation-item-9929c958433650d6453a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-99ef977ef612dd0e68fe-v1.json",
+      "to": "json/reports/image-generation-item-99ef977ef612dd0e68fe-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-9bc4e17f2496f4ed2851-v1.json",
+      "to": "json/reports/image-generation-item-9bc4e17f2496f4ed2851-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-a2e75afb6bad8d352439-v1.json",
+      "to": "json/reports/image-generation-item-a2e75afb6bad8d352439-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-a79ba450e0233ce08baf-v1.json",
+      "to": "json/reports/image-generation-item-a79ba450e0233ce08baf-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-a84c170ade2fe8faf025-v1.json",
+      "to": "json/reports/image-generation-item-a84c170ade2fe8faf025-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-a9ed46c4c5715f952faf-v1.json",
+      "to": "json/reports/image-generation-item-a9ed46c4c5715f952faf-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-abc1356c64d6fba2dbc4-v1.json",
+      "to": "json/reports/image-generation-item-abc1356c64d6fba2dbc4-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ac9119ac6ee909eebe34-v1.json",
+      "to": "json/reports/image-generation-item-ac9119ac6ee909eebe34-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-acd5a2fc1e6ec646fb60-v1.json",
+      "to": "json/reports/image-generation-item-acd5a2fc1e6ec646fb60-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ada8503a88736d27a16a-v1.json",
+      "to": "json/reports/image-generation-item-ada8503a88736d27a16a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ae14860439f24cd0511e-v1.json",
+      "to": "json/reports/image-generation-item-ae14860439f24cd0511e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ae9bd4742ca91b6bd3a9-v1.json",
+      "to": "json/reports/image-generation-item-ae9bd4742ca91b6bd3a9-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-af9f14bfbbcdd4db4cdb-v1.json",
+      "to": "json/reports/image-generation-item-af9f14bfbbcdd4db4cdb-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-afa856daf58e0cc533f8-v1.json",
+      "to": "json/reports/image-generation-item-afa856daf58e0cc533f8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-afe00ec84f5c7a53c9f8-v1.json",
+      "to": "json/reports/image-generation-item-afe00ec84f5c7a53c9f8-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-b40409e5fd26cdc4b32d-v1.json",
+      "to": "json/reports/image-generation-item-b40409e5fd26cdc4b32d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-b5dc98cb1f643adc1531-v1.json",
+      "to": "json/reports/image-generation-item-b5dc98cb1f643adc1531-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-bab5fe2671385add278e-v1.json",
+      "to": "json/reports/image-generation-item-bab5fe2671385add278e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-c1120882f25760cb533f-v1.json",
+      "to": "json/reports/image-generation-item-c1120882f25760cb533f-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-c30f284815b182346043-v1.json",
+      "to": "json/reports/image-generation-item-c30f284815b182346043-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-c35357c6d15204e698ee-v1.json",
+      "to": "json/reports/image-generation-item-c35357c6d15204e698ee-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-c4be6ef00a85a97f9f96-v1.json",
+      "to": "json/reports/image-generation-item-c4be6ef00a85a97f9f96-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-c5a5c7fc046e514c4978-v1.json",
+      "to": "json/reports/image-generation-item-c5a5c7fc046e514c4978-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-c8d7df974eab370755e7-v1.json",
+      "to": "json/reports/image-generation-item-c8d7df974eab370755e7-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d00bdae55ae3e00e1e91-v1.json",
+      "to": "json/reports/image-generation-item-d00bdae55ae3e00e1e91-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d0173c6258769a97e088-v1.json",
+      "to": "json/reports/image-generation-item-d0173c6258769a97e088-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d03fd5bd2664c5baba04-v1.json",
+      "to": "json/reports/image-generation-item-d03fd5bd2664c5baba04-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d124506f8321055790bc-v1.json",
+      "to": "json/reports/image-generation-item-d124506f8321055790bc-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d226adcfb5b3fc6e1a4c-v1.json",
+      "to": "json/reports/image-generation-item-d226adcfb5b3fc6e1a4c-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d2c77fc0c972e16c4688-v1.json",
+      "to": "json/reports/image-generation-item-d2c77fc0c972e16c4688-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d6deeaa5c3f60d4f2333-v1.json",
+      "to": "json/reports/image-generation-item-d6deeaa5c3f60d4f2333-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-d822cc735b7032c230df-v1.json",
+      "to": "json/reports/image-generation-item-d822cc735b7032c230df-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-db26b74d526e9b8ffc55-v1.json",
+      "to": "json/reports/image-generation-item-db26b74d526e9b8ffc55-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-dbcf2706c4cf05981c3d-v1.json",
+      "to": "json/reports/image-generation-item-dbcf2706c4cf05981c3d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-e0e903671c4d58c1ac32-v1.json",
+      "to": "json/reports/image-generation-item-e0e903671c4d58c1ac32-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-e10b2a26108795d5aada-v1.json",
+      "to": "json/reports/image-generation-item-e10b2a26108795d5aada-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-e4920025d4fba457a2fb-v1.json",
+      "to": "json/reports/image-generation-item-e4920025d4fba457a2fb-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-e85c6cd35b3eb3d8c075-v1.json",
+      "to": "json/reports/image-generation-item-e85c6cd35b3eb3d8c075-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-e8e4f8c58f5010df0695-v1.json",
+      "to": "json/reports/image-generation-item-e8e4f8c58f5010df0695-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-eab488f36b9c569f8af3-v1.json",
+      "to": "json/reports/image-generation-item-eab488f36b9c569f8af3-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ec31700d07745f2858cf-v1.json",
+      "to": "json/reports/image-generation-item-ec31700d07745f2858cf-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ed9b4a4c7b950dd08c5d-v1.json",
+      "to": "json/reports/image-generation-item-ed9b4a4c7b950dd08c5d-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-edb847363b513850797c-v1.json",
+      "to": "json/reports/image-generation-item-edb847363b513850797c-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-f174ba9ec4e5f772deab-v1.json",
+      "to": "json/reports/image-generation-item-f174ba9ec4e5f772deab-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-f431c456f2d25afddf5a-v1.json",
+      "to": "json/reports/image-generation-item-f431c456f2d25afddf5a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-f69d57c4b3b365330f61-v1.json",
+      "to": "json/reports/image-generation-item-f69d57c4b3b365330f61-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-f8b26b8405d2dc275693-v1.json",
+      "to": "json/reports/image-generation-item-f8b26b8405d2dc275693-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-f8c380df476ed050184e-v1.json",
+      "to": "json/reports/image-generation-item-f8c380df476ed050184e-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-f9e922a0180cbd699da1-v1.json",
+      "to": "json/reports/image-generation-item-f9e922a0180cbd699da1-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-fc2c02e0cb14e12918f3-v1.json",
+      "to": "json/reports/image-generation-item-fc2c02e0cb14e12918f3-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-fc4c03ec75230caa4500-v1.json",
+      "to": "json/reports/image-generation-item-fc4c03ec75230caa4500-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-fc7d0c74a602e0d13c71-v1.json",
+      "to": "json/reports/image-generation-item-fc7d0c74a602e0d13c71-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-fe3fe696632d1d83fc45-v1.json",
+      "to": "json/reports/image-generation-item-fe3fe696632d1d83fc45-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ff1af3bf3c58d70f0fc6-v1.json",
+      "to": "json/reports/image-generation-item-ff1af3bf3c58d70f0fc6-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ff1d2c8b639800c4aa4a-v1.json",
+      "to": "json/reports/image-generation-item-ff1d2c8b639800c4aa4a-v1.json"
+    },
+    {
+      "from": "output/image-generation-item-ff84faa985a9d5dbd583-v1.json",
+      "to": "json/reports/image-generation-item-ff84faa985a9d5dbd583-v1.json"
+    },
+    {
+      "from": "output/image-generation-nude-pointed-court-shoes-v1.json",
+      "to": "json/reports/image-generation-nude-pointed-court-shoes-v1.json"
+    },
+    {
+      "from": "output/image-generation-taupe-draped-scarf-v1.json",
+      "to": "json/reports/image-generation-taupe-draped-scarf-v1.json"
+    },
+    {
+      "from": "output/image-master-pairs.json",
+      "to": "json/reports/image-master-pairs.json"
+    },
+    {
+      "from": "output/new-product-drafts.json",
+      "to": "json/reports/new-product-drafts.json"
+    },
+    {
+      "from": "output/object-label-apply.json",
+      "to": "json/reports/object-label-apply.json"
+    },
+    {
+      "from": "output/object-label-catalog-current-source.json",
+      "to": "json/reports/object-label-catalog-current-source.json"
+    },
+    {
+      "from": "output/object-label-catalog-source.json",
+      "to": "json/reports/object-label-catalog-source.json"
+    },
+    {
+      "from": "output/object-label-corrections-apply.json",
+      "to": "json/reports/object-label-corrections-apply.json"
+    },
+    {
+      "from": "output/object-label-corrections-preview.json",
+      "to": "json/reports/object-label-corrections-preview.json"
+    },
+    {
+      "from": "output/object-label-corrections.json",
+      "to": "json/reports/object-label-corrections.json"
+    },
+    {
+      "from": "output/object-label-existing-audit-source.json",
+      "to": "json/reports/object-label-existing-audit-source.json"
+    },
+    {
+      "from": "output/object-label-existing-extra-review.json",
+      "to": "json/reports/object-label-existing-extra-review.json"
+    },
+    {
+      "from": "output/object-label-existing-gen-review.json",
+      "to": "json/reports/object-label-existing-gen-review.json"
+    },
+    {
+      "from": "output/object-label-final-additions-apply.json",
+      "to": "json/reports/object-label-final-additions-apply.json"
+    },
+    {
+      "from": "output/object-label-final-additions-preview.json",
+      "to": "json/reports/object-label-final-additions-preview.json"
+    },
+    {
+      "from": "output/object-label-final-audit.json",
+      "to": "json/reports/object-label-final-audit.json"
+    },
+    {
+      "from": "output/object-label-new-dress-plan.json",
+      "to": "json/reports/object-label-new-dress-plan.json"
+    },
+    {
+      "from": "output/object-label-photo-coverage.json",
+      "to": "json/reports/object-label-photo-coverage.json"
+    },
+    {
+      "from": "output/object-label-photo-plan.json",
+      "to": "json/reports/object-label-photo-plan.json"
+    },
+    {
+      "from": "output/object-label-primary-geometry-a.json",
+      "to": "json/reports/object-label-primary-geometry-a.json"
+    },
+    {
+      "from": "output/object-label-primary-geometry-b.json",
+      "to": "json/reports/object-label-primary-geometry-b.json"
+    },
+    {
+      "from": "output/object-label-standalone-plan.json",
+      "to": "json/reports/object-label-standalone-plan.json"
+    },
+    {
+      "from": "output/object-label-variant-extra.json",
+      "to": "json/reports/object-label-variant-extra.json"
+    },
+    {
+      "from": "output/outfit-catalog-source.json",
+      "to": "json/reports/outfit-catalog-source.json"
+    },
+    {
+      "from": "output/outfit-final-apply.json",
+      "to": "json/reports/outfit-final-apply.json"
+    },
+    {
+      "from": "output/outfit-final-assets-audit.json",
+      "to": "json/reports/outfit-final-assets-audit.json"
+    },
+    {
+      "from": "output/outfit-final-catalog-audit.json",
+      "to": "json/reports/outfit-final-catalog-audit.json"
+    },
+    {
+      "from": "output/outfit-final-preview.json",
+      "to": "json/reports/outfit-final-preview.json"
+    },
+    {
+      "from": "output/outfit-gen-workset-a.json",
+      "to": "json/reports/outfit-gen-workset-a.json"
+    },
+    {
+      "from": "output/outfit-gen-workset-b.json",
+      "to": "json/reports/outfit-gen-workset-b.json"
+    },
+    {
+      "from": "output/outfit-gen-workset-c.json",
+      "to": "json/reports/outfit-gen-workset-c.json"
+    },
+    {
+      "from": "output/outfit-image-retries.json",
+      "to": "json/reports/outfit-image-retries.json"
+    },
+    {
+      "from": "output/outfit-image-retry-coat.json",
+      "to": "json/reports/outfit-image-retry-coat.json"
+    },
+    {
+      "from": "output/outfit-image-retry-collar.json",
+      "to": "json/reports/outfit-image-retry-collar.json"
+    },
+    {
+      "from": "output/outfit-item-plan-01.json",
+      "to": "json/reports/outfit-item-plan-01.json"
+    },
+    {
+      "from": "output/outfit-item-plan-02.json",
+      "to": "json/reports/outfit-item-plan-02.json"
+    },
+    {
+      "from": "output/outfit-item-plan-03.json",
+      "to": "json/reports/outfit-item-plan-03.json"
+    },
+    {
+      "from": "output/outfit-items-image-qa.json",
+      "to": "json/reports/outfit-items-image-qa.json"
+    },
+    {
+      "from": "output/outfit-items-manifest.json",
+      "to": "json/reports/outfit-items-manifest.json"
+    },
+    {
+      "from": "output/outfit-last-apply.json",
+      "to": "json/reports/outfit-last-apply.json"
+    },
+    {
+      "from": "output/outfit-last-preview.json",
+      "to": "json/reports/outfit-last-preview.json"
+    },
+    {
+      "from": "output/outfit-resume-b.json",
+      "to": "json/reports/outfit-resume-b.json"
+    },
+    {
+      "from": "output/outfit-resume-c.json",
+      "to": "json/reports/outfit-resume-c.json"
+    },
+    {
+      "from": "output/outfit-resume-root.json",
+      "to": "json/reports/outfit-resume-root.json"
+    },
+    {
+      "from": "output/outfit-title-corrections.json",
+      "to": "json/reports/outfit-title-corrections.json"
+    },
+    {
+      "from": "output/security-audit-2026-11-11.json",
+      "to": "json/reports/security-audit-2026-11-11.json"
+    },
+    {
+      "from": "output/site-structure-review.json",
+      "to": "json/reports/site-structure-review.json"
+    },
+    {
+      "from": "output/imagegen/new-arrival-variations.json",
+      "to": "json/reports/imagegen/new-arrival-variations.json"
+    },
+    {
+      "from": "output/imagegen/team-hover-prompts.json",
+      "to": "json/reports/imagegen/team-hover-prompts.json"
+    },
+    {
+      "from": "output/imagegen/team-hover-results-a.json",
+      "to": "json/reports/imagegen/team-hover-results-a.json"
+    },
+    {
+      "from": "output/imagegen/team-hover-results-b.json",
+      "to": "json/reports/imagegen/team-hover-results-b.json"
+    },
+    {
+      "from": "output/imagegen/team-hover-results-c.json",
+      "to": "json/reports/imagegen/team-hover-results-c.json"
+    },
+    {
+      "from": "output/imagegen/team-hover-results.json",
+      "to": "json/reports/imagegen/team-hover-results.json"
+    },
+    {
+      "from": "output/imagegen/pleated-dress-colors-20261103/generation-notes.json",
+      "to": "json/reports/imagegen/pleated-dress-colors-20261103/generation-notes.json"
+    },
+    {
+      "from": "output/imagegen/product-poses-20261103/catalog-image-fields-before.json",
+      "to": "json/reports/imagegen/product-poses-20261103/catalog-image-fields-before.json"
+    },
+    {
+      "from": "assets/vendor/three/source.json",
+      "to": "json/vendor/three-source.json"
+    },
+    {
+      "from": "assets/vendor/qrcodegen-source.json",
+      "to": "json/vendor/qrcodegen-source.json"
+    },
+    {
+      "from": "preview/index.html",
+      "to": "html/preview/index.html"
+    },
+    {
+      "from": "tests/product-colors.html",
+      "to": "html/tests/product-colors.html"
+    },
+    {
+      "from": "tests/test-product-color-detection.cjs",
+      "to": "js/tests/test-product-color-detection.cjs"
+    },
+    {
+      "from": "project_paths.py",
+      "to": "py/app/project_paths.py"
+    },
+    {
+      "from": "tests/test_type_folders.py",
+      "to": "py/tests/test_type_folders.py"
+    },
+    {
+      "from": "assets/fonts/sources.json",
+      "to": "json/vendor/font-sources.json"
+    }
+  ],
+  "preservedConventions": [
+    ".vscode/launch.json",
+    "private/runtime-generated files",
+    "image/font assets and bundled licenses"
+  ],
+  "publicPageUrls": "unchanged",
+  "catalogBefore": {
+    "publishedProducts": 266,
+    "ids": [
+      "0499c134586039c3",
+      "0641bb0833534697",
+      "070e122b3b2a0a1d",
+      "0c9f048ac48a707e",
+      "0cece17490138dac",
+      "0d3ef24445790a06",
+      "14c77cfe7ca32f1c",
+      "166871dd1a4996c7",
+      "17ef8e76f3900391",
+      "18610d00ae8436f0",
+      "1ae845d453aa1fce",
+      "1aff2611e1fe3c8b",
+      "1efd9419870c45d5",
+      "1f89c653c09528d1",
+      "24a9406125222ec8",
+      "257524c3ff675ac5",
+      "27e73ff910a71df3",
+      "2f1f477ab7e06ceb",
+      "2f92545d9cbed177",
+      "356e3b3db3284328",
+      "39baac639a81b1b5",
+      "40b272d4673736dc",
+      "4b961836a5114101",
+      "4ba84e164ca92c24",
+      "4d4304a128904e2f",
+      "4d51a0de1ad5592f",
+      "4e2b0a33f31318ac",
+      "4f74d57ae172a738",
+      "52137095165dcac4",
+      "52e502c50f2fff58",
+      "53a68a01bbdedf19",
+      "552959ebc1ce3e02",
+      "5750c07e3cbf0922",
+      "5aa1a4c95b8b43cf",
+      "617d6a4389d34fe2",
+      "637245ab86907188",
+      "66160c188c347697",
+      "6664bf77ae517850",
+      "6834dbb23ca63224",
+      "6a22b234a18f036d",
+      "6bf4acf66562795c",
+      "6e74347edcea55dd",
+      "72cb66b82bef90ad",
+      "74e5ecf28c897588",
+      "751e40965ad3a20d",
+      "7782745d0efd8c24",
+      "79e0b7a097df924b",
+      "7b8ef54e6321f222",
+      "7f2d1f88d06fb45c",
+      "874d7c0173a9d2a8",
+      "8896b52b23cd0824",
+      "8e861c306b731e29",
+      "8ec4205f9115385e",
+      "9b7becdf69faba45",
+      "9ef1f074154c608c",
+      "9f7d06414a165d1a",
+      "a01299210acf7627",
+      "a1b2c3d4e5f6a7b8",
+      "a26d4ac081364941",
+      "a2e2bfb6aed5c608",
+      "a505c9f975120e21",
+      "a576c37940c1e9e5",
+      "b21271819fbf773c",
+      "b4ffbe06207e3314",
+      "bab9b9c87f0abba0",
+      "c4ddabd11da2e603",
+      "c9f06c204bdee72a",
+      "caafcb7f7ea0475a",
+      "cbc653452f6001b8",
+      "d48662bc960d8ad2",
+      "d638ee48cacb4abe",
+      "da1ec676efabfe8d",
+      "db747bb55dc91722",
+      "dcac45b76ac443e0",
+      "dd10700aabef4abc",
+      "dd6d6bac12f4b6d4",
+      "e1051eeab7dcec5f",
+      "e51eb39916bcceab",
+      "e57f33ce2e1562d2",
+      "e7adba5f950e57c3",
+      "e9a2c2dfa9f8f42d",
+      "edc6983c2ab5268c",
+      "ee173795c6a09788",
+      "ee63e133d40760be",
+      "f14603c04434f518",
+      "f348c4635fca0606",
+      "f56dfe081b1b14e0",
+      "f62ee6e41ab495d3",
+      "f84bedf34737978e",
+      "f9e8d7c6b5a44321",
+      "fe93ba37bb9ba2f6",
+      "piece-0060dab0fc44aea700f8",
+      "piece-02a6ac30576c8d0f9803",
+      "piece-02e52f59c838a13af993",
+      "piece-04562df33ac9ad6146c6",
+      "piece-061feb823cc13b256c42",
+      "piece-0910b902f39d4486e3a9",
+      "piece-0ce0faf7e84af62d7380",
+      "piece-0dee573220edb40f2e90",
+      "piece-1179ba1b69e040932bd6",
+      "piece-11baa7a83b3b63ec487e",
+      "piece-12a78e3e1d0c60b1eb48",
+      "piece-13c14185327517d0300a",
+      "piece-150a666c293c0d1909b4",
+      "piece-1563a4bbc31be2fd21d3",
+      "piece-1634f31e76a0bdd98717",
+      "piece-174ac997d98e5c8c688e",
+      "piece-17f6a8a74dba84a7feb4",
+      "piece-1d55dc69d92690d44d2f",
+      "piece-1ef083bae598a0437390",
+      "piece-1f22feb8b29400af46a8",
+      "piece-20f6d0b0fc2425890384",
+      "piece-214c013a85adf0257182",
+      "piece-2179aaea8a0526b3976d",
+      "piece-22fa1f903fb7b8242af1",
+      "piece-233feed618df246613d8",
+      "piece-23fec7367f25774f83bc",
+      "piece-24a6c58cfb182fd4c063",
+      "piece-24da8ecf2bfe0550f422",
+      "piece-24f199f758ad14f5b618",
+      "piece-25743c9e0eb105927ca2",
+      "piece-265dfa141e5ddf067137",
+      "piece-27b04162b59291dd21cc",
+      "piece-294ec637528d505f3050",
+      "piece-29581b8ee6e98283563c",
+      "piece-2bd36b2070b2cb98285a",
+      "piece-2c64eb68f60edcd53c9a",
+      "piece-2dc2fa19e237834e3824",
+      "piece-2e34a3d16cdab3923417",
+      "piece-2fda23305be751222767",
+      "piece-35adb47003bb0c9f78f5",
+      "piece-35b682ca221a31ad8c17",
+      "piece-384b8a3c0f4ad32d6e1f",
+      "piece-391057e3281e1a8be85e",
+      "piece-399440f415fb060184ca",
+      "piece-39bb7efbed8bccdab668",
+      "piece-3aa472a54574342aac65",
+      "piece-3c4526d04ba6676b9c29",
+      "piece-3d86497279f44605b1ca",
+      "piece-43087cf9c8532d208317",
+      "piece-441ffa54f674be6a1b48",
+      "piece-445ecc26ad0c91dbc4e7",
+      "piece-468dcb718d9575d3cb0f",
+      "piece-46a20b1b1476300d0eee",
+      "piece-46eee4037024b11c38f6",
+      "piece-47d8e6634ac7b1a77958",
+      "piece-493958ea0b8b3d571a7e",
+      "piece-4942e7b3c11d1c0c8c0d",
+      "piece-4b27f6739dcccce8e92c",
+      "piece-4baa8a17be7b641d68a3",
+      "piece-4bd178f48f9d5eddf6d4",
+      "piece-4cf68b24b1af1f0c5800",
+      "piece-4d69354540ad6921c40d",
+      "piece-4f47e3f248a0b3c75912",
+      "piece-4f80b842b24759b0f6af",
+      "piece-4f9e7f4ccafdaad53659",
+      "piece-511599456a4940d710dd",
+      "piece-534201edcc42f3598963",
+      "piece-53924b26459b428f3469",
+      "piece-56fad4e690793e44fdf7",
+      "piece-57ebdc27946486afd888",
+      "piece-5abb49e2eed6cfeb08d1",
+      "piece-5ae19970b72cf0bef879",
+      "piece-5bef1cad7783e160b798",
+      "piece-5c49a03f9a7d3a0fbe49",
+      "piece-61121722d0773f1fea27",
+      "piece-64b94fb748297d7dde80",
+      "piece-656fb11622550f48f16f",
+      "piece-65c36ab78f0ce373be7d",
+      "piece-67a1be98d1323affc094",
+      "piece-691dadb07df3fc6df8af",
+      "piece-6a7825d84c2f7ff04370",
+      "piece-6af633ec8034a225d852",
+      "piece-6bc4aadc3fdcde6c8fd8",
+      "piece-6d0d6c777249e9839fa3",
+      "piece-6eaa84dd1ffa73ab40bf",
+      "piece-72f70f9c8ea315b9132b",
+      "piece-7662c86ef7881336979a",
+      "piece-78dc1cd631882d2db076",
+      "piece-79df3121a6b4735ebc9f",
+      "piece-7bac59a839fff2cf42ff",
+      "piece-7c150af438a0057c1ad8",
+      "piece-7d8f62e61b809eae61ff",
+      "piece-7ef63b2a8c0223c92e01",
+      "piece-812a9a8b6a6b96859e6b",
+      "piece-82a4907ce1671b632d78",
+      "piece-849cf356661484f574e2",
+      "piece-855041b8357eacc12b94",
+      "piece-8804e8b05ac1ee4d4c41",
+      "piece-88b9dd8eb510a3b55301",
+      "piece-8a86693a4e2adb99e788",
+      "piece-8e3b0ea73815ac96b2eb",
+      "piece-907145d1993d05bf766a",
+      "piece-91ea5f283590df7f262e",
+      "piece-934e75510f1b47a89f54",
+      "piece-95034be9c585e63b36d1",
+      "piece-9555d2a0eb6b1ca295f4",
+      "piece-95ba2dab9595868a56bf",
+      "piece-95ddc2178228b3a030dd",
+      "piece-9636f729324b4ce5f674",
+      "piece-96a784f9237891d51486",
+      "piece-97b115d9cee7a219ac8e",
+      "piece-9811a88bacb06b569310",
+      "piece-9817710db9647d062975",
+      "piece-988a0ace37bb6ef9c77f",
+      "piece-9929c958433650d6453a",
+      "piece-99ef977ef612dd0e68fe",
+      "piece-9bc4e17f2496f4ed2851",
+      "piece-a2e75afb6bad8d352439",
+      "piece-a79ba450e0233ce08baf",
+      "piece-a84c170ade2fe8faf025",
+      "piece-a9ed46c4c5715f952faf",
+      "piece-abc1356c64d6fba2dbc4",
+      "piece-ac9119ac6ee909eebe34",
+      "piece-acd5a2fc1e6ec646fb60",
+      "piece-ada8503a88736d27a16a",
+      "piece-ae14860439f24cd0511e",
+      "piece-ae9bd4742ca91b6bd3a9",
+      "piece-af9f14bfbbcdd4db4cdb",
+      "piece-afa856daf58e0cc533f8",
+      "piece-afe00ec84f5c7a53c9f8",
+      "piece-b40409e5fd26cdc4b32d",
+      "piece-b5dc98cb1f643adc1531",
+      "piece-bab5fe2671385add278e",
+      "piece-c1120882f25760cb533f",
+      "piece-c30f284815b182346043",
+      "piece-c35357c6d15204e698ee",
+      "piece-c4be6ef00a85a97f9f96",
+      "piece-c5a5c7fc046e514c4978",
+      "piece-c8d7df974eab370755e7",
+      "piece-d00bdae55ae3e00e1e91",
+      "piece-d0173c6258769a97e088",
+      "piece-d03fd5bd2664c5baba04",
+      "piece-d124506f8321055790bc",
+      "piece-d226adcfb5b3fc6e1a4c",
+      "piece-d2c77fc0c972e16c4688",
+      "piece-d6deeaa5c3f60d4f2333",
+      "piece-d822cc735b7032c230df",
+      "piece-db26b74d526e9b8ffc55",
+      "piece-dbcf2706c4cf05981c3d",
+      "piece-e0e903671c4d58c1ac32",
+      "piece-e10b2a26108795d5aada",
+      "piece-e4920025d4fba457a2fb",
+      "piece-e85c6cd35b3eb3d8c075",
+      "piece-e8e4f8c58f5010df0695",
+      "piece-eab488f36b9c569f8af3",
+      "piece-ec31700d07745f2858cf",
+      "piece-ed9b4a4c7b950dd08c5d",
+      "piece-edb847363b513850797c",
+      "piece-f174ba9ec4e5f772deab",
+      "piece-f431c456f2d25afddf5a",
+      "piece-f69d57c4b3b365330f61",
+      "piece-f8b26b8405d2dc275693",
+      "piece-f8c380df476ed050184e",
+      "piece-f9e922a0180cbd699da1",
+      "piece-fc2c02e0cb14e12918f3",
+      "piece-fc4c03ec75230caa4500",
+      "piece-fc7d0c74a602e0d13c71",
+      "piece-fe3fe696632d1d83fc45",
+      "piece-ff1af3bf3c58d70f0fc6",
+      "piece-ff1d2c8b639800c4aa4a",
+      "piece-ff84faa985a9d5dbd583",
+      "velora-dress-01",
+      "velora-example-espresso-bag",
+      "velora-example-nude-court-shoes",
+      "velora-example-taupe-scarf"
+    ]
+  },
+  "validation": {
+    "date": "2026-11-12",
+    "pythonSuite": {
+      "run": 238,
+      "passed": 237,
+      "skipped": 1,
+      "log": "tmp/folder-migration-unittest-final.txt"
+    },
+    "javascriptColorChecks": 24,
+    "discoveryBrowserChecks": 25,
+    "imageDeliveryBrowserChecks": 14,
+    "threeDimensionalStudio": "passed",
+    "publicProductCount": 266,
+    "sourceFolderAudit": "passed",
+    "documentationLinks": "passed",
+    "adminCatalogBrowserChecks": 103,
+    "sourceFileCounts": {
+      "json": 348,
+      "js": 38,
+      "py": 77,
+      "html": 26,
+      "css": 26
+    }
+  },
+  "completedOn": "2026-11-12"
+}

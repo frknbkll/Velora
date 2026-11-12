@@ -1,0 +1,37 @@
+{
+  "htmlPages": 24,
+  "localReferences": 120,
+  "issues": [],
+  "vendorModulesChecked": [
+    "/assets/vendor/three/three.module.js",
+    "/assets/vendor/three/three.core.js",
+    "/assets/vendor/three/addons/controls/OrbitControls.js",
+    "/assets/vendor/three/addons/exporters/GLTFExporter.js"
+  ],
+  "pagesResponding": [
+    "404.html",
+    "account.html",
+    "admin.html",
+    "business-details.html",
+    "careers.html",
+    "contact.html",
+    "cookie-policy.html",
+    "faq.html",
+    "founders.html",
+    "index.html",
+    "intranet.html",
+    "login.html",
+    "our-story.html",
+    "privacy.html",
+    "product.html",
+    "refund-policy.html",
+    "register.html",
+    "reviews.html",
+    "shopping-info.html",
+    "team.html",
+    "terms.html",
+    "unsubscribe.html",
+    "vacancy.html",
+    "velora-school.html"
+  ]
+}

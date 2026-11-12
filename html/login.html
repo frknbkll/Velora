@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#faf8f4" />
+    <link rel="stylesheet" href="/css/fonts.css?v=2" />
+    <link rel="stylesheet" href="/css/styles.css?v=61" />
+    <link rel="stylesheet" href="/css/account.css?v=5" />
+    <link rel="stylesheet" href="/css/login-security.css?v=1" />
+
+    <script src="/js/product-responsive-images.js?v=4" defer></script>
+    <script src="/js/site-images.js?v=1" defer></script>
+    <script src="/js/privacy.js?v=2" defer></script>
+    <script src="/js/auth.js?v=9" defer></script>
+    <link rel="stylesheet" href="/css/privacy.css?v=2" />
+    <!-- velora:page-metadata -->
+    <title>Sign In | Velora</title>
+    <meta name="description" content="Sign in to your Velora account using your email address and password." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:site_name" content="Velora" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sign In | Velora" />
+    <meta property="og:description" content="Sign in to your Velora account using your email address and password." />
+    <meta property="og:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta property="og:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Sign In | Velora" />
+    <meta name="twitter:description" content="Sign in to your Velora account using your email address and password." />
+    <meta name="twitter:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta name="twitter:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <!-- /velora:page-metadata -->
+      <!-- velora:brand-assets -->
+    <link rel="icon" href="/assets/brand/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- /velora:brand-assets -->
+  </head>
+  <body class="account-page" data-auth-page="login">
+    <a class="account-skip" href="#account-main">Skip to sign in</a>
+    <header class="account-header">
+      <a class="wordmark" href="index.html" aria-label="Velora home">velora<span>®</span></a>
+      <a class="account-back" href="index.html#collection"><span aria-hidden="true">←</span> Back to the collection</a>
+    </header>
+    <main class="auth-layout" id="account-main" tabindex="-1">
+      <section class="auth-editorial" aria-label="The world of Velora">
+        <img src="assets/responsive/472e6e9f6f197a6a874c8a53-480.webp" alt="The four Velora founders together in their boutique" width="1920" height="1080" decoding="async" data-original-src="assets/hero-founders-1920.jpg" srcset="assets/responsive/472e6e9f6f197a6a874c8a53-480.webp 480w, assets/responsive/472e6e9f6f197a6a874c8a53-960.webp 960w, assets/responsive/472e6e9f6f197a6a874c8a53-1440.webp 1440w, assets/responsive/472e6e9f6f197a6a874c8a53-1920.webp 1920w" sizes="(max-width: 760px) 100vw, 50vw" />
+        <div class="auth-editorial-top"><span>FOUR FRIENDS. ONE SHARED FEELING.</span><span aria-hidden="true">✳</span></div>
+        <div class="auth-editorial-copy">
+          <span class="auth-edition">YOUR OWN LITTLE CORNER</span>
+          <h2>Good to have<br />you <em>back.</em></h2>
+          <p>Considered pieces. Personal details.<br />A world that feels a little more like you.</p>
+        </div>
+        <span class="auth-editorial-bottom">MADE OF MOMENTS. MADE BY US.</span>
+      </section>
+      <section class="auth-panel" aria-labelledby="auth-title">
+        <div class="auth-panel-inner">
+          <p class="account-eyebrow"><span></span> MAKE YOURSELF AT HOME</p>
+          <h1 id="auth-title">Welcome back.</h1>
+          <p class="auth-intro">Sign in to your Velora account.</p>
+          <div class="auth-tabs" aria-label="Account pages">
+            <a href="login.html" aria-current="page">Sign in</a>
+            <a href="register.html">Create an account</a>
+          </div>
+          <p class="auth-message" id="auth-message" role="status" aria-live="polite" aria-atomic="true"></p>
+          <noscript><p class="auth-message is-error">Please enable JavaScript to sign in to your account.</p></noscript>
+          <form class="account-form" id="login-form">
+            <div class="account-field">
+              <label for="login-email">Email address</label>
+              <input id="login-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" maxlength="254" required />
+            </div>
+            <div class="account-field">
+              <label for="login-password">Password</label>
+              <div class="password-field">
+                <input id="login-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" maxlength="128" required />
+                <button class="password-toggle" type="button" data-toggle-password="login-password" aria-label="Show password" aria-pressed="false">Show</button>
+              </div>
+            </div>
+            <label class="account-check" for="remember-me">
+              <input id="remember-me" name="remember" type="checkbox" />
+              <span>Keep me signed in on this device</span>
+            </label>
+            <button class="account-primary" type="submit" data-submit-label="Sign in">Sign in <span aria-hidden="true">↗</span></button>
+          </form>
+          <section class="login-verification" id="login-mfa" aria-labelledby="login-mfa-title" hidden>
+            <h2 id="login-mfa-title">One more step.</h2>
+            <p id="login-mfa-intro">Enter the six-digit code from your authenticator app.</p>
+            <form class="account-form" id="login-mfa-form">
+              <div class="account-field">
+                <label for="login-mfa-code" id="login-mfa-code-label">Authenticator code</label>
+                <input id="login-mfa-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" maxlength="32" spellcheck="false" autocapitalize="off" aria-describedby="login-mfa-hint" required />
+                <p class="account-hint" id="login-mfa-hint">Codes change every 30 seconds. Each code can be used once.</p>
+              </div>
+              <label class="account-check" for="login-use-recovery"><input id="login-use-recovery" type="checkbox" /><span>Use a recovery code instead</span></label>
+              <button class="account-primary" type="submit">Verify and sign in <span aria-hidden="true">↗</span></button>
+              <button class="login-verification-back" id="login-mfa-back" type="button">Use another account</button>
+            </form>
+          </section>
+          <p class="auth-switch">New to our world? <a href="register.html">Create an account</a></p>
+          <div class="auth-staff"><span>PART OF THE TEAM?</span><a href="login.html?next=admin.html">Staff sign in <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
+    </main>
+    <footer class="account-footer">
+      <p>© Velora, with love.</p>
+      <nav aria-label="Account information"><a href="contact.html">Contact</a></nav>
+    
+      <nav class="legal-links" aria-label="Policies and privacy">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="refund-policy.html">Refund Policy</a>
+        <a href="cookie-policy.html">Cookie Policy</a>
+        <button type="button" data-privacy-settings>Cookie settings</button>
+        <a href="business-details.html">Business Details</a>
+        <a href="unsubscribe.html">Unsubscribe</a>
+      </nav>
+    </footer>
+  </body>
+</html>

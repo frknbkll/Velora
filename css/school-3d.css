@@ -1,0 +1,182 @@
+/* A quiet, local 3D workspace within the Velora School palette. */
+.school-page .school-3d-sheet {
+  min-width: 0;
+  margin: 0;
+  padding: 18px;
+  overflow: hidden;
+  border-color: #d9cdbd;
+  background: #fcfaf6;
+  box-shadow: 0 12px 36px #51402a08;
+}
+
+.school-3d-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  padding: 2px 0 16px;
+}
+
+.school-3d-topbar .school-kicker { margin: 0; font-size: 9px; letter-spacing: .14em; }
+.school-view-tabs { display: inline-flex; align-items: center; padding: 3px; border: 1px solid #ded4c7; background: #f0eae1; }
+.school-view-tabs button {
+  min-height: 38px;
+  padding: 8px 15px;
+  border: 1px solid transparent;
+  border-radius: 0;
+  background: transparent;
+  color: #81705e;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+}
+.school-view-tabs button[aria-pressed="true"] { border-color: #ddd0bf; background: #fffdf8; color: #332b22; box-shadow: 0 2px 5px #51402a08; }
+.school-view-tabs button:hover { color: var(--accent, #a64e37); }
+
+.school-3d-stage {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 600px;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #e0d7ca;
+  background: radial-gradient(ellipse at 50% 30%, #f7f2e9 0%, #eae2d6 70%, #ded4c5 100%);
+  isolation: isolate;
+}
+
+.school-3d-stage canvas {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+.school-3d-stage canvas:active { cursor: grabbing; }
+.school-3d-stage canvas:focus-visible { outline: 2px solid var(--accent, #a64e37); outline-offset: -5px; }
+.school-3d-loading {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  padding: 28px;
+  background: #eee7dc;
+  color: #81715f;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+  pointer-events: none;
+}
+
+.school-3d-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding: 12px 0 0;
+}
+.school-view-buttons, .school-view-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; min-width: 0; }
+.school-3d-toolbar button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 9px 11px;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  background: transparent;
+  color: #7a6855;
+  font-size: 10px;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+.school-3d-toolbar button:hover { border-color: #d8cbb9; background: #f2ece3; color: #4e4031; }
+.school-3d-toolbar button[aria-pressed="true"] { border-color: #bda58c; background: #f0e8dc; color: #493a2b; }
+.school-3d-toolbar .school-view-actions button { border-color: #d8cbb9; }
+.school-3d-toolbar button:disabled { cursor: not-allowed; opacity: .45; }
+
+.school-3d-help { margin: 8px 0 0; color: #91806b; font-size: 10px; line-height: 1.8; text-align: center; }
+.school-3d-status { min-height: 1.7em; margin: 7px 0 0; color: #776651; font-size: 10px; line-height: 1.7; text-align: center; }
+.school-3d-status[data-state="error"], .school-3d-fallback { color: #9a4938; }
+.school-3d-inspection { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 0 0 13px; }
+.school-inspection-tabs { display: inline-flex; gap: 3px; }
+.school-inspection-tabs button { min-height: 38px; padding: 9px 12px; border: 1px solid transparent; background: transparent; color: #7a6855; font-size: 10px; }
+.school-inspection-tabs button[aria-pressed="true"] { border-color: #d6c9b9; background: #f1eadf; color: #493a2b; }
+.school-3d-inspection label { display: flex; align-items: center; gap: 8px; color: #7a6855; font-size: 10px; }
+.school-3d-inspection select { min-height: 38px; max-width: 100%; padding: 8px 26px 8px 10px; border: 1px solid #d6c9b9; border-radius: 0; background: #fffdf8; color: #493a2b; font-size: 10px; }
+.school-3d-inspection :is(button,select):focus-visible { outline: 2px solid var(--accent, #a64e37); outline-offset: 3px; }
+.school-stage-caption { position: absolute; z-index: 1; bottom: 17px; left: 18px; margin: 0; color: #625342; font-size: 9px; letter-spacing: .08em; pointer-events: none; }
+.school-3d-fallback { margin: 12px 0; padding: 13px 15px; border: 1px solid #d9c2ae; background: #f6ede3; font-size: 12px; line-height: 1.8; }
+.school-page .school-3d-sheet .school-design-meta { margin-top: 12px; padding-top: 12px; }
+.school-page .school-3d-sheet > svg { width: 100%; max-height: 600px; }
+
+.school-studio-controls .school-range-control { display: grid; gap: 8px; min-width: 0; }
+.school-range-label { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 6px 12px; }
+.school-control-value { color: #92714f; font-variant-numeric: tabular-nums; font-size: 11px; }
+.school-studio-controls .school-range-control input[type="range"] {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 44px;
+  height: 44px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  accent-color: var(--accent, #a64e37);
+  cursor: pointer;
+}
+.school-3d-download-note { margin: 0; color: #8b7964; font-size: 11px; line-height: 1.8; }
+.school-3d-download-note p { margin: 0; }
+.school-3d-topbar button:focus-visible, .school-3d-toolbar button:focus-visible { outline: 2px solid var(--accent, #a64e37); outline-offset: 3px; }
+
+@media (max-width: 1000px) {
+  .school-page .school-3d-sheet { padding: 14px; }
+  .school-3d-topbar { gap: 10px; }
+  .school-3d-topbar .school-kicker { font-size: 8px; }
+  .school-view-tabs button { padding-right: 11px; padding-left: 11px; }
+  .school-3d-toolbar { gap: 4px 12px; }
+}
+
+@media (max-width: 760px) {
+  .school-page .school-3d-sheet { padding: 14px; }
+  .school-3d-topbar { align-items: center; gap: 11px 14px; padding-bottom: 13px; }
+  .school-view-tabs button { min-height: 44px; padding: 10px 14px; }
+  .school-3d-stage { height: 460px; }
+  .school-page .school-3d-sheet > svg { max-height: 460px; }
+  .school-3d-toolbar { align-items: start; gap: 8px 14px; }
+  .school-view-buttons, .school-view-actions { gap: 4px; }
+  .school-3d-toolbar button { min-height: 44px; padding: 10px 12px; }
+  .school-3d-help { font-size: 9px; }
+  .school-inspection-tabs button, .school-3d-inspection select { min-height: 44px; }
+}
+
+@media (max-width: 480px) {
+  .school-page .school-3d-sheet { padding: 11px; }
+  .school-3d-topbar { align-items: stretch; }
+  .school-3d-topbar > .school-kicker { width: 100%; padding: 2px 0; font-size: 9px; }
+  .school-view-tabs { width: 100%; }
+  .school-view-tabs button { flex: 1 1 0; min-width: 0; padding-right: 8px; padding-left: 8px; }
+  .school-3d-toolbar { gap: 8px; }
+  .school-view-buttons, .school-view-actions { width: 100%; }
+  .school-view-buttons button { flex: 1 1 0; padding-right: 6px; padding-left: 6px; }
+  .school-view-actions button { flex: 1 1 auto; }
+  .school-3d-help { padding-right: 3px; padding-left: 3px; }
+  .school-3d-status { font-size: 9px; }
+  .school-inspection-tabs button, .school-3d-inspection select { min-height: 44px; }
+  .school-stage-caption { bottom: 12px; left: 12px; font-size: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .school-view-tabs button, .school-3d-toolbar button { transition: none; }
+}

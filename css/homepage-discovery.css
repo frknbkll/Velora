@@ -1,0 +1,82 @@
+/* A compact editorial introduction to the live collection. */
+.discovery.section-shell {
+  padding: clamp(60px, 6vw, 88px) max(24px, var(--page-gutter));
+  background: #f1ece5;
+  border-block: 1px solid #d8cec033;
+  scroll-margin-top: 94px;
+}
+.discovery-layout {
+  display: grid;
+  grid-template-columns: minmax(220px, .9fr) minmax(0, 3fr);
+  align-items: center;
+  gap: clamp(30px, 3.4vw, 54px);
+  max-width: 1180px;
+  margin-inline: auto;
+}
+.discovery-heading { min-width: 0; padding-block: 18px; }
+.discovery-heading .eyebrow { margin: 0 0 27px; font-size: 9px; letter-spacing: .16em; }
+.discovery-heading h2 { margin: 0; font-size: clamp(42px, 3.7vw, 56px); font-weight: 400; line-height: 1.02; letter-spacing: -.045em; }
+.discovery-heading h2 em { color: var(--accent); }
+.discovery-introduction { max-width: 235px; margin: 23px 0 28px; color: #71685e; font-size: 12px; line-height: 1.85; }
+.discovery-all-link { display: inline-flex; align-items: center; gap: 25px; min-height: 44px; border-bottom: 1px solid #958472; font-size: 11px; }
+.discovery-all-link > span { color: var(--accent); font-size: 18px; transition: transform .25s ease; }
+.discovery-all-link:hover > span { transform: translate(3px, -3px); }
+.discovery-studio-link { display: block; width: fit-content; margin-top: 25px; color: #78614f; font-size: 10px; line-height: 1.8; }
+.discovery-studio-link > span { margin-left: 7px; }
+.discovery-edits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(14px, 1.5vw, 23px); align-items: start; }
+.discovery-edit { min-width: 0; display: block; padding-bottom: 14px; border-bottom: 1px solid #cdbfac; transition: transform .3s ease, border-color .3s ease; }
+.discovery-edit[hidden] { display: none; }
+.discovery-image { position: relative; overflow: hidden; aspect-ratio: 9 / 16; background: #f8f6f2; }
+.discovery-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; transition: filter .3s ease; }
+.discovery-number { position: absolute; top: 11px; left: 11px; display: grid; place-items: center; width: 29px; height: 29px; border: 1px solid #b6a38a66; border-radius: 50%; background: #fcfaf5e8; color: #655442; font-size: 9px; letter-spacing: .04em; }
+.discovery-copy { padding-top: 17px; }
+.discovery-count { display: block; margin-bottom: 8px; color: #756a5d; font-size: 9px; letter-spacing: .1em; text-transform: uppercase; }
+.discovery-copy h3 { margin: 0; font-family: var(--serif); font-size: clamp(23px, 2vw, 28px); font-weight: 400; letter-spacing: -.035em; line-height: 1.15; }
+.discovery-copy > p { margin: 9px 0 15px; color: #746a60; font-size: 11px; line-height: 1.7; }
+.discovery-card-action { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 44px; font-size: 11px; }
+.discovery-arrow { display: grid; place-items: center; flex: 0 0 27px; width: 27px; height: 27px; border-radius: 50%; border: 1px solid #bcab96; color: #79523c; font-size: 15px; transition: color .25s ease, background .25s ease, transform .25s ease; }
+.discovery-edit:is(:hover, :focus-visible) { border-color: #79523c; transform: translateY(-5px); }
+.discovery-edit:is(:hover, :focus-visible) .discovery-arrow { background: var(--ink); border-color: var(--ink); color: #fffaf3; transform: rotate(8deg); }
+.discovery :is(.discovery-edit, .discovery-all-link, .discovery-studio-link):focus-visible { outline: 2px solid var(--accent); outline-offset: 6px; }
+
+/* A fixed navigation needs its own surface when content passes beneath it. */
+.site-header.is-scrolled:not(.is-over-hero) {
+  background: #faf8f4f5;
+  border-bottom: 1px solid #d9d0c588;
+  backdrop-filter: blur(12px);
+}
+
+@media (max-width: 1100px) {
+  .discovery-layout { grid-template-columns: 1fr; gap: 34px; max-width: 850px; }
+  .discovery-heading { display: grid; grid-template-columns: 1.25fr 1fr; column-gap: 36px; align-items: end; padding: 0; }
+  .discovery-heading .eyebrow { grid-column: 1 / -1; margin-bottom: 19px; }
+  .discovery-heading h2 { grid-row: 2 / 5; font-size: 48px; }
+  .discovery-introduction { max-width: 260px; margin: 0 0 7px; }
+  .discovery-all-link { justify-self: start; }
+  .discovery-studio-link { margin-top: 13px; }
+}
+@media (max-width: 650px) {
+  .discovery.section-shell { padding: 48px 24px 42px; scroll-margin-top: 78px; }
+  .discovery-layout { gap: 27px; }
+  .discovery-heading { display: block; }
+  .discovery-heading .eyebrow { margin-bottom: 18px; }
+  .discovery-heading h2 { max-width: 340px; font-size: clamp(39px, 10vw, 48px); line-height: 1.04; }
+  .discovery-introduction { max-width: 320px; margin: 17px 0 10px; }
+  .discovery-studio-link { margin-top: 15px; }
+  .discovery-edits { grid-template-columns: 1fr; gap: 0; }
+  .discovery-edit { display: grid; grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr); gap: 23px; align-items: center; padding: 20px 0; }
+  .discovery-edit:first-child { border-top: 1px solid #cdbfac; }
+  .discovery-image { width: 100%; }
+  .discovery-number { top: 7px; left: 7px; width: 23px; height: 23px; font-size: 8px; }
+  .discovery-copy { padding: 0; }
+  .discovery-copy h3 { font-size: clamp(24px, 6.2vw, 29px); }
+  .discovery-count { font-size: 9px; line-height: 1.6; }
+  .discovery-copy > p { margin-block: 11px 15px; font-size: 11px; }
+  .discovery-card-action { min-height: 44px; font-size: 11px; }
+  .discovery-arrow { width: 30px; height: 30px; flex-basis: 30px; }
+  .discovery-edit:is(:hover, :focus-visible) { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .discovery-edit, .discovery-image img, .discovery-arrow, .discovery-all-link > span { transition: none; }
+  .discovery-edit:is(:hover, :focus-visible), .discovery-all-link:hover > span { transform: none; }
+}

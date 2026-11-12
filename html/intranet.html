@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f3f1eb" />
+    <link rel="stylesheet" href="/css/fonts.css?v=2" />
+    <link rel="stylesheet" href="/css/styles.css?v=70" />
+    <link rel="stylesheet" href="/css/intranet.css?v=2" />
+    <script src="/js/auth.js?v=9" defer></script>
+    <link rel="stylesheet" href="/css/intranet-folders.css?v=1" />
+    <script src="/js/intranet-folders.js?v=1" defer></script>
+    <script src="/js/intranet.js?v=2" defer></script>
+    <!-- velora:page-metadata -->
+    <title>Team Workspace | Velora</title>
+    <meta name="description" content="The private Velora colleague workspace and department folders." />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta property="og:site_name" content="Velora" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Team Workspace | Velora" />
+    <meta property="og:description" content="The private Velora colleague workspace and department folders." />
+    <meta property="og:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta property="og:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Team Workspace | Velora" />
+    <meta name="twitter:description" content="The private Velora colleague workspace and department folders." />
+    <meta name="twitter:image" content="https://velora.org/assets/brand/og-velora.png" />
+    <meta name="twitter:image:alt" content="Velora wordmark and v. monogram in cream and dark olive, with the words Considered style. Your own point of view." />
+    <!-- /velora:page-metadata -->
+      <!-- velora:brand-assets -->
+    <link rel="icon" href="/assets/brand/favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- /velora:brand-assets -->
+  </head>
+  <body class="intranet-page">
+    <a class="intranet-skip" href="#intranet-main">Skip to workspace</a>
+    <aside class="intranet-sidebar" aria-label="Workspace navigation">
+      <a class="intranet-brand" href="index.html" aria-label="Velora home"><span class="wordmark">velora<span>®</span></span><span class="intranet-brand-label">TEAM WORKSPACE</span></a>
+      <p class="intranet-nav-label">YOUR WORKSPACE</p>
+      <nav class="intranet-nav">
+        <a href="#overview" aria-current="page"><span class="intranet-nav-icon" aria-hidden="true">⌂</span>Overview</a>
+        <a href="#folders"><span class="intranet-nav-icon" aria-hidden="true">▤</span>Shared folders</a>
+        <a href="#departments"><span class="intranet-nav-icon" aria-hidden="true">♧</span>People &amp; teams</a>
+        <a href="#updates"><span class="intranet-nav-icon" aria-hidden="true">◷</span>Studio notes</a>
+      </nav>
+      <div class="intranet-sidebar-bottom">
+        <a href="admin.html" data-intranet-admin>Open admin studio <span aria-hidden="true">↗</span></a>
+        <a href="index.html">Visit the storefront <span aria-hidden="true">↗</span></a>
+      </div>
+    </aside>
+
+    <div class="intranet-layout">
+      <header class="intranet-topbar">
+        <div class="intranet-breadcrumb"><span>Velora</span><span aria-hidden="true">/</span><strong>Team workspace</strong></div>
+        <div class="intranet-user">
+          <span class="intranet-presence"><span></span> PRIVATE WORKSPACE</span>
+          <span class="intranet-avatar" id="intranet-avatar" aria-hidden="true">V</span>
+          <span class="intranet-user-name" id="intranet-user-name">Your workspace</span>
+          <button type="button" class="intranet-signout" data-auth-logout>Sign out</button>
+        </div>
+      </header>
+
+      <main class="intranet-main" id="intranet-main" tabindex="-1">
+        <p class="auth-message intranet-feedback" id="auth-message" role="status" aria-live="polite" aria-atomic="true"></p>
+        <section class="intranet-welcome" id="overview" aria-labelledby="intranet-title">
+          <div class="intranet-welcome-copy">
+            <p class="intranet-eyebrow"><span></span> A shared place to begin</p>
+            <h1 id="intranet-title"><span id="intranet-greeting">Good morning,</span><br /><em id="intranet-greeting-name">team.</em></h1>
+            <p>Your people, team spaces, and everyday links — together in one place.</p>
+          </div>
+          <div class="intranet-welcome-art" aria-hidden="true">
+            <span class="intranet-art-orbit"></span>
+            <span class="intranet-art-monogram">v.</span>
+            <span class="intranet-art-caption">MADE OF MOMENTS<br />MADE BY US</span>
+          </div>
+          <div class="intranet-date" id="intranet-date"></div>
+        </section>
+
+        <aside class="intranet-prototype-note">
+          <span class="intranet-note-icon" aria-hidden="true">i</span>
+          <p><strong>Your account, your access.</strong> Shared folders follow the permissions assigned to your Velora account. Finance and HR require matching department access or explicit Full control. The people directory below remains illustrative.</p>
+        </aside>
+
+        <section class="intranet-metrics" aria-label="Team at a glance">
+          <article><span class="intranet-metric-icon" aria-hidden="true">♧</span><div><strong>24</strong><span>team profiles</span></div></article>
+          <article><span class="intranet-metric-icon" aria-hidden="true">▦</span><div><strong id="intranet-department-count">9</strong><span>department folders</span></div></article>
+          <article><span class="intranet-metric-icon" aria-hidden="true">◎</span><div><strong>6</strong><span>global locations</span></div></article>
+          <a href="team.html#team-world-title"><span class="intranet-metric-icon" aria-hidden="true">↗</span><div><strong>Explore</strong><span>our team directory</span></div></a>
+        </section>
+
+        <section class="intranet-section" id="folders" aria-labelledby="folders-title">
+          <div class="intranet-section-heading">
+            <div><p class="intranet-eyebrow"><span></span> WORK TOGETHER, WITH THE RIGHT ACCESS</p><h2 id="folders-title">Shared <em>folders.</em></h2></div>
+            <p>Department documents, images and notes. Access is checked each time you open a file.</p>
+          </div>
+          <p class="intranet-folder-feedback" id="intranet-folder-feedback" role="status" aria-live="polite">Checking your shared-folder access…</p>
+          <div class="intranet-folder-grid" id="intranet-folder-grid" aria-label="Department shared folders"></div>
+          <section class="intranet-file-browser" id="intranet-file-browser" aria-labelledby="intranet-open-folder-name" hidden>
+            <div class="intranet-folder-breadcrumb"><button type="button" id="intranet-folders-back">All shared folders</button><span aria-hidden="true">/</span><strong id="intranet-open-folder-name"></strong></div>
+            <div class="intranet-file-heading"><div><p id="intranet-open-folder-description"></p><span class="intranet-folder-access" id="intranet-open-folder-access"></span></div><button class="intranet-folder-button" id="intranet-folder-refresh" type="button">Refresh files</button></div>
+            <p class="intranet-library-note" id="intranet-library-note" hidden>Website library items are the existing public storefront originals. New uploads are private shared copies; uploading here does not publish a file to the website.</p>
+            <div class="intranet-file-tools">
+              <label class="intranet-file-search"><span class="sr-only">Search files in this folder</span><input type="search" id="intranet-file-search" placeholder="Find an image, document or note" autocomplete="off" /></label>
+              <div class="intranet-file-write-actions" id="intranet-file-write-actions" hidden><button class="intranet-folder-button" type="button" id="intranet-upload-button">Upload files</button><button class="intranet-folder-button" type="button" id="intranet-new-note">New note</button></div>
+              <input type="file" id="intranet-upload-input" multiple accept=".jpg,.jpeg,.png,.webp,.gif,.pdf,.txt,.csv,.docx,.xlsx,.pptx" hidden />
+            </div>
+            <p class="intranet-file-help" id="intranet-file-help">Private files are available only through your current folder permissions.</p>
+            <div class="intranet-file-list" id="intranet-file-list" aria-busy="false"></div>
+            <button class="intranet-folder-button intranet-show-files" id="intranet-show-files" type="button" hidden>Show more files</button>
+          </section>
+        </section>
+
+        <section class="intranet-section intranet-people-section" id="departments" aria-labelledby="departments-title">
+          <div class="intranet-section-heading">
+            <div><p class="intranet-eyebrow"><span></span> PEOPLE MAKE THE PLACE</p><h2 id="departments-title">A team of <em>perspectives.</em></h2></div>
+            <a class="intranet-text-link" href="team.html">Full team directory <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="intranet-directory-tools">
+            <label class="intranet-search"><span aria-hidden="true">⌕</span><span class="sr-only">Search colleagues</span><input id="intranet-search" type="search" placeholder="Search a name, role, or department" autocomplete="off" /></label>
+            <p id="intranet-result-count" aria-live="polite">Showing 24 colleagues</p>
+          </div>
+          <div class="intranet-filters" role="group" aria-label="Filter coworkers by department">
+            <button type="button" data-department-filter="all" aria-pressed="true">Everyone</button>
+            <button type="button" data-department-filter="leadership" aria-pressed="false">Leadership</button>
+            <button type="button" data-department-filter="creative" aria-pressed="false">Creative studio</button>
+            <button type="button" data-department-filter="design" aria-pressed="false">Design</button>
+            <button type="button" data-department-filter="brand" aria-pressed="false">Brand &amp; marketing</button>
+            <button type="button" data-department-filter="community" aria-pressed="false">Community</button>
+            <button type="button" data-department-filter="commerce" aria-pressed="false">Digital commerce</button>
+            <button type="button" data-department-filter="people" aria-pressed="false">People</button>
+          </div>
+          <div class="intranet-directory" id="intranet-directory">
+            <article class="intranet-person" data-department="leadership" data-search="Charlotte de Vries Chief Executive Officer CEO leadership">
+              <span class="intranet-person-avatar avatar-rose" aria-hidden="true">CV</span><span class="intranet-person-copy"><strong>Charlotte de Vries</strong><span>Chief Executive Officer</span></span><a href="team.html#leadership" aria-label="View Charlotte de Vries in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="leadership" data-search="Maya Bennett Executive Operations Lead leadership">
+              <span class="intranet-person-avatar avatar-sage" aria-hidden="true">MB</span><span class="intranet-person-copy"><strong>Maya Bennett</strong><span>Executive Operations Lead</span></span><a href="team.html#leadership" aria-label="View Maya Bennett in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="leadership" data-search="Elena Marquez Business Operations Coordinator leadership">
+              <span class="intranet-person-avatar avatar-sand" aria-hidden="true">EM</span><span class="intranet-person-copy"><strong>Elena Marquez</strong><span>Business Operations Coordinator</span></span><a href="team.html#leadership" aria-label="View Elena Marquez in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="creative" data-search="Saoirse O’Connor Creative Director creative studio">
+              <span class="intranet-person-avatar avatar-olive" aria-hidden="true">SO</span><span class="intranet-person-copy"><strong>Saoirse O’Connor</strong><span>Creative Director</span></span><a href="team.html#creative-direction" aria-label="View Saoirse O’Connor in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="creative" data-search="Camille Laurent Art Director creative studio">
+              <span class="intranet-person-avatar avatar-rose" aria-hidden="true">CL</span><span class="intranet-person-copy"><strong>Camille Laurent</strong><span>Art Director</span></span><a href="team.html#creative-direction" aria-label="View Camille Laurent in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="creative" data-search="Chloé Dubois Visual Content Designer creative studio">
+              <span class="intranet-person-avatar avatar-sage" aria-hidden="true">CD</span><span class="intranet-person-copy"><strong>Chloé Dubois</strong><span>Visual Content Designer</span></span><a href="team.html#creative-direction" aria-label="View Chloé Dubois in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="design" data-search="Amara Okafor Fashion Designer design">
+              <span class="intranet-person-avatar avatar-sand" aria-hidden="true">AO</span><span class="intranet-person-copy"><strong>Amara Okafor</strong><span>Fashion Designer</span></span><a href="team.html#fashion-design" aria-label="View Amara Okafor in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="design" data-search="Nour Haddad Fashion Designer design">
+              <span class="intranet-person-avatar avatar-olive" aria-hidden="true">NH</span><span class="intranet-person-copy"><strong>Nour Haddad</strong><span>Fashion Designer</span></span><a href="team.html#fashion-design" aria-label="View Nour Haddad in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="design" data-search="Samira El Idrissi Textile Print Designer design">
+              <span class="intranet-person-avatar avatar-rose" aria-hidden="true">SE</span><span class="intranet-person-copy"><strong>Samira El Idrissi</strong><span>Textile &amp; Print Designer</span></span><a href="team.html#fashion-design" aria-label="View Samira El Idrissi in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="brand" data-search="Elif Demir Brand Marketing Director brand marketing">
+              <span class="intranet-person-avatar avatar-sage" aria-hidden="true">ED</span><span class="intranet-person-copy"><strong>Elif Demir</strong><span>Brand &amp; Marketing Director</span></span><a href="team.html#brand-marketing" aria-label="View Elif Demir in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="brand" data-search="Isabella Rossi Brand Strategist brand marketing">
+              <span class="intranet-person-avatar avatar-sand" aria-hidden="true">IR</span><span class="intranet-person-copy"><strong>Isabella Rossi</strong><span>Brand Strategist</span></span><a href="team.html#brand-marketing" aria-label="View Isabella Rossi in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="brand" data-search="Valentina Costa Campaign Coordinator brand marketing">
+              <span class="intranet-person-avatar avatar-olive" aria-hidden="true">VC</span><span class="intranet-person-copy"><strong>Valentina Costa</strong><span>Campaign Coordinator</span></span><a href="team.html#brand-marketing" aria-label="View Valentina Costa in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="community" data-search="Lucía Fernández Social Media Manager community">
+              <span class="intranet-person-avatar avatar-rose" aria-hidden="true">LF</span><span class="intranet-person-copy"><strong>Lucía Fernández</strong><span>Social Media Manager</span></span><a href="team.html#social-media" aria-label="View Lucía Fernández in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="community" data-search="Zara Williams Community Content Specialist">
+              <span class="intranet-person-avatar avatar-sage" aria-hidden="true">ZW</span><span class="intranet-person-copy"><strong>Zara Williams</strong><span>Community &amp; Content Specialist</span></span><a href="team.html#social-media" aria-label="View Zara Williams in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="community" data-search="Nia Brooks Social Content Creator community">
+              <span class="intranet-person-avatar avatar-sand" aria-hidden="true">NB</span><span class="intranet-person-copy"><strong>Nia Brooks</strong><span>Social Content Creator</span></span><a href="team.html#social-media" aria-label="View Nia Brooks in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="commerce" data-search="Hana Kim E-commerce Manager digital commerce">
+              <span class="intranet-person-avatar avatar-olive" aria-hidden="true">HK</span><span class="intranet-person-copy"><strong>Hana Kim</strong><span>E-commerce Manager</span></span><a href="team.html#ecommerce" aria-label="View Hana Kim in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="commerce" data-search="Mei Chen Digital Merchandising Specialist commerce">
+              <span class="intranet-person-avatar avatar-rose" aria-hidden="true">MC</span><span class="intranet-person-copy"><strong>Mei Chen</strong><span>Digital Merchandising Specialist</span></span><a href="team.html#ecommerce" aria-label="View Mei Chen in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="commerce" data-search="Yuna Park E-commerce Content Coordinator commerce">
+              <span class="intranet-person-avatar avatar-sage" aria-hidden="true">YP</span><span class="intranet-person-copy"><strong>Yuna Park</strong><span>E-commerce Content Coordinator</span></span><a href="team.html#ecommerce" aria-label="View Yuna Park in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="people" data-search="Yasmine El Amrani HR Manager people development">
+              <span class="intranet-person-avatar avatar-sand" aria-hidden="true">YA</span><span class="intranet-person-copy"><strong>Yasmine El Amrani</strong><span>HR Manager</span></span><a href="team.html#hr-management" aria-label="View Yasmine El Amrani in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="people" data-search="Sofia Almeida People Development Manager people">
+              <span class="intranet-person-avatar avatar-olive" aria-hidden="true">SA</span><span class="intranet-person-copy"><strong>Sofia Almeida</strong><span>People Development Manager</span></span><a href="team.html#hr-management" aria-label="View Sofia Almeida in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="people" data-search="Inês Ferreira Learning Development Coordinator people">
+              <span class="intranet-person-avatar avatar-rose" aria-hidden="true">IF</span><span class="intranet-person-copy"><strong>Inês Ferreira</strong><span>Learning &amp; Development Coordinator</span></span><a href="team.html#hr-management" aria-label="View Inês Ferreira in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="people" data-search="Heba Mansour Human Resources HR">
+              <span class="intranet-person-avatar avatar-sage" aria-hidden="true">HM</span><span class="intranet-person-copy"><strong>Heba Mansour</strong><span>Human Resources</span></span><a href="team.html#human-resources" aria-label="View Heba Mansour in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="people" data-search="Leila Demir HR Specialist human resources">
+              <span class="intranet-person-avatar avatar-sand" aria-hidden="true">LD</span><span class="intranet-person-copy"><strong>Leila Demir</strong><span>HR Specialist</span></span><a href="team.html#human-resources" aria-label="View Leila Demir in the team directory">↗</a>
+            </article>
+            <article class="intranet-person" data-department="people" data-search="Aylin Kaya People Experience Coordinator">
+              <span class="intranet-person-avatar avatar-olive" aria-hidden="true">AK</span><span class="intranet-person-copy"><strong>Aylin Kaya</strong><span>People Experience Coordinator</span></span><a href="team.html#human-resources" aria-label="View Aylin Kaya in the team directory">↗</a>
+            </article>
+          </div>
+          <p class="intranet-no-results" id="intranet-no-results" hidden>No colleagues match that search. Try another name or department.</p>
+        </section>
+
+        <section class="intranet-section intranet-updates" id="updates" aria-labelledby="updates-title">
+          <div class="intranet-section-heading">
+            <div><p class="intranet-eyebrow"><span></span> NOTES FROM THE STUDIO</p><h2 id="updates-title">A little <em>context.</em></h2></div>
+          </div>
+          <article class="intranet-update-card">
+            <span class="intranet-update-mark" aria-hidden="true">v.</span>
+            <div><span class="intranet-update-label">START HERE · WORKSPACE PREVIEW</span><h3>One place for the work we share.</h3><p>Use shared folders to keep working documents, images and notes with the right department. Ask an administrator to review your access if a space is locked. Team profiles remain sample directory information.</p></div>
+            <a href="team.html">Explore the team <span aria-hidden="true">↗</span></a>
+          </article>
+        </section>
+        <footer class="intranet-footer"><span>VELORA TEAM WORKSPACE</span><span>Thoughtful work, made together.</span><a href="privacy.html">Privacy information</a></footer>
+      </main>
+    </div>
+    <dialog class="intranet-folder-dialog" id="intranet-note-dialog" aria-labelledby="intranet-note-dialog-title">
+      <button class="intranet-dialog-close" type="button" data-intranet-dialog-close aria-label="Close note editor">&times;</button>
+      <p class="intranet-eyebrow">A NOTE FOR YOUR DEPARTMENT</p><h2 id="intranet-note-dialog-title">Keep it <em>together.</em></h2>
+      <form id="intranet-note-form"><label>Note name<input id="intranet-note-name" maxlength="140" required /></label><label>Information<textarea id="intranet-note-text" rows="9" maxlength="20000" required></textarea></label><p class="intranet-file-help">Up to 20,000 characters. This note will inherit the current folder's access rules.</p><p class="intranet-folder-feedback" id="intranet-note-feedback" role="status"></p><button class="intranet-folder-button" type="submit" id="intranet-save-note">Save note</button></form>
+    </dialog>
+    <dialog class="intranet-folder-dialog" id="intranet-read-note-dialog" aria-labelledby="intranet-read-note-title"><button class="intranet-dialog-close" type="button" data-intranet-dialog-close aria-label="Close note">&times;</button><p class="intranet-eyebrow">SHARED DEPARTMENT NOTE</p><h2 id="intranet-read-note-title"></h2><pre id="intranet-read-note-content"></pre></dialog>
+    <dialog class="intranet-folder-dialog" id="intranet-delete-dialog" aria-labelledby="intranet-delete-title"><button class="intranet-dialog-close" type="button" data-intranet-dialog-close aria-label="Cancel deletion">&times;</button><h2 id="intranet-delete-title">Delete this file?</h2><p id="intranet-delete-description"></p><div class="intranet-dialog-actions"><button class="intranet-folder-button" id="intranet-cancel-delete" type="button">Keep file</button><button class="intranet-folder-button is-danger" id="intranet-confirm-delete" type="button">Delete private file</button></div></dialog>
+  </body>
+</html>

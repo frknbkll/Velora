@@ -1,0 +1,30 @@
+{
+  "package": "three",
+  "version": "0.180.0",
+  "source": "https://registry.npmjs.org/three/-/three-0.180.0.tgz",
+  "sha256": "ad66d724565ee29a2467277fa84daa5ed0211d6b8d446e9ef29f6bae0cd14144",
+  "license": "MIT",
+  "localChange": "Addon bare module imports resolve to the bundled local Three.js module.",
+  "files": {
+    "three.module.js": {
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+      "upstreamPath": "package/build/three.module.js",
+      "upstreamSha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
+    },
+    "three.core.js": {
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+      "upstreamPath": "package/build/three.core.js",
+      "upstreamSha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    "addons/controls/OrbitControls.js": {
+      "sha256": "d3b6283dcec39e541db397bdd868fec380e118f3053ec26e9873252a14b7b5d6",
+      "upstreamPath": "package/examples/jsm/controls/OrbitControls.js",
+      "upstreamSha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    "addons/exporters/GLTFExporter.js": {
+      "sha256": "c3462aec753006797689fef9ce8ec121d982b0956ff08527060f8d75bca784b9",
+      "upstreamPath": "package/examples/jsm/exporters/GLTFExporter.js",
+      "upstreamSha256": "e7c29444454eb321b39e4c8b3062944f4fd5299a0e7483e9cb8c0594cdec829f"
+    }
+  }
+}
